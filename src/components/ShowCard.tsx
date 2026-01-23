@@ -6,14 +6,17 @@ type Props = {
   show: RadioShow;
   userState?: UserShowState;
   onUpdate: (state: UserShowState) => void;
+  onOpen?: (show: RadioShow) => void;
 };
 
-export function ShowCard({ show, userState, onUpdate }: Props) {
+export function ShowCard({ show, userState, onUpdate, onOpen }: Props) {
   const state: UserShowState = userState ?? {
     showId: show.id,
     status: 'backlog',
     completedEpisodes: [],
   };
+
+  const iconSrc = show.iconUrl ?? '/placeholders/show-placeholder.png';
 
   return (
     <motion.div
@@ -23,6 +26,7 @@ export function ShowCard({ show, userState, onUpdate }: Props) {
       transition={{ duration: 0.25, ease: 'easeOut' }}
     >
       <Card
+        onClick={() => onOpen?.(show)}
         className="
           rounded-2xl
           border border-border/50
@@ -33,11 +37,24 @@ export function ShowCard({ show, userState, onUpdate }: Props) {
           transition-shadow
         "
       >
-        <CardHeader>
-          <h3 className="text-lg font-semibold">{show.title}</h3>
-          <p className="text-sm text-muted-foreground">
-            {show.hosts.join(', ')}
-          </p>
+        <CardHeader className="flex flex-row items-center gap-4">
+          <img
+            src={iconSrc}
+            onError={(e) => {
+              e.currentTarget.src = '/placeholders/show-placeholder.png';
+            }}
+            alt={`${show.title} icon`}
+            className="h-12 w-12 rounded-md object-cover bg-muted"
+          />
+
+          <div className="flex flex-col">
+            <h3 className="text-lg font-semibold leading-tight">
+              {show.title}
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              {show.hosts.join(', ')}
+            </p>
+          </div>
         </CardHeader>
 
         <CardContent className="space-y-2">
@@ -53,7 +70,7 @@ export function ShowCard({ show, userState, onUpdate }: Props) {
           <p>Last episode: {state.lastListenedEpisode ?? '—'}</p>
         </CardContent>
 
-        <CardContent className="space-y-3">
+        <CardContent className="space-y-3" onClick={(e) => e.stopPropagation()}>
           {/* Status Selector */}
           <div className="flex flex-col">
             <label className="text-sm mb-1">Status</label>
@@ -66,12 +83,13 @@ export function ShowCard({ show, userState, onUpdate }: Props) {
                 transition
               "
               value={state.status}
-              onChange={(e) =>
+              onChange={(e) => {
+                e.stopPropagation();
                 onUpdate({
                   ...state,
                   status: e.target.value as UserShowState['status'],
-                })
-              }
+                });
+              }}
             >
               <option value="listening">Listening</option>
               <option value="backlog">Backlog</option>
@@ -94,15 +112,16 @@ export function ShowCard({ show, userState, onUpdate }: Props) {
                   shadow-sm
                   transition-all
                 "
-                onClick={() =>
+                onClick={(e) => {
+                  e.stopPropagation();
                   onUpdate({
                     ...state,
                     lastListenedEpisode: Math.max(
                       0,
                       (state.lastListenedEpisode ?? 0) - 1
                     ),
-                  })
-                }
+                  });
+                }}
               >
                 −
               </button>
@@ -119,12 +138,13 @@ export function ShowCard({ show, userState, onUpdate }: Props) {
                 "
                 value={state.lastListenedEpisode ?? ''}
                 min={0}
-                onChange={(e) =>
+                onChange={(e) => {
+                  e.stopPropagation();
                   onUpdate({
                     ...state,
                     lastListenedEpisode: Number(e.target.value),
-                  })
-                }
+                  });
+                }}
               />
 
               {/* Increment */}
@@ -137,12 +157,13 @@ export function ShowCard({ show, userState, onUpdate }: Props) {
                   shadow-sm
                   transition-all
                 "
-                onClick={() =>
+                onClick={(e) => {
+                  e.stopPropagation();
                   onUpdate({
                     ...state,
                     lastListenedEpisode: (state.lastListenedEpisode ?? 0) + 1,
-                  })
-                }
+                  });
+                }}
               >
                 +
               </button>

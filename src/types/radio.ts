@@ -1,13 +1,14 @@
 // show info
-export type RadioShow = {
+export interface RadioShow {
   id: string;
   title: string;
   hosts: string[];
   startDate: string;
   frequency: 'weekly' | 'biweekly' | 'irregular';
   bannerUrl?: string;
+  iconUrl?: string;
   totalEpisodes?: number;
-};
+}
 
 // User-specific state (stored locally)
 export type UserShowState = {

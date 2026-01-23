@@ -5,6 +5,10 @@ node_modules/
 dist/
 out/
 
+# Radio show icons/banners
+public/banners
+public/icons
+
 # Local env files
 .env
 .env.local

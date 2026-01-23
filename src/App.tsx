@@ -7,12 +7,14 @@ import { motion } from 'framer-motion';
 import { shows } from '@/data/shows';
 import type { UserShowState } from '@/types/radio';
 import { ShowCard } from '@/components/ShowCard';
+import type { RadioShow } from '@/types/radio';
 
 type SortMode = 'title' | 'host';
 
 export default function App() {
   const [dark, setDark] = useState(true);
   const [sortMode, setSortMode] = useState<SortMode>('title');
+  const [selectedShow, setSelectedShow] = useState<RadioShow | null>(null);
 
   const sortedShows = useMemo(() => {
     return [...shows].sort((a, b) =>
@@ -45,7 +47,13 @@ export default function App() {
     <div className={dark ? 'dark' : ''}>
       <div className="min-h-screen bg-background text-foreground p-8 flex flex-col items-center gap-6">
         {/* Dark mode toggle */}
-        <Button className="self-end" onClick={() => setDark(!dark)}>
+        <Button
+          className="self-end"
+          onClick={(e) => {
+            e.stopPropagation();
+            setDark(!dark);
+          }}
+        >
           Toggle {dark ? 'Light' : 'Dark'}
         </Button>
 
@@ -64,14 +72,20 @@ export default function App() {
           <div className="flex gap-2">
             <Button
               variant={sortMode === 'title' ? 'default' : 'secondary'}
-              onClick={() => setSortMode('title')}
+              onClick={(e) => {
+                e.stopPropagation();
+                setSortMode('title');
+              }}
             >
               Sort by Title
             </Button>
 
             <Button
               variant={sortMode === 'host' ? 'default' : 'secondary'}
-              onClick={() => setSortMode('host')}
+              onClick={(e) => {
+                e.stopPropagation();
+                setSortMode('host');
+              }}
             >
               Sort by Host
             </Button>
@@ -94,9 +108,55 @@ export default function App() {
                 show={show}
                 userState={userState.find((s) => s.showId === show.id)}
                 onUpdate={updateShowState}
+                onOpen={setSelectedShow}
               />
             </motion.div>
           ))}
+
+          {selectedShow && (
+            <motion.div
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={(e) => {
+                e.stopPropagation();
+                setSelectedShow(null);
+              }}
+            >
+              <motion.div
+                className="max-w-lg w-full rounded-2xl bg-background p-6 shadow-xl"
+                initial={{ scale: 0.95, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <h2 className="text-xl font-semibold">{selectedShow.title}</h2>
+
+                <p className="text-sm text-muted-foreground mb-4">
+                  {selectedShow.hosts.join(', ')}
+                </p>
+
+                <div className="space-y-2 text-sm">
+                  <p>Start date: {selectedShow.startDate}</p>
+                  <p>Frequency: {selectedShow.frequency}</p>
+                  <p>Total episodes: {selectedShow.totalEpisodes}</p>
+                </div>
+
+                <div className="mt-6 flex justify-end">
+                  <button
+                    className="rounded-md px-4 py-2 bg-secondary hover:bg-secondary/80 transition"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setSelectedShow(null);
+                    }}
+                  >
+                    Close
+                  </button>
+                </div>
+              </motion.div>
+            </motion.div>
+          )}
         </motion.div>
       </div>
     </div>

@@ -8,6 +8,7 @@ export const shows: RadioShow[] = [
     startDate: '2023-06-01',
     frequency: 'weekly',
     bannerUrl: '/banners/ag_tsuna.jpg',
+    iconUrl: '/icons/ag_tsuna.jpg',
     totalEpisodes: 132,
   },
   {
@@ -17,6 +18,7 @@ export const shows: RadioShow[] = [
     startDate: '2022-03-01',
     frequency: 'weekly',
     bannerUrl: '/banners/joqr-date.jpg',
+    iconUrl: '/icons/joqr-date.jpg',
     totalEpisodes: 200,
   },
   {
@@ -26,6 +28,7 @@ export const shows: RadioShow[] = [
     startDate: '2024-04-07',
     frequency: 'biweekly',
     bannerUrl: '/banners/onsen-tsukine.jpg',
+    iconUrl: '/icons/onsen-tsukine.jpg',
     totalEpisodes: 21,
   },
   {
@@ -35,6 +38,7 @@ export const shows: RadioShow[] = [
     startDate: '2024-04-01',
     frequency: 'biweekly',
     bannerUrl: '/banners/onsen-sasaki.jpg',
+    iconUrl: '/icons/onsen-sasaki.jpg',
     totalEpisodes: 22,
   },
   {
@@ -44,6 +48,7 @@ export const shows: RadioShow[] = [
     startDate: '2024-03-29',
     frequency: 'weekly',
     bannerUrl: '/banners/audee-hanamiya.jpg',
+    iconUrl: '/icons/audee-hanamiya.jpg',
     totalEpisodes: 94,
   },
   {
@@ -53,6 +58,7 @@ export const shows: RadioShow[] = [
     startDate: '2024-11-02',
     frequency: 'weekly',
     bannerUrl: '/banners/qlover-hayama.jpg',
+    iconUrl: '/icons/qlover-hayama.jpg',
     totalEpisodes: 65,
   },
   {
@@ -62,6 +68,7 @@ export const shows: RadioShow[] = [
     startDate: '2025-10-01',
     frequency: 'weekly',
     bannerUrl: '/banners/audee-nonaka.jpg',
+    iconUrl: '/icons/audee-nonaka.jpg',
     totalEpisodes: 16,
   },
   {
@@ -71,6 +78,7 @@ export const shows: RadioShow[] = [
     startDate: '2025-12-30',
     frequency: 'weekly',
     bannerUrl: '/banners/radiko-sakakura.jpg',
+    iconUrl: '/icons/radiko-sakakura.jpg',
     totalEpisodes: 1,
   },
 ];
