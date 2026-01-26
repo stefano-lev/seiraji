@@ -4,17 +4,55 @@ import { Card, CardContent } from './components/ui/card';
 
 import { motion } from 'framer-motion';
 
-import { shows } from '@/data/shows';
+import { defaultShows } from '@/data/shows';
 import type { UserShowState } from '@/types/radio';
 import { ShowCard } from '@/components/ShowCard';
 import type { RadioShow } from '@/types/radio';
 
 type SortMode = 'title' | 'host';
 
+type EditableFieldProps = {
+  label: string;
+  value: React.ReactNode;
+  isEditing: boolean;
+  renderInput: () => React.ReactNode;
+};
+
+function EditableField({
+  label,
+  value,
+  isEditing,
+  renderInput,
+}: EditableFieldProps) {
+  return (
+    <div className="mb-3">
+      <label className="text-sm mb-1 block">{label}</label>
+      {isEditing ? (
+        renderInput()
+      ) : (
+        <div className="text-sm text-muted-foreground">{value}</div>
+      )}
+    </div>
+  );
+}
+
 export default function App() {
   const [dark, setDark] = useState(true);
   const [sortMode, setSortMode] = useState<SortMode>('title');
   const [selectedShow, setSelectedShow] = useState<RadioShow | null>(null);
+  const [editDraft, setEditDraft] = useState<RadioShow | null>(null);
+
+  const isEditing = editDraft !== null;
+  const showData = editDraft ?? selectedShow;
+
+  const [shows, setShows] = useState<RadioShow[]>(() => {
+    const stored = localStorage.getItem('shows');
+    return stored ? JSON.parse(stored) : defaultShows;
+  });
+
+  useEffect(() => {
+    localStorage.setItem('shows', JSON.stringify(shows));
+  }, [shows]);
 
   const sortedShows = useMemo(() => {
     return [...shows].sort((a, b) =>
@@ -22,7 +60,7 @@ export default function App() {
         ? a.title.localeCompare(b.title, 'ja')
         : a.hosts[0].localeCompare(b.hosts[0], 'ja')
     );
-  }, [sortMode]);
+  }, [shows, sortMode]);
 
   const defaultState: UserShowState[] = [];
 
@@ -41,6 +79,18 @@ export default function App() {
         ? prev.map((s) => (s.showId === updated.showId ? updated : s))
         : [...prev, updated]
     );
+  }
+
+  function updateShow(updated: RadioShow) {
+    setShows((prev) => prev.map((s) => (s.id === updated.id ? updated : s)));
+  }
+
+  function addShow(newShow: RadioShow) {
+    setShows((prev) => [...prev, newShow]);
+  }
+
+  function deleteShow(id: string) {
+    setShows((prev) => prev.filter((s) => s.id !== id));
   }
 
   return (
@@ -68,7 +118,6 @@ export default function App() {
             </CardContent>
           </Card>
 
-          {/* Sort buttons next to header on larger screens */}
           <div className="flex gap-2">
             <Button
               variant={sortMode === 'title' ? 'default' : 'secondary'}
@@ -89,6 +138,25 @@ export default function App() {
             >
               Sort by Host
             </Button>
+
+            <Button
+              onClick={() => {
+                const newShow: RadioShow = {
+                  id: crypto.randomUUID(),
+                  title: 'New Show',
+                  hosts: ['Unknown'],
+                  startDate: '',
+                  frequency: 'weekly',
+                  bannerUrl: '',
+                  totalEpisodes: 0,
+                };
+                addShow(newShow);
+                setSelectedShow(newShow);
+                setEditDraft(newShow);
+              }}
+            >
+              + Add Show
+            </Button>
           </div>
         </div>
 
@@ -99,16 +167,23 @@ export default function App() {
 
         {/* Show cards */}
         <motion.div
-          layout
+          layout="position"
           className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl w-full"
         >
           {sortedShows.map((show) => (
-            <motion.div key={show.id} layout>
+            <motion.div key={show.id} layout="position">
               <ShowCard
                 show={show}
                 userState={userState.find((s) => s.showId === show.id)}
                 onUpdate={updateShowState}
-                onOpen={setSelectedShow}
+                onOpen={(show) => {
+                  setEditDraft(null);
+                  setSelectedShow(show);
+                }}
+                onEdit={(show) => {
+                  setEditDraft(show);
+                  setSelectedShow(show);
+                }}
               />
             </motion.div>
           ))}
@@ -131,28 +206,150 @@ export default function App() {
                 transition={{ type: 'spring', stiffness: 300, damping: 25 }}
                 onClick={(e) => e.stopPropagation()}
               >
-                <h2 className="text-xl font-semibold">{selectedShow.title}</h2>
+                <>
+                  <h2 className="text-xl font-semibold mb-4">
+                    {showData!.title}
+                  </h2>
 
-                <p className="text-sm text-muted-foreground mb-4">
-                  {selectedShow.hosts.join(', ')}
-                </p>
+                  <EditableField
+                    label="Title"
+                    value={showData!.title}
+                    isEditing={isEditing}
+                    renderInput={() => (
+                      <input
+                        className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+                        value={editDraft!.title}
+                        onChange={(e) =>
+                          setEditDraft({ ...editDraft!, title: e.target.value })
+                        }
+                      />
+                    )}
+                  />
 
-                <div className="space-y-2 text-sm">
-                  <p>Start date: {selectedShow.startDate}</p>
-                  <p>Frequency: {selectedShow.frequency}</p>
-                  <p>Total episodes: {selectedShow.totalEpisodes}</p>
-                </div>
+                  <EditableField
+                    label="Hosts"
+                    value={showData!.hosts.join(', ')}
+                    isEditing={isEditing}
+                    renderInput={() => (
+                      <input
+                        className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+                        value={editDraft!.hosts.join(', ')}
+                        onChange={(e) =>
+                          setEditDraft({
+                            ...editDraft!,
+                            hosts: e.target.value
+                              .split(',')
+                              .map((h) => h.trim()),
+                          })
+                        }
+                      />
+                    )}
+                  />
 
-                <div className="mt-6 flex justify-end">
-                  <button
-                    className="rounded-md px-4 py-2 bg-secondary hover:bg-secondary/80 transition"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setSelectedShow(null);
-                    }}
-                  >
-                    Close
-                  </button>
+                  <EditableField
+                    label="Start Date"
+                    value={showData!.startDate || '—'}
+                    isEditing={isEditing}
+                    renderInput={() => (
+                      <input
+                        className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+                        value={editDraft!.startDate}
+                        onChange={(e) =>
+                          setEditDraft({
+                            ...editDraft!,
+                            startDate: e.target.value,
+                          })
+                        }
+                      />
+                    )}
+                  />
+
+                  <EditableField
+                    label="Frequency"
+                    value={showData!.frequency}
+                    isEditing={isEditing}
+                    renderInput={() => (
+                      <select
+                        className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+                        value={editDraft!.frequency}
+                        onChange={(e) =>
+                          setEditDraft({
+                            ...editDraft!,
+                            frequency: e.target.value as RadioShow['frequency'],
+                          })
+                        }
+                      >
+                        <option value="weekly">Weekly</option>
+                        <option value="biweekly">Biweekly</option>
+                        <option value="irregular">Irregular</option>
+                      </select>
+                    )}
+                  />
+
+                  <EditableField
+                    label="Total Episodes"
+                    value={showData!.totalEpisodes}
+                    isEditing={isEditing}
+                    renderInput={() => (
+                      <input
+                        type="number"
+                        className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+                        value={editDraft!.totalEpisodes}
+                        onChange={(e) =>
+                          setEditDraft({
+                            ...editDraft!,
+                            totalEpisodes: Number(e.target.value),
+                          })
+                        }
+                      />
+                    )}
+                  />
+                </>
+
+                <div className="mt-6 flex justify-end gap-2">
+                  {isEditing ? (
+                    <>
+                      <button
+                        className="px-4 py-2 rounded-md bg-secondary"
+                        onClick={() => {
+                          const confirmed = window.confirm(
+                            `Delete "${selectedShow!.title}"?\nThis cannot be undone.`
+                          );
+
+                          if (!confirmed) return;
+
+                          deleteShow(selectedShow!.id);
+                          setEditDraft(null);
+                          setSelectedShow(null);
+                        }}
+                      >
+                        Delete
+                      </button>
+                      <button
+                        className="px-4 py-2 rounded-md bg-secondary"
+                        onClick={() => {
+                          updateShow(editDraft!);
+                          setEditDraft(null);
+                        }}
+                      >
+                        Save
+                      </button>
+
+                      <button
+                        className="px-4 py-2 rounded-md bg-muted"
+                        onClick={() => setEditDraft(null)}
+                      >
+                        Cancel
+                      </button>
+                    </>
+                  ) : (
+                    <button
+                      className="px-4 py-2 rounded-md bg-secondary"
+                      onClick={() => setSelectedShow(null)}
+                    >
+                      Close
+                    </button>
+                  )}
                 </div>
               </motion.div>
             </motion.div>

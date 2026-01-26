@@ -1,6 +1,6 @@
 import type { RadioShow } from '@/types/radio';
 
-export const shows: RadioShow[] = [
+export const defaultShows: RadioShow[] = [
   {
     id: 'ag_yabushima',
     title: '薮島朱音の強くなるラジオ',

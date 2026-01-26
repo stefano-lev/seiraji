@@ -7,9 +7,10 @@ type Props = {
   userState?: UserShowState;
   onUpdate: (state: UserShowState) => void;
   onOpen?: (show: RadioShow) => void;
+  onEdit?: (show: RadioShow) => void;
 };
 
-export function ShowCard({ show, userState, onUpdate, onOpen }: Props) {
+export function ShowCard({ show, userState, onUpdate, onOpen, onEdit }: Props) {
   const state: UserShowState = userState ?? {
     showId: show.id,
     status: 'backlog',
@@ -22,12 +23,13 @@ export function ShowCard({ show, userState, onUpdate, onOpen }: Props) {
     <motion.div
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
-      whileHover={{ scale: 1.015 }}
+      whileHover={{ y: -4 }}
       transition={{ duration: 0.25, ease: 'easeOut' }}
     >
       <Card
         onClick={() => onOpen?.(show)}
         className="
+          group
           rounded-2xl
           border border-border/50
           bg-background/80
@@ -37,7 +39,7 @@ export function ShowCard({ show, userState, onUpdate, onOpen }: Props) {
           transition-shadow
         "
       >
-        <CardHeader className="flex flex-row items-center gap-4">
+        <CardHeader className="relative flex flex-row items-center gap-4">
           <img
             src={iconSrc}
             onError={(e) => {
@@ -55,7 +57,27 @@ export function ShowCard({ show, userState, onUpdate, onOpen }: Props) {
               {show.hosts.join(', ')}
             </p>
           </div>
+
+          <button
+            className="
+              absolute top-3 right-3
+              rounded-md px-2 py-1 text-xs
+              bg-secondary text-secondary-foreground
+              opacity-0 group-hover:opacity-100
+              active:scale-95
+              shadow-sm
+              transition-opacity
+            "
+            onClick={(e) => {
+              e.stopPropagation();
+              onEdit?.(show);
+            }}
+          >
+            Edit
+          </button>
         </CardHeader>
+
+        <CardContent className=""> </CardContent>
 
         <CardContent className="space-y-2">
           <motion.p
