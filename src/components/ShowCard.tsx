@@ -1,6 +1,5 @@
 import type { RadioShow, UserShowState } from '@/types/radio';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
-import { motion } from 'framer-motion';
 
 type Props = {
   show: RadioShow;
@@ -20,12 +19,7 @@ export function ShowCard({ show, userState, onUpdate, onOpen, onEdit }: Props) {
   const iconSrc = show.iconUrl ?? '/placeholders/show-placeholder.png';
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 12 }}
-      animate={{ opacity: 1, y: 0 }}
-      whileHover={{ y: -4 }}
-      transition={{ duration: 0.25, ease: 'easeOut' }}
-    >
+    <div className="transition-transform hover:-translate-y-1">
       <Card
         onClick={() => onOpen?.(show)}
         className="
@@ -80,14 +74,7 @@ export function ShowCard({ show, userState, onUpdate, onOpen, onEdit }: Props) {
         <CardContent className=""> </CardContent>
 
         <CardContent className="space-y-2">
-          <motion.p
-            key={state.status}
-            initial={{ opacity: 0, y: -4 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.2 }}
-          >
-            Status: {state.status}
-          </motion.p>
+          <p>Status: {state.status}</p>
 
           <p>Last episode: {state.lastListenedEpisode ?? '—'}</p>
         </CardContent>
@@ -193,6 +180,6 @@ export function ShowCard({ show, userState, onUpdate, onOpen, onEdit }: Props) {
           </div>
         </CardContent>
       </Card>
-    </motion.div>
+    </div>
   );
 }
