@@ -54,14 +54,6 @@ export default function App() {
     localStorage.setItem('shows', JSON.stringify(shows));
   }, [shows]);
 
-  const sortedShows = useMemo(() => {
-    return [...shows].sort((a, b) =>
-      sortMode === 'title'
-        ? a.title.localeCompare(b.title, 'ja')
-        : a.hosts[0].localeCompare(b.hosts[0], 'ja')
-    );
-  }, [shows, sortMode]);
-
   const defaultState: UserShowState[] = [];
 
   const [userState, setUserState] = useState<UserShowState[]>(() => {
@@ -72,6 +64,11 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem('userState', JSON.stringify(userState));
   }, [userState]);
+
+  const [searchQuery, setSearchQuery] = useState('');
+  const [statusFilter, setStatusFilter] = useState<
+    UserShowState['status'] | 'all'
+  >('all');
 
   function updateShowState(updated: UserShowState) {
     setUserState((prev) =>
@@ -92,6 +89,29 @@ export default function App() {
   function deleteShow(id: string) {
     setShows((prev) => prev.filter((s) => s.id !== id));
   }
+
+  const visibleShows = useMemo(() => {
+    return [...shows]
+      .filter((show) => {
+        const query = searchQuery.toLowerCase();
+
+        const matchesSearch =
+          show.title.toLowerCase().includes(query) ||
+          show.hosts.some((h) => h.toLowerCase().includes(query));
+
+        if (!matchesSearch) return false;
+
+        if (statusFilter === 'all') return true;
+
+        const state = userState.find((s) => s.showId === show.id);
+        return state?.status === statusFilter;
+      })
+      .sort((a, b) =>
+        sortMode === 'title'
+          ? a.title.localeCompare(b.title, 'ja')
+          : a.hosts[0].localeCompare(b.hosts[0], 'ja')
+      );
+  }, [shows, userState, sortMode, searchQuery, statusFilter]);
 
   return (
     <div className={dark ? 'dark' : ''}>
@@ -160,6 +180,30 @@ export default function App() {
           </div>
         </div>
 
+        <div className="flex flex-wrap gap-2 items-center">
+          <input
+            type="text"
+            placeholder="Search shows..."
+            className="rounded-md border p-2 bg-background"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+
+          <select
+            className="rounded-md border p-2 bg-background"
+            value={statusFilter}
+            onChange={(e) =>
+              setStatusFilter(e.target.value as typeof statusFilter)
+            }
+          >
+            <option value="all">All</option>
+            <option value="listening">Listening</option>
+            <option value="backlog">Backlog</option>
+            <option value="completed">Completed</option>
+            <option value="dropped">Dropped</option>
+          </select>
+        </div>
+
         {/* Sorting indicator */}
         <p className="text-sm text-muted-foreground">
           Sorted by {sortMode === 'title' ? 'Title' : 'Host'}
@@ -167,7 +211,7 @@ export default function App() {
 
         {/* Show cards */}
         <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl w-full">
-          {sortedShows.map((show) => (
+          {visibleShows.map((show) => (
             <ShowCard
               show={show}
               userState={userState.find((s) => s.showId === show.id)}
