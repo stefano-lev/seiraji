@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useRef, useMemo } from 'react';
 import { Button } from './components/ui/button';
 import { Card, CardContent } from './components/ui/card';
 
@@ -8,6 +8,13 @@ import { defaultShows } from '@/data/shows';
 import type { UserShowState } from '@/types/radio';
 import { ShowCard } from '@/components/ShowCard';
 import type { RadioShow } from '@/types/radio';
+
+import {
+  buildExportPayload,
+  downloadJson,
+  isExportPayload,
+  readJsonFile,
+} from '@/lib/storage';
 
 type SortMode = 'title' | 'host';
 
@@ -45,9 +52,16 @@ export default function App() {
   const isEditing = editDraft !== null;
   const showData = editDraft ?? selectedShow;
 
+  const importInputRef = useRef<HTMLInputElement | null>(null);
+
   const [shows, setShows] = useState<RadioShow[]>(() => {
     const stored = localStorage.getItem('shows');
-    return stored ? JSON.parse(stored) : defaultShows;
+    const parsed: RadioShow[] = stored ? JSON.parse(stored) : defaultShows;
+
+    return parsed.map((s) => ({
+      ...s,
+      episodeDurationMinutes: s.episodeDurationMinutes ?? 30,
+    }));
   });
 
   useEffect(() => {
@@ -64,6 +78,90 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem('userState', JSON.stringify(userState));
   }, [userState]);
+
+  const [statsOpen, setStatsOpen] = useState(false);
+
+  const stats = useMemo(() => {
+    const totalShows = shows.length;
+
+    const statusCounts = {
+      listening: 0,
+      backlog: 0,
+      completed: 0,
+      dropped: 0,
+    };
+
+    let totalEpisodesListened = 0;
+    let totalEpisodesPossible = 0;
+
+    for (const show of shows) {
+      const state = userState.find((s) => s.showId === show.id);
+
+      const status = state?.status ?? 'backlog';
+      statusCounts[status]++;
+
+      const listened = state?.lastListenedEpisode ?? 0;
+      totalEpisodesListened += listened;
+
+      totalEpisodesPossible += show.totalEpisodes ?? 0;
+    }
+
+    let totalMinutesListened = 0;
+
+    for (const show of shows) {
+      const state = userState.find((s) => s.showId === show.id);
+
+      const listenedEpisodes = state?.lastListenedEpisode ?? 0;
+      const mins = show.episodeDurationMinutes ?? 30;
+
+      totalMinutesListened += listenedEpisodes * mins;
+    }
+
+    const approxMinutes = totalMinutesListened;
+
+    const completionPct =
+      totalEpisodesPossible > 0
+        ? Math.round((totalEpisodesListened / totalEpisodesPossible) * 100)
+        : 0;
+
+    return {
+      totalShows,
+      statusCounts,
+      totalEpisodesListened,
+      totalEpisodesPossible,
+      approxMinutes,
+      completionPct,
+    };
+  }, [shows, userState]);
+
+  function handleExport() {
+    const payload = buildExportPayload(shows, userState);
+    downloadJson('seiyuu-radio-tracker-backup.json', payload);
+  }
+
+  async function handleImportFile(file: File) {
+    try {
+      const data = await readJsonFile(file);
+
+      if (!isExportPayload(data)) {
+        alert('Invalid import file format.');
+        return;
+      }
+
+      const confirmOverwrite = window.confirm(
+        'Import will overwrite your current local data. Continue?'
+      );
+      if (!confirmOverwrite) return;
+
+      setShows(data.shows);
+      setUserState(data.userState);
+
+      alert('Import successful!');
+    } catch (err) {
+      console.error(err);
+      alert('Failed to import file.');
+    }
+  }
 
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<
@@ -115,17 +213,45 @@ export default function App() {
 
   return (
     <div className={dark ? 'dark' : ''}>
-      <div className="min-h-screen bg-background text-foreground p-8 flex flex-col items-center gap-6">
-        {/* Dark mode toggle */}
-        <Button
-          className="self-end"
-          onClick={(e) => {
-            e.stopPropagation();
-            setDark(!dark);
+      <div className="min-h-screen bg-background text-foreground p-8 flex flex-col items-center gap-2">
+        <div className="w-full flex items-center justify-between">
+          <div className="flex flex-wrap gap-2">
+            <Button variant="secondary" onClick={() => setStatsOpen(true)}>
+              Stats
+            </Button>
+            <Button variant="secondary" onClick={handleExport}>
+              Export
+            </Button>
+            <Button
+              variant="secondary"
+              onClick={() => importInputRef.current?.click()}
+            >
+              Import
+            </Button>
+          </div>
+
+          <Button
+            onClick={(e) => {
+              e.stopPropagation();
+              setDark(!dark);
+            }}
+          >
+            Toggle {dark ? 'Light' : 'Dark'}
+          </Button>
+        </div>
+
+        <input
+          ref={importInputRef}
+          type="file"
+          accept="application/json"
+          className="hidden"
+          onChange={(e) => {
+            const file = e.target.files?.[0];
+            if (!file) return;
+            handleImportFile(file);
+            e.currentTarget.value = ''; // allow re-importing same file later
           }}
-        >
-          Toggle {dark ? 'Light' : 'Dark'}
-        </Button>
+        />
 
         {/* Header card + Sort buttons */}
         <div className="flex flex-col md:flex-row items-center gap-4">
@@ -169,6 +295,7 @@ export default function App() {
                   frequency: 'weekly',
                   bannerUrl: '',
                   totalEpisodes: 0,
+                  episodeDurationMinutes: 30,
                 };
                 addShow(newShow);
                 setSelectedShow(newShow);
@@ -344,6 +471,26 @@ export default function App() {
                 />
               </>
 
+              <EditableField
+                label="Episode Duration (minutes)"
+                value={showData!.episodeDurationMinutes ?? '—'}
+                isEditing={isEditing}
+                renderInput={() => (
+                  <input
+                    type="number"
+                    min={1}
+                    className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+                    value={showData!.episodeDurationMinutes ?? 30}
+                    onChange={(e) =>
+                      setEditDraft({
+                        ...editDraft!,
+                        episodeDurationMinutes: Number(e.target.value),
+                      })
+                    }
+                  />
+                )}
+              />
+
               <div className="mt-6 flex justify-end gap-2">
                 {isEditing ? (
                   <>
@@ -388,6 +535,97 @@ export default function App() {
                     Close
                   </button>
                 )}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+
+        {statsOpen && (
+          <motion.div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={(e) => {
+              e.stopPropagation();
+              setStatsOpen(false);
+            }}
+          >
+            <motion.div
+              className="max-w-lg w-full rounded-2xl bg-background p-6 shadow-xl"
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.15, ease: 'easeOut' }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <h2 className="text-xl font-semibold mb-4">Stats</h2>
+
+              <div className="space-y-3 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Total shows</span>
+                  <span className="font-medium">{stats.totalShows}</span>
+                </div>
+
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">
+                    Episodes listened
+                  </span>
+                  <span className="font-medium">
+                    {stats.totalEpisodesListened}
+                  </span>
+                </div>
+
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">
+                    Approx time listened
+                  </span>
+                  <span className="font-medium">
+                    {Math.round(stats.approxMinutes / 60)} hrs
+                  </span>
+                </div>
+
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">
+                    Completion (approx)
+                  </span>
+                  <span className="font-medium">{stats.completionPct}%</span>
+                </div>
+
+                <hr className="my-3 border-border/60" />
+
+                <div className="grid grid-cols-2 gap-2">
+                  <div className="rounded-xl border p-3">
+                    <div className="text-muted-foreground">Listening</div>
+                    <div className="text-lg font-semibold">
+                      {stats.statusCounts.listening}
+                    </div>
+                  </div>
+
+                  <div className="rounded-xl border p-3">
+                    <div className="text-muted-foreground">Backlog</div>
+                    <div className="text-lg font-semibold">
+                      {stats.statusCounts.backlog}
+                    </div>
+                  </div>
+
+                  <div className="rounded-xl border p-3">
+                    <div className="text-muted-foreground">Completed</div>
+                    <div className="text-lg font-semibold">
+                      {stats.statusCounts.completed}
+                    </div>
+                  </div>
+
+                  <div className="rounded-xl border p-3">
+                    <div className="text-muted-foreground">Dropped</div>
+                    <div className="text-lg font-semibold">
+                      {stats.statusCounts.dropped}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-6 flex justify-end">
+                <Button onClick={() => setStatsOpen(false)}>Close</Button>
               </div>
             </motion.div>
           </motion.div>

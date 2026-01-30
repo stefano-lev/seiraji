@@ -10,6 +10,7 @@ export const defaultShows: RadioShow[] = [
     bannerUrl: '/banners/ag_tsuna.jpg',
     iconUrl: '/icons/ag_tsuna.jpg',
     totalEpisodes: 132,
+    episodeDurationMinutes: 29,
   },
   {
     id: 'joqr-date',
@@ -20,6 +21,7 @@ export const defaultShows: RadioShow[] = [
     bannerUrl: '/banners/joqr-date.jpg',
     iconUrl: '/icons/joqr-date.jpg',
     totalEpisodes: 200,
+    episodeDurationMinutes: 29,
   },
   {
     id: 'onsen-tsukine',
@@ -30,6 +32,7 @@ export const defaultShows: RadioShow[] = [
     bannerUrl: '/banners/onsen-tsukine.jpg',
     iconUrl: '/icons/onsen-tsukine.jpg',
     totalEpisodes: 21,
+    episodeDurationMinutes: 50,
   },
   {
     id: 'onsen-sasaki',
@@ -40,6 +43,7 @@ export const defaultShows: RadioShow[] = [
     bannerUrl: '/banners/onsen-sasaki.jpg',
     iconUrl: '/icons/onsen-sasaki.jpg',
     totalEpisodes: 22,
+    episodeDurationMinutes: 40,
   },
   {
     id: 'audee-hanamiya',
@@ -50,6 +54,7 @@ export const defaultShows: RadioShow[] = [
     bannerUrl: '/banners/audee-hanamiya.jpg',
     iconUrl: '/icons/audee-hanamiya.jpg',
     totalEpisodes: 94,
+    episodeDurationMinutes: 30,
   },
   {
     id: 'qlover-hayama',
@@ -60,6 +65,7 @@ export const defaultShows: RadioShow[] = [
     bannerUrl: '/banners/qlover-hayama.jpg',
     iconUrl: '/icons/qlover-hayama.jpg',
     totalEpisodes: 65,
+    episodeDurationMinutes: 23,
   },
   {
     id: 'audee-nonaka',
@@ -70,6 +76,7 @@ export const defaultShows: RadioShow[] = [
     bannerUrl: '/banners/audee-nonaka.jpg',
     iconUrl: '/icons/audee-nonaka.jpg',
     totalEpisodes: 16,
+    episodeDurationMinutes: 29,
   },
   {
     id: 'radiko-sakakura',
@@ -80,5 +87,6 @@ export const defaultShows: RadioShow[] = [
     bannerUrl: '/banners/radiko-sakakura.jpg',
     iconUrl: '/icons/radiko-sakakura.jpg',
     totalEpisodes: 1,
+    episodeDurationMinutes: 29,
   },
 ];

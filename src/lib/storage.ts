@@ -1,6 +1,55 @@
-import type { UserShowState } from '@/types/radio';
+import type { RadioShow, UserShowState } from '@/types/radio';
 
 const KEY = 'seiraji:user-state';
+
+export type ExportPayload = {
+  version: 1;
+  exportedAt: string;
+  shows: RadioShow[];
+  userState: UserShowState[];
+};
+
+export function buildExportPayload(
+  shows: RadioShow[],
+  userState: UserShowState[]
+): ExportPayload {
+  return {
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    shows,
+    userState,
+  };
+}
+
+export function downloadJson(filename: string, data: unknown) {
+  const json = JSON.stringify(data, null, 2);
+  const blob = new Blob([json], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  a.click();
+
+  URL.revokeObjectURL(url);
+}
+
+export async function readJsonFile(file: File): Promise<unknown> {
+  const text = await file.text();
+  return JSON.parse(text);
+}
+
+export function isExportPayload(data: unknown): data is ExportPayload {
+  if (data === null || typeof data !== 'object') return false;
+
+  const obj = data as Record<string, unknown>;
+
+  return (
+    obj.version === 1 &&
+    Array.isArray(obj.shows) &&
+    Array.isArray(obj.userState)
+  );
+}
 
 export function loadUserState(): UserShowState[] {
   try {

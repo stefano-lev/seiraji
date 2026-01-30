@@ -8,6 +8,7 @@ export interface RadioShow {
   bannerUrl?: string;
   iconUrl?: string;
   totalEpisodes?: number;
+  episodeDurationMinutes?: number;
 }
 
 // User-specific state (stored locally)
