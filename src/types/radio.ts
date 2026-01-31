@@ -15,7 +15,6 @@ export interface RadioShow {
 export type UserShowState = {
   showId: string;
   lastListenedEpisode?: number;
-  completedEpisodes: number[];
-  rating?: 1 | 2 | 3 | 4 | 5;
   status: 'listening' | 'backlog' | 'completed' | 'dropped';
+  isPinned?: boolean;
 };

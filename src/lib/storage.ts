@@ -1,6 +1,38 @@
 import type { RadioShow, UserShowState } from '@/types/radio';
 
 const KEY = 'seiraji:user-state';
+const ACTIVITY_KEY = 'seiraji:activity';
+
+export type ActivityEvent = {
+  id: string;
+  ts: string;
+  type: 'episode_progress';
+  showId: string;
+  episode: number;
+  delta: number;
+};
+
+export function loadActivity(): ActivityEvent[] {
+  try {
+    const raw = localStorage.getItem(ACTIVITY_KEY);
+    return raw ? (JSON.parse(raw) as ActivityEvent[]) : [];
+  } catch {
+    return [];
+  }
+}
+
+export function saveActivity(events: ActivityEvent[]) {
+  localStorage.setItem(ACTIVITY_KEY, JSON.stringify(events));
+}
+
+export function appendActivityEvent(
+  events: ActivityEvent[],
+  event: ActivityEvent,
+  max = 200
+): ActivityEvent[] {
+  const next = [event, ...events]; // newest first
+  return next.slice(0, max);
+}
 
 export type ExportPayload = {
   version: 1;

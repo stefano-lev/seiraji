@@ -5,15 +5,26 @@ type Props = {
   show: RadioShow;
   userState?: UserShowState;
   onUpdate: (state: UserShowState) => void;
+  onUpdateEpisode: (showId: string, nextEpisode: number) => void;
   onOpen?: (show: RadioShow) => void;
   onEdit?: (show: RadioShow) => void;
+  onTogglePinned: (showId: string) => void;
 };
 
-export function ShowCard({ show, userState, onUpdate, onOpen, onEdit }: Props) {
+export function ShowCard({
+  show,
+  userState,
+  onUpdate,
+  onUpdateEpisode,
+  onOpen,
+  onEdit,
+  onTogglePinned,
+}: Props) {
   const state: UserShowState = userState ?? {
     showId: show.id,
     status: 'backlog',
-    completedEpisodes: [],
+    lastListenedEpisode: 0,
+    isPinned: false,
   };
 
   const iconSrc = show.iconUrl ?? '/placeholders/show-placeholder.png';
@@ -33,6 +44,24 @@ export function ShowCard({ show, userState, onUpdate, onOpen, onEdit }: Props) {
           transition-shadow
         "
       >
+        {state.isPinned && (
+          <div className="pointer-events-none absolute top-2 left-2 z-10">
+            <div
+              className="
+                h-10 w-10 rounded-full
+                flex items-center justify-center
+                bg-yellow-500/15
+                border border-yellow-500/30
+                text-yellow-500
+                shadow-sm
+                backdrop-blur
+              "
+            >
+              <span className="text-xl leading-none">★</span>
+            </div>
+          </div>
+        )}
+
         <CardHeader className="relative flex flex-row items-center gap-4">
           <img
             src={iconSrc}
@@ -51,6 +80,19 @@ export function ShowCard({ show, userState, onUpdate, onOpen, onEdit }: Props) {
               {show.hosts.join(', ')}
             </p>
           </div>
+
+          <button
+            className=" absolute top-3 right-12 rounded-md px-2 py-1 text-xs
+                bg-secondary text-secondary-foreground opacity-0
+                group-hover:opacity-100 active:scale-95 shadow-sm transition-opacity
+                "
+            onClick={(e) => {
+              e.stopPropagation();
+              onTogglePinned(show.id);
+            }}
+          >
+            {state.isPinned ? '★' : '☆'}
+          </button>
 
           <button
             className="
@@ -123,13 +165,10 @@ export function ShowCard({ show, userState, onUpdate, onOpen, onEdit }: Props) {
                 "
                 onClick={(e) => {
                   e.stopPropagation();
-                  onUpdate({
-                    ...state,
-                    lastListenedEpisode: Math.max(
-                      0,
-                      (state.lastListenedEpisode ?? 0) - 1
-                    ),
-                  });
+                  onUpdateEpisode(
+                    show.id,
+                    Math.max(0, (state.lastListenedEpisode ?? 0) - 1)
+                  );
                 }}
               >
                 −
@@ -149,10 +188,7 @@ export function ShowCard({ show, userState, onUpdate, onOpen, onEdit }: Props) {
                 min={0}
                 onChange={(e) => {
                   e.stopPropagation();
-                  onUpdate({
-                    ...state,
-                    lastListenedEpisode: Number(e.target.value),
-                  });
+                  onUpdateEpisode(show.id, Number(e.target.value));
                 }}
               />
 
@@ -168,10 +204,10 @@ export function ShowCard({ show, userState, onUpdate, onOpen, onEdit }: Props) {
                 "
                 onClick={(e) => {
                   e.stopPropagation();
-                  onUpdate({
-                    ...state,
-                    lastListenedEpisode: (state.lastListenedEpisode ?? 0) + 1,
-                  });
+                  onUpdateEpisode(
+                    show.id,
+                    (state.lastListenedEpisode ?? 0) + 1
+                  );
                 }}
               >
                 +

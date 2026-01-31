@@ -9,6 +9,9 @@ import type { UserShowState } from '@/types/radio';
 import { ShowCard } from '@/components/ShowCard';
 import type { RadioShow } from '@/types/radio';
 
+import { loadActivity, saveActivity, appendActivityEvent } from '@/lib/storage';
+import type { ActivityEvent } from '@/lib/storage';
+
 import {
   buildExportPayload,
   downloadJson,
@@ -80,6 +83,23 @@ export default function App() {
   }, [userState]);
 
   const [statsOpen, setStatsOpen] = useState(false);
+  const [historyOpen, setHistoryOpen] = useState(false);
+
+  const [activity, setActivity] = useState<ActivityEvent[]>(() =>
+    loadActivity()
+  );
+
+  useEffect(() => {
+    saveActivity(activity);
+  }, [activity]);
+
+  // avoid using Date.now directly, cache it instead
+  const [now, setNow] = useState(() => Date.now());
+
+  useEffect(() => {
+    const id = window.setInterval(() => setNow(Date.now()), 60_000); // update every min
+    return () => window.clearInterval(id);
+  }, []);
 
   const stats = useMemo(() => {
     const totalShows = shows.length;
@@ -133,6 +153,75 @@ export default function App() {
       completionPct,
     };
   }, [shows, userState]);
+
+  function getShowTitle(showId: string) {
+    return shows.find((s) => s.id === showId)?.title ?? 'Unknown show';
+  }
+
+  function timeAgo(iso: string, nowMs: number) {
+    const ms = nowMs - new Date(iso).getTime();
+    const s = Math.max(0, Math.floor(ms / 1000));
+
+    if (s < 10) return 'just now';
+    if (s < 60) return `${s}s ago`;
+
+    const m = Math.floor(s / 60);
+    if (m < 60) return `${m}m ago`;
+
+    const h = Math.floor(m / 60);
+    if (h < 24) return `${h}h ago`;
+
+    const d = Math.floor(h / 24);
+    return `${d}d ago`;
+  }
+
+  function updateEpisode(showId: string, nextEpisode: number) {
+    const prev = userState.find((s) => s.showId === showId);
+    const prevEpisode = prev?.lastListenedEpisode ?? 0;
+
+    const delta = nextEpisode - prevEpisode;
+    if (delta === 0) return;
+
+    // update user state
+    updateShowState({
+      showId,
+      status: prev?.status ?? 'backlog',
+      isPinned: prev?.isPinned ?? false,
+      lastListenedEpisode: nextEpisode,
+    });
+
+    // log event
+    const ev: ActivityEvent = {
+      id: crypto.randomUUID(),
+      ts: new Date().toISOString(),
+      type: 'episode_progress',
+      showId,
+      episode: nextEpisode,
+      delta,
+    };
+
+    setActivity((prevEvents) => appendActivityEvent(prevEvents, ev));
+  }
+
+  function getShowState(showId: string): UserShowState {
+    return (
+      userState.find((s) => s.showId === showId) ?? {
+        showId,
+        status: 'backlog',
+        lastListenedEpisode: 0,
+        isPinned: false,
+      }
+    );
+  }
+
+  function togglePinned(showId: string) {
+    const current = getShowState(showId);
+
+    updateShowState({
+      ...current,
+      isPinned: !current.isPinned,
+    });
+  }
 
   function handleExport() {
     const payload = buildExportPayload(shows, userState);
@@ -188,6 +277,21 @@ export default function App() {
     setShows((prev) => prev.filter((s) => s.id !== id));
   }
 
+  function deleteAllData() {
+    const ok = window.confirm(
+      'Delete ALL of your tracker data?\n(This cannot be undone!)'
+    );
+    if (!ok) return;
+
+    setActivity([]);
+    setShows([]);
+    setUserState([]);
+
+    // clear localStorage for relevant keys
+    localStorage.removeItem('shows');
+    localStorage.removeItem('userState');
+  }
+
   const visibleShows = useMemo(() => {
     return [...shows]
       .filter((show) => {
@@ -204,11 +308,22 @@ export default function App() {
         const state = userState.find((s) => s.showId === show.id);
         return state?.status === statusFilter;
       })
-      .sort((a, b) =>
-        sortMode === 'title'
-          ? a.title.localeCompare(b.title, 'ja')
-          : a.hosts[0].localeCompare(b.hosts[0], 'ja')
-      );
+      .sort((a, b) => {
+        const aPinned = userState.find((s) => s.showId === a.id)?.isPinned
+          ? 1
+          : 0;
+        const bPinned = userState.find((s) => s.showId === b.id)?.isPinned
+          ? 1
+          : 0;
+
+        if (aPinned !== bPinned) return bPinned - aPinned;
+
+        if (sortMode === 'title') {
+          return a.title.localeCompare(b.title, 'ja');
+        }
+
+        return a.hosts[0].localeCompare(b.hosts[0], 'ja');
+      });
   }, [shows, userState, sortMode, searchQuery, statusFilter]);
 
   return (
@@ -218,6 +333,9 @@ export default function App() {
           <div className="flex flex-wrap gap-2">
             <Button variant="secondary" onClick={() => setStatsOpen(true)}>
               Stats
+            </Button>
+            <Button variant="secondary" onClick={() => setHistoryOpen(true)}>
+              History
             </Button>
             <Button variant="secondary" onClick={handleExport}>
               Export
@@ -343,6 +461,7 @@ export default function App() {
               show={show}
               userState={userState.find((s) => s.showId === show.id)}
               onUpdate={updateShowState}
+              onUpdateEpisode={updateEpisode}
               onOpen={(show) => {
                 setEditDraft(null);
                 setSelectedShow(show);
@@ -351,6 +470,7 @@ export default function App() {
                 setEditDraft(show);
                 setSelectedShow(show);
               }}
+              onTogglePinned={togglePinned}
             />
           ))}
         </div>
@@ -624,8 +744,102 @@ export default function App() {
                 </div>
               </div>
 
+              <div className="grid grid-cols-2 gap-2">
+                <div className="bg-red hover:bg-red mt-6 flex justify-start">
+                  <details className="mt-4">
+                    <summary className="cursor-pointer text-red-600">
+                      ⚠️ Danger Zone ⚠️
+                    </summary>
+                    <Button
+                      className="mt-2 bg-red-600 hover:bg-red-700 text-white"
+                      onClick={deleteAllData}
+                    >
+                      Delete All Data
+                    </Button>
+                  </details>
+                </div>
+                <div className="mt-6 flex justify-end">
+                  <Button onClick={() => setStatsOpen(false)}>Close</Button>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+        {historyOpen && (
+          <motion.div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={(e) => {
+              e.stopPropagation();
+              setHistoryOpen(false);
+            }}
+          >
+            <motion.div
+              className="max-w-lg w-full rounded-2xl bg-background p-6 shadow-xl"
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.15, ease: 'easeOut' }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-xl font-semibold">History</h2>
+
+                <Button
+                  variant="secondary"
+                  onClick={() => {
+                    const ok = window.confirm(
+                      'Clear your activity history?\n(This cannot be undone.)'
+                    );
+                    if (!ok) return;
+                    setActivity([]);
+                  }}
+                >
+                  Clear
+                </Button>
+              </div>
+
+              {activity.length === 0 ? (
+                <p className="text-sm text-muted-foreground">No activity yet</p>
+              ) : (
+                <div className="space-y-2 max-h-[60vh] overflow-auto pr-1">
+                  {activity.map((ev) => {
+                    if (ev.type !== 'episode_progress') return null;
+
+                    const title = getShowTitle(ev.showId);
+                    const deltaLabel =
+                      ev.delta > 0 ? `+${ev.delta}` : `${ev.delta}`;
+
+                    return (
+                      <div
+                        key={ev.id}
+                        className="rounded-xl border border-border/60 p-3"
+                      >
+                        <div className="flex items-start justify-between gap-3">
+                          <div className="min-w-0">
+                            <div className="font-medium truncate">{title}</div>
+
+                            <div className="text-sm text-muted-foreground">
+                              Episode {ev.episode}{' '}
+                              <span className="ml-2 font-medium text-foreground">
+                                ({deltaLabel})
+                              </span>
+                            </div>
+                          </div>
+
+                          <div className="text-xs text-muted-foreground whitespace-nowrap">
+                            {timeAgo(ev.ts, now)}
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+
               <div className="mt-6 flex justify-end">
-                <Button onClick={() => setStatsOpen(false)}>Close</Button>
+                <Button onClick={() => setHistoryOpen(false)}>Close</Button>
               </div>
             </motion.div>
           </motion.div>
