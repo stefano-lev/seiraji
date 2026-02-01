@@ -9,6 +9,11 @@ type Props = {
   onOpen?: (show: RadioShow) => void;
   onEdit?: (show: RadioShow) => void;
   onTogglePinned: (showId: string) => void;
+  prefs: {
+    showTagsOnCard: boolean;
+    showStatusOnCard: boolean;
+    showLastEpisodeOnCard: boolean;
+  };
 };
 
 export function ShowCard({
@@ -19,12 +24,14 @@ export function ShowCard({
   onOpen,
   onEdit,
   onTogglePinned,
+  prefs,
 }: Props) {
   const state: UserShowState = userState ?? {
     showId: show.id,
     status: 'backlog',
     lastListenedEpisode: 0,
     isPinned: false,
+    tags: [],
   };
 
   const iconSrc = show.iconUrl ?? '/placeholders/show-placeholder.png';
@@ -34,15 +41,16 @@ export function ShowCard({
       <Card
         onClick={() => onOpen?.(show)}
         className="
-          group
-          rounded-2xl
-          border border-border/50
-          bg-background/80
-          backdrop-blur-sm
-          shadow-md
-          hover:shadow-xl
-          transition-shadow
-        "
+    relative
+    group
+    rounded-2xl
+    border border-border/50
+    bg-background/80
+    backdrop-blur-sm
+    shadow-md
+    hover:shadow-xl
+    transition-shadow
+  "
       >
         {state.isPinned && (
           <div className="pointer-events-none absolute top-2 left-2 z-10">
@@ -113,12 +121,12 @@ export function ShowCard({
           </button>
         </CardHeader>
 
-        <CardContent className=""> </CardContent>
-
         <CardContent className="space-y-2">
-          <p>Status: {state.status}</p>
+          {prefs.showStatusOnCard && <p>Status: {state.status}</p>}
 
-          <p>Last episode: {state.lastListenedEpisode ?? '—'}</p>
+          {prefs.showLastEpisodeOnCard && (
+            <p>Last episode: {state.lastListenedEpisode ?? '—'}</p>
+          )}
         </CardContent>
 
         <CardContent className="space-y-3" onClick={(e) => e.stopPropagation()}>
@@ -148,6 +156,20 @@ export function ShowCard({
               <option value="dropped">Dropped</option>
             </select>
           </div>
+
+          {/* Tags display */}
+          {prefs.showTagsOnCard && (state.tags?.length ?? 0) > 0 && (
+            <div className="flex flex-wrap gap-1">
+              {state.tags!.map((t) => (
+                <span
+                  key={t}
+                  className="text-xs px-2 py-0.5 rounded-full border bg-muted/40 text-muted-foreground"
+                >
+                  #{t}
+                </span>
+              ))}
+            </div>
+          )}
 
           {/* Episode Controls */}
           <div className="flex flex-col">

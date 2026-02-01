@@ -2,6 +2,8 @@ import type { RadioShow, UserShowState } from '@/types/radio';
 
 const KEY = 'seiraji:user-state';
 const ACTIVITY_KEY = 'seiraji:activity';
+const TAGS_KEY = 'seiraji:tags';
+const PREFS_KEY = 'seiraji:prefs';
 
 export type ActivityEvent = {
   id: string;
@@ -34,22 +36,50 @@ export function appendActivityEvent(
   return next.slice(0, max);
 }
 
+export type Preferences = {
+  showTagsOnCard: boolean;
+  showStatusOnCard: boolean;
+  showLastEpisodeOnCard: boolean;
+};
+
+export const defaultPrefs: Preferences = {
+  showTagsOnCard: true,
+  showStatusOnCard: true,
+  showLastEpisodeOnCard: true,
+};
+
+export function loadPrefs(): Preferences {
+  try {
+    const raw = localStorage.getItem(PREFS_KEY);
+    return raw ? { ...defaultPrefs, ...JSON.parse(raw) } : defaultPrefs;
+  } catch {
+    return defaultPrefs;
+  }
+}
+
+export function savePrefs(prefs: Preferences) {
+  localStorage.setItem(PREFS_KEY, JSON.stringify(prefs));
+}
+
 export type ExportPayload = {
-  version: 1;
+  version: 2;
   exportedAt: string;
   shows: RadioShow[];
   userState: UserShowState[];
+  tags: string[];
 };
 
 export function buildExportPayload(
   shows: RadioShow[],
-  userState: UserShowState[]
+  userState: UserShowState[],
+  tags: string[]
 ): ExportPayload {
   return {
-    version: 1,
+    version: 2,
     exportedAt: new Date().toISOString(),
     shows,
     userState,
+    tags,
   };
 }
 
@@ -73,14 +103,19 @@ export async function readJsonFile(file: File): Promise<unknown> {
 
 export function isExportPayload(data: unknown): data is ExportPayload {
   if (data === null || typeof data !== 'object') return false;
-
   const obj = data as Record<string, unknown>;
 
-  return (
-    obj.version === 1 &&
+  const baseOk =
+    (obj.version === 1 || obj.version === 2) &&
     Array.isArray(obj.shows) &&
-    Array.isArray(obj.userState)
-  );
+    Array.isArray(obj.userState);
+
+  if (!baseOk) return false;
+
+  // version 2.0 and up should have tags present
+  if (obj.version === 2 && !Array.isArray(obj.tags)) return false;
+
+  return true;
 }
 
 export function loadUserState(): UserShowState[] {
@@ -109,4 +144,34 @@ export function upsertShowState(
   const copy = [...all];
   copy[existingIndex] = updated;
   return copy;
+}
+
+// prevent duplicated tags by standardizing them
+export function normalizeTag(raw: string): string {
+  return raw.trim().toLowerCase().replace(/\s+/g, ' ');
+}
+
+export function loadTags(): string[] {
+  try {
+    const raw = localStorage.getItem(TAGS_KEY);
+    return raw ? (JSON.parse(raw) as string[]) : [];
+  } catch {
+    return [];
+  }
+}
+
+export function saveTags(tags: string[]) {
+  localStorage.setItem(TAGS_KEY, JSON.stringify(tags));
+}
+
+export function upsertTag(tags: string[], tag: string): string[] {
+  const t = normalizeTag(tag);
+  if (!t) return tags;
+  if (tags.includes(t)) return tags;
+  return [...tags, t].sort((a, b) => a.localeCompare(b));
+}
+
+export function removeTag(tags: string[], tag: string): string[] {
+  const t = normalizeTag(tag);
+  return tags.filter((x) => x !== t);
 }

@@ -11,6 +11,8 @@ import type { RadioShow } from '@/types/radio';
 
 import { loadActivity, saveActivity, appendActivityEvent } from '@/lib/storage';
 import type { ActivityEvent } from '@/lib/storage';
+import { loadTags, saveTags, upsertTag } from '@/lib/storage';
+import { loadPrefs, savePrefs } from '@/lib/storage';
 
 import {
   buildExportPayload,
@@ -71,6 +73,20 @@ export default function App() {
     localStorage.setItem('shows', JSON.stringify(shows));
   }, [shows]);
 
+  const [tags, setTags] = useState<string[]>(() => loadTags());
+
+  useEffect(() => {
+    saveTags(tags);
+  }, [tags]);
+
+  const [tagDraft, setTagDraft] = useState('');
+
+  const [prefs, setPrefs] = useState(() => loadPrefs());
+
+  useEffect(() => {
+    savePrefs(prefs);
+  }, [prefs]);
+
   const defaultState: UserShowState[] = [];
 
   const [userState, setUserState] = useState<UserShowState[]>(() => {
@@ -84,6 +100,7 @@ export default function App() {
 
   const [statsOpen, setStatsOpen] = useState(false);
   const [historyOpen, setHistoryOpen] = useState(false);
+  const [prefsOpen, setPrefsOpen] = useState(false);
 
   const [activity, setActivity] = useState<ActivityEvent[]>(() =>
     loadActivity()
@@ -92,6 +109,8 @@ export default function App() {
   useEffect(() => {
     saveActivity(activity);
   }, [activity]);
+
+  const [tagFilter, setTagFilter] = useState<string | 'all'>('all');
 
   // avoid using Date.now directly, cache it instead
   const [now, setNow] = useState(() => Date.now());
@@ -224,7 +243,7 @@ export default function App() {
   }
 
   function handleExport() {
-    const payload = buildExportPayload(shows, userState);
+    const payload = buildExportPayload(shows, userState, tags);
     downloadJson('seiyuu-radio-tracker-backup.json', payload);
   }
 
@@ -258,6 +277,16 @@ export default function App() {
   >('all');
 
   function updateShowState(updated: UserShowState) {
+    // update global tags
+    const updatedTags = updated.tags ?? [];
+    if (updatedTags.length > 0) {
+      setTags((prev) => {
+        let next = prev;
+        for (const t of updatedTags) next = upsertTag(next, t);
+        return next;
+      });
+    }
+
     setUserState((prev) =>
       prev.some((s) => s.showId === updated.showId)
         ? prev.map((s) => (s.showId === updated.showId ? updated : s))
@@ -290,6 +319,24 @@ export default function App() {
     // clear localStorage for relevant keys
     localStorage.removeItem('shows');
     localStorage.removeItem('userState');
+    localStorage.removeItem('seiraji:tags');
+    setTags([]);
+  }
+
+  function deleteAllTags() {
+    const ok = window.confirm(
+      'Delete ALL tags from every show?\n(This cannot be undone.)'
+    );
+    if (!ok) return;
+
+    // remove tags from every user state entry
+    setUserState((prev) => prev.map((s) => ({ ...s, tags: [] })));
+
+    // clear global tags list
+    setTags([]);
+
+    // clear storage
+    localStorage.removeItem('seiraji:tags');
   }
 
   const visibleShows = useMemo(() => {
@@ -303,10 +350,20 @@ export default function App() {
 
         if (!matchesSearch) return false;
 
-        if (statusFilter === 'all') return true;
-
         const state = userState.find((s) => s.showId === show.id);
-        return state?.status === statusFilter;
+
+        // status filter
+        if (statusFilter !== 'all') {
+          if (state?.status !== statusFilter) return false;
+        }
+
+        // tag filter
+        if (tagFilter !== 'all') {
+          const showTags = state?.tags ?? [];
+          if (!showTags.includes(tagFilter)) return false;
+        }
+
+        return true;
       })
       .sort((a, b) => {
         const aPinned = userState.find((s) => s.showId === a.id)?.isPinned
@@ -324,7 +381,7 @@ export default function App() {
 
         return a.hosts[0].localeCompare(b.hosts[0], 'ja');
       });
-  }, [shows, userState, sortMode, searchQuery, statusFilter]);
+  }, [shows, userState, sortMode, searchQuery, statusFilter, tagFilter]);
 
   return (
     <div className={dark ? 'dark' : ''}>
@@ -347,15 +404,19 @@ export default function App() {
               Import
             </Button>
           </div>
-
-          <Button
-            onClick={(e) => {
-              e.stopPropagation();
-              setDark(!dark);
-            }}
-          >
-            Toggle {dark ? 'Light' : 'Dark'}
-          </Button>
+          <div className="flex flex-wrap gap-2">
+            <Button
+              onClick={(e) => {
+                e.stopPropagation();
+                setDark(!dark);
+              }}
+            >
+              Toggle {dark ? 'Light' : 'Dark'}
+            </Button>
+            <Button variant="secondary" onClick={() => setPrefsOpen(true)}>
+              Preferences
+            </Button>
+          </div>
         </div>
 
         <input
@@ -447,6 +508,21 @@ export default function App() {
             <option value="completed">Completed</option>
             <option value="dropped">Dropped</option>
           </select>
+
+          <select
+            className="rounded-md border p-2 bg-background"
+            value={tagFilter}
+            onChange={(e) =>
+              setTagFilter(e.target.value === 'all' ? 'all' : e.target.value)
+            }
+          >
+            <option value="all">All tags</option>
+            {tags.map((t) => (
+              <option key={t} value={t}>
+                #{t}
+              </option>
+            ))}
+          </select>
         </div>
 
         {/* Sorting indicator */}
@@ -465,12 +541,19 @@ export default function App() {
               onOpen={(show) => {
                 setEditDraft(null);
                 setSelectedShow(show);
+
+                const currentTags = getShowState(show.id).tags ?? [];
+                setTagDraft(currentTags.join(', '));
               }}
               onEdit={(show) => {
                 setEditDraft(show);
                 setSelectedShow(show);
+
+                const currentTags = getShowState(show.id).tags ?? [];
+                setTagDraft(currentTags.join(', '));
               }}
               onTogglePinned={togglePinned}
+              prefs={prefs}
             />
           ))}
         </div>
@@ -610,6 +693,36 @@ export default function App() {
                   />
                 )}
               />
+
+              {/* Tags editor (User State) */}
+              <div className="mb-3">
+                <label className="text-sm mb-1 block">Tags</label>
+                <input
+                  type="text"
+                  placeholder="anime, comedy, drama"
+                  className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+                  value={tagDraft}
+                  onChange={(e) => setTagDraft(e.target.value)}
+                  onBlur={() => {
+                    const raw = tagDraft
+                      .split(',')
+                      .map((t) => t.trim())
+                      .filter(Boolean);
+
+                    const normalized = Array.from(
+                      new Set(raw.map((t) => t.toLowerCase()))
+                    );
+
+                    const current = getShowState(selectedShow!.id);
+                    updateShowState({
+                      ...current,
+                      tags: normalized,
+                    });
+
+                    setTagDraft(normalized.join(', '));
+                  }}
+                />
+              </div>
 
               <div className="mt-6 flex justify-end gap-2">
                 {isEditing ? (
@@ -752,6 +865,13 @@ export default function App() {
                     </summary>
                     <Button
                       className="mt-2 bg-red-600 hover:bg-red-700 text-white"
+                      onClick={deleteAllTags}
+                    >
+                      Delete All Tags
+                    </Button>
+
+                    <Button
+                      className="mt-2 bg-red-600 hover:bg-red-700 text-white"
                       onClick={deleteAllData}
                     >
                       Delete All Data
@@ -840,6 +960,77 @@ export default function App() {
 
               <div className="mt-6 flex justify-end">
                 <Button onClick={() => setHistoryOpen(false)}>Close</Button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+
+        {prefsOpen && (
+          <motion.div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={(e) => {
+              e.stopPropagation();
+              setPrefsOpen(false);
+            }}
+          >
+            <motion.div
+              className="max-w-lg w-full rounded-2xl bg-background p-6 shadow-xl"
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.15, ease: 'easeOut' }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <h2 className="text-xl font-semibold mb-4">Preferences</h2>
+
+              <div className="space-y-3 text-sm">
+                <label className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    checked={prefs.showStatusOnCard}
+                    onChange={(e) =>
+                      setPrefs((p) => ({
+                        ...p,
+                        showStatusOnCard: e.target.checked,
+                      }))
+                    }
+                  />
+                  Show status on cards
+                </label>
+
+                <label className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    checked={prefs.showLastEpisodeOnCard}
+                    onChange={(e) =>
+                      setPrefs((p) => ({
+                        ...p,
+                        showLastEpisodeOnCard: e.target.checked,
+                      }))
+                    }
+                  />
+                  Show last episode on cards
+                </label>
+
+                <label className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    checked={prefs.showTagsOnCard}
+                    onChange={(e) =>
+                      setPrefs((p) => ({
+                        ...p,
+                        showTagsOnCard: e.target.checked,
+                      }))
+                    }
+                  />
+                  Show tags on cards
+                </label>
+              </div>
+
+              <div className="mt-6 flex justify-end">
+                <Button onClick={() => setPrefsOpen(false)}>Close</Button>
               </div>
             </motion.div>
           </motion.div>

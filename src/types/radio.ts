@@ -17,4 +17,5 @@ export type UserShowState = {
   lastListenedEpisode?: number;
   status: 'listening' | 'backlog' | 'completed' | 'dropped';
   isPinned?: boolean;
+  tags?: string[];
 };
