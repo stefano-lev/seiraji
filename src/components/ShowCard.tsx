@@ -1,6 +1,14 @@
 import type { RadioShow, UserShowState } from '@/types/radio';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
+
 type Props = {
   show: RadioShow;
   userState?: UserShowState;
@@ -37,16 +45,16 @@ export function ShowCard({
   const iconSrc = show.iconUrl ?? '/placeholders/show-placeholder.png';
 
   return (
-    <div className="transition-transform hover:-translate-y-1">
+    <div className="will-change-transform hover:-translate-y-0.5 transition-transform h-full">
       <Card
         onClick={() => onOpen?.(show)}
         className="
+    h-full
     relative
     group
     rounded-2xl
     border border-border/50
-    bg-background/80
-    backdrop-blur-sm
+    bg-card
     shadow-md
     hover:shadow-xl
     transition-shadow
@@ -81,10 +89,11 @@ export function ShowCard({
           />
 
           <div className="flex flex-col">
-            <h3 className="text-lg font-semibold leading-tight">
+            <h3 className="text-lg font-semibold leading-tight line-clamp-2">
               {show.title}
             </h3>
-            <p className="text-sm text-muted-foreground">
+
+            <p className="text-sm text-muted-foreground line-clamp-1">
               {show.hosts.join(', ')}
             </p>
           </div>
@@ -129,55 +138,56 @@ export function ShowCard({
           )}
         </CardContent>
 
-        <CardContent className="space-y-3" onClick={(e) => e.stopPropagation()}>
-          {/* Status Selector */}
-          <div className="flex flex-col">
-            <label className="text-sm mb-1">Status</label>
-            <select
-              className="
-                w-full rounded-md border border-border/60 p-2
-                bg-background/90 text-foreground
-                focus:outline-none focus:ring-2 focus:ring-ring
-                hover:border-border
-                transition
-              "
-              value={state.status}
-              onChange={(e) => {
-                e.stopPropagation();
-                onUpdate({
-                  ...state,
-                  status: e.target.value as UserShowState['status'],
-                });
-              }}
-            >
-              <option value="listening">Listening</option>
-              <option value="backlog">Backlog</option>
-              <option value="completed">Completed</option>
-              <option value="dropped">Dropped</option>
-            </select>
-          </div>
-
-          {/* Tags display */}
-          {prefs.showTagsOnCard && (state.tags?.length ?? 0) > 0 && (
-            <div className="flex flex-wrap gap-1">
-              {state.tags!.map((t) => (
-                <span
-                  key={t}
-                  className="text-xs px-2 py-0.5 rounded-full border bg-muted/40 text-muted-foreground"
-                >
-                  #{t}
-                </span>
-              ))}
+        <CardContent
+          className="space-y-3 mt-2 pt-4 border-t border-border/50"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className="rounded-xl bg-muted/20 border border-border/40 p-3 space-y-3">
+            {/* Status Selector */}
+            <div className="flex flex-col">
+              <label className="text-sm mb-1">Status</label>
+              <Select
+                value={state.status}
+                onValueChange={(v) => {
+                  onUpdate({
+                    ...state,
+                    status: v as UserShowState['status'],
+                  });
+                }}
+              >
+                <SelectTrigger className="w-full bg-background/90">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="listening">Listening</SelectItem>
+                  <SelectItem value="backlog">Backlog</SelectItem>
+                  <SelectItem value="completed">Completed</SelectItem>
+                  <SelectItem value="dropped">Dropped</SelectItem>
+                </SelectContent>
+              </Select>
             </div>
-          )}
 
-          {/* Episode Controls */}
-          <div className="flex flex-col">
-            <label className="text-sm mb-1">Last Episode</label>
-            <div className="flex items-center gap-2">
-              {/* Decrement */}
-              <button
-                className="
+            {/* Tags display */}
+            {prefs.showTagsOnCard && (state.tags?.length ?? 0) > 0 && (
+              <div className="flex flex-wrap gap-1">
+                {state.tags!.map((t) => (
+                  <span
+                    key={t}
+                    className="text-xs px-2 py-0.5 rounded-full border bg-muted/40 text-muted-foreground"
+                  >
+                    #{t}
+                  </span>
+                ))}
+              </div>
+            )}
+
+            {/* Episode Controls */}
+            <div className="flex flex-col">
+              <label className="text-sm mb-1">Last Episode</label>
+              <div className="flex items-center gap-2">
+                {/* Decrement */}
+                <button
+                  className="
                   rounded-md px-3 py-1
                   bg-secondary text-secondary-foreground
                   hover:bg-secondary/80
@@ -185,38 +195,38 @@ export function ShowCard({
                   shadow-sm
                   transition-all
                 "
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onUpdateEpisode(
-                    show.id,
-                    Math.max(0, (state.lastListenedEpisode ?? 0) - 1)
-                  );
-                }}
-              >
-                −
-              </button>
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onUpdateEpisode(
+                      show.id,
+                      Math.max(0, (state.lastListenedEpisode ?? 0) - 1)
+                    );
+                  }}
+                >
+                  −
+                </button>
 
-              {/* Input */}
-              <input
-                type="number"
-                className="
+                {/* Input */}
+                <input
+                  type="number"
+                  className="
                   w-20 text-center rounded-md border border-border/60 p-2
                   bg-background/90 text-foreground
                   focus:outline-none focus:ring-2 focus:ring-ring
                   hover:border-border
                   transition
                 "
-                value={state.lastListenedEpisode ?? ''}
-                min={0}
-                onChange={(e) => {
-                  e.stopPropagation();
-                  onUpdateEpisode(show.id, Number(e.target.value));
-                }}
-              />
+                  value={state.lastListenedEpisode ?? ''}
+                  min={0}
+                  onChange={(e) => {
+                    e.stopPropagation();
+                    onUpdateEpisode(show.id, Number(e.target.value));
+                  }}
+                />
 
-              {/* Increment */}
-              <button
-                className="
+                {/* Increment */}
+                <button
+                  className="
                   rounded-md px-3 py-1
                   bg-secondary text-secondary-foreground
                   hover:bg-secondary/80
@@ -224,16 +234,17 @@ export function ShowCard({
                   shadow-sm
                   transition-all
                 "
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onUpdateEpisode(
-                    show.id,
-                    (state.lastListenedEpisode ?? 0) + 1
-                  );
-                }}
-              >
-                +
-              </button>
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onUpdateEpisode(
+                      show.id,
+                      (state.lastListenedEpisode ?? 0) + 1
+                    );
+                  }}
+                >
+                  +
+                </button>
+              </div>
             </div>
           </div>
         </CardContent>

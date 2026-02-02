@@ -22,11 +22,23 @@ Built as a portfolio project with a focus on clean state management and a polish
 
 ### Main View
 
-![Main View](./screenshots/main.jpg)
+![Main View](./screenshots/main.png)
 
 ### Edit Show Modal
 
-![Edit Modal](./screenshots/edit-modal.jpg)
+![Edit Modal](./screenshots/edit-modal.png)
+
+### Stats Modal
+
+![Stats Modal](./screenshots/stats-modal.png)
+
+### Preferences Modal
+
+![Prefs Modal](./screenshots/pref-modal.png)
+
+### History Modal
+
+![History Modal](./screenshots/history-modal.png)
 
 ## License
 

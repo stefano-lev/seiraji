@@ -28,7 +28,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
   .dark {
     --background: 222.2 84% 4.9%;
@@ -54,7 +54,7 @@
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
   }
 }
 
@@ -62,7 +62,50 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+    font-feature-settings:
+      'rlig' 1,
+      'calt' 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer base {
+  .app-bg {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .app-bg::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.6;
+    pointer-events: none;
+
+    background:
+      radial-gradient(
+        800px 400px at 20% 0%,
+        hsl(var(--chart-1) / 0.12),
+        transparent 60%
+      ),
+      radial-gradient(
+        700px 350px at 90% 20%,
+        hsl(var(--chart-4) / 0.1),
+        transparent 55%
+      ),
+      radial-gradient(
+        900px 450px at 50% 100%,
+        hsl(var(--chart-2) / 0.08),
+        transparent 60%
+      );
+  }
+
+  .dark .app-bg::before {
+    opacity: 0.35;
   }
 }
