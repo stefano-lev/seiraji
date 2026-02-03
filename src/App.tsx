@@ -14,6 +14,8 @@ import { loadActivity, saveActivity, appendActivityEvent } from '@/lib/storage';
 import type { ActivityEvent } from '@/lib/storage';
 import { loadTags, saveTags, upsertTag } from '@/lib/storage';
 import { loadPrefs, savePrefs } from '@/lib/storage';
+import { getEffectiveTotalEpisodes } from '@/lib/episodes';
+import { loadUserState, saveUserState } from '@/lib/storage';
 
 import {
   Select,
@@ -81,6 +83,9 @@ export default function App() {
     return parsed.map((s) => ({
       ...s,
       episodeDurationMinutes: s.episodeDurationMinutes ?? 30,
+      manualTotalEpisodes: s.manualTotalEpisodes ?? null,
+      isHiatus: s.isHiatus ?? false,
+      isEnded: s.isEnded ?? false,
     }));
   });
 
@@ -102,15 +107,12 @@ export default function App() {
     savePrefs(prefs);
   }, [prefs]);
 
-  const defaultState: UserShowState[] = [];
-
-  const [userState, setUserState] = useState<UserShowState[]>(() => {
-    const stored = localStorage.getItem('userState');
-    return stored ? (JSON.parse(stored) as UserShowState[]) : defaultState;
-  });
+  const [userState, setUserState] = useState<UserShowState[]>(() =>
+    loadUserState()
+  );
 
   useEffect(() => {
-    localStorage.setItem('userState', JSON.stringify(userState));
+    saveUserState(userState);
   }, [userState]);
 
   const [statsOpen, setStatsOpen] = useState(false);
@@ -157,7 +159,7 @@ export default function App() {
       const listened = state?.lastListenedEpisode ?? 0;
       totalEpisodesListened += listened;
 
-      totalEpisodesPossible += show.totalEpisodes ?? 0;
+      totalEpisodesPossible += getEffectiveTotalEpisodes(show, now);
     }
 
     let totalMinutesListened = 0;
@@ -186,7 +188,7 @@ export default function App() {
       approxMinutes,
       completionPct,
     };
-  }, [shows, userState]);
+  }, [shows, userState, now]);
 
   function getShowTitle(showId: string) {
     return shows.find((s) => s.id === showId)?.title ?? 'Unknown show';
@@ -710,6 +712,7 @@ export default function App() {
                   setTagDraft(currentTags.join(', '));
                 }}
                 onTogglePinned={togglePinned}
+                nowMs={now}
                 prefs={prefs}
               />
             ))}

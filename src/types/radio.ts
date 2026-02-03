@@ -9,6 +9,9 @@ export interface RadioShow {
   iconUrl?: string;
   totalEpisodes?: number;
   episodeDurationMinutes?: number;
+  manualTotalEpisodes?: number | null;
+  isHiatus?: boolean;
+  isEnded?: boolean;
 }
 
 // User-specific state (stored locally)
