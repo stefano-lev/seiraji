@@ -11,7 +11,7 @@ export default defineConfig({
     }),
   ],
 
-  base: '/seiraji/',
+  base: '/',
 
   resolve: {
     alias: {
