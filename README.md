@@ -1,8 +1,10 @@
-# Seiyuu Radio Tracker
+# 声ラジ - Seiyuu Radio Tracker
 
 A modern React + TypeScript web app for tracking Japanese seiyuu radio shows, including listening status, episode progress, and personal backlog. All stored locally in the browser.
 
 Built as a portfolio project with a focus on clean state management and a polished, responsive UI.
+
+Live Demo hosted at: https://seiraji.stef-lev.xyz/
 
 ## Features
 
@@ -18,7 +20,7 @@ Built as a portfolio project with a focus on clean state management and a polish
 - **Tailwind CSS**
 - **shadcn/ui**
 
-## 📸 Screenshots
+## Screenshots
 
 ### Main View
 
