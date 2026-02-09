@@ -47,7 +47,7 @@ export function ShowCard({
     tags: [],
   };
 
-  const iconSrc = show.iconUrl ?? '/placeholders/show-placeholder.png';
+  const iconSrc = show.iconUrl ?? 'placeholders/show-placeholder.png';
 
   const totalEpisodes = getEffectiveTotalEpisodes(show, nowMs);
 
