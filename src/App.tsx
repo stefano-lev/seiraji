@@ -6,6 +6,7 @@ import { Button } from './components/ui/button';
 import { motion } from 'framer-motion';
 
 import { defaultShows } from '@/data/shows';
+import { demoShows, demoUserState, demoTags } from '@/data/demo';
 import type { UserShowState } from '@/types/radio';
 import { ShowCard } from '@/components/ShowCard';
 import type { RadioShow } from '@/types/radio';
@@ -92,6 +93,14 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem('shows', JSON.stringify(shows));
   }, [shows]);
+
+  const [showOnboarding, setShowOnboarding] = useState(() => {
+    return !localStorage.getItem('seiraji:mode');
+  });
+
+  const [isDemo, setIsDemo] = useState(() => {
+    return localStorage.getItem('seiraji:mode') === 'demo';
+  });
 
   const [tags, setTags] = useState<string[]>(() => loadTags());
 
@@ -189,6 +198,27 @@ export default function App() {
       completionPct,
     };
   }, [shows, userState, now]);
+
+  function startFresh() {
+    setShows(defaultShows);
+    setUserState([]);
+    setTags([]);
+    setActivity([]);
+
+    localStorage.setItem('seiraji:mode', 'fresh');
+    setIsDemo(false);
+    setShowOnboarding(false);
+  }
+
+  function loadDemo() {
+    setShows(demoShows);
+    setUserState(demoUserState);
+    setTags(demoTags);
+
+    localStorage.setItem('seiraji:mode', 'demo');
+    setIsDemo(true);
+    setShowOnboarding(false);
+  }
 
   function getShowTitle(showId: string) {
     return shows.find((s) => s.id === showId)?.title ?? 'Unknown show';
@@ -534,6 +564,38 @@ export default function App() {
             }}
           />
 
+          {showOnboarding && (
+            <motion.div
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              onClick={() => {}}
+            >
+              <motion.div
+                className="max-w-md w-full rounded-2xl bg-background p-6 shadow-xl"
+                initial={{ scale: 0.95, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <h2 className="text-xl font-semibold mb-2">
+                  Welcome to SeiRaji
+                </h2>
+
+                <p className="text-sm text-muted-foreground mb-4">
+                  Start with a blank tracker, or load a demo profile to explore
+                  how the app works.
+                </p>
+
+                <div className="flex gap-3 justify-end">
+                  <Button variant="secondary" onClick={startFresh}>
+                    Start Fresh
+                  </Button>
+                  <Button onClick={loadDemo}>Load Demo</Button>
+                </div>
+              </motion.div>
+            </motion.div>
+          )}
+
           {/* Controls */}
           <div className="sticky top-[108px] z-30 mt-4">
             <div className="rounded-2xl border border-border/60 bg-background/70 backdrop-blur-xl shadow-sm">
@@ -547,6 +609,22 @@ export default function App() {
                     onChange={(e) => setSearchQuery(e.target.value)}
                     className="w-full md:max-w-sm bg-background/80"
                   />
+                  {isDemo && (
+                    <Button
+                      onClick={(e) => {
+                        e.stopPropagation();
+
+                        const ok = window.confirm(
+                          'End the Demo and start fresh?\n(This cannot be undone!)'
+                        );
+                        if (!ok) return;
+
+                        startFresh();
+                      }}
+                    >
+                      End Demo
+                    </Button>
+                  )}
 
                   {/* Sort + Add */}
                   <div className="flex flex-wrap gap-2">
