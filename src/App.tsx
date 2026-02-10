@@ -501,7 +501,9 @@ export default function App() {
                     </div>
 
                     <div className="leading-tight">
-                      <div className="text-base font-semibold">SeiRaji</div>
+                      <div className="text-base font-semibold">
+                        SeiRaji (Beta)
+                      </div>
                       <div className="text-xs text-muted-foreground">
                         Your episodes, progress, & backlog in one place.
                       </div>
