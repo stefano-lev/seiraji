@@ -7,6 +7,7 @@ export interface RadioShow {
   frequency: 'weekly' | 'biweekly' | 'irregular';
   bannerUrl?: string;
   iconUrl?: string;
+  iconDataUrl?: string;
   totalEpisodes?: number;
   episodeDurationMinutes?: number;
   manualTotalEpisodes?: number | null;

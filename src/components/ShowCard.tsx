@@ -47,7 +47,8 @@ export function ShowCard({
     tags: [],
   };
 
-  const iconSrc = show.iconUrl ?? 'placeholders/show-placeholder.png';
+  const iconSrc =
+    show.iconDataUrl ?? show.iconUrl ?? '/placeholders/show-placeholder.png';
 
   const totalEpisodes = getEffectiveTotalEpisodes(show, nowMs);
 
@@ -107,7 +108,7 @@ export function ShowCard({
           />
 
           <div className="flex flex-col">
-            <h3 className="text-lg font-semibold leading-tight line-clamp-2">
+            <h3 className="text-lg font-semibold leading-tight line-clamp-1">
               {show.title}
             </h3>
 
@@ -199,16 +200,18 @@ export function ShowCard({
             </div>
 
             {/* Tags display */}
-            {prefs.showTagsOnCard && (state.tags?.length ?? 0) > 0 && (
-              <div className="flex flex-wrap gap-1">
-                {state.tags!.map((t) => (
-                  <span
-                    key={t}
-                    className="text-xs px-2 py-0.5 rounded-full border bg-muted/40 text-muted-foreground"
-                  >
-                    #{t}
-                  </span>
-                ))}
+            {prefs.showTagsOnCard && (
+              <div className="flex flex-wrap gap-1 min-h-[32px]">
+                {(state.tags?.length ?? 0) > 0
+                  ? state.tags!.map((t) => (
+                      <span
+                        key={t}
+                        className="text-xs px-2 py-0.5 rounded-full border bg-muted/40 text-muted-foreground"
+                      >
+                        #{t}
+                      </span>
+                    ))
+                  : null}
               </div>
             )}
 

@@ -18,6 +18,8 @@ import { loadPrefs, savePrefs } from '@/lib/storage';
 import { getEffectiveTotalEpisodes } from '@/lib/episodes';
 import { loadUserState, saveUserState } from '@/lib/storage';
 
+import { processImageFile } from '@/lib/image';
+
 import {
   Select,
   SelectContent,
@@ -73,6 +75,8 @@ export default function App() {
   const [editDraft, setEditDraft] = useState<RadioShow | null>(null);
 
   const isEditing = editDraft !== null;
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const showData = editDraft ?? selectedShow;
 
   const importInputRef = useRef<HTMLInputElement | null>(null);
@@ -796,222 +800,304 @@ export default function App() {
             ))}
           </div>
 
-          {selectedShow && (
-            <motion.div
-              className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={(e) => {
-                e.stopPropagation();
-                setSelectedShow(null);
-              }}
-            >
-              <motion.div
-                className="max-w-lg w-full rounded-2xl bg-background p-6 shadow-xl"
-                initial={{ scale: 0.95, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.15, ease: 'easeOut' }}
-                onClick={(e) => e.stopPropagation()}
-              >
-                <>
-                  <h2 className="text-xl font-semibold mb-4">
-                    {showData!.title}
-                  </h2>
+          {selectedShow &&
+            (() => {
+              const showData = selectedShow;
 
-                  <EditableField
-                    label="Title"
-                    value={showData!.title}
-                    isEditing={isEditing}
-                    renderInput={() => (
-                      <input
-                        className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-                        value={editDraft!.title}
-                        onChange={(e) =>
-                          setEditDraft({ ...editDraft!, title: e.target.value })
-                        }
-                      />
-                    )}
-                  />
-
-                  <EditableField
-                    label="Hosts"
-                    value={showData!.hosts.join(', ')}
-                    isEditing={isEditing}
-                    renderInput={() => (
-                      <input
-                        className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-                        value={editDraft!.hosts.join(', ')}
-                        onChange={(e) =>
-                          setEditDraft({
-                            ...editDraft!,
-                            hosts: e.target.value
-                              .split(',')
-                              .map((h) => h.trim()),
-                          })
-                        }
-                      />
-                    )}
-                  />
-
-                  <EditableField
-                    label="Start Date"
-                    value={showData!.startDate || '—'}
-                    isEditing={isEditing}
-                    renderInput={() => (
-                      <input
-                        className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-                        value={editDraft!.startDate}
-                        onChange={(e) =>
-                          setEditDraft({
-                            ...editDraft!,
-                            startDate: e.target.value,
-                          })
-                        }
-                      />
-                    )}
-                  />
-
-                  <EditableField
-                    label="Frequency"
-                    value={showData!.frequency}
-                    isEditing={isEditing}
-                    renderInput={() => (
-                      <select
-                        className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-                        value={editDraft!.frequency}
-                        onChange={(e) =>
-                          setEditDraft({
-                            ...editDraft!,
-                            frequency: e.target.value as RadioShow['frequency'],
-                          })
-                        }
-                      >
-                        <option value="weekly">Weekly</option>
-                        <option value="biweekly">Biweekly</option>
-                        <option value="irregular">Irregular</option>
-                      </select>
-                    )}
-                  />
-
-                  <EditableField
-                    label="Total Episodes"
-                    value={showData!.totalEpisodes}
-                    isEditing={isEditing}
-                    renderInput={() => (
-                      <input
-                        type="number"
-                        className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-                        value={editDraft!.totalEpisodes}
-                        onChange={(e) =>
-                          setEditDraft({
-                            ...editDraft!,
-                            totalEpisodes: Number(e.target.value),
-                          })
-                        }
-                      />
-                    )}
-                  />
-                </>
-
-                <EditableField
-                  label="Episode Duration (minutes)"
-                  value={showData!.episodeDurationMinutes ?? '—'}
-                  isEditing={isEditing}
-                  renderInput={() => (
-                    <input
-                      type="number"
-                      min={1}
-                      className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-                      value={showData!.episodeDurationMinutes ?? 30}
-                      onChange={(e) =>
-                        setEditDraft({
-                          ...editDraft!,
-                          episodeDurationMinutes: Number(e.target.value),
-                        })
-                      }
-                    />
-                  )}
-                />
-
-                {/* Tags editor (User State) */}
-                <div className="mb-3">
-                  <label className="text-sm mb-1 block">Tags</label>
-                  <input
-                    type="text"
-                    placeholder="anime, comedy, drama"
-                    className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-                    value={tagDraft}
-                    onChange={(e) => setTagDraft(e.target.value)}
-                    onBlur={() => {
-                      const raw = tagDraft
-                        .split(',')
-                        .map((t) => t.trim())
-                        .filter(Boolean);
-
-                      const normalized = Array.from(
-                        new Set(raw.map((t) => t.toLowerCase()))
-                      );
-
-                      const current = getShowState(selectedShow!.id);
-                      updateShowState({
-                        ...current,
-                        tags: normalized,
-                      });
-
-                      setTagDraft(normalized.join(', '));
-                    }}
-                  />
-                </div>
-
-                <div className="mt-6 flex justify-end gap-2">
-                  {isEditing ? (
+              return (
+                <motion.div
+                  className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setSelectedShow(null);
+                  }}
+                >
+                  <motion.div
+                    className="max-w-lg w-full rounded-2xl bg-background p-6 shadow-xl"
+                    initial={{ scale: 0.95, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.15, ease: 'easeOut' }}
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     <>
-                      <button
-                        className="px-4 py-2 rounded-md bg-secondary"
-                        onClick={() => {
-                          const confirmed = window.confirm(
-                            `Delete "${selectedShow!.title}"?\nThis cannot be undone.`
+                      <h2 className="text-xl font-semibold mb-4">
+                        {showData!.title}
+                      </h2>
+
+                      <div className="edit-field">
+                        <label className="edit-label">Show Icon</label>
+
+                        <div
+                          style={{
+                            display: 'flex',
+                            gap: 12,
+                            alignItems: 'center',
+                          }}
+                        >
+                          <img
+                            src={
+                              isEditing
+                                ? (editDraft?.iconDataUrl ??
+                                  editDraft?.iconUrl ??
+                                  '/placeholders/show-placeholder.png')
+                                : (showData.iconUrl ??
+                                  '/placeholders/show-placeholder.png')
+                            }
+                            alt="Show icon"
+                            width={48}
+                            height={48}
+                            style={{
+                              borderRadius: 6,
+                              border: '1px solid var(--border)',
+                              objectFit: 'cover',
+                            }}
+                          />
+
+                          {isEditing && (
+                            <div
+                              style={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                gap: 6,
+                              }}
+                            >
+                              <input
+                                type="file"
+                                accept="image/png,image/jpeg,image/webp"
+                                onChange={async (e) => {
+                                  const file = e.target.files?.[0];
+                                  if (!file || !editDraft) return;
+
+                                  const dataUrl = await processImageFile(file);
+
+                                  setEditDraft({
+                                    ...editDraft,
+                                    iconDataUrl: dataUrl,
+                                  });
+                                }}
+                              />
+
+                              {(editDraft?.iconDataUrl ||
+                                editDraft?.iconUrl) && (
+                                <button
+                                  type="button"
+                                  onClick={() =>
+                                    setEditDraft({
+                                      ...editDraft,
+                                      iconDataUrl: undefined,
+                                      iconUrl: undefined,
+                                    })
+                                  }
+                                >
+                                  Remove icon
+                                </button>
+                              )}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+
+                      <EditableField
+                        label="Title"
+                        value={showData!.title}
+                        isEditing={isEditing}
+                        renderInput={() => (
+                          <input
+                            className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+                            value={editDraft!.title}
+                            onChange={(e) =>
+                              setEditDraft({
+                                ...editDraft!,
+                                title: e.target.value,
+                              })
+                            }
+                          />
+                        )}
+                      />
+
+                      <EditableField
+                        label="Hosts"
+                        value={showData!.hosts.join(', ')}
+                        isEditing={isEditing}
+                        renderInput={() => (
+                          <input
+                            className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+                            value={editDraft!.hosts.join(', ')}
+                            onChange={(e) =>
+                              setEditDraft({
+                                ...editDraft!,
+                                hosts: e.target.value
+                                  .split(',')
+                                  .map((h) => h.trim()),
+                              })
+                            }
+                          />
+                        )}
+                      />
+
+                      <EditableField
+                        label="Start Date"
+                        value={showData!.startDate || '—'}
+                        isEditing={isEditing}
+                        renderInput={() => (
+                          <input
+                            className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+                            value={editDraft!.startDate}
+                            onChange={(e) =>
+                              setEditDraft({
+                                ...editDraft!,
+                                startDate: e.target.value,
+                              })
+                            }
+                          />
+                        )}
+                      />
+
+                      <EditableField
+                        label="Frequency"
+                        value={showData!.frequency}
+                        isEditing={isEditing}
+                        renderInput={() => (
+                          <select
+                            className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+                            value={editDraft!.frequency}
+                            onChange={(e) =>
+                              setEditDraft({
+                                ...editDraft!,
+                                frequency: e.target
+                                  .value as RadioShow['frequency'],
+                              })
+                            }
+                          >
+                            <option value="weekly">Weekly</option>
+                            <option value="biweekly">Biweekly</option>
+                            <option value="irregular">Irregular</option>
+                          </select>
+                        )}
+                      />
+
+                      <EditableField
+                        label="Total Episodes"
+                        value={showData!.totalEpisodes}
+                        isEditing={isEditing}
+                        renderInput={() => (
+                          <input
+                            type="number"
+                            className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+                            value={editDraft!.totalEpisodes}
+                            onChange={(e) =>
+                              setEditDraft({
+                                ...editDraft!,
+                                totalEpisodes: Number(e.target.value),
+                              })
+                            }
+                          />
+                        )}
+                      />
+                    </>
+
+                    <EditableField
+                      label="Episode Duration (minutes)"
+                      value={showData!.episodeDurationMinutes ?? '—'}
+                      isEditing={isEditing}
+                      renderInput={() => (
+                        <input
+                          type="number"
+                          min={1}
+                          className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+                          value={showData!.episodeDurationMinutes ?? 30}
+                          onChange={(e) =>
+                            setEditDraft({
+                              ...editDraft!,
+                              episodeDurationMinutes: Number(e.target.value),
+                            })
+                          }
+                        />
+                      )}
+                    />
+
+                    {/* Tags editor (User State) */}
+                    <div className="mb-3">
+                      <label className="text-sm mb-1 block">Tags</label>
+                      <input
+                        type="text"
+                        placeholder="anime, comedy, drama"
+                        className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+                        value={tagDraft}
+                        onChange={(e) => setTagDraft(e.target.value)}
+                        onBlur={() => {
+                          const raw = tagDraft
+                            .split(',')
+                            .map((t) => t.trim())
+                            .filter(Boolean);
+
+                          const normalized = Array.from(
+                            new Set(raw.map((t) => t.toLowerCase()))
                           );
 
-                          if (!confirmed) return;
+                          const current = getShowState(selectedShow!.id);
+                          updateShowState({
+                            ...current,
+                            tags: normalized,
+                          });
 
-                          deleteShow(selectedShow!.id);
-                          setEditDraft(null);
-                          setSelectedShow(null);
+                          setTagDraft(normalized.join(', '));
                         }}
-                      >
-                        Delete
-                      </button>
-                      <button
-                        className="px-4 py-2 rounded-md bg-secondary"
-                        onClick={() => {
-                          updateShow(editDraft!);
-                          setEditDraft(null);
-                        }}
-                      >
-                        Save
-                      </button>
+                      />
+                    </div>
 
-                      <button
-                        className="px-4 py-2 rounded-md bg-muted"
-                        onClick={() => setEditDraft(null)}
-                      >
-                        Cancel
-                      </button>
-                    </>
-                  ) : (
-                    <button
-                      className="px-4 py-2 rounded-md bg-secondary"
-                      onClick={() => setSelectedShow(null)}
-                    >
-                      Close
-                    </button>
-                  )}
-                </div>
-              </motion.div>
-            </motion.div>
-          )}
+                    <div className="mt-6 flex justify-end gap-2">
+                      {isEditing ? (
+                        <>
+                          <button
+                            className="px-4 py-2 rounded-md bg-secondary"
+                            onClick={() => {
+                              const confirmed = window.confirm(
+                                `Delete "${selectedShow!.title}"?\nThis cannot be undone.`
+                              );
+
+                              if (!confirmed) return;
+
+                              deleteShow(selectedShow!.id);
+                              setEditDraft(null);
+                              setSelectedShow(null);
+                            }}
+                          >
+                            Delete
+                          </button>
+                          <button
+                            className="px-4 py-2 rounded-md bg-secondary"
+                            onClick={() => {
+                              updateShow(editDraft!);
+                              setEditDraft(null);
+                            }}
+                          >
+                            Save
+                          </button>
+
+                          <button
+                            className="px-4 py-2 rounded-md bg-muted"
+                            onClick={() => setEditDraft(null)}
+                          >
+                            Cancel
+                          </button>
+                        </>
+                      ) : (
+                        <button
+                          className="px-4 py-2 rounded-md bg-secondary"
+                          onClick={() => setSelectedShow(null)}
+                        >
+                          Close
+                        </button>
+                      )}
+                    </div>
+                  </motion.div>
+                </motion.div>
+              );
+            })()}
 
           {statsOpen && (
             <motion.div
