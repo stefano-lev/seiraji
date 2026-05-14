@@ -6,8 +6,8 @@ dist/
 out/
 
 # Radio show icons/banners
-public/banners
-public/icons
+client/public/banners
+client/public/icons
 
 # Local env files
 .env
