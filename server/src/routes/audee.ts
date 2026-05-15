@@ -5,7 +5,7 @@ import { scrapeAudee } from "../services/scrapeAudee";
 import {
   readCache,
   writeCache,
-} from "../utils/audeeCache";
+} from "../utils/cache";
 
 const router = express.Router();
 
@@ -29,7 +29,10 @@ router.post("/import", async (req, res) => {
 	  });
 	}
 
-    const cache = await readCache();
+    const cache =
+  await readCache(
+    "audee-programs.json"
+  );
 
     if (cache[slug]) {
       console.log(
@@ -47,7 +50,10 @@ router.post("/import", async (req, res) => {
 
     cache[slug] = data;
 
-    await writeCache(cache);
+    await writeCache(
+  "audee-programs.json",
+  cache
+);
 
     res.json(data);
 

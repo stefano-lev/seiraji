@@ -5,7 +5,7 @@ import { scrapeOnsen } from "../services/scrapeOnsen";
 import {
   readCache,
   writeCache,
-} from "../utils/onsenCache";
+} from "../utils/cache";
 
 const router = express.Router();
 
@@ -28,7 +28,10 @@ router.post("/import", async (req, res) => {
       });
     }
 
-    const cache = await readCache();
+    const cache =
+  await readCache(
+    "onsen-programs.json"
+  );
 
     if (cache[slug]) {
       console.log(
@@ -46,7 +49,10 @@ router.post("/import", async (req, res) => {
 
     cache[slug] = data;
 
-    await writeCache(cache);
+    await writeCache(
+  "onsen-programs.json",
+  cache
+);
 
     res.json(data);
 
