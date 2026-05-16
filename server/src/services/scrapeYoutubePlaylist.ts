@@ -81,7 +81,9 @@ export async function scrapeYoutubePlaylist(url: string) {
 
       description: playlist.snippet.description,
 
-      thumbnail: playlist.snippet.thumbnails?.high?.url ?? null,
+      hosts: playlist.snippet.channelTitle,
+
+      thumbnail: playlist.snippet.thumbnails?.maxres?.url ?? null,
     },
 
     episodes: episodes.map((ep) => {

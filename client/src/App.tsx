@@ -6,11 +6,15 @@ import { Button } from './components/ui/button';
 import { motion } from 'framer-motion';
 
 import { defaultShows } from '@/data/shows';
-import { demoShows, demoUserState, demoTags } from '@/data/demo';
-import type { UserShowState } from '@/types/radio';
+//import { demoShows, demoUserState, demoTags } from '@/data/demo';
+
+import { defaultPrograms, demoUserState } from '@/data/demoPrograms';
+
+//import type { UserShowState } from '@/types/radio';
 import { ShowCard } from '@/components/ShowCard';
 //import type { RadioShow } from '@/types/radio';
-import type { Program, setPrograms } from './types/media';
+import type { Program } from './types/media';
+import type { UserProgramState } from './types/user';
 
 import { loadActivity, saveActivity, appendActivityEvent } from '@/lib/storage';
 import type { ActivityEvent } from '@/lib/storage';
@@ -20,6 +24,8 @@ import { loadPrefs, savePrefs } from '@/lib/storage';
 import { loadUserState, saveUserState } from '@/lib/storage';
 
 import { processImageFile } from '@/lib/image';
+
+import { getLibrary } from './lib/api';
 
 import {
   Select,
@@ -72,34 +78,46 @@ function EditableField({
 export default function App() {
   const [dark, setDark] = useState(true);
   const [sortMode, setSortMode] = useState<SortMode>('title');
-  const [selectedShow, setSelectedShow] = useState<RadioShow | null>(null);
-  const [editDraft, setEditDraft] = useState<RadioShow | null>(null);
+  const [selectedProgram, setSelectedProgram] = useState<Program | null>(null);
+  const [editDraft, setEditDraft] = useState<Program | null>(null);
 
   const isEditing = editDraft !== null;
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const showData = editDraft ?? selectedShow;
+  const programData = editDraft ?? selectedProgram;
 
   const importInputRef = useRef<HTMLInputElement | null>(null);
 
-  const [programs, setPrograms] = useState<RadioShow[]>(() => {
-    const stored = localStorage.getItem('shows');
-    const parsed: RadioShow[] = stored ? JSON.parse(stored) : defaultShows;
+  const [programs, setPrograms] = useState<Program[]>(() => {
+    const stored = localStorage.getItem('programs');
+    const parsed: Program[] = stored ? JSON.parse(stored) : defaultPrograms;
 
     return parsed.map((s) => ({
       ...s,
-      episodeDurationMinutes: s.episodeDurationMinutes ?? 30,
-      manualTotalEpisodes: s.manualTotalEpisodes ?? null,
-      isHiatus: s.isHiatus ?? false,
-      isEnded: s.isEnded ?? false,
+      // episodeDurationMinutes: s.episodeDurationMinutes ?? 30,
+      // manualTotalEpisodes: s.manualTotalEpisodes ?? null,
+      // isHiatus: s.isHiatus ?? false,
+      // isEnded: s.isEnded ?? false,
     }));
   });
 
   useEffect(() => {
-    localStorage.setItem('shows', JSON.stringify(shows));
-  }, [shows]);
+    async function load() {
+      try {
+        const data = await getLibrary();
+        setPrograms(data);
+      } catch (err) {
+        console.error('Failed to load library', err);
+      }
+    }
 
-  const [showOnboarding, setShowOnboarding] = useState(() => {
+    load();
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('programs', JSON.stringify(programs));
+  }, [programs]);
+
+  const [programOnboarding, setProgramOnboarding] = useState(() => {
     return !localStorage.getItem('seiraji:mode');
   });
 
@@ -121,7 +139,7 @@ export default function App() {
     savePrefs(prefs);
   }, [prefs]);
 
-  const [userState, setUserState] = useState<UserShowState[]>(() =>
+  const [userState, setUserState] = useState<UserProgramState[]>(() =>
     loadUserState()
   );
 
@@ -152,7 +170,7 @@ export default function App() {
   }, []);
 
   const stats = useMemo(() => {
-    const totalShows = shows.length;
+    const totalPrograms = programs.length;
 
     const statusCounts = {
       listening: 0,
@@ -162,10 +180,10 @@ export default function App() {
     };
 
     let totalEpisodesListened = 0;
-    let totalEpisodesPossible = 0;
+    const totalEpisodesPossible = 0;
 
-    for (const show of shows) {
-      const state = userState.find((s) => s.showId === show.id);
+    for (const program of programs) {
+      const state = userState.find((s) => s.programId === program.id);
 
       const status = state?.status ?? 'backlog';
       statusCounts[status]++;
@@ -173,19 +191,19 @@ export default function App() {
       const listened = state?.lastListenedEpisode ?? 0;
       totalEpisodesListened += listened;
 
-      totalEpisodesPossible += getEffectiveTotalEpisodes(show, now);
+      //totalEpisodesPossible += getEffectiveTotalEpisodes(show, now);
     }
 
-    let totalMinutesListened = 0;
+    const totalMinutesListened = 0;
 
-    for (const show of shows) {
-      const state = userState.find((s) => s.showId === show.id);
+    // for (const program of programs) {
+    //   const state = userState.find((s) => s.programId === program.id);
 
-      const listenedEpisodes = state?.lastListenedEpisode ?? 0;
-      const mins = show.episodeDurationMinutes ?? 30;
+    //   const listenedEpisodes = state?.lastListenedEpisode ?? 0;
+    //   const mins = program.episodeDurationMinutes ?? 30;
 
-      totalMinutesListened += listenedEpisodes * mins;
-    }
+    //   totalMinutesListened += listenedEpisodes * mins;
+    // }
 
     const approxMinutes = totalMinutesListened;
 
@@ -195,38 +213,40 @@ export default function App() {
         : 0;
 
     return {
-      totalShows,
+      totalPrograms,
       statusCounts,
       totalEpisodesListened,
       totalEpisodesPossible,
       approxMinutes,
       completionPct,
     };
-  }, [shows, userState, now]);
+  }, [programs, userState]);
 
   function startFresh() {
-    setShows(defaultShows);
+    setPrograms(defaultPrograms);
     setUserState([]);
     setTags([]);
     setActivity([]);
 
     localStorage.setItem('seiraji:mode', 'fresh');
     setIsDemo(false);
-    setShowOnboarding(false);
+    setProgramOnboarding(false);
   }
 
   function loadDemo() {
-    setShows(demoShows);
+    setPrograms(defaultPrograms);
     setUserState(demoUserState);
-    setTags(demoTags);
+    //setTags(demoTags);
 
     localStorage.setItem('seiraji:mode', 'demo');
     setIsDemo(true);
-    setShowOnboarding(false);
+    setProgramOnboarding(false);
   }
 
-  function getShowTitle(showId: string) {
-    return shows.find((s) => s.id === showId)?.title ?? 'Unknown show';
+  function getShowTitle(programId: string) {
+    return (
+      programs.find((s) => s.id === programId)?.program.title ?? 'Unknown show'
+    );
   }
 
   function timeAgo(iso: string, nowMs: number) {
@@ -246,27 +266,27 @@ export default function App() {
     return `${d}d ago`;
   }
 
-  function updateEpisode(showId: string, nextEpisode: number) {
-    const prev = userState.find((s) => s.showId === showId);
+  function updateEpisode(programId: string, nextEpisode: number) {
+    const prev = userState.find((s) => s.programId === programId);
     const prevEpisode = prev?.lastListenedEpisode ?? 0;
 
     const delta = nextEpisode - prevEpisode;
     if (delta === 0) return;
 
     // update user state
-    updateShowState({
-      showId,
-      status: prev?.status ?? 'backlog',
-      isPinned: prev?.isPinned ?? false,
-      lastListenedEpisode: nextEpisode,
-    });
+    // updateProgramState({
+    //   programId,
+    //   status: prev?.status ?? 'backlog',
+    //   isPinned: prev?.isPinned ?? false,
+    //   lastListenedEpisode: nextEpisode,
+    // });
 
     // log event
     const ev: ActivityEvent = {
       id: crypto.randomUUID(),
       ts: new Date().toISOString(),
       type: 'episode_progress',
-      showId,
+      programId,
       episode: nextEpisode,
       delta,
     };
@@ -274,10 +294,10 @@ export default function App() {
     setActivity((prevEvents) => appendActivityEvent(prevEvents, ev));
   }
 
-  function getShowState(showId: string): UserShowState {
+  function getProgramState(programId: string): UserProgramState {
     return (
-      userState.find((s) => s.showId === showId) ?? {
-        showId,
+      userState.find((s) => s.programId === programId) ?? {
+        programId,
         status: 'backlog',
         lastListenedEpisode: 0,
         isPinned: false,
@@ -285,17 +305,17 @@ export default function App() {
     );
   }
 
-  function togglePinned(showId: string) {
-    const current = getShowState(showId);
+  function togglePinned(programId: string) {
+    const current = getProgramState(programId);
 
-    updateShowState({
+    updateProgramState({
       ...current,
       isPinned: !current.isPinned,
     });
   }
 
   function handleExport() {
-    const payload = buildExportPayload(shows, userState, tags);
+    const payload = buildExportPayload(programs, userState, tags);
     downloadJson('seiyuu-radio-tracker-backup.json', payload);
   }
 
@@ -313,7 +333,7 @@ export default function App() {
       );
       if (!confirmOverwrite) return;
 
-      setShows(data.shows);
+      setPrograms(data.programs);
       setUserState(data.userState);
 
       alert('Import successful!');
@@ -325,10 +345,10 @@ export default function App() {
 
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<
-    UserShowState['status'] | 'all'
+    UserProgramState['status'] | 'all'
   >('all');
 
-  function updateShowState(updated: UserShowState) {
+  function updateProgramState(updated: UserProgramState) {
     // update global tags
     const updatedTags = updated.tags ?? [];
     if (updatedTags.length > 0) {
@@ -340,22 +360,22 @@ export default function App() {
     }
 
     setUserState((prev) =>
-      prev.some((s) => s.showId === updated.showId)
-        ? prev.map((s) => (s.showId === updated.showId ? updated : s))
+      prev.some((s) => s.programId === updated.programId)
+        ? prev.map((s) => (s.programId === updated.programId ? updated : s))
         : [...prev, updated]
     );
   }
 
-  function updateShow(updated: RadioShow) {
-    setShows((prev) => prev.map((s) => (s.id === updated.id ? updated : s)));
+  function updateProgram(updated: Program) {
+    setPrograms((prev) => prev.map((s) => (s.id === updated.id ? updated : s)));
   }
 
-  function addShow(newShow: RadioShow) {
-    setShows((prev) => [...prev, newShow]);
+  function addShow(newProgram: Program) {
+    setPrograms((prev) => [...prev, newProgram]);
   }
 
-  function deleteShow(id: string) {
-    setShows((prev) => prev.filter((s) => s.id !== id));
+  function deleteProgram(id: string) {
+    setPrograms((prev) => prev.filter((s) => s.id !== id));
   }
 
   function deleteAllData() {
@@ -365,11 +385,11 @@ export default function App() {
     if (!ok) return;
 
     setActivity([]);
-    setShows([]);
+    setPrograms([]);
     setUserState([]);
 
     // clear localStorage for relevant keys
-    localStorage.removeItem('shows');
+    localStorage.removeItem('programs');
     localStorage.removeItem('userState');
     localStorage.removeItem('seiraji:tags');
     setTags([]);
@@ -393,18 +413,18 @@ export default function App() {
 
   const [pinnedOnly, setPinnedOnly] = useState(false);
 
-  const visibleShows = useMemo(() => {
-    return [...shows]
-      .filter((show) => {
+  const visiblePrograms = useMemo(() => {
+    return [...programs]
+      .filter((program) => {
         const query = searchQuery.toLowerCase();
 
         const matchesSearch =
-          show.title.toLowerCase().includes(query) ||
-          show.hosts.some((h) => h.toLowerCase().includes(query));
+          program.program.title.toLowerCase().includes(query) ||
+          program.program.hosts.some((h) => h.toLowerCase().includes(query));
 
         if (!matchesSearch) return false;
 
-        const state = userState.find((s) => s.showId === show.id);
+        const state = userState.find((s) => s.programId === program.id);
 
         // status filter
         if (statusFilter !== 'all') {
@@ -413,8 +433,8 @@ export default function App() {
 
         // tag filter
         if (tagFilter !== 'all') {
-          const showTags = state?.tags ?? [];
-          if (!showTags.includes(tagFilter)) return false;
+          const programTags = state?.tags ?? [];
+          if (!programTags.includes(tagFilter)) return false;
         }
 
         // pinned only filter
@@ -425,23 +445,23 @@ export default function App() {
         return true;
       })
       .sort((a, b) => {
-        const aPinned = userState.find((s) => s.showId === a.id)?.isPinned
+        const aPinned = userState.find((s) => s.programId === a.id)?.isPinned
           ? 1
           : 0;
-        const bPinned = userState.find((s) => s.showId === b.id)?.isPinned
+        const bPinned = userState.find((s) => s.programId === b.id)?.isPinned
           ? 1
           : 0;
 
         if (aPinned !== bPinned) return bPinned - aPinned;
 
         if (sortMode === 'title') {
-          return a.title.localeCompare(b.title, 'ja');
+          return a.program.title.localeCompare(b.program.title, 'ja');
         }
 
-        return a.hosts[0].localeCompare(b.hosts[0], 'ja');
+        return a.program.hosts[0].localeCompare(b.program.hosts[0], 'ja');
       });
   }, [
-    shows,
+    programs,
     userState,
     sortMode,
     searchQuery,
@@ -492,7 +512,7 @@ export default function App() {
                 <button
                   className="text-left"
                   onClick={() => {
-                    setSelectedShow(null);
+                    setSelectedProgram(null);
                     setEditDraft(null);
                   }}
                 >
@@ -571,7 +591,7 @@ export default function App() {
             }}
           />
 
-          {showOnboarding && (
+          {programOnboarding && (
             <motion.div
               className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
               initial={{ opacity: 0 }}
@@ -611,7 +631,7 @@ export default function App() {
                   {/* Search */}
                   <Input
                     ref={searchRef}
-                    placeholder="Search shows..."
+                    placeholder="Search programs..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     className="w-full md:max-w-sm bg-background/80"
@@ -655,9 +675,9 @@ export default function App() {
                       Host
                     </Button>
 
-                    <Button
+                    {/* <Button
                       onClick={() => {
-                        const newShow: RadioShow = {
+                        const newProgram: Program = {
                           id: crypto.randomUUID(),
                           title: 'New Show',
                           hosts: ['Unknown'],
@@ -667,13 +687,13 @@ export default function App() {
                           totalEpisodes: 0,
                           episodeDurationMinutes: 30,
                         };
-                        addShow(newShow);
-                        setSelectedShow(newShow);
-                        setEditDraft(newShow);
+                        addShow(newProgram);
+                        setSelectedProgram(newProgram);
+                        setEditDraft(newProgram);
                       }}
                     >
                       + Add Show
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
 
@@ -729,9 +749,9 @@ export default function App() {
                   <div className="text-xs text-muted-foreground">
                     Showing{' '}
                     <span className="font-medium text-foreground">
-                      {visibleShows.length}
+                      {visiblePrograms.length}
                     </span>{' '}
-                    / {shows.length}
+                    / {programs.length}
                   </div>
                 </div>
 
@@ -775,331 +795,330 @@ export default function App() {
           </p>
 
           {/* Show cards */}
-          <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl w-full items-stretch">
-            {visibleShows.map((show) => (
+          <div className="p-2 grid grid-cols-1 md:grid-cols-2 gap-2 max-w-5xl w-full items-stretch">
+            {visiblePrograms.map((program) => (
               <ShowCard
-                show={show}
-                userState={userState.find((s) => s.showId === show.id)}
-                onUpdate={updateShowState}
+                program={program}
+                userState={userState.find((s) => s.programId === program.id)}
+                onUpdate={updateProgramState}
                 onUpdateEpisode={updateEpisode}
-                onOpen={(show) => {
+                onOpen={(program) => {
                   setEditDraft(null);
-                  setSelectedShow(show);
+                  setSelectedProgram(program);
 
-                  const currentTags = getShowState(show.id).tags ?? [];
+                  const currentTags = getProgramState(program.id).tags ?? [];
                   setTagDraft(currentTags.join(', '));
                 }}
-                onEdit={(show) => {
-                  setEditDraft(show);
-                  setSelectedShow(show);
+                onEdit={(program) => {
+                  setEditDraft(program);
+                  setSelectedProgram(program);
 
-                  const currentTags = getShowState(show.id).tags ?? [];
+                  const currentTags = getProgramState(program.id).tags ?? [];
                   setTagDraft(currentTags.join(', '));
                 }}
                 onTogglePinned={togglePinned}
-                nowMs={now}
                 prefs={prefs}
               />
             ))}
           </div>
 
-          {selectedShow &&
+          {selectedProgram &&
             (() => {
-              const showData = selectedShow;
+              const programData = selectedProgram;
 
-              return (
-                <motion.div
-                  className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setSelectedShow(null);
-                  }}
-                >
-                  <motion.div
-                    className="max-w-lg w-full rounded-2xl bg-background p-6 shadow-xl"
-                    initial={{ scale: 0.95, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
-                    transition={{ duration: 0.15, ease: 'easeOut' }}
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <>
-                      <h2 className="text-xl font-semibold mb-4">
-                        {showData!.title}
-                      </h2>
+              //   return (
+              //     <motion.div
+              //       className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
+              //       initial={{ opacity: 0 }}
+              //       animate={{ opacity: 1 }}
+              //       exit={{ opacity: 0 }}
+              //       onClick={(e) => {
+              //         e.stopPropagation();
+              //         setSelectedProgram(null);
+              //       }}
+              //     >
+              //       <motion.div
+              //         className="max-w-lg w-full rounded-2xl bg-background p-6 shadow-xl"
+              //         initial={{ scale: 0.95, opacity: 0 }}
+              //         animate={{ scale: 1, opacity: 1 }}
+              //         transition={{ duration: 0.15, ease: 'easeOut' }}
+              //         onClick={(e) => e.stopPropagation()}
+              //       >
+              //         <>
+              //           <h2 className="text-xl font-semibold mb-4">
+              //             {programData!.program.title}
+              //           </h2>
 
-                      <div className="edit-field">
-                        <label className="edit-label">Show Icon</label>
+              //           <div className="edit-field">
+              //             <label className="edit-label">Show Icon</label>
 
-                        <div
-                          style={{
-                            display: 'flex',
-                            gap: 12,
-                            alignItems: 'center',
-                          }}
-                        >
-                          <img
-                            src={
-                              isEditing
-                                ? (editDraft?.iconDataUrl ??
-                                  editDraft?.iconUrl ??
-                                  '/placeholders/show-placeholder.png')
-                                : (showData.iconUrl ??
-                                  '/placeholders/show-placeholder.png')
-                            }
-                            alt="Show icon"
-                            width={48}
-                            height={48}
-                            style={{
-                              borderRadius: 6,
-                              border: '1px solid var(--border)',
-                              objectFit: 'cover',
-                            }}
-                          />
+              //             <div
+              //               style={{
+              //                 display: 'flex',
+              //                 gap: 12,
+              //                 alignItems: 'center',
+              //               }}
+              //             >
+              //               <img
+              //                 src={
+              //                   isEditing
+              //                     ? (editDraft?.program.thumbnail ??
+              //                       editDraft?.program.thumbnail ??
+              //                       '/placeholders/show-placeholder.png')
+              //                     : (programData.program.thumbnail ??
+              //                       '/placeholders/show-placeholder.png')
+              //                 }
+              //                 alt="Show icon"
+              //                 width={48}
+              //                 height={48}
+              //                 style={{
+              //                   borderRadius: 6,
+              //                   border: '1px solid var(--border)',
+              //                   objectFit: 'cover',
+              //                 }}
+              //               />
 
-                          {isEditing && (
-                            <div
-                              style={{
-                                display: 'flex',
-                                flexDirection: 'column',
-                                gap: 6,
-                              }}
-                            >
-                              <input
-                                type="file"
-                                accept="image/png,image/jpeg,image/webp"
-                                onChange={async (e) => {
-                                  const file = e.target.files?.[0];
-                                  if (!file || !editDraft) return;
+              //               {isEditing && (
+              //                 <div
+              //                   style={{
+              //                     display: 'flex',
+              //                     flexDirection: 'column',
+              //                     gap: 6,
+              //                   }}
+              //                 >
+              //                   <input
+              //                     type="file"
+              //                     accept="image/png,image/jpeg,image/webp"
+              //                     onChange={async (e) => {
+              //                       const file = e.target.files?.[0];
+              //                       if (!file || !editDraft) return;
 
-                                  const dataUrl = await processImageFile(file);
+              //                       const dataUrl = await processImageFile(file);
 
-                                  setEditDraft({
-                                    ...editDraft,
-                                    iconDataUrl: dataUrl,
-                                  });
-                                }}
-                              />
+              //                       setEditDraft({
+              //                         ...editDraft,
+              //                         iconDataUrl: dataUrl,
+              //                       });
+              //                     }}
+              //                   />
 
-                              {(editDraft?.iconDataUrl ||
-                                editDraft?.iconUrl) && (
-                                <button
-                                  type="button"
-                                  onClick={() =>
-                                    setEditDraft({
-                                      ...editDraft,
-                                      iconDataUrl: undefined,
-                                      iconUrl: undefined,
-                                    })
-                                  }
-                                >
-                                  Remove icon
-                                </button>
-                              )}
-                            </div>
-                          )}
-                        </div>
-                      </div>
+              //                   {(editDraft?.program.thumbnail ||
+              //                     editDraft?.program.thumbnail) && (
+              //                     <button
+              //                       type="button"
+              //                       onClick={() =>
+              //                         setEditDraft({
+              //                           ...editDraft,
+              //                           iconDataUrl: undefined,
+              //                           iconUrl: undefined,
+              //                         })
+              //                       }
+              //                     >
+              //                       Remove icon
+              //                     </button>
+              //                   )}
+              //                 </div>
+              //               )}
+              //             </div>
+              //           </div>
 
-                      <EditableField
-                        label="Title"
-                        value={showData!.title}
-                        isEditing={isEditing}
-                        renderInput={() => (
-                          <input
-                            className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-                            value={editDraft!.title}
-                            onChange={(e) =>
-                              setEditDraft({
-                                ...editDraft!,
-                                title: e.target.value,
-                              })
-                            }
-                          />
-                        )}
-                      />
+              //           <EditableField
+              //             label="Title"
+              //             value={programData!.program.title}
+              //             isEditing={isEditing}
+              //             renderInput={() => (
+              //               <input
+              //                 className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+              //                 value={editDraft!.program.title}
+              //                 onChange={(e) =>
+              //                   setEditDraft({
+              //                     ...editDraft!,
+              //                     title: e.target.value,
+              //                   })
+              //                 }
+              //               />
+              //             )}
+              //           />
 
-                      <EditableField
-                        label="Hosts"
-                        value={showData!.hosts.join(', ')}
-                        isEditing={isEditing}
-                        renderInput={() => (
-                          <input
-                            className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-                            value={editDraft!.hosts.join(', ')}
-                            onChange={(e) =>
-                              setEditDraft({
-                                ...editDraft!,
-                                hosts: e.target.value
-                                  .split(',')
-                                  .map((h) => h.trim()),
-                              })
-                            }
-                          />
-                        )}
-                      />
+              //           <EditableField
+              //             label="Hosts"
+              //             value={programData!.program.hosts.join(', ')}
+              //             isEditing={isEditing}
+              //             renderInput={() => (
+              //               <input
+              //                 className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+              //                 value={editDraft!.program.hosts.join(', ')}
+              //                 onChange={(e) =>
+              //                   setEditDraft({
+              //                     ...editDraft!,
+              //                     hosts: e.target.value
+              //                       .split(',')
+              //                       .map((h) => h.trim()),
+              //                   })
+              //                 }
+              //               />
+              //             )}
+              //           />
 
-                      <EditableField
-                        label="Start Date"
-                        value={showData!.startDate || '—'}
-                        isEditing={isEditing}
-                        renderInput={() => (
-                          <input
-                            className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-                            value={editDraft!.startDate}
-                            onChange={(e) =>
-                              setEditDraft({
-                                ...editDraft!,
-                                startDate: e.target.value,
-                              })
-                            }
-                          />
-                        )}
-                      />
+              //           <EditableField
+              //             label="Start Date"
+              //             value={programData!.startDate || '—'}
+              //             isEditing={isEditing}
+              //             renderInput={() => (
+              //               <input
+              //                 className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+              //                 value={editDraft!.startDate}
+              //                 onChange={(e) =>
+              //                   setEditDraft({
+              //                     ...editDraft!,
+              //                     startDate: e.target.value,
+              //                   })
+              //                 }
+              //               />
+              //             )}
+              //           />
 
-                      <EditableField
-                        label="Frequency"
-                        value={showData!.frequency}
-                        isEditing={isEditing}
-                        renderInput={() => (
-                          <select
-                            className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-                            value={editDraft!.frequency}
-                            onChange={(e) =>
-                              setEditDraft({
-                                ...editDraft!,
-                                frequency: e.target
-                                  .value as RadioShow['frequency'],
-                              })
-                            }
-                          >
-                            <option value="weekly">Weekly</option>
-                            <option value="biweekly">Biweekly</option>
-                            <option value="irregular">Irregular</option>
-                          </select>
-                        )}
-                      />
+              //           <EditableField
+              //             label="Frequency"
+              //             value={programData!.frequency}
+              //             isEditing={isEditing}
+              //             renderInput={() => (
+              //               <select
+              //                 className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+              //                 value={editDraft!.frequency}
+              //                 onChange={(e) =>
+              //                   setEditDraft({
+              //                     ...editDraft!,
+              //                     frequency: e.target
+              //                       .value as Program['frequency'],
+              //                   })
+              //                 }
+              //               >
+              //                 <option value="weekly">Weekly</option>
+              //                 <option value="biweekly">Biweekly</option>
+              //                 <option value="irregular">Irregular</option>
+              //               </select>
+              //             )}
+              //           />
 
-                      <EditableField
-                        label="Total Episodes"
-                        value={showData!.totalEpisodes}
-                        isEditing={isEditing}
-                        renderInput={() => (
-                          <input
-                            type="number"
-                            className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-                            value={editDraft!.totalEpisodes}
-                            onChange={(e) =>
-                              setEditDraft({
-                                ...editDraft!,
-                                totalEpisodes: Number(e.target.value),
-                              })
-                            }
-                          />
-                        )}
-                      />
-                    </>
+              //           <EditableField
+              //             label="Total Episodes"
+              //             value={programData!.totalEpisodes}
+              //             isEditing={isEditing}
+              //             renderInput={() => (
+              //               <input
+              //                 type="number"
+              //                 className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+              //                 value={editDraft!.totalEpisodes}
+              //                 onChange={(e) =>
+              //                   setEditDraft({
+              //                     ...editDraft!,
+              //                     totalEpisodes: Number(e.target.value),
+              //                   })
+              //                 }
+              //               />
+              //             )}
+              //           />
+              //         </>
 
-                    <EditableField
-                      label="Episode Duration (minutes)"
-                      value={showData!.episodeDurationMinutes ?? '—'}
-                      isEditing={isEditing}
-                      renderInput={() => (
-                        <input
-                          type="number"
-                          min={1}
-                          className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-                          value={showData!.episodeDurationMinutes ?? 30}
-                          onChange={(e) =>
-                            setEditDraft({
-                              ...editDraft!,
-                              episodeDurationMinutes: Number(e.target.value),
-                            })
-                          }
-                        />
-                      )}
-                    />
+              //         <EditableField
+              //           label="Episode Duration (minutes)"
+              //           value={programData!.episodeDurationMinutes ?? '—'}
+              //           isEditing={isEditing}
+              //           renderInput={() => (
+              //             <input
+              //               type="number"
+              //               min={1}
+              //               className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+              //               value={programData!.episodeDurationMinutes ?? 30}
+              //               onChange={(e) =>
+              //                 setEditDraft({
+              //                   ...editDraft!,
+              //                   episodeDurationMinutes: Number(e.target.value),
+              //                 })
+              //               }
+              //             />
+              //           )}
+              //         />
 
-                    {/* Tags editor (User State) */}
-                    <div className="mb-3">
-                      <label className="text-sm mb-1 block">Tags</label>
-                      <input
-                        type="text"
-                        placeholder="anime, comedy, drama"
-                        className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-                        value={tagDraft}
-                        onChange={(e) => setTagDraft(e.target.value)}
-                        onBlur={() => {
-                          const raw = tagDraft
-                            .split(',')
-                            .map((t) => t.trim())
-                            .filter(Boolean);
+              //         {/* Tags editor (User State) */}
+              //         <div className="mb-3">
+              //           <label className="text-sm mb-1 block">Tags</label>
+              //           <input
+              //             type="text"
+              //             placeholder="anime, comedy, drama"
+              //             className="w-full rounded-md border p-2 bg-background/90 text-foreground"
+              //             value={tagDraft}
+              //             onChange={(e) => setTagDraft(e.target.value)}
+              //             onBlur={() => {
+              //               const raw = tagDraft
+              //                 .split(',')
+              //                 .map((t) => t.trim())
+              //                 .filter(Boolean);
 
-                          const normalized = Array.from(
-                            new Set(raw.map((t) => t.toLowerCase()))
-                          );
+              //               const normalized = Array.from(
+              //                 new Set(raw.map((t) => t.toLowerCase()))
+              //               );
 
-                          const current = getShowState(selectedShow!.id);
-                          updateShowState({
-                            ...current,
-                            tags: normalized,
-                          });
+              //               const current = getProgramState(selectedProgram!.id);
+              //               updateProgramState({
+              //                 ...current,
+              //                 tags: normalized,
+              //               });
 
-                          setTagDraft(normalized.join(', '));
-                        }}
-                      />
-                    </div>
+              //               setTagDraft(normalized.join(', '));
+              //             }}
+              //           />
+              //         </div>
 
-                    <div className="mt-6 flex justify-end gap-2">
-                      {isEditing ? (
-                        <>
-                          <button
-                            className="px-4 py-2 rounded-md bg-secondary"
-                            onClick={() => {
-                              const confirmed = window.confirm(
-                                `Delete "${selectedShow!.title}"?\nThis cannot be undone.`
-                              );
+              //         <div className="mt-6 flex justify-end gap-2">
+              //           {isEditing ? (
+              //             <>
+              //               <button
+              //                 className="px-4 py-2 rounded-md bg-secondary"
+              //                 onClick={() => {
+              //                   const confirmed = window.confirm(
+              //                     `Delete "${selectedProgram!.program.title}"?\nThis cannot be undone.`
+              //                   );
 
-                              if (!confirmed) return;
+              //                   if (!confirmed) return;
 
-                              deleteShow(selectedShow!.id);
-                              setEditDraft(null);
-                              setSelectedShow(null);
-                            }}
-                          >
-                            Delete
-                          </button>
-                          <button
-                            className="px-4 py-2 rounded-md bg-secondary"
-                            onClick={() => {
-                              updateShow(editDraft!);
-                              setEditDraft(null);
-                            }}
-                          >
-                            Save
-                          </button>
+              //                   deleteProgram(selectedProgram!.id);
+              //                   setEditDraft(null);
+              //                   setSelectedProgram(null);
+              //                 }}
+              //               >
+              //                 Delete
+              //               </button>
+              //               <button
+              //                 className="px-4 py-2 rounded-md bg-secondary"
+              //                 onClick={() => {
+              //                   updateProgram(editDraft!);
+              //                   setEditDraft(null);
+              //                 }}
+              //               >
+              //                 Save
+              //               </button>
 
-                          <button
-                            className="px-4 py-2 rounded-md bg-muted"
-                            onClick={() => setEditDraft(null)}
-                          >
-                            Cancel
-                          </button>
-                        </>
-                      ) : (
-                        <button
-                          className="px-4 py-2 rounded-md bg-secondary"
-                          onClick={() => setSelectedShow(null)}
-                        >
-                          Close
-                        </button>
-                      )}
-                    </div>
-                  </motion.div>
-                </motion.div>
-              );
+              //               <button
+              //                 className="px-4 py-2 rounded-md bg-muted"
+              //                 onClick={() => setEditDraft(null)}
+              //               >
+              //                 Cancel
+              //               </button>
+              //             </>
+              //           ) : (
+              //             <button
+              //               className="px-4 py-2 rounded-md bg-secondary"
+              //               onClick={() => setSelectedProgram(null)}
+              //             >
+              //               Close
+              //             </button>
+              //           )}
+              //         </div>
+              //       </motion.div>
+              //     </motion.div>
+              //   );
             })()}
 
           {statsOpen && (
@@ -1124,8 +1143,10 @@ export default function App() {
 
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Total shows</span>
-                    <span className="font-medium">{stats.totalShows}</span>
+                    <span className="text-muted-foreground">
+                      Total programs
+                    </span>
+                    <span className="font-medium">{stats.totalPrograms}</span>
                   </div>
 
                   <div className="flex justify-between">
@@ -1248,7 +1269,7 @@ export default function App() {
                     {activity.map((ev) => {
                       if (ev.type !== 'episode_progress') return null;
 
-                      const title = getShowTitle(ev.showId);
+                      const title = getShowTitle(ev.programId);
                       const deltaLabel =
                         ev.delta > 0 ? `+${ev.delta}` : `${ev.delta}`;
 

@@ -45,6 +45,8 @@ export async function scrapeAudee(url: string) {
 
       description: site.description,
 
+      hosts: slug,
+
       category: site.site_hashtags?.[0]?.hashtag_name ?? '',
 
       twitter: site.fanclub_footer_snses?.[0]?.sns_page_url ?? null,

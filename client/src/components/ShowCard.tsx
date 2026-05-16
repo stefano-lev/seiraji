@@ -1,11 +1,10 @@
-//import type { RadioShow, UserShowState } from '@/types/radio';
-
 import type { Program } from '@/types/media';
+import type { UserProgramState } from '@/types/user';
 
-//import { getEffectiveTotalEpisodes } from '@/lib/episodes';
-
+import { Badge } from './ui/badge';
+import { Button } from './ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
-
+import { Input } from './ui/input';
 import {
   Select,
   SelectContent,
@@ -18,7 +17,7 @@ type Props = {
   program: Program;
   userState?: UserProgramState;
   onUpdate: (state: UserProgramState) => void;
-  onUpdateEpisode: (showId: string, nextEpisode: number) => void;
+  onUpdateEpisode: (programId: string, nextEpisode: number) => void;
   onOpen?: (program: Program) => void;
   onEdit?: (program: Program) => void;
   onTogglePinned: (programId: string) => void;
@@ -48,231 +47,174 @@ export function ShowCard({
     tags: [],
   };
 
-  const iconSrc =
+  const thumbnail =
     program.program.thumbnail ?? '/placeholders/show-placeholder.png';
 
   const totalEpisodes = program.episodes.length;
-
-  // if 0, treat it as "unknown"
-  const hasKnownTotal = totalEpisodes > 0;
-
   const lastEp = state.lastListenedEpisode ?? 0;
 
-  function clampEpisode(n: number) {
+  const progressPct =
+    totalEpisodes > 0 ? Math.min(100, (lastEp / totalEpisodes) * 100) : 0;
+
+  const latestEpisode = program.episodes[program.episodes.length - 1];
+
+  function clamp(n: number) {
     if (!Number.isFinite(n)) return 0;
-    const safe = Math.max(0, Math.floor(n));
-    return hasKnownTotal ? Math.min(safe, totalEpisodes) : safe;
+    return Math.max(0, Math.min(Math.floor(n), totalEpisodes));
   }
 
   return (
-    <div className="will-change-transform hover:-translate-y-0.5 transition-transform h-full">
-      <Card
-        onClick={() => onOpen?.(program)}
-        className="
-    h-full
-    relative
-    group
-    rounded-2xl
-    border border-border/50
-    bg-card
-    shadow-md
-    hover:shadow-xl
-    transition-shadow
-  "
-      >
-        {state.isPinned && (
-          <div className="pointer-events-none absolute top-2 left-2 z-10">
-            <div
-              className="
-                h-10 w-10 rounded-full
-                flex items-center justify-center
-                bg-yellow-500/15
-                border border-yellow-500/30
-                text-yellow-500
-                shadow-sm
-                backdrop-blur
-              "
-            >
-              <span className="text-xl leading-none">★</span>
+    <Card
+      onClick={() => onOpen?.(program)}
+      className="relative group hover:shadow-xl transition-shadow overflow-hidden"
+    >
+      {state.isPinned && (
+        <div className="absolute top-2 left-2 text-yellow-500 text-xl">★</div>
+      )}
+
+      <CardHeader className="flex flex-row gap-3 items-start">
+        <img
+          src={thumbnail}
+          className="h-9 w-16 rounded-md object-cover bg-muted"
+          onError={(e) => {
+            e.currentTarget.src = '/placeholders/show-placeholder.png';
+          }}
+        />
+
+        <div className="flex flex-col flex-1 min-w-0">
+          <h3 className="font-semibold truncate">{program.program.title}</h3>
+          <span>
+            {' '}
+            <Badge className="text-xs bg-slate-800 text-muted-foreground truncate">
+              {program.platform}
+            </Badge>{' '}
+            ·{' '}
+            <Badge className="text-xs bg-slate-800 text-muted-foreground truncate">
+              {program.program.hosts}
+            </Badge>
+          </span>
+
+          {program.program.categories?.length ? (
+            <div className="flex gap-1 mt-1 flex-wrap">
+              {program.program.categories.slice(0, 3).map((c) => (
+                <span
+                  key={c}
+                  className="text-[10px] px-2 py-0.5 border rounded-full text-muted-foreground"
+                >
+                  {c}
+                </span>
+              ))}
             </div>
+          ) : null}
+        </div>
+
+        <Button
+          onClick={(e) => {
+            e.stopPropagation();
+            onTogglePinned(program.id);
+          }}
+          className="text-xs opacity-0 group-hover:opacity-100"
+          size="sm"
+        >
+          {state.isPinned ? 'Unpin' : 'Pin'}
+        </Button>
+
+        <Button
+          onClick={(e) => {
+            e.stopPropagation();
+            onEdit?.(program);
+          }}
+          className="text-xs opacity-0 group-hover:opacity-100"
+          size="sm"
+        >
+          Edit
+        </Button>
+      </CardHeader>
+
+      <CardContent className="space-y-3">
+        {program.program.description && (
+          <p className="text-xs text-muted-foreground line-clamp-2">
+            {program.program.description}
+          </p>
+        )}
+
+        {latestEpisode && (
+          <div className="text-xs border-l pl-2 text-muted-foreground">
+            <div className="font-medium text-foreground">
+              Latest: {latestEpisode.title}
+            </div>
+            {latestEpisode.publishedAt && (
+              <div>
+                {new Date(latestEpisode.publishedAt).toLocaleDateString()}
+              </div>
+            )}
           </div>
         )}
 
-        <CardHeader className="relative flex flex-row items-center gap-4">
-          <img
-            src={iconSrc}
-            onError={(e) => {
-              e.currentTarget.src = '/placeholders/show-placeholder.png';
+        <div>
+          <div className="flex justify-between text-xs text-muted-foreground">
+            <span>
+              Episode {lastEp} / {totalEpisodes || '?'}
+            </span>
+            <span>{Math.round(progressPct)}%</span>
+          </div>
+
+          <div className="h-2 bg-muted rounded-full overflow-hidden mt-1">
+            <div
+              className="h-full bg-primary"
+              style={{ width: `${progressPct}%` }}
+            />
+          </div>
+        </div>
+
+        <div className="flex items-center gap-2">
+          <Button
+            size="sm"
+            onClick={(e) => {
+              e.stopPropagation();
+              onUpdateEpisode(program.id, clamp(lastEp - 1));
             }}
-            alt={`${program.program.title} icon`}
-            className="h-12 w-12 rounded-md object-cover bg-muted"
+          >
+            −
+          </Button>
+
+          <Input
+            type="number"
+            value={lastEp}
+            onChange={(e) =>
+              onUpdateEpisode(program.id, clamp(Number(e.target.value)))
+            }
+            className="w-16 text-center border rounded"
           />
 
-          <div className="flex flex-col">
-            <h3 className="text-lg font-semibold leading-tight line-clamp-1">
-              {program.program.title}
-            </h3>
-
-            <p className="text-sm text-muted-foreground line-clamp-1">
-              {program.program.hosts?.join(', ')}
-            </p>
-          </div>
-
-          <button
-            className=" absolute top-3 right-12 rounded-md px-2 py-1 text-xs
-                bg-secondary text-secondary-foreground opacity-0
-                group-hover:opacity-100 active:scale-95 shadow-sm transition-opacity
-                "
+          <Button
+            size="sm"
             onClick={(e) => {
               e.stopPropagation();
-              onTogglePinned(program.id);
+              onUpdateEpisode(program.id, clamp(lastEp + 1));
             }}
           >
-            {state.isPinned ? '★' : '☆'}
-          </button>
+            +
+          </Button>
+        </div>
 
-          <button
-            className="
-              absolute top-3 right-3
-              rounded-md px-2 py-1 text-xs
-              bg-secondary text-secondary-foreground
-              opacity-0 group-hover:opacity-100
-              active:scale-95
-              shadow-sm
-              transition-opacity
-            "
-            onClick={(e) => {
-              e.stopPropagation();
-              onEdit?.(program);
-            }}
-          >
-            Edit
-          </button>
-        </CardHeader>
-
-        <CardContent className="space-y-2">
-          {prefs.showStatusOnCard && <p>Status: {state.status}</p>}
-          {prefs.showLastEpisodeOnCard && (
-            <p>
-              Episode: {lastEp}
-              {hasKnownTotal ? ` / ${totalEpisodes}` : ' / ?'}
-              <p className="text-xs text-muted-foreground mt-1">
-                {totalEpisodes} episodes available
-              </p>
-            </p>
-          )}
-        </CardContent>
-
-        <CardContent
-          className="space-y-3 mt-2 pt-4 border-t border-border/50"
-          onClick={(e) => e.stopPropagation()}
+        <Select
+          value={state.status}
+          onValueChange={(v) =>
+            onUpdate({ ...state, status: v as UserProgramState['status'] })
+          }
         >
-          <div className="rounded-xl bg-muted/20 border border-border/40 p-3 space-y-3">
-            {/* Status Selector */}
-            <div className="flex flex-col">
-              <label className="text-sm mb-1">Status</label>
-              <Select
-                value={state.status}
-                onValueChange={(v) => {
-                  onUpdate({
-                    ...state,
-                    status: v as UserProgramState['status'],
-                  });
-                }}
-              >
-                <SelectTrigger className="w-full bg-background/90">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="listening">Listening</SelectItem>
-                  <SelectItem value="backlog">Backlog</SelectItem>
-                  <SelectItem value="completed">Completed</SelectItem>
-                  <SelectItem value="dropped">Dropped</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-
-            {/* Tags display */}
-            {prefs.showTagsOnCard && (
-              <div className="flex flex-wrap gap-1 min-h-[32px]">
-                {(state.tags?.length ?? 0) > 0
-                  ? state.tags!.map((t) => (
-                      <span
-                        key={t}
-                        className="text-xs px-2 py-0.5 rounded-full border bg-muted/40 text-muted-foreground"
-                      >
-                        #{t}
-                      </span>
-                    ))
-                  : null}
-              </div>
-            )}
-
-            {/* Episode Controls */}
-            <div className="flex flex-col">
-              <label className="text-sm mb-1">Last Episode</label>
-              <div className="flex items-center gap-2">
-                {/* Decrement */}
-                <button
-                  className="
-                  rounded-md px-3 py-1
-                  bg-secondary text-secondary-foreground
-                  hover:bg-secondary/80
-                  active:scale-95
-                  shadow-sm
-                  transition-all
-                "
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    onUpdateEpisode(program.id, clampEpisode(lastEp - 1));
-                  }}
-                >
-                  −
-                </button>
-
-                {/* Input */}
-                <input
-                  type="number"
-                  className="
-                  w-20 text-center rounded-md border border-border/60 p-2
-                  bg-background/90 text-foreground
-                  focus:outline-none focus:ring-2 focus:ring-ring
-                  hover:border-border
-                  transition
-                "
-                  value={state.lastListenedEpisode ?? ''}
-                  min={0}
-                  onChange={(e) => {
-                    e.stopPropagation();
-                    onUpdateEpisode(
-                      program.id,
-                      clampEpisode(Number(e.target.value))
-                    );
-                  }}
-                />
-
-                {/* Increment */}
-                <button
-                  className="
-                  rounded-md px-3 py-1
-                  bg-secondary text-secondary-foreground
-                  hover:bg-secondary/80
-                  active:scale-95
-                  shadow-sm
-                  transition-all
-                "
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    onUpdateEpisode(program.id, clampEpisode(lastEp + 1));
-                  }}
-                >
-                  +
-                </button>
-              </div>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-    </div>
+          <SelectTrigger>
+            <SelectValue />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="listening">Listening</SelectItem>
+            <SelectItem value="backlog">Backlog</SelectItem>
+            <SelectItem value="completed">Completed</SelectItem>
+            <SelectItem value="dropped">Dropped</SelectItem>
+          </SelectContent>
+        </Select>
+      </CardContent>
+    </Card>
   );
 }

@@ -1,5 +1,6 @@
 //import type { RadioShow, UserShowState } from '@/types/radio';
-import type { Program, UserProgramState } from '@/types/media';
+import type { Program } from '@/types/media';
+import type { UserProgramState } from '@/types/user';
 
 const KEY = 'seiraji:user-state';
 const ACTIVITY_KEY = 'seiraji:activity';
