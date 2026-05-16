@@ -1,5 +1,8 @@
-import type { RadioShow, UserShowState } from '@/types/radio';
-import { getEffectiveTotalEpisodes } from '@/lib/episodes';
+//import type { RadioShow, UserShowState } from '@/types/radio';
+
+import type { Program } from '@/types/media';
+
+//import { getEffectiveTotalEpisodes } from '@/lib/episodes';
 
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 
@@ -12,15 +15,14 @@ import {
 } from '@/components/ui/select';
 
 type Props = {
-  show: RadioShow;
-  userState?: UserShowState;
-  onUpdate: (state: UserShowState) => void;
+  program: Program;
+  userState?: UserProgramState;
+  onUpdate: (state: UserProgramState) => void;
   onUpdateEpisode: (showId: string, nextEpisode: number) => void;
-  onOpen?: (show: RadioShow) => void;
-  onEdit?: (show: RadioShow) => void;
-  onTogglePinned: (showId: string) => void;
+  onOpen?: (program: Program) => void;
+  onEdit?: (program: Program) => void;
+  onTogglePinned: (programId: string) => void;
 
-  nowMs: number;
   prefs: {
     showTagsOnCard: boolean;
     showStatusOnCard: boolean;
@@ -29,18 +31,17 @@ type Props = {
 };
 
 export function ShowCard({
-  show,
+  program,
   userState,
   onUpdate,
   onUpdateEpisode,
   onOpen,
   onEdit,
   onTogglePinned,
-  nowMs,
   prefs,
 }: Props) {
-  const state: UserShowState = userState ?? {
-    showId: show.id,
+  const state: UserProgramState = userState ?? {
+    programId: program.id,
     status: 'backlog',
     lastListenedEpisode: 0,
     isPinned: false,
@@ -48,9 +49,9 @@ export function ShowCard({
   };
 
   const iconSrc =
-    show.iconDataUrl ?? show.iconUrl ?? '/placeholders/show-placeholder.png';
+    program.program.thumbnail ?? '/placeholders/show-placeholder.png';
 
-  const totalEpisodes = getEffectiveTotalEpisodes(show, nowMs);
+  const totalEpisodes = program.episodes.length;
 
   // if 0, treat it as "unknown"
   const hasKnownTotal = totalEpisodes > 0;
@@ -66,7 +67,7 @@ export function ShowCard({
   return (
     <div className="will-change-transform hover:-translate-y-0.5 transition-transform h-full">
       <Card
-        onClick={() => onOpen?.(show)}
+        onClick={() => onOpen?.(program)}
         className="
     h-full
     relative
@@ -103,17 +104,17 @@ export function ShowCard({
             onError={(e) => {
               e.currentTarget.src = '/placeholders/show-placeholder.png';
             }}
-            alt={`${show.title} icon`}
+            alt={`${program.program.title} icon`}
             className="h-12 w-12 rounded-md object-cover bg-muted"
           />
 
           <div className="flex flex-col">
             <h3 className="text-lg font-semibold leading-tight line-clamp-1">
-              {show.title}
+              {program.program.title}
             </h3>
 
             <p className="text-sm text-muted-foreground line-clamp-1">
-              {show.hosts.join(', ')}
+              {program.program.hosts?.join(', ')}
             </p>
           </div>
 
@@ -124,7 +125,7 @@ export function ShowCard({
                 "
             onClick={(e) => {
               e.stopPropagation();
-              onTogglePinned(show.id);
+              onTogglePinned(program.id);
             }}
           >
             {state.isPinned ? '★' : '☆'}
@@ -142,7 +143,7 @@ export function ShowCard({
             "
             onClick={(e) => {
               e.stopPropagation();
-              onEdit?.(show);
+              onEdit?.(program);
             }}
           >
             Edit
@@ -156,15 +157,7 @@ export function ShowCard({
               Episode: {lastEp}
               {hasKnownTotal ? ` / ${totalEpisodes}` : ' / ?'}
               <p className="text-xs text-muted-foreground mt-1">
-                {show.isEnded
-                  ? 'Ended (auto-increment disabled)'
-                  : show.isHiatus
-                    ? 'On hiatus (auto-increment disabled)'
-                    : show.manualTotalEpisodes != null
-                      ? '(manual override)'
-                      : hasKnownTotal
-                        ? '(auto-estimated)'
-                        : 'Total episodes: unknown'}
+                {totalEpisodes} episodes available
               </p>
             </p>
           )}
@@ -183,7 +176,7 @@ export function ShowCard({
                 onValueChange={(v) => {
                   onUpdate({
                     ...state,
-                    status: v as UserShowState['status'],
+                    status: v as UserProgramState['status'],
                   });
                 }}
               >
@@ -231,7 +224,7 @@ export function ShowCard({
                 "
                   onClick={(e) => {
                     e.stopPropagation();
-                    onUpdateEpisode(show.id, clampEpisode(lastEp - 1));
+                    onUpdateEpisode(program.id, clampEpisode(lastEp - 1));
                   }}
                 >
                   −
@@ -252,7 +245,7 @@ export function ShowCard({
                   onChange={(e) => {
                     e.stopPropagation();
                     onUpdateEpisode(
-                      show.id,
+                      program.id,
                       clampEpisode(Number(e.target.value))
                     );
                   }}
@@ -270,7 +263,7 @@ export function ShowCard({
                 "
                   onClick={(e) => {
                     e.stopPropagation();
-                    onUpdateEpisode(show.id, clampEpisode(lastEp + 1));
+                    onUpdateEpisode(program.id, clampEpisode(lastEp + 1));
                   }}
                 >
                   +

@@ -1,95 +1,78 @@
-import * as cheerio from "cheerio";
+import * as cheerio from 'cheerio';
 
-export async function scrapeOnsen(
-  url: string
-) {
+export async function scrapeOnsen(url: string) {
   const response = await fetch(url);
 
   const html = await response.text();
 
   const $ = cheerio.load(html);
 
-  const slug =
-    url.split("/program/")[1];
+  const slug = url.split('/program/')[1];
 
-  const title =
-    $('meta[name="twitter:title"]')
-      .attr("content") || "";
+  const title = $('meta[name="twitter:title"]').attr('content') || '';
 
   const description =
-    $('meta[name="twitter:description"]')
-      .attr("content") || "";
+    $('meta[name="twitter:description"]').attr('content') || '';
 
-  const host =
-    $(".single-categories.performer a")
-      .text()
-      .trim();
+  const hosts = $('.single-categories.performer a').text().trim();
 
-  const liveperiod =
-    $(".live-period-mb")
-      .text()
-      .trim();
+  const liveperiod = $('.live-period-mb').text().trim();
 
   const thumbnail =
-    $('meta[property="og:image"]')
-      .attr("content") || null;
+    $('meta[name="og:image"]').attr('content') ||
+    $('meta[name="twitter:image"]').attr('content') ||
+    null;
 
   const episodes: any[] = [];
 
-  $(".scroll-table tr.wrap-content")
-    .each((_, element) => {
-      const row = $(element);
+  $('.scroll-table tr.wrap-content').each((_, element) => {
+    const row = $(element);
 
-      const title =
-        row.find(".pro-title-content")
-          .text()
-          .trim();
+    const title = row.find('.pro-title-content').text().trim();
 
-      const date =
-        row.find("td")
-          .eq(1)
-          .text()
-          .trim();
+    const date = row.find('td').eq(1).text().trim();
 
-      const tags: string[] = [];
+    const tags: string[] = [];
 
-      if (row.find(".tag-free").length) {
-        tags.push("FREE");
-      }
+    if (row.find('.tag-free').length) {
+      tags.push('FREE');
+    }
 
-      if (
-        row.find(".tag-premium").length
-      ) {
-        tags.push("PREMIUM");
-      }
+    if (row.find('.tag-premium').length) {
+      tags.push('PREMIUM');
+    }
 
-      if (row.find(".tag-guest").length) {
-        tags.push("GUEST");
-      }
+    if (row.find('.tag-guest').length) {
+      tags.push('GUEST');
+    }
 
-      episodes.push({
-        id: crypto.randomUUID(),
+    episodes.push({
+      id: `${slug}-${date}-${title}`,
 
-        title,
+      title,
 
-        publishedAt: null,
+      publishedAt: null,
 
-        publishedAtUnix: null,
+      publishedAtUnix: null,
 
-        thumbnail: null,
+      thumbnail: null,
 
-        durationSeconds: null,
+      durationSeconds: null,
 
-        tags,
+      tags,
 
-        platformMetadata: {
-          displayDate: date,
-        },
-      });
+      platformMetadata: {
+        displayDate: date,
+      },
     });
+  });
 
   return {
-    platform: "onsen",
+    id: `onsen:${slug}`,
+
+    source: 'imported',
+
+    platform: 'onsen',
 
     platformId: slug,
 
@@ -104,9 +87,9 @@ export async function scrapeOnsen(
 
       thumbnail,
 
-      host,
+      hosts,
 
-      category: null,
+      categories: null,
 
       schedule: liveperiod,
     },
@@ -114,11 +97,9 @@ export async function scrapeOnsen(
     episodes,
 
     meta: {
-      cachedAt:
-        new Date().toISOString(),
+      cachedAt: new Date().toISOString(),
 
-      episodeCount:
-        episodes.length,
+      episodeCount: episodes.length,
     },
   };
 }

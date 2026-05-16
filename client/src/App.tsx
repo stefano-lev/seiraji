@@ -9,13 +9,14 @@ import { defaultShows } from '@/data/shows';
 import { demoShows, demoUserState, demoTags } from '@/data/demo';
 import type { UserShowState } from '@/types/radio';
 import { ShowCard } from '@/components/ShowCard';
-import type { RadioShow } from '@/types/radio';
+//import type { RadioShow } from '@/types/radio';
+import type { Program, setPrograms } from './types/media';
 
 import { loadActivity, saveActivity, appendActivityEvent } from '@/lib/storage';
 import type { ActivityEvent } from '@/lib/storage';
 import { loadTags, saveTags, upsertTag } from '@/lib/storage';
 import { loadPrefs, savePrefs } from '@/lib/storage';
-import { getEffectiveTotalEpisodes } from '@/lib/episodes';
+//import { getEffectiveTotalEpisodes } from '@/lib/episodes';
 import { loadUserState, saveUserState } from '@/lib/storage';
 
 import { processImageFile } from '@/lib/image';
@@ -81,7 +82,7 @@ export default function App() {
 
   const importInputRef = useRef<HTMLInputElement | null>(null);
 
-  const [shows, setShows] = useState<RadioShow[]>(() => {
+  const [programs, setPrograms] = useState<RadioShow[]>(() => {
     const stored = localStorage.getItem('shows');
     const parsed: RadioShow[] = stored ? JSON.parse(stored) : defaultShows;
 

@@ -1,66 +1,51 @@
-import express from "express";
+import express from 'express';
 
-import { scrapeOnsen } from "../services/scrapeOnsen";
+import { scrapeOnsen } from '../services/scrapeOnsen';
 
-import {
-  readCache,
-  writeCache,
-} from "../utils/cache";
+import { readCache, writeCache } from '../utils/cache';
 
 const router = express.Router();
 
-router.post("/import", async (req, res) => {
+router.post('/import', async (req, res) => {
   try {
     const url = req.body?.url;
 
     if (!url) {
       return res.status(400).json({
-        error: "URL required",
+        error: 'URL required',
       });
     }
 
-    const slug =
-      url.split("/program/")[1];
+    const slug = url.split('/program/')[1];
 
     if (!slug) {
       return res.status(400).json({
-        error: "Invalid Onsen URL",
+        error: 'Invalid Onsen URL',
       });
     }
 
-    const cache =
-  await readCache(
-    "onsen-programs.json"
-  );
+    const cache = await readCache('onsen-programs.json');
 
     if (cache[slug]) {
-      console.log(
-        `Returning cached data for ${slug}`
-      );
+      console.log(`Returning cached data for ${slug}`);
 
       return res.json(cache[slug]);
     }
 
-    console.log(
-      `Scraping fresh data for ${slug}`
-    );
+    console.log(`Scraping fresh data for ${slug}`);
 
     const data = await scrapeOnsen(url);
 
     cache[slug] = data;
 
-    await writeCache(
-  "onsen-programs.json",
-  cache
-);
+    await writeCache('onsen-programs.json', cache);
 
     res.json(data);
-
   } catch (error) {
     console.error(error);
 
     res.status(500).json({
-      error: "Failed to scrape page",
+      error: 'Failed to scrape page',
     });
   }
 });

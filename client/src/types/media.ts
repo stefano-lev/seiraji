@@ -51,5 +51,5 @@ export interface Episode {
 
   tags?: string[];
 
-  platformMetadata?: Record<string, any>;
+  platformMetadata?: Record<string, never>;
 }

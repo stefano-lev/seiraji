@@ -1,4 +1,5 @@
-import type { RadioShow, UserShowState } from '@/types/radio';
+//import type { RadioShow, UserShowState } from '@/types/radio';
+import type { Program, UserProgramState } from '@/types/media';
 
 const KEY = 'seiraji:user-state';
 const ACTIVITY_KEY = 'seiraji:activity';
@@ -9,7 +10,7 @@ export type ActivityEvent = {
   id: string;
   ts: string;
   type: 'episode_progress';
-  showId: string;
+  programId: string;
   episode: number;
   delta: number;
 };
@@ -64,20 +65,20 @@ export function savePrefs(prefs: Preferences) {
 export type ExportPayload = {
   version: 2;
   exportedAt: string;
-  shows: RadioShow[];
-  userState: UserShowState[];
+  programs: Program[];
+  userState: UserProgramState[];
   tags: string[];
 };
 
 export function buildExportPayload(
-  shows: RadioShow[],
-  userState: UserShowState[],
+  programs: Program[],
+  userState: UserProgramState[],
   tags: string[]
 ): ExportPayload {
   return {
     version: 2,
     exportedAt: new Date().toISOString(),
-    shows,
+    programs,
     userState,
     tags,
   };
@@ -107,7 +108,7 @@ export function isExportPayload(data: unknown): data is ExportPayload {
 
   const baseOk =
     (obj.version === 1 || obj.version === 2) &&
-    Array.isArray(obj.shows) &&
+    Array.isArray(obj.programs) &&
     Array.isArray(obj.userState);
 
   if (!baseOk) return false;
@@ -118,7 +119,7 @@ export function isExportPayload(data: unknown): data is ExportPayload {
   return true;
 }
 
-export function loadUserState(): UserShowState[] {
+export function loadUserState(): UserProgramState[] {
   try {
     const raw = localStorage.getItem(KEY);
     return raw ? JSON.parse(raw) : [];
@@ -127,15 +128,15 @@ export function loadUserState(): UserShowState[] {
   }
 }
 
-export function saveUserState(state: UserShowState[]) {
+export function saveUserState(state: UserProgramState[]) {
   localStorage.setItem(KEY, JSON.stringify(state));
 }
 
 export function upsertShowState(
-  all: UserShowState[],
-  updated: UserShowState
-): UserShowState[] {
-  const existingIndex = all.findIndex((s) => s.showId === updated.showId);
+  all: UserProgramState[],
+  updated: UserProgramState
+): UserProgramState[] {
+  const existingIndex = all.findIndex((s) => s.programId === updated.programId);
 
   if (existingIndex === -1) {
     return [...all, updated];
