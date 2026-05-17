@@ -1,5 +1,7 @@
 import * as cheerio from 'cheerio';
 
+import { normalizeEpisodes } from '../utils/normalizeEpisodes';
+
 export async function scrapeOnsen(url: string) {
   const response = await fetch(url);
 
@@ -30,17 +32,22 @@ export async function scrapeOnsen(url: string) {
 
     const title = row.find('.pro-title-content').text().trim();
 
+    // Skip omake episodes
+    if (title.includes('おまけ')) {
+      return;
+    }
+
     const date = row.find('td').eq(1).text().trim();
 
     const tags: string[] = [];
 
-    if (row.find('.tag-free').length) {
-      tags.push('FREE');
-    }
+    // if (row.find('.tag-free').length) {
+    //   tags.push('FREE');
+    // }
 
-    if (row.find('.tag-premium').length) {
-      tags.push('PREMIUM');
-    }
+    // if (row.find('.tag-premium').length) {
+    //   tags.push('PREMIUM');
+    // }
 
     if (row.find('.tag-guest').length) {
       tags.push('GUEST');
@@ -94,7 +101,7 @@ export async function scrapeOnsen(url: string) {
       schedule: liveperiod,
     },
 
-    episodes,
+    episodes: episodes.reverse(),
 
     meta: {
       cachedAt: new Date().toISOString(),

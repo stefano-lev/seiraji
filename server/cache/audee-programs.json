@@ -10,1341 +10,22 @@
     "program": {
       "title": "花宮初奈「217find!」",
       "description": "声優・花宮初奈の初単独音声番組。近況やふつおたはもちろん、リスナーと様々な情報をシェア！花宮初奈が愛してやまないエジプトをはじめ、世界中のあらゆる魅力も一緒に学び、発見・成長していくプログラム！",
+      "hosts": "hanamiya-nina",
       "category": "アニメ・声優",
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/357/thumbnail_image_path?time=1764121529"
     },
     "episodes": [
       {
-        "id": "audee:sm5qbPrFN3etpm9QUSjbHWWt",
-        "title": "【#111】岩手情報、ありがとうございます🍡",
-        "publishedAt": "2026-05-14T22:00:00+09:00",
-        "publishedAtUnix": 1778763600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/87060/thumbnail_path?time=1778639713",
-        "durationSeconds": 1748,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 952
-        }
-      },
-      {
-        "id": "audee:smfCnCuWSk6vSaGhPZPCcADg",
-        "title": "【#110】ダイエットに必要なことは？",
-        "publishedAt": "2026-05-07T22:00:00+09:00",
-        "publishedAtUnix": 1778158800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/86316/thumbnail_path?time=1778141796",
-        "durationSeconds": 1560,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 1406
-        }
-      },
-      {
-        "id": "audee:sm5phAZ2i38F8E9SBjnjerSc",
-        "title": "【#109】民の皆さん、お待たせしました！",
-        "publishedAt": "2026-04-30T22:00:00+09:00",
-        "publishedAtUnix": 1777554000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/85683/thumbnail_path?time=1778639525",
-        "durationSeconds": 1632,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 1616
-        }
-      },
-      {
-        "id": "audee:smmzvjHXxjnLwQBNACVE5MEu",
-        "title": "【#108】もしもし、花宮初奈です📞",
-        "publishedAt": "2026-04-23T22:00:00+09:00",
-        "publishedAtUnix": 1776949200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/84906/thumbnail_path?time=1778141613",
-        "durationSeconds": 1422,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 1617
-        }
-      },
-      {
-        "id": "audee:smYZNipZzdn72ZN8juNMwRxM",
-        "title": "【#107】この春は“QOL”をUPしよう！",
-        "publishedAt": "2026-04-16T22:00:00+09:00",
-        "publishedAtUnix": 1776344400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/84083/thumbnail_path?time=1777537884",
-        "durationSeconds": 1395,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 1588
-        }
-      },
-      {
-        "id": "audee:smM3vb78kYdczirqMmqHaXAv",
-        "title": "【#106】国王の新生活は⁉",
-        "publishedAt": "2026-04-09T22:00:00+09:00",
-        "publishedAtUnix": 1775739600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/83480/thumbnail_path?time=1776913533",
-        "durationSeconds": 1548,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 1747
-        }
-      },
-      {
-        "id": "audee:smEiFQeXqjjjFdQmX5LJtbwK",
-        "title": "【#105】2周年記念スペシャル🎉🎉🎉",
-        "publishedAt": "2026-04-04T15:00:00+09:00",
-        "publishedAtUnix": 1775282400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/83050/thumbnail_path?time=1776298271",
-        "durationSeconds": 1546,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2491
-        }
-      },
-      {
-        "id": "audee:smLzUtP7H72XrZp8SxxhRkLr",
-        "title": "【#104】右脳タイプ？ 左脳タイプ？",
-        "publishedAt": "2026-03-26T22:00:00+09:00",
-        "publishedAtUnix": 1774530000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/82061/thumbnail_path?time=1775278126",
-        "durationSeconds": 1390,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2126
-        }
-      },
-      {
-        "id": "audee:smbQteiTVVs7438aJoNJFCBu",
-        "title": "【#103】えびぷと国料理人グランプリ🍳",
-        "publishedAt": "2026-03-19T22:00:00+09:00",
-        "publishedAtUnix": 1773925200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/81618/thumbnail_path?time=1775277802",
-        "durationSeconds": 1544,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 1696
-        }
-      },
-      {
-        "id": "audee:sm5dao6VWJ55zgLLfWXivWQq",
-        "title": "【#102】存じてる？存じてない？",
-        "publishedAt": "2026-03-12T22:00:00+09:00",
-        "publishedAtUnix": 1773320400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/80854/thumbnail_path?time=1774345627",
-        "durationSeconds": 1769,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 1885
-        }
-      },
-      {
-        "id": "audee:sm9ELiZEBxiU7NA2Wfx95vfz",
-        "title": "【#101】花粉バイバ～イ👋",
-        "publishedAt": "2026-03-05T22:00:00+09:00",
-        "publishedAtUnix": 1772715600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/80380/thumbnail_path?time=1773920277",
-        "durationSeconds": 1672,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 1728
-        }
-      },
-      {
-        "id": "audee:smeJDSbBDSa9H4hVvzQP7dBa",
-        "title": "【#100】100回目記念 100分生配信拡大版SP！",
-        "publishedAt": "2026-02-27T01:20:00+09:00",
-        "publishedAtUnix": 1772122800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/79892/thumbnail_path?time=1773209567",
-        "durationSeconds": 6223,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2285
-        }
-      },
-      {
-        "id": "audee:smEWuJGnsevhLQknKS8LuneN",
-        "title": "【#99】今日は何の日？『217の日！』",
-        "publishedAt": "2026-02-16T15:00:00+09:00",
-        "publishedAtUnix": 1771221600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/78981/thumbnail_path?time=1772154333",
-        "durationSeconds": 1884,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3055
-        }
-      },
-      {
-        "id": "audee:smAykbpHx9qePkUUAEWp6RB8",
-        "title": "【#98】沖縄、楽しかったで～♪",
-        "publishedAt": "2026-02-12T22:00:00+09:00",
-        "publishedAtUnix": 1770901200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/78661/thumbnail_path?time=1772104107",
-        "durationSeconds": 1840,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 1850
-        }
-      },
-      {
-        "id": "audee:smCp3pjUF8MmPcG5y3hgddiC",
-        "title": "【#97】明日は沖縄やでー！",
-        "publishedAt": "2026-02-05T22:00:00+09:00",
-        "publishedAtUnix": 1770296400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/77914/thumbnail_path?time=1771229740",
-        "durationSeconds": 1450,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 1856
-        }
-      },
-      {
-        "id": "audee:smNENULkjdYZyzSsWYqj2LWB",
-        "title": "【#96】輝け！第２回サムネ総選挙",
-        "publishedAt": "2026-01-29T22:00:00+09:00",
-        "publishedAtUnix": 1769691600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/77612/thumbnail_path?time=1770877498",
-        "durationSeconds": 1280,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 1855
-        }
-      },
-      {
-        "id": "audee:smRPnTPcJ3ccgL99vGtVKtme",
-        "title": "【#95】3人でマリアージュ フレール☕",
-        "publishedAt": "2026-01-22T22:00:00+09:00",
-        "publishedAtUnix": 1769086800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/76793/thumbnail_path?time=1770877472",
-        "durationSeconds": 1724,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2179
-        }
-      },
-      {
-        "id": "audee:smmup6aZvfNSMvxxakiKR2tj",
-        "title": "【#94】えびぷと国 国旗掲揚！",
-        "publishedAt": "2026-01-15T22:00:00+09:00",
-        "publishedAtUnix": 1768482000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/76406/thumbnail_path?time=1769688807",
-        "durationSeconds": 1362,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 1779
-        }
-      },
-      {
-        "id": "audee:smKKNKGNdJUuZQVUwJMUbaMn",
-        "title": "【#93】やっぱお米だなぁ🍚",
-        "publishedAt": "2026-01-08T22:00:00+09:00",
-        "publishedAtUnix": 1767877200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/75786/thumbnail_path?time=1768905825",
-        "durationSeconds": 1481,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 1862
-        }
-      },
-      {
-        "id": "audee:smmcLLsuJevFb5dSJfoAmM9U",
-        "title": "【#92】2026年も声で俳優を営む花宮初奈です！",
-        "publishedAt": "2026-01-01T22:00:00+09:00",
-        "publishedAtUnix": 1767272400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/75398/thumbnail_path?time=1768457390",
-        "durationSeconds": 1366,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2040
-        }
-      },
-      {
-        "id": "audee:smPJJhGchY2DHy5ShZB5VvKE",
-        "title": "【#91】今年も1年、ありがとうございました♪",
-        "publishedAt": "2025-12-25T22:00:00+09:00",
-        "publishedAtUnix": 1766667600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/74842/thumbnail_path?time=1767693842",
-        "durationSeconds": 1369,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 1895
-        }
-      },
-      {
-        "id": "audee:smRgEf6crD3XpHcNeCRTBrA5",
-        "title": "【#90】217カードクエスチョンスペシャル🎄Ho Ho Ho🎅",
-        "publishedAt": "2025-12-18T22:00:00+09:00",
-        "publishedAtUnix": 1766062800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/71072/thumbnail_path?time=1767087623",
-        "durationSeconds": 1541,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2094
-        }
-      },
-      {
-        "id": "audee:smkJYoSAeqEY8BWGd4p76jh7",
-        "title": "【#89】コーナーたくさんありますよ～♪",
-        "publishedAt": "2025-12-11T22:00:00+09:00",
-        "publishedAtUnix": 1765458000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/70676/thumbnail_path?time=1766640847",
-        "durationSeconds": 1422,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2036
-        }
-      },
-      {
-        "id": "audee:sm3WY9SToeXJh9cFLuex2B25",
-        "title": "【#88】『217find！』×『佐々木琴子のここだけのこと』",
-        "publishedAt": "2025-12-04T22:00:00+09:00",
-        "publishedAtUnix": 1764853200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/70131/thumbnail_path?time=1765870427",
-        "durationSeconds": 1791,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3726
-        }
-      },
-      {
-        "id": "audee:smo9dSg8YKajaNWyTK64zncU",
-        "title": "【#87】めちゃくちゃ楽しかった瞬間♬",
-        "publishedAt": "2025-11-27T22:00:00+09:00",
-        "publishedAtUnix": 1764248400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/69488/thumbnail_path?time=1765432937",
-        "durationSeconds": 1665,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2114
-        }
-      },
-      {
-        "id": "audee:smCHdsfjVfXhQmZC5v6DCfzr",
-        "title": "【#86】民の意見、お待ちしています！",
-        "publishedAt": "2025-11-20T22:00:00+09:00",
-        "publishedAtUnix": 1763643600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/68847/thumbnail_path?time=1764847233",
-        "durationSeconds": 1497,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2234
-        }
-      },
-      {
-        "id": "audee:smUKeaxg2Je3ofL5EPGmPu42",
-        "title": "【#85】「えびぷと米」作りました。",
-        "publishedAt": "2025-11-13T22:00:00+09:00",
-        "publishedAtUnix": 1763038800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/68354/thumbnail_path?time=1764146045",
-        "durationSeconds": 1365,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2002
-        }
-      },
-      {
-        "id": "audee:smi8g7AwGVZRaRGrZty6SF2N",
-        "title": "【#84】“ラー”に守られたい…",
-        "publishedAt": "2025-11-06T22:00:00+09:00",
-        "publishedAtUnix": 1762434000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/67625/thumbnail_path?time=1763532674",
-        "durationSeconds": 1388,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2067
-        }
-      },
-      {
-        "id": "audee:smQbkhyGhjfcY9zpXerjmWro",
-        "title": "【#83】民からのメール、王が喜んでおられます📩",
-        "publishedAt": "2025-10-30T22:00:00+09:00",
-        "publishedAtUnix": 1761829200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/67060/thumbnail_path?time=1763023057",
-        "durationSeconds": 1421,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2247
-        }
-      },
-      {
-        "id": "audee:sm4BbyJBTafQU8LLu7dpKjAA",
-        "title": "【#82】花宮初奈生誕記念日スペシャル🎉🎉🎉　（音声のみ）",
-        "publishedAt": "2025-10-25T10:00:00+09:00",
-        "publishedAtUnix": 1761354000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/66855/thumbnail_path?time=1761384185",
-        "durationSeconds": 3218,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 1091
-        }
-      },
-      {
-        "id": "audee:smQoY6sZ8wFWMRWr3qT88E5g",
-        "title": "【#81】『217find！』×『つきねびより』",
-        "publishedAt": "2025-10-16T22:00:00+09:00",
-        "publishedAtUnix": 1760619600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/66038/thumbnail_path?time=1761359807",
-        "durationSeconds": 1845,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 6965
-        }
-      },
-      {
-        "id": "audee:smcovc37Bf8egaw6AyWGDoju",
-        "title": "【#80】“ギャル”と“ネコ好き”",
-        "publishedAt": "2025-10-09T22:00:00+09:00",
-        "publishedAtUnix": 1760014800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/65538/thumbnail_path?time=1761359952",
-        "durationSeconds": 1448,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3690
-        }
-      },
-      {
-        "id": "audee:smktp6eYqZNVediUUUnSTyVv",
-        "title": "【#79】10月と言えば何の日～？",
-        "publishedAt": "2025-10-02T22:00:00+09:00",
-        "publishedAtUnix": 1759410000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/64753/thumbnail_path?time=1760512517",
-        "durationSeconds": 1339,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2712
-        }
-      },
-      {
-        "id": "audee:smiBGidt3ifSNqW678VHpmXj",
-        "title": "【#78】MVP🏆",
-        "publishedAt": "2025-09-25T22:00:00+09:00",
-        "publishedAtUnix": 1758805200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/64181/thumbnail_path?time=1759990422",
-        "durationSeconds": 1520,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2137
-        }
-      },
-      {
-        "id": "audee:smGmEvr9Tz6bWB4JWM4iqtEK",
-        "title": "【#77】もうすぐミュージカル♬",
-        "publishedAt": "2025-09-18T22:00:00+09:00",
-        "publishedAtUnix": 1758200400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/63719/thumbnail_path?time=1759373515",
-        "durationSeconds": 1449,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2103
-        }
-      },
-      {
-        "id": "audee:smQYqf7Amp5JbZSTuPftZajq",
-        "title": "【#76】えび型車両、出発進行～🚃",
-        "publishedAt": "2025-09-11T22:00:00+09:00",
-        "publishedAtUnix": 1757595600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/63176/thumbnail_path?time=1758777632",
-        "durationSeconds": 1486,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2049
-        }
-      },
-      {
-        "id": "audee:smfNjYtuL8NFzfdJx69TkGAc",
-        "title": "【#75】エビが出禁???🦐",
-        "publishedAt": "2025-09-04T22:00:00+09:00",
-        "publishedAtUnix": 1756990800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/62571/thumbnail_path?time=1758181992",
-        "durationSeconds": 1523,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2103
-        }
-      },
-      {
-        "id": "audee:smSbEo2WRu3FQe7SG2ipVqs4",
-        "title": "【#74】クラフトコーラ作ろう🥤",
-        "publishedAt": "2025-08-28T22:00:00+09:00",
-        "publishedAtUnix": 1756386000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/62064/thumbnail_path?time=1757568653",
-        "durationSeconds": 1461,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2114
-        }
-      },
-      {
-        "id": "audee:smRW3Lxw4CR7ctpwfP4DHKpE",
-        "title": "【#73】「エビ」めっちゃ良いやん🦐",
-        "publishedAt": "2025-08-21T22:00:00+09:00",
-        "publishedAtUnix": 1755781200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/61622/thumbnail_path?time=1756867363",
-        "durationSeconds": 1550,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2143
-        }
-      },
-      {
-        "id": "audee:smaQc2GkCaLxrzaeW654RmSZ",
-        "title": "【#72】丑三つ時の217find！“2025👻”",
-        "publishedAt": "2025-08-14T17:00:00+09:00",
-        "publishedAtUnix": 1755158400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/60987/thumbnail_path?time=1756262641",
-        "durationSeconds": 1386,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 1876
-        }
-      },
-      {
-        "id": "audee:smAxRn6eJVVr2R9WbikUtzqn",
-        "title": "【#71】「217find!」Japan Caravan in OSAKA　第2部",
-        "publishedAt": "2025-08-07T22:00:00+09:00",
-        "publishedAtUnix": 1754571600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/60540/thumbnail_path?time=1755745564",
-        "durationSeconds": 2640,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2221
-        }
-      },
-      {
-        "id": "audee:smgFXPmD5gzFaGYwBZ6mExwV",
-        "title": "【#70】「217find!」Japan Caravan in OSAKA　第1部",
-        "publishedAt": "2025-07-31T22:00:00+09:00",
-        "publishedAtUnix": 1753966800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/59483/thumbnail_path?time=1754979380",
-        "durationSeconds": 1982,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2328
-        }
-      },
-      {
-        "id": "audee:smJKBn3iQMARC8WtbfvywDaL",
-        "title": "【#69】花火大会と浴衣と女の子🎇",
-        "publishedAt": "2025-07-24T22:00:00+09:00",
-        "publishedAtUnix": 1753362000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/58955/thumbnail_path?time=1754563548",
-        "durationSeconds": 1274,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2583
-        }
-      },
-      {
-        "id": "audee:sm45zzYcnqcq9zZZp9GbyFT5",
-        "title": "【#68】お馬さん、可愛い～🐎",
-        "publishedAt": "2025-07-17T22:00:00+09:00",
-        "publishedAtUnix": 1752757200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/58298/thumbnail_path?time=1753943726",
-        "durationSeconds": 1437,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2435
-        }
-      },
-      {
-        "id": "audee:smgbxyz92c9ecFN5jewxTeqY",
-        "title": "【#67】住みついていた場所🏠",
-        "publishedAt": "2025-07-10T22:00:00+09:00",
-        "publishedAtUnix": 1752152400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/57677/thumbnail_path?time=1753327421",
-        "durationSeconds": 1353,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2483
-        }
-      },
-      {
-        "id": "audee:smMdAGPkkKRijh2Pvt4e66Dq",
-        "title": "【#66】Caravanでも使用します💄",
-        "publishedAt": "2025-07-03T22:00:00+09:00",
-        "publishedAtUnix": 1751547600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/57168/thumbnail_path?time=1752671091",
-        "durationSeconds": 1511,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2301
-        }
-      },
-      {
-        "id": "audee:smDPHfC3DxV9zBjgdZvKgcAW",
-        "title": "【#65】夢のコラボ",
-        "publishedAt": "2025-06-26T22:00:00+09:00",
-        "publishedAtUnix": 1750942800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/56625/thumbnail_path?time=1752115638",
-        "durationSeconds": 1228,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2285
-        }
-      },
-      {
-        "id": "audee:smaxHWGecvwMYK3s97NQuGMB",
-        "title": "【#64】超超超！大切なお知らせがありま～す🎤",
-        "publishedAt": "2025-06-19T22:00:00+09:00",
-        "publishedAtUnix": 1750338000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/56219/thumbnail_path?time=1751518373",
-        "durationSeconds": 1451,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2626
-        }
-      },
-      {
-        "id": "audee:smNM3YFrBpvZtysKjt8Nxwxt",
-        "title": "【#63】メジェドとアヌビス",
-        "publishedAt": "2025-06-12T22:00:00+09:00",
-        "publishedAtUnix": 1749733200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/55626/thumbnail_path?time=1750856609",
-        "durationSeconds": 1596,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3580
-        }
-      },
-      {
-        "id": "audee:smioQ3qAsp6VeqSZmV8cYafF",
-        "title": "【#62】民は正確に測れますか？",
-        "publishedAt": "2025-06-05T22:00:00+09:00",
-        "publishedAtUnix": 1749128400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/55295/thumbnail_path?time=1750314341",
-        "durationSeconds": 1644,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2417
-        }
-      },
-      {
-        "id": "audee:smE55woauXP9y6WaCKJGKQrB",
-        "title": "【#61】民は王が指定した動画をみるように！",
-        "publishedAt": "2025-05-29T22:00:00+09:00",
-        "publishedAtUnix": 1748523600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/54674/thumbnail_path?time=1749608870",
-        "durationSeconds": 1337,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2716
-        }
-      },
-      {
-        "id": "audee:smZ7EBMz9AcLeWmYgKRzdEYj",
-        "title": "【#60】「0」の数を数えてね♪",
-        "publishedAt": "2025-05-22T22:00:00+09:00",
-        "publishedAtUnix": 1747918800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/54276/thumbnail_path?time=1749124025",
-        "durationSeconds": 1303,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2276
-        }
-      },
-      {
-        "id": "audee:smBNz4EFowPGg96fP8GTN7u5",
-        "title": "【#59】チーズ食べたい…🧀",
-        "publishedAt": "2025-05-15T22:00:00+09:00",
-        "publishedAtUnix": 1747314000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/53779/thumbnail_path?time=1748425787",
-        "durationSeconds": 1467,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2183
-        }
-      },
-      {
-        "id": "audee:sma8jsNazCGwYGip9UwrmPHK",
-        "title": "【#58】王は御存知？？？",
-        "publishedAt": "2025-05-08T22:00:00+09:00",
-        "publishedAtUnix": 1746709200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/53310/thumbnail_path?time=1747896256",
-        "durationSeconds": 1337,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2398
-        }
-      },
-      {
-        "id": "audee:smn8rHBjMLXYacVsKraf5HBj",
-        "title": "【#57】王の朝食",
-        "publishedAt": "2025-05-01T22:00:00+09:00",
-        "publishedAtUnix": 1746104400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/52965/thumbnail_path?time=1747230169",
-        "durationSeconds": 1400,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2266
-        }
-      },
-      {
-        "id": "audee:smgKnhzmGF654f72MohGciQC",
-        "title": "【#56】えびぷと国の宴🍷",
-        "publishedAt": "2025-04-24T22:00:00+09:00",
-        "publishedAtUnix": 1745499600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/52498/thumbnail_path?time=1746590004",
-        "durationSeconds": 1375,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2340
-        }
-      },
-      {
-        "id": "audee:sm62fDYdz3ZVJUAvRz2uYRBc",
-        "title": "【#55】えび型ロケット発射🚀",
-        "publishedAt": "2025-04-17T22:00:00+09:00",
-        "publishedAtUnix": 1744894800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/51996/thumbnail_path?time=1746077189",
-        "durationSeconds": 1540,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2227
-        }
-      },
-      {
-        "id": "audee:smHYigJ2mKG3wMGTGnfkgU7C",
-        "title": "【#54】えびぷと国 開国！",
-        "publishedAt": "2025-04-10T22:00:00+09:00",
-        "publishedAtUnix": 1744290000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/51622/thumbnail_path?time=1745373870",
-        "durationSeconds": 1524,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2393
-        }
-      },
-      {
-        "id": "audee:smjX7ogN5DKnziDNdQTTKNfA",
-        "title": "【#53】ナイル川のほとりに集合！",
-        "publishedAt": "2025-04-03T22:00:00+09:00",
-        "publishedAtUnix": 1743685200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/50881/thumbnail_path?time=1744440188",
-        "durationSeconds": 1518,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3306
-        }
-      },
-      {
-        "id": "audee:smAguHYkXRyXxqsJWwAmKt7X",
-        "title": "【#52】三種の神器！",
-        "publishedAt": "2025-03-27T22:00:00+09:00",
-        "publishedAtUnix": 1743080400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/50089/thumbnail_path?time=1744283920",
-        "durationSeconds": 1546,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2653
-        }
-      },
-      {
-        "id": "audee:smfJXLwRNJyCpW6xW2L65PYQ",
-        "title": "【#51】カスタマイズTシャツ楽しみ♬",
-        "publishedAt": "2025-03-20T22:00:00+09:00",
-        "publishedAtUnix": 1742475600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/49561/thumbnail_path?time=1743479980",
-        "durationSeconds": 1193,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2485
-        }
-      },
-      {
-        "id": "audee:sm2oqKpjFbMesvgdkH4DgDtp",
-        "title": "【#50】サムネNo.1決定🎉🎉🎉",
-        "publishedAt": "2025-03-13T22:00:00+09:00",
-        "publishedAtUnix": 1741870800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/49219/thumbnail_path?time=1742967218",
-        "durationSeconds": 1466,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2711
-        }
-      },
-      {
-        "id": "audee:smjM7DufNjc9tR79nY5ePDn7",
-        "title": "【#49】専門職さん いらっしゃ～い",
-        "publishedAt": "2025-03-06T22:00:00+09:00",
-        "publishedAtUnix": 1741266000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/48606/thumbnail_path?time=1742295566",
-        "durationSeconds": 1120,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2339
-        }
-      },
-      {
-        "id": "audee:smNbNHrTa4eBSSLMqMWfv3tg",
-        "title": "【#48】最強の2文字!!!",
-        "publishedAt": "2025-02-27T22:00:00+09:00",
-        "publishedAtUnix": 1740661200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/48184/thumbnail_path?time=1741854919",
-        "durationSeconds": 1269,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2507
-        }
-      },
-      {
-        "id": "audee:smZGPKpNzhhjqzSErdwWXCpV",
-        "title": "【#47】“えびぷと”でティーパーティー☕",
-        "publishedAt": "2025-02-20T22:00:00+09:00",
-        "publishedAtUnix": 1740056400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/47657/thumbnail_path?time=1741225294",
-        "durationSeconds": 1067,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2753
-        }
-      },
-      {
-        "id": "audee:smcrfDYwuEPkoAesyvUaUdxU",
-        "title": "【特別編】217の日へようこそ！",
-        "publishedAt": "2025-02-16T14:56:40+09:00",
-        "publishedAtUnix": 1739685400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/47309/thumbnail_path?time=1739717801",
-        "durationSeconds": 430,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3784
-        }
-      },
-      {
-        "id": "audee:smWEwB5jJvZ2D7YX6vyVj3hm",
-        "title": "【#46】Happy Valentine's day！",
-        "publishedAt": "2025-02-13T22:00:00+09:00",
-        "publishedAtUnix": 1739451600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/47334/thumbnail_path?time=1740629262",
-        "durationSeconds": 818,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2582
-        }
-      },
-      {
-        "id": "audee:smLdcNwnAajKLopQsGmtYz8a",
-        "title": "【#45】人魚の目撃情報、お待ちしてます。",
-        "publishedAt": "2025-02-06T22:00:00+09:00",
-        "publishedAtUnix": 1738846800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/46902/thumbnail_path?time=1739885393",
-        "durationSeconds": 1434,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2752
-        }
-      },
-      {
-        "id": "audee:smDoPESz6oGVZrfgXCXVntCW",
-        "title": "【#44】エビと本職",
-        "publishedAt": "2025-01-30T22:00:00+09:00",
-        "publishedAtUnix": 1738242000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/46528/thumbnail_path?time=1739335334",
-        "durationSeconds": 1360,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2681
-        }
-      },
-      {
-        "id": "audee:sm95NHXQQpKAk7ZEeYKqxEaN",
-        "title": "【#43】うぃ散歩",
-        "publishedAt": "2025-01-23T22:00:00+09:00",
-        "publishedAtUnix": 1737637200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/46190/thumbnail_path?time=1738664404",
-        "durationSeconds": 864,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2619
-        }
-      },
-      {
-        "id": "audee:sm8ExaLRQsU9BBdhyLdPjBrD",
-        "title": "【#42】お魚、綺麗に食べることができますか？🐟",
-        "publishedAt": "2025-01-16T22:00:00+09:00",
-        "publishedAtUnix": 1737032400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/45825/thumbnail_path?time=1738071474",
-        "durationSeconds": 1396,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2835
-        }
-      },
-      {
-        "id": "audee:smVEbSJxmn3p7NNrUAhHtkis",
-        "title": "【#41】王からのお言葉です。",
-        "publishedAt": "2025-01-09T22:00:00+09:00",
-        "publishedAtUnix": 1736427600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/45487/thumbnail_path?time=1737533067",
-        "durationSeconds": 1388,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3001
-        }
-      },
-      {
-        "id": "audee:smX66UUdXueyLYG96taSKgKz",
-        "title": "【#40】謹賀新年🎍花宮初奈です",
-        "publishedAt": "2024-12-31T22:00:00+09:00",
-        "publishedAtUnix": 1735650000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/45062/thumbnail_path?time=1737005101",
-        "durationSeconds": 1144,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2810
-        }
-      },
-      {
-        "id": "audee:sm7hjVkk4ynmGVLo7PgjiVgZ",
-        "title": "【#39】理想の“おせち”",
-        "publishedAt": "2024-12-26T22:00:00+09:00",
-        "publishedAtUnix": 1735218000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/44795/thumbnail_path?time=1736403161",
-        "durationSeconds": 1683,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3164
-        }
-      },
-      {
-        "id": "audee:smBVs7mGSGmjcWg8YHvaBBUm",
-        "title": "【#38】クリスマスピラミッド",
-        "publishedAt": "2024-12-19T22:00:00+09:00",
-        "publishedAtUnix": 1734613200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/44297/thumbnail_path?time=1735544215",
-        "durationSeconds": 1578,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2582
-        }
-      },
-      {
-        "id": "audee:smBDjbWBqHQHbSwH2ByiyUjU",
-        "title": "【#37】「今年の漢字」発表✨",
-        "publishedAt": "2024-12-12T22:00:00+09:00",
-        "publishedAtUnix": 1734008400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/43840/thumbnail_path?time=1735133504",
-        "durationSeconds": 1511,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2727
-        }
-      },
-      {
-        "id": "audee:smiz7gF68i764Ku2nq57VSa3",
-        "title": "【#36】魔法プリンセス217♪",
-        "publishedAt": "2024-12-12T13:31:43+09:00",
-        "publishedAtUnix": 1733977903,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/43841/thumbnail_path?time=1734010305",
-        "durationSeconds": 1432,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 1636
-        }
-      },
-      {
-        "id": "audee:smTaJTFxnaKWxuoaLBX4Hpc3",
-        "title": "【#35】国名爆誕！",
-        "publishedAt": "2024-11-28T22:00:00+09:00",
-        "publishedAtUnix": 1732798800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/43043/thumbnail_path?time=1734009688",
-        "durationSeconds": 1163,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2584
-        }
-      },
-      {
-        "id": "audee:smnS948L9Z7QiNxaBUzYNLqR",
-        "title": "【#34】誰もが知ってる有名なアニソン♪",
-        "publishedAt": "2024-11-21T22:00:00+09:00",
-        "publishedAtUnix": 1732194000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/42624/thumbnail_path?time=1734009657",
-        "durationSeconds": 1344,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2814
-        }
-      },
-      {
-        "id": "audee:smExovrNg6siHGHXbjDGt4pY",
-        "title": "【#33】オシャレなものは求めていません🙅",
-        "publishedAt": "2024-11-14T22:00:00+09:00",
-        "publishedAtUnix": 1731589200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/42215/thumbnail_path?time=1733379053",
-        "durationSeconds": 1359,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2773
-        }
-      },
-      {
-        "id": "audee:smLgadpEknMRevhbjnuXCD25",
-        "title": "【#32】どうやって登ったんでしょうか🐶",
-        "publishedAt": "2024-11-07T22:00:00+09:00",
-        "publishedAtUnix": 1730984400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/41874/thumbnail_path?time=1733379053",
-        "durationSeconds": 1845,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 2941
-        }
-      },
-      {
-        "id": "audee:smctvn8MAmDxNGmJkKeRxo7Q",
-        "title": "【#31】イモ・栗・和菓子😋",
-        "publishedAt": "2024-10-31T22:00:00+09:00",
-        "publishedAtUnix": 1730379600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/41414/thumbnail_path?time=1733379053",
-        "durationSeconds": 1370,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3084
-        }
-      },
-      {
-        "id": "audee:smHs2wjkfBDwdJ3GQ9nJdHfy",
-        "title": "【#30】うい様 🦐🎂生誕祭🎂🦐",
-        "publishedAt": "2024-10-23T15:00:00+09:00",
-        "publishedAtUnix": 1729663200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/40877/thumbnail_path?time=1733379053",
-        "durationSeconds": 1979,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 4527
-        }
-      },
-      {
-        "id": "audee:smVkJ74KjEGmcpPdTEKrhcuD",
-        "title": "【#29】ネコ🐈？ それともイヌ🐶？",
-        "publishedAt": "2024-10-17T22:00:00+09:00",
-        "publishedAtUnix": 1729170000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/40461/thumbnail_path?time=1733379053",
-        "durationSeconds": 1535,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3126
-        }
-      },
-      {
-        "id": "audee:smBRRnmVQNJ7TgDoPgzcD5B7",
-        "title": "【#28】エビのエッフェル塔",
-        "publishedAt": "2024-10-10T22:00:00+09:00",
-        "publishedAtUnix": 1728565200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/40044/thumbnail_path?time=1733379053",
-        "durationSeconds": 1446,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3040
-        }
-      },
-      {
-        "id": "audee:smELis7DMGptkZ4Dhueyfss7",
-        "title": "【#27】番組初の指名手配⁉",
-        "publishedAt": "2024-10-03T22:00:00+09:00",
-        "publishedAtUnix": 1727960400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/39644/thumbnail_path?time=1733379053",
-        "durationSeconds": 1326,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3396
-        }
-      },
-      {
-        "id": "audee:smaEhGWHbWBrnbgMmGjXAm36",
-        "title": "【#26】エビのワンダーランド🦐",
-        "publishedAt": "2024-09-26T22:00:00+09:00",
-        "publishedAtUnix": 1727355600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/39200/thumbnail_path?time=1733379053",
-        "durationSeconds": 1334,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3372
-        }
-      },
-      {
-        "id": "audee:smdsU9K3GXRktXiAwoRHGyz9",
-        "title": "【#25】オーディションの裏話⁉",
-        "publishedAt": "2024-09-19T22:00:00+09:00",
-        "publishedAtUnix": 1726750800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/38660/thumbnail_path?time=1733379053",
-        "durationSeconds": 1524,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3195
-        }
-      },
-      {
-        "id": "audee:sm4bdUL4fAMDE4skocCDbY2s",
-        "title": "【#24】きっかけは“宝塚”　夕綺友里杏さん登場🌹",
-        "publishedAt": "2024-09-12T22:00:00+09:00",
-        "publishedAtUnix": 1726146000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/38241/thumbnail_path?time=1733379053",
-        "durationSeconds": 1785,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3571
-        }
-      },
-      {
-        "id": "audee:smYFMaAQc2y2nSbvtGGV9JuS",
-        "title": "【#23】猫の下っ腹🐈",
-        "publishedAt": "2024-09-05T22:00:00+09:00",
-        "publishedAtUnix": 1725541200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/37797/thumbnail_path?time=1733379053",
-        "durationSeconds": 1337,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3342
-        }
-      },
-      {
-        "id": "audee:smj3GkdjxYGAH6nb5ZvrVz6T",
-        "title": "【#22】丑三つ時の217find！👻",
-        "publishedAt": "2024-08-30T17:00:00+09:00",
-        "publishedAtUnix": 1725004800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/37398/thumbnail_path?time=1733379053",
-        "durationSeconds": 1709,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 4065
-        }
-      },
-      {
-        "id": "audee:smeKdzmKSTGcbgNCeHomumAv",
-        "title": "【#21】エビ？ or  鯛？",
-        "publishedAt": "2024-08-22T22:00:00+09:00",
-        "publishedAtUnix": 1724331600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/36733/thumbnail_path?time=1733379053",
-        "durationSeconds": 1695,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 4223
-        }
-      },
-      {
-        "id": "audee:smaVfkLTFtRMZQMLMkkwveft",
-        "title": "【#20】国名募集中！！",
-        "publishedAt": "2024-08-15T22:00:00+09:00",
-        "publishedAtUnix": 1723726800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/36353/thumbnail_path?time=1733379053",
-        "durationSeconds": 1375,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3735
-        }
-      },
-      {
-        "id": "audee:sm2YS6KnHvsUN5q3cQpdEYkn",
-        "title": "【#19】幽霊と住んでみませんか💛",
-        "publishedAt": "2024-08-08T22:00:00+09:00",
-        "publishedAtUnix": 1723122000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/36060/thumbnail_path?time=1733379053",
-        "durationSeconds": 1873,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 3971
-        }
-      },
-      {
-        "id": "audee:smceMn6KcGrUayA36PdYs9bG",
-        "title": "【#18】キングオブ7文字スペシャル！",
-        "publishedAt": "2024-08-01T22:00:00+09:00",
-        "publishedAtUnix": 1722517200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/35726/thumbnail_path?time=1733379053",
-        "durationSeconds": 1972,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 4066
-        }
-      },
-      {
-        "id": "audee:smknEWz3aZDHciPf76KNpgKc",
-        "title": "【#17】象使い！花宮初奈🐘",
-        "publishedAt": "2024-07-25T22:00:00+09:00",
-        "publishedAtUnix": 1721912400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/35315/thumbnail_path?time=1733379053",
-        "durationSeconds": 1514,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 4165
-        }
-      },
-      {
-        "id": "audee:smjsYgReNe4LVT6KcQvfTAc9",
-        "title": "【#16】エビまみれ🦐",
-        "publishedAt": "2024-07-18T22:00:00+09:00",
-        "publishedAtUnix": 1721307600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/34594/thumbnail_path?time=1733379053",
-        "durationSeconds": 1502,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 4063
-        }
-      },
-      {
-        "id": "audee:smKv2Q4AnMm6KuPAUKBNxwRP",
-        "title": "【#15】大切なことは“鼻呼吸”",
-        "publishedAt": "2024-07-11T22:00:00+09:00",
-        "publishedAtUnix": 1720702800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/34197/thumbnail_path?time=1733379053",
-        "durationSeconds": 2223,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 4568
-        }
-      },
-      {
-        "id": "audee:smgLN4VcFNoXXPYeNFSUYXnF",
-        "title": "【#14】鈴木みのり先輩！ゲストで登場！！",
-        "publishedAt": "2024-07-04T22:00:00+09:00",
-        "publishedAtUnix": 1720098000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/33795/thumbnail_path?time=1733379053",
-        "durationSeconds": 2265,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 5537
-        }
-      },
-      {
-        "id": "audee:smUvWgmfCuEfSuMQqCBdxpu3",
-        "title": "【#13】メキシコの方！いらっしゃいますか！！",
-        "publishedAt": "2024-06-27T22:00:00+09:00",
-        "publishedAtUnix": 1719493200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/33379/thumbnail_path?time=1733379053",
-        "durationSeconds": 1608,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 4594
-        }
-      },
-      {
-        "id": "audee:smw4c7fagbCMjcGPFDhCBugW",
-        "title": "【#12】魚編の漢字を書いてみよう♪",
-        "publishedAt": "2024-06-20T22:00:00+09:00",
-        "publishedAtUnix": 1718888400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/33012/thumbnail_path?time=1733379053",
-        "durationSeconds": 1256,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 4518
-        }
-      },
-      {
-        "id": "audee:smaLZCbHCsVx6q9DRHJiXqj6",
-        "title": "【#11】猫ちゃんしか勝たん🐈",
-        "publishedAt": "2024-06-13T22:00:00+09:00",
-        "publishedAtUnix": 1718283600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/32707/thumbnail_path?time=1733379053",
-        "durationSeconds": 1320,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 4825
-        }
-      },
-      {
-        "id": "audee:smPFTarPEDQn2wB35yPe3dnB",
-        "title": "【#10】流行りの食べ方🍳",
-        "publishedAt": "2024-06-06T22:00:00+09:00",
-        "publishedAtUnix": 1717678800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/32497/thumbnail_path?time=1733379053",
-        "durationSeconds": 1613,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 5047
-        }
-      },
-      {
-        "id": "audee:smxHfrg4f9WbKuWMVj2fNVE4",
-        "title": "【#9】民は体力が必要不可欠⁉",
-        "publishedAt": "2024-05-30T22:00:00+09:00",
-        "publishedAtUnix": 1717074000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/32070/thumbnail_path?time=1733379053",
-        "durationSeconds": 1681,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 5474
-        }
-      },
-      {
-        "id": "audee:smwrh6YCQzng5txVd7MYFdXc",
-        "title": "【#8】花宮初奈の味方でした！",
-        "publishedAt": "2024-05-23T22:00:00+09:00",
-        "publishedAtUnix": 1716469200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/31701/thumbnail_path?time=1733379053",
-        "durationSeconds": 1590,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 6100
-        }
-      },
-      {
-        "id": "audee:smUvrBCnCaDbS5z9LyUd47sM",
-        "title": "【#7】大好きなスープ♪",
-        "publishedAt": "2024-05-16T22:00:00+09:00",
-        "publishedAtUnix": 1715864400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/31373/thumbnail_path?time=1733379053",
-        "durationSeconds": 1530,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 6443
-        }
-      },
-      {
-        "id": "audee:smqZqWeFpM6gJqGmxmNtXoJX",
-        "title": "【#6】世界一美しい鳥を求めて…",
-        "publishedAt": "2024-05-09T22:00:00+09:00",
-        "publishedAtUnix": 1715259600,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/31017/thumbnail_path?time=1733379053",
-        "durationSeconds": 1512,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 6318
-        }
-      },
-      {
-        "id": "audee:smraSMTtzeyRqcDA7gPFh4Ha",
-        "title": "【#5】民は礼儀正しく！",
-        "publishedAt": "2024-05-02T22:00:00+09:00",
-        "publishedAtUnix": 1714654800,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/30691/thumbnail_path?time=1733379053",
-        "durationSeconds": 1545,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 7312
-        }
-      },
-      {
-        "id": "audee:smixLTV6bDY55CthcqbEJyzU",
-        "title": "【#4】花宮初奈と世界を学ぼう🌎",
-        "publishedAt": "2024-04-25T22:00:00+09:00",
-        "publishedAtUnix": 1714050000,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/30234/thumbnail_path?time=1733379053",
-        "durationSeconds": 1672,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 7701
-        }
-      },
-      {
-        "id": "audee:smoRXrjjJgK85TY7ptjeXADN",
-        "title": "【#3】エジプト王、始めました🐪",
-        "publishedAt": "2024-04-18T22:00:00+09:00",
-        "publishedAtUnix": 1713445200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/29790/thumbnail_path?time=1733379053",
-        "durationSeconds": 1655,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 7692
-        }
-      },
-      {
-        "id": "audee:smqG3T2BL4F48Xt7RpqzxEpf",
-        "title": "【#2】喋って良いか分からない…⁉花宮初奈、小学生の時の事件とは？",
-        "publishedAt": "2024-04-11T22:00:00+09:00",
-        "publishedAtUnix": 1712840400,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/29366/thumbnail_path?time=1733379053",
-        "durationSeconds": 1723,
-        "platformMetadata": {
-          "mediaType": "audio",
-          "views": 9240
+        "id": "audee:smJqiUSD8MUb6BcdoYggCRfZ",
+        "title": "4/5（金）から花宮初奈はじめての単独音声番組がスタート！",
+        "publishedAt": "2024-03-29T07:50:00+09:00",
+        "publishedAtUnix": 1711666200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/28409/thumbnail_path?time=1733379053",
+        "durationSeconds": 523,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 13169
         }
       },
       {
@@ -1360,20 +41,1340 @@
         }
       },
       {
-        "id": "audee:smJqiUSD8MUb6BcdoYggCRfZ",
-        "title": "4/5（金）から花宮初奈はじめての単独音声番組がスタート！",
-        "publishedAt": "2024-03-29T07:50:00+09:00",
-        "publishedAtUnix": 1711666200,
-        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/28409/thumbnail_path?time=1733379053",
-        "durationSeconds": 523,
+        "id": "audee:smqG3T2BL4F48Xt7RpqzxEpf",
+        "title": "【#2】喋って良いか分からない…⁉花宮初奈、小学生の時の事件とは？",
+        "publishedAt": "2024-04-11T22:00:00+09:00",
+        "publishedAtUnix": 1712840400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/29366/thumbnail_path?time=1733379053",
+        "durationSeconds": 1723,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 13169
+          "views": 9240
+        }
+      },
+      {
+        "id": "audee:smoRXrjjJgK85TY7ptjeXADN",
+        "title": "【#3】エジプト王、始めました🐪",
+        "publishedAt": "2024-04-18T22:00:00+09:00",
+        "publishedAtUnix": 1713445200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/29790/thumbnail_path?time=1733379053",
+        "durationSeconds": 1655,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 7692
+        }
+      },
+      {
+        "id": "audee:smixLTV6bDY55CthcqbEJyzU",
+        "title": "【#4】花宮初奈と世界を学ぼう🌎",
+        "publishedAt": "2024-04-25T22:00:00+09:00",
+        "publishedAtUnix": 1714050000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/30234/thumbnail_path?time=1733379053",
+        "durationSeconds": 1672,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 7701
+        }
+      },
+      {
+        "id": "audee:smraSMTtzeyRqcDA7gPFh4Ha",
+        "title": "【#5】民は礼儀正しく！",
+        "publishedAt": "2024-05-02T22:00:00+09:00",
+        "publishedAtUnix": 1714654800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/30691/thumbnail_path?time=1733379053",
+        "durationSeconds": 1545,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 7313
+        }
+      },
+      {
+        "id": "audee:smqZqWeFpM6gJqGmxmNtXoJX",
+        "title": "【#6】世界一美しい鳥を求めて…",
+        "publishedAt": "2024-05-09T22:00:00+09:00",
+        "publishedAtUnix": 1715259600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/31017/thumbnail_path?time=1733379053",
+        "durationSeconds": 1512,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 6321
+        }
+      },
+      {
+        "id": "audee:smUvrBCnCaDbS5z9LyUd47sM",
+        "title": "【#7】大好きなスープ♪",
+        "publishedAt": "2024-05-16T22:00:00+09:00",
+        "publishedAtUnix": 1715864400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/31373/thumbnail_path?time=1733379053",
+        "durationSeconds": 1530,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 6444
+        }
+      },
+      {
+        "id": "audee:smwrh6YCQzng5txVd7MYFdXc",
+        "title": "【#8】花宮初奈の味方でした！",
+        "publishedAt": "2024-05-23T22:00:00+09:00",
+        "publishedAtUnix": 1716469200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/31701/thumbnail_path?time=1733379053",
+        "durationSeconds": 1590,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 6101
+        }
+      },
+      {
+        "id": "audee:smxHfrg4f9WbKuWMVj2fNVE4",
+        "title": "【#9】民は体力が必要不可欠⁉",
+        "publishedAt": "2024-05-30T22:00:00+09:00",
+        "publishedAtUnix": 1717074000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/32070/thumbnail_path?time=1733379053",
+        "durationSeconds": 1681,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 5475
+        }
+      },
+      {
+        "id": "audee:smPFTarPEDQn2wB35yPe3dnB",
+        "title": "【#10】流行りの食べ方🍳",
+        "publishedAt": "2024-06-06T22:00:00+09:00",
+        "publishedAtUnix": 1717678800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/32497/thumbnail_path?time=1733379053",
+        "durationSeconds": 1613,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 5049
+        }
+      },
+      {
+        "id": "audee:smaLZCbHCsVx6q9DRHJiXqj6",
+        "title": "【#11】猫ちゃんしか勝たん🐈",
+        "publishedAt": "2024-06-13T22:00:00+09:00",
+        "publishedAtUnix": 1718283600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/32707/thumbnail_path?time=1733379053",
+        "durationSeconds": 1320,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 4826
+        }
+      },
+      {
+        "id": "audee:smw4c7fagbCMjcGPFDhCBugW",
+        "title": "【#12】魚編の漢字を書いてみよう♪",
+        "publishedAt": "2024-06-20T22:00:00+09:00",
+        "publishedAtUnix": 1718888400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/33012/thumbnail_path?time=1733379053",
+        "durationSeconds": 1256,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 4520
+        }
+      },
+      {
+        "id": "audee:smUvWgmfCuEfSuMQqCBdxpu3",
+        "title": "【#13】メキシコの方！いらっしゃいますか！！",
+        "publishedAt": "2024-06-27T22:00:00+09:00",
+        "publishedAtUnix": 1719493200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/33379/thumbnail_path?time=1733379053",
+        "durationSeconds": 1608,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 4596
+        }
+      },
+      {
+        "id": "audee:smgLN4VcFNoXXPYeNFSUYXnF",
+        "title": "【#14】鈴木みのり先輩！ゲストで登場！！",
+        "publishedAt": "2024-07-04T22:00:00+09:00",
+        "publishedAtUnix": 1720098000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/33795/thumbnail_path?time=1733379053",
+        "durationSeconds": 2265,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 5537
+        }
+      },
+      {
+        "id": "audee:smKv2Q4AnMm6KuPAUKBNxwRP",
+        "title": "【#15】大切なことは“鼻呼吸”",
+        "publishedAt": "2024-07-11T22:00:00+09:00",
+        "publishedAtUnix": 1720702800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/34197/thumbnail_path?time=1733379053",
+        "durationSeconds": 2223,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 4568
+        }
+      },
+      {
+        "id": "audee:smjsYgReNe4LVT6KcQvfTAc9",
+        "title": "【#16】エビまみれ🦐",
+        "publishedAt": "2024-07-18T22:00:00+09:00",
+        "publishedAtUnix": 1721307600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/34594/thumbnail_path?time=1733379053",
+        "durationSeconds": 1502,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 4063
+        }
+      },
+      {
+        "id": "audee:smknEWz3aZDHciPf76KNpgKc",
+        "title": "【#17】象使い！花宮初奈🐘",
+        "publishedAt": "2024-07-25T22:00:00+09:00",
+        "publishedAtUnix": 1721912400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/35315/thumbnail_path?time=1733379053",
+        "durationSeconds": 1514,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 4165
+        }
+      },
+      {
+        "id": "audee:smceMn6KcGrUayA36PdYs9bG",
+        "title": "【#18】キングオブ7文字スペシャル！",
+        "publishedAt": "2024-08-01T22:00:00+09:00",
+        "publishedAtUnix": 1722517200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/35726/thumbnail_path?time=1733379053",
+        "durationSeconds": 1972,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 4071
+        }
+      },
+      {
+        "id": "audee:sm2YS6KnHvsUN5q3cQpdEYkn",
+        "title": "【#19】幽霊と住んでみませんか💛",
+        "publishedAt": "2024-08-08T22:00:00+09:00",
+        "publishedAtUnix": 1723122000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/36060/thumbnail_path?time=1733379053",
+        "durationSeconds": 1873,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3971
+        }
+      },
+      {
+        "id": "audee:smaVfkLTFtRMZQMLMkkwveft",
+        "title": "【#20】国名募集中！！",
+        "publishedAt": "2024-08-15T22:00:00+09:00",
+        "publishedAtUnix": 1723726800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/36353/thumbnail_path?time=1733379053",
+        "durationSeconds": 1375,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3735
+        }
+      },
+      {
+        "id": "audee:smeKdzmKSTGcbgNCeHomumAv",
+        "title": "【#21】エビ？ or  鯛？",
+        "publishedAt": "2024-08-22T22:00:00+09:00",
+        "publishedAtUnix": 1724331600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/36733/thumbnail_path?time=1733379053",
+        "durationSeconds": 1695,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 4223
+        }
+      },
+      {
+        "id": "audee:smj3GkdjxYGAH6nb5ZvrVz6T",
+        "title": "【#22】丑三つ時の217find！👻",
+        "publishedAt": "2024-08-30T17:00:00+09:00",
+        "publishedAtUnix": 1725004800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/37398/thumbnail_path?time=1733379053",
+        "durationSeconds": 1709,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 4065
+        }
+      },
+      {
+        "id": "audee:smYFMaAQc2y2nSbvtGGV9JuS",
+        "title": "【#23】猫の下っ腹🐈",
+        "publishedAt": "2024-09-05T22:00:00+09:00",
+        "publishedAtUnix": 1725541200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/37797/thumbnail_path?time=1733379053",
+        "durationSeconds": 1337,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3342
+        }
+      },
+      {
+        "id": "audee:sm4bdUL4fAMDE4skocCDbY2s",
+        "title": "【#24】きっかけは“宝塚”　夕綺友里杏さん登場🌹",
+        "publishedAt": "2024-09-12T22:00:00+09:00",
+        "publishedAtUnix": 1726146000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/38241/thumbnail_path?time=1733379053",
+        "durationSeconds": 1785,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3571
+        }
+      },
+      {
+        "id": "audee:smdsU9K3GXRktXiAwoRHGyz9",
+        "title": "【#25】オーディションの裏話⁉",
+        "publishedAt": "2024-09-19T22:00:00+09:00",
+        "publishedAtUnix": 1726750800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/38660/thumbnail_path?time=1733379053",
+        "durationSeconds": 1524,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3195
+        }
+      },
+      {
+        "id": "audee:smaEhGWHbWBrnbgMmGjXAm36",
+        "title": "【#26】エビのワンダーランド🦐",
+        "publishedAt": "2024-09-26T22:00:00+09:00",
+        "publishedAtUnix": 1727355600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/39200/thumbnail_path?time=1733379053",
+        "durationSeconds": 1334,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3372
+        }
+      },
+      {
+        "id": "audee:smELis7DMGptkZ4Dhueyfss7",
+        "title": "【#27】番組初の指名手配⁉",
+        "publishedAt": "2024-10-03T22:00:00+09:00",
+        "publishedAtUnix": 1727960400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/39644/thumbnail_path?time=1733379053",
+        "durationSeconds": 1326,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3396
+        }
+      },
+      {
+        "id": "audee:smBRRnmVQNJ7TgDoPgzcD5B7",
+        "title": "【#28】エビのエッフェル塔",
+        "publishedAt": "2024-10-10T22:00:00+09:00",
+        "publishedAtUnix": 1728565200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/40044/thumbnail_path?time=1733379053",
+        "durationSeconds": 1446,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3040
+        }
+      },
+      {
+        "id": "audee:smVkJ74KjEGmcpPdTEKrhcuD",
+        "title": "【#29】ネコ🐈？ それともイヌ🐶？",
+        "publishedAt": "2024-10-17T22:00:00+09:00",
+        "publishedAtUnix": 1729170000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/40461/thumbnail_path?time=1733379053",
+        "durationSeconds": 1535,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3126
+        }
+      },
+      {
+        "id": "audee:smHs2wjkfBDwdJ3GQ9nJdHfy",
+        "title": "【#30】うい様 🦐🎂生誕祭🎂🦐",
+        "publishedAt": "2024-10-23T15:00:00+09:00",
+        "publishedAtUnix": 1729663200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/40877/thumbnail_path?time=1733379053",
+        "durationSeconds": 1979,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 4527
+        }
+      },
+      {
+        "id": "audee:smctvn8MAmDxNGmJkKeRxo7Q",
+        "title": "【#31】イモ・栗・和菓子😋",
+        "publishedAt": "2024-10-31T22:00:00+09:00",
+        "publishedAtUnix": 1730379600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/41414/thumbnail_path?time=1733379053",
+        "durationSeconds": 1370,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3084
+        }
+      },
+      {
+        "id": "audee:smLgadpEknMRevhbjnuXCD25",
+        "title": "【#32】どうやって登ったんでしょうか🐶",
+        "publishedAt": "2024-11-07T22:00:00+09:00",
+        "publishedAtUnix": 1730984400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/41874/thumbnail_path?time=1733379053",
+        "durationSeconds": 1845,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2941
+        }
+      },
+      {
+        "id": "audee:smExovrNg6siHGHXbjDGt4pY",
+        "title": "【#33】オシャレなものは求めていません🙅",
+        "publishedAt": "2024-11-14T22:00:00+09:00",
+        "publishedAtUnix": 1731589200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/42215/thumbnail_path?time=1733379053",
+        "durationSeconds": 1359,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2773
+        }
+      },
+      {
+        "id": "audee:smnS948L9Z7QiNxaBUzYNLqR",
+        "title": "【#34】誰もが知ってる有名なアニソン♪",
+        "publishedAt": "2024-11-21T22:00:00+09:00",
+        "publishedAtUnix": 1732194000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/42624/thumbnail_path?time=1734009657",
+        "durationSeconds": 1344,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2814
+        }
+      },
+      {
+        "id": "audee:smTaJTFxnaKWxuoaLBX4Hpc3",
+        "title": "【#35】国名爆誕！",
+        "publishedAt": "2024-11-28T22:00:00+09:00",
+        "publishedAtUnix": 1732798800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/43043/thumbnail_path?time=1734009688",
+        "durationSeconds": 1163,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2585
+        }
+      },
+      {
+        "id": "audee:smiz7gF68i764Ku2nq57VSa3",
+        "title": "【#36】魔法プリンセス217♪",
+        "publishedAt": "2024-12-12T13:31:43+09:00",
+        "publishedAtUnix": 1733977903,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/43841/thumbnail_path?time=1734010305",
+        "durationSeconds": 1432,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1636
+        }
+      },
+      {
+        "id": "audee:smBDjbWBqHQHbSwH2ByiyUjU",
+        "title": "【#37】「今年の漢字」発表✨",
+        "publishedAt": "2024-12-12T22:00:00+09:00",
+        "publishedAtUnix": 1734008400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/43840/thumbnail_path?time=1735133504",
+        "durationSeconds": 1511,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2727
+        }
+      },
+      {
+        "id": "audee:smBVs7mGSGmjcWg8YHvaBBUm",
+        "title": "【#38】クリスマスピラミッド",
+        "publishedAt": "2024-12-19T22:00:00+09:00",
+        "publishedAtUnix": 1734613200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/44297/thumbnail_path?time=1735544215",
+        "durationSeconds": 1578,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2582
+        }
+      },
+      {
+        "id": "audee:sm7hjVkk4ynmGVLo7PgjiVgZ",
+        "title": "【#39】理想の“おせち”",
+        "publishedAt": "2024-12-26T22:00:00+09:00",
+        "publishedAtUnix": 1735218000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/44795/thumbnail_path?time=1736403161",
+        "durationSeconds": 1683,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3164
+        }
+      },
+      {
+        "id": "audee:smX66UUdXueyLYG96taSKgKz",
+        "title": "【#40】謹賀新年🎍花宮初奈です",
+        "publishedAt": "2024-12-31T22:00:00+09:00",
+        "publishedAtUnix": 1735650000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/45062/thumbnail_path?time=1737005101",
+        "durationSeconds": 1144,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2810
+        }
+      },
+      {
+        "id": "audee:smVEbSJxmn3p7NNrUAhHtkis",
+        "title": "【#41】王からのお言葉です。",
+        "publishedAt": "2025-01-09T22:00:00+09:00",
+        "publishedAtUnix": 1736427600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/45487/thumbnail_path?time=1737533067",
+        "durationSeconds": 1388,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3001
+        }
+      },
+      {
+        "id": "audee:sm8ExaLRQsU9BBdhyLdPjBrD",
+        "title": "【#42】お魚、綺麗に食べることができますか？🐟",
+        "publishedAt": "2025-01-16T22:00:00+09:00",
+        "publishedAtUnix": 1737032400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/45825/thumbnail_path?time=1738071474",
+        "durationSeconds": 1396,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2836
+        }
+      },
+      {
+        "id": "audee:sm95NHXQQpKAk7ZEeYKqxEaN",
+        "title": "【#43】うぃ散歩",
+        "publishedAt": "2025-01-23T22:00:00+09:00",
+        "publishedAtUnix": 1737637200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/46190/thumbnail_path?time=1738664404",
+        "durationSeconds": 864,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2620
+        }
+      },
+      {
+        "id": "audee:smDoPESz6oGVZrfgXCXVntCW",
+        "title": "【#44】エビと本職",
+        "publishedAt": "2025-01-30T22:00:00+09:00",
+        "publishedAtUnix": 1738242000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/46528/thumbnail_path?time=1739335334",
+        "durationSeconds": 1360,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2683
+        }
+      },
+      {
+        "id": "audee:smLdcNwnAajKLopQsGmtYz8a",
+        "title": "【#45】人魚の目撃情報、お待ちしてます。",
+        "publishedAt": "2025-02-06T22:00:00+09:00",
+        "publishedAtUnix": 1738846800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/46902/thumbnail_path?time=1739885393",
+        "durationSeconds": 1434,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2752
+        }
+      },
+      {
+        "id": "audee:smWEwB5jJvZ2D7YX6vyVj3hm",
+        "title": "【#46】Happy Valentine's day！",
+        "publishedAt": "2025-02-13T22:00:00+09:00",
+        "publishedAtUnix": 1739451600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/47334/thumbnail_path?time=1740629262",
+        "durationSeconds": 818,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2582
+        }
+      },
+      {
+        "id": "audee:smcrfDYwuEPkoAesyvUaUdxU",
+        "title": "【特別編】217の日へようこそ！",
+        "publishedAt": "2025-02-16T14:56:40+09:00",
+        "publishedAtUnix": 1739685400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/47309/thumbnail_path?time=1739717801",
+        "durationSeconds": 430,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3784
+        }
+      },
+      {
+        "id": "audee:smZGPKpNzhhjqzSErdwWXCpV",
+        "title": "【#47】“えびぷと”でティーパーティー☕",
+        "publishedAt": "2025-02-20T22:00:00+09:00",
+        "publishedAtUnix": 1740056400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/47657/thumbnail_path?time=1741225294",
+        "durationSeconds": 1067,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2753
+        }
+      },
+      {
+        "id": "audee:smNbNHrTa4eBSSLMqMWfv3tg",
+        "title": "【#48】最強の2文字!!!",
+        "publishedAt": "2025-02-27T22:00:00+09:00",
+        "publishedAtUnix": 1740661200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/48184/thumbnail_path?time=1741854919",
+        "durationSeconds": 1269,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2509
+        }
+      },
+      {
+        "id": "audee:smjM7DufNjc9tR79nY5ePDn7",
+        "title": "【#49】専門職さん いらっしゃ～い",
+        "publishedAt": "2025-03-06T22:00:00+09:00",
+        "publishedAtUnix": 1741266000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/48606/thumbnail_path?time=1742295566",
+        "durationSeconds": 1120,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2339
+        }
+      },
+      {
+        "id": "audee:sm2oqKpjFbMesvgdkH4DgDtp",
+        "title": "【#50】サムネNo.1決定🎉🎉🎉",
+        "publishedAt": "2025-03-13T22:00:00+09:00",
+        "publishedAtUnix": 1741870800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/49219/thumbnail_path?time=1742967218",
+        "durationSeconds": 1466,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2711
+        }
+      },
+      {
+        "id": "audee:smfJXLwRNJyCpW6xW2L65PYQ",
+        "title": "【#51】カスタマイズTシャツ楽しみ♬",
+        "publishedAt": "2025-03-20T22:00:00+09:00",
+        "publishedAtUnix": 1742475600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/49561/thumbnail_path?time=1743479980",
+        "durationSeconds": 1193,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2485
+        }
+      },
+      {
+        "id": "audee:smAguHYkXRyXxqsJWwAmKt7X",
+        "title": "【#52】三種の神器！",
+        "publishedAt": "2025-03-27T22:00:00+09:00",
+        "publishedAtUnix": 1743080400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/50089/thumbnail_path?time=1744283920",
+        "durationSeconds": 1546,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2653
+        }
+      },
+      {
+        "id": "audee:smjX7ogN5DKnziDNdQTTKNfA",
+        "title": "【#53】ナイル川のほとりに集合！",
+        "publishedAt": "2025-04-03T22:00:00+09:00",
+        "publishedAtUnix": 1743685200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/50881/thumbnail_path?time=1744440188",
+        "durationSeconds": 1518,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3306
+        }
+      },
+      {
+        "id": "audee:smHYigJ2mKG3wMGTGnfkgU7C",
+        "title": "【#54】えびぷと国 開国！",
+        "publishedAt": "2025-04-10T22:00:00+09:00",
+        "publishedAtUnix": 1744290000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/51622/thumbnail_path?time=1745373870",
+        "durationSeconds": 1524,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2393
+        }
+      },
+      {
+        "id": "audee:sm62fDYdz3ZVJUAvRz2uYRBc",
+        "title": "【#55】えび型ロケット発射🚀",
+        "publishedAt": "2025-04-17T22:00:00+09:00",
+        "publishedAtUnix": 1744894800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/51996/thumbnail_path?time=1746077189",
+        "durationSeconds": 1540,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2227
+        }
+      },
+      {
+        "id": "audee:smgKnhzmGF654f72MohGciQC",
+        "title": "【#56】えびぷと国の宴🍷",
+        "publishedAt": "2025-04-24T22:00:00+09:00",
+        "publishedAtUnix": 1745499600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/52498/thumbnail_path?time=1746590004",
+        "durationSeconds": 1375,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2340
+        }
+      },
+      {
+        "id": "audee:smn8rHBjMLXYacVsKraf5HBj",
+        "title": "【#57】王の朝食",
+        "publishedAt": "2025-05-01T22:00:00+09:00",
+        "publishedAtUnix": 1746104400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/52965/thumbnail_path?time=1747230169",
+        "durationSeconds": 1400,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2266
+        }
+      },
+      {
+        "id": "audee:sma8jsNazCGwYGip9UwrmPHK",
+        "title": "【#58】王は御存知？？？",
+        "publishedAt": "2025-05-08T22:00:00+09:00",
+        "publishedAtUnix": 1746709200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/53310/thumbnail_path?time=1747896256",
+        "durationSeconds": 1337,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2398
+        }
+      },
+      {
+        "id": "audee:smBNz4EFowPGg96fP8GTN7u5",
+        "title": "【#59】チーズ食べたい…🧀",
+        "publishedAt": "2025-05-15T22:00:00+09:00",
+        "publishedAtUnix": 1747314000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/53779/thumbnail_path?time=1748425787",
+        "durationSeconds": 1467,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2183
+        }
+      },
+      {
+        "id": "audee:smZ7EBMz9AcLeWmYgKRzdEYj",
+        "title": "【#60】「0」の数を数えてね♪",
+        "publishedAt": "2025-05-22T22:00:00+09:00",
+        "publishedAtUnix": 1747918800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/54276/thumbnail_path?time=1749124025",
+        "durationSeconds": 1303,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2276
+        }
+      },
+      {
+        "id": "audee:smE55woauXP9y6WaCKJGKQrB",
+        "title": "【#61】民は王が指定した動画をみるように！",
+        "publishedAt": "2025-05-29T22:00:00+09:00",
+        "publishedAtUnix": 1748523600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/54674/thumbnail_path?time=1749608870",
+        "durationSeconds": 1337,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2716
+        }
+      },
+      {
+        "id": "audee:smioQ3qAsp6VeqSZmV8cYafF",
+        "title": "【#62】民は正確に測れますか？",
+        "publishedAt": "2025-06-05T22:00:00+09:00",
+        "publishedAtUnix": 1749128400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/55295/thumbnail_path?time=1750314341",
+        "durationSeconds": 1644,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2417
+        }
+      },
+      {
+        "id": "audee:smNM3YFrBpvZtysKjt8Nxwxt",
+        "title": "【#63】メジェドとアヌビス",
+        "publishedAt": "2025-06-12T22:00:00+09:00",
+        "publishedAtUnix": 1749733200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/55626/thumbnail_path?time=1750856609",
+        "durationSeconds": 1596,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3580
+        }
+      },
+      {
+        "id": "audee:smaxHWGecvwMYK3s97NQuGMB",
+        "title": "【#64】超超超！大切なお知らせがありま～す🎤",
+        "publishedAt": "2025-06-19T22:00:00+09:00",
+        "publishedAtUnix": 1750338000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/56219/thumbnail_path?time=1751518373",
+        "durationSeconds": 1451,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2626
+        }
+      },
+      {
+        "id": "audee:smDPHfC3DxV9zBjgdZvKgcAW",
+        "title": "【#65】夢のコラボ",
+        "publishedAt": "2025-06-26T22:00:00+09:00",
+        "publishedAtUnix": 1750942800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/56625/thumbnail_path?time=1752115638",
+        "durationSeconds": 1228,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2285
+        }
+      },
+      {
+        "id": "audee:smMdAGPkkKRijh2Pvt4e66Dq",
+        "title": "【#66】Caravanでも使用します💄",
+        "publishedAt": "2025-07-03T22:00:00+09:00",
+        "publishedAtUnix": 1751547600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/57168/thumbnail_path?time=1752671091",
+        "durationSeconds": 1511,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2301
+        }
+      },
+      {
+        "id": "audee:smgbxyz92c9ecFN5jewxTeqY",
+        "title": "【#67】住みついていた場所🏠",
+        "publishedAt": "2025-07-10T22:00:00+09:00",
+        "publishedAtUnix": 1752152400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/57677/thumbnail_path?time=1753327421",
+        "durationSeconds": 1353,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2483
+        }
+      },
+      {
+        "id": "audee:sm45zzYcnqcq9zZZp9GbyFT5",
+        "title": "【#68】お馬さん、可愛い～🐎",
+        "publishedAt": "2025-07-17T22:00:00+09:00",
+        "publishedAtUnix": 1752757200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/58298/thumbnail_path?time=1753943726",
+        "durationSeconds": 1437,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2435
+        }
+      },
+      {
+        "id": "audee:smJKBn3iQMARC8WtbfvywDaL",
+        "title": "【#69】花火大会と浴衣と女の子🎇",
+        "publishedAt": "2025-07-24T22:00:00+09:00",
+        "publishedAtUnix": 1753362000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/58955/thumbnail_path?time=1754563548",
+        "durationSeconds": 1274,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2583
+        }
+      },
+      {
+        "id": "audee:smgFXPmD5gzFaGYwBZ6mExwV",
+        "title": "【#70】「217find!」Japan Caravan in OSAKA　第1部",
+        "publishedAt": "2025-07-31T22:00:00+09:00",
+        "publishedAtUnix": 1753966800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/59483/thumbnail_path?time=1754979380",
+        "durationSeconds": 1982,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2328
+        }
+      },
+      {
+        "id": "audee:smAxRn6eJVVr2R9WbikUtzqn",
+        "title": "【#71】「217find!」Japan Caravan in OSAKA　第2部",
+        "publishedAt": "2025-08-07T22:00:00+09:00",
+        "publishedAtUnix": 1754571600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/60540/thumbnail_path?time=1755745564",
+        "durationSeconds": 2640,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2221
+        }
+      },
+      {
+        "id": "audee:smaQc2GkCaLxrzaeW654RmSZ",
+        "title": "【#72】丑三つ時の217find！“2025👻”",
+        "publishedAt": "2025-08-14T17:00:00+09:00",
+        "publishedAtUnix": 1755158400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/60987/thumbnail_path?time=1756262641",
+        "durationSeconds": 1386,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1876
+        }
+      },
+      {
+        "id": "audee:smRW3Lxw4CR7ctpwfP4DHKpE",
+        "title": "【#73】「エビ」めっちゃ良いやん🦐",
+        "publishedAt": "2025-08-21T22:00:00+09:00",
+        "publishedAtUnix": 1755781200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/61622/thumbnail_path?time=1756867363",
+        "durationSeconds": 1550,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2143
+        }
+      },
+      {
+        "id": "audee:smSbEo2WRu3FQe7SG2ipVqs4",
+        "title": "【#74】クラフトコーラ作ろう🥤",
+        "publishedAt": "2025-08-28T22:00:00+09:00",
+        "publishedAtUnix": 1756386000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/62064/thumbnail_path?time=1757568653",
+        "durationSeconds": 1461,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2115
+        }
+      },
+      {
+        "id": "audee:smfNjYtuL8NFzfdJx69TkGAc",
+        "title": "【#75】エビが出禁???🦐",
+        "publishedAt": "2025-09-04T22:00:00+09:00",
+        "publishedAtUnix": 1756990800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/62571/thumbnail_path?time=1758181992",
+        "durationSeconds": 1523,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2104
+        }
+      },
+      {
+        "id": "audee:smQYqf7Amp5JbZSTuPftZajq",
+        "title": "【#76】えび型車両、出発進行～🚃",
+        "publishedAt": "2025-09-11T22:00:00+09:00",
+        "publishedAtUnix": 1757595600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/63176/thumbnail_path?time=1758777632",
+        "durationSeconds": 1486,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2052
+        }
+      },
+      {
+        "id": "audee:smGmEvr9Tz6bWB4JWM4iqtEK",
+        "title": "【#77】もうすぐミュージカル♬",
+        "publishedAt": "2025-09-18T22:00:00+09:00",
+        "publishedAtUnix": 1758200400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/63719/thumbnail_path?time=1759373515",
+        "durationSeconds": 1449,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2103
+        }
+      },
+      {
+        "id": "audee:smiBGidt3ifSNqW678VHpmXj",
+        "title": "【#78】MVP🏆",
+        "publishedAt": "2025-09-25T22:00:00+09:00",
+        "publishedAtUnix": 1758805200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/64181/thumbnail_path?time=1759990422",
+        "durationSeconds": 1520,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2137
+        }
+      },
+      {
+        "id": "audee:smktp6eYqZNVediUUUnSTyVv",
+        "title": "【#79】10月と言えば何の日～？",
+        "publishedAt": "2025-10-02T22:00:00+09:00",
+        "publishedAtUnix": 1759410000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/64753/thumbnail_path?time=1760512517",
+        "durationSeconds": 1339,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2712
+        }
+      },
+      {
+        "id": "audee:smcovc37Bf8egaw6AyWGDoju",
+        "title": "【#80】“ギャル”と“ネコ好き”",
+        "publishedAt": "2025-10-09T22:00:00+09:00",
+        "publishedAtUnix": 1760014800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/65538/thumbnail_path?time=1761359952",
+        "durationSeconds": 1448,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3690
+        }
+      },
+      {
+        "id": "audee:smQoY6sZ8wFWMRWr3qT88E5g",
+        "title": "【#81】『217find！』×『つきねびより』",
+        "publishedAt": "2025-10-16T22:00:00+09:00",
+        "publishedAtUnix": 1760619600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/66038/thumbnail_path?time=1761359807",
+        "durationSeconds": 1845,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 6965
+        }
+      },
+      {
+        "id": "audee:sm4BbyJBTafQU8LLu7dpKjAA",
+        "title": "【#82】花宮初奈生誕記念日スペシャル🎉🎉🎉　（音声のみ）",
+        "publishedAt": "2025-10-25T10:00:00+09:00",
+        "publishedAtUnix": 1761354000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/66855/thumbnail_path?time=1761384185",
+        "durationSeconds": 3218,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1091
+        }
+      },
+      {
+        "id": "audee:smQbkhyGhjfcY9zpXerjmWro",
+        "title": "【#83】民からのメール、王が喜んでおられます📩",
+        "publishedAt": "2025-10-30T22:00:00+09:00",
+        "publishedAtUnix": 1761829200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/67060/thumbnail_path?time=1763023057",
+        "durationSeconds": 1421,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2248
+        }
+      },
+      {
+        "id": "audee:smi8g7AwGVZRaRGrZty6SF2N",
+        "title": "【#84】“ラー”に守られたい…",
+        "publishedAt": "2025-11-06T22:00:00+09:00",
+        "publishedAtUnix": 1762434000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/67625/thumbnail_path?time=1763532674",
+        "durationSeconds": 1388,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2069
+        }
+      },
+      {
+        "id": "audee:smUKeaxg2Je3ofL5EPGmPu42",
+        "title": "【#85】「えびぷと米」作りました。",
+        "publishedAt": "2025-11-13T22:00:00+09:00",
+        "publishedAtUnix": 1763038800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/68354/thumbnail_path?time=1764146045",
+        "durationSeconds": 1365,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2002
+        }
+      },
+      {
+        "id": "audee:smCHdsfjVfXhQmZC5v6DCfzr",
+        "title": "【#86】民の意見、お待ちしています！",
+        "publishedAt": "2025-11-20T22:00:00+09:00",
+        "publishedAtUnix": 1763643600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/68847/thumbnail_path?time=1764847233",
+        "durationSeconds": 1497,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2235
+        }
+      },
+      {
+        "id": "audee:smo9dSg8YKajaNWyTK64zncU",
+        "title": "【#87】めちゃくちゃ楽しかった瞬間♬",
+        "publishedAt": "2025-11-27T22:00:00+09:00",
+        "publishedAtUnix": 1764248400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/69488/thumbnail_path?time=1765432937",
+        "durationSeconds": 1665,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2114
+        }
+      },
+      {
+        "id": "audee:sm3WY9SToeXJh9cFLuex2B25",
+        "title": "【#88】『217find！』×『佐々木琴子のここだけのこと』",
+        "publishedAt": "2025-12-04T22:00:00+09:00",
+        "publishedAtUnix": 1764853200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/70131/thumbnail_path?time=1765870427",
+        "durationSeconds": 1791,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3726
+        }
+      },
+      {
+        "id": "audee:smkJYoSAeqEY8BWGd4p76jh7",
+        "title": "【#89】コーナーたくさんありますよ～♪",
+        "publishedAt": "2025-12-11T22:00:00+09:00",
+        "publishedAtUnix": 1765458000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/70676/thumbnail_path?time=1766640847",
+        "durationSeconds": 1422,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2036
+        }
+      },
+      {
+        "id": "audee:smRgEf6crD3XpHcNeCRTBrA5",
+        "title": "【#90】217カードクエスチョンスペシャル🎄Ho Ho Ho🎅",
+        "publishedAt": "2025-12-18T22:00:00+09:00",
+        "publishedAtUnix": 1766062800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/71072/thumbnail_path?time=1767087623",
+        "durationSeconds": 1541,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2094
+        }
+      },
+      {
+        "id": "audee:smPJJhGchY2DHy5ShZB5VvKE",
+        "title": "【#91】今年も1年、ありがとうございました♪",
+        "publishedAt": "2025-12-25T22:00:00+09:00",
+        "publishedAtUnix": 1766667600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/74842/thumbnail_path?time=1767693842",
+        "durationSeconds": 1369,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1895
+        }
+      },
+      {
+        "id": "audee:smmcLLsuJevFb5dSJfoAmM9U",
+        "title": "【#92】2026年も声で俳優を営む花宮初奈です！",
+        "publishedAt": "2026-01-01T22:00:00+09:00",
+        "publishedAtUnix": 1767272400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/75398/thumbnail_path?time=1768457390",
+        "durationSeconds": 1366,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2040
+        }
+      },
+      {
+        "id": "audee:smKKNKGNdJUuZQVUwJMUbaMn",
+        "title": "【#93】やっぱお米だなぁ🍚",
+        "publishedAt": "2026-01-08T22:00:00+09:00",
+        "publishedAtUnix": 1767877200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/75786/thumbnail_path?time=1768905825",
+        "durationSeconds": 1481,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1862
+        }
+      },
+      {
+        "id": "audee:smmup6aZvfNSMvxxakiKR2tj",
+        "title": "【#94】えびぷと国 国旗掲揚！",
+        "publishedAt": "2026-01-15T22:00:00+09:00",
+        "publishedAtUnix": 1768482000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/76406/thumbnail_path?time=1769688807",
+        "durationSeconds": 1362,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1779
+        }
+      },
+      {
+        "id": "audee:smRPnTPcJ3ccgL99vGtVKtme",
+        "title": "【#95】3人でマリアージュ フレール☕",
+        "publishedAt": "2026-01-22T22:00:00+09:00",
+        "publishedAtUnix": 1769086800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/76793/thumbnail_path?time=1770877472",
+        "durationSeconds": 1724,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2179
+        }
+      },
+      {
+        "id": "audee:smNENULkjdYZyzSsWYqj2LWB",
+        "title": "【#96】輝け！第２回サムネ総選挙",
+        "publishedAt": "2026-01-29T22:00:00+09:00",
+        "publishedAtUnix": 1769691600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/77612/thumbnail_path?time=1770877498",
+        "durationSeconds": 1280,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1855
+        }
+      },
+      {
+        "id": "audee:smCp3pjUF8MmPcG5y3hgddiC",
+        "title": "【#97】明日は沖縄やでー！",
+        "publishedAt": "2026-02-05T22:00:00+09:00",
+        "publishedAtUnix": 1770296400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/77914/thumbnail_path?time=1771229740",
+        "durationSeconds": 1450,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1856
+        }
+      },
+      {
+        "id": "audee:smAykbpHx9qePkUUAEWp6RB8",
+        "title": "【#98】沖縄、楽しかったで～♪",
+        "publishedAt": "2026-02-12T22:00:00+09:00",
+        "publishedAtUnix": 1770901200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/78661/thumbnail_path?time=1772104107",
+        "durationSeconds": 1840,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1850
+        }
+      },
+      {
+        "id": "audee:smEWuJGnsevhLQknKS8LuneN",
+        "title": "【#99】今日は何の日？『217の日！』",
+        "publishedAt": "2026-02-16T15:00:00+09:00",
+        "publishedAtUnix": 1771221600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/78981/thumbnail_path?time=1772154333",
+        "durationSeconds": 1884,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 3055
+        }
+      },
+      {
+        "id": "audee:smeJDSbBDSa9H4hVvzQP7dBa",
+        "title": "【#100】100回目記念 100分生配信拡大版SP！",
+        "publishedAt": "2026-02-27T01:20:00+09:00",
+        "publishedAtUnix": 1772122800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/79892/thumbnail_path?time=1773209567",
+        "durationSeconds": 6223,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2285
+        }
+      },
+      {
+        "id": "audee:sm9ELiZEBxiU7NA2Wfx95vfz",
+        "title": "【#101】花粉バイバ～イ👋",
+        "publishedAt": "2026-03-05T22:00:00+09:00",
+        "publishedAtUnix": 1772715600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/80380/thumbnail_path?time=1773920277",
+        "durationSeconds": 1672,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1731
+        }
+      },
+      {
+        "id": "audee:sm5dao6VWJ55zgLLfWXivWQq",
+        "title": "【#102】存じてる？存じてない？",
+        "publishedAt": "2026-03-12T22:00:00+09:00",
+        "publishedAtUnix": 1773320400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/80854/thumbnail_path?time=1774345627",
+        "durationSeconds": 1769,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1886
+        }
+      },
+      {
+        "id": "audee:smbQteiTVVs7438aJoNJFCBu",
+        "title": "【#103】えびぷと国料理人グランプリ🍳",
+        "publishedAt": "2026-03-19T22:00:00+09:00",
+        "publishedAtUnix": 1773925200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/81618/thumbnail_path?time=1775277802",
+        "durationSeconds": 1544,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1696
+        }
+      },
+      {
+        "id": "audee:smLzUtP7H72XrZp8SxxhRkLr",
+        "title": "【#104】右脳タイプ？ 左脳タイプ？",
+        "publishedAt": "2026-03-26T22:00:00+09:00",
+        "publishedAtUnix": 1774530000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/82061/thumbnail_path?time=1775278126",
+        "durationSeconds": 1390,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2126
+        }
+      },
+      {
+        "id": "audee:smEiFQeXqjjjFdQmX5LJtbwK",
+        "title": "【#105】2周年記念スペシャル🎉🎉🎉",
+        "publishedAt": "2026-04-04T15:00:00+09:00",
+        "publishedAtUnix": 1775282400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/83050/thumbnail_path?time=1776298271",
+        "durationSeconds": 1546,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2491
+        }
+      },
+      {
+        "id": "audee:smM3vb78kYdczirqMmqHaXAv",
+        "title": "【#106】国王の新生活は⁉",
+        "publishedAt": "2026-04-09T22:00:00+09:00",
+        "publishedAtUnix": 1775739600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/83480/thumbnail_path?time=1776913533",
+        "durationSeconds": 1548,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1747
+        }
+      },
+      {
+        "id": "audee:smYZNipZzdn72ZN8juNMwRxM",
+        "title": "【#107】この春は“QOL”をUPしよう！",
+        "publishedAt": "2026-04-16T22:00:00+09:00",
+        "publishedAtUnix": 1776344400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/84083/thumbnail_path?time=1777537884",
+        "durationSeconds": 1395,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1588
+        }
+      },
+      {
+        "id": "audee:smmzvjHXxjnLwQBNACVE5MEu",
+        "title": "【#108】もしもし、花宮初奈です📞",
+        "publishedAt": "2026-04-23T22:00:00+09:00",
+        "publishedAtUnix": 1776949200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/84906/thumbnail_path?time=1778141613",
+        "durationSeconds": 1422,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1617
+        }
+      },
+      {
+        "id": "audee:sm5phAZ2i38F8E9SBjnjerSc",
+        "title": "【#109】民の皆さん、お待たせしました！",
+        "publishedAt": "2026-04-30T22:00:00+09:00",
+        "publishedAtUnix": 1777554000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/85683/thumbnail_path?time=1778639525",
+        "durationSeconds": 1632,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1616
+        }
+      },
+      {
+        "id": "audee:smfCnCuWSk6vSaGhPZPCcADg",
+        "title": "【#110】ダイエットに必要なことは？",
+        "publishedAt": "2026-05-07T22:00:00+09:00",
+        "publishedAtUnix": 1778158800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/86316/thumbnail_path?time=1778141796",
+        "durationSeconds": 1560,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1408
+        }
+      },
+      {
+        "id": "audee:sm5qbPrFN3etpm9QUSjbHWWt",
+        "title": "【#111】岩手情報、ありがとうございます🍡",
+        "publishedAt": "2026-05-14T22:00:00+09:00",
+        "publishedAtUnix": 1778763600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/87060/thumbnail_path?time=1778639713",
+        "durationSeconds": 1748,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 974
         }
       }
     ],
     "meta": {
-      "cachedAt": "2026-05-16T17:44:57.314Z",
+      "cachedAt": "2026-05-17T02:43:24.023Z",
       "episodeCount": 113
     },
     "raw": {

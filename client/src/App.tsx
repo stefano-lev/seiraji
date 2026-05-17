@@ -5,14 +5,9 @@ import { Button } from './components/ui/button';
 
 import { motion } from 'framer-motion';
 
-import { defaultShows } from '@/data/shows';
-//import { demoShows, demoUserState, demoTags } from '@/data/demo';
-
 import { defaultPrograms, demoUserState } from '@/data/demoPrograms';
 
-//import type { UserShowState } from '@/types/radio';
 import { ShowCard } from '@/components/ShowCard';
-//import type { RadioShow } from '@/types/radio';
 import type { Program } from './types/media';
 import type { UserProgramState } from './types/user';
 
@@ -20,7 +15,7 @@ import { loadActivity, saveActivity, appendActivityEvent } from '@/lib/storage';
 import type { ActivityEvent } from '@/lib/storage';
 import { loadTags, saveTags, upsertTag } from '@/lib/storage';
 import { loadPrefs, savePrefs } from '@/lib/storage';
-//import { getEffectiveTotalEpisodes } from '@/lib/episodes';
+
 import { loadUserState, saveUserState } from '@/lib/storage';
 
 import { processImageFile } from '@/lib/image';
@@ -274,12 +269,10 @@ export default function App() {
     if (delta === 0) return;
 
     // update user state
-    // updateProgramState({
-    //   programId,
-    //   status: prev?.status ?? 'backlog',
-    //   isPinned: prev?.isPinned ?? false,
-    //   lastListenedEpisode: nextEpisode,
-    // });
+    updateProgramState({
+      ...getProgramState(programId),
+      lastListenedEpisode: nextEpisode,
+    });
 
     // log event
     const ev: ActivityEvent = {
@@ -420,7 +413,9 @@ export default function App() {
 
         const matchesSearch =
           program.program.title.toLowerCase().includes(query) ||
-          program.program.hosts.some((h) => h.toLowerCase().includes(query));
+          (program.program.hosts ?? []).some((h) =>
+            h.toLowerCase().includes(query)
+          );
 
         if (!matchesSearch) return false;
 
@@ -497,7 +492,7 @@ export default function App() {
   return (
     <div className={dark ? 'dark' : ''}>
       <div className="app-bg min-h-screen bg-background text-foreground">
-        <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 pb-16">
+        <div className="mx-auto w-full max-w-[1800px] px-4 sm:px-6 lg:px-8 pb-16">
           {/* Top Nav */}
           <div className="sticky top-0 z-40 pt-4">
             <div
@@ -795,7 +790,7 @@ export default function App() {
           </p>
 
           {/* Show cards */}
-          <div className="p-2 grid grid-cols-1 md:grid-cols-2 gap-2 max-w-5xl w-full items-stretch">
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 items-stretch">
             {visiblePrograms.map((program) => (
               <ShowCard
                 program={program}
@@ -826,305 +821,322 @@ export default function App() {
             (() => {
               const programData = selectedProgram;
 
-              //   return (
-              //     <motion.div
-              //       className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
-              //       initial={{ opacity: 0 }}
-              //       animate={{ opacity: 1 }}
-              //       exit={{ opacity: 0 }}
-              //       onClick={(e) => {
-              //         e.stopPropagation();
-              //         setSelectedProgram(null);
-              //       }}
-              //     >
-              //       <motion.div
-              //         className="max-w-lg w-full rounded-2xl bg-background p-6 shadow-xl"
-              //         initial={{ scale: 0.95, opacity: 0 }}
-              //         animate={{ scale: 1, opacity: 1 }}
-              //         transition={{ duration: 0.15, ease: 'easeOut' }}
-              //         onClick={(e) => e.stopPropagation()}
-              //       >
-              //         <>
-              //           <h2 className="text-xl font-semibold mb-4">
-              //             {programData!.program.title}
-              //           </h2>
+              return (
+                <motion.div
+                  className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  onClick={() => {
+                    setSelectedProgram(null);
+                    setEditDraft(null);
+                  }}
+                >
+                  <motion.div
+                    className="
+            w-full max-w-6xl
+            h-[90vh]
+            rounded-3xl
+            border border-border/60
+            bg-background
+            shadow-2xl
+            overflow-hidden
+            flex flex-col
+          "
+                    initial={{ scale: 0.95, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.15, ease: 'easeOut' }}
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    {/* HERO HEADER */}
+                    <div className="relative">
+                      <div className="h-52 w-full bg-muted overflow-hidden">
+                        <img
+                          src={
+                            programData.program.thumbnail ??
+                            '/placeholders/show-placeholder.png'
+                          }
+                          className="w-full h-full object-cover opacity-30 blur-sm scale-105"
+                        />
+                      </div>
 
-              //           <div className="edit-field">
-              //             <label className="edit-label">Show Icon</label>
+                      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent" />
 
-              //             <div
-              //               style={{
-              //                 display: 'flex',
-              //                 gap: 12,
-              //                 alignItems: 'center',
-              //               }}
-              //             >
-              //               <img
-              //                 src={
-              //                   isEditing
-              //                     ? (editDraft?.program.thumbnail ??
-              //                       editDraft?.program.thumbnail ??
-              //                       '/placeholders/show-placeholder.png')
-              //                     : (programData.program.thumbnail ??
-              //                       '/placeholders/show-placeholder.png')
-              //                 }
-              //                 alt="Show icon"
-              //                 width={48}
-              //                 height={48}
-              //                 style={{
-              //                   borderRadius: 6,
-              //                   border: '1px solid var(--border)',
-              //                   objectFit: 'cover',
-              //                 }}
-              //               />
+                      <div className="absolute bottom-0 left-0 right-0 p-6 flex gap-6">
+                        <img
+                          src={
+                            programData.program.thumbnail ??
+                            '/placeholders/show-placeholder.png'
+                          }
+                          className="
+                          w-36 h-36
+                          rounded-2xl
+                          object-cover
+                          border border-border
+                          shadow-xl
+                          shrink-0
+                        "
+                        />
 
-              //               {isEditing && (
-              //                 <div
-              //                   style={{
-              //                     display: 'flex',
-              //                     flexDirection: 'column',
-              //                     gap: 6,
-              //                   }}
-              //                 >
-              //                   <input
-              //                     type="file"
-              //                     accept="image/png,image/jpeg,image/webp"
-              //                     onChange={async (e) => {
-              //                       const file = e.target.files?.[0];
-              //                       if (!file || !editDraft) return;
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-start justify-between gap-4">
+                            <div>
+                              <h2 className="text-3xl font-bold leading-tight">
+                                {programData.program.title}
+                              </h2>
 
-              //                       const dataUrl = await processImageFile(file);
+                              <p className="text-muted-foreground mt-2">
+                                {(programData.program.hosts ?? []) ||
+                                  'Unknown host'}
+                              </p>
 
-              //                       setEditDraft({
-              //                         ...editDraft,
-              //                         iconDataUrl: dataUrl,
-              //                       });
-              //                     }}
-              //                   />
+                              <div className="flex flex-wrap gap-2 mt-4">
+                                <Badge>{programData.platform}</Badge>
 
-              //                   {(editDraft?.program.thumbnail ||
-              //                     editDraft?.program.thumbnail) && (
-              //                     <button
-              //                       type="button"
-              //                       onClick={() =>
-              //                         setEditDraft({
-              //                           ...editDraft,
-              //                           iconDataUrl: undefined,
-              //                           iconUrl: undefined,
-              //                         })
-              //                       }
-              //                     >
-              //                       Remove icon
-              //                     </button>
-              //                   )}
-              //                 </div>
-              //               )}
-              //             </div>
-              //           </div>
+                                {programData.program.categories?.map((c) => (
+                                  <Badge key={c} variant="secondary">
+                                    {c}
+                                  </Badge>
+                                ))}
+                              </div>
+                            </div>
 
-              //           <EditableField
-              //             label="Title"
-              //             value={programData!.program.title}
-              //             isEditing={isEditing}
-              //             renderInput={() => (
-              //               <input
-              //                 className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-              //                 value={editDraft!.program.title}
-              //                 onChange={(e) =>
-              //                   setEditDraft({
-              //                     ...editDraft!,
-              //                     title: e.target.value,
-              //                   })
-              //                 }
-              //               />
-              //             )}
-              //           />
+                            <Button
+                              variant="secondary"
+                              onClick={() => setSelectedProgram(null)}
+                            >
+                              Close
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-              //           <EditableField
-              //             label="Hosts"
-              //             value={programData!.program.hosts.join(', ')}
-              //             isEditing={isEditing}
-              //             renderInput={() => (
-              //               <input
-              //                 className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-              //                 value={editDraft!.program.hosts.join(', ')}
-              //                 onChange={(e) =>
-              //                   setEditDraft({
-              //                     ...editDraft!,
-              //                     hosts: e.target.value
-              //                       .split(',')
-              //                       .map((h) => h.trim()),
-              //                   })
-              //                 }
-              //               />
-              //             )}
-              //           />
+                    {/* CONTENT */}
+                    <div className="flex-1 overflow-hidden">
+                      <div className="grid grid-cols-1 xl:grid-cols-[380px_1fr] h-full">
+                        {/* SIDEBAR */}
+                        <div className="border-r border-border/60 p-6 overflow-y-auto">
+                          <div className="space-y-6">
+                            {/* DESCRIPTION */}
+                            <div>
+                              <h3 className="font-semibold mb-2">
+                                Description
+                              </h3>
 
-              //           <EditableField
-              //             label="Start Date"
-              //             value={programData!.startDate || '—'}
-              //             isEditing={isEditing}
-              //             renderInput={() => (
-              //               <input
-              //                 className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-              //                 value={editDraft!.startDate}
-              //                 onChange={(e) =>
-              //                   setEditDraft({
-              //                     ...editDraft!,
-              //                     startDate: e.target.value,
-              //                   })
-              //                 }
-              //               />
-              //             )}
-              //           />
+                              <p className="text-sm text-muted-foreground leading-relaxed">
+                                {programData.program.description ??
+                                  'No description available.'}
+                              </p>
+                            </div>
 
-              //           <EditableField
-              //             label="Frequency"
-              //             value={programData!.frequency}
-              //             isEditing={isEditing}
-              //             renderInput={() => (
-              //               <select
-              //                 className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-              //                 value={editDraft!.frequency}
-              //                 onChange={(e) =>
-              //                   setEditDraft({
-              //                     ...editDraft!,
-              //                     frequency: e.target
-              //                       .value as Program['frequency'],
-              //                   })
-              //                 }
-              //               >
-              //                 <option value="weekly">Weekly</option>
-              //                 <option value="biweekly">Biweekly</option>
-              //                 <option value="irregular">Irregular</option>
-              //               </select>
-              //             )}
-              //           />
+                            {/* PROGRAM META */}
+                            <div className="space-y-3">
+                              <h3 className="font-semibold">Program Info</h3>
 
-              //           <EditableField
-              //             label="Total Episodes"
-              //             value={programData!.totalEpisodes}
-              //             isEditing={isEditing}
-              //             renderInput={() => (
-              //               <input
-              //                 type="number"
-              //                 className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-              //                 value={editDraft!.totalEpisodes}
-              //                 onChange={(e) =>
-              //                   setEditDraft({
-              //                     ...editDraft!,
-              //                     totalEpisodes: Number(e.target.value),
-              //                   })
-              //                 }
-              //               />
-              //             )}
-              //           />
-              //         </>
+                              <div className="rounded-2xl border border-border/60 p-4 space-y-3 text-sm">
+                                <div className="flex justify-between gap-3">
+                                  <span className="text-muted-foreground">
+                                    Episodes
+                                  </span>
+                                  <span>{programData.meta.episodeCount}</span>
+                                </div>
 
-              //         <EditableField
-              //           label="Episode Duration (minutes)"
-              //           value={programData!.episodeDurationMinutes ?? '—'}
-              //           isEditing={isEditing}
-              //           renderInput={() => (
-              //             <input
-              //               type="number"
-              //               min={1}
-              //               className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-              //               value={programData!.episodeDurationMinutes ?? 30}
-              //               onChange={(e) =>
-              //                 setEditDraft({
-              //                   ...editDraft!,
-              //                   episodeDurationMinutes: Number(e.target.value),
-              //                 })
-              //               }
-              //             />
-              //           )}
-              //         />
+                                <div className="flex justify-between gap-3">
+                                  <span className="text-muted-foreground">
+                                    Source
+                                  </span>
+                                  <span>{programData.source}</span>
+                                </div>
 
-              //         {/* Tags editor (User State) */}
-              //         <div className="mb-3">
-              //           <label className="text-sm mb-1 block">Tags</label>
-              //           <input
-              //             type="text"
-              //             placeholder="anime, comedy, drama"
-              //             className="w-full rounded-md border p-2 bg-background/90 text-foreground"
-              //             value={tagDraft}
-              //             onChange={(e) => setTagDraft(e.target.value)}
-              //             onBlur={() => {
-              //               const raw = tagDraft
-              //                 .split(',')
-              //                 .map((t) => t.trim())
-              //                 .filter(Boolean);
+                                <div className="flex justify-between gap-3">
+                                  <span className="text-muted-foreground">
+                                    Platform
+                                  </span>
+                                  <span>{programData.platform}</span>
+                                </div>
 
-              //               const normalized = Array.from(
-              //                 new Set(raw.map((t) => t.toLowerCase()))
-              //               );
+                                <div className="flex justify-between gap-3">
+                                  <span className="text-muted-foreground">
+                                    Cached
+                                  </span>
+                                  <span>
+                                    {new Date(
+                                      programData.meta.cachedAt
+                                    ).toLocaleDateString()}
+                                  </span>
+                                </div>
 
-              //               const current = getProgramState(selectedProgram!.id);
-              //               updateProgramState({
-              //                 ...current,
-              //                 tags: normalized,
-              //               });
+                                {programData.program.schedule && (
+                                  <div className="flex justify-between gap-3">
+                                    <span className="text-muted-foreground">
+                                      Schedule
+                                    </span>
+                                    <span>{programData.program.schedule}</span>
+                                  </div>
+                                )}
+                              </div>
+                            </div>
 
-              //               setTagDraft(normalized.join(', '));
-              //             }}
-              //           />
-              //         </div>
+                            {/* USER TAGS */}
+                            <div>
+                              <h3 className="font-semibold mb-2">Your Tags</h3>
 
-              //         <div className="mt-6 flex justify-end gap-2">
-              //           {isEditing ? (
-              //             <>
-              //               <button
-              //                 className="px-4 py-2 rounded-md bg-secondary"
-              //                 onClick={() => {
-              //                   const confirmed = window.confirm(
-              //                     `Delete "${selectedProgram!.program.title}"?\nThis cannot be undone.`
-              //                   );
+                              <Input
+                                type="text"
+                                placeholder="anime, comfy, comedy"
+                                value={tagDraft}
+                                onChange={(e) => setTagDraft(e.target.value)}
+                                onBlur={() => {
+                                  const raw = tagDraft
+                                    .split(',')
+                                    .map((t) => t.trim())
+                                    .filter(Boolean);
 
-              //                   if (!confirmed) return;
+                                  const normalized = Array.from(
+                                    new Set(raw.map((t) => t.toLowerCase()))
+                                  );
 
-              //                   deleteProgram(selectedProgram!.id);
-              //                   setEditDraft(null);
-              //                   setSelectedProgram(null);
-              //                 }}
-              //               >
-              //                 Delete
-              //               </button>
-              //               <button
-              //                 className="px-4 py-2 rounded-md bg-secondary"
-              //                 onClick={() => {
-              //                   updateProgram(editDraft!);
-              //                   setEditDraft(null);
-              //                 }}
-              //               >
-              //                 Save
-              //               </button>
+                                  const current = getProgramState(
+                                    selectedProgram!.id
+                                  );
 
-              //               <button
-              //                 className="px-4 py-2 rounded-md bg-muted"
-              //                 onClick={() => setEditDraft(null)}
-              //               >
-              //                 Cancel
-              //               </button>
-              //             </>
-              //           ) : (
-              //             <button
-              //               className="px-4 py-2 rounded-md bg-secondary"
-              //               onClick={() => setSelectedProgram(null)}
-              //             >
-              //               Close
-              //             </button>
-              //           )}
-              //         </div>
-              //       </motion.div>
-              //     </motion.div>
-              //   );
+                                  updateProgramState({
+                                    ...current,
+                                    tags: normalized,
+                                  });
+
+                                  setTagDraft(normalized.join(', '));
+                                }}
+                              />
+
+                              <div className="flex flex-wrap gap-2 mt-3">
+                                {(
+                                  getProgramState(programData.id).tags ?? []
+                                ).map((tag) => (
+                                  <Badge key={tag} variant="outline">
+                                    #{tag}
+                                  </Badge>
+                                ))}
+                              </div>
+                            </div>
+
+                            {/* EXTERNAL LINK */}
+                            <div>
+                              <Button
+                                className="w-full"
+                                variant="secondary"
+                                onClick={() =>
+                                  window.open(programData.url, '_blank')
+                                }
+                              >
+                                Open Source Page
+                              </Button>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* EPISODES */}
+                        <div className="overflow-y-auto p-6">
+                          <div className="flex items-center justify-between mb-5">
+                            <div>
+                              <h3 className="text-xl font-semibold">
+                                Episodes
+                              </h3>
+
+                              <p className="text-sm text-muted-foreground">
+                                {programData.episodes.length} episodes available
+                              </p>
+                            </div>
+                          </div>
+
+                          <div className="space-y-3">
+                            {programData.episodes.map((ep, index) => (
+                              <div
+                                key={ep.id}
+                                className="
+                                rounded-2xl
+                                border border-border/60
+                                p-4
+                                hover:bg-muted/40
+                                transition-colors
+                              "
+                              >
+                                <div className="flex gap-4">
+                                  <img
+                                    src={
+                                      ep.thumbnail ??
+                                      programData.program.thumbnail ??
+                                      '/placeholders/show-placeholder.png'
+                                    }
+                                    className="
+                                    w-36 h-20
+                                    rounded-xl
+                                    object-cover
+                                    bg-muted
+                                    shrink-0
+                                  "
+                                  />
+
+                                  <div className="min-w-0 flex-1">
+                                    <div className="flex items-start justify-between gap-4">
+                                      <div>
+                                        <h4 className="font-medium leading-snug">
+                                          {ep.title}
+                                        </h4>
+
+                                        {ep.publishedAt && (
+                                          <p className="text-xs text-muted-foreground mt-1">
+                                            {new Date(
+                                              ep.publishedAt
+                                            ).toLocaleDateString()}
+                                          </p>
+                                        )}
+                                      </div>
+
+                                      {ep.durationSeconds && (
+                                        <Badge variant="outline">
+                                          {Math.floor(ep.durationSeconds / 60)}m
+                                        </Badge>
+                                      )}
+                                    </div>
+
+                                    {ep.description && (
+                                      <p className="text-sm text-muted-foreground mt-3 line-clamp-3">
+                                        {ep.description}
+                                      </p>
+                                    )}
+
+                                    {ep.tags && ep.tags.length > 0 && (
+                                      <div className="flex flex-wrap gap-2 mt-3">
+                                        {ep.tags.map((tag) => (
+                                          <Badge
+                                            key={tag}
+                                            variant="secondary"
+                                            className="text-xs"
+                                          >
+                                            {tag}
+                                          </Badge>
+                                        ))}
+                                      </div>
+                                    )}
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </motion.div>
+                </motion.div>
+              );
             })()}
 
           {statsOpen && (
             <motion.div
               className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
-              initial={{ opacity: 0 }}
+              //initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={(e) => {
@@ -1134,7 +1146,7 @@ export default function App() {
             >
               <motion.div
                 className="max-w-lg w-full rounded-2xl bg-background p-6 shadow-xl"
-                initial={{ scale: 0.95, opacity: 0 }}
+                //initial={{ scale: 0.95, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.15, ease: 'easeOut' }}
                 onClick={(e) => e.stopPropagation()}

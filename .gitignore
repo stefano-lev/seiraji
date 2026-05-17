@@ -9,10 +9,6 @@ out/
 client/public/banners
 client/public/icons
 
-# Radio show cache files
-server/cache/*.json
-
-
 # Local env files
 .env
 .env.local

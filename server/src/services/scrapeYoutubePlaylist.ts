@@ -2,6 +2,8 @@ import { fetchYoutubeVideoDetails } from './fetchYoutubeVideoDetails';
 
 import { parseYoutubeDuration } from '../utils/parseYoutubeDuration';
 
+import { normalizeEpisodes } from '../utils/normalizeEpisodes';
+
 const API_KEY = process.env.YOUTUBE_API_KEY;
 
 function extractPlaylistId(url: string) {
@@ -86,37 +88,39 @@ export async function scrapeYoutubePlaylist(url: string) {
       thumbnail: playlist.snippet.thumbnails?.maxres?.url ?? null,
     },
 
-    episodes: episodes.map((ep) => {
-      const videoId = ep.contentDetails.videoId;
+    episodes: normalizeEpisodes(
+      episodes.map((ep) => {
+        const videoId = ep.contentDetails.videoId;
 
-      const details = detailsMap.get(videoId);
+        const details = detailsMap.get(videoId);
 
-      const isoDuration = details?.contentDetails?.duration ?? null;
+        const isoDuration = details?.contentDetails?.duration ?? null;
 
-      return {
-        id: `youtube:${videoId}`,
+        return {
+          id: `youtube:${videoId}`,
 
-        title: ep.snippet.title,
+          title: ep.snippet.title,
 
-        description: details?.snippet?.description ?? '',
+          description: details?.snippet?.description ?? '',
 
-        publishedAt: ep.contentDetails.videoPublishedAt,
+          publishedAt: ep.contentDetails.videoPublishedAt,
 
-        publishedAtUnix: Math.floor(
-          new Date(ep.contentDetails.videoPublishedAt).getTime() / 1000
-        ),
+          publishedAtUnix: Math.floor(
+            new Date(ep.contentDetails.videoPublishedAt).getTime() / 1000
+          ),
 
-        thumbnail: ep.snippet.thumbnails?.high?.url ?? null,
+          thumbnail: ep.snippet.thumbnails?.high?.url ?? null,
 
-        duration: {
-          raw: isoDuration,
+          duration: {
+            raw: isoDuration,
 
-          seconds: isoDuration ? parseYoutubeDuration(isoDuration) : null,
-        },
+            seconds: isoDuration ? parseYoutubeDuration(isoDuration) : null,
+          },
 
-        tags: details?.snippet?.tags ?? [],
-      };
-    }),
+          tags: details?.snippet?.tags ?? [],
+        };
+      })
+    ),
 
     meta: {
       cachedAt: new Date().toISOString(),

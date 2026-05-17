@@ -4,6 +4,8 @@ import { fetchAudeeEpisodes } from './audeeEpisodes';
 
 import { normalizeAudeeDate } from '../utils/date';
 
+import { normalizeEpisodes } from '../utils/normalizeEpisodes';
+
 export async function scrapeAudee(url: string) {
   const fanclubId = await getFanclubIdFromUrl(url);
 
@@ -54,29 +56,31 @@ export async function scrapeAudee(url: string) {
       thumbnail: site.thumbnail_image_url ?? null,
     },
 
-    episodes: episodes.map((ep) => {
-      const normalizedDate = normalizeAudeeDate(ep.display_date);
+    episodes: normalizeEpisodes(
+      episodes.map((ep) => {
+        const normalizedDate = normalizeAudeeDate(ep.display_date);
 
-      return {
-        id: `audee:${ep.content_code}`,
+        return {
+          id: `audee:${ep.content_code}`,
 
-        title: ep.title,
+          title: ep.title,
 
-        publishedAt: normalizedDate.iso,
+          publishedAt: normalizedDate.iso,
 
-        publishedAtUnix: normalizedDate.unix,
+          publishedAtUnix: normalizedDate.unix,
 
-        thumbnail: ep.thumbnail_url,
+          thumbnail: ep.thumbnail_url,
 
-        durationSeconds: ep.active_video_filename?.length ?? null,
+          durationSeconds: ep.active_video_filename?.length ?? null,
 
-        platformMetadata: {
-          mediaType: ep.video_media_type?.status ?? null,
+          platformMetadata: {
+            mediaType: ep.video_media_type?.status ?? null,
 
-          views: ep.video_aggregate_info?.total_views ?? null,
-        },
-      };
-    }),
+            views: ep.video_aggregate_info?.total_views ?? null,
+          },
+        };
+      })
+    ),
 
     meta: {
       cachedAt: new Date().toISOString(),

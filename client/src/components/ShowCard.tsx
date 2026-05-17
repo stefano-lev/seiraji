@@ -72,68 +72,48 @@ export function ShowCard({
         <div className="absolute top-2 left-2 text-yellow-500 text-xl">★</div>
       )}
 
-      <CardHeader className="flex flex-row gap-3 items-start">
-        <img
-          src={thumbnail}
-          className="h-9 w-16 rounded-md object-cover bg-muted"
-          onError={(e) => {
-            e.currentTarget.src = '/placeholders/show-placeholder.png';
-          }}
-        />
+      <CardHeader className="space-y-4">
+        <div className="flex gap-4">
+          <img
+            src={thumbnail}
+            className="
+        h-20 w-20
+        rounded-xl
+        object-cover
+        bg-muted
+        shrink-0
+      "
+          />
 
-        <div className="flex flex-col flex-1 min-w-0">
-          <h3 className="font-semibold truncate">{program.program.title}</h3>
-          <span>
-            {' '}
-            <Badge className="text-xs bg-slate-800 text-muted-foreground truncate">
-              {program.platform}
-            </Badge>{' '}
-            ·{' '}
-            <Badge className="text-xs bg-slate-800 text-muted-foreground truncate">
-              {program.program.hosts}
-            </Badge>
-          </span>
+          <div className="min-w-0 flex-1">
+            <div className="flex items-start justify-between gap-2">
+              <div>
+                <h3 className="font-semibold text-base leading-tight line-clamp-2">
+                  {program.program.title}
+                </h3>
 
-          {program.program.categories?.length ? (
-            <div className="flex gap-1 mt-1 flex-wrap">
-              {program.program.categories.slice(0, 3).map((c) => (
-                <span
-                  key={c}
-                  className="text-[10px] px-2 py-0.5 border rounded-full text-muted-foreground"
-                >
+                <p className="text-sm text-muted-foreground line-clamp-1 mt-1">
+                  {program.program.hosts || 'Unknown host'}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap gap-1 mt-3">
+              <Badge variant="secondary">{program.platform}</Badge>
+
+              {program.program.categories?.slice(0, 2).map((c) => (
+                <Badge key={c} variant="outline">
                   {c}
-                </span>
+                </Badge>
               ))}
             </div>
-          ) : null}
+          </div>
         </div>
-
-        <Button
-          onClick={(e) => {
-            e.stopPropagation();
-            onTogglePinned(program.id);
-          }}
-          className="text-xs opacity-0 group-hover:opacity-100"
-          size="sm"
-        >
-          {state.isPinned ? 'Unpin' : 'Pin'}
-        </Button>
-
-        <Button
-          onClick={(e) => {
-            e.stopPropagation();
-            onEdit?.(program);
-          }}
-          className="text-xs opacity-0 group-hover:opacity-100"
-          size="sm"
-        >
-          Edit
-        </Button>
       </CardHeader>
 
       <CardContent className="space-y-3">
         {program.program.description && (
-          <p className="text-xs text-muted-foreground line-clamp-2">
+          <p className="text-xs text-muted-foreground line-clamp-3">
             {program.program.description}
           </p>
         )}
