@@ -1,7 +1,5 @@
 import * as cheerio from 'cheerio';
 
-import { normalizeEpisodes } from '../utils/normalizeEpisodes';
-
 export async function scrapeOnsen(url: string) {
   const response = await fetch(url);
 

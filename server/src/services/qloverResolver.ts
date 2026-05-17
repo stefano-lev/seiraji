@@ -9,7 +9,7 @@ function normalizeUrl(url: string) {
 export async function getFanclubIdFromUrl(url: string): Promise<number | null> {
   if (!channelCache) {
     const res = await fetch(
-      'https://api.audee-membership.jp/fc/content_providers/channels'
+      'https://api.qlover.jp/fc/content_providers/channels'
     );
 
     const json = await res.json();

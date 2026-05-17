@@ -1,4 +1,1923 @@
 {
+  "okuma-wakana": {
+    "id": "audee:okuma-wakana",
+    "source": "imported",
+    "platform": "audee",
+    "platformId": 354,
+    "slug": "okuma-wakana",
+    "url": "https://audee-membership.jp/okuma-wakana",
+    "episodesUrl": "https://audee-membership.jp/okuma-wakana/videos",
+    "program": {
+      "title": "大熊和奏 朝のささやき",
+      "description": "声優・大熊和奏の初冠ラジオ番組『大熊和奏 朝のささやき』\n普段、朝のラジオをよく聴く大熊和奏が朝からゆったり聴けるラジオ番組をお届けします！\n通勤・通学・朝の準備などのお供にぜひ。",
+      "hosts": [],
+      "category": "アニメ・声優",
+      "twitter": null,
+      "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/354/thumbnail_image_path?time=1764121555"
+    },
+    "episodes": [
+      {
+        "id": "audee:smxUgy4nq8A3JsRPijneY4h7",
+        "title": "【#1】大熊和奏、念願の冠ラジオ番組スタート！「私、普段はこんな声！」",
+        "publishedAt": "2023-11-08T23:00:00+09:00",
+        "publishedAtUnix": 1699452000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/21424/thumbnail_path?time=1733374471",
+        "durationSeconds": 1728,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 4608
+        }
+      },
+      {
+        "id": "audee:smccNwET4CvHykN9b7kBAKgf",
+        "title": "【#2】「朝の宿題！リスナーネームを考えよう！」",
+        "publishedAt": "2023-11-15T23:00:00+09:00",
+        "publishedAtUnix": 1700056800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/21720/thumbnail_path?time=1733374471",
+        "durationSeconds": 1522,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 2261
+        }
+      },
+      {
+        "id": "audee:smeSJzWX9cjFAgDPDNNsmKrG",
+        "title": "【#３】「和奏、朝は〇〇を食べる♪」",
+        "publishedAt": "2023-11-22T23:00:00+09:00",
+        "publishedAtUnix": 1700661600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/22033/thumbnail_path?time=1733374471",
+        "durationSeconds": 1387,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 1608
+        }
+      },
+      {
+        "id": "audee:smwxWED3HqarBTE8TfQQutt8",
+        "title": "【#4】「和奏、新コーナーを決めました！」",
+        "publishedAt": "2023-11-29T23:00:00+09:00",
+        "publishedAtUnix": 1701266400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/22353/thumbnail_path?time=1733374471",
+        "durationSeconds": 1381,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 1615
+        }
+      },
+      {
+        "id": "audee:smmn3gkM5qqWbTkVyhgvjtdg",
+        "title": "【#5】「ついに朝のあいさつ決定！リスナーネームは…！」",
+        "publishedAt": "2023-12-06T23:00:00+09:00",
+        "publishedAtUnix": 1701871200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/22882/thumbnail_path?time=1733374471",
+        "durationSeconds": 1568,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 1580
+        }
+      },
+      {
+        "id": "audee:smhJ7TCAhzMxuNuBwWdGd9nY",
+        "title": "【#6】早期入会キャンペーンの期間延長が決定！オリジナルサンクスカードぜひゲットして下さい！",
+        "publishedAt": "2023-12-13T23:00:00+09:00",
+        "publishedAtUnix": 1702476000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/23159/thumbnail_path?time=1733374472",
+        "durationSeconds": 1167,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 1483
+        }
+      },
+      {
+        "id": "audee:smYF9AT2iXD5A7GKCfqbzS6g",
+        "title": "【#7】「リスナーネーム、決定！」",
+        "publishedAt": "2023-12-20T23:00:00+09:00",
+        "publishedAtUnix": 1703080800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/23599/thumbnail_path?time=1733374472",
+        "durationSeconds": 1273,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 1353
+        }
+      },
+      {
+        "id": "audee:smt63aPheFNMuDYriuYoTuGX",
+        "title": "大熊和奏 夜のささやき生配信",
+        "publishedAt": "2023-12-26T12:03:55+09:00",
+        "publishedAtUnix": 1703559835,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/23504/thumbnail_path?time=1751333916",
+        "durationSeconds": 4282,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 3883
+        }
+      },
+      {
+        "id": "audee:smrxvr86qUFTTJXC5TXsRMKe",
+        "title": "【#8】「和奏がささやき解決！年末お悩み大掃除SP」",
+        "publishedAt": "2023-12-27T23:00:00+09:00",
+        "publishedAtUnix": 1703685600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/23945/thumbnail_path?time=1733374472",
+        "durationSeconds": 1522,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 822
+        }
+      },
+      {
+        "id": "audee:smSKzapc64PfNgVGGVqqGHBh",
+        "title": "【#9】「明けまして…朝夢スペシャル！」",
+        "publishedAt": "2024-01-03T23:00:00+09:00",
+        "publishedAtUnix": 1704290400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/24240/thumbnail_path?time=1733374472",
+        "durationSeconds": 1335,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 1206
+        }
+      },
+      {
+        "id": "audee:smW4U65kXXPafkjUjF4ZKcvT",
+        "title": "【#10】チャレンジ和奏特別編「噛まない和奏VS噛ませたいスタッフ」",
+        "publishedAt": "2024-01-10T23:00:00+09:00",
+        "publishedAtUnix": 1704895200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/24482/thumbnail_path?time=1733374472",
+        "durationSeconds": 1284,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 1053
+        }
+      },
+      {
+        "id": "audee:smUw7XG4PLNPQiQems8QtHwS",
+        "title": "【#11】「和奏の正月は…詰め放題！？」",
+        "publishedAt": "2024-01-17T23:00:00+09:00",
+        "publishedAtUnix": 1705500000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/24786/thumbnail_path?time=1733374472",
+        "durationSeconds": 1320,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 1066
+        }
+      },
+      {
+        "id": "audee:smVigyekLLdBdmFF4KiDEjPE",
+        "title": "【#12】「和奏、ふつおた・質問にたくさんお答え！」",
+        "publishedAt": "2024-01-24T23:00:00+09:00",
+        "publishedAtUnix": 1706104800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/25033/thumbnail_path?time=1733374472",
+        "durationSeconds": 1351,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 1093
+        }
+      },
+      {
+        "id": "audee:smZrSRYpceq5omUV6yScTPdc",
+        "title": "【#13】「和奏、願いを込めて恵方巻きを食べる」",
+        "publishedAt": "2024-01-31T23:00:00+09:00",
+        "publishedAtUnix": 1706709600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/25351/thumbnail_path?time=1733374472",
+        "durationSeconds": 1450,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 1003
+        }
+      },
+      {
+        "id": "audee:smaocm3JkSnbcnrJkhmC7faX",
+        "title": "【#14】「未解決案件！オープニングの謎の声を解決！？」",
+        "publishedAt": "2024-02-07T23:00:00+09:00",
+        "publishedAtUnix": 1707314400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/25788/thumbnail_path?time=1733374472",
+        "durationSeconds": 1302,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 1079
+        }
+      },
+      {
+        "id": "audee:smTgf6Cg2Xt34DAsk5N7xt5b",
+        "title": "【#15】バレンタインSP企画「和奏のキュンキュン告白ゼリフ」",
+        "publishedAt": "2024-02-14T23:00:00+09:00",
+        "publishedAtUnix": 1707919200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/26115/thumbnail_path?time=1733374472",
+        "durationSeconds": 1833,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 1338
+        }
+      },
+      {
+        "id": "audee:smTfyk66AVCA4LHJw6GxSLej",
+        "title": "【#16】「和奏、番組グッズの妄想広がる！」",
+        "publishedAt": "2024-02-21T23:00:00+09:00",
+        "publishedAtUnix": 1708524000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/26446/thumbnail_path?time=1733374472",
+        "durationSeconds": 1597,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 960
+        }
+      },
+      {
+        "id": "audee:sm8sxvqCnGM4kvJ97ry5hvdb",
+        "title": "【#17】「和奏、最近〇〇が始まりました！」",
+        "publishedAt": "2024-02-28T23:00:00+09:00",
+        "publishedAtUnix": 1709128800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/26792/thumbnail_path?time=1733374472",
+        "durationSeconds": 1576,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 1086
+        }
+      },
+      {
+        "id": "audee:smQb59zMYEouZwy5g3sVX57f",
+        "title": "【#18】「新生活直前！春のお悩み相談SP！」",
+        "publishedAt": "2024-03-06T23:00:00+09:00",
+        "publishedAtUnix": 1709733600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/27150/thumbnail_path?time=1733374472",
+        "durationSeconds": 1416,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 988
+        }
+      },
+      {
+        "id": "audee:smPYanXqMDumYDHYfTkU7vVi",
+        "title": "【#19】「若鶏のみんな、許してね…？」",
+        "publishedAt": "2024-03-13T23:00:00+09:00",
+        "publishedAtUnix": 1710338400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/27438/thumbnail_path?time=1733374472",
+        "durationSeconds": 1414,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 884
+        }
+      },
+      {
+        "id": "audee:smkghSciGRDcMYbyJsuofFCD",
+        "title": "【#20】「和奏、〇〇を始めます！？」",
+        "publishedAt": "2024-03-20T23:00:00+09:00",
+        "publishedAtUnix": 1710943200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/27944/thumbnail_path?time=1733374472",
+        "durationSeconds": 1656,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 942
+        }
+      },
+      {
+        "id": "audee:smMcYsBAFsDvKFatoje7Cjab",
+        "title": "【#21】「こんなの朝メシ前だよ！」",
+        "publishedAt": "2024-03-27T23:00:00+09:00",
+        "publishedAtUnix": 1711548000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/28374/thumbnail_path?time=1733374472",
+        "durationSeconds": 1355,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1297
+        }
+      },
+      {
+        "id": "audee:smSLPhdAw8Z5XVVsWC6rD8Do",
+        "title": "【#22】「新年度のはじまり！ふつおたSP！」",
+        "publishedAt": "2024-04-03T23:00:00+09:00",
+        "publishedAtUnix": 1712152800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/28743/thumbnail_path?time=1733374472",
+        "durationSeconds": 1555,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1027
+        }
+      },
+      {
+        "id": "audee:smCHnKU53dqZLkiZUC537Dq",
+        "title": "【#23】拡大版SP「祝！！大熊和奏・生誕記念！ちょっと早いお誕生会」",
+        "publishedAt": "2024-04-10T23:00:00+09:00",
+        "publishedAtUnix": 1712757600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/29274/thumbnail_path?time=1733374472",
+        "durationSeconds": 2125,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1097
+        }
+      },
+      {
+        "id": "audee:smQyHj4bE275vWFPAXWagWPn",
+        "title": "【#24】「和奏、ハッピーハッピーの舞♪」",
+        "publishedAt": "2024-04-17T23:00:00+09:00",
+        "publishedAtUnix": 1713362400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/29644/thumbnail_path?time=1733374472",
+        "durationSeconds": 2065,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1279
+        }
+      },
+      {
+        "id": "audee:sm3tYLmLxGXAsH2xG7LRPiwf",
+        "title": "【#25】「ソレ初耳〜？ソレ知ってる〜？」",
+        "publishedAt": "2024-04-24T23:00:00+09:00",
+        "publishedAtUnix": 1713967200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/30104/thumbnail_path?time=1733374472",
+        "durationSeconds": 1583,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 946
+        }
+      },
+      {
+        "id": "audee:smJt5RTCkoPb2buYFeRyfWTg",
+        "title": "大熊和奏 夜のささやき ～春の若鶏感謝祭！番組のアレができました！リスナー生電話 ＆ 番組初ゲストもお迎えしちゃうよ スペシャル～",
+        "publishedAt": "2024-04-30T11:41:36+09:00",
+        "publishedAtUnix": 1714444896,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/29685/thumbnail_path?time=1751333895",
+        "durationSeconds": 4878,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 8008
+        }
+      },
+      {
+        "id": "audee:smhUYmPjSnfWhX6gUnY2wfwa",
+        "title": "【#26】「大阪プチ旅行のお話＆ささやき解決！お悩み相談」",
+        "publishedAt": "2024-05-01T23:00:00+09:00",
+        "publishedAtUnix": 1714572000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/30643/thumbnail_path?time=1733374472",
+        "durationSeconds": 1682,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 892
+        }
+      },
+      {
+        "id": "audee:smpVYMTzB5wi55VSocvwrJDU",
+        "title": "【#27】「SP企画・朝のひらめき！謎解き和奏！」",
+        "publishedAt": "2024-05-08T23:00:00+09:00",
+        "publishedAtUnix": 1715176800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/30933/thumbnail_path?time=1733374472",
+        "durationSeconds": 1490,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 775
+        }
+      },
+      {
+        "id": "audee:smyL9kz4QjnA4762uLtdwdKU",
+        "title": "【#28】「和奏、若鶏の質問にお答え回♪」",
+        "publishedAt": "2024-05-15T23:00:00+09:00",
+        "publishedAtUnix": 1715781600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/31299/thumbnail_path?time=1733374472",
+        "durationSeconds": 1581,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 780
+        }
+      },
+      {
+        "id": "audee:smXdJuKNELuRNq3mNrpTUkSV",
+        "title": "【#29】「和奏の好きな映画は…？」",
+        "publishedAt": "2024-05-22T23:00:00+09:00",
+        "publishedAtUnix": 1716386400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/31660/thumbnail_path?time=1733374472",
+        "durationSeconds": 1773,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 823
+        }
+      },
+      {
+        "id": "audee:smut8L8XEJhxJdRJEcVZCuuP",
+        "title": "【#30】「番組ステッカーの応募しましたか〜！？」",
+        "publishedAt": "2024-05-29T23:00:00+09:00",
+        "publishedAtUnix": 1716991200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/32028/thumbnail_path?time=1733374472",
+        "durationSeconds": 1599,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 865
+        }
+      },
+      {
+        "id": "audee:smmPw73Wj2Rc9yAFjUqm6XCB",
+        "title": "【#31】「和奏、今年も〇〇を食べました！！」",
+        "publishedAt": "2024-06-05T23:00:00+09:00",
+        "publishedAtUnix": 1717596000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/32406/thumbnail_path?time=1733374472",
+        "durationSeconds": 1534,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 860
+        }
+      },
+      {
+        "id": "audee:smxiodA9wKWUG7w5YUuEhvBn",
+        "title": "【#32】「このポーズなんでしょうか？ コーナーは【ささやき解決！お悩み相談】」",
+        "publishedAt": "2024-06-12T23:00:00+09:00",
+        "publishedAtUnix": 1718200800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/32729/thumbnail_path?time=1776290066",
+        "durationSeconds": 1491,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 755
+        }
+      },
+      {
+        "id": "audee:smaGF4CNmkNYv9EtPtdMBRXF",
+        "title": "【#33】特別企画「和奏の雑学力向上！朝のささやきクイズ！」",
+        "publishedAt": "2024-06-19T23:00:00+09:00",
+        "publishedAtUnix": 1718805600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/32975/thumbnail_path?time=1733374472",
+        "durationSeconds": 1696,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1020
+        }
+      },
+      {
+        "id": "audee:smVLczKvPbwsM2bzQ4MVLdDn",
+        "title": "【#34】「和奏の歯！ふつおたSP！」",
+        "publishedAt": "2024-06-26T23:00:00+09:00",
+        "publishedAtUnix": 1719410400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/33346/thumbnail_path?time=1733374472",
+        "durationSeconds": 1340,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 739
+        }
+      },
+      {
+        "id": "audee:smQsVcaCKHpsLRtp6xkpysjw",
+        "title": "【#35】「和奏、夢報告を仕分けます！」",
+        "publishedAt": "2024-07-03T23:00:00+09:00",
+        "publishedAtUnix": 1720015200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/33733/thumbnail_path?time=1733374473",
+        "durationSeconds": 1514,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 792
+        }
+      },
+      {
+        "id": "audee:smeSTYnEowERwvivMe2iRftA",
+        "title": "【#36】「ソレ知ってる〜？ソレ初耳〜？」",
+        "publishedAt": "2024-07-10T23:00:00+09:00",
+        "publishedAtUnix": 1720620000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/34160/thumbnail_path?time=1733374472",
+        "durationSeconds": 1741,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 876
+        }
+      },
+      {
+        "id": "audee:smZCznJpjefQkrwoZcEqapdV",
+        "title": "【#37】「カナデルワカナ♪」今回は【こんなの朝メシ前だよ！】のコーナー！",
+        "publishedAt": "2024-07-17T23:00:01+09:00",
+        "publishedAtUnix": 1721224801,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/34569/thumbnail_path?time=1733374472",
+        "durationSeconds": 1365,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 718
+        }
+      },
+      {
+        "id": "audee:sm3N47YojAVmQ2QYvkHR8Czq",
+        "title": "【#38】重大告知あり！！「朝のささやき向上会議！」",
+        "publishedAt": "2024-07-24T23:00:00+09:00",
+        "publishedAtUnix": 1721829600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/35259/thumbnail_path?time=1733374472",
+        "durationSeconds": 1554,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 830
+        }
+      },
+      {
+        "id": "audee:smkqFx4WJdHVQodFLhhpmZyt",
+        "title": "【#39】「和奏の前髪対策、教えます！」",
+        "publishedAt": "2024-07-31T23:00:00+09:00",
+        "publishedAtUnix": 1722434400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/35686/thumbnail_path?time=1733374472",
+        "durationSeconds": 1812,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 796
+        }
+      },
+      {
+        "id": "audee:smkA9ytooQ9Y3w3nwR69ViiY",
+        "title": "【#40】「梅干し、わかる〜！！」ふつおた回♪",
+        "publishedAt": "2024-08-07T23:00:00+09:00",
+        "publishedAtUnix": 1723039200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/36043/thumbnail_path?time=1733374472",
+        "durationSeconds": 1596,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 816
+        }
+      },
+      {
+        "id": "audee:smMkNvqEwBbtpNYJ5Puwc9Uk",
+        "title": "【#41】真夏の特別企画「和奏と涼もう…夏の怪談SP」",
+        "publishedAt": "2024-08-14T23:00:00+09:00",
+        "publishedAtUnix": 1723644000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/36328/thumbnail_path?time=1733374472",
+        "durationSeconds": 1392,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 743
+        }
+      },
+      {
+        "id": "audee:smDMnSbC9CcNcqt3FuoLZHfB",
+        "title": "【#42】特別企画「恋バナ聞かせて！和奏と生電話！」",
+        "publishedAt": "2024-08-21T23:00:00+09:00",
+        "publishedAtUnix": 1724248800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/36743/thumbnail_path?time=1733374472",
+        "durationSeconds": 2711,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 947
+        }
+      },
+      {
+        "id": "audee:sm6FTKztfAsnNARAzu6QJpDU",
+        "title": "【#43】第１回大喜利企画「こんな目覚まし時計はイヤだ！」",
+        "publishedAt": "2024-08-28T23:00:00+09:00",
+        "publishedAtUnix": 1724853600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/37213/thumbnail_path?time=1733374472",
+        "durationSeconds": 1785,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 768
+        }
+      },
+      {
+        "id": "audee:sm2CRBaG7LpPJMwC5GuoMm9f",
+        "title": "【#44】「和奏、炭を飲む！？！？」",
+        "publishedAt": "2024-09-04T23:00:00+09:00",
+        "publishedAtUnix": 1725458400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/37696/thumbnail_path?time=1733374472",
+        "durationSeconds": 1823,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 663
+        }
+      },
+      {
+        "id": "audee:smD3u86s7zQ8p7PaRWJrUx4A",
+        "title": "【#45】「和奏はみんなを応援します！」",
+        "publishedAt": "2024-09-11T23:00:00+09:00",
+        "publishedAtUnix": 1726063200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/38114/thumbnail_path?time=1733374472",
+        "durationSeconds": 1461,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 647
+        }
+      },
+      {
+        "id": "audee:sm347zhEJj9KUp4hnpgnoKTA",
+        "title": "【#46】「夢ではバスケ無双中？？」",
+        "publishedAt": "2024-09-18T23:00:00+09:00",
+        "publishedAtUnix": 1726668000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/38574/thumbnail_path?time=1733374472",
+        "durationSeconds": 1652,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 640
+        }
+      },
+      {
+        "id": "audee:smT97uF5SnSjisBjBCQqigMP",
+        "title": "【#47】「第2回朝のひと笑い…！若鶏大喜利！＆重大発表！」",
+        "publishedAt": "2024-09-25T23:00:00+09:00",
+        "publishedAtUnix": 1727272800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/39094/thumbnail_path?time=1733374472",
+        "durationSeconds": 1783,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 693
+        }
+      },
+      {
+        "id": "audee:sm3b5UVKqA5zfWzcTQ9YXqVb",
+        "title": "【#48】「願う和奏！お悩み解決のコーナーをやっております！」※次回・声優の林鼓子さんがゲスト出演！",
+        "publishedAt": "2024-10-02T23:00:00+09:00",
+        "publishedAtUnix": 1727877600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/39548/thumbnail_path?time=1733374472",
+        "durationSeconds": 1701,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 667
+        }
+      },
+      {
+        "id": "audee:sm9JrrFycSiuF9twteqqWrhM",
+        "title": "【#49】林鼓子さんゲスト出演《前編》「キャッチフレーズを考えました！」",
+        "publishedAt": "2024-10-09T23:00:00+09:00",
+        "publishedAtUnix": 1728482400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/40004/thumbnail_path?time=1751333959",
+        "durationSeconds": 2496,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1541
+        }
+      },
+      {
+        "id": "audee:smSyNfUaERpFpCMuAZBqvZC3",
+        "title": "【#50】林鼓子さんゲスト出演《後編》「くまここガールズトーク！」",
+        "publishedAt": "2024-10-16T23:00:00+09:00",
+        "publishedAtUnix": 1729087200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/40436/thumbnail_path?time=1751333973",
+        "durationSeconds": 2604,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 915
+        }
+      },
+      {
+        "id": "audee:smMfBNTC624aN63QjFRsTFTR",
+        "title": "【#51】「若鶏の恋バナ、お待ちしております！」",
+        "publishedAt": "2024-10-23T23:00:00+09:00",
+        "publishedAtUnix": 1729692000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/40869/thumbnail_path?time=1733374472",
+        "durationSeconds": 1541,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 703
+        }
+      },
+      {
+        "id": "audee:smh2po2sjXqDFTABXPVrsShC",
+        "title": "【#52】「ささやき雑学！ソレ初耳〜？ソレ知ってる〜？」",
+        "publishedAt": "2024-10-30T23:00:00+09:00",
+        "publishedAtUnix": 1730296800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/41396/thumbnail_path?time=1733374472",
+        "durationSeconds": 1731,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 657
+        }
+      },
+      {
+        "id": "audee:smf7wTdodU2sgpZVr3Xx8No3",
+        "title": "【#53】㊗︎番組開始１周年「和奏、初心に戻る！」",
+        "publishedAt": "2024-11-06T23:00:00+09:00",
+        "publishedAtUnix": 1730901600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/41820/thumbnail_path?time=1733374472",
+        "durationSeconds": 2080,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 871
+        }
+      },
+      {
+        "id": "audee:smVyCBHRNRDns7uDMsLRGYfv",
+        "title": "【#54】「和奏の歌った合唱は…」",
+        "publishedAt": "2024-11-13T23:00:00+09:00",
+        "publishedAtUnix": 1731506400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/41978/thumbnail_path?time=1733374472",
+        "durationSeconds": 1803,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 732
+        }
+      },
+      {
+        "id": "audee:smfrY8tjajHhHkqWZW8Vne4L",
+        "title": "【#55】「Spilebenさんがコメント出演！」KENPROCKフェスを振り返る回",
+        "publishedAt": "2024-11-20T23:00:00+09:00",
+        "publishedAtUnix": 1732111200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/42611/thumbnail_path?time=1733374473",
+        "durationSeconds": 1798,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 948
+        }
+      },
+      {
+        "id": "audee:smMWoXbmVKCsUw6F2B8eSLmb",
+        "title": "【#56】「和奏、若鶏の悩みを解決することに悩む！」",
+        "publishedAt": "2024-11-27T23:00:00+09:00",
+        "publishedAtUnix": 1732716000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/42984/thumbnail_path?time=1733374472",
+        "durationSeconds": 1835,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 668
+        }
+      },
+      {
+        "id": "audee:smLnLD69bnEmSwY7bZ3zSuut",
+        "title": "【#57】「大熊和奏的2024年の新語・流行語は？」",
+        "publishedAt": "2024-12-04T23:00:00+09:00",
+        "publishedAtUnix": 1733320800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/43378/thumbnail_path?time=1733999575",
+        "durationSeconds": 1890,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 583
+        }
+      },
+      {
+        "id": "audee:smHMZeL7H9M8ozQPEmvEUFTX",
+        "title": "【#58】「大熊和奏・自己紹介ラップが爆誕！？」",
+        "publishedAt": "2024-12-12T03:09:35+09:00",
+        "publishedAtUnix": 1733940575,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/43776/thumbnail_path?time=1734552683",
+        "durationSeconds": 1217,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 557
+        }
+      },
+      {
+        "id": "audee:smS2BmCcJrxBYgKVwfSmxsoW",
+        "title": "【#59】「和奏と一緒に“朝の恋バナ”しませんか？」",
+        "publishedAt": "2024-12-18T23:21:35+09:00",
+        "publishedAtUnix": 1734531695,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/44272/thumbnail_path?time=1735165742",
+        "durationSeconds": 1663,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 835
+        }
+      },
+      {
+        "id": "audee:sm4zaGzxfDodZ6h5SiNzn7iQ",
+        "title": "【#60】「朝のささやきパンチワード大賞！決定！」",
+        "publishedAt": "2024-12-25T23:00:00+09:00",
+        "publishedAtUnix": 1735135200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/44740/thumbnail_path?time=1736363280",
+        "durationSeconds": 1365,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 590
+        }
+      },
+      {
+        "id": "audee:smDNXSJHZ8qsx9zhpH68vLYB",
+        "title": "【#61】「明けまして朝のささやき」",
+        "publishedAt": "2025-01-01T23:00:00+09:00",
+        "publishedAtUnix": 1735740000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/44981/thumbnail_path?time=1736363355",
+        "durationSeconds": 1510,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 713
+        }
+      },
+      {
+        "id": "audee:smXkFgZkGTLR35NxpzaxhjAC",
+        "title": "【#62】「和奏！わかんの！わかんの！」",
+        "publishedAt": "2025-01-08T23:00:00+09:00",
+        "publishedAtUnix": 1736344800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/45418/thumbnail_path?time=1736980494",
+        "durationSeconds": 1440,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 633
+        }
+      },
+      {
+        "id": "audee:sm6LvrBHbQpcy7nXRriJZehm",
+        "title": "【#63】「和奏のお正月は…夢の国」",
+        "publishedAt": "2025-01-15T23:00:00+09:00",
+        "publishedAtUnix": 1736949600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/45789/thumbnail_path?time=1737586535",
+        "durationSeconds": 1736,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 768
+        }
+      },
+      {
+        "id": "audee:sm63rFzostKwLuQ7WZw3Dvif",
+        "title": "【#64】「和奏は知っている！シュークリームの食べ方！」",
+        "publishedAt": "2025-01-22T23:00:00+09:00",
+        "publishedAtUnix": 1737554400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/46204/thumbnail_path?time=1738188937",
+        "durationSeconds": 1772,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 676
+        }
+      },
+      {
+        "id": "audee:smPPYBTWpB6GDaELGraG7Dut",
+        "title": "【#65】新コーナー「和奏！わかんの！わかんの！＆バレンタイン企画のお知らせ」",
+        "publishedAt": "2025-01-29T23:00:00+09:00",
+        "publishedAtUnix": 1738159200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/46549/thumbnail_path?time=1738793068",
+        "durationSeconds": 1635,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 792
+        }
+      },
+      {
+        "id": "audee:smVFVfWDGGGWBLgagaFYQ7BT",
+        "title": "【#66】「和奏ポコポコ中！」",
+        "publishedAt": "2025-02-05T23:00:35+09:00",
+        "publishedAtUnix": 1738764035,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/46931/thumbnail_path?time=1739394810",
+        "durationSeconds": 2125,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 717
+        }
+      },
+      {
+        "id": "audee:smAbtm7ZyjuYHxDVxHMUUgfe",
+        "title": "【#67】バレンタイン特別企画「和奏バレンタイン調査2025」",
+        "publishedAt": "2025-02-12T23:00:00+09:00",
+        "publishedAtUnix": 1739368800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/47305/thumbnail_path?time=1740003210",
+        "durationSeconds": 1686,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 606
+        }
+      },
+      {
+        "id": "audee:sm7VpAG7yuH2RhnWURzuPrmD",
+        "title": "【#68】「和奏はお寿司が食べたいの！！」",
+        "publishedAt": "2025-02-19T23:00:00+09:00",
+        "publishedAtUnix": 1739973600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/47721/thumbnail_path?time=1740610723",
+        "durationSeconds": 1730,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 619
+        }
+      },
+      {
+        "id": "audee:smYWccL6DRUCgiDD4474w9Ym",
+        "title": "【#69】「和奏、はじめての二郎系ラーメン」",
+        "publishedAt": "2025-02-26T23:00:46+09:00",
+        "publishedAtUnix": 1740578446,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/48118/thumbnail_path?time=1741213978",
+        "durationSeconds": 1868,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 913
+        }
+      },
+      {
+        "id": "audee:smQe4m2waj4ZBU8qw92fHThn",
+        "title": "【#70】「和奏、わかんの！わかんの！」",
+        "publishedAt": "2025-03-05T23:00:00+09:00",
+        "publishedAtUnix": 1741183200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/48601/thumbnail_path?time=1741816537",
+        "durationSeconds": 1541,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 677
+        }
+      },
+      {
+        "id": "audee:smCrsGX6a6uG84a4ZQG3mx2w",
+        "title": "【#71】「和奏、お寿司はいつ食べられるの！？」",
+        "publishedAt": "2025-03-12T23:01:11+09:00",
+        "publishedAtUnix": 1741788071,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/49143/thumbnail_path?time=1742400413",
+        "durationSeconds": 1626,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 637
+        }
+      },
+      {
+        "id": "audee:smDzqhatYCo3WiAM96zTzB27",
+        "title": "【#72】「お悩み解決は…和奏にお任せあれ！」",
+        "publishedAt": "2025-03-19T23:00:00+09:00",
+        "publishedAtUnix": 1742392800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/49591/thumbnail_path?time=1743024534",
+        "durationSeconds": 1509,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 667
+        }
+      },
+      {
+        "id": "audee:smk34fcCSeqit2Vkud3RrLTr",
+        "title": "【#73】「和奏作のピカチュウ」",
+        "publishedAt": "2025-03-26T23:00:00+09:00",
+        "publishedAtUnix": 1742997600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/50104/thumbnail_path?time=1743632843",
+        "durationSeconds": 1901,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 739
+        }
+      },
+      {
+        "id": "audee:smcvuLJ5HDrJ8MqXeq96sdTH",
+        "title": "【#74】「和奏、烏龍茶飲んで…あぁ！な朝」",
+        "publishedAt": "2025-04-02T23:00:00+09:00",
+        "publishedAtUnix": 1743602400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/50971/thumbnail_path?time=1744239459",
+        "durationSeconds": 1523,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 793
+        }
+      },
+      {
+        "id": "audee:sm3HeQGLY3aTagq4qLydveP9",
+        "title": "【#75】大熊和奏生誕祭SP「お祝いボイスメッセージ＆2026年の和奏へ」",
+        "publishedAt": "2025-04-09T23:00:00+09:00",
+        "publishedAtUnix": 1744207200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/51533/thumbnail_path?time=1744841648",
+        "durationSeconds": 1884,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1267
+        }
+      },
+      {
+        "id": "audee:smR8CPeWhjTMSGfsgd5UQXgf",
+        "title": "【#76】「今日はなんの夢見ましたかー？」",
+        "publishedAt": "2025-04-16T23:00:00+09:00",
+        "publishedAtUnix": 1744812000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/52058/thumbnail_path?time=1776289996",
+        "durationSeconds": 1439,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 706
+        }
+      },
+      {
+        "id": "audee:smWGzGEGWJcj4wRe5kn6Gr6n",
+        "title": "【#77】「朝のささやきカフェ・プリンジュース！？」",
+        "publishedAt": "2025-04-23T23:00:00+09:00",
+        "publishedAtUnix": 1745416800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/52513/thumbnail_path?time=1746049474",
+        "durationSeconds": 1629,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 683
+        }
+      },
+      {
+        "id": "audee:smNh8YxzZ6jxZBicKCKVZXJG",
+        "title": "【#78】「和奏、山手線を表現中…」",
+        "publishedAt": "2025-04-30T23:00:00+09:00",
+        "publishedAtUnix": 1746021600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/52876/thumbnail_path?time=1746649293",
+        "durationSeconds": 2439,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 773
+        }
+      },
+      {
+        "id": "audee:smff8XrkdMEPFr3yqTU6uPP7",
+        "title": "【#79】「宇宙はロマン＆和奏、ついに〇〇行って来ました！」",
+        "publishedAt": "2025-05-07T23:00:00+09:00",
+        "publishedAtUnix": 1746626400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/53321/thumbnail_path?time=1747258888",
+        "durationSeconds": 1734,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1260
+        }
+      },
+      {
+        "id": "audee:smVfR6VHTqjpW94FS5uqSDk4",
+        "title": "【#80】「〇〇せずに逆にレア回！？」",
+        "publishedAt": "2025-05-14T23:00:00+09:00",
+        "publishedAtUnix": 1747231200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/53747/thumbnail_path?time=1747862928",
+        "durationSeconds": 1120,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 716
+        }
+      },
+      {
+        "id": "audee:sm6QvtyCEbAT6VWrtY9xkb7S",
+        "title": "【#81】「わかんの！わかんの！もう暑いよね！」",
+        "publishedAt": "2025-05-21T23:00:00+09:00",
+        "publishedAtUnix": 1747836000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/54199/thumbnail_path?time=1776289957",
+        "durationSeconds": 1367,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 812
+        }
+      },
+      {
+        "id": "audee:smdMaUU8VV3BfrGj32HhzAgd",
+        "title": "【#82】「ふつおた回！そろそろ恋バナ募集します…？」",
+        "publishedAt": "2025-05-28T23:00:00+09:00",
+        "publishedAtUnix": 1748440800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/54640/thumbnail_path?time=1749077584",
+        "durationSeconds": 1364,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 800
+        }
+      },
+      {
+        "id": "audee:smSSXTFDvbFZjUf7XaouR9Z6",
+        "title": "【#83】「斬新な卵料理が知りたい！！」",
+        "publishedAt": "2025-06-04T23:00:00+09:00",
+        "publishedAtUnix": 1749045600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/55200/thumbnail_path?time=1749677156",
+        "durationSeconds": 1561,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 743
+        }
+      },
+      {
+        "id": "audee:sm4vYbEYeTVUTPWueRysMyoo",
+        "title": "【#84】「名探偵ワカナなポーズ」",
+        "publishedAt": "2025-06-11T23:02:32+09:00",
+        "publishedAtUnix": 1749650552,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/55618/thumbnail_path?time=1750287154",
+        "durationSeconds": 1680,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 755
+        }
+      },
+      {
+        "id": "audee:smh29TZF9rkJ8ZfoEW6yQ7Aa",
+        "title": "【#85】重大発表「100回記念イベントやるお！」",
+        "publishedAt": "2025-06-18T23:00:00+09:00",
+        "publishedAtUnix": 1750255200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/56110/thumbnail_path?time=1750885233",
+        "durationSeconds": 1495,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 925
+        }
+      },
+      {
+        "id": "audee:sm8aPu47YUciAexpxS5AonXH",
+        "title": "【#86】「お悩み相談！今回はささやいて解決できるのか？」",
+        "publishedAt": "2025-06-25T23:00:00+09:00",
+        "publishedAtUnix": 1750860000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/56600/thumbnail_path?time=1751495029",
+        "durationSeconds": 1711,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 976
+        }
+      },
+      {
+        "id": "audee:sm4oU7Fv2RwFcfLucJ5ycyb5",
+        "title": "【#87】SP企画「彦星・織姫に負けるな！若鶏ロマンチック恋バナ」",
+        "publishedAt": "2025-07-02T23:00:00+09:00",
+        "publishedAtUnix": 1751464800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/57063/thumbnail_path?time=1752096197",
+        "durationSeconds": 1676,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 851
+        }
+      },
+      {
+        "id": "audee:smFQ8xx87amLK6VZkARztB6M",
+        "title": "【#88】「番組初のイベント開催！朝のささやき作戦会議！」",
+        "publishedAt": "2025-07-09T23:00:00+09:00",
+        "publishedAtUnix": 1752069600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/57547/thumbnail_path?time=1752701186",
+        "durationSeconds": 1601,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 868
+        }
+      },
+      {
+        "id": "audee:smepkDLNHwUR8YKWYf4FpdEA",
+        "title": "【#89】「久々にやりますか！？若鶏大喜利！！」",
+        "publishedAt": "2025-07-16T23:00:00+09:00",
+        "publishedAtUnix": 1752674400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/58232/thumbnail_path?time=1753302238",
+        "durationSeconds": 1707,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 817
+        }
+      },
+      {
+        "id": "audee:smhffYeRefCaH2TGp6kMAA8o",
+        "title": "【#90】「100回記念イベントのタイトル決定✨＆謎ゲー紹介」",
+        "publishedAt": "2025-07-23T23:00:00+09:00",
+        "publishedAtUnix": 1753279200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/58878/thumbnail_path?time=1753912308",
+        "durationSeconds": 1384,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 846
+        }
+      },
+      {
+        "id": "audee:smo9qAmvAqM3hHVdZni3YSq9",
+        "title": "【#91】「若鶏必聴！朝のお知らせたくさん！」※番組イベント メンバーシップ先行抽選開始！",
+        "publishedAt": "2025-07-30T23:00:00+09:00",
+        "publishedAtUnix": 1753884000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/59372/thumbnail_path?time=1754513363",
+        "durationSeconds": 1449,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1072
+        }
+      },
+      {
+        "id": "audee:sm28AmiMTfeNqYVJXKfhoymr",
+        "title": "【8月6日（水）深夜4時半〜５時 放送回】「朝のささやき 初地上波放送！」",
+        "publishedAt": "2025-08-06T23:00:00+09:00",
+        "publishedAtUnix": 1754488800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/60411/thumbnail_path?time=1755114482",
+        "durationSeconds": 1326,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 710
+        }
+      },
+      {
+        "id": "audee:smkHPkaQ2KLdmaw2ktro5KCM",
+        "title": "【#92】「朝のひと笑い…！若鶏大喜利！」＜メンバーシップ限定＞",
+        "publishedAt": "2025-08-06T23:00:00+09:00",
+        "publishedAtUnix": 1754488800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/60412/thumbnail_path?time=1754521526",
+        "durationSeconds": 1061,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 635
+        }
+      },
+      {
+        "id": "audee:smHHacRHphyXLXWci983AfL3",
+        "title": "【8月13日（水）深夜4時半〜５時 放送回】「朝のささやき 初地上波放送！」",
+        "publishedAt": "2025-08-13T23:00:00+09:00",
+        "publishedAtUnix": 1755093600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/61075/thumbnail_path?time=1755720245",
+        "durationSeconds": 1454,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 596
+        }
+      },
+      {
+        "id": "audee:smjgHCcQyJ5yqyYpwz8pJGG7",
+        "title": "【#93】「和奏の理想の夏休み！」イベントチケット一般抽選開始！＜メンバーシップ限定＞",
+        "publishedAt": "2025-08-13T23:00:00+09:00",
+        "publishedAtUnix": 1755093600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/61076/thumbnail_path?time=1755123663",
+        "durationSeconds": 686,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 502
+        }
+      },
+      {
+        "id": "audee:smBx8uyFM5oXqasGdswJ2fMD",
+        "title": "【8月20日（水）深夜4時半〜５時 放送回】「朝のささやき 初地上波放送！」",
+        "publishedAt": "2025-08-20T23:00:00+09:00",
+        "publishedAtUnix": 1755698400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/61529/thumbnail_path?time=1756329560",
+        "durationSeconds": 952,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 514
+        }
+      },
+      {
+        "id": "audee:smBzYF2UP543icesZgfXMSGh",
+        "title": "【#94】「冷めやらぬヒップホップトーク！」＜メンバーシップ限定＞",
+        "publishedAt": "2025-08-20T23:00:00+09:00",
+        "publishedAtUnix": 1755698400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/61530/thumbnail_path?time=1755724327",
+        "durationSeconds": 724,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 524
+        }
+      },
+      {
+        "id": "audee:sm83zjrJCN8wwvn8XpMabYcW",
+        "title": "【8月27日（水）深夜4時半〜５時 放送回】「朝のささやき 初地上波放送！」",
+        "publishedAt": "2025-08-27T23:00:00+09:00",
+        "publishedAtUnix": 1756303200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/62065/thumbnail_path?time=1756935455",
+        "durationSeconds": 1398,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 469
+        }
+      },
+      {
+        "id": "audee:smQr6py9CLZ5TjLuBJAneXEE",
+        "title": "【#95】若鶏必聴！「100回記念イベント情報お話し回！」＜メンバーシップ限定＞",
+        "publishedAt": "2025-08-27T23:00:00+09:00",
+        "publishedAtUnix": 1756303200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/62066/thumbnail_path?time=1756335279",
+        "durationSeconds": 963,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 561
+        }
+      },
+      {
+        "id": "audee:smAaLa9VCMfNteiCiPGNeQfF",
+        "title": "【#96】「あつまれ！ぼっち若鶏」参加者募集中！",
+        "publishedAt": "2025-09-03T23:00:00+09:00",
+        "publishedAtUnix": 1756908000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/62589/thumbnail_path?time=1758143705",
+        "durationSeconds": 1185,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 969
+        }
+      },
+      {
+        "id": "audee:smYLdBmGdHe9dqg74iAGBrS7",
+        "title": "【#97】「これが和奏の自画像！こんなの朝メシ前だよ！」",
+        "publishedAt": "2025-09-10T23:00:00+09:00",
+        "publishedAtUnix": 1757512800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/63106/thumbnail_path?time=1758143654",
+        "durationSeconds": 1678,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 924
+        }
+      },
+      {
+        "id": "audee:smn86s2jegJHaGJSwVynKswa",
+        "title": "【#98】イベント直前！グッズ情報をお伝えします！「会場で会おうね〜」",
+        "publishedAt": "2025-09-17T23:00:00+09:00",
+        "publishedAtUnix": 1758117600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/63610/thumbnail_path?time=1758750080",
+        "durationSeconds": 1429,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 869
+        }
+      },
+      {
+        "id": "audee:smKUaC2es2GnYe4YjhotaMgW",
+        "title": "【#99】「100回配信直前ですが…ｺｲﾊﾞﾅ」",
+        "publishedAt": "2025-09-24T23:00:00+09:00",
+        "publishedAtUnix": 1758722400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/64144/thumbnail_path?time=1759349375",
+        "durationSeconds": 1304,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 752
+        }
+      },
+      {
+        "id": "audee:sm5VQ5TmiNjhwPctR4aBNZJ6",
+        "title": "【#100】「大熊和奏 朝のささやき 〜卵が先か　若鶏が先か　和奏が先か〜 朝の和奏ダイジェスト！」",
+        "publishedAt": "2025-10-01T23:00:00+09:00",
+        "publishedAtUnix": 1759327200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/64681/thumbnail_path?time=1759959887",
+        "durationSeconds": 3137,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 864
+        }
+      },
+      {
+        "id": "audee:smDwxrRvZBPC3RLskrG4y9kT",
+        "title": "【#101】「あの罰ゲーム写真４枚を大公開！！」",
+        "publishedAt": "2025-10-08T23:00:00+09:00",
+        "publishedAtUnix": 1759932000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/65471/thumbnail_path?time=1760566129",
+        "durationSeconds": 2069,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 893
+        }
+      },
+      {
+        "id": "audee:smkexqEdQxXG8k9qFR3ng4Vw",
+        "title": "【#102】「和奏の絵日記」",
+        "publishedAt": "2025-10-15T23:00:00+09:00",
+        "publishedAtUnix": 1760536800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/66044/thumbnail_path?time=1761170103",
+        "durationSeconds": 1665,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 604
+        }
+      },
+      {
+        "id": "audee:smjeN5MLnjkwByuaAAPTG4so",
+        "title": "【#103】「若鶏！起きろ〜！ボイス入り目覚まし時計どうする？」",
+        "publishedAt": "2025-10-22T23:00:00+09:00",
+        "publishedAtUnix": 1761141600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/66564/thumbnail_path?time=1761774074",
+        "durationSeconds": 1681,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 657
+        }
+      },
+      {
+        "id": "audee:smBoF54ENsrbpzoctaSPPcjo",
+        "title": "【#104】「がんばれ和奏の地元・埼玉県！」",
+        "publishedAt": "2025-10-29T23:00:00+09:00",
+        "publishedAtUnix": 1761746400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/67169/thumbnail_path?time=1762381128",
+        "durationSeconds": 2034,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 635
+        }
+      },
+      {
+        "id": "audee:smo8yNNEJjqhW8fHspHR9rih",
+        "title": "【#105】「朝のささやき 空想生放送回企画会議！」",
+        "publishedAt": "2025-11-05T23:00:00+09:00",
+        "publishedAtUnix": 1762351200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/67750/thumbnail_path?time=1762984013",
+        "durationSeconds": 1681,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 548
+        }
+      },
+      {
+        "id": "audee:smUHj3Z9cVqRge7woKTZLjsR",
+        "title": "【#106】「朝のささやき空想生放送？企画会議！！」",
+        "publishedAt": "2025-11-12T23:00:00+09:00",
+        "publishedAtUnix": 1762956000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/68261/thumbnail_path?time=1763590210",
+        "durationSeconds": 1562,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 622
+        }
+      },
+      {
+        "id": "audee:smhwUDnRqhRYQNAPAYkBdtTc",
+        "title": "【#107】「若鶏の初恋話、教えてください！」",
+        "publishedAt": "2025-11-19T23:00:00+09:00",
+        "publishedAtUnix": 1763560800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/68902/thumbnail_path?time=1764192535",
+        "durationSeconds": 1819,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 580
+        }
+      },
+      {
+        "id": "audee:smNANA9q6k6JiAF7M7JoVvfb",
+        "title": "【#108】若鶏必聴のお知らせあり！「久々に…わかんの！わかんの！」",
+        "publishedAt": "2025-11-26T23:00:00+09:00",
+        "publishedAtUnix": 1764165600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/69510/thumbnail_path?time=1764801583",
+        "durationSeconds": 1572,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 629
+        }
+      },
+      {
+        "id": "audee:smMvutApiLBGpyJ6Zus6GBos",
+        "title": "【#109】《朝のささやきパンチワード＆クリスマス逆電 募集中》「久々のささやき解決！」",
+        "publishedAt": "2025-12-03T23:00:00+09:00",
+        "publishedAtUnix": 1764770400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/70069/thumbnail_path?time=1765402427",
+        "durationSeconds": 1710,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1059
+        }
+      },
+      {
+        "id": "audee:smU6M3y2FvpXBZiaAzcEp77Y",
+        "title": "【#110】「和奏は『ハリーポッター』が好きなので…」",
+        "publishedAt": "2025-12-10T23:00:00+09:00",
+        "publishedAtUnix": 1765375200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/70638/thumbnail_path?time=1766015228",
+        "durationSeconds": 1497,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 649
+        }
+      },
+      {
+        "id": "audee:smPMyhktfzcKcXp5axCphmgw",
+        "title": "【#111】「2025年  朝のささやき パンチワード大賞！」",
+        "publishedAt": "2025-12-17T23:49:14+09:00",
+        "publishedAtUnix": 1765982954,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/71156/thumbnail_path?time=1766612718",
+        "durationSeconds": 2106,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 633
+        }
+      },
+      {
+        "id": "audee:sm9cgMQYVDfUA8e4dUcXNYJy",
+        "title": "【#112】メリークリスマス「和奏！クリスマス逆電！」",
+        "publishedAt": "2025-12-24T23:00:00+09:00",
+        "publishedAtUnix": 1766584800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/74800/thumbnail_path?time=1767219329",
+        "durationSeconds": 2008,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 691
+        }
+      },
+      {
+        "id": "audee:smCvfbF5pcmstFc2iabnYVuB",
+        "title": "【#113】2026年スタート「大熊和奏 2026 年 ささやき初詣」",
+        "publishedAt": "2025-12-31T23:00:00+09:00",
+        "publishedAtUnix": 1767189600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/75485/thumbnail_path?time=1767825474",
+        "durationSeconds": 1582,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 853
+        }
+      },
+      {
+        "id": "audee:smmKrkkV2QtXj9iKxJdqUWCn",
+        "title": "【#114】「この服を着て、レントゲンを撮りに行かないでください！！！」",
+        "publishedAt": "2026-01-07T23:00:00+09:00",
+        "publishedAtUnix": 1767794400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/75873/thumbnail_path?time=1768429040",
+        "durationSeconds": 1503,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 574
+        }
+      },
+      {
+        "id": "audee:smeMj4pB7ZcyYg3iy6zpGFzu",
+        "title": "【#115】「今年のお正月は何してた？」",
+        "publishedAt": "2026-01-14T23:00:00+09:00",
+        "publishedAtUnix": 1768399200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/76326/thumbnail_path?time=1769036331",
+        "durationSeconds": 1449,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 598
+        }
+      },
+      {
+        "id": "audee:smBVS4RSk5kJr48Zt2YX7V5h",
+        "title": "【#116】「若鶏たちのお悩みをささやきで解決！」",
+        "publishedAt": "2026-01-21T23:00:00+09:00",
+        "publishedAtUnix": 1769004000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/76894/thumbnail_path?time=1769637451",
+        "durationSeconds": 1681,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 667
+        }
+      },
+      {
+        "id": "audee:smh3UaUNPsJDjty5bpDsZczf",
+        "title": "【#117】「大熊和奏におすすめしたい趣味決定！のはずが…？！」",
+        "publishedAt": "2026-01-28T23:00:00+09:00",
+        "publishedAtUnix": 1769608800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/77546/thumbnail_path?time=1770245683",
+        "durationSeconds": 2371,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 730
+        }
+      },
+      {
+        "id": "audee:smcuKtdtnNBWksFhHXXfTr8q",
+        "title": "【#118】「ラジオブース内で…ダジャレ言える！？」",
+        "publishedAt": "2026-02-04T23:00:00+09:00",
+        "publishedAtUnix": 1770213600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/78072/thumbnail_path?time=1770844706",
+        "durationSeconds": 1761,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 544
+        }
+      },
+      {
+        "id": "audee:smAwkDjE6sA4UAroHHHVixvq",
+        "title": "【#119】バレンタイン直前SP「和奏に告白！実は〇〇でした…バレたいデー！」",
+        "publishedAt": "2026-02-11T23:00:00+09:00",
+        "publishedAtUnix": 1770818400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/78634/thumbnail_path?time=1771443224",
+        "durationSeconds": 2372,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 596
+        }
+      },
+      {
+        "id": "audee:smKPC4X3PvYqiFcjAtQKyizP",
+        "title": "【#120】「和奏は最近、〇〇を見ている」",
+        "publishedAt": "2026-02-18T23:00:00+09:00",
+        "publishedAtUnix": 1771423200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/79149/thumbnail_path?time=1772054775",
+        "durationSeconds": 1455,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 553
+        }
+      },
+      {
+        "id": "audee:smLz8KKzsChyGfYqjVwjZB4G",
+        "title": "【#121】「和奏、新たな趣味が見つかる？？」",
+        "publishedAt": "2026-02-25T23:00:00+09:00",
+        "publishedAtUnix": 1772028000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/79698/thumbnail_path?time=1772661255",
+        "durationSeconds": 1846,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 618
+        }
+      },
+      {
+        "id": "audee:sm8gi2H8JNg6M4BWc7RKHery",
+        "title": "【#122】「和奏、そばは塩で食べる派！？」",
+        "publishedAt": "2026-03-04T23:00:00+09:00",
+        "publishedAtUnix": 1772632800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/80397/thumbnail_path?time=1773262530",
+        "durationSeconds": 1394,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 623
+        }
+      },
+      {
+        "id": "audee:smGJsgHqD6D7H8UvD7ZFsP9S",
+        "title": "【#123】「目覚まし時計届きましたか〜？」＆「新コーナー発表」",
+        "publishedAt": "2026-03-11T23:00:00+09:00",
+        "publishedAtUnix": 1773237600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/80895/thumbnail_path?time=1773869836",
+        "durationSeconds": 1658,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 683
+        }
+      },
+      {
+        "id": "audee:smCvHgm5hhYRoV3NATSAN63e",
+        "title": "【#124】「和奏、めちゃウマ２年予約待ちのお店を堪能！？」",
+        "publishedAt": "2026-03-18T23:00:00+09:00",
+        "publishedAtUnix": 1773842400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/81455/thumbnail_path?time=1774474937",
+        "durationSeconds": 1476,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 575
+        }
+      },
+      {
+        "id": "audee:sm4vufpH4MPeRKWvnqMFjmAn",
+        "title": "【#125】「和奏、サク山チョコ次郎だぁ〜いすき」",
+        "publishedAt": "2026-03-25T23:00:00+09:00",
+        "publishedAtUnix": 1774447200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/82219/thumbnail_path?time=1775077462",
+        "durationSeconds": 1741,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 618
+        }
+      },
+      {
+        "id": "audee:sm3rDDbRtzLGVQ5B2Rt3Q5Jo",
+        "title": "【#126】「新年度突入〜！」",
+        "publishedAt": "2026-04-01T23:00:00+09:00",
+        "publishedAtUnix": 1775052000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/82836/thumbnail_path?time=1775681583",
+        "durationSeconds": 1868,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 565
+        }
+      },
+      {
+        "id": "audee:sm2uPYkDiy86xA64FUpK5QLh",
+        "title": "【#127】大熊和奏生誕祭SP「お祝いボイスメッセージでアゲ〜！」",
+        "publishedAt": "2026-04-08T23:00:00+09:00",
+        "publishedAtUnix": 1775656800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/83389/thumbnail_path?time=1776289613",
+        "durationSeconds": 1649,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 753
+        }
+      },
+      {
+        "id": "audee:smC4A8ZCrubJjv8UBAMEKcAD",
+        "title": "【#128】大熊和奏生誕祭SP後編「番組からのプレゼント…重大発表ございます！」",
+        "publishedAt": "2026-04-15T23:00:00+09:00",
+        "publishedAtUnix": 1776261600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/84027/thumbnail_path?time=1776893663",
+        "durationSeconds": 1848,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 632
+        }
+      },
+      {
+        "id": "audee:smnV2QtubPWZxsKf4wWdRA8G",
+        "title": "【#129】「新生活の春〜！」",
+        "publishedAt": "2026-04-22T23:00:00+09:00",
+        "publishedAtUnix": 1776866400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/84898/thumbnail_path?time=1777499825",
+        "durationSeconds": 1775,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 511
+        }
+      },
+      {
+        "id": "audee:sm2FnFpNPtZZxyEWsUZhNsWu",
+        "title": "【会員限定動画】誕生日プレゼントでもらったスクラッチにチャレンジ！ノーカットでお届け！",
+        "publishedAt": "2026-04-23T10:00:00+09:00",
+        "publishedAtUnix": 1776906000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/84940/thumbnail_path?time=1776936936",
+        "durationSeconds": 446,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 240
+        }
+      },
+      {
+        "id": "audee:sm2ufksRM4PAiWNZoSJLy2zB",
+        "title": "【#130】「朝のささやき第2 回番組イベントどうする？会議〜」",
+        "publishedAt": "2026-04-29T23:00:00+09:00",
+        "publishedAtUnix": 1777471200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/85624/thumbnail_path?time=1778083361",
+        "durationSeconds": 1634,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 446
+        }
+      },
+      {
+        "id": "audee:smdB6WiFmweUiyctcrpmth6k",
+        "title": "【#131】「和奏はバクネ（爆寝）中！」",
+        "publishedAt": "2026-05-06T23:00:00+09:00",
+        "publishedAtUnix": 1778076000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/86185/thumbnail_path?time=1778712685",
+        "durationSeconds": 1266,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 457
+        }
+      },
+      {
+        "id": "audee:smeg9Qpvt5kcVhZbNxzQinwN",
+        "title": "【#132】「久々のお悩み相談！“ささやかず”です」＜2026年5/20まで一部無料＞",
+        "publishedAt": "2026-05-13T23:00:00+09:00",
+        "publishedAtUnix": 1778680800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/87831/thumbnail_path?time=1778713058",
+        "durationSeconds": 2023,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 338
+        }
+      }
+    ],
+    "meta": {
+      "cachedAt": "2026-05-17T17:15:08.858Z",
+      "episodeCount": 139
+    },
+    "raw": {
+      "site": {
+        "data": {
+          "fanclub_site": {
+            "content_provider": {
+              "copyright": "Copyright © TOKYO FM Broadcasting Co., Ltd. All rights reserved.",
+              "fanclub_release_status": {
+                "fanclub_release_status_type": {
+                  "id": 3
+                }
+              },
+              "service_provider": "© DWANGO Co., Ltd.",
+              "shop_url": null
+            },
+            "current_fanclub_design": {
+              "app_cover_image_url": "https://audee-membership.jp/public_html/site_design/fanclub_designs/19341/app_cover_image_path?time=1773654081",
+              "app_icon_url": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_designs/19341/app_icon_path?time=1773654081",
+              "app_show_shop": false,
+              "design_background": {
+                "background_color_name": "ブラック",
+                "color_code": "#000000",
+                "id": 2
+              },
+              "design_color_theme": {
+                "design_color_theme_details": [
+                  {
+                    "color_code": "#225db7",
+                    "design_color_type": {
+                      "id": 1,
+                      "type_name": "プライマリーカラー"
+                    },
+                    "id": 28289
+                  },
+                  {
+                    "color_code": "#225db7",
+                    "design_color_type": {
+                      "id": 2,
+                      "type_name": "アクセントカラー"
+                    },
+                    "id": 28290
+                  },
+                  {
+                    "color_code": "#ec6e07",
+                    "design_color_type": {
+                      "id": 3,
+                      "type_name": "グラデーション開始色"
+                    },
+                    "id": 28291
+                  },
+                  {
+                    "color_code": "#ffb500",
+                    "design_color_type": {
+                      "id": 4,
+                      "type_name": "グラデーション終了色"
+                    },
+                    "id": 28292
+                  }
+                ],
+                "id": 7066
+              },
+              "design_drawer_menu": {
+                "id": 1,
+                "menu_name": "テーマ1（デフォルト）"
+              },
+              "design_elevation": {
+                "id": 1,
+                "material_ui_code": "shadow",
+                "object_elevation_style_name": "シャドウ"
+              },
+              "design_global_menu_font": {
+                "css_url": null,
+                "font_name": "デフォルト",
+                "is_japanese_supported": true
+              },
+              "design_header_font": {
+                "css_url": null,
+                "font_name": "Train One",
+                "id": 7,
+                "is_japanese_supported": true
+              },
+              "design_shape": {
+                "id": 1,
+                "material_ui_code": "",
+                "shape_name": "ラウンド"
+              },
+              "fanclub_design_customlink_details": [],
+              "fanclub_design_sub_page_title": {
+                "application_form_title": "",
+                "live_title": "",
+                "vod_title": ""
+              },
+              "fanclub_footer_snses": [],
+              "fanclub_menus": [
+                {
+                  "article_theme": null,
+                  "display_order": 1,
+                  "fanclub_menu_item_type": {
+                    "id": 4,
+                    "menu_item_name": "生放送"
+                  },
+                  "fanclub_menu_type": {
+                    "id": 1,
+                    "name": "ヘッダー"
+                  },
+                  "id": 88119,
+                  "menu_item_header": null,
+                  "menu_item_link_url": null,
+                  "use_blank_target": false,
+                  "video_tag": null
+                },
+                {
+                  "article_theme": null,
+                  "display_order": 2,
+                  "fanclub_menu_item_type": {
+                    "id": 1,
+                    "menu_item_name": "カスタム"
+                  },
+                  "fanclub_menu_type": {
+                    "id": 1,
+                    "name": "ヘッダー"
+                  },
+                  "id": 88120,
+                  "menu_item_header": "RADIO",
+                  "menu_item_link_url": "https://audee-membership.jp/okuma-wakana/videos?tag=RADIO",
+                  "use_blank_target": false,
+                  "video_tag": null
+                },
+                {
+                  "article_theme": null,
+                  "display_order": 3,
+                  "fanclub_menu_item_type": {
+                    "id": 1,
+                    "menu_item_name": "カスタム"
+                  },
+                  "fanclub_menu_type": {
+                    "id": 1,
+                    "name": "ヘッダー"
+                  },
+                  "id": 88121,
+                  "menu_item_header": "MESSAGE",
+                  "menu_item_link_url": "https://www.tfm.co.jp/f/sasayaki/message",
+                  "use_blank_target": true,
+                  "video_tag": null
+                },
+                {
+                  "article_theme": {
+                    "theme_name": "NEWS",
+                    "theme_relative_url": "news"
+                  },
+                  "display_order": 4,
+                  "fanclub_menu_item_type": {
+                    "id": 3,
+                    "menu_item_name": "記事"
+                  },
+                  "fanclub_menu_type": {
+                    "id": 1,
+                    "name": "ヘッダー"
+                  },
+                  "id": 88122,
+                  "menu_item_header": null,
+                  "menu_item_link_url": null,
+                  "use_blank_target": false,
+                  "video_tag": null
+                },
+                {
+                  "article_theme": null,
+                  "display_order": 5,
+                  "fanclub_menu_item_type": {
+                    "id": 1,
+                    "menu_item_name": "カスタム"
+                  },
+                  "fanclub_menu_type": {
+                    "id": 1,
+                    "name": "ヘッダー"
+                  },
+                  "id": 88123,
+                  "menu_item_header": "番組紹介",
+                  "menu_item_link_url": "https://audee-membership.jp/okuma-wakana/articles/news/arxnymwHxpsrJ29Eaa8Efnhj",
+                  "use_blank_target": false,
+                  "video_tag": null
+                },
+                {
+                  "article_theme": null,
+                  "display_order": 6,
+                  "fanclub_menu_item_type": {
+                    "id": 1,
+                    "menu_item_name": "カスタム"
+                  },
+                  "fanclub_menu_type": {
+                    "id": 1,
+                    "name": "ヘッダー"
+                  },
+                  "id": 88124,
+                  "menu_item_header": "会員特典",
+                  "menu_item_link_url": "https://audee-membership.jp/okuma-wakana/articles/news/arCbTDSoFAVgEMgBnc2aCf8L",
+                  "use_blank_target": false,
+                  "video_tag": null
+                }
+              ],
+              "full_screen_logo_image_url": null,
+              "full_screen_menu_color_code": null,
+              "logo_image_url": null
+            },
+            "description": "声優・大熊和奏の初冠ラジオ番組『大熊和奏 朝のささやき』\n普段、朝のラジオをよく聴く大熊和奏が朝からゆったり聴けるラジオ番組をお届けします！\n通勤・通学・朝の準備などのお供にぜひ。",
+            "facebook_app_id": null,
+            "fanclub_code": "FCS00354",
+            "fanclub_group": {
+              "hosting_type_id": 0,
+              "primary_content_provider": {
+                "fanclub_site_name": "Podcasts Membership"
+              }
+            },
+            "fanclub_site_name": "大熊和奏 朝のささやき",
+            "favicon_url": null,
+            "ga_measurement_id": "G-BWBX1XJDW5",
+            "gtm_container_id": null,
+            "hash_tag": "#朝の和奏",
+            "site_hashtags": [
+              {
+                "hashtag_name": "アニメ・声優",
+                "id": 497
+              }
+            ],
+            "thumbnail_image_url": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/354/thumbnail_image_path?time=1764121555"
+          }
+        }
+      }
+    }
+  },
   "hanamiya-nina": {
     "id": "audee:hanamiya-nina",
     "source": "imported",
@@ -10,7 +1929,7 @@
     "program": {
       "title": "花宮初奈「217find!」",
       "description": "声優・花宮初奈の初単独音声番組。近況やふつおたはもちろん、リスナーと様々な情報をシェア！花宮初奈が愛してやまないエジプトをはじめ、世界中のあらゆる魅力も一緒に学び、発見・成長していくプログラム！",
-      "hosts": "hanamiya-nina",
+      "hosts": [],
       "category": "アニメ・声優",
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/357/thumbnail_image_path?time=1764121529"
@@ -25,7 +1944,7 @@
         "durationSeconds": 523,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 13169
+          "views": 13170
         }
       },
       {
@@ -37,7 +1956,7 @@
         "durationSeconds": 1795,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 17599
+          "views": 17604
         }
       },
       {
@@ -49,7 +1968,7 @@
         "durationSeconds": 1723,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 9240
+          "views": 9241
         }
       },
       {
@@ -61,7 +1980,7 @@
         "durationSeconds": 1655,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 7692
+          "views": 7693
         }
       },
       {
@@ -181,7 +2100,7 @@
         "durationSeconds": 1608,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 4596
+          "views": 4597
         }
       },
       {
@@ -193,7 +2112,7 @@
         "durationSeconds": 2265,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 5537
+          "views": 5538
         }
       },
       {
@@ -205,7 +2124,7 @@
         "durationSeconds": 2223,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 4568
+          "views": 4570
         }
       },
       {
@@ -217,7 +2136,7 @@
         "durationSeconds": 1502,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 4063
+          "views": 4064
         }
       },
       {
@@ -229,7 +2148,7 @@
         "durationSeconds": 1514,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 4165
+          "views": 4167
         }
       },
       {
@@ -241,7 +2160,7 @@
         "durationSeconds": 1972,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 4071
+          "views": 4072
         }
       },
       {
@@ -253,7 +2172,7 @@
         "durationSeconds": 1873,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 3971
+          "views": 3973
         }
       },
       {
@@ -265,7 +2184,7 @@
         "durationSeconds": 1375,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 3735
+          "views": 3737
         }
       },
       {
@@ -277,7 +2196,7 @@
         "durationSeconds": 1695,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 4223
+          "views": 4225
         }
       },
       {
@@ -289,7 +2208,7 @@
         "durationSeconds": 1709,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 4065
+          "views": 4069
         }
       },
       {
@@ -301,7 +2220,7 @@
         "durationSeconds": 1337,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 3342
+          "views": 3343
         }
       },
       {
@@ -337,7 +2256,7 @@
         "durationSeconds": 1334,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 3372
+          "views": 3373
         }
       },
       {
@@ -349,7 +2268,7 @@
         "durationSeconds": 1326,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 3396
+          "views": 3397
         }
       },
       {
@@ -361,7 +2280,7 @@
         "durationSeconds": 1446,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 3040
+          "views": 3043
         }
       },
       {
@@ -373,7 +2292,7 @@
         "durationSeconds": 1535,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 3126
+          "views": 3129
         }
       },
       {
@@ -625,7 +2544,7 @@
         "durationSeconds": 1120,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 2339
+          "views": 2340
         }
       },
       {
@@ -637,7 +2556,7 @@
         "durationSeconds": 1466,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 2711
+          "views": 2713
         }
       },
       {
@@ -721,7 +2640,7 @@
         "durationSeconds": 1400,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 2266
+          "views": 2267
         }
       },
       {
@@ -961,7 +2880,7 @@
         "durationSeconds": 1449,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 2103
+          "views": 2104
         }
       },
       {
@@ -973,7 +2892,7 @@
         "durationSeconds": 1520,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 2137
+          "views": 2140
         }
       },
       {
@@ -985,7 +2904,7 @@
         "durationSeconds": 1339,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 2712
+          "views": 2718
         }
       },
       {
@@ -997,7 +2916,7 @@
         "durationSeconds": 1448,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 3690
+          "views": 3691
         }
       },
       {
@@ -1009,7 +2928,7 @@
         "durationSeconds": 1845,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 6965
+          "views": 6967
         }
       },
       {
@@ -1045,7 +2964,7 @@
         "durationSeconds": 1388,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 2069
+          "views": 2070
         }
       },
       {
@@ -1165,7 +3084,7 @@
         "durationSeconds": 1362,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 1779
+          "views": 1781
         }
       },
       {
@@ -1177,7 +3096,7 @@
         "durationSeconds": 1724,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 2179
+          "views": 2180
         }
       },
       {
@@ -1189,7 +3108,7 @@
         "durationSeconds": 1280,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 1855
+          "views": 1858
         }
       },
       {
@@ -1201,7 +3120,7 @@
         "durationSeconds": 1450,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 1856
+          "views": 1858
         }
       },
       {
@@ -1213,7 +3132,7 @@
         "durationSeconds": 1840,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 1850
+          "views": 1852
         }
       },
       {
@@ -1225,7 +3144,7 @@
         "durationSeconds": 1884,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 3055
+          "views": 3056
         }
       },
       {
@@ -1237,7 +3156,7 @@
         "durationSeconds": 6223,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 2285
+          "views": 2286
         }
       },
       {
@@ -1249,7 +3168,7 @@
         "durationSeconds": 1672,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 1731
+          "views": 1732
         }
       },
       {
@@ -1285,7 +3204,7 @@
         "durationSeconds": 1390,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 2126
+          "views": 2127
         }
       },
       {
@@ -1309,7 +3228,7 @@
         "durationSeconds": 1548,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 1747
+          "views": 1749
         }
       },
       {
@@ -1321,7 +3240,7 @@
         "durationSeconds": 1395,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 1588
+          "views": 1592
         }
       },
       {
@@ -1333,7 +3252,7 @@
         "durationSeconds": 1422,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 1617
+          "views": 1628
         }
       },
       {
@@ -1345,7 +3264,7 @@
         "durationSeconds": 1632,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 1616
+          "views": 1629
         }
       },
       {
@@ -1357,7 +3276,7 @@
         "durationSeconds": 1560,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 1408
+          "views": 1430
         }
       },
       {
@@ -1369,12 +3288,12 @@
         "durationSeconds": 1748,
         "platformMetadata": {
           "mediaType": "audio",
-          "views": 974
+          "views": 1052
         }
       }
     ],
     "meta": {
-      "cachedAt": "2026-05-17T02:43:24.023Z",
+      "cachedAt": "2026-05-17T17:15:46.420Z",
       "episodeCount": 113
     },
     "raw": {

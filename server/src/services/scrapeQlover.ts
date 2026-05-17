@@ -1,12 +1,12 @@
-import { getFanclubIdFromUrl } from './audeeResolver';
+import { getFanclubIdFromUrl } from './qloverResolver';
 
-import { fetchAudeeEpisodes } from './audeeEpisodes';
+import { fetchQloverEpisodes } from './qloverEpisodes';
 
 import { normalizeAudeeDate } from '../utils/date';
 
 import { normalizeEpisodes } from '../utils/normalizeEpisodes';
 
-export async function scrapeAudee(url: string) {
+export async function scrapeQlover(url: string) {
   const fanclubId = await getFanclubIdFromUrl(url);
 
   if (!fanclubId) {
@@ -16,23 +16,25 @@ export async function scrapeAudee(url: string) {
   const slug = new URL(url).pathname.split('/').filter(Boolean)[0];
 
   const [baseRes, episodes] = await Promise.all([
-    fetch(
-      `https://api.audee-membership.jp/fc/fanclub_sites/${fanclubId}/page_base_info`
-    ),
+    fetch(`https://api.qlover.jp/fc/fanclub_sites/${fanclubId}/page_base_info`),
 
-    fetchAudeeEpisodes(fanclubId),
+    fetchQloverEpisodes(fanclubId),
   ]);
 
   const baseJson = await baseRes.json();
 
   const site = baseJson.data.fanclub_site;
 
+  const filteredEpisodes = episodes.filter(
+    (ep) => !ep.title.includes('おまけ')
+  );
+
   return {
-    id: `audee:${slug}`,
+    id: `qlover:${slug}`,
 
     source: 'imported',
 
-    platform: 'audee',
+    platform: 'qlover',
 
     platformId: fanclubId,
 
@@ -57,11 +59,11 @@ export async function scrapeAudee(url: string) {
     },
 
     episodes: normalizeEpisodes(
-      episodes.map((ep) => {
+      filteredEpisodes.map((ep) => {
         const normalizedDate = normalizeAudeeDate(ep.display_date);
 
         return {
-          id: `audee:${ep.content_code}`,
+          id: `qlover:${ep.content_code}`,
 
           title: ep.title,
 
@@ -85,7 +87,7 @@ export async function scrapeAudee(url: string) {
     meta: {
       cachedAt: new Date().toISOString(),
 
-      episodeCount: episodes.length,
+      episodeCount: filteredEpisodes.length,
     },
 
     raw: {

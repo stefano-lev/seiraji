@@ -18,7 +18,7 @@ import { loadPrefs, savePrefs } from '@/lib/storage';
 
 import { loadUserState, saveUserState } from '@/lib/storage';
 
-import { processImageFile } from '@/lib/image';
+//import { processImageFile } from '@/lib/image';
 
 import { getLibrary } from './lib/api';
 
@@ -453,7 +453,10 @@ export default function App() {
           return a.program.title.localeCompare(b.program.title, 'ja');
         }
 
-        return a.program.hosts[0].localeCompare(b.program.hosts[0], 'ja');
+        const aHost = a.program.hosts?.[0] ?? '';
+        const bHost = b.program.hosts?.[0] ?? '';
+
+        return aHost.localeCompare(bHost, 'ja');
       });
   }, [
     programs,
@@ -1085,11 +1088,16 @@ export default function App() {
                                           {ep.title}
                                         </h4>
 
-                                        {ep.publishedAt && (
+                                        {ep.publishedAt ? (
                                           <p className="text-xs text-muted-foreground mt-1">
                                             {new Date(
                                               ep.publishedAt
                                             ).toLocaleDateString()}
+                                          </p>
+                                        ) : (
+                                          <p className="text-xs text-muted-foreground mt-1">
+                                            {ep.platformMetadata?.displayDate ??
+                                              'Unknown date'}
                                           </p>
                                         )}
                                       </div>
