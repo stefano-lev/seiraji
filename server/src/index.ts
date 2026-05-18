@@ -12,9 +12,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: ['http://localhost:5173', 'https://stef-lev.xyz/'],
+    origin: ['http://localhost:5173', 'https://seiraji.stef-lev.xyz'],
   })
 );
+
 app.use(express.json());
 
 app.use('/api/audee', audeeRoutes);
