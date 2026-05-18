@@ -22,6 +22,8 @@ import { loadUserState, saveUserState } from '@/lib/storage';
 
 import { getLibrary } from './lib/api';
 
+import { calculateStats } from '@/lib/stats';
+
 import {
   Select,
   SelectContent,
@@ -42,34 +44,33 @@ import {
   isExportPayload,
   readJsonFile,
 } from '@/lib/storage';
-import { calculateStats } from './lib/stats';
 
 type SortMode = 'title' | 'host' | 'platform';
 
-type EditableFieldProps = {
-  label: string;
-  value: React.ReactNode;
-  isEditing: boolean;
-  renderInput: () => React.ReactNode;
-};
+// type EditableFieldProps = {
+//   label: string;
+//   value: React.ReactNode;
+//   isEditing: boolean;
+//   renderInput: () => React.ReactNode;
+// };
 
-function EditableField({
-  label,
-  value,
-  isEditing,
-  renderInput,
-}: EditableFieldProps) {
-  return (
-    <div className="mb-3">
-      <label className="text-sm mb-1 block">{label}</label>
-      {isEditing ? (
-        renderInput()
-      ) : (
-        <div className="text-sm text-muted-foreground">{value}</div>
-      )}
-    </div>
-  );
-}
+// function EditableField({
+//   label,
+//   value,
+//   isEditing,
+//   renderInput,
+// }: EditableFieldProps) {
+//   return (
+//     <div className="mb-3">
+//       <label className="text-sm mb-1 block">{label}</label>
+//       {isEditing ? (
+//         renderInput()
+//       ) : (
+//         <div className="text-sm text-muted-foreground">{value}</div>
+//       )}
+//     </div>
+//   );
+// }
 
 export default function App() {
   const [dark, setDark] = useState(true);
@@ -77,9 +78,9 @@ export default function App() {
   const [selectedProgram, setSelectedProgram] = useState<Program | null>(null);
   const [editDraft, setEditDraft] = useState<Program | null>(null);
 
-  const isEditing = editDraft !== null;
+  // const isEditing = editDraft !== null;
 
-  const programData = editDraft ?? selectedProgram;
+  // const programData = editDraft ?? selectedProgram;
 
   const importInputRef = useRef<HTMLInputElement | null>(null);
 
@@ -114,7 +115,9 @@ export default function App() {
   }, [programs]);
 
   const [programOnboarding, setProgramOnboarding] = useState(() => {
-    return !localStorage.getItem('seiraji:mode');
+    const mode = localStorage.getItem('seiraji:mode');
+    const hasSeenOnboarding = localStorage.getItem('seiraji:onboarded');
+    return !mode && !hasSeenOnboarding;
   });
 
   const [isDemo, setIsDemo] = useState(() => {
@@ -171,24 +174,50 @@ export default function App() {
   );
 
   function startFresh() {
-    setPrograms(defaultPrograms);
+    setPrograms(programs);
     setUserState([]);
     setTags([]);
     setActivity([]);
 
     localStorage.setItem('seiraji:mode', 'fresh');
+    localStorage.setItem('seiraji:onboarded', 'true');
     setIsDemo(false);
-    setProgramOnboarding(false);
   }
 
   function loadDemo() {
-    setPrograms(defaultPrograms);
-    setUserState(demoUserState);
-    //setTags(demoTags);
+    setUserState(generateDemoState(programs));
 
     localStorage.setItem('seiraji:mode', 'demo');
+    localStorage.setItem('seiraji:onboarded', 'true');
+
     setIsDemo(true);
     setProgramOnboarding(false);
+  }
+
+  function generateDemoState(programs: Program[]): UserProgramState[] {
+    return programs.map((p, i) => {
+      const episodeCount = p.episodes?.length ?? 10;
+
+      const progress =
+        i % 3 === 0
+          ? 0
+          : i % 3 === 1
+            ? Math.floor(episodeCount * 0.4)
+            : Math.floor(episodeCount * 0.9);
+
+      return {
+        programId: p.id,
+        status:
+          progress === 0
+            ? 'backlog'
+            : progress >= episodeCount
+              ? 'completed'
+              : 'listening',
+        lastListenedEpisode: progress,
+        isPinned: i % 5 === 0,
+        tags: i % 2 === 0 ? ['comfy', 'talk'] : ['anime', 'weekly'],
+      };
+    });
   }
 
   function getShowTitle(programId: string) {
@@ -609,7 +638,7 @@ export default function App() {
                   )}
 
                   {/* Sort + Add */}
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 justify-end sm:justify-end">
                     <Button
                       variant={pinnedOnly ? 'default' : 'secondary'}
                       onClick={() => setPinnedOnly(!pinnedOnly)}
@@ -803,6 +832,10 @@ export default function App() {
           {selectedProgram &&
             (() => {
               const programData = selectedProgram;
+
+              const currentState = getProgramState(programData.id);
+
+              const listenedCount = currentState.lastListenedEpisode ?? 0;
 
               return (
                 <motion.div
@@ -1034,84 +1067,121 @@ export default function App() {
                           </div>
 
                           <div className="space-y-3">
-                            {programData.episodes.map((ep) => (
-                              <div
-                                key={ep.id}
-                                className="
-                                rounded-2xl
-                                border border-border/60
-                                p-4
-                                hover:bg-muted/40
-                                transition-colors
-                              "
-                              >
-                                <div className="flex gap-4">
-                                  <img
-                                    src={
-                                      ep.thumbnail ??
-                                      programData.program.thumbnail ??
-                                      '/placeholders/show-placeholder.png'
+                            {programData.episodes.map((ep, index) => {
+                              const isCompleted = index < listenedCount;
+
+                              return (
+                                <div
+                                  key={ep.id}
+                                  className={`
+                                    rounded-2xl border p-4 transition-colors
+                                    ${
+                                      isCompleted
+                                        ? 'border-green-500/30 bg-green-500/5'
+                                        : 'border-border/60 hover:bg-muted/40'
                                     }
-                                    className="
-                                    w-36 h-20
-                                    rounded-xl
-                                    object-cover
-                                    bg-muted
-                                    shrink-0
-                                  "
-                                  />
+                                  `}
+                                >
+                                  <div className="flex gap-4">
+                                    <img
+                                      loading="lazy"
+                                      decoding="async"
+                                      src={
+                                        ep.thumbnail ??
+                                        programData.program.thumbnail ??
+                                        '/placeholders/show-placeholder.png'
+                                      }
+                                      className="
+                                        w-36 h-20
+                                        rounded-xl
+                                        object-cover
+                                        bg-muted
+                                        shrink-0
+                                      "
+                                    />
 
-                                  <div className="min-w-0 flex-1">
-                                    <div className="flex items-start justify-between gap-4">
-                                      <div>
-                                        <h4 className="font-medium leading-snug">
-                                          {ep.title}
-                                        </h4>
+                                    <div className="min-w-0 flex-1">
+                                      <div className="flex items-start justify-between gap-4">
+                                        <div>
+                                          <div className="flex items-center gap-2">
+                                            <h4 className="font-medium leading-snug">
+                                              {ep.title}
+                                            </h4>
 
-                                        {ep.publishedAt ? (
-                                          <p className="text-xs text-muted-foreground mt-1">
-                                            {new Date(
-                                              ep.publishedAt
-                                            ).toLocaleDateString()}
-                                          </p>
-                                        ) : (
-                                          <p className="text-xs text-muted-foreground mt-1">
-                                            {ep.platformMetadata?.displayDate ??
-                                              'Unknown date'}
-                                          </p>
+                                            {isCompleted && (
+                                              <div
+                                                className="
+                                                  h-5 w-5 rounded-full
+                                                  bg-green-500/15
+                                                  border border-green-500/30
+                                                  flex items-center justify-center
+                                                  text-[11px]
+                                                  text-green-400
+                                                  shrink-0
+                                                "
+                                              >
+                                                ✓
+                                              </div>
+                                            )}
+                                          </div>
+
+                                          {ep.publishedAt ? (
+                                            <p className="text-xs text-muted-foreground mt-1">
+                                              {new Date(
+                                                ep.publishedAt
+                                              ).toLocaleDateString()}
+                                            </p>
+                                          ) : (
+                                            <p className="text-xs text-muted-foreground mt-1">
+                                              {ep.platformMetadata
+                                                ?.displayDate ?? 'Unknown date'}
+                                            </p>
+                                          )}
+                                        </div>
+
+                                        {ep.durationSeconds && (
+                                          <Badge variant="outline">
+                                            {Math.floor(
+                                              ep.durationSeconds / 60
+                                            )}
+                                            m
+                                          </Badge>
                                         )}
                                       </div>
 
-                                      {ep.durationSeconds && (
-                                        <Badge variant="outline">
-                                          {Math.floor(ep.durationSeconds / 60)}m
-                                        </Badge>
+                                      {ep.description && (
+                                        <p className="text-sm text-muted-foreground mt-3 line-clamp-3">
+                                          {ep.description}
+                                        </p>
+                                      )}
+
+                                      {ep.tags && ep.tags.length > 0 && (
+                                        <div className="flex flex-wrap gap-2 mt-3">
+                                          {ep.tags.slice(0, 6).map((tag) => (
+                                            <Badge
+                                              key={tag}
+                                              variant="secondary"
+                                              className="text-xs"
+                                            >
+                                              {tag}
+                                            </Badge>
+                                          ))}
+
+                                          {ep.tags.length > 6 && (
+                                            <Badge
+                                              variant="outline"
+                                              className="text-xs"
+                                            >
+                                              +{ep.tags.length - 6} more
+                                            </Badge>
+                                          )}
+                                        </div>
                                       )}
                                     </div>
-
-                                    {ep.description && (
-                                      <p className="text-sm text-muted-foreground mt-3 line-clamp-3">
-                                        {ep.description}
-                                      </p>
-                                    )}
-
-                                    {ep.tags && ep.tags.length > 0 && (
-                                      <div className="flex flex-wrap gap-2 mt-3">
-                                        {ep.tags.map((tag) => (
-                                          <Badge
-                                            key={tag}
-                                            variant="secondary"
-                                            className="text-xs"
-                                          >
-                                            {tag}
-                                          </Badge>
-                                        ))}
-                                      </div>
-                                    )}
                                   </div>
                                 </div>
-                              </div>
-                            ))}
+                              );
+                            })}
                           </div>
                         </div>
                       </div>
@@ -1149,7 +1219,7 @@ export default function App() {
                     <span className="font-medium">{stats.totalPrograms}</span>
                   </div>
 
-                  {/* <div className="flex justify-between">
+                  <div className="flex justify-between">
                     <span className="text-muted-foreground">
                       Episodes listened
                     </span>
@@ -1163,7 +1233,7 @@ export default function App() {
                       Approx time listened
                     </span>
                     <span className="font-medium">
-                      {Math.round(stats.approxMinutes / 60)} hrs
+                      {Math.round(stats.totalListenedDuration / 3600)} hrs
                     </span>
                   </div>
 
@@ -1204,7 +1274,25 @@ export default function App() {
                         {stats.statusCounts.dropped}
                       </div>
                     </div>
-                  </div> */}
+                  </div>
+
+                  <hr className="my-3 border-border/60" />
+
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">
+                      Total Library Duration
+                    </span>
+                    <span className="font-medium">
+                      {Math.round(stats.totalLibraryDuration / 3600)} hrs
+                    </span>
+                  </div>
+
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">
+                      Total Library Episode Count
+                    </span>
+                    <span className="font-medium">{stats.totalEpisodes}</span>
+                  </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-2">

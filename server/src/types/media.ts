@@ -13,10 +13,13 @@ export interface Program {
 
   program: {
     title: string;
+    customTitle?: string;
 
     description: string | null;
+    customDescription?: string | null;
 
     thumbnail: string | null;
+    customThumbnail?: string | null;
 
     hosts?: string[];
 

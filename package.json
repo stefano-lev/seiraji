@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
     "client": "npm run dev --prefix client",
-    "server": "npm run dev --prefix server"
+    "server": "npm run dev --prefix server",
+    "seed": "npm run seed --prefix server"
   },
   "repository": {
     "type": "git",
