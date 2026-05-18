@@ -6,6 +6,8 @@ import { normalizeAudeeDate } from '../utils/date';
 
 import { normalizeEpisodes } from '../utils/normalizeEpisodes';
 
+import { extractHostNames } from '../utils/extractHostNames';
+
 export async function scrapeQlover(url: string) {
   const fanclubId = await getFanclubIdFromUrl(url);
 
@@ -24,6 +26,8 @@ export async function scrapeQlover(url: string) {
   const baseJson = await baseRes.json();
 
   const site = baseJson.data.fanclub_site;
+
+  const hosts = extractHostNames(site.current_fanclub_design?.fanclub_menus);
 
   const filteredEpisodes = episodes.filter(
     (ep) => !ep.title.includes('おまけ')
@@ -49,7 +53,7 @@ export async function scrapeQlover(url: string) {
 
       description: site.description,
 
-      hosts: [],
+      hosts,
 
       category: site.site_hashtags?.[0]?.hashtag_name ?? '',
 

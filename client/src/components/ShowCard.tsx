@@ -12,6 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import React from 'react';
 
 type Props = {
   program: Program;
@@ -29,7 +30,7 @@ type Props = {
   };
 };
 
-export function ShowCard({
+export const ShowCard = React.memo(function ShowCard({
   program,
   userState,
   onUpdate,
@@ -69,15 +70,30 @@ export function ShowCard({
       className="relative group hover:shadow-xl transition-shadow overflow-hidden"
     >
       {state.isPinned && (
-        <div className="absolute top-2 left-2 text-yellow-500 text-xl">★</div>
+        <div className="absolute top-1 left-1 text-yellow-500 text-xl">★</div>
       )}
 
-      <CardHeader className="space-y-4">
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          onTogglePinned(program.id);
+        }}
+        className="
+    absolute top-1 left-1
+  text-yellow-500 text-xl
+    opacity-0 group-hover:opacity-100
+    transition-opacity
+  "
+      >
+        {state.isPinned ? '★' : '☆'}
+      </button>
+
+      <CardHeader className="pb-3">
         <div className="flex gap-4">
           <img
             src={thumbnail}
             className="
-        h-20 w-20
+        h-16 w-24
         rounded-xl
         object-cover
         bg-muted
@@ -87,7 +103,7 @@ export function ShowCard({
 
           <div className="min-w-0 flex-1">
             <div className="flex items-start justify-between gap-2">
-              <div>
+              <div className="min-h-[3.25rem]">
                 <h3 className="font-semibold text-base leading-tight line-clamp-2">
                   {program.program.title}
                 </h3>
@@ -98,27 +114,26 @@ export function ShowCard({
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-1 mt-3">
+            <div className="flex gap-1 mt-2 overflow-hidden">
               <Badge variant="secondary">{program.platform}</Badge>
 
-              {program.program.categories?.slice(0, 2).map((c) => (
-                <Badge key={c} variant="outline">
-                  {c}
-                </Badge>
-              ))}
+              {program.program.categories?.[0] && (
+                <Badge variant="outline">{program.program.categories[0]}</Badge>
+              )}
             </div>
           </div>
         </div>
       </CardHeader>
 
-      <CardContent className="space-y-3">
-        {program.program.description && (
+      <CardContent className="flex flex-col flex-1">
+        <div className="mt-auto space-y-3">
+          {/* {program.program.description && (
           <p className="text-xs text-muted-foreground line-clamp-3">
             {program.program.description}
           </p>
-        )}
+        )} */}
 
-        {latestEpisode && (
+          {/* {latestEpisode && (
           <div className="text-xs border-l pl-2 text-muted-foreground">
             <div className="font-medium text-foreground">
               Latest: {latestEpisode.title}
@@ -129,72 +144,74 @@ export function ShowCard({
               </div>
             )}
           </div>
-        )}
+        )} */}
 
-        <div>
-          <div className="flex justify-between text-xs text-muted-foreground">
-            <span>
-              Episode {lastEp} / {totalEpisodes || '?'}
-            </span>
-            <span>{Math.round(progressPct)}%</span>
+          <div>
+            <div className="flex justify-between text-xs text-muted-foreground">
+              <span>
+                Episode {lastEp} / {totalEpisodes || '?'}
+              </span>
+              <span>{Math.round(progressPct)}%</span>
+            </div>
+
+            <div className="h-2 bg-muted rounded-full overflow-hidden mt-1">
+              <div
+                className="h-full bg-primary"
+                style={{ width: `${progressPct}%` }}
+              />
+            </div>
           </div>
 
-          <div className="h-2 bg-muted rounded-full overflow-hidden mt-1">
-            <div
-              className="h-full bg-primary"
-              style={{ width: `${progressPct}%` }}
+          <div className="flex items-center gap-2">
+            <Button
+              size="sm"
+              onClick={(e) => {
+                e.stopPropagation();
+                onUpdateEpisode(program.id, clamp(lastEp - 1));
+              }}
+            >
+              −
+            </Button>
+
+            <Input
+              type="number"
+              value={lastEp}
+              onClick={(e) => e.stopPropagation()}
+              onChange={(e) =>
+                onUpdateEpisode(program.id, clamp(Number(e.target.value)))
+              }
+              className="w-16 text-center border rounded"
             />
+
+            <Button
+              size="sm"
+              onClick={(e) => {
+                e.stopPropagation();
+                onUpdateEpisode(program.id, clamp(lastEp + 1));
+              }}
+            >
+              +
+            </Button>
           </div>
-        </div>
 
-        <div className="flex items-center gap-2">
-          <Button
-            size="sm"
-            onClick={(e) => {
-              e.stopPropagation();
-              onUpdateEpisode(program.id, clamp(lastEp - 1));
-            }}
-          >
-            −
-          </Button>
-
-          <Input
-            type="number"
-            value={lastEp}
-            onChange={(e) =>
-              onUpdateEpisode(program.id, clamp(Number(e.target.value)))
+          <Select
+            value={state.status}
+            onValueChange={(v) =>
+              onUpdate({ ...state, status: v as UserProgramState['status'] })
             }
-            className="w-16 text-center border rounded"
-          />
-
-          <Button
-            size="sm"
-            onClick={(e) => {
-              e.stopPropagation();
-              onUpdateEpisode(program.id, clamp(lastEp + 1));
-            }}
           >
-            +
-          </Button>
+            <SelectTrigger>
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="listening">Listening</SelectItem>
+              <SelectItem value="backlog">Backlog</SelectItem>
+              <SelectItem value="completed">Completed</SelectItem>
+              <SelectItem value="dropped">Dropped</SelectItem>
+            </SelectContent>
+          </Select>
         </div>
-
-        <Select
-          value={state.status}
-          onValueChange={(v) =>
-            onUpdate({ ...state, status: v as UserProgramState['status'] })
-          }
-        >
-          <SelectTrigger>
-            <SelectValue />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="listening">Listening</SelectItem>
-            <SelectItem value="backlog">Backlog</SelectItem>
-            <SelectItem value="completed">Completed</SelectItem>
-            <SelectItem value="dropped">Dropped</SelectItem>
-          </SelectContent>
-        </Select>
       </CardContent>
     </Card>
   );
-}
+});

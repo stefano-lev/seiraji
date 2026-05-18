@@ -1,5 +1,14 @@
 import * as cheerio from 'cheerio';
 
+function getOnsenRows($: cheerio.CheerioAPI) {
+  const scroll = $('.scroll-table tr.wrap-content');
+  if (scroll.length) return scroll;
+
+  return $('table tr').filter((_, el) => {
+    return $(el).find('.pro-title-content').length > 0;
+  });
+}
+
 export async function scrapeOnsen(url: string) {
   const response = await fetch(url);
 
@@ -25,27 +34,20 @@ export async function scrapeOnsen(url: string) {
 
   const episodes: any[] = [];
 
-  $('.scroll-table tr.wrap-content').each((_, element) => {
+  const rows = getOnsenRows($);
+
+  rows.each((_, element) => {
     const row = $(element);
 
     const title = row.find('.pro-title-content').text().trim();
 
-    // Skip omake episodes
-    if (title.includes('おまけ')) {
-      return;
-    }
+    if (!title) return;
+
+    if (title.includes('おまけ')) return;
 
     const date = row.find('td').eq(1).text().trim();
 
     const tags: string[] = [];
-
-    // if (row.find('.tag-free').length) {
-    //   tags.push('FREE');
-    // }
-
-    // if (row.find('.tag-premium').length) {
-    //   tags.push('PREMIUM');
-    // }
 
     if (row.find('.tag-guest').length) {
       tags.push('GUEST');
@@ -53,19 +55,12 @@ export async function scrapeOnsen(url: string) {
 
     episodes.push({
       id: `${slug}-${date}-${title}`,
-
       title,
-
       publishedAt: null,
-
       publishedAtUnix: null,
-
       thumbnail: null,
-
       durationSeconds: null,
-
       tags,
-
       platformMetadata: {
         displayDate: date,
       },

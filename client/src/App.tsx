@@ -42,8 +42,9 @@ import {
   isExportPayload,
   readJsonFile,
 } from '@/lib/storage';
+import { calculateStats } from './lib/stats';
 
-type SortMode = 'title' | 'host';
+type SortMode = 'title' | 'host' | 'platform';
 
 type EditableFieldProps = {
   label: string;
@@ -164,58 +165,10 @@ export default function App() {
     return () => window.clearInterval(id);
   }, []);
 
-  const stats = useMemo(() => {
-    const totalPrograms = programs.length;
-
-    const statusCounts = {
-      listening: 0,
-      backlog: 0,
-      completed: 0,
-      dropped: 0,
-    };
-
-    let totalEpisodesListened = 0;
-    const totalEpisodesPossible = 0;
-
-    for (const program of programs) {
-      const state = userState.find((s) => s.programId === program.id);
-
-      const status = state?.status ?? 'backlog';
-      statusCounts[status]++;
-
-      const listened = state?.lastListenedEpisode ?? 0;
-      totalEpisodesListened += listened;
-
-      //totalEpisodesPossible += getEffectiveTotalEpisodes(show, now);
-    }
-
-    const totalMinutesListened = 0;
-
-    // for (const program of programs) {
-    //   const state = userState.find((s) => s.programId === program.id);
-
-    //   const listenedEpisodes = state?.lastListenedEpisode ?? 0;
-    //   const mins = program.episodeDurationMinutes ?? 30;
-
-    //   totalMinutesListened += listenedEpisodes * mins;
-    // }
-
-    const approxMinutes = totalMinutesListened;
-
-    const completionPct =
-      totalEpisodesPossible > 0
-        ? Math.round((totalEpisodesListened / totalEpisodesPossible) * 100)
-        : 0;
-
-    return {
-      totalPrograms,
-      statusCounts,
-      totalEpisodesListened,
-      totalEpisodesPossible,
-      approxMinutes,
-      completionPct,
-    };
-  }, [programs, userState]);
+  const stats = useMemo(
+    () => calculateStats(programs, userState),
+    [programs, userState]
+  );
 
   function startFresh() {
     setPrograms(defaultPrograms);
@@ -359,17 +312,17 @@ export default function App() {
     );
   }
 
-  function updateProgram(updated: Program) {
-    setPrograms((prev) => prev.map((s) => (s.id === updated.id ? updated : s)));
-  }
+  // function updateProgram(updated: Program) {
+  //   setPrograms((prev) => prev.map((s) => (s.id === updated.id ? updated : s)));
+  // }
 
-  function addShow(newProgram: Program) {
-    setPrograms((prev) => [...prev, newProgram]);
-  }
+  // function addShow(newProgram: Program) {
+  //   setPrograms((prev) => [...prev, newProgram]);
+  // }
 
-  function deleteProgram(id: string) {
-    setPrograms((prev) => prev.filter((s) => s.id !== id));
-  }
+  // function deleteProgram(id: string) {
+  //   setPrograms((prev) => prev.filter((s) => s.id !== id));
+  // }
 
   function deleteAllData() {
     const ok = window.confirm(
@@ -453,6 +406,10 @@ export default function App() {
           return a.program.title.localeCompare(b.program.title, 'ja');
         }
 
+        if (sortMode === 'platform') {
+          return a.platform.localeCompare(b.platform, 'ja');
+        }
+
         const aHost = a.program.hosts?.[0] ?? '';
         const bHost = b.program.hosts?.[0] ?? '';
 
@@ -501,7 +458,7 @@ export default function App() {
             <div
               className="
       rounded-2xl border border-border/60
-      bg-background/70 backdrop-blur-xl
+      bg-background/95
       shadow-sm
     "
             >
@@ -553,7 +510,7 @@ export default function App() {
 
                   <div className="w-full sm:w-auto h-px sm:h-auto bg-border/60 mx-0 sm:mx-1" />
 
-                  <Button variant="secondary" onClick={handleExport}>
+                  {/* <Button variant="secondary" onClick={handleExport}>
                     Export
                   </Button>
                   <Button
@@ -561,16 +518,16 @@ export default function App() {
                     onClick={() => importInputRef.current?.click()}
                   >
                     Import
-                  </Button>
+                  </Button> */}
 
-                  <Button
+                  {/* <Button
                     onClick={(e) => {
                       e.stopPropagation();
                       setDark(!dark);
                     }}
                   >
                     {dark ? 'Light' : 'Dark'}
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             </div>
@@ -598,8 +555,8 @@ export default function App() {
             >
               <motion.div
                 className="max-w-md w-full rounded-2xl bg-background p-6 shadow-xl"
-                initial={{ scale: 0.95, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 onClick={(e) => e.stopPropagation()}
               >
                 <h2 className="text-xl font-semibold mb-2">
@@ -622,8 +579,8 @@ export default function App() {
           )}
 
           {/* Controls */}
-          <div className="sticky top-[108px] z-30 mt-4">
-            <div className="rounded-2xl border border-border/60 bg-background/70 backdrop-blur-xl shadow-sm">
+          <div className="mt-4">
+            <div className="rounded-2xl border border-border/60 bg-background/95 shadow-sm">
               <div className="p-4 flex flex-col gap-3">
                 <div className="flex flex-col md:flex-row md:items-center gap-3 md:justify-between">
                   {/* Search */}
@@ -654,6 +611,13 @@ export default function App() {
                   {/* Sort + Add */}
                   <div className="flex flex-wrap gap-2">
                     <Button
+                      variant={pinnedOnly ? 'default' : 'secondary'}
+                      onClick={() => setPinnedOnly(!pinnedOnly)}
+                    >
+                      ★ Pinned
+                    </Button>
+
+                    {/* <Button
                       variant={sortMode === 'title' ? 'default' : 'secondary'}
                       onClick={(e) => {
                         e.stopPropagation();
@@ -672,6 +636,18 @@ export default function App() {
                     >
                       Host
                     </Button>
+
+                    <Button
+                      variant={
+                        sortMode === 'platform' ? 'default' : 'secondary'
+                      }
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSortMode('platform');
+                      }}
+                    >
+                      Platform
+                    </Button> */}
 
                     {/* <Button
                       onClick={() => {
@@ -732,17 +708,21 @@ export default function App() {
                     </SelectContent>
                   </Select>
 
-                  <div className="flex items-center gap-2">
-                    <Switch
-                      checked={pinnedOnly}
-                      onCheckedChange={setPinnedOnly}
-                    />
-                    <span className="text-sm text-muted-foreground">
-                      Pinned only
-                    </span>
-                  </div>
+                  <Select
+                    value={sortMode}
+                    onValueChange={(v) => setSortMode(v as typeof sortMode)}
+                  >
+                    <SelectTrigger className="w-full sm:w-[200px]">
+                      <SelectValue placeholder="Sort by Title" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="title">Sort by Title</SelectItem>
+                      <SelectItem value="host">Sort by Hosts</SelectItem>
+                      <SelectItem value="platform">Sort by Platform</SelectItem>
+                    </SelectContent>
+                  </Select>
 
-                  <div className="flex-1" />
+                  <div className="flex items-center gap-2"></div>
 
                   <div className="text-xs text-muted-foreground">
                     Showing{' '}
@@ -788,9 +768,9 @@ export default function App() {
           </div>
 
           {/* Sorting indicator */}
-          <p className="text-sm text-muted-foreground">
+          {/* <p className="text-sm text-muted-foreground">
             Sorted by {sortMode === 'title' ? 'Title' : 'Host'}
-          </p>
+          </p> */}
 
           {/* Show cards */}
           <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 items-stretch">
@@ -846,8 +826,8 @@ export default function App() {
             overflow-hidden
             flex flex-col
           "
-                    initial={{ scale: 0.95, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
                     transition={{ duration: 0.15, ease: 'easeOut' }}
                     onClick={(e) => e.stopPropagation()}
                   >
@@ -859,7 +839,7 @@ export default function App() {
                             programData.program.thumbnail ??
                             '/placeholders/show-placeholder.png'
                           }
-                          className="w-full h-full object-cover opacity-30 blur-sm scale-105"
+                          className="w-full h-full object-cover opacity-20"
                         />
                       </div>
 
@@ -1054,7 +1034,7 @@ export default function App() {
                           </div>
 
                           <div className="space-y-3">
-                            {programData.episodes.map((ep, index) => (
+                            {programData.episodes.map((ep) => (
                               <div
                                 key={ep.id}
                                 className="
@@ -1144,7 +1124,7 @@ export default function App() {
           {statsOpen && (
             <motion.div
               className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
-              //initial={{ opacity: 0 }}
+              initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={(e) => {
@@ -1154,8 +1134,8 @@ export default function App() {
             >
               <motion.div
                 className="max-w-lg w-full rounded-2xl bg-background p-6 shadow-xl"
-                //initial={{ scale: 0.95, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ duration: 0.15, ease: 'easeOut' }}
                 onClick={(e) => e.stopPropagation()}
               >
@@ -1169,7 +1149,7 @@ export default function App() {
                     <span className="font-medium">{stats.totalPrograms}</span>
                   </div>
 
-                  <div className="flex justify-between">
+                  {/* <div className="flex justify-between">
                     <span className="text-muted-foreground">
                       Episodes listened
                     </span>
@@ -1224,7 +1204,7 @@ export default function App() {
                         {stats.statusCounts.dropped}
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="grid grid-cols-2 gap-2">
@@ -1268,8 +1248,8 @@ export default function App() {
             >
               <motion.div
                 className="max-w-lg w-full rounded-2xl bg-background p-6 shadow-xl"
-                initial={{ scale: 0.95, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ duration: 0.15, ease: 'easeOut' }}
                 onClick={(e) => e.stopPropagation()}
               >
@@ -1352,8 +1332,8 @@ export default function App() {
             >
               <motion.div
                 className="max-w-lg w-full rounded-2xl bg-background p-6 shadow-xl"
-                initial={{ scale: 0.95, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ duration: 0.15, ease: 'easeOut' }}
                 onClick={(e) => e.stopPropagation()}
               >
