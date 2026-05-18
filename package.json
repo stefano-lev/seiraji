@@ -4,9 +4,9 @@
   "description": "A modern React + TypeScript web app for tracking Japanese seiyuu radio shows, including listening status, episode progress, and personal backlog. All stored locally in the browser.",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
-    "client": "npm run dev --prefix client",
-    "server": "npm run dev --prefix server",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "npm run dev --prefix client",
+    "dev:server": "npm run dev --prefix server",
     "seed": "npm run seed --prefix server"
   },
   "repository": {

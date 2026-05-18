@@ -10,7 +10,11 @@ import libraryRoutes from './routes/library';
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ['http://localhost:5173', 'https://stef-lev.xyz/'],
+  })
+);
 app.use(express.json());
 
 app.use('/api/audee', audeeRoutes);
@@ -23,8 +27,12 @@ app.use('/api/youtube', youtubeRoutes);
 
 app.use('/api/library', libraryRoutes);
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
+});
+
+app.get('/health', (_, res) => {
+  res.json({ ok: true });
 });

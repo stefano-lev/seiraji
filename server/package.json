@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-	"seed": "ts-node src/scripts/import-sources.ts"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "seed": "ts-node src/scripts/import-sources.ts"
   },
   "keywords": [],
   "author": "",
