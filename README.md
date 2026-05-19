@@ -9,7 +9,7 @@ Live Demo hosted at: https://seiraji.stef-lev.xyz/
 ## Features
 
 - Track radio shows with title, hosts, frequency, and episode count
-- Add, edit, and delete shows
+- Automatically import/scrape metadata from external host sites
 - Track listening status
 - Search and filter shows
 
@@ -19,24 +19,25 @@ Live Demo hosted at: https://seiraji.stef-lev.xyz/
 - **TypeScript**
 - **Tailwind CSS**
 - **shadcn/ui**
+- **Express/Node**
 
 ## Screenshots
 
-### Main View
+### Main Library View
 
-![Main View](./screenshots/main.png)
+![Main Library View](./screenshots/main.png)
 
-### Edit Show Modal
+### YouTube Playlist Support
 
-![Edit Modal](./screenshots/edit-modal.png)
+![YouTube Playlist Modal](./screenshots/youtube-modal.png)
+
+### Support for multiple Japanese online radio platforms (Audee, Onsen, Qlover, etc.)
+
+![Qlover Platform Modal](./screenshots/qlover-modal.png)
 
 ### Stats Modal
 
 ![Stats Modal](./screenshots/stats-modal.png)
-
-### Preferences Modal
-
-![Prefs Modal](./screenshots/pref-modal.png)
 
 ### History Modal
 
@@ -44,7 +45,6 @@ Live Demo hosted at: https://seiraji.stef-lev.xyz/
 
 ## Future Plans
 
-- Automatically retrieve and fill show data from supported radio platform URLs (radiko, audee, joqr, etc.)
 - Account registration support to sync list data between sessions
 - Native mobile support
 - Support for multiple languages
