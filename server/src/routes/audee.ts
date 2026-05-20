@@ -1,4 +1,5 @@
 import express from 'express';
+import { requireAdmin } from '../middleware/admin';
 
 import { scrapeAudee } from '../services/scrapeAudee';
 
@@ -6,7 +7,7 @@ import { readCache, writeCache } from '../utils/cache';
 
 const router = express.Router();
 
-router.post('/import', async (req, res) => {
+router.post('/import', requireAdmin, async (req, res) => {
   try {
     const url = req.body?.url;
 

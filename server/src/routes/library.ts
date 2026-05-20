@@ -1,6 +1,7 @@
 import express from 'express';
+import { requireAdmin } from '../middleware/admin';
 
-import { readCache } from '../utils/cache';
+import { readCache, deleteCacheEntry } from '../utils/cache';
 
 const router = express.Router();
 
@@ -29,6 +30,41 @@ router.get('/all', async (_, res) => {
 
     res.status(500).json({
       error: 'Failed to load library',
+    });
+  }
+});
+
+router.delete('/:platform/:id', requireAdmin, async (req, res) => {
+  try {
+    const platform = String(req.params.platform);
+    const id = String(req.params.id);
+
+    const cacheMap: Record<string, string> = {
+      audee: 'audee-programs.json',
+      youtube: 'youtube-playlists.json',
+      onsen: 'onsen-programs.json',
+      qlover: 'qlover-programs.json',
+    };
+
+    const filename = cacheMap[platform];
+
+    if (!filename) {
+      return res.status(400).json({
+        error: 'Invalid platform',
+      });
+    }
+
+    await deleteCacheEntry(filename, id);
+
+    res.json({
+      success: true,
+      deleted: id,
+    });
+  } catch (error) {
+    console.error(error);
+
+    res.status(500).json({
+      error: 'Failed to delete program',
     });
   }
 });

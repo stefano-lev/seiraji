@@ -24,3 +24,31 @@ export async function writeCache(filename: string, cache: any) {
 
   await fs.writeFile(cachePath, JSON.stringify(cache, null, 2));
 }
+
+export async function deleteCacheEntry(filename: string, programId: string) {
+  const cache = await readCache(filename);
+
+  if (!cache[programId]) {
+    throw new Error('Program not found');
+  }
+
+  delete cache[programId];
+
+  await writeCache(filename, cache);
+}
+
+export async function getAllCaches() {
+  const [audee, youtube, onsen, qlover] = await Promise.all([
+    readCache('audee-programs.json'),
+    readCache('youtube-playlists.json'),
+    readCache('onsen-programs.json'),
+    readCache('qlover-programs.json'),
+  ]);
+
+  return {
+    audee,
+    youtube,
+    onsen,
+    qlover,
+  };
+}
