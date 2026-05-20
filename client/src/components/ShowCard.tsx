@@ -79,11 +79,11 @@ export const ShowCard = React.memo(function ShowCard({
           onTogglePinned(program.id);
         }}
         className="
-    absolute top-1 left-1
-  text-yellow-500 text-xl
-    opacity-0 group-hover:opacity-100
-    transition-opacity
-  "
+          absolute top-1 left-1
+        text-yellow-500 text-xl
+          opacity-0 group-hover:opacity-100
+          transition-opacity
+        "
       >
         {state.isPinned ? '★' : '☆'}
       </button>

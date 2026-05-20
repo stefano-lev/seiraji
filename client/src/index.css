@@ -143,3 +143,11 @@
   scrollbar-width: thin;
   scrollbar-color: #3f3f46 #18181b;
 }
+
+html {
+  overflow-y: auto;
+}
+
+body {
+  overflow-x: hidden;
+}

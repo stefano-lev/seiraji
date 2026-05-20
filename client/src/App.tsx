@@ -1,22 +1,28 @@
 import type React from 'react';
+import { motion } from 'framer-motion';
 
 import { useEffect, useState, useRef, useMemo } from 'react';
 import { Button } from './components/ui/button';
 
-import { motion } from 'framer-motion';
+import { defaultPrograms } from '@/data/demoPrograms';
 
-import { defaultPrograms, demoUserState } from '@/data/demoPrograms';
-
-import { ShowCard } from '@/components/ShowCard';
 import type { Program } from './types/media';
 import type { UserProgramState } from './types/user';
 
-import { loadActivity, saveActivity, appendActivityEvent } from '@/lib/storage';
-import type { ActivityEvent } from '@/lib/storage';
-import { loadTags, saveTags, upsertTag } from '@/lib/storage';
-import { loadPrefs, savePrefs } from '@/lib/storage';
-
-import { loadUserState, saveUserState } from '@/lib/storage';
+import type {} from '@/lib/storage';
+import {
+  loadActivity,
+  saveActivity,
+  ActivityEvent,
+  appendActivityEvent,
+  loadTags,
+  saveTags,
+  upsertTag,
+  loadPrefs,
+  savePrefs,
+  loadUserState,
+  saveUserState,
+} from '@/lib/storage';
 
 //import { processImageFile } from '@/lib/image';
 
@@ -25,25 +31,19 @@ import { getLibrary } from './lib/api';
 import { calculateStats } from '@/lib/stats';
 
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
-
-import { Switch } from '@/components/ui/switch';
-
-import { Input } from '@/components/ui/input';
-
-import { Badge } from '@/components/ui/badge';
-
-import {
   buildExportPayload,
   downloadJson,
   isExportPayload,
   readJsonFile,
 } from '@/lib/storage';
+
+import { TopNav } from './components/layout/TopNav';
+import { ProgramGrid } from './components/layout/ProgramGrid';
+import { ProgramFilters } from './components/layout/TopFilters';
+import { StatsModal } from './components/modals/StatsModal';
+import { HistoryModal } from './components/modals/HistoryModal';
+import { ProgramModal } from './components/modals/ProgramModal';
+import { PreferencesModal } from './components/modals/PreferencesModal';
 
 type SortMode = 'title' | 'host' | 'platform';
 
@@ -393,28 +393,27 @@ export default function App() {
       .filter((program) => {
         const query = searchQuery.toLowerCase();
 
+        const hosts = Array.isArray(program.program.hosts)
+          ? program.program.hosts
+          : [];
+
         const matchesSearch =
           program.program.title.toLowerCase().includes(query) ||
-          (program.program.hosts ?? []).some((h) =>
-            h.toLowerCase().includes(query)
-          );
+          hosts.some((h) => h.toLowerCase().includes(query));
 
         if (!matchesSearch) return false;
 
         const state = userState.find((s) => s.programId === program.id);
 
-        // status filter
         if (statusFilter !== 'all') {
           if (state?.status !== statusFilter) return false;
         }
 
-        // tag filter
         if (tagFilter !== 'all') {
           const programTags = state?.tags ?? [];
           if (!programTags.includes(tagFilter)) return false;
         }
 
-        // pinned only filter
         if (pinnedOnly) {
           if (!state?.isPinned) return false;
         }
@@ -439,8 +438,12 @@ export default function App() {
           return a.platform.localeCompare(b.platform, 'ja');
         }
 
-        const aHost = a.program.hosts?.[0] ?? '';
-        const bHost = b.program.hosts?.[0] ?? '';
+        const aHosts = Array.isArray(a.program.hosts) ? a.program.hosts : [];
+
+        const bHosts = Array.isArray(b.program.hosts) ? b.program.hosts : [];
+
+        const aHost = aHosts[0] ?? '';
+        const bHost = bHosts[0] ?? '';
 
         return aHost.localeCompare(bHost, 'ja');
       });
@@ -482,85 +485,15 @@ export default function App() {
     <div className={dark ? 'dark' : ''}>
       <div className="app-bg min-h-screen bg-background text-foreground">
         <div className="mx-auto w-full max-w-[1800px] px-4 sm:px-6 lg:px-8 pb-16">
-          {/* Top Nav */}
-          <div className="sticky top-0 z-40 pt-4">
-            <div
-              className="
-      rounded-2xl border border-border/60
-      bg-background/95
-      shadow-sm
-    "
-            >
-              <div className="flex flex-col gap-3 p-4 sm:flex-row sm:items-center sm:justify-between">
-                {/* Logo */}
-                <button
-                  className="text-left"
-                  onClick={() => {
-                    setSelectedProgram(null);
-                    setEditDraft(null);
-                  }}
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="h-10 w-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
-                      <span className="text-lg font-bold">声</span>
-                    </div>
-
-                    <div className="leading-tight">
-                      <div className="text-base font-semibold">
-                        SeiRaji (Beta)
-                      </div>
-                      <div className="text-xs text-muted-foreground">
-                        Your episodes, progress, & backlog in one place.
-                      </div>
-                    </div>
-                  </div>
-                </button>
-
-                {/* Actions */}
-                <div className="flex flex-wrap gap-2 justify-start sm:justify-end">
-                  <Button
-                    variant="secondary"
-                    onClick={() => setStatsOpen(true)}
-                  >
-                    Stats
-                  </Button>
-                  <Button
-                    variant="secondary"
-                    onClick={() => setHistoryOpen(true)}
-                  >
-                    History
-                  </Button>
-                  <Button
-                    variant="secondary"
-                    onClick={() => setPrefsOpen(true)}
-                  >
-                    Preferences
-                  </Button>
-
-                  <div className="w-full sm:w-auto h-px sm:h-auto bg-border/60 mx-0 sm:mx-1" />
-
-                  {/* <Button variant="secondary" onClick={handleExport}>
-                    Export
-                  </Button>
-                  <Button
-                    variant="secondary"
-                    onClick={() => importInputRef.current?.click()}
-                  >
-                    Import
-                  </Button> */}
-
-                  {/* <Button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setDark(!dark);
-                    }}
-                  >
-                    {dark ? 'Light' : 'Dark'}
-                  </Button> */}
-                </div>
-              </div>
-            </div>
-          </div>
+          <TopNav
+            onOpenStats={() => setStatsOpen(true)}
+            onOpenHistory={() => setHistoryOpen(true)}
+            onOpenPrefs={() => setPrefsOpen(true)}
+            onResetSelection={() => {
+              setSelectedProgram(null);
+              setEditDraft(null);
+            }}
+          />
 
           <input
             ref={importInputRef}
@@ -608,879 +541,91 @@ export default function App() {
           )}
 
           {/* Controls */}
-          <div className="mt-4">
-            <div className="rounded-2xl border border-border/60 bg-background/95 shadow-sm">
-              <div className="p-4 flex flex-col gap-3">
-                <div className="flex flex-col md:flex-row md:items-center gap-3 md:justify-between">
-                  {/* Search */}
-                  <Input
-                    ref={searchRef}
-                    placeholder="Search programs..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full md:max-w-sm bg-background/80"
-                  />
-                  {isDemo && (
-                    <Button
-                      onClick={(e) => {
-                        e.stopPropagation();
+          <ProgramFilters
+            searchRef={searchRef}
+            searchQuery={searchQuery}
+            onSearchQueryChange={setSearchQuery}
+            isDemo={isDemo}
+            onEndDemo={() => {
+              const ok = window.confirm(
+                'End the Demo and start fresh?\n(This cannot be undone!)'
+              );
 
-                        const ok = window.confirm(
-                          'End the Demo and start fresh?\n(This cannot be undone!)'
-                        );
-                        if (!ok) return;
+              if (!ok) return;
 
-                        startFresh();
-                      }}
-                    >
-                      End Demo
-                    </Button>
-                  )}
-
-                  {/* Sort + Add */}
-                  <div className="flex flex-wrap gap-2 justify-end sm:justify-end">
-                    <Button
-                      variant={pinnedOnly ? 'default' : 'secondary'}
-                      onClick={() => setPinnedOnly(!pinnedOnly)}
-                    >
-                      ★ Pinned
-                    </Button>
-
-                    {/* <Button
-                      variant={sortMode === 'title' ? 'default' : 'secondary'}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setSortMode('title');
-                      }}
-                    >
-                      Title
-                    </Button>
-
-                    <Button
-                      variant={sortMode === 'host' ? 'default' : 'secondary'}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setSortMode('host');
-                      }}
-                    >
-                      Host
-                    </Button>
-
-                    <Button
-                      variant={
-                        sortMode === 'platform' ? 'default' : 'secondary'
-                      }
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setSortMode('platform');
-                      }}
-                    >
-                      Platform
-                    </Button> */}
-
-                    {/* <Button
-                      onClick={() => {
-                        const newProgram: Program = {
-                          id: crypto.randomUUID(),
-                          title: 'New Show',
-                          hosts: ['Unknown'],
-                          startDate: '',
-                          frequency: 'weekly',
-                          bannerUrl: '',
-                          totalEpisodes: 0,
-                          episodeDurationMinutes: 30,
-                        };
-                        addShow(newProgram);
-                        setSelectedProgram(newProgram);
-                        setEditDraft(newProgram);
-                      }}
-                    >
-                      + Add Show
-                    </Button> */}
-                  </div>
-                </div>
-
-                {/* Filters row */}
-                <div className="flex flex-col sm:flex-row gap-2 sm:items-center">
-                  <Select
-                    value={statusFilter}
-                    onValueChange={(v) =>
-                      setStatusFilter(v as typeof statusFilter)
-                    }
-                  >
-                    <SelectTrigger className="w-full sm:w-[200px]">
-                      <SelectValue placeholder="All statuses" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="all">All statuses</SelectItem>
-                      <SelectItem value="listening">Listening</SelectItem>
-                      <SelectItem value="backlog">Backlog</SelectItem>
-                      <SelectItem value="completed">Completed</SelectItem>
-                      <SelectItem value="dropped">Dropped</SelectItem>
-                    </SelectContent>
-                  </Select>
-
-                  <Select
-                    value={tagFilter}
-                    onValueChange={(v) => setTagFilter(v === 'all' ? 'all' : v)}
-                  >
-                    <SelectTrigger className="w-full sm:w-[200px]">
-                      <SelectValue placeholder="All tags" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="all">All tags</SelectItem>
-                      {tags.map((t) => (
-                        <SelectItem key={t} value={t}>
-                          #{t}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-
-                  <Select
-                    value={sortMode}
-                    onValueChange={(v) => setSortMode(v as typeof sortMode)}
-                  >
-                    <SelectTrigger className="w-full sm:w-[200px]">
-                      <SelectValue placeholder="Sort by Title" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="title">Sort by Title</SelectItem>
-                      <SelectItem value="host">Sort by Hosts</SelectItem>
-                      <SelectItem value="platform">Sort by Platform</SelectItem>
-                    </SelectContent>
-                  </Select>
-
-                  <div className="flex items-center gap-2"></div>
-
-                  <div className="text-xs text-muted-foreground">
-                    Showing{' '}
-                    <span className="font-medium text-foreground">
-                      {visiblePrograms.length}
-                    </span>{' '}
-                    / {programs.length}
-                  </div>
-                </div>
-
-                {tags.length > 0 && (
-                  <div className="flex flex-wrap gap-2 pt-1">
-                    <button
-                      className="cursor-pointer"
-                      onClick={() => setTagFilter('all')}
-                      type="button"
-                    >
-                      <Badge
-                        variant={tagFilter === 'all' ? 'default' : 'secondary'}
-                      >
-                        All
-                      </Badge>
-                    </button>
-
-                    {tags.slice(0, 12).map((t) => (
-                      <button
-                        key={t}
-                        className="cursor-pointer"
-                        onClick={() => setTagFilter(t)}
-                        type="button"
-                      >
-                        <Badge
-                          variant={tagFilter === t ? 'default' : 'secondary'}
-                        >
-                          #{t}
-                        </Badge>
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-
-          {/* Sorting indicator */}
-          {/* <p className="text-sm text-muted-foreground">
-            Sorted by {sortMode === 'title' ? 'Title' : 'Host'}
-          </p> */}
+              startFresh();
+            }}
+            pinnedOnly={pinnedOnly}
+            onTogglePinned={() => setPinnedOnly(!pinnedOnly)}
+            statusFilter={statusFilter}
+            onStatusFilterChange={setStatusFilter}
+            tagFilter={tagFilter}
+            onTagFilterChange={setTagFilter}
+            sortMode={sortMode}
+            onSortModeChange={setSortMode}
+            tags={tags}
+            visibleCount={visiblePrograms.length}
+            totalCount={programs.length}
+          />
 
           {/* Show cards */}
-          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 items-stretch">
-            {visiblePrograms.map((program) => (
-              <ShowCard
-                program={program}
-                userState={userState.find((s) => s.programId === program.id)}
-                onUpdate={updateProgramState}
-                onUpdateEpisode={updateEpisode}
-                onOpen={(program) => {
-                  setEditDraft(null);
-                  setSelectedProgram(program);
-
-                  const currentTags = getProgramState(program.id).tags ?? [];
-                  setTagDraft(currentTags.join(', '));
-                }}
-                onEdit={(program) => {
-                  setEditDraft(program);
-                  setSelectedProgram(program);
-
-                  const currentTags = getProgramState(program.id).tags ?? [];
-                  setTagDraft(currentTags.join(', '));
-                }}
-                onTogglePinned={togglePinned}
-                prefs={prefs}
-              />
-            ))}
-          </div>
-
-          {selectedProgram &&
-            (() => {
-              const programData = selectedProgram;
-
-              const currentState = getProgramState(programData.id);
-
-              const listenedCount = currentState.lastListenedEpisode ?? 0;
-
-              return (
-                <motion.div
-                  className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  onClick={() => {
-                    setSelectedProgram(null);
-                    setEditDraft(null);
-                  }}
-                >
-                  <motion.div
-                    className="
-            w-full max-w-6xl
-            h-[90vh]
-            rounded-3xl
-            border border-border/60
-            bg-background
-            shadow-2xl
-            overflow-hidden
-            flex flex-col
-          "
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.15, ease: 'easeOut' }}
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    {/* HERO HEADER */}
-                    <div className="relative">
-                      <div className="h-52 w-full bg-muted overflow-hidden">
-                        <img
-                          src={
-                            programData.program.thumbnail ??
-                            '/placeholders/show-placeholder.png'
-                          }
-                          className="w-full h-full object-cover opacity-20"
-                        />
-                      </div>
-
-                      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent" />
-
-                      <div className="absolute bottom-0 left-0 right-0 p-6 flex gap-6">
-                        <img
-                          src={
-                            programData.program.thumbnail ??
-                            '/placeholders/show-placeholder.png'
-                          }
-                          className="
-                          w-36 h-36
-                          rounded-2xl
-                          object-cover
-                          border border-border
-                          shadow-xl
-                          shrink-0
-                        "
-                        />
-
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-start justify-between gap-4">
-                            <div>
-                              <h2 className="text-3xl font-bold leading-tight">
-                                {programData.program.title}
-                              </h2>
-
-                              <p className="text-muted-foreground mt-2">
-                                {(programData.program.hosts ?? []) ||
-                                  'Unknown host'}
-                              </p>
-
-                              <div className="flex flex-wrap gap-2 mt-4">
-                                <Badge>{programData.platform}</Badge>
-
-                                {programData.program.categories?.map((c) => (
-                                  <Badge key={c} variant="secondary">
-                                    {c}
-                                  </Badge>
-                                ))}
-                              </div>
-                            </div>
-
-                            <Button
-                              variant="secondary"
-                              onClick={() => setSelectedProgram(null)}
-                            >
-                              Close
-                            </Button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* CONTENT */}
-                    <div className="flex-1 overflow-hidden">
-                      <div className="grid grid-cols-1 xl:grid-cols-[380px_1fr] h-full">
-                        {/* SIDEBAR */}
-                        <div className="border-r border-border/60 p-6 overflow-y-auto">
-                          <div className="space-y-6">
-                            {/* DESCRIPTION */}
-                            <div>
-                              <h3 className="font-semibold mb-2">
-                                Description
-                              </h3>
-
-                              <p className="text-sm text-muted-foreground leading-relaxed">
-                                {programData.program.description ??
-                                  'No description available.'}
-                              </p>
-                            </div>
-
-                            {/* PROGRAM META */}
-                            <div className="space-y-3">
-                              <h3 className="font-semibold">Program Info</h3>
-
-                              <div className="rounded-2xl border border-border/60 p-4 space-y-3 text-sm">
-                                <div className="flex justify-between gap-3">
-                                  <span className="text-muted-foreground">
-                                    Episodes
-                                  </span>
-                                  <span>{programData.meta.episodeCount}</span>
-                                </div>
-
-                                <div className="flex justify-between gap-3">
-                                  <span className="text-muted-foreground">
-                                    Source
-                                  </span>
-                                  <span>{programData.source}</span>
-                                </div>
-
-                                <div className="flex justify-between gap-3">
-                                  <span className="text-muted-foreground">
-                                    Platform
-                                  </span>
-                                  <span>{programData.platform}</span>
-                                </div>
-
-                                <div className="flex justify-between gap-3">
-                                  <span className="text-muted-foreground">
-                                    Cached
-                                  </span>
-                                  <span>
-                                    {new Date(
-                                      programData.meta.cachedAt
-                                    ).toLocaleDateString()}
-                                  </span>
-                                </div>
-
-                                {programData.program.schedule && (
-                                  <div className="flex justify-between gap-3">
-                                    <span className="text-muted-foreground">
-                                      Schedule
-                                    </span>
-                                    <span>{programData.program.schedule}</span>
-                                  </div>
-                                )}
-                              </div>
-                            </div>
-
-                            {/* USER TAGS */}
-                            <div>
-                              <h3 className="font-semibold mb-2">Your Tags</h3>
-
-                              <Input
-                                type="text"
-                                placeholder="anime, comfy, comedy"
-                                value={tagDraft}
-                                onChange={(e) => setTagDraft(e.target.value)}
-                                onBlur={() => {
-                                  const raw = tagDraft
-                                    .split(',')
-                                    .map((t) => t.trim())
-                                    .filter(Boolean);
-
-                                  const normalized = Array.from(
-                                    new Set(raw.map((t) => t.toLowerCase()))
-                                  );
-
-                                  const current = getProgramState(
-                                    selectedProgram!.id
-                                  );
-
-                                  updateProgramState({
-                                    ...current,
-                                    tags: normalized,
-                                  });
-
-                                  setTagDraft(normalized.join(', '));
-                                }}
-                              />
-
-                              <div className="flex flex-wrap gap-2 mt-3">
-                                {(
-                                  getProgramState(programData.id).tags ?? []
-                                ).map((tag) => (
-                                  <Badge key={tag} variant="outline">
-                                    #{tag}
-                                  </Badge>
-                                ))}
-                              </div>
-                            </div>
-
-                            {/* EXTERNAL LINK */}
-                            <div>
-                              <Button
-                                className="w-full"
-                                variant="secondary"
-                                onClick={() =>
-                                  window.open(programData.url, '_blank')
-                                }
-                              >
-                                Open Source Page
-                              </Button>
-                            </div>
-                          </div>
-                        </div>
-
-                        {/* EPISODES */}
-                        <div className="overflow-y-auto p-6">
-                          <div className="flex items-center justify-between mb-5">
-                            <div>
-                              <h3 className="text-xl font-semibold">
-                                Episodes
-                              </h3>
-
-                              <p className="text-sm text-muted-foreground">
-                                {programData.episodes.length} episodes available
-                              </p>
-                            </div>
-                          </div>
-
-                          <div className="space-y-3">
-                            {programData.episodes.map((ep, index) => {
-                              const isCompleted = index < listenedCount;
-
-                              return (
-                                <div
-                                  key={ep.id}
-                                  className={`
-                                    rounded-2xl border p-4 transition-colors
-                                    ${
-                                      isCompleted
-                                        ? 'border-green-500/30 bg-green-500/5'
-                                        : 'border-border/60 hover:bg-muted/40'
-                                    }
-                                  `}
-                                >
-                                  <div className="flex gap-4">
-                                    <img
-                                      loading="lazy"
-                                      decoding="async"
-                                      src={
-                                        ep.thumbnail ??
-                                        programData.program.thumbnail ??
-                                        '/placeholders/show-placeholder.png'
-                                      }
-                                      className="
-                                        w-36 h-20
-                                        rounded-xl
-                                        object-cover
-                                        bg-muted
-                                        shrink-0
-                                      "
-                                    />
-
-                                    <div className="min-w-0 flex-1">
-                                      <div className="flex items-start justify-between gap-4">
-                                        <div>
-                                          <div className="flex items-center gap-2">
-                                            <h4 className="font-medium leading-snug">
-                                              {ep.title}
-                                            </h4>
-
-                                            {isCompleted && (
-                                              <div
-                                                className="
-                                                  h-5 w-5 rounded-full
-                                                  bg-green-500/15
-                                                  border border-green-500/30
-                                                  flex items-center justify-center
-                                                  text-[11px]
-                                                  text-green-400
-                                                  shrink-0
-                                                "
-                                              >
-                                                ✓
-                                              </div>
-                                            )}
-                                          </div>
-
-                                          {ep.publishedAt ? (
-                                            <p className="text-xs text-muted-foreground mt-1">
-                                              {new Date(
-                                                ep.publishedAt
-                                              ).toLocaleDateString()}
-                                            </p>
-                                          ) : (
-                                            <p className="text-xs text-muted-foreground mt-1">
-                                              {ep.platformMetadata
-                                                ?.displayDate ?? 'Unknown date'}
-                                            </p>
-                                          )}
-                                        </div>
-
-                                        {ep.durationSeconds && (
-                                          <Badge variant="outline">
-                                            {Math.floor(
-                                              ep.durationSeconds / 60
-                                            )}
-                                            m
-                                          </Badge>
-                                        )}
-                                      </div>
-
-                                      {ep.description && (
-                                        <p className="text-sm text-muted-foreground mt-3 line-clamp-3">
-                                          {ep.description}
-                                        </p>
-                                      )}
-
-                                      {ep.tags && ep.tags.length > 0 && (
-                                        <div className="flex flex-wrap gap-2 mt-3">
-                                          {ep.tags.slice(0, 6).map((tag) => (
-                                            <Badge
-                                              key={tag}
-                                              variant="secondary"
-                                              className="text-xs"
-                                            >
-                                              {tag}
-                                            </Badge>
-                                          ))}
-
-                                          {ep.tags.length > 6 && (
-                                            <Badge
-                                              variant="outline"
-                                              className="text-xs"
-                                            >
-                                              +{ep.tags.length - 6} more
-                                            </Badge>
-                                          )}
-                                        </div>
-                                      )}
-                                    </div>
-                                  </div>
-                                </div>
-                              );
-                            })}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </motion.div>
-                </motion.div>
-              );
-            })()}
-
-          {statsOpen && (
-            <motion.div
-              className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={(e) => {
-                e.stopPropagation();
-                setStatsOpen(false);
-              }}
-            >
-              <motion.div
-                className="max-w-lg w-full rounded-2xl bg-background p-6 shadow-xl"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.15, ease: 'easeOut' }}
-                onClick={(e) => e.stopPropagation()}
-              >
-                <h2 className="text-xl font-semibold mb-4">Stats</h2>
-
-                <div className="space-y-3 text-sm">
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">
-                      Total programs
-                    </span>
-                    <span className="font-medium">{stats.totalPrograms}</span>
-                  </div>
-
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">
-                      Episodes listened
-                    </span>
-                    <span className="font-medium">
-                      {stats.totalEpisodesListened}
-                    </span>
-                  </div>
-
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">
-                      Approx time listened
-                    </span>
-                    <span className="font-medium">
-                      {Math.round(stats.totalListenedDuration / 3600)} hrs
-                    </span>
-                  </div>
-
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">
-                      Completion (approx)
-                    </span>
-                    <span className="font-medium">{stats.completionPct}%</span>
-                  </div>
-
-                  <hr className="my-3 border-border/60" />
-
-                  <div className="grid grid-cols-2 gap-2">
-                    <div className="rounded-xl border p-3">
-                      <div className="text-muted-foreground">Listening</div>
-                      <div className="text-lg font-semibold">
-                        {stats.statusCounts.listening}
-                      </div>
-                    </div>
-
-                    <div className="rounded-xl border p-3">
-                      <div className="text-muted-foreground">Backlog</div>
-                      <div className="text-lg font-semibold">
-                        {stats.statusCounts.backlog}
-                      </div>
-                    </div>
-
-                    <div className="rounded-xl border p-3">
-                      <div className="text-muted-foreground">Completed</div>
-                      <div className="text-lg font-semibold">
-                        {stats.statusCounts.completed}
-                      </div>
-                    </div>
-
-                    <div className="rounded-xl border p-3">
-                      <div className="text-muted-foreground">Dropped</div>
-                      <div className="text-lg font-semibold">
-                        {stats.statusCounts.dropped}
-                      </div>
-                    </div>
-                  </div>
-
-                  <hr className="my-3 border-border/60" />
-
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">
-                      Total Library Duration
-                    </span>
-                    <span className="font-medium">
-                      {Math.round(stats.totalLibraryDuration / 3600)} hrs
-                    </span>
-                  </div>
-
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">
-                      Total Library Episode Count
-                    </span>
-                    <span className="font-medium">{stats.totalEpisodes}</span>
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 gap-2">
-                  <div className="bg-red hover:bg-red mt-6 flex justify-start">
-                    <details className="mt-4">
-                      <summary className="cursor-pointer text-red-600">
-                        ⚠️ Danger Zone ⚠️
-                      </summary>
-                      <Button
-                        className="mt-2 bg-red-600 hover:bg-red-700 text-white"
-                        onClick={deleteAllTags}
-                      >
-                        Delete All Tags
-                      </Button>
-
-                      <Button
-                        className="mt-2 bg-red-600 hover:bg-red-700 text-white"
-                        onClick={deleteAllData}
-                      >
-                        Delete All Data
-                      </Button>
-                    </details>
-                  </div>
-                  <div className="mt-6 flex justify-end">
-                    <Button onClick={() => setStatsOpen(false)}>Close</Button>
-                  </div>
-                </div>
-              </motion.div>
-            </motion.div>
-          )}
-          {historyOpen && (
-            <motion.div
-              className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={(e) => {
-                e.stopPropagation();
-                setHistoryOpen(false);
-              }}
-            >
-              <motion.div
-                className="max-w-lg w-full rounded-2xl bg-background p-6 shadow-xl"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.15, ease: 'easeOut' }}
-                onClick={(e) => e.stopPropagation()}
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <h2 className="text-xl font-semibold">History</h2>
-
-                  <div className="mt-6 flex justify-end">
-                    <Button onClick={() => setHistoryOpen(false)}>Close</Button>
-                  </div>
-                </div>
-                {activity.length === 0 ? (
-                  <p className="text-sm text-muted-foreground">
-                    No activity yet
-                  </p>
-                ) : (
-                  <div className="space-y-2 max-h-[60vh] overflow-auto pr-1">
-                    {activity.map((ev) => {
-                      if (ev.type !== 'episode_progress') return null;
-
-                      const title = getShowTitle(ev.programId);
-                      const deltaLabel =
-                        ev.delta > 0 ? `+${ev.delta}` : `${ev.delta}`;
-
-                      return (
-                        <div
-                          key={ev.id}
-                          className="rounded-xl border border-border/60 p-3"
-                        >
-                          <div className="flex items-start justify-between gap-3">
-                            <div className="min-w-0">
-                              <div className="font-medium truncate">
-                                {title}
-                              </div>
-
-                              <div className="text-sm text-muted-foreground">
-                                Episode {ev.episode}{' '}
-                                <span className="ml-2 font-medium text-foreground">
-                                  ({deltaLabel})
-                                </span>
-                              </div>
-                            </div>
-
-                            <div className="text-xs text-muted-foreground whitespace-nowrap">
-                              {timeAgo(ev.ts, now)}
-                            </div>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                )}
-                <div className="mt-6 flex justify-end">
-                  <Button
-                    variant="secondary"
-                    onClick={() => {
-                      const ok = window.confirm(
-                        'Clear your activity history?\n(This cannot be undone.)'
-                      );
-                      if (!ok) return;
-                      setActivity([]);
-                    }}
-                  >
-                    Clear
-                  </Button>
-                </div>
-              </motion.div>
-            </motion.div>
-          )}
-
-          {prefsOpen && (
-            <motion.div
-              className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={(e) => {
-                e.stopPropagation();
-                setPrefsOpen(false);
-              }}
-            >
-              <motion.div
-                className="max-w-lg w-full rounded-2xl bg-background p-6 shadow-xl"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.15, ease: 'easeOut' }}
-                onClick={(e) => e.stopPropagation()}
-              >
-                <h2 className="text-xl font-semibold mb-4">Preferences</h2>
-
-                <div className="flex items-center justify-between gap-3 rounded-xl border border-border/60 p-3">
-                  <div>
-                    <div className="font-medium">Show status</div>
-                    <div className="text-xs text-muted-foreground">
-                      Display listening/backlog/etc on show cards
-                    </div>
-                  </div>
-                  <Switch
-                    checked={prefs.showStatusOnCard}
-                    onCheckedChange={(checked) =>
-                      setPrefs((p) => ({ ...p, showStatusOnCard: checked }))
-                    }
-                  />
-                </div>
-
-                <div className="flex items-center justify-between gap-3 rounded-xl border border-border/60 p-3">
-                  <div>
-                    <div className="font-medium">Show history</div>
-                    <div className="text-xs text-muted-foreground">
-                      Show last episode on cards
-                    </div>
-                  </div>
-                  <Switch
-                    checked={prefs.showLastEpisodeOnCard}
-                    onCheckedChange={(checked) =>
-                      setPrefs((p) => ({
-                        ...p,
-                        showLastEpisodeOnCard: checked,
-                      }))
-                    }
-                  />
-                </div>
-
-                <div className="flex items-center justify-between gap-3 rounded-xl border border-border/60 p-3">
-                  <div>
-                    <div className="font-medium">Show tags</div>
-                    <div className="text-xs text-muted-foreground">
-                      Display tags on show cards
-                    </div>
-                  </div>
-                  <Switch
-                    checked={prefs.showTagsOnCard}
-                    onCheckedChange={(checked) =>
-                      setPrefs((p) => ({ ...p, showTagsOnCard: checked }))
-                    }
-                  />
-                </div>
-
-                <div className="mt-6 flex justify-end">
-                  <Button onClick={() => setPrefsOpen(false)}>Close</Button>
-                </div>
-              </motion.div>
-            </motion.div>
-          )}
+          <ProgramGrid
+            programs={visiblePrograms}
+            userState={userState}
+            onUpdate={updateProgramState}
+            onUpdateEpisode={updateEpisode}
+            onOpen={(program) => {
+              setEditDraft(null);
+              setSelectedProgram(program);
+
+              const currentTags = getProgramState(program.id).tags ?? [];
+              setTagDraft(currentTags.join(', '));
+            }}
+            onEdit={(program) => {
+              setEditDraft(program);
+              setSelectedProgram(program);
+
+              const currentTags = getProgramState(program.id).tags ?? [];
+              setTagDraft(currentTags.join(', '));
+            }}
+            onTogglePinned={togglePinned}
+            prefs={prefs}
+          />
+
+          <ProgramModal
+            open={!!selectedProgram}
+            program={selectedProgram}
+            onClose={() => setSelectedProgram(null)}
+            getProgramState={getProgramState}
+            updateProgramState={updateProgramState}
+            tagDraft={tagDraft}
+            setTagDraft={setTagDraft}
+          />
+
+          <StatsModal
+            open={statsOpen}
+            onClose={() => setStatsOpen(false)}
+            stats={stats}
+            onDeleteAllTags={deleteAllTags}
+            onDeleteAllData={deleteAllData}
+          />
+
+          <HistoryModal
+            open={historyOpen}
+            onClose={() => setHistoryOpen(false)}
+            history={activity}
+            now={now}
+            getShowTitle={getShowTitle}
+            timeAgo={timeAgo}
+            onClearHistory={() => setActivity([])}
+          />
+
+          <PreferencesModal
+            open={prefsOpen}
+            onClose={() => setPrefsOpen(false)}
+            prefs={prefs}
+            setPrefs={setPrefs}
+          />
         </div>
       </div>
     </div>
