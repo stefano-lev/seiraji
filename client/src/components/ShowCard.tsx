@@ -1,4 +1,5 @@
 import type { Program } from '@/types/media';
+import type { Preferences } from '@/lib/storage';
 import type { UserProgramState } from '@/types/user';
 
 import { Badge } from './ui/badge';
@@ -23,11 +24,7 @@ type Props = {
   onEdit?: (program: Program) => void;
   onTogglePinned: (programId: string) => void;
 
-  prefs: {
-    showTagsOnCard: boolean;
-    showStatusOnCard: boolean;
-    showLastEpisodeOnCard: boolean;
-  };
+  prefs: Preferences;
 };
 
 export const ShowCard = React.memo(function ShowCard({
@@ -67,38 +64,40 @@ export const ShowCard = React.memo(function ShowCard({
   return (
     <Card
       onClick={() => onOpen?.(program)}
-      className="relative group hover:shadow-xl transition-shadow overflow-hidden"
+      className={`
+    relative group overflow-hidden transition-shadow hover:shadow-xl
+    ${prefs.compactCards ? 'p-2 max-w-[320px] mx-auto' : ''}
+  `}
     >
-      {state.isPinned && (
+      {!prefs.disablePinToTop && state.isPinned && (
         <div className="absolute top-1 left-1 text-yellow-500 text-xl">★</div>
       )}
 
-      <button
-        onClick={(e) => {
-          e.stopPropagation();
-          onTogglePinned(program.id);
-        }}
-        className="
-          absolute top-1 left-1
-        text-yellow-500 text-xl
-          opacity-0 group-hover:opacity-100
-          transition-opacity
-        "
-      >
-        {state.isPinned ? '★' : '☆'}
-      </button>
+      {!prefs.disablePinToTop && (
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            onTogglePinned(program.id);
+          }}
+          className="
+            absolute top-1 left-1
+            text-yellow-500 text-xl
+            opacity-0 group-hover:opacity-100
+            transition-opacity
+          "
+        >
+          {state.isPinned ? '★' : '☆'}
+        </button>
+      )}
 
       <CardHeader className="pb-3">
-        <div className="flex gap-4">
+        <div className={prefs.compactCards ? 'flex gap-2' : 'flex gap-4'}>
           <img
             src={thumbnail}
-            className="
-        h-16 w-24
-        rounded-xl
-        object-cover
-        bg-muted
-        shrink-0
-      "
+            className={`
+              rounded-xl object-cover bg-muted shrink-0
+              ${prefs.compactCards ? 'h-12 w-[72px]' : 'h-16 w-24'}
+            `}
           />
 
           <div className="min-w-0 flex-1">
@@ -114,53 +113,54 @@ export const ShowCard = React.memo(function ShowCard({
               </div>
             </div>
 
-            <div className="flex gap-1 mt-2 overflow-hidden">
-              <Badge variant="secondary">{program.platform}</Badge>
+            {!prefs.hideTagsOnCard && (
+              <div className="flex gap-1 mt-2 overflow-hidden">
+                <Badge variant="secondary">{program.platform}</Badge>
 
-              {program.program.categories?.[0] && (
-                <Badge variant="outline">{program.program.categories[0]}</Badge>
-              )}
-            </div>
+                {program.program.categories?.[0] && (
+                  <Badge variant="outline">
+                    {program.program.categories[0]}
+                  </Badge>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </CardHeader>
 
       <CardContent className="flex flex-col flex-1">
         <div className="mt-auto space-y-3">
-          {/* {program.program.description && (
-          <p className="text-xs text-muted-foreground line-clamp-3">
-            {program.program.description}
-          </p>
-        )} */}
-
-          {/* {latestEpisode && (
-          <div className="text-xs border-l pl-2 text-muted-foreground">
-            <div className="font-medium text-foreground">
-              Latest: {latestEpisode.title}
-            </div>
-            {latestEpisode.publishedAt && (
-              <div>
-                {new Date(latestEpisode.publishedAt).toLocaleDateString()}
+          {prefs.showLastEpisodeOnCard && latestEpisode && (
+            <div className="text-xs border-l pl-2 text-muted-foreground">
+              <div className="font-medium text-foreground">
+                Latest: {latestEpisode.title}
               </div>
-            )}
-          </div>
-        )} */}
 
-          <div>
-            <div className="flex justify-between text-xs text-muted-foreground">
-              <span>
-                Episode {lastEp} / {totalEpisodes || '?'}
-              </span>
-              <span>{Math.round(progressPct)}%</span>
+              {latestEpisode.publishedAt && (
+                <div>
+                  {new Date(latestEpisode.publishedAt).toLocaleDateString()}
+                </div>
+              )}
             </div>
+          )}
 
-            <div className="h-2 bg-muted rounded-full overflow-hidden mt-1">
-              <div
-                className="h-full bg-primary"
-                style={{ width: `${progressPct}%` }}
-              />
+          {!prefs.hideProgressBar && (
+            <div>
+              <div className="flex justify-between text-xs text-muted-foreground">
+                <span>
+                  Episode {lastEp} / {totalEpisodes || '?'}
+                </span>
+                <span>{Math.round(progressPct)}%</span>
+              </div>
+
+              <div className="h-2 bg-muted rounded-full overflow-hidden mt-1">
+                <div
+                  className="h-full bg-primary"
+                  style={{ width: `${progressPct}%` }}
+                />
+              </div>
             </div>
-          </div>
+          )}
 
           <div className="flex items-center gap-2">
             <Button
@@ -194,22 +194,29 @@ export const ShowCard = React.memo(function ShowCard({
             </Button>
           </div>
 
-          <Select
-            value={state.status}
-            onValueChange={(v) =>
-              onUpdate({ ...state, status: v as UserProgramState['status'] })
-            }
-          >
-            <SelectTrigger>
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="listening">Listening</SelectItem>
-              <SelectItem value="backlog">Backlog</SelectItem>
-              <SelectItem value="completed">Completed</SelectItem>
-              <SelectItem value="dropped">Dropped</SelectItem>
-            </SelectContent>
-          </Select>
+          {!prefs.hideStatusOnCard && (
+            <div onClick={(e) => e.stopPropagation()}>
+              <Select
+                value={state.status}
+                onValueChange={(v) =>
+                  onUpdate({
+                    ...state,
+                    status: v as UserProgramState['status'],
+                  })
+                }
+              >
+                <SelectTrigger>
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="listening">Listening</SelectItem>
+                  <SelectItem value="backlog">Backlog</SelectItem>
+                  <SelectItem value="completed">Completed</SelectItem>
+                  <SelectItem value="dropped">Dropped</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+          )}
         </div>
       </CardContent>
     </Card>

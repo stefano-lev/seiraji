@@ -39,15 +39,31 @@ export function appendActivityEvent(
 }
 
 export type Preferences = {
-  showTagsOnCard: boolean;
-  showStatusOnCard: boolean;
+  hideTagsOnCard: boolean;
+  hideStatusOnCard: boolean;
   showLastEpisodeOnCard: boolean;
+  hideDroppedPrograms: boolean;
+  hideCompletedEpisodes: boolean;
+  compactCards: boolean;
+  hideProgressBar: boolean;
+  hideCompletedPrograms: boolean;
+  disablePinToTop: boolean;
+  reverseEpisodeOrder: boolean;
+  hideEpisodeThumbnails: boolean;
 };
 
 export const defaultPrefs: Preferences = {
-  showTagsOnCard: true,
-  showStatusOnCard: true,
-  showLastEpisodeOnCard: true,
+  hideTagsOnCard: false,
+  hideStatusOnCard: false,
+  showLastEpisodeOnCard: false,
+  hideDroppedPrograms: false,
+  hideCompletedEpisodes: false,
+  compactCards: false,
+  hideProgressBar: false,
+  hideCompletedPrograms: false,
+  disablePinToTop: false,
+  reverseEpisodeOrder: false,
+  hideEpisodeThumbnails: false,
 };
 
 export function loadPrefs(): Preferences {

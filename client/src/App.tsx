@@ -405,6 +405,14 @@ export default function App() {
 
         const state = userState.find((s) => s.programId === program.id);
 
+        if (prefs.hideDroppedPrograms && state?.status === 'dropped') {
+          return false;
+        }
+
+        if (prefs.hideCompletedPrograms && state?.status === 'completed') {
+          return false;
+        }
+
         if (statusFilter !== 'all') {
           if (state?.status !== statusFilter) return false;
         }
@@ -428,7 +436,11 @@ export default function App() {
           ? 1
           : 0;
 
-        if (aPinned !== bPinned) return bPinned - aPinned;
+        if (!prefs.disablePinToTop) {
+          if (aPinned !== bPinned) {
+            return bPinned - aPinned;
+          }
+        }
 
         if (sortMode === 'title') {
           return a.program.title.localeCompare(b.program.title, 'ja');
@@ -455,6 +467,7 @@ export default function App() {
     statusFilter,
     tagFilter,
     pinnedOnly,
+    prefs,
   ]);
 
   const searchRef = useRef<HTMLInputElement | null>(null);
@@ -600,6 +613,7 @@ export default function App() {
             updateProgramState={updateProgramState}
             tagDraft={tagDraft}
             setTagDraft={setTagDraft}
+            prefs={prefs}
           />
 
           <StatsModal

@@ -5,6 +5,7 @@ import { Input } from '../ui/input';
 
 import type { Program } from '@/types/media';
 import type { UserProgramState } from '@/types/user';
+import { Preferences } from '@/lib/storage';
 
 type ProgramModalProps = {
   open: boolean;
@@ -17,6 +18,8 @@ type ProgramModalProps = {
 
   tagDraft: string;
   setTagDraft: (v: string) => void;
+
+  prefs: Preferences;
 };
 
 export function ProgramModal({
@@ -27,12 +30,17 @@ export function ProgramModal({
   updateProgramState,
   tagDraft,
   setTagDraft,
+  prefs,
 }: ProgramModalProps) {
   if (!open || !program) return null;
 
   const programData = program;
   const currentState = getProgramState(programData.id);
   const listenedCount = currentState.lastListenedEpisode ?? 0;
+
+  const displayedEpisodes = prefs.reverseEpisodeOrder
+    ? [...programData.episodes].reverse()
+    : programData.episodes;
 
   return (
     <motion.div
@@ -231,8 +239,16 @@ export function ProgramModal({
               </div>
 
               <div className="space-y-3">
-                {programData.episodes.map((ep, index) => {
-                  const isCompleted = index < listenedCount;
+                {displayedEpisodes.map((ep) => {
+                  const originalIndex = programData.episodes.findIndex(
+                    (e) => e.id === ep.id
+                  );
+
+                  const isCompleted = originalIndex < listenedCount;
+
+                  if (prefs.hideCompletedEpisodes && isCompleted) {
+                    return null;
+                  }
 
                   return (
                     <div
@@ -247,22 +263,24 @@ export function ProgramModal({
                             `}
                     >
                       <div className="flex gap-4">
-                        <img
-                          loading="lazy"
-                          decoding="async"
-                          src={
-                            ep.thumbnail ??
-                            programData.program.thumbnail ??
-                            '/placeholders/show-placeholder.png'
-                          }
-                          className="
+                        {!prefs.hideEpisodeThumbnails && (
+                          <img
+                            loading="lazy"
+                            decoding="async"
+                            src={
+                              ep.thumbnail ??
+                              programData.program.thumbnail ??
+                              '/placeholders/show-placeholder.png'
+                            }
+                            className="
                                 w-36 h-20
                                 rounded-xl
                                 object-cover
                                 bg-muted
                                 shrink-0
                                 "
-                        />
+                          />
+                        )}
 
                         <div className="min-w-0 flex-1">
                           <div className="flex items-start justify-between gap-4">

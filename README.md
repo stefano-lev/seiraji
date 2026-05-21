@@ -39,6 +39,10 @@ Live Demo hosted at: https://seiraji.stef-lev.xyz/
 
 ![Stats Modal](./screenshots/stats-modal.png)
 
+### Preferences Modal
+
+![Preferences Modal](./screenshots/pref-modal.png)
+
 ### History Modal
 
 ![History Modal](./screenshots/history-modal.png)
