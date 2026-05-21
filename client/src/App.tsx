@@ -220,12 +220,6 @@ export default function App() {
     });
   }
 
-  function getShowTitle(programId: string) {
-    return (
-      programs.find((s) => s.id === programId)?.program.title ?? 'Unknown show'
-    );
-  }
-
   function timeAgo(iso: string, nowMs: number) {
     const ms = nowMs - new Date(iso).getTime();
     const s = Math.max(0, Math.floor(ms / 1000));
@@ -266,7 +260,11 @@ export default function App() {
       delta,
     };
 
-    setActivity((prevEvents) => appendActivityEvent(prevEvents, ev));
+    setActivity((prevEvents) => {
+      const next = appendActivityEvent(prevEvents, ev);
+      saveActivity(next);
+      return next;
+    });
   }
 
   function getProgramState(programId: string): UserProgramState {
@@ -628,8 +626,8 @@ export default function App() {
             open={historyOpen}
             onClose={() => setHistoryOpen(false)}
             history={activity}
+            programs={programs}
             now={now}
-            getShowTitle={getShowTitle}
             timeAgo={timeAgo}
             onClearHistory={() => setActivity([])}
           />
