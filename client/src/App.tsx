@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useState, useRef, useMemo } from 'react';
 import { Button } from './components/ui/button';
 
-import { defaultPrograms } from '@/data/demoPrograms';
+import { defaultPrograms, demoTags } from '@/data/demoPrograms';
 
 import type { Program } from './types/media';
 import type { UserProgramState } from './types/user';
@@ -15,9 +15,6 @@ import {
   saveActivity,
   ActivityEvent,
   appendActivityEvent,
-  loadTags,
-  saveTags,
-  upsertTag,
   loadPrefs,
   savePrefs,
   loadUserState,
@@ -124,12 +121,6 @@ export default function App() {
     return localStorage.getItem('seiraji:mode') === 'demo';
   });
 
-  const [tags, setTags] = useState<string[]>(() => loadTags());
-
-  useEffect(() => {
-    saveTags(tags);
-  }, [tags]);
-
   const [tagDraft, setTagDraft] = useState('');
 
   const [prefs, setPrefs] = useState(() => loadPrefs());
@@ -144,6 +135,18 @@ export default function App() {
 
   useEffect(() => {
     saveUserState(userState);
+  }, [userState]);
+
+  const tags = useMemo(() => {
+    const set = new Set<string>();
+
+    for (const state of userState) {
+      for (const tag of state.tags ?? []) {
+        set.add(tag);
+      }
+    }
+
+    return [...set].sort((a, b) => a.localeCompare(b));
   }, [userState]);
 
   const [statsOpen, setStatsOpen] = useState(false);
@@ -176,7 +179,6 @@ export default function App() {
   function startFresh() {
     setPrograms(programs);
     setUserState([]);
-    setTags([]);
     setActivity([]);
 
     localStorage.setItem('seiraji:mode', 'fresh');
@@ -195,27 +197,57 @@ export default function App() {
   }
 
   function generateDemoState(programs: Program[]): UserProgramState[] {
-    return programs.map((p, i) => {
-      const episodeCount = p.episodes?.length ?? 10;
+    function randomInt(min: number, max: number) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
 
-      const progress =
-        i % 3 === 0
-          ? 0
-          : i % 3 === 1
-            ? Math.floor(episodeCount * 0.4)
-            : Math.floor(episodeCount * 0.9);
+    function randomChance(probability: number) {
+      return Math.random() < probability;
+    }
+
+    function pickRandomTags(): string[] {
+      const shuffled = [...demoTags].sort(() => Math.random() - 0.5);
+
+      const count = randomInt(1, 3);
+
+      return shuffled.slice(0, count);
+    }
+
+    return programs.map((p) => {
+      const episodeCount = Math.max(p.episodes?.length ?? 0, 1);
+
+      let progress = 0;
+      let status: UserProgramState['status'] = 'backlog';
+
+      const roll = Math.random();
+
+      if (roll < 0.6) {
+        status = 'listening';
+
+        progress = randomInt(
+          Math.max(1, Math.floor(episodeCount * 0.05)),
+          Math.max(1, Math.floor(episodeCount * 0.85))
+        );
+      } else if (roll < 0.8) {
+        status = 'completed';
+        progress = episodeCount;
+      } else if (roll < 0.95) {
+        status = 'backlog';
+        progress = 0;
+      } else {
+        status = 'dropped';
+
+        progress = randomInt(1, Math.max(1, Math.floor(episodeCount * 0.4)));
+      }
 
       return {
         programId: p.id,
-        status:
-          progress === 0
-            ? 'backlog'
-            : progress >= episodeCount
-              ? 'completed'
-              : 'listening',
+        status,
         lastListenedEpisode: progress,
-        isPinned: i % 5 === 0,
-        tags: i % 2 === 0 ? ['comfy', 'talk'] : ['anime', 'weekly'],
+
+        isPinned: randomChance(0.2),
+
+        tags: pickRandomTags(),
       };
     });
   }
@@ -322,16 +354,6 @@ export default function App() {
   >('all');
 
   function updateProgramState(updated: UserProgramState) {
-    // update global tags
-    const updatedTags = updated.tags ?? [];
-    if (updatedTags.length > 0) {
-      setTags((prev) => {
-        let next = prev;
-        for (const t of updatedTags) next = upsertTag(next, t);
-        return next;
-      });
-    }
-
     setUserState((prev) =>
       prev.some((s) => s.programId === updated.programId)
         ? prev.map((s) => (s.programId === updated.programId ? updated : s))
@@ -364,8 +386,6 @@ export default function App() {
     // clear localStorage for relevant keys
     localStorage.removeItem('programs');
     localStorage.removeItem('userState');
-    localStorage.removeItem('seiraji:tags');
-    setTags([]);
   }
 
   function deleteAllTags() {
@@ -374,14 +394,12 @@ export default function App() {
     );
     if (!ok) return;
 
-    // remove tags from every user state entry
-    setUserState((prev) => prev.map((s) => ({ ...s, tags: [] })));
-
-    // clear global tags list
-    setTags([]);
-
-    // clear storage
-    localStorage.removeItem('seiraji:tags');
+    setUserState((prev) =>
+      prev.map((s) => ({
+        ...s,
+        tags: [],
+      }))
+    );
   }
 
   const [pinnedOnly, setPinnedOnly] = useState(false);

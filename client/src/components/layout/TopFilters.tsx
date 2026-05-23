@@ -92,7 +92,7 @@ export function ProgramFilters({
               }
             >
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Status" />
+                <SelectValue placeholder={statusFilter} />
               </SelectTrigger>
 
               <SelectContent>
@@ -109,7 +109,7 @@ export function ProgramFilters({
               onValueChange={(v) => onSortModeChange(v as SortMode)}
             >
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Sort" />
+                <SelectValue placeholder={sortMode} />
               </SelectTrigger>
 
               <SelectContent>
