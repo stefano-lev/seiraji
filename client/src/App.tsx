@@ -97,10 +97,16 @@ export default function App() {
   useEffect(() => {
     async function load() {
       try {
+        setLibraryLoading(true);
+
         const data = await getLibrary();
+
         setPrograms(data);
+        setLibraryLoaded(true);
       } catch (err) {
         console.error('Failed to load library', err);
+      } finally {
+        setLibraryLoading(false);
       }
     }
 
@@ -110,6 +116,9 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem('programs', JSON.stringify(programs));
   }, [programs]);
+
+  const [libraryLoading, setLibraryLoading] = useState(true);
+  const [libraryLoaded, setLibraryLoaded] = useState(false);
 
   const [programOnboarding, setProgramOnboarding] = useState(() => {
     const mode = localStorage.getItem('seiraji:mode');
@@ -186,14 +195,36 @@ export default function App() {
     setIsDemo(false);
   }
 
-  function loadDemo() {
-    setUserState(generateDemoState(programs));
+  async function loadDemo() {
+    try {
+      setLibraryLoading(true);
 
-    localStorage.setItem('seiraji:mode', 'demo');
-    localStorage.setItem('seiraji:onboarded', 'true');
+      let libraryPrograms = programs;
 
-    setIsDemo(true);
-    setProgramOnboarding(false);
+      // if programs haven't loaded yet, fetch them now
+      if (!libraryLoaded || programs.length === 0) {
+        libraryPrograms = await getLibrary();
+
+        setPrograms(libraryPrograms);
+        setLibraryLoaded(true);
+      }
+
+      setUserState(generateDemoState(libraryPrograms));
+
+      localStorage.setItem('seiraji:mode', 'demo');
+      localStorage.setItem('seiraji:onboarded', 'true');
+
+      setIsDemo(true);
+      setProgramOnboarding(false);
+    } catch (err) {
+      console.error('Failed to load demo', err);
+
+      alert(
+        'The library is still in the progress of loading. Please try again in a few seconds.'
+      );
+    } finally {
+      setLibraryLoading(false);
+    }
   }
 
   function generateDemoState(programs: Program[]): UserProgramState[] {
@@ -560,10 +591,17 @@ export default function App() {
                 </p>
 
                 <div className="flex gap-3 justify-end">
-                  <Button variant="secondary" onClick={startFresh}>
-                    Start Fresh
+                  <Button
+                    variant="secondary"
+                    onClick={startFresh}
+                    disabled={libraryLoading}
+                  >
+                    {libraryLoading ? 'Loading Library...' : 'Start Fresh'}
                   </Button>
-                  <Button onClick={loadDemo}>Load Demo</Button>
+
+                  <Button onClick={loadDemo} disabled={libraryLoading}>
+                    {libraryLoading ? 'Loading Library...' : 'Load Demo'}
+                  </Button>
                 </div>
               </motion.div>
             </motion.div>
