@@ -10,13 +10,14 @@ Live Demo hosted at: https://seiraji.stef-lev.xyz/
 
 - Track radio shows with title, hosts, frequency, and episode count
 - Automatically import/scrape metadata from external host sites
+- Add your own program listings for unsupported platforms
 - Track listening status
 - Search and filter shows
 
 ## Tech Stack
 
-- **React** (Vite)
 - **TypeScript**
+- **React** (Vite)
 - **Tailwind CSS**
 - **shadcn/ui**
 - **Express/Node**
@@ -47,9 +48,14 @@ Live Demo hosted at: https://seiraji.stef-lev.xyz/
 
 ![History Modal](./screenshots/history-modal.png)
 
+### Add Custom Programs
+
+![Create Program Modal](./screenshots/create-program-modal.png)
+
 ## Future Plans
 
 - Account registration support to sync list data between sessions
+- Expand platfom availability
 - Native mobile support
 - Support for multiple languages
 

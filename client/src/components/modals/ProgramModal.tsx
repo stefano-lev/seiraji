@@ -16,6 +16,9 @@ type ProgramModalProps = {
   getProgramState: (programId: string) => UserProgramState;
   updateProgramState: (state: UserProgramState) => void;
 
+  onEdit: (program: Program) => void;
+  onDelete: (programId: string) => void;
+
   tagDraft: string;
   setTagDraft: (v: string) => void;
 
@@ -28,6 +31,8 @@ export function ProgramModal({
   program,
   getProgramState,
   updateProgramState,
+  onEdit,
+  onDelete,
   tagDraft,
   setTagDraft,
   prefs,
@@ -112,9 +117,39 @@ export function ProgramModal({
                   </div>
                 </div>
 
-                <Button variant="secondary" onClick={() => onClose()}>
-                  Close
-                </Button>
+                <div className="flex gap-4">
+                  {programData.source == 'manual' && (
+                    <Button
+                      variant="secondary"
+                      onClick={() => onEdit(programData)}
+                    >
+                      Edit
+                    </Button>
+                  )}
+
+                  {programData.source == 'manual' && (
+                    <Button
+                      variant="destructive"
+                      onClick={() => {
+                        const ok = window.confirm(
+                          `Delete "${programData.program.title}"?`
+                        );
+
+                        if (!ok) return;
+
+                        onDelete(programData.id);
+
+                        onClose();
+                      }}
+                    >
+                      Delete
+                    </Button>
+                  )}
+
+                  <Button variant="default" onClick={() => onClose()}>
+                    Close
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
@@ -215,13 +250,15 @@ export function ProgramModal({
 
                 {/* EXTERNAL LINK */}
                 <div>
-                  <Button
-                    className="w-full"
-                    variant="secondary"
-                    onClick={() => window.open(programData.url, '_blank')}
-                  >
-                    Open Source Page
-                  </Button>
+                  {programData.url && (
+                    <Button
+                      className="w-full"
+                      variant="secondary"
+                      onClick={() => window.open(programData.url, '_blank')}
+                    >
+                      Open Source Page
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>

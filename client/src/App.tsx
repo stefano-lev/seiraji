@@ -34,6 +34,8 @@ import {
   readJsonFile,
 } from '@/lib/storage';
 
+import { mergePrograms } from '@/lib/programs';
+
 import { TopNav } from './components/layout/TopNav';
 import { ProgramGrid } from './components/layout/ProgramGrid';
 import { ProgramFilters } from './components/layout/TopFilters';
@@ -41,6 +43,7 @@ import { StatsModal } from './components/modals/StatsModal';
 import { HistoryModal } from './components/modals/HistoryModal';
 import { ProgramModal } from './components/modals/ProgramModal';
 import { PreferencesModal } from './components/modals/PreferencesModal';
+import { CreateProgramModal } from './components/modals/CreateProgramModal';
 
 type SortMode = 'title' | 'host' | 'platform';
 
@@ -101,7 +104,7 @@ export default function App() {
 
         const data = await getLibrary();
 
-        setPrograms(data);
+        setPrograms((prev) => mergePrograms(data, prev));
         setLibraryLoaded(true);
       } catch (err) {
         console.error('Failed to load library', err);
@@ -161,6 +164,7 @@ export default function App() {
   const [statsOpen, setStatsOpen] = useState(false);
   const [historyOpen, setHistoryOpen] = useState(false);
   const [prefsOpen, setPrefsOpen] = useState(false);
+  const [createOpen, setCreateOpen] = useState(false);
 
   const [activity, setActivity] = useState<ActivityEvent[]>(() =>
     loadActivity()
@@ -379,6 +383,22 @@ export default function App() {
     }
   }
 
+  function addProgram(program: Program) {
+    setPrograms((prev) => [...prev, program]);
+  }
+
+  function updateProgram(program: Program) {
+    setPrograms((prev) => prev.map((p) => (p.id === program.id ? program : p)));
+  }
+
+  function deleteProgram(programId: string) {
+    setPrograms((prev) => prev.filter((p) => p.id !== programId));
+
+    setUserState((prev) => prev.filter((s) => s.programId !== programId));
+
+    setSelectedProgram(null);
+  }
+
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<
     UserProgramState['status'] | 'all'
@@ -549,6 +569,7 @@ export default function App() {
             onOpenStats={() => setStatsOpen(true)}
             onOpenHistory={() => setHistoryOpen(true)}
             onOpenPrefs={() => setPrefsOpen(true)}
+            onOpenCreateProgram={() => setCreateOpen(true)}
             onResetSelection={() => {
               setSelectedProgram(null);
               setEditDraft(null);
@@ -668,6 +689,11 @@ export default function App() {
             tagDraft={tagDraft}
             setTagDraft={setTagDraft}
             prefs={prefs}
+            onEdit={(program) => {
+              setEditDraft(program);
+              setCreateOpen(true);
+            }}
+            onDelete={deleteProgram}
           />
 
           <StatsModal
@@ -693,6 +719,24 @@ export default function App() {
             onClose={() => setPrefsOpen(false)}
             prefs={prefs}
             setPrefs={setPrefs}
+          />
+
+          <CreateProgramModal
+            open={createOpen}
+            onClose={() => {
+              setCreateOpen(false);
+              setEditDraft(null);
+            }}
+            editingProgram={editDraft}
+            onSubmit={(program) => {
+              if (editDraft) {
+                updateProgram(program);
+              } else {
+                addProgram(program);
+              }
+
+              setEditDraft(null);
+            }}
           />
         </div>
       </div>

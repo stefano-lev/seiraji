@@ -4,6 +4,7 @@ type Props = {
   onOpenStats: () => void;
   onOpenHistory: () => void;
   onOpenPrefs: () => void;
+  onOpenCreateProgram: () => void;
   onResetSelection: () => void;
 };
 
@@ -11,6 +12,7 @@ export function TopNav({
   onOpenStats,
   onOpenHistory,
   onOpenPrefs,
+  onOpenCreateProgram,
   onResetSelection,
 }: Props) {
   return (
@@ -42,6 +44,10 @@ export function TopNav({
 
           {/* Actions */}
           <div className="flex flex-wrap gap-2 justify-start sm:justify-end">
+            <Button variant="secondary" onClick={onOpenCreateProgram}>
+              +
+            </Button>
+
             <Button variant="secondary" onClick={onOpenStats}>
               Stats
             </Button>
