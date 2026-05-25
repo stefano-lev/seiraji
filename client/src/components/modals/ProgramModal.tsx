@@ -59,7 +59,18 @@ export function ProgramModal({
     >
       <motion.div
         className="
-                w-full max-w-6xl h-[90vh] rounded-3xl border border-border/60 bg-background shadow-2xl overflow-hidden flex flex-col"
+          w-full
+          h-[100dvh]
+          sm:h-[90vh]
+          max-w-6xl
+          rounded-none
+          sm:rounded-3xl
+          border border-border/60
+          bg-background
+          shadow-2xl
+          overflow-hidden
+          flex flex-col
+        "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.15, ease: 'easeOut' }}
@@ -79,26 +90,41 @@ export function ProgramModal({
 
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent" />
 
-          <div className="absolute bottom-0 left-0 right-0 p-6 flex gap-6">
+          <div
+            className="
+              absolute bottom-0 left-0 right-0
+              p-4 sm:p-6
+              flex flex-col sm:flex-row
+              gap-4 sm:gap-6
+            "
+          >
             <img
               src={
                 programData.program.thumbnail ??
                 '/placeholders/show-placeholder.png'
               }
               className="
-                    w-36 h-36
-                    rounded-2xl
-                    object-cover
-                    border border-border
-                    shadow-xl
-                    shrink-0
-                "
+                w-24 h-24
+                sm:w-36 sm:h-36
+                rounded-2xl
+                object-cover
+                border border-border
+                shadow-xl
+                shrink-0
+              "
             />
 
             <div className="flex-1 min-w-0">
-              <div className="flex items-start justify-between gap-4">
+              <div
+                className="
+                  flex flex-col sm:flex-row
+                  sm:items-start
+                  sm:justify-between
+                  gap-4
+                "
+              >
                 <div>
-                  <h2 className="text-3xl font-bold leading-tight">
+                  <h2 className="text-2xl sm:text-3xl font-bold leading-tight">
                     {programData.program.title}
                   </h2>
 
@@ -117,9 +143,10 @@ export function ProgramModal({
                   </div>
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex flex-wrap gap-2 sm:gap-4">
                   {programData.source == 'manual' && (
                     <Button
+                      className="flex-1 sm:flex-none"
                       variant="secondary"
                       onClick={() => onEdit(programData)}
                     >
@@ -159,7 +186,15 @@ export function ProgramModal({
         <div className="flex-1 overflow-hidden">
           <div className="grid grid-cols-1 xl:grid-cols-[380px_1fr] h-full">
             {/* SIDEBAR */}
-            <div className="border-r border-border/60 p-6 overflow-y-auto">
+            <div
+              className="
+                border-b xl:border-b-0
+                xl:border-r
+                border-border/60
+                p-4 sm:p-6
+                overflow-y-auto
+              "
+            >
               <div className="space-y-6">
                 {/* DESCRIPTION */}
                 <div>
@@ -299,7 +334,7 @@ export function ProgramModal({
                             }
                             `}
                     >
-                      <div className="flex gap-4">
+                      <div className="flex flex-col sm:flex-row gap-4">
                         {!prefs.hideEpisodeThumbnails && (
                           <img
                             loading="lazy"
@@ -310,12 +345,15 @@ export function ProgramModal({
                               '/placeholders/show-placeholder.png'
                             }
                             className="
-                                w-36 h-20
-                                rounded-xl
-                                object-cover
-                                bg-muted
-                                shrink-0
-                                "
+                              w-full
+                              sm:w-36
+                              h-40
+                              sm:h-20
+                              rounded-xl
+                              object-cover
+                              bg-muted
+                              shrink-0
+                            "
                           />
                         )}
 

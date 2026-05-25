@@ -72,9 +72,9 @@ export function ProgramFilters({
               placeholder="Search programs or hosts..."
               value={searchQuery}
               onChange={(e) => onSearchQueryChange(e.target.value)}
-              className="max-w-sm"
+              className="w-full sm:max-w-sm"
             />
-            <div className="flex items-center px-0">
+            <div className="flex items-center justify-end sm:justify-start">
               <Button
                 variant={pinnedOnly ? 'default' : 'secondary'}
                 onClick={() => onTogglePinned()}
@@ -84,14 +84,20 @@ export function ProgramFilters({
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-2 justify-start sm:justify-start items-center">
+          <div
+            className="
+              flex flex-col sm:flex-row
+              gap-2
+              items-stretch sm:items-center
+            "
+          >
             <Select
               value={statusFilter}
               onValueChange={(v) =>
                 onStatusFilterChange(v as UserProgramState['status'] | 'all')
               }
             >
-              <SelectTrigger className="w-[180px]">
+              <SelectTrigger className="w-full sm:w-[180px]">
                 <SelectValue placeholder={statusFilter} />
               </SelectTrigger>
 
@@ -108,7 +114,7 @@ export function ProgramFilters({
               value={sortMode}
               onValueChange={(v) => onSortModeChange(v as SortMode)}
             >
-              <SelectTrigger className="w-[180px]">
+              <SelectTrigger className="w-full sm:w-[180px]">
                 <SelectValue placeholder={sortMode} />
               </SelectTrigger>
 

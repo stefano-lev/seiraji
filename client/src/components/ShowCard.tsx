@@ -162,7 +162,7 @@ export const ShowCard = React.memo(function ShowCard({
             </div>
           )}
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap sm:flex-nowrap">
             <Button
               size="sm"
               onClick={(e) => {
@@ -180,7 +180,7 @@ export const ShowCard = React.memo(function ShowCard({
               onChange={(e) =>
                 onUpdateEpisode(program.id, clamp(Number(e.target.value)))
               }
-              className="w-16 text-center border rounded"
+              className="w-16 sm:w-16 text-center"
             />
 
             <Button
