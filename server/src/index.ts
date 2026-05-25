@@ -9,6 +9,7 @@ import onsenRoutes from './routes/onsen';
 import qloverRoutes from './routes/qlover';
 import youtubeRoutes from './routes/youtube';
 import libraryRoutes from './routes/library';
+import backupRoutes from './routes/backup';
 
 const app = express();
 
@@ -48,6 +49,8 @@ app.use('/api/qlover', qloverRoutes);
 app.use('/api/youtube', youtubeRoutes);
 
 app.use('/api/library', libraryRoutes);
+
+app.use('/api/backup', backupRoutes);
 
 const PORT = process.env.PORT || 3001;
 

@@ -63,3 +63,70 @@ export async function getLibrary() {
 
   return res.json();
 }
+
+export async function createBackup(payload: unknown) {
+  const res = await fetch(`${API_BASE}/backup/create`, {
+    method: 'POST',
+
+    headers: {
+      'Content-Type': 'application/json',
+    },
+
+    body: JSON.stringify({
+      payload,
+    }),
+  });
+
+  if (!res.ok) {
+    throw new Error('Failed to create backup');
+  }
+
+  return res.json();
+}
+
+export async function restoreBackup(backupId: string, passkey: string) {
+  const res = await fetch(`${API_BASE}/backup/restore`, {
+    method: 'POST',
+
+    headers: {
+      'Content-Type': 'application/json',
+    },
+
+    body: JSON.stringify({
+      backupId,
+      passkey,
+    }),
+  });
+
+  if (!res.ok) {
+    throw new Error('Failed to restore backup');
+  }
+
+  return res.json();
+}
+
+export async function updateBackup(
+  backupId: string,
+  passkey: string,
+  payload: unknown
+) {
+  const res = await fetch(`${API_BASE}/backup/update`, {
+    method: 'POST',
+
+    headers: {
+      'Content-Type': 'application/json',
+    },
+
+    body: JSON.stringify({
+      backupId,
+      passkey,
+      payload,
+    }),
+  });
+
+  if (!res.ok) {
+    throw new Error('Failed to update backup');
+  }
+
+  return res.json();
+}

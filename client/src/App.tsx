@@ -27,13 +27,6 @@ import { getLibrary } from './lib/api';
 
 import { calculateStats } from '@/lib/stats';
 
-import {
-  buildExportPayload,
-  downloadJson,
-  isExportPayload,
-  readJsonFile,
-} from '@/lib/storage';
-
 import { mergePrograms } from '@/lib/programs';
 
 import { TopNav } from './components/layout/TopNav';
@@ -73,7 +66,7 @@ type SortMode = 'title' | 'host' | 'platform';
 // }
 
 export default function App() {
-  const [dark, setDark] = useState(true);
+  const [dark] = useState(true);
   const [sortMode, setSortMode] = useState<SortMode>('title');
   const [selectedProgram, setSelectedProgram] = useState<Program | null>(null);
   const [editDraft, setEditDraft] = useState<Program | null>(null);
@@ -81,8 +74,6 @@ export default function App() {
   // const isEditing = editDraft !== null;
 
   // const programData = editDraft ?? selectedProgram;
-
-  const importInputRef = useRef<HTMLInputElement | null>(null);
 
   const [programs, setPrograms] = useState<Program[]>(() => {
     const stored = localStorage.getItem('programs');
@@ -354,33 +345,20 @@ export default function App() {
     });
   }
 
-  function handleExport() {
-    const payload = buildExportPayload(programs, userState, tags);
-    downloadJson('seiyuu-radio-tracker-backup.json', payload);
-  }
+  function buildCloudBackupPayload() {
+    return {
+      version: 1,
 
-  async function handleImportFile(file: File) {
-    try {
-      const data = await readJsonFile(file);
+      exportedAt: new Date().toISOString(),
 
-      if (!isExportPayload(data)) {
-        alert('Invalid import file format.');
-        return;
-      }
+      manualPrograms: programs.filter((p) => p.source === 'manual'),
 
-      const confirmOverwrite = window.confirm(
-        'Import will overwrite your current local data. Continue?'
-      );
-      if (!confirmOverwrite) return;
+      userState,
 
-      setPrograms(data.programs);
-      setUserState(data.userState);
+      activity,
 
-      alert('Import successful!');
-    } catch (err) {
-      console.error(err);
-      alert('Failed to import file.');
-    }
+      prefs,
+    };
   }
 
   function addProgram(program: Program) {
@@ -411,18 +389,6 @@ export default function App() {
         : [...prev, updated]
     );
   }
-
-  // function updateProgram(updated: Program) {
-  //   setPrograms((prev) => prev.map((s) => (s.id === updated.id ? updated : s)));
-  // }
-
-  // function addShow(newProgram: Program) {
-  //   setPrograms((prev) => [...prev, newProgram]);
-  // }
-
-  // function deleteProgram(id: string) {
-  //   setPrograms((prev) => prev.filter((s) => s.id !== id));
-  // }
 
   function deleteAllData() {
     const ok = window.confirm(
@@ -573,19 +539,6 @@ export default function App() {
             onResetSelection={() => {
               setSelectedProgram(null);
               setEditDraft(null);
-            }}
-          />
-
-          <input
-            ref={importInputRef}
-            type="file"
-            accept="application/json"
-            className="hidden"
-            onChange={(e) => {
-              const file = e.target.files?.[0];
-              if (!file) return;
-              handleImportFile(file);
-              e.currentTarget.value = ''; // allow re-importing same file later
             }}
           />
 
