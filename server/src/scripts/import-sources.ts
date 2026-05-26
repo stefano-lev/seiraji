@@ -4,12 +4,14 @@ import { scrapeAudee } from '../services/scrapeAudee';
 import { scrapeOnsen } from '../services/scrapeOnsen';
 import { scrapeQlover } from '../services/scrapeQlover';
 import { scrapeYoutubePlaylist } from '../services/scrapeYoutubePlaylist';
+import { scrapeNicochannel } from '../services/scrapeNicochannel';
 
 function detectSource(url: string) {
   if (url.includes('youtube.com')) return 'youtube';
   if (url.includes('onsen.ag')) return 'onsen';
   if (url.includes('qlover.jp')) return 'qlover';
   if (url.includes('audee')) return 'audee';
+  if (url.includes('nicochannel')) return 'nicochannel';
 
   return 'unknown';
 }
@@ -44,6 +46,10 @@ async function main() {
 
         case 'youtube':
           await scrapeYoutubePlaylist(url);
+          break;
+
+        case 'nicochannel':
+          await scrapeNicochannel(url);
           break;
 
         default:
