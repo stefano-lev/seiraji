@@ -193,3 +193,33 @@ export function removeTag(tags: string[], tag: string): string[] {
   const t = normalizeTag(tag);
   return tags.filter((x) => x !== t);
 }
+
+export type CloudBackupCredentials = {
+  backupId: string;
+  passkey: string;
+
+  createdAt?: string;
+  lastSyncedAt?: string;
+};
+
+const CLOUD_BACKUP_KEY = 'seiraji:cloud-backup';
+
+export function saveCloudBackupCredentials(creds: CloudBackupCredentials) {
+  localStorage.setItem(CLOUD_BACKUP_KEY, JSON.stringify(creds));
+}
+
+export function loadCloudBackupCredentials(): CloudBackupCredentials | null {
+  const raw = localStorage.getItem(CLOUD_BACKUP_KEY);
+
+  if (!raw) return null;
+
+  try {
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
+export function clearCloudBackupCredentials() {
+  localStorage.removeItem(CLOUD_BACKUP_KEY);
+}

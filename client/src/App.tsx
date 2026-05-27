@@ -19,11 +19,18 @@ import {
   savePrefs,
   loadUserState,
   saveUserState,
+  loadCloudBackupCredentials,
+  saveCloudBackupCredentials,
 } from '@/lib/storage';
 
 //import { processImageFile } from '@/lib/image';
 
-import { getLibrary } from './lib/api';
+import {
+  getLibrary,
+  createBackup,
+  updateBackup,
+  restoreBackup,
+} from './lib/api';
 
 import { calculateStats } from '@/lib/stats';
 
@@ -189,6 +196,12 @@ export default function App() {
     localStorage.setItem('seiraji:onboarded', 'true');
     setIsDemo(false);
   }
+
+  const [cloudBackup, setCloudBackup] = useState(() =>
+    loadCloudBackupCredentials()
+  );
+
+  const [backupLoading, setBackupLoading] = useState(false);
 
   async function loadDemo() {
     try {
@@ -361,6 +374,165 @@ export default function App() {
     };
   }
 
+  async function handleCreateCloudBackup() {
+    try {
+      setBackupLoading(true);
+
+      const payload = buildCloudBackupPayload();
+
+      const result = await createBackup(payload);
+
+      const now = new Date().toISOString();
+
+      const creds = {
+        backupId: result.backupId,
+        passkey: result.passkey,
+
+        createdAt: now,
+        lastSyncedAt: now,
+      };
+
+      saveCloudBackupCredentials(creds);
+
+      setCloudBackup(creds);
+
+      alert(
+        `Cloud backup created!\n\nBackup ID:\n${result.backupId}\n\nPasskey:\n${result.passkey}\n\nSave these somewhere safe.`
+      );
+    } catch (err) {
+      console.error(err);
+
+      alert('Failed to create cloud backup.');
+    } finally {
+      setBackupLoading(false);
+    }
+  }
+
+  async function handleUpdateCloudBackup() {
+    if (!cloudBackup) {
+      alert('No cloud backup exists yet.');
+      return;
+    }
+
+    try {
+      setBackupLoading(true);
+
+      const payload = buildCloudBackupPayload();
+
+      await updateBackup(cloudBackup.backupId, cloudBackup.passkey, payload);
+
+      const updated = {
+        ...cloudBackup,
+        lastSyncedAt: new Date().toISOString(),
+      };
+
+      saveCloudBackupCredentials(updated);
+
+      setCloudBackup(updated);
+
+      alert('Cloud backup updated successfully.');
+    } catch (err) {
+      console.error(err);
+
+      alert('Failed to update cloud backup.');
+    } finally {
+      setBackupLoading(false);
+    }
+  }
+
+  async function handleRestoreCloudBackup() {
+    if (!cloudBackup) {
+      alert('No saved cloud backup credentials found.');
+      return;
+    }
+
+    const confirmed = window.confirm(
+      'Restore cloud backup?\n\nYour current local data will be overwritten.'
+    );
+
+    if (!confirmed) return;
+
+    try {
+      setBackupLoading(true);
+
+      const result = await restoreBackup(
+        cloudBackup.backupId,
+        cloudBackup.passkey
+      );
+
+      const payload = result.payload;
+
+      if (!payload) {
+        throw new Error('Missing payload');
+      }
+
+      // restore state
+      setPrograms((prev) => {
+        const merged = mergePrograms(prev, payload.manualPrograms ?? []);
+        return merged;
+      });
+
+      setUserState(payload.userState ?? []);
+
+      setActivity(payload.activity ?? []);
+
+      setPrefs(payload.prefs ?? {});
+
+      alert('Cloud backup restored successfully.');
+    } catch (err) {
+      console.error(err);
+
+      alert('Failed to restore cloud backup.');
+    } finally {
+      setBackupLoading(false);
+    }
+  }
+
+  async function handleConnectCloudBackup(backupId: string, passkey: string) {
+    try {
+      setBackupLoading(true);
+
+      const result = await restoreBackup(backupId, passkey);
+
+      const payload = result.payload;
+
+      if (!payload) {
+        throw new Error('Missing payload');
+      }
+
+      const creds = {
+        backupId,
+        passkey,
+
+        createdAt: payload.exportedAt,
+        lastSyncedAt: payload.exportedAt,
+      };
+
+      saveCloudBackupCredentials(creds);
+
+      setCloudBackup(creds);
+
+      setPrograms((prev) => {
+        const merged = mergePrograms(prev, payload.manualPrograms ?? []);
+        return merged;
+      });
+
+      setUserState(payload.userState ?? []);
+
+      setActivity(payload.activity ?? []);
+
+      setPrefs(payload.prefs ?? {});
+
+      alert('Cloud backup restored successfully.');
+    } catch (err) {
+      console.error(err);
+
+      alert('Failed to restore cloud backup.');
+    } finally {
+      setBackupLoading(false);
+    }
+  }
+
   function addProgram(program: Program) {
     setPrograms((prev) => [...prev, program]);
   }
@@ -527,6 +699,20 @@ export default function App() {
     return () => window.removeEventListener('keydown', onKeyDown);
   }, []);
 
+  const backupSummary = useMemo(() => {
+    return {
+      manualPrograms: programs.filter((p) => p.source === 'manual').length,
+
+      listening: userState.filter((s) => s.status === 'listening').length,
+
+      completed: userState.filter((s) => s.status === 'completed').length,
+
+      dropped: userState.filter((s) => s.status === 'dropped').length,
+
+      backlog: userState.filter((s) => s.status === 'backlog').length,
+    };
+  }, [programs, userState]);
+
   return (
     <div className={dark ? 'dark' : ''}>
       <div className="app-bg min-h-screen bg-background text-foreground">
@@ -560,18 +746,17 @@ export default function App() {
                 </h2>
 
                 <p className="text-sm text-muted-foreground mb-4">
-                  Start with a blank tracker, or load a demo profile to explore
-                  how the app works.
+                  Load a demo profile to explore how the app works!
                 </p>
 
                 <div className="flex gap-3 justify-end">
-                  <Button
+                  {/* <Button
                     variant="secondary"
                     onClick={startFresh}
                     disabled={libraryLoading}
                   >
                     {libraryLoading ? 'Loading Library...' : 'Start Fresh'}
-                  </Button>
+                  </Button> */}
 
                   <Button onClick={loadDemo} disabled={libraryLoading}>
                     {libraryLoading ? 'Loading Library...' : 'Load Demo'}
@@ -672,6 +857,13 @@ export default function App() {
             onClose={() => setPrefsOpen(false)}
             prefs={prefs}
             setPrefs={setPrefs}
+            cloudBackup={cloudBackup}
+            backupLoading={backupLoading}
+            backupSummary={backupSummary}
+            onCreateBackup={handleCreateCloudBackup}
+            onUpdateBackup={handleUpdateCloudBackup}
+            onRestoreBackup={handleRestoreCloudBackup}
+            onConnectBackup={handleConnectCloudBackup}
           />
 
           <CreateProgramModal
