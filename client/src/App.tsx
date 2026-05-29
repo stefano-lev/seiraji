@@ -716,7 +716,7 @@ export default function App() {
   return (
     <div className={dark ? 'dark' : ''}>
       <div className="app-bg min-h-screen bg-background text-foreground">
-        <div className="mx-auto w-full max-w-[1800px] px-4 sm:px-6 lg:px-8 pb-16">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 pb-16">
           <TopNav
             onOpenStats={() => setStatsOpen(true)}
             onOpenHistory={() => setHistoryOpen(true)}

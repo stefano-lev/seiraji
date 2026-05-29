@@ -66,7 +66,7 @@ export const ShowCard = React.memo(function ShowCard({
       onClick={() => onOpen?.(program)}
       className={`
     relative group overflow-hidden transition-shadow hover:shadow-xl
-    ${prefs.compactCards ? 'p-2 max-w-[320px] mx-auto' : ''}
+    ${prefs.compactCards ? 'p-2' : ''}
   `}
     >
       {!prefs.disablePinToTop && state.isPinned && (

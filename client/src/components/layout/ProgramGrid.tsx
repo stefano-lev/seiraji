@@ -36,8 +36,8 @@ export function ProgramGrid({
         ${prefs.compactCards ? 'gap-3' : 'gap-5'}
         ${
           prefs.compactCards
-            ? 'grid-cols-[repeat(auto-fill,minmax(280px,1fr))]'
-            : 'grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4'
+            ? 'grid-cols-[repeat(auto-fill,minmax(240px,1fr))]'
+            : 'grid-cols-2 sm:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4'
         }
       `}
     >

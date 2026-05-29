@@ -49,7 +49,7 @@ export function ProgramModal({
 
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-2 sm:p-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -62,8 +62,8 @@ export function ProgramModal({
           w-full
           h-[100dvh]
           sm:h-[90vh]
-          max-w-6xl
-          rounded-none
+          max-w-5xl
+          rounded-2xl
           sm:rounded-3xl
           border border-border/60
           bg-background
@@ -78,7 +78,7 @@ export function ProgramModal({
       >
         {/* HERO HEADER */}
         <div className="relative">
-          <div className="h-52 w-full bg-muted overflow-hidden">
+          <div className="h-32 sm:h-52 w-full bg-muted overflow-hidden">
             <img
               src={
                 programData.program.thumbnail ??
@@ -104,8 +104,8 @@ export function ProgramModal({
                 '/placeholders/show-placeholder.png'
               }
               className="
-                w-24 h-24
-                sm:w-36 sm:h-36
+                h-16 w-24
+                sm:w-48 sm:h-32
                 rounded-2xl
                 object-cover
                 border border-border
@@ -143,10 +143,10 @@ export function ProgramModal({
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-2 sm:gap-4">
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 w-full sm:w-auto">
                   {programData.source == 'manual' && (
                     <Button
-                      className="flex-1 sm:flex-none"
+                      className="w-full sm:w-auto"
                       variant="secondary"
                       onClick={() => onEdit(programData)}
                     >
@@ -156,6 +156,7 @@ export function ProgramModal({
 
                   {programData.source == 'manual' && (
                     <Button
+                      className="w-full sm:w-auto"
                       variant="destructive"
                       onClick={() => {
                         const ok = window.confirm(
@@ -173,7 +174,11 @@ export function ProgramModal({
                     </Button>
                   )}
 
-                  <Button variant="default" onClick={() => onClose()}>
+                  <Button
+                    className="w-full sm:w-auto"
+                    variant="default"
+                    onClick={() => onClose()}
+                  >
                     Close
                   </Button>
                 </div>
@@ -184,7 +189,7 @@ export function ProgramModal({
 
         {/* CONTENT */}
         <div className="flex-1 overflow-hidden">
-          <div className="grid grid-cols-1 xl:grid-cols-[380px_1fr] h-full">
+          <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] h-full">
             {/* SIDEBAR */}
             <div
               className="
