@@ -66,6 +66,7 @@ export const ShowCard = React.memo(function ShowCard({
       onClick={() => onOpen?.(program)}
       className={`
     relative group overflow-hidden transition-shadow hover:shadow-xl
+    flex flex-col h-full
     ${prefs.compactCards ? 'p-2' : ''}
   `}
     >
@@ -90,7 +91,7 @@ export const ShowCard = React.memo(function ShowCard({
         </button>
       )}
 
-      <CardHeader className="pb-3">
+      <CardHeader className="pb-3 flex-shrink-0">
         <div className={prefs.compactCards ? 'flex gap-2' : 'flex gap-4'}>
           <img
             src={thumbnail}
@@ -100,15 +101,18 @@ export const ShowCard = React.memo(function ShowCard({
             `}
           />
 
-          <div className="min-w-0 flex-1">
+          <div className="min-w-0 flex-1 flex flex-col gap-1">
             <div className="flex items-start justify-between gap-2">
-              <div className="min-h-[3.25rem]">
+              <div className="min-h-[4.5rem] flex flex-col justify-start">
                 <h3 className="font-semibold text-base leading-tight line-clamp-2">
                   {program.program.title}
                 </h3>
 
-                <p className="text-sm text-muted-foreground line-clamp-1 mt-1">
-                  {program.program.hosts || 'Unknown host'}
+                <p className="text-sm text-muted-foreground line-clamp-1 mt-1 min-h-[1.25rem]">
+                  {/* {program.program.hosts?.length
+                    ? program.program.hosts.join(', ')
+                    : 'Unknown host'} */}
+                  {program.program.hosts}
                 </p>
               </div>
             </div>
@@ -128,8 +132,8 @@ export const ShowCard = React.memo(function ShowCard({
         </div>
       </CardHeader>
 
-      <CardContent className="flex flex-col flex-1">
-        <div className="mt-auto space-y-3">
+      <CardContent className="flex flex-col flex-1 h-full">
+        <div className="flex flex-col flex-1 justify-between gap-3">
           {prefs.showLastEpisodeOnCard && latestEpisode && (
             <div className="text-xs border-l pl-2 text-muted-foreground">
               <div className="font-medium text-foreground">

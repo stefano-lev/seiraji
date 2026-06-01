@@ -97,7 +97,7 @@ export function ProgramFilters({
                 onStatusFilterChange(v as UserProgramState['status'] | 'all')
               }
             >
-              <SelectTrigger className="w-full sm:w-[180px]">
+              <SelectTrigger className="w-full sm:w-[196px]">
                 <SelectValue placeholder={statusFilter} />
               </SelectTrigger>
 

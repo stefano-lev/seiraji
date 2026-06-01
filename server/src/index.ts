@@ -9,6 +9,7 @@ import onsenRoutes from './routes/onsen';
 import qloverRoutes from './routes/qlover';
 import youtubeRoutes from './routes/youtube';
 import nicochannelRoutes from './routes/nicochannel';
+import openrecRoutes from './routes/openrec';
 import libraryRoutes from './routes/library';
 import backupRoutes from './routes/backup';
 
@@ -33,6 +34,7 @@ app.use('/api/audee/import', importLimiter);
 app.use('/api/qlover/import', importLimiter);
 app.use('/api/onsen/import', importLimiter);
 app.use('/api/nicochannel/import', importLimiter);
+app.use('/api/openrec/import', importLimiter);
 
 app.use(
   cors({
@@ -51,6 +53,8 @@ app.use('/api/qlover', qloverRoutes);
 app.use('/api/youtube', youtubeRoutes);
 
 app.use('/api/nicochannel', nicochannelRoutes);
+
+app.use('/api/openrec', openrecRoutes);
 
 app.use('/api/library', libraryRoutes);
 

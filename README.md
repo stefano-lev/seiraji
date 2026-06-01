@@ -1,10 +1,10 @@
 # 声ラジ - SeiRaji (Beta)
 
-SeiRaji is a React + TypeScript web app for tracking Japanese seiyuu radio shows and podcasts across multiple online platforms.
+SeiRaji is a full-stack web app for tracking Japanese seiyuu radio shows and podcasts across multiple online platforms.
 
 The project started as a personal tool for keeping up with weekly radio programs, but gradually turned into a larger portfolio project focused on state management, responsive UI design, metadata aggregation, and persistent client-side data handling.
 
-Unlike traditional media trackers, SeiRaji is built around Japanese online radio ecosystems like Onsen, AuDee, QloveR, NicoChannel, YouTube playlists, and even supports manually added programs.
+Unlike traditional media trackers, SeiRaji is built around Japanese online radio ecosystems like Onsen, AuDee, QloveR, NicoChannel, Openrec, YouTube playlists, and even supports manually added programs.
 
 ![SeiRaji Landing Page](./screenshots/seiraji-header.png)
 
@@ -80,7 +80,7 @@ The project also gave me experience working with:
 
 ![YouTube Playlist Modal](./screenshots/youtube-modal.png)
 
-### Support for multiple Japanese online radio platforms (Audee, Onsen, Qlover, NicoChannel, etc.)
+### Support for multiple Japanese online radio platforms (Audee, Onsen, Qlover, NicoChannel, Openrec, etc.)
 
 ![Qlover Platform Modal](./screenshots/qlover-modal.png)
 

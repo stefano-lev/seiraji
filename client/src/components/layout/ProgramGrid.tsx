@@ -32,7 +32,7 @@ export function ProgramGrid({
   return (
     <div
       className={`
-        mt-6 grid content-start
+        mt-6 grid content-start auto-rows-fr
         ${prefs.compactCards ? 'gap-3' : 'gap-5'}
         ${
           prefs.compactCards
