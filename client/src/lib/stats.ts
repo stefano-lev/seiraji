@@ -1,18 +1,14 @@
-import type { Program } from '@/types/media';
+import type { Episode, Program } from '@/types/media';
 import type { UserProgramState } from '@/types/user';
 
 const ONSEN_FALLBACK_DURATION = 45 * 60;
 
-function getEpisodeDuration(program: Program, episodeIndex: number) {
-  const ep = program.episodes[episodeIndex];
-
-  if (!ep) return 0;
-
-  if (ep.durationSeconds) {
-    return ep.durationSeconds;
+export function getEpisodeDuration(episode: Episode, platform?: string) {
+  if (episode.durationSeconds) {
+    return episode.durationSeconds;
   }
 
-  if (program.platform === 'onsen') {
+  if (platform === 'onsen') {
     return ONSEN_FALLBACK_DURATION;
   }
 
@@ -50,13 +46,14 @@ export function calculateStats(
     totalEpisodesListened += listenedEpisodes;
 
     for (const ep of program.episodes) {
-      totalLibraryDuration +=
-        ep.durationSeconds ??
-        (program.platform === 'onsen' ? ONSEN_FALLBACK_DURATION : 0);
+      totalLibraryDuration += getEpisodeDuration(ep, program.platform);
     }
 
     for (let i = 0; i < listenedEpisodes; i++) {
-      totalListenedDuration += getEpisodeDuration(program, i);
+      totalListenedDuration += getEpisodeDuration(
+        program.episodes[i],
+        program.platform
+      );
     }
   }
 
@@ -76,4 +73,14 @@ export function calculateStats(
         ? Math.round((totalEpisodesListened / totalEpisodes) * 100)
         : 0,
   };
+}
+
+export function calculateProgramRuntime(program: Program) {
+  let programRuntime = 0;
+
+  for (const ep of program.episodes) {
+    programRuntime += getEpisodeDuration(ep, program.platform);
+  }
+
+  return programRuntime;
 }

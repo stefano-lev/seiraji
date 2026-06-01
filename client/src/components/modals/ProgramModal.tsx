@@ -6,6 +6,7 @@ import { Input } from '../ui/input';
 import type { Program } from '@/types/media';
 import type { UserProgramState } from '@/types/user';
 import { Preferences } from '@/lib/storage';
+import { calculateProgramRuntime } from '@/lib/stats';
 
 type ProgramModalProps = {
   open: boolean;
@@ -229,6 +230,16 @@ export function ProgramModal({
                     <div className="flex justify-between gap-3">
                       <span className="text-muted-foreground">Platform</span>
                       <span>{programData.platform}</span>
+                    </div>
+
+                    <div className="flex justify-between gap-3">
+                      <span className="text-muted-foreground">Runtime</span>
+                      <span>
+                        {Math.round(
+                          calculateProgramRuntime(programData) / 3600
+                        )}{' '}
+                        hrs
+                      </span>
                     </div>
 
                     <div className="flex justify-between gap-3">

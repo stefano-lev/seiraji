@@ -83,7 +83,7 @@ export async function scrapeYoutubePlaylist(url: string) {
 
       description: playlist.snippet.description,
 
-      hosts: playlist.snippet.channelTitle,
+      hosts: [playlist.snippet.channelTitle],
 
       thumbnail: playlist.snippet.thumbnails?.maxres?.url ?? null,
     },
@@ -110,6 +110,10 @@ export async function scrapeYoutubePlaylist(url: string) {
           ),
 
           thumbnail: ep.snippet.thumbnails?.high?.url ?? null,
+
+          durationSeconds: isoDuration
+            ? parseYoutubeDuration(isoDuration)
+            : null,
 
           duration: {
             raw: isoDuration,

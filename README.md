@@ -6,6 +6,8 @@ The project started as a personal tool for keeping up with weekly radio programs
 
 Unlike traditional media trackers, SeiRaji is built around Japanese online radio ecosystems like Onsen, AuDee, QloveR, NicoChannel, YouTube playlists, and even supports manually added programs.
 
+![SeiRaji Landing Page](./screenshots/seiraji-header.png)
+
 Live Demo: https://seiraji.stef-lev.xyz/
 
 ## Features
@@ -73,10 +75,6 @@ The project also gave me experience working with:
 - data merging and synchronization logic
 
 ## Screenshots
-
-### Main Library View
-
-![Main Library View](./screenshots/main.png)
 
 ### YouTube Playlist Support
 
