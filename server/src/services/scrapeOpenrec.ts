@@ -84,8 +84,8 @@ export async function scrapeOpenrec(url: string) {
       episodeCount: episodes.length,
     },
 
-    raw: {
-      site,
-    },
+    // raw: {
+    //   site,
+    // },
   };
 }

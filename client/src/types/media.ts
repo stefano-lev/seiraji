@@ -21,7 +21,7 @@ export interface Program {
     thumbnail: string | null;
     customThumbnail?: string | null;
 
-    hosts?: string[];
+    hosts?: string[] | string | null;
 
     schedule?: string | null;
 

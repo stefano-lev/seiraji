@@ -190,7 +190,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "10/20"
         }
@@ -262,7 +264,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "1/12"
         }
@@ -286,7 +290,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "2/9"
         }
@@ -334,7 +340,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "4/6"
         }
@@ -1076,7 +1084,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "8/27"
         }
@@ -1088,7 +1098,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "9/10"
         }
@@ -1232,7 +1244,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "2/25"
         }
@@ -1256,7 +1270,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "3/25"
         }
@@ -1362,7 +1378,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "5/13"
         }
@@ -1504,7 +1522,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "11/3"
         }
@@ -1516,7 +1536,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "11/17"
         }
@@ -1540,7 +1562,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "12/15"
         }
@@ -1648,7 +1672,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "4/20"
         }
@@ -1660,7 +1686,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "5/4"
         }
@@ -1718,7 +1746,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "4/15"
         }
@@ -1814,7 +1844,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "8/5"
         }
@@ -1826,7 +1858,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "8/19"
         }
@@ -1886,7 +1920,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "10/28"
         }
@@ -1922,7 +1958,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "12/9"
         }
@@ -2030,7 +2068,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "4/14"
         }
@@ -2065,6 +2105,508 @@
       "episodeCount": 30
     }
   },
+  "mma": {
+    "id": "onsen:mma",
+    "source": "imported",
+    "platform": "onsen",
+    "platformId": "mma",
+    "slug": "mma",
+    "url": "https://www.onsen.ag/program/mma",
+    "program": {
+      "title": "もえ・つむぎ・きゅーとあぐれっしょんっ！あやねもいるよ♪",
+      "description": "「キュートアグレッション」\n可愛いものを見た時に湧き上がる心理現象のこと。\n聴いたみなさんが思わずツッコんだり、イタズラしたくなったりするように、\n新人声優の3人が明るく楽しく頑張るラジオです。",
+      "thumbnail": "https://d3bzklg4lms4gh.cloudfront.net/program_info/twitter_share_image/default/production/1c/a1/4fd69c9d38eaad0d1ababd858f967452a844/image?v=1779674888",
+      "hosts": [
+        "佳原萌枝",
+        "七瀬つむぎ",
+        "松田彩音"
+      ],
+      "categories": null,
+      "schedule": ""
+    },
+    "episodes": [
+      {
+        "id": "mma-10/4-第0回 わくわくランチタイム",
+        "title": "第0回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "10/4"
+        }
+      },
+      {
+        "id": "mma-10/4-第0回",
+        "title": "第0回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "10/4"
+        }
+      },
+      {
+        "id": "mma-10/13-第1回 わくわくランチタイム",
+        "title": "第1回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "10/13"
+        }
+      },
+      {
+        "id": "mma-10/13-第1回",
+        "title": "第1回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "10/13"
+        }
+      },
+      {
+        "id": "mma-10/27-第2回 わくわくランチタイム",
+        "title": "第2回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "10/27"
+        }
+      },
+      {
+        "id": "mma-10/27-第2回",
+        "title": "第2回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "10/27"
+        }
+      },
+      {
+        "id": "mma-11/3-まどろみディナータイム#1",
+        "title": "まどろみディナータイム#1",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "11/3"
+        }
+      },
+      {
+        "id": "mma-11/10-第3回 わくわくランチタイム",
+        "title": "第3回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "11/10"
+        }
+      },
+      {
+        "id": "mma-11/10-第3回",
+        "title": "第3回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "11/10"
+        }
+      },
+      {
+        "id": "mma-11/17-まどろみディナータイム#2",
+        "title": "まどろみディナータイム#2",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "11/17"
+        }
+      },
+      {
+        "id": "mma-12/1-第4回 わくわくランチタイム",
+        "title": "第4回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "12/1"
+        }
+      },
+      {
+        "id": "mma-12/1-第4回",
+        "title": "第4回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "12/1"
+        }
+      },
+      {
+        "id": "mma-12/8-第5回 わくわくランチタイム",
+        "title": "第5回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "12/8"
+        }
+      },
+      {
+        "id": "mma-12/8-第5回",
+        "title": "第5回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "12/8"
+        }
+      },
+      {
+        "id": "mma-12/22-第6回 わくわくランチタイム",
+        "title": "第6回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "12/22"
+        }
+      },
+      {
+        "id": "mma-12/22-第6回",
+        "title": "第6回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "displayDate": "12/22"
+        }
+      },
+      {
+        "id": "mma-1/6-まどろみディナータイム#3",
+        "title": "まどろみディナータイム#3",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "displayDate": "1/6"
+        }
+      },
+      {
+        "id": "mma-1/19-第7回 わくわくランチタイム",
+        "title": "第7回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "1/19"
+        }
+      },
+      {
+        "id": "mma-1/19-第7回",
+        "title": "第7回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "1/19"
+        }
+      },
+      {
+        "id": "mma-2/2-第8回 わくわくランチタイム",
+        "title": "第8回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "2/2"
+        }
+      },
+      {
+        "id": "mma-2/2-第8回",
+        "title": "第8回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "2/2"
+        }
+      },
+      {
+        "id": "mma-2/16-第9回 わくわくランチタイム",
+        "title": "第9回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "2/16"
+        }
+      },
+      {
+        "id": "mma-2/16-第9回",
+        "title": "第9回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "displayDate": "2/16"
+        }
+      },
+      {
+        "id": "mma-2/23-まどろみディナータイム#4",
+        "title": "まどろみディナータイム#4",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "displayDate": "2/23"
+        }
+      },
+      {
+        "id": "mma-3/2-第10回 わくわくランチタイム",
+        "title": "第10回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "3/2"
+        }
+      },
+      {
+        "id": "mma-3/2-第10回",
+        "title": "第10回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "3/2"
+        }
+      },
+      {
+        "id": "mma-3/16-第11回 わくわくランチタイム",
+        "title": "第11回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "3/16"
+        }
+      },
+      {
+        "id": "mma-3/16-第11回",
+        "title": "第11回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "3/16"
+        }
+      },
+      {
+        "id": "mma-3/23-まどろみディナータイム#5",
+        "title": "まどろみディナータイム#5",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "3/23"
+        }
+      },
+      {
+        "id": "mma-3/30-第12回 わくわくランチタイム",
+        "title": "第12回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "3/30"
+        }
+      },
+      {
+        "id": "mma-3/30-第12回",
+        "title": "第12回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "3/30"
+        }
+      },
+      {
+        "id": "mma-4/13-第13回 わくわくランチタイム",
+        "title": "第13回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "4/13"
+        }
+      },
+      {
+        "id": "mma-4/13-第13回",
+        "title": "第13回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "4/13"
+        }
+      },
+      {
+        "id": "mma-4/27-第14回 わくわくランチタイム",
+        "title": "第14回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "4/27"
+        }
+      },
+      {
+        "id": "mma-4/27-第14回",
+        "title": "第14回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "4/27"
+        }
+      },
+      {
+        "id": "mma-5/11-第15回 わくわくランチタイム",
+        "title": "第15回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "5/11"
+        }
+      },
+      {
+        "id": "mma-5/11-第15回",
+        "title": "第15回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "5/11"
+        }
+      },
+      {
+        "id": "mma-5/25-第16回 わくわくランチタイム",
+        "title": "第16回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "5/25"
+        }
+      },
+      {
+        "id": "mma-5/25-第16回",
+        "title": "第16回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "5/25"
+        }
+      }
+    ],
+    "meta": {
+      "cachedAt": "2026-06-02T20:31:22.611Z",
+      "episodeCount": 39
+    }
+  },
   "umauma": {
     "id": "onsen:umauma",
     "source": "imported",
@@ -2076,7 +2618,11 @@
       "title": "カンナヒカル（仮）",
       "description": "このラジオは…\nほぼ初対面の中村カンナさんと飯田ヒカルさんが\nこれから少しずつ何かにあっていく番組です。\nタイトル含めて、どう変わっていくかお楽しみ下さい。\n現在のところこの2人の共通キーワードは『食』です。\n※「カンナヒカル」というタイトルもまだ仮です。",
       "thumbnail": "https://d3bzklg4lms4gh.cloudfront.net/program_info/twitter_share_image/default/production/d8/8c/26cb6792330a1de0cf480b001c84dc12dd0d/image?v=1779780294",
-      "hosts": "中村カンナ, 飯田ヒカル",
+      "hosts": [
+        "中村カンナ",
+        "飯田ヒカル",
+        "花岩香奈"
+      ],
       "categories": null,
       "schedule": "隔週火曜日配信"
     },
@@ -2148,7 +2694,9 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "displayDate": "5/12"
         }
@@ -2167,7 +2715,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-02T19:08:22.319Z",
+      "cachedAt": "2026-06-02T20:32:47.233Z",
       "episodeCount": 7
     }
   }

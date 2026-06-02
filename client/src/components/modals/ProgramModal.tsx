@@ -48,6 +48,20 @@ export function ProgramModal({
     ? [...programData.episodes].reverse()
     : programData.episodes;
 
+  const rawHosts = program.program.hosts;
+
+  const hostsArray = Array.isArray(rawHosts)
+    ? rawHosts
+    : typeof rawHosts === 'string'
+      ? rawHosts.split('\n')
+      : [];
+
+  const hostsText =
+    hostsArray
+      .map((h: string) => h.trim())
+      .filter(Boolean)
+      .join(', ') || 'Unknown host';
+
   return (
     <motion.div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-2 sm:p-4"
@@ -129,9 +143,7 @@ export function ProgramModal({
                     {programData.program.title}
                   </h2>
 
-                  <p className="text-muted-foreground mt-2">
-                    {(programData.program.hosts ?? []) || 'Unknown host'}
-                  </p>
+                  <p className="text-muted-foreground mt-2">{hostsText}</p>
 
                   <div className="flex flex-wrap gap-2 mt-4">
                     <Badge>{programData.platform}</Badge>

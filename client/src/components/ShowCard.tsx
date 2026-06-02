@@ -56,6 +56,20 @@ export const ShowCard = React.memo(function ShowCard({
 
   const latestEpisode = program.episodes[program.episodes.length - 1];
 
+  const rawHosts = program.program.hosts;
+
+  const hostsArray = Array.isArray(rawHosts)
+    ? rawHosts
+    : typeof rawHosts === 'string'
+      ? rawHosts.split('\n')
+      : [];
+
+  const hostsText =
+    hostsArray
+      .map((h: string) => h.trim())
+      .filter(Boolean)
+      .join(', ') || 'Unknown host';
+
   function clamp(n: number) {
     if (!Number.isFinite(n)) return 0;
     return Math.max(0, Math.min(Math.floor(n), totalEpisodes));
@@ -109,10 +123,7 @@ export const ShowCard = React.memo(function ShowCard({
                 </h3>
 
                 <p className="text-sm text-muted-foreground line-clamp-1 mt-1 min-h-[1.25rem]">
-                  {/* {program.program.hosts?.length
-                    ? program.program.hosts.join(', ')
-                    : 'Unknown host'} */}
-                  {program.program.hosts}
+                  {hostsText}
                 </p>
               </div>
             </div>

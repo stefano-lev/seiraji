@@ -1,4 +1,5 @@
 import * as cheerio from 'cheerio';
+import { normalizeHosts } from '../utils/normalizeHosts';
 
 function getOnsenRows($: cheerio.CheerioAPI) {
   const scroll = $('.scroll-table tr.wrap-content');
@@ -23,7 +24,11 @@ export async function scrapeOnsen(url: string) {
   const description =
     $('meta[name="twitter:description"]').attr('content') || '';
 
-  const hosts = $('.single-categories.performer a').text().trim();
+  const hostsRaw = $('.single-categories.performer a')
+    .map((_, el) => $(el).text())
+    .get();
+
+  const hosts = normalizeHosts(hostsRaw);
 
   const liveperiod = $('.live-period-mb').text().trim();
 

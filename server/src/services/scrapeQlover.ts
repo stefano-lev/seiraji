@@ -94,8 +94,8 @@ export async function scrapeQlover(url: string) {
       episodeCount: filteredEpisodes.length,
     },
 
-    raw: {
-      site: baseJson,
-    },
+    // raw: {
+    //   site: baseJson,
+    // },
   };
 }

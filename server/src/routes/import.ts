@@ -16,13 +16,7 @@ router.post('/', requireAdmin, async (req, res) => {
       });
     }
 
-    const imported = await importProgram(url);
-
-    const data = structuredClone(imported);
-
-    if (hostOverride?.trim()) {
-      data.program.hosts = [hostOverride.trim()];
-    }
+    const data = await importProgram(url, hostOverride?.trim() || undefined);
 
     return res.json(data);
   } catch (error) {

@@ -96,8 +96,8 @@ export async function scrapeNicochannel(url: string) {
       episodeCount: filteredEpisodes.length,
     },
 
-    raw: {
-      site: baseJson,
-    },
+    // raw: {
+    //   site: baseJson,
+    // },
   };
 }

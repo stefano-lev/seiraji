@@ -8966,6 +8966,161 @@
       }
     }
   },
+  "sukima": {
+    "id": "qlover:sukima",
+    "source": "imported",
+    "platform": "qlover",
+    "platformId": 1097,
+    "slug": "sukima",
+    "url": "https://qlover.jp/sukima",
+    "episodesUrl": "https://qlover.jp/sukima/videos",
+    "program": {
+      "title": "すみぺのすきま 〜知らないんですか？上坂さん！〜",
+      "description": "声優・上坂すみれが仕事にかこつけてマニアックな情報を「すきま」にインプット！\nゲストの“得意な界隈”をすみぺにオススメするトーク番組。\n多趣味なすみぺが激ハマりする新たな界隈が現れるかも！？\n\n放送日時\n文化放送（FM91.6／AM1134） 毎週火曜日26:00〜26:30",
+      "hosts": ["上坂すみれ"],
+      "category": "声優",
+      "twitter": null,
+      "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/1097/thumbnail_image_path?time=1774265312"
+    },
+    "episodes": [
+      {
+        "id": "qlover:smTVNALMxkEmyK7xWCb2CR9a",
+        "title": "#1 2026年3月31日OA回アーカイブ",
+        "publishedAt": "2026-03-31T17:30:00+09:00",
+        "publishedAtUnix": 1774945800,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/81583/thumbnail_path?time=1774851818",
+        "durationSeconds": 1477,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 686
+        }
+      },
+      {
+        "id": "qlover:smnSHTEio52xHUYAQzghTCEx",
+        "title": "#2 2026年4月7日OA回アーカイブ",
+        "publishedAt": "2026-04-07T17:30:00+09:00",
+        "publishedAtUnix": 1775550600,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/83161/thumbnail_path?time=1775447909",
+        "durationSeconds": 1570,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 263
+        }
+      },
+      {
+        "id": "qlover:smVMKBJpQVjRVfbXErH3Y3FM",
+        "title": "#3 2026年4月14日OA回アーカイブ",
+        "publishedAt": "2026-04-14T17:30:00+09:00",
+        "publishedAtUnix": 1776155400,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/83795/thumbnail_path?time=1776053560",
+        "durationSeconds": 1579,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 220
+        }
+      },
+      {
+        "id": "qlover:smkYGmD9Fxei7cWzeEHzc4fg",
+        "title": "#4 2026年4月21日OA回アーカイブ",
+        "publishedAt": "2026-04-21T17:30:00+09:00",
+        "publishedAtUnix": 1776760200,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/84682/thumbnail_path?time=1776740551",
+        "durationSeconds": 1560,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 201
+        }
+      },
+      {
+        "id": "qlover:smWUsXj7s8pLfrUvPpbJFJFo",
+        "title": "#5 2026年4月28日OA回アーカイブ",
+        "publishedAt": "2026-04-28T17:30:00+09:00",
+        "publishedAtUnix": 1777365000,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/85348/thumbnail_path?time=1778559695",
+        "durationSeconds": 1568,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 209
+        }
+      },
+      {
+        "id": "qlover:smhs2QQB3vtEWFe2eYTtTYLX",
+        "title": "#6 2026年5月5日OA回アーカイブ",
+        "publishedAt": "2026-05-05T17:30:00+09:00",
+        "publishedAtUnix": 1777969800,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/86019/thumbnail_path?time=1778559760",
+        "durationSeconds": 1584,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 251
+        }
+      },
+      {
+        "id": "qlover:smFxLAUbRaGot7FknWGBKfoU",
+        "title": "開設スタート記念生配信「すみぺのすきま 〜知らないんですか？上坂さん！〜」",
+        "publishedAt": "2026-05-08T12:42:38+09:00",
+        "publishedAtUnix": 1778211758,
+        "thumbnail": null,
+        "durationSeconds": 2583,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 2283
+        }
+      },
+      {
+        "id": "qlover:smTC6fQVqczKRJRyZW3dqZDb",
+        "title": "#7 2026年5月12日OA回アーカイブ",
+        "publishedAt": "2026-05-12T17:30:00+09:00",
+        "publishedAtUnix": 1778574600,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/86677/thumbnail_path?time=1778559814",
+        "durationSeconds": 1591,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 227
+        }
+      },
+      {
+        "id": "qlover:smiYngnn87nkKapohcggKgBP",
+        "title": "#8 2026年5月19日OA回アーカイブ",
+        "publishedAt": "2026-05-19T17:30:00+09:00",
+        "publishedAtUnix": 1779179400,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/88302/thumbnail_path?time=1779098603",
+        "durationSeconds": 1520,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 175
+        }
+      },
+      {
+        "id": "qlover:smi6hyxVFnMkJGri9URagAwv",
+        "title": "#9 2026年5月26日OA回アーカイブ",
+        "publishedAt": "2026-05-26T17:30:00+09:00",
+        "publishedAtUnix": 1779784200,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/89041/thumbnail_path?time=1779768105",
+        "durationSeconds": 1517,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 164
+        }
+      },
+      {
+        "id": "qlover:smYcuPVDaKtJj6mQ5FXR5wM7",
+        "title": "#10 2026年6月2日OA回アーカイブ",
+        "publishedAt": "2026-06-02T17:30:00+09:00",
+        "publishedAtUnix": 1780389000,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/89692/thumbnail_path?time=1780367235",
+        "durationSeconds": 1564,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": null
+        }
+      }
+    ],
+    "meta": {
+      "cachedAt": "2026-06-02T20:29:01.454Z",
+      "episodeCount": 11
+    }
+  },
   "naoliving": {
     "id": "qlover:naoliving",
     "source": "imported",
@@ -9741,280 +9896,8 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-02T19:28:18.109Z",
+      "cachedAt": "2026-06-02T20:30:04.459Z",
       "episodeCount": 63
-    },
-    "raw": {
-      "site": {
-        "data": {
-          "fanclub_site": {
-            "content_provider": {
-              "copyright": "(C) Nippon Cultural Broadcasting Inc.All rights reserved.",
-              "fanclub_release_status": {
-                "fanclub_release_status_type": {
-                  "id": 3
-                }
-              },
-              "service_provider": "© DWANGO Co., Ltd.",
-              "shop_url": null
-            },
-            "current_fanclub_design": {
-              "app_cover_image_url": "https://qlover.jp/public_html/site_design/fanclub_designs/20000/app_cover_image_path?time=1774858168",
-              "app_icon_url": "https://cdn.qlover.jp/public_html/site_design/fanclub_designs/20000/app_icon_path?time=1774858168",
-              "app_show_shop": false,
-              "design_background": {
-                "background_color_name": "ブラック",
-                "color_code": "#000000",
-                "id": 2
-              },
-              "design_color_theme": {
-                "design_color_theme_details": [
-                  {
-                    "color_code": "#61a143",
-                    "design_color_type": {
-                      "id": 1,
-                      "type_name": "プライマリーカラー"
-                    },
-                    "id": 30225
-                  },
-                  {
-                    "color_code": "#e56c9e",
-                    "design_color_type": {
-                      "id": 2,
-                      "type_name": "アクセントカラー"
-                    },
-                    "id": 30226
-                  },
-                  {
-                    "color_code": "#76ca4e",
-                    "design_color_type": {
-                      "id": 3,
-                      "type_name": "グラデーション開始色"
-                    },
-                    "id": 30227
-                  },
-                  {
-                    "color_code": "#25afdb",
-                    "design_color_type": {
-                      "id": 4,
-                      "type_name": "グラデーション終了色"
-                    },
-                    "id": 30228
-                  }
-                ],
-                "id": 7549
-              },
-              "design_drawer_menu": {
-                "id": 1,
-                "menu_name": "テーマ1（デフォルト）"
-              },
-              "design_elevation": {
-                "id": 1,
-                "material_ui_code": "shadow",
-                "object_elevation_style_name": "シャドウ"
-              },
-              "design_global_menu_font": {
-                "css_url": null,
-                "font_name": "デフォルト",
-                "is_japanese_supported": true
-              },
-              "design_header_font": {
-                "css_url": null,
-                "font_name": "デフォルト",
-                "id": 1,
-                "is_japanese_supported": true
-              },
-              "design_shape": {
-                "id": 1,
-                "material_ui_code": "",
-                "shape_name": "ラウンド"
-              },
-              "fanclub_design_customlink_details": [],
-              "fanclub_design_sub_page_title": {
-                "application_form_title": "",
-                "live_title": "",
-                "vod_title": ""
-              },
-              "fanclub_footer_snses": [
-                {
-                  "fanclub_sns": {
-                    "display_name": "X(旧Twitter)",
-                    "icon_image_path": "",
-                    "id": 1
-                  },
-                  "id": 31777,
-                  "sns_page_url": "https://x.com/nao_living"
-                }
-              ],
-              "fanclub_menus": [
-                {
-                  "article_theme": {
-                    "theme_name": "NEWS",
-                    "theme_relative_url": "news"
-                  },
-                  "display_order": 1,
-                  "fanclub_menu_item_type": {
-                    "id": 3,
-                    "menu_item_name": "記事"
-                  },
-                  "fanclub_menu_type": {
-                    "id": 1,
-                    "name": "ヘッダー"
-                  },
-                  "id": 90753,
-                  "menu_item_header": null,
-                  "menu_item_link_url": null,
-                  "use_blank_target": false,
-                  "video_tag": null
-                },
-                {
-                  "article_theme": null,
-                  "display_order": 1,
-                  "fanclub_menu_item_type": {
-                    "id": 1,
-                    "menu_item_name": "カスタム"
-                  },
-                  "fanclub_menu_type": {
-                    "id": 2,
-                    "name": "フッター"
-                  },
-                  "id": 90757,
-                  "menu_item_header": "東山奈央 オフィシャルサイト",
-                  "menu_item_link_url": "https://toyamanao.com/",
-                  "use_blank_target": true,
-                  "video_tag": null
-                },
-                {
-                  "article_theme": null,
-                  "display_order": 2,
-                  "fanclub_menu_item_type": {
-                    "id": 2,
-                    "menu_item_name": "動画"
-                  },
-                  "fanclub_menu_type": {
-                    "id": 1,
-                    "name": "ヘッダー"
-                  },
-                  "id": 90754,
-                  "menu_item_header": null,
-                  "menu_item_link_url": null,
-                  "use_blank_target": false,
-                  "video_tag": null
-                },
-                {
-                  "article_theme": null,
-                  "display_order": 2,
-                  "fanclub_menu_item_type": {
-                    "id": 1,
-                    "menu_item_name": "カスタム"
-                  },
-                  "fanclub_menu_type": {
-                    "id": 2,
-                    "name": "フッター"
-                  },
-                  "id": 90758,
-                  "menu_item_header": "【Xアカウント】東山奈央 オフィシャル",
-                  "menu_item_link_url": "https://x.com/naobou_official",
-                  "use_blank_target": true,
-                  "video_tag": null
-                },
-                {
-                  "article_theme": null,
-                  "display_order": 3,
-                  "fanclub_menu_item_type": {
-                    "id": 1,
-                    "menu_item_name": "カスタム"
-                  },
-                  "fanclub_menu_type": {
-                    "id": 1,
-                    "name": "ヘッダー"
-                  },
-                  "id": 90755,
-                  "menu_item_header": "会員特典",
-                  "menu_item_link_url": "https://qlover.jp/naoliving/articles/news/arjFwJ2CCB4MWM3GXEYrToih",
-                  "use_blank_target": true,
-                  "video_tag": null
-                },
-                {
-                  "article_theme": null,
-                  "display_order": 3,
-                  "fanclub_menu_item_type": {
-                    "id": 1,
-                    "menu_item_name": "カスタム"
-                  },
-                  "fanclub_menu_type": {
-                    "id": 2,
-                    "name": "フッター"
-                  },
-                  "id": 90759,
-                  "menu_item_header": "【Instagramアカウント】東山奈央",
-                  "menu_item_link_url": "https://www.instagram.com/naobou_official/",
-                  "use_blank_target": true,
-                  "video_tag": null
-                },
-                {
-                  "article_theme": null,
-                  "display_order": 4,
-                  "fanclub_menu_item_type": {
-                    "id": 1,
-                    "menu_item_name": "カスタム"
-                  },
-                  "fanclub_menu_type": {
-                    "id": 1,
-                    "name": "ヘッダー"
-                  },
-                  "id": 90756,
-                  "menu_item_header": "番組について",
-                  "menu_item_link_url": "https://qlover.jp/naoliving/articles/news/arbjtiqgyvqKwUzTNwRHWiDY",
-                  "use_blank_target": true,
-                  "video_tag": null
-                },
-                {
-                  "article_theme": null,
-                  "display_order": 4,
-                  "fanclub_menu_item_type": {
-                    "id": 1,
-                    "menu_item_name": "カスタム"
-                  },
-                  "fanclub_menu_type": {
-                    "id": 2,
-                    "name": "フッター"
-                  },
-                  "id": 90760,
-                  "menu_item_header": "【YouTubeチャンネル】東山奈央",
-                  "menu_item_link_url": "https://www.youtube.com/@toyamanao",
-                  "use_blank_target": true,
-                  "video_tag": null
-                }
-              ],
-              "full_screen_logo_image_url": null,
-              "full_screen_menu_color_code": null,
-              "logo_image_url": "https://cdn.qlover.jp/public_html/site_design/fanclub_designs/20000/logo_image_path?time=1774858168"
-            },
-            "description": "この番組は、東山奈央さんが、週の始まり月曜日にリスナーのあなたと日々の出来事をまったりおしゃべりをしていくリビング型プログラムです！\n\n■放送日時：\n  QloveR「超!A&G+ チャンネル」毎週月曜日22:00〜22:30\n  文化放送（FM91.6／AM1134） 毎週月曜日27:30〜28:00",
-            "facebook_app_id": null,
-            "fanclub_code": "FCS00740",
-            "fanclub_group": {
-              "hosting_type_id": 0,
-              "primary_content_provider": {
-                "fanclub_site_name": "QloveR"
-              }
-            },
-            "fanclub_site_name": "東山奈央のラジオ＠リビング",
-            "favicon_url": null,
-            "ga_measurement_id": null,
-            "gtm_container_id": null,
-            "hash_tag": "#at_living",
-            "site_hashtags": [
-              {
-                "hashtag_name": "声優",
-                "id": 1330
-              }
-            ],
-            "thumbnail_image_url": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/740/thumbnail_image_path?time=1747650070"
-          }
-        }
-      }
     }
   }
 }
