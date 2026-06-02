@@ -23729,5 +23729,470 @@
         }
       }
     }
+  },
+  "itoh-maki": {
+    "id": "audee:itoh-maki",
+    "source": "imported",
+    "platform": "audee",
+    "platformId": 1123,
+    "slug": "itoh-maki",
+    "url": "https://audee-membership.jp/itoh-maki",
+    "episodesUrl": "https://audee-membership.jp/itoh-maki/videos",
+    "program": {
+      "title": "世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている",
+      "description": "世界一可愛いプロレスラー伊藤麻希が送るラジオ番組。\n伊藤麻希リスペクト軍団拡大のため、その可愛さを存分にお届け\n試合では見せない一面も見せちゃうかも！？",
+      "hosts": ["伊藤麻希"],
+      "category": "エンタメ",
+      "twitter": null,
+      "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/1123/thumbnail_image_path?time=1778666488"
+    },
+    "episodes": [
+      {
+        "id": "audee:smRqLwtrdHhHW6DnaK5oowhv",
+        "title": "【#カワミテ】#1 緊張の初回！【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-04-15T11:00:00+09:00",
+        "publishedAtUnix": 1776218400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/84006/thumbnail_path?time=1776236668",
+        "durationSeconds": 1699,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1644
+        }
+      },
+      {
+        "id": "audee:smhLmovfo3fGihHiKLAbPZrL",
+        "title": "【#カワミテ】動画版 #1 プロフィール帳を書こう！【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-04-15T11:00:00+09:00",
+        "publishedAtUnix": 1776218400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/84014/thumbnail_path?time=1776329556",
+        "durationSeconds": 667,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 1078
+        }
+      },
+      {
+        "id": "audee:smjSG6JPjwxEJPH5Pf382bxf",
+        "title": "【#カワミテ】#2 ゆっくり喋れるかな？【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-04-22T11:00:00+09:00",
+        "publishedAtUnix": 1776823200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/84812/thumbnail_path?time=1776842313",
+        "durationSeconds": 1902,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 760
+        }
+      },
+      {
+        "id": "audee:smWstyv8CxbAKoVoeGjJXnxX",
+        "title": "【#カワミテ】動画版 #2 箱の中身はなんだろな【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-04-22T11:00:00+09:00",
+        "publishedAtUnix": 1776823200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/84813/thumbnail_path?time=1776847386",
+        "durationSeconds": 478,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 390
+        }
+      },
+      {
+        "id": "audee:smoEnJnEJuDXyQzReRmYrVkn",
+        "title": "【#カワミテ】#3 伊藤リスペクト軍団強化計画始動！【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-04-29T11:00:00+09:00",
+        "publishedAtUnix": 1777428000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/85576/thumbnail_path?time=1777436515",
+        "durationSeconds": 2079,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 744
+        }
+      },
+      {
+        "id": "audee:smE2Ac2eEomqsU5tb3mq5xZv",
+        "title": "【#カワミテ】動画版 #3 IRTC作り！【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-04-29T11:00:00+09:00",
+        "publishedAtUnix": 1777428000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/85585/thumbnail_path?time=1777436747",
+        "durationSeconds": 729,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 352
+        }
+      },
+      {
+        "id": "audee:smEA4ukwyNFwCr2Z7k8iZyex",
+        "title": "【#カワミテ】#4 鏡よ鏡。世界一可愛いのは伊藤ちゃん！【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-05-06T11:00:00+09:00",
+        "publishedAtUnix": 1778032800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/86138/thumbnail_path?time=1778042621",
+        "durationSeconds": 1876,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 709
+        }
+      },
+      {
+        "id": "audee:smkhPugTihtqJm9ota25EJEB",
+        "title": "【#カワミテ】動画版 #4 チャレンジ！漢字テスト【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-05-06T11:00:00+09:00",
+        "publishedAtUnix": 1778032800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/86139/thumbnail_path?time=1778042848",
+        "durationSeconds": 787,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 322
+        }
+      },
+      {
+        "id": "audee:smnJGkN8W7GdLNDasnmW6Mpb",
+        "title": "【#カワミテ】#5 弟子登場！(ゲスト：古沢稀杏選手)【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-05-13T11:00:00+09:00",
+        "publishedAtUnix": 1778637600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/87854/thumbnail_path?time=1778734255",
+        "durationSeconds": 1538,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1386
+        }
+      },
+      {
+        "id": "audee:smnfJHp7SXSq5zikNt79iNZq",
+        "title": "【#カワミテ】動画版 #5プロフィール帳 〜 古沢選手編 〜【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-05-13T11:00:00+09:00",
+        "publishedAtUnix": 1778637600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/87873/thumbnail_path?time=1778734278",
+        "durationSeconds": 706,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 874
+        }
+      },
+      {
+        "id": "audee:smN8TCUkNfJoRzW7AnGnmSfM",
+        "title": "【#カワミテ】#6 可愛さの秘訣！(ゲスト：古沢稀杏選手)【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-05-20T11:00:00+09:00",
+        "publishedAtUnix": 1779242400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/88524/thumbnail_path?time=1779270943",
+        "durationSeconds": 1500,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 906
+        }
+      },
+      {
+        "id": "audee:smSQDmNZN4u8XBe9qEZ7ieEx",
+        "title": "【#カワミテ】動画版 #6 伊藤リスペクトテスト【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-05-20T11:00:00+09:00",
+        "publishedAtUnix": 1779242400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/88526/thumbnail_path?time=1779270976",
+        "durationSeconds": 858,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 507
+        }
+      },
+      {
+        "id": "audee:smVVowyjVdunThSKbNM7dGKA",
+        "title": "〈1週間限定無料公開〉【#カワミテ】#7 傷心モードでも可愛い伊藤ちゃん【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-05-27T11:00:00+09:00",
+        "publishedAtUnix": 1779847200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/89151/thumbnail_path?time=1780134688",
+        "durationSeconds": 1473,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1358
+        }
+      },
+      {
+        "id": "audee:smaAUmZbQ3NDbfyXaNhywcqG",
+        "title": "【#カワミテ】動画版 #7 イライラゲーム【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-05-27T11:00:00+09:00",
+        "publishedAtUnix": 1779847200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/89153/thumbnail_path?time=1780134676",
+        "durationSeconds": 390,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 361
+        }
+      },
+      {
+        "id": "audee:smV5gFrpFWw5Zo8BMauT9XRt",
+        "title": "【#カワミテ】動画版 IRTC制作動画～5月～【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-05-30T11:00:00+09:00",
+        "publishedAtUnix": 1780106400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/89457/thumbnail_path?time=1780134662",
+        "durationSeconds": 1080,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 430
+        }
+      }
+    ],
+    "meta": {
+      "cachedAt": "2026-06-02T19:26:15.423Z",
+      "episodeCount": 15
+    },
+    "raw": {
+      "site": {
+        "data": {
+          "fanclub_site": {
+            "content_provider": {
+              "copyright": "Copyright © TOKYO FM Broadcasting Co., Ltd. All rights reserved.",
+              "fanclub_release_status": {
+                "fanclub_release_status_type": {
+                  "id": 3
+                }
+              },
+              "service_provider": "© DWANGO Co., Ltd.",
+              "shop_url": null
+            },
+            "current_fanclub_design": {
+              "app_cover_image_url": "https://audee-membership.jp/public_html/site_design/fanclub_designs/21161/app_cover_image_path?time=1778666535",
+              "app_icon_url": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_designs/21161/app_icon_path?time=1778666535",
+              "app_show_shop": false,
+              "design_background": {
+                "background_color_name": "ブラック",
+                "color_code": "#000000",
+                "id": 2
+              },
+              "design_color_theme": {
+                "design_color_theme_details": [
+                  {
+                    "color_code": "#225db7",
+                    "design_color_type": {
+                      "id": 1,
+                      "type_name": "プライマリーカラー"
+                    },
+                    "id": 33097
+                  },
+                  {
+                    "color_code": "#225db7",
+                    "design_color_type": {
+                      "id": 2,
+                      "type_name": "アクセントカラー"
+                    },
+                    "id": 33098
+                  },
+                  {
+                    "color_code": "#ec6e07",
+                    "design_color_type": {
+                      "id": 3,
+                      "type_name": "グラデーション開始色"
+                    },
+                    "id": 33099
+                  },
+                  {
+                    "color_code": "#ffb500",
+                    "design_color_type": {
+                      "id": 4,
+                      "type_name": "グラデーション終了色"
+                    },
+                    "id": 33100
+                  }
+                ],
+                "id": 8267
+              },
+              "design_drawer_menu": {
+                "id": 1,
+                "menu_name": "テーマ1（デフォルト）"
+              },
+              "design_elevation": {
+                "id": 1,
+                "material_ui_code": "shadow",
+                "object_elevation_style_name": "シャドウ"
+              },
+              "design_global_menu_font": {
+                "css_url": null,
+                "font_name": "デフォルト",
+                "is_japanese_supported": true
+              },
+              "design_header_font": {
+                "css_url": null,
+                "font_name": "Train One",
+                "id": 7,
+                "is_japanese_supported": true
+              },
+              "design_shape": {
+                "id": 1,
+                "material_ui_code": "",
+                "shape_name": "ラウンド"
+              },
+              "fanclub_design_customlink_details": [],
+              "fanclub_design_sub_page_title": {
+                "application_form_title": "",
+                "live_title": "",
+                "vod_title": ""
+              },
+              "fanclub_footer_snses": [],
+              "fanclub_menus": [
+                {
+                  "article_theme": null,
+                  "display_order": 1,
+                  "fanclub_menu_item_type": {
+                    "id": 1,
+                    "menu_item_name": "カスタム"
+                  },
+                  "fanclub_menu_type": {
+                    "id": 1,
+                    "name": "ヘッダー"
+                  },
+                  "id": 95364,
+                  "menu_item_header": "RADIO",
+                  "menu_item_link_url": "https://audee-membership.jp/itoh-maki/videos?tag=RADIO",
+                  "use_blank_target": false,
+                  "video_tag": null
+                },
+                {
+                  "article_theme": null,
+                  "display_order": 1,
+                  "fanclub_menu_item_type": {
+                    "id": 1,
+                    "menu_item_name": "カスタム"
+                  },
+                  "fanclub_menu_type": {
+                    "id": 2,
+                    "name": "フッター"
+                  },
+                  "id": 95370,
+                  "menu_item_header": "伊藤麻希 X",
+                  "menu_item_link_url": "https://x.com/maki_itoh",
+                  "use_blank_target": false,
+                  "video_tag": null
+                },
+                {
+                  "article_theme": null,
+                  "display_order": 2,
+                  "fanclub_menu_item_type": {
+                    "id": 2,
+                    "menu_item_name": "動画"
+                  },
+                  "fanclub_menu_type": {
+                    "id": 1,
+                    "name": "ヘッダー"
+                  },
+                  "id": 95365,
+                  "menu_item_header": "動画企画",
+                  "menu_item_link_url": null,
+                  "use_blank_target": false,
+                  "video_tag": "動画企画"
+                },
+                {
+                  "article_theme": null,
+                  "display_order": 2,
+                  "fanclub_menu_item_type": {
+                    "id": 1,
+                    "menu_item_name": "カスタム"
+                  },
+                  "fanclub_menu_type": {
+                    "id": 2,
+                    "name": "フッター"
+                  },
+                  "id": 95371,
+                  "menu_item_header": "番組SNS",
+                  "menu_item_link_url": "https://x.com/itoh_kawamite",
+                  "use_blank_target": false,
+                  "video_tag": null
+                },
+                {
+                  "article_theme": null,
+                  "display_order": 3,
+                  "fanclub_menu_item_type": {
+                    "id": 1,
+                    "menu_item_name": "カスタム"
+                  },
+                  "fanclub_menu_type": {
+                    "id": 1,
+                    "name": "ヘッダー"
+                  },
+                  "id": 95366,
+                  "menu_item_header": "MESSAGE",
+                  "menu_item_link_url": "https://www.tfm.co.jp/f/itoh-maki/message",
+                  "use_blank_target": true,
+                  "video_tag": null
+                },
+                {
+                  "article_theme": {
+                    "theme_name": "NEWS",
+                    "theme_relative_url": "news"
+                  },
+                  "display_order": 4,
+                  "fanclub_menu_item_type": {
+                    "id": 3,
+                    "menu_item_name": "記事"
+                  },
+                  "fanclub_menu_type": {
+                    "id": 1,
+                    "name": "ヘッダー"
+                  },
+                  "id": 95367,
+                  "menu_item_header": null,
+                  "menu_item_link_url": null,
+                  "use_blank_target": false,
+                  "video_tag": null
+                },
+                {
+                  "article_theme": null,
+                  "display_order": 5,
+                  "fanclub_menu_item_type": {
+                    "id": 1,
+                    "menu_item_name": "カスタム"
+                  },
+                  "fanclub_menu_type": {
+                    "id": 1,
+                    "name": "ヘッダー"
+                  },
+                  "id": 95368,
+                  "menu_item_header": "会員特典",
+                  "menu_item_link_url": "https://audee-membership.jp/itoh-maki/articles/news/arY8Lr2uS7z9GgstPNequogo",
+                  "use_blank_target": false,
+                  "video_tag": null
+                },
+                {
+                  "article_theme": null,
+                  "display_order": 6,
+                  "fanclub_menu_item_type": {
+                    "id": 1,
+                    "menu_item_name": "カスタム"
+                  },
+                  "fanclub_menu_type": {
+                    "id": 1,
+                    "name": "ヘッダー"
+                  },
+                  "id": 95369,
+                  "menu_item_header": "番組紹介",
+                  "menu_item_link_url": "https://audee-membership.jp/itoh-maki/articles/news/arKc4HkYJw2G8eCwNUvC8nRt",
+                  "use_blank_target": false,
+                  "video_tag": null
+                }
+              ],
+              "full_screen_logo_image_url": null,
+              "full_screen_menu_color_code": null,
+              "logo_image_url": null
+            },
+            "description": "世界一可愛いプロレスラー伊藤麻希が送るラジオ番組。\n伊藤麻希リスペクト軍団拡大のため、その可愛さを存分にお届け\n試合では見せない一面も見せちゃうかも！？",
+            "facebook_app_id": null,
+            "fanclub_code": "FCS01123",
+            "fanclub_group": {
+              "hosting_type_id": 0,
+              "primary_content_provider": {
+                "fanclub_site_name": "Podcasts Membership"
+              }
+            },
+            "fanclub_site_name": "世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている",
+            "favicon_url": null,
+            "ga_measurement_id": "G-BWBX1XJDW5",
+            "gtm_container_id": null,
+            "hash_tag": "#カワミテ",
+            "site_hashtags": [
+              {
+                "hashtag_name": "エンタメ",
+                "id": 1132
+              }
+            ],
+            "thumbnail_image_url": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/1123/thumbnail_image_path?time=1778666488"
+          }
+        }
+      }
+    }
   }
 }

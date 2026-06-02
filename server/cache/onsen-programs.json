@@ -190,9 +190,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "10/20"
         }
@@ -264,9 +262,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "1/12"
         }
@@ -290,9 +286,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "2/9"
         }
@@ -340,9 +334,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "4/6"
         }
@@ -1084,9 +1076,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "8/27"
         }
@@ -1098,9 +1088,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "9/10"
         }
@@ -1244,9 +1232,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "2/25"
         }
@@ -1270,9 +1256,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "3/25"
         }
@@ -1378,9 +1362,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "5/13"
         }
@@ -1522,9 +1504,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "11/3"
         }
@@ -1536,9 +1516,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "11/17"
         }
@@ -1562,9 +1540,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "12/15"
         }
@@ -1672,9 +1648,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "4/20"
         }
@@ -1686,9 +1660,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "5/4"
         }
@@ -1746,9 +1718,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "4/15"
         }
@@ -1844,9 +1814,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "8/5"
         }
@@ -1858,9 +1826,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "8/19"
         }
@@ -1920,9 +1886,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "10/28"
         }
@@ -1958,9 +1922,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "12/9"
         }
@@ -2068,9 +2030,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "4/14"
         }
@@ -2103,6 +2063,112 @@
     "meta": {
       "cachedAt": "2026-05-20T02:47:49.085Z",
       "episodeCount": 30
+    }
+  },
+  "umauma": {
+    "id": "onsen:umauma",
+    "source": "imported",
+    "platform": "onsen",
+    "platformId": "umauma",
+    "slug": "umauma",
+    "url": "https://www.onsen.ag/program/umauma",
+    "program": {
+      "title": "カンナヒカル（仮）",
+      "description": "このラジオは…\nほぼ初対面の中村カンナさんと飯田ヒカルさんが\nこれから少しずつ何かにあっていく番組です。\nタイトル含めて、どう変わっていくかお楽しみ下さい。\n現在のところこの2人の共通キーワードは『食』です。\n※「カンナヒカル」というタイトルもまだ仮です。",
+      "thumbnail": "https://d3bzklg4lms4gh.cloudfront.net/program_info/twitter_share_image/default/production/d8/8c/26cb6792330a1de0cf480b001c84dc12dd0d/image?v=1779780294",
+      "hosts": "中村カンナ, 飯田ヒカル",
+      "categories": null,
+      "schedule": "隔週火曜日配信"
+    },
+    "episodes": [
+      {
+        "id": "umauma-3/3-第1回",
+        "title": "第1回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "3/3"
+        }
+      },
+      {
+        "id": "umauma-3/17-第2回",
+        "title": "第2回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "3/17"
+        }
+      },
+      {
+        "id": "umauma-3/31-第3回",
+        "title": "第3回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "3/31"
+        }
+      },
+      {
+        "id": "umauma-4/14-第4回",
+        "title": "第4回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "4/14"
+        }
+      },
+      {
+        "id": "umauma-4/28-第5回",
+        "title": "第5回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "4/28"
+        }
+      },
+      {
+        "id": "umauma-5/12-第6回",
+        "title": "第6回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": ["GUEST"],
+        "platformMetadata": {
+          "displayDate": "5/12"
+        }
+      },
+      {
+        "id": "umauma-5/26-第7回",
+        "title": "第7回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "5/26"
+        }
+      }
+    ],
+    "meta": {
+      "cachedAt": "2026-06-02T19:08:22.319Z",
+      "episodeCount": 7
     }
   }
 }

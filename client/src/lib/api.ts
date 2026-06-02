@@ -130,3 +130,24 @@ export async function updateBackup(
 
   return res.json();
 }
+
+export async function importProgram(url: string, hostOverride?: string) {
+  const res = await fetch(`${API_BASE}/import`, {
+    method: 'POST',
+
+    headers: {
+      'Content-Type': 'application/json',
+    },
+
+    body: JSON.stringify({
+      url,
+      hostOverride,
+    }),
+  });
+
+  if (!res.ok) {
+    throw new Error('Failed to import program');
+  }
+
+  return res.json();
+}

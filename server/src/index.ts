@@ -4,14 +4,9 @@ import cors from 'cors';
 import cron from 'node-cron';
 import rateLimit from 'express-rate-limit';
 
-import audeeRoutes from './routes/audee';
-import onsenRoutes from './routes/onsen';
-import qloverRoutes from './routes/qlover';
-import youtubeRoutes from './routes/youtube';
-import nicochannelRoutes from './routes/nicochannel';
-import openrecRoutes from './routes/openrec';
 import libraryRoutes from './routes/library';
 import backupRoutes from './routes/backup';
+import importRoutes from './routes/import';
 
 const app = express();
 
@@ -29,13 +24,6 @@ const importLimiter = rateLimit({
 
 app.use('/api', apiLimiter);
 
-app.use('/api/youtube/import', importLimiter);
-app.use('/api/audee/import', importLimiter);
-app.use('/api/qlover/import', importLimiter);
-app.use('/api/onsen/import', importLimiter);
-app.use('/api/nicochannel/import', importLimiter);
-app.use('/api/openrec/import', importLimiter);
-
 app.use(
   cors({
     origin: ['http://localhost:5173', 'https://seiraji.stef-lev.xyz'],
@@ -44,21 +32,13 @@ app.use(
 
 app.use(express.json());
 
-app.use('/api/audee', audeeRoutes);
-
-app.use('/api/onsen', onsenRoutes);
-
-app.use('/api/qlover', qloverRoutes);
-
-app.use('/api/youtube', youtubeRoutes);
-
-app.use('/api/nicochannel', nicochannelRoutes);
-
-app.use('/api/openrec', openrecRoutes);
-
 app.use('/api/library', libraryRoutes);
 
 app.use('/api/backup', backupRoutes);
+
+app.use('/api/import', importLimiter);
+
+app.use('/api/import', importRoutes);
 
 const PORT = process.env.PORT || 3001;
 

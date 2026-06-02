@@ -11,6 +11,7 @@ import {
   createManualProgram,
   type CreateManualProgramInput,
 } from '@/lib/programs';
+import { importProgram } from '@/lib/api';
 
 type CreateProgramModalProps = {
   open: boolean;
@@ -37,10 +38,15 @@ export function CreateProgramModal({
   const [url, setURL] = useState('');
   const [thumbnail, setThumbnail] = useState('');
 
+  const [tab, setTab] = useState<'manual' | 'import'>('manual');
+
+  const [importUrl, setImportUrl] = useState('');
+  const [hostOverride, setHostOverride] = useState('');
+  const [importing, setImporting] = useState(false);
+
   useEffect(() => {
     if (!editingProgram) return;
 
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     setTitle(editingProgram.program.title);
 
     setHosts((editingProgram.program.hosts ?? []).join(', '));
@@ -123,6 +129,32 @@ export function CreateProgramModal({
     onClose();
   }
 
+  async function handleImport() {
+    if (!importUrl.trim()) {
+      alert('Please enter a URL');
+      return;
+    }
+
+    try {
+      setImporting(true);
+
+      const program = await importProgram(
+        importUrl.trim(),
+        hostOverride.trim() || undefined
+      );
+
+      onSubmit(program);
+
+      onClose();
+    } catch (err) {
+      console.error(err);
+
+      alert('Failed to import program');
+    } finally {
+      setImporting(false);
+    }
+  }
+
   return (
     <motion.div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
@@ -137,119 +169,177 @@ export function CreateProgramModal({
         transition={{ duration: 0.15 }}
         onClick={(e) => e.stopPropagation()}
       >
+        <div className="flex gap-2 mt-4">
+          <Button
+            variant={tab === 'manual' ? 'default' : 'secondary'}
+            onClick={() => setTab('manual')}
+          >
+            Manual
+          </Button>
+
+          <Button
+            variant={tab === 'import' ? 'default' : 'secondary'}
+            onClick={() => setTab('import')}
+          >
+            Import URL
+          </Button>
+        </div>
+
         <div className="border-b border-border/60 px-6 py-4">
           <h2 className="text-xl font-semibold">
-            {editingProgram ? 'Edit Program' : 'Add Manual Program'}
+            {tab === 'manual'
+              ? editingProgram
+                ? 'Edit Program'
+                : 'Add Manual Program'
+              : 'Import Program'}
           </h2>
 
           <p className="text-sm text-muted-foreground mt-2">
-            Create a custom program for unsupported platforms or personal
-            tracking.
+            {tab === 'manual'
+              ? 'Create a custom program for unsupported platforms.'
+              : 'Import a program directly from a supported platform URL.'}
           </p>
         </div>
 
-        <div className="flex-1 overflow-y-auto p-6 space-y-6">
-          <div>
-            <label className="text-sm font-medium mb-2 block">Title</label>
+        <div className="flex-1 overflow-y-auto p-6">
+          {tab === 'manual' ? (
+            <div className="space-y-6">
+              <div>
+                <label className="text-sm font-medium mb-2 block">Title</label>
 
-            <Input
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-              placeholder="ラジオタイトル"
-            />
-          </div>
+                <Input
+                  value={title}
+                  onChange={(e) => setTitle(e.target.value)}
+                  placeholder="ラジオタイトル"
+                />
+              </div>
 
-          <div>
-            <label className="text-sm font-medium mb-2 block">Host</label>
+              <div>
+                <label className="text-sm font-medium mb-2 block">Host</label>
 
-            <Input
-              value={hosts}
-              onChange={(e) => setHosts(e.target.value)}
-              placeholder="田村ゆかり, 水樹奈々"
-            />
-          </div>
+                <Input
+                  value={hosts}
+                  onChange={(e) => setHosts(e.target.value)}
+                  placeholder="田村ゆかり, 水樹奈々"
+                />
+              </div>
 
-          <div>
-            <label className="text-sm font-medium mb-2 block">Platform</label>
+              <div>
+                <label className="text-sm font-medium mb-2 block">
+                  Platform
+                </label>
 
-            <Input
-              value={platform}
-              onChange={(e) => setPlatform(e.target.value)}
-              placeholder="radiko"
-            />
-          </div>
+                <Input
+                  value={platform}
+                  onChange={(e) => setPlatform(e.target.value)}
+                  placeholder="radiko"
+                />
+              </div>
 
-          <div>
-            <label className="text-sm font-medium mb-2 block">
-              Episode Count
-            </label>
+              <div>
+                <label className="text-sm font-medium mb-2 block">
+                  Episode Count
+                </label>
 
-            <Input
-              type="number"
-              min={1}
-              value={episodeCount}
-              onChange={(e) => setEpisodeCount(Number(e.target.value))}
-            />
-          </div>
+                <Input
+                  type="number"
+                  min={1}
+                  value={episodeCount}
+                  onChange={(e) => setEpisodeCount(Number(e.target.value))}
+                />
+              </div>
 
-          <div>
-            <label className="text-sm font-medium mb-2 block">
-              Description (Optional)
-            </label>
+              <div>
+                <label className="text-sm font-medium mb-2 block">
+                  Description (Optional)
+                </label>
 
-            <textarea
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
-              placeholder="Optional description..."
-              className="
-                min-h-[100px]
-                w-full
-                rounded-xl
-                border
-                border-border
-                bg-background
-                px-3
-                py-2
-                text-sm
-              "
-            />
-          </div>
+                <textarea
+                  value={description}
+                  onChange={(e) => setDescription(e.target.value)}
+                  placeholder="Optional description..."
+                  className="
+            min-h-[100px]
+            w-full
+            rounded-xl
+            border
+            border-border
+            bg-background
+            px-3
+            py-2
+            text-sm
+          "
+                />
+              </div>
 
-          <div>
-            <label className="text-sm font-medium mb-2 block">
-              Frequency (optional)
-            </label>
+              <div>
+                <label className="text-sm font-medium mb-2 block">
+                  Frequency (optional)
+                </label>
 
-            <Input
-              value={schedule}
-              onChange={(e) => setSchedule(e.target.value)}
-              placeholder="weekly"
-            />
-          </div>
+                <Input
+                  value={schedule}
+                  onChange={(e) => setSchedule(e.target.value)}
+                  placeholder="weekly"
+                />
+              </div>
 
-          <div>
-            <label className="text-sm font-medium mb-2 block">
-              Source URL (Optional)
-            </label>
+              <div>
+                <label className="text-sm font-medium mb-2 block">
+                  Source URL (Optional)
+                </label>
 
-            <Input
-              value={url}
-              onChange={(e) => setURL(e.target.value)}
-              placeholder="https://..."
-            />
-          </div>
+                <Input
+                  value={url}
+                  onChange={(e) => setURL(e.target.value)}
+                  placeholder="https://..."
+                />
+              </div>
 
-          <div>
-            <label className="text-sm font-medium mb-2 block">
-              Thumbnail URL (Optional)
-            </label>
+              <div>
+                <label className="text-sm font-medium mb-2 block">
+                  Thumbnail URL (Optional)
+                </label>
 
-            <Input
-              value={thumbnail}
-              onChange={(e) => setThumbnail(e.target.value)}
-              placeholder="https://..."
-            />
-          </div>
+                <Input
+                  value={thumbnail}
+                  onChange={(e) => setThumbnail(e.target.value)}
+                  placeholder="https://..."
+                />
+              </div>
+            </div>
+          ) : (
+            <div className="space-y-6">
+              <div>
+                <label className="text-sm font-medium mb-2 block">
+                  Program URL
+                </label>
+
+                <Input
+                  value={importUrl}
+                  onChange={(e) => setImportUrl(e.target.value)}
+                  placeholder="https://audee.jp/program/show/12345"
+                />
+              </div>
+
+              <div>
+                <label className="text-sm font-medium mb-2 block">
+                  Host Override (Optional)
+                </label>
+
+                <Input
+                  value={hostOverride}
+                  onChange={(e) => setHostOverride(e.target.value)}
+                  placeholder="田村ゆかり"
+                />
+              </div>
+
+              <div className="rounded-xl border p-4 text-sm text-muted-foreground">
+                If provided, the host override will replace any host names
+                extracted by the scraper.
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="flex justify-end gap-3 mt-8">
@@ -257,8 +347,14 @@ export function CreateProgramModal({
             Cancel
           </Button>
 
-          <Button onClick={handleSubmit}>
-            {editingProgram ? 'Save Changes' : 'Create Program'}
+          <Button onClick={tab === 'manual' ? handleSubmit : handleImport}>
+            {tab === 'manual'
+              ? editingProgram
+                ? 'Save Changes'
+                : 'Create Program'
+              : importing
+                ? 'Importing...'
+                : 'Import Program'}
           </Button>
         </div>
       </motion.div>
