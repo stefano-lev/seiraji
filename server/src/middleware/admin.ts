@@ -1,9 +1,11 @@
 import { Request, Response, NextFunction } from 'express';
 
-export function requireAdmin(req: Request, res: Response, next: NextFunction) {
-  const key = req.headers['x-admin-key'];
+export function isAdmin(req: Request): boolean {
+  return req.headers['x-admin-key'] === process.env.ADMIN_KEY;
+}
 
-  if (!key || key !== process.env.ADMIN_KEY) {
+export function requireAdmin(req: Request, res: Response, next: NextFunction) {
+  if (!isAdmin(req)) {
     return res.status(403).json({
       error: 'Unauthorized',
     });

@@ -1,12 +1,10 @@
 import express from 'express';
 
-import { requireAdmin } from '../middleware/admin';
-
 import { importProgram } from '../services/importProgram';
 
 const router = express.Router();
 
-router.post('/', requireAdmin, async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const { url, hostOverride } = req.body;
 

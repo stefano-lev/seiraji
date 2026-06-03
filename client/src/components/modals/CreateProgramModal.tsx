@@ -12,6 +12,12 @@ import {
   type CreateManualProgramInput,
 } from '@/lib/programs';
 import { importProgram } from '@/lib/api';
+import {
+  detectPlatform,
+  SUPPORTED_PLATFORMS,
+  PLATFORM_LABELS,
+} from '@/lib/platformDetection';
+import { Badge } from '../ui/badge';
 
 type CreateProgramModalProps = {
   open: boolean;
@@ -38,7 +44,7 @@ export function CreateProgramModal({
   const [url, setURL] = useState('');
   const [thumbnail, setThumbnail] = useState('');
 
-  const [tab, setTab] = useState<'manual' | 'import'>('manual');
+  const [tab, setTab] = useState<'import' | 'manual'>('import');
 
   const [importUrl, setImportUrl] = useState('');
   const [hostOverride, setHostOverride] = useState('');
@@ -49,7 +55,15 @@ export function CreateProgramModal({
 
     setTitle(editingProgram.program.title);
 
-    setHosts((editingProgram.program.hosts ?? []).join(', '));
+    const rawHosts = editingProgram.program.hosts;
+
+    const hostString = Array.isArray(rawHosts)
+      ? rawHosts.join(', ')
+      : typeof rawHosts === 'string'
+        ? rawHosts
+        : '';
+
+    setHosts(hostString);
 
     setPlatform(editingProgram.platform);
 
@@ -63,6 +77,8 @@ export function CreateProgramModal({
 
     setThumbnail(editingProgram.program.thumbnail ?? '');
   }, [editingProgram, open]);
+
+  const detectedPlatform = detectPlatform(importUrl);
 
   if (!open) return null;
 
@@ -171,17 +187,16 @@ export function CreateProgramModal({
       >
         <div className="flex gap-2 mt-4">
           <Button
-            variant={tab === 'manual' ? 'default' : 'secondary'}
-            onClick={() => setTab('manual')}
-          >
-            Manual
-          </Button>
-
-          <Button
             variant={tab === 'import' ? 'default' : 'secondary'}
             onClick={() => setTab('import')}
           >
             Import URL
+          </Button>
+          <Button
+            variant={tab === 'manual' ? 'default' : 'secondary'}
+            onClick={() => setTab('manual')}
+          >
+            Manual
           </Button>
         </div>
 
@@ -259,16 +274,16 @@ export function CreateProgramModal({
                   onChange={(e) => setDescription(e.target.value)}
                   placeholder="Optional description..."
                   className="
-            min-h-[100px]
-            w-full
-            rounded-xl
-            border
-            border-border
-            bg-background
-            px-3
-            py-2
-            text-sm
-          "
+                    min-h-[100px]
+                    w-full
+                    rounded-xl
+                    border
+                    border-border
+                    bg-background
+                    px-3
+                    py-2
+                    text-sm
+                  "
                 />
               </div>
 
@@ -318,8 +333,21 @@ export function CreateProgramModal({
                 <Input
                   value={importUrl}
                   onChange={(e) => setImportUrl(e.target.value)}
-                  placeholder="https://audee.jp/program/show/12345"
+                  placeholder="ex. https://audee.jp/program/show/12345"
                 />
+              </div>
+
+              <div className="flex flex-wrap gap-2 justify-center">
+                {SUPPORTED_PLATFORMS.map((platform) => (
+                  <Badge
+                    key={platform}
+                    variant={
+                      detectedPlatform === platform ? 'valid' : 'outline'
+                    }
+                  >
+                    {PLATFORM_LABELS[platform]}
+                  </Badge>
+                ))}
               </div>
 
               <div>
@@ -330,11 +358,11 @@ export function CreateProgramModal({
                 <Input
                   value={hostOverride}
                   onChange={(e) => setHostOverride(e.target.value)}
-                  placeholder="田村ゆかり"
+                  placeholder="ex. 花宮初奈, 佐々木琴子, 月音こな"
                 />
               </div>
 
-              <div className="rounded-xl border p-4 text-sm text-muted-foreground">
+              <div className="rounded-xl border border-yellow-500/15 bg-yellow-500/5 p-4 text-sm text-muted-foreground">
                 If provided, the host override will replace any host names
                 extracted by the scraper.
               </div>

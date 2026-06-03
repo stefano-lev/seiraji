@@ -1,59 +1,5 @@
 const API_BASE = import.meta.env.VITE_API_BASE ?? 'http://localhost:3001/api';
 
-export async function importAudee(url: string) {
-  const res = await fetch(`${API_BASE}/audee/import`, {
-    method: 'POST',
-
-    headers: {
-      'Content-Type': 'application/json',
-    },
-
-    body: JSON.stringify({ url }),
-  });
-
-  if (!res.ok) {
-    throw new Error('Failed to import Audee program');
-  }
-
-  return res.json();
-}
-
-export async function importOnsen(url: string) {
-  const res = await fetch(`${API_BASE}/onsen/import`, {
-    method: 'POST',
-
-    headers: {
-      'Content-Type': 'application/json',
-    },
-
-    body: JSON.stringify({ url }),
-  });
-
-  if (!res.ok) {
-    throw new Error('Failed to import Onsen program');
-  }
-
-  return res.json();
-}
-
-export async function importYoutubePlaylist(url: string) {
-  const res = await fetch(`${API_BASE}/youtube/import`, {
-    method: 'POST',
-
-    headers: {
-      'Content-Type': 'application/json',
-    },
-
-    body: JSON.stringify({ url }),
-  });
-
-  if (!res.ok) {
-    throw new Error('Failed to import Youtube program');
-  }
-
-  return res.json();
-}
-
 export async function getLibrary() {
   const res = await fetch(`${API_BASE}/library/all`);
 
@@ -146,7 +92,9 @@ export async function importProgram(url: string, hostOverride?: string) {
   });
 
   if (!res.ok) {
-    throw new Error('Failed to import program');
+    const error = await res.text();
+
+    throw new Error(`Import failed (${res.status}): ${error}`);
   }
 
   return res.json();

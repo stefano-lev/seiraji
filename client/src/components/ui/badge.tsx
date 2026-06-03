@@ -21,6 +21,7 @@ const badgeVariants = cva(
         youtube:
           'border-transparent bg-youtube text-youtube-foreground shadow hover:bg-primary/80',
         outline: 'text-foreground',
+        valid: 'border-transparent bg-audee text-valid-foreground shadow',
       },
     },
     defaultVariants: {
@@ -40,4 +41,4 @@ function Badge({ className, variant, ...props }: BadgeProps) {
   );
 }
 
-export { Badge, badgeVariants };
+export { Badge };

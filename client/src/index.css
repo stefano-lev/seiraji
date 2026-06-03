@@ -21,14 +21,17 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --audee: 76.48, 100%, 35.69%;
-    --audee-foreground: 76.48, 100%, 35.69%;
+    --audee: 78.99, 100%, 30.03%;
+    --audee-foreground: 78.99, 100%, 30.03%;
 
     --onsen: 186.13, 100%, 34.58%;
     --onsen-foreground: 186.13, 100%, 34.58%;
 
     --youtube: 358.76, 100%, 69.84%;
     --youtube-foreground: 358.76, 100%, 69.84%;
+
+    --valid: 358.76, 100%, 69.84%;
+    --valid-foreground: 358.76, 100%, 69.84%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
@@ -55,6 +58,9 @@
 
     --secondary: 222 20% 18%;
     --secondary-foreground: 210 40% 96%;
+
+    --valid: 222 20% 18%;
+    --valid-foreground: 210 40% 96%;
 
     --muted: 222 20% 16%;
     --muted-foreground: 215 20% 70%;

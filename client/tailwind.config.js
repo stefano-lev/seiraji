@@ -54,6 +54,10 @@ export default {
           DEFAULT: 'hsl(var(--youtube))',
           foreground: 'hsl(var(--youtube-foreground))',
         },
+        valid: {
+          DEFAULT: 'hsl(var(--valid))',
+          foreground: 'hsl(var(--valid-foreground))',
+        },
 
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

@@ -7,6 +7,7 @@ import rateLimit from 'express-rate-limit';
 import libraryRoutes from './routes/library';
 import backupRoutes from './routes/backup';
 import importRoutes from './routes/import';
+import { isAdmin } from './middleware/admin';
 
 const app = express();
 
@@ -19,7 +20,16 @@ const apiLimiter = rateLimit({
 
 const importLimiter = rateLimit({
   windowMs: 60 * 60 * 1000,
-  max: 50,
+  max: 3,
+
+  skip: (req) => isAdmin(req),
+});
+
+const backupLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 20,
+
+  skip: (req) => isAdmin(req),
 });
 
 app.use('/api', apiLimiter);
@@ -34,10 +44,10 @@ app.use(express.json());
 
 app.use('/api/library', libraryRoutes);
 
+app.use('/api/backup', backupLimiter);
 app.use('/api/backup', backupRoutes);
 
 app.use('/api/import', importLimiter);
-
 app.use('/api/import', importRoutes);
 
 const PORT = process.env.PORT || 3001;
