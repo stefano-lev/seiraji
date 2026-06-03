@@ -1,5 +1,7 @@
 const API_BASE = import.meta.env.VITE_API_BASE ?? 'http://localhost:3001/api';
 
+import type { ProgramPreview } from '@/types/media';
+
 export async function getLibrary() {
   const res = await fetch(`${API_BASE}/library/all`);
 
@@ -95,6 +97,30 @@ export async function importProgram(url: string, hostOverride?: string) {
     const error = await res.text();
 
     throw new Error(`Import failed (${res.status}): ${error}`);
+  }
+
+  return res.json();
+}
+
+export async function previewProgram(
+  url: string,
+  hostOverride?: string
+): Promise<ProgramPreview> {
+  const res = await fetch(`${API_BASE}/import/preview`, {
+    method: 'POST',
+
+    headers: {
+      'Content-Type': 'application/json',
+    },
+
+    body: JSON.stringify({
+      url,
+      hostOverride,
+    }),
+  });
+
+  if (!res.ok) {
+    throw new Error('Failed to generate preview');
   }
 
   return res.json();

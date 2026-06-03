@@ -56,3 +56,17 @@ export interface Episode {
 
   platformMetadata?: Record<string, any>;
 }
+
+export type ProgramPreview = {
+  title: string;
+
+  description: string | null;
+
+  thumbnail: string | null;
+
+  hosts: string[];
+
+  platform: string;
+
+  episodeCount: number;
+};

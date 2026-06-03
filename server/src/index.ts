@@ -7,6 +7,7 @@ import rateLimit from 'express-rate-limit';
 import libraryRoutes from './routes/library';
 import backupRoutes from './routes/backup';
 import importRoutes from './routes/import';
+import importPreviewRoutes from './routes/importPreview';
 import { isAdmin } from './middleware/admin';
 
 const app = express();
@@ -46,6 +47,8 @@ app.use('/api/library', libraryRoutes);
 
 app.use('/api/backup', backupLimiter);
 app.use('/api/backup', backupRoutes);
+
+app.use('/api/import/preview', importPreviewRoutes);
 
 app.use('/api/import', importLimiter);
 app.use('/api/import', importRoutes);

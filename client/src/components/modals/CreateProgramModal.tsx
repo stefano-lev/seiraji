@@ -5,13 +5,13 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
-import type { Program } from '@/types/media';
+import type { Program, ProgramPreview } from '@/types/media';
 
 import {
   createManualProgram,
   type CreateManualProgramInput,
 } from '@/lib/programs';
-import { importProgram } from '@/lib/api';
+import { importProgram, previewProgram } from '@/lib/api';
 import {
   detectPlatform,
   SUPPORTED_PLATFORMS,
@@ -27,6 +27,8 @@ type CreateProgramModalProps = {
   onSubmit: (program: Program) => void;
 
   editingProgram?: Program | null;
+
+  programs: Program[];
 };
 
 export function CreateProgramModal({
@@ -34,6 +36,7 @@ export function CreateProgramModal({
   onClose,
   onSubmit,
   editingProgram,
+  programs,
 }: CreateProgramModalProps) {
   const [title, setTitle] = useState('');
   const [hosts, setHosts] = useState('');
@@ -49,6 +52,10 @@ export function CreateProgramModal({
   const [importUrl, setImportUrl] = useState('');
   const [hostOverride, setHostOverride] = useState('');
   const [importing, setImporting] = useState(false);
+
+  const [preview, setPreview] = useState<ProgramPreview | null>(null);
+
+  const [previewLoading, setPreviewLoading] = useState(false);
 
   useEffect(() => {
     if (!editingProgram) return;
@@ -79,6 +86,15 @@ export function CreateProgramModal({
   }, [editingProgram, open]);
 
   const detectedPlatform = detectPlatform(importUrl);
+
+  const normalizedImportUrl = importUrl.trim().replace(/\/$/, '');
+
+  const duplicateProgram = programs.find(
+    (program) => program.url?.trim().replace(/\/$/, '') === normalizedImportUrl
+  );
+
+  const hasHosts =
+    (preview?.hosts?.length ?? 0) > 0 || hostOverride.trim().length > 0;
 
   if (!open) return null;
 
@@ -168,6 +184,37 @@ export function CreateProgramModal({
       alert('Failed to import program');
     } finally {
       setImporting(false);
+    }
+  }
+
+  async function handlePreview() {
+    if (duplicateProgram) {
+      alert(
+        `"${duplicateProgram.program.title}" already exists in your library.`
+      );
+
+      return;
+    }
+
+    if (!importUrl.trim()) {
+      alert('Please enter a URL');
+      return;
+    }
+
+    try {
+      setPreviewLoading(true);
+
+      const result = await previewProgram(importUrl, hostOverride);
+
+      setPreview(result);
+    } catch (err) {
+      console.error(err);
+
+      alert(
+        'Failed to preview program metadata.\n\nPlease validate that the provided URL is correct and try again.'
+      );
+    } finally {
+      setPreviewLoading(false);
     }
   }
 
@@ -323,6 +370,57 @@ export function CreateProgramModal({
                 />
               </div>
             </div>
+          ) : preview ? (
+            <div className="space-y-6">
+              {preview.thumbnail && (
+                <img
+                  src={preview.thumbnail}
+                  alt={preview.title}
+                  className="w-full rounded-xl"
+                />
+              )}
+
+              <div>
+                <h3 className="text-xl font-semibold">{preview.title}</h3>
+
+                <p className="text-sm text-muted-foreground">
+                  {preview.platform}
+                </p>
+              </div>
+
+              <div>
+                <div className="font-medium">Hosts</div>
+
+                {preview.hosts.length > 0 ? (
+                  <p>{preview.hosts.join(', ')}</p>
+                ) : (
+                  <p className="italic text-yellow-500">No hosts detected</p>
+                )}
+              </div>
+
+              {preview.hosts.length === 0 && (
+                <div className="rounded-xl border border-yellow-500/15 bg-yellow-500/5 p-4 text-sm">
+                  This platform could not automatically determine host names.
+                  Enter a Host Override before importing.
+                </div>
+              )}
+
+              <div>
+                <div className="font-medium">Episodes</div>
+
+                <p>{preview.episodeCount}</p>
+              </div>
+
+              {preview.description && (
+                <div>
+                  <div className="font-medium">Description</div>
+
+                  <p className="text-sm text-muted-foreground">
+                    {preview.description}
+                  </p>
+                </div>
+              )}
+            </div>
           ) : (
             <div className="space-y-6">
               <div>
@@ -335,6 +433,13 @@ export function CreateProgramModal({
                   onChange={(e) => setImportUrl(e.target.value)}
                   placeholder="ex. https://audee.jp/program/show/12345"
                 />
+
+                {duplicateProgram && (
+                  <p className="mt-2 text-sm text-red-500">
+                    "{duplicateProgram.program.title}" already exists in your
+                    library.
+                  </p>
+                )}
               </div>
 
               <div className="flex flex-wrap gap-2 justify-center">
@@ -371,18 +476,37 @@ export function CreateProgramModal({
         </div>
 
         <div className="flex justify-end gap-3 mt-8">
+          {preview && (
+            <Button variant="secondary" onClick={() => setPreview(null)}>
+              Back
+            </Button>
+          )}
+
           <Button variant="secondary" onClick={onClose}>
             Cancel
           </Button>
 
-          <Button onClick={tab === 'manual' ? handleSubmit : handleImport}>
+          <Button
+            disabled={tab === 'import' && preview !== null && !hasHosts}
+            onClick={
+              tab === 'manual'
+                ? handleSubmit
+                : preview
+                  ? handleImport
+                  : handlePreview
+            }
+          >
             {tab === 'manual'
               ? editingProgram
                 ? 'Save Changes'
                 : 'Create Program'
-              : importing
-                ? 'Importing...'
-                : 'Import Program'}
+              : preview
+                ? importing
+                  ? 'Importing...'
+                  : 'Confirm Import'
+                : previewLoading
+                  ? 'Previewing...'
+                  : 'Preview Program'}
           </Button>
         </div>
       </motion.div>

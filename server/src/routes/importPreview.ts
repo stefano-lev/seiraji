@@ -1,6 +1,6 @@
 import express from 'express';
 
-import { importProgram } from '../services/importProgram';
+import { previewProgram } from '../services/previewProgram';
 
 const router = express.Router();
 
@@ -14,9 +14,12 @@ router.post('/', async (req, res) => {
       });
     }
 
-    const data = await importProgram(url, hostOverride?.trim() || undefined);
+    const preview = await previewProgram(
+      url,
+      hostOverride?.trim() || undefined
+    );
 
-    return res.json(data);
+    return res.json(preview);
   } catch (error) {
     console.error(error);
 
@@ -27,7 +30,7 @@ router.post('/', async (req, res) => {
     }
 
     return res.status(500).json({
-      error: 'Failed to import program',
+      error: 'Failed to generate preview',
     });
   }
 });

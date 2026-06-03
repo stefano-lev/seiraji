@@ -1,4 +1,4 @@
-import { getCachedOrImport } from './importHelpers';
+import { ensureNotCached, getCachedOrImport } from './importHelpers';
 
 import { scrapeAudee } from './scrapeAudee';
 import { scrapeOnsen } from './scrapeOnsen';
@@ -13,6 +13,8 @@ export async function importProgram(url: string, hostOverride?: string) {
   if (hostname.includes('audee-membership.jp')) {
     const slug = getAudeeSlug(url);
 
+    await ensureNotCached('audee-programs.json', slug);
+
     return getCachedOrImport(
       'audee-programs.json',
       slug,
@@ -23,6 +25,8 @@ export async function importProgram(url: string, hostOverride?: string) {
 
   if (hostname.includes('onsen.ag')) {
     const slug = getOnsenSlug(url);
+
+    await ensureNotCached('onsen-programs.json', slug);
 
     return getCachedOrImport(
       'onsen-programs.json',
@@ -35,6 +39,8 @@ export async function importProgram(url: string, hostOverride?: string) {
   if (hostname.includes('youtube.com') || hostname.includes('youtu.be')) {
     const playlistId = getYoutubePlaylistId(url);
 
+    await ensureNotCached('youtube-playlists.json', playlistId);
+
     return getCachedOrImport(
       'youtube-playlists.json',
       playlistId,
@@ -45,6 +51,8 @@ export async function importProgram(url: string, hostOverride?: string) {
 
   if (hostname.includes('qlover.jp')) {
     const slug = getQloverSlug(url);
+
+    await ensureNotCached('qlover-programs.json', slug);
 
     return getCachedOrImport(
       'qlover-programs.json',
@@ -57,6 +65,8 @@ export async function importProgram(url: string, hostOverride?: string) {
   if (hostname.includes('openrec.tv')) {
     const slug = getOpenrecSlug(url);
 
+    await ensureNotCached('openrec-programs.json', slug);
+
     return getCachedOrImport(
       'openrec-programs.json',
       slug,
@@ -67,6 +77,8 @@ export async function importProgram(url: string, hostOverride?: string) {
 
   if (hostname.includes('nicochannel.jp')) {
     const slug = getNicochannelSlug(url);
+
+    await ensureNotCached('nicochannel-programs.json', slug);
 
     return getCachedOrImport(
       'nicochannel-programs.json',

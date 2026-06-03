@@ -873,6 +873,7 @@ export default function App() {
               setEditDraft(null);
             }}
             editingProgram={editDraft}
+            programs={programs}
             onSubmit={(program) => {
               if (editDraft) {
                 updateProgram(program);

@@ -1,5 +1,6 @@
 import { readCache, writeCache } from '../utils/cache';
 import { normalizeHosts } from '../utils/normalizeHosts';
+import { validateHosts } from '../utils/validateImport';
 
 export async function getCachedOrImport(
   cacheFile: string,
@@ -20,26 +21,28 @@ export async function getCachedOrImport(
 
     data = await scraper();
 
-    cache[cacheKey] = data;
+    if (hostOverride?.trim()) {
+      data = structuredClone(data);
 
-    await writeCache(cacheFile, cache);
-  }
-
-  if (hostOverride?.trim()) {
-    data = structuredClone(data);
-
-    if (data.program) {
       data.program.hosts = normalizeHosts(hostOverride);
     }
 
+    validateHosts(data.program?.hosts, hostOverride);
+
     cache[cacheKey] = data;
 
     await writeCache(cacheFile, cache);
 
-    console.log(
-      `[HOST OVERRIDE] ${cacheFile} -> ${cacheKey} (${hostOverride})`
+    return data;
+  }
+}
+
+export async function ensureNotCached(cacheFile: string, cacheKey: string) {
+  const cache = await readCache(cacheFile);
+
+  if (cache[cacheKey]) {
+    throw new Error(
+      'Program already exists in library. Use api/refresh/ if you want to initiate a manual cache refresh.'
     );
   }
-
-  return data;
 }
