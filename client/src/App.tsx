@@ -1,5 +1,6 @@
 import type React from 'react';
 import { motion } from 'framer-motion';
+import { Toaster, toast } from 'sonner';
 
 import { useEffect, useState, useRef, useMemo } from 'react';
 import { Button } from './components/ui/button';
@@ -30,6 +31,7 @@ import {
   createBackup,
   updateBackup,
   restoreBackup,
+  refreshProgram,
 } from './lib/api';
 
 import { calculateStats } from '@/lib/stats';
@@ -227,11 +229,35 @@ export default function App() {
     } catch (err) {
       console.error('Failed to load demo', err);
 
-      alert(
-        'The library is still in the progress of loading. Please try again in a few seconds.'
-      );
+      toast.warning('Library still loading', {
+        description: 'Please try again in a few seconds.',
+      });
     } finally {
       setLibraryLoading(false);
+    }
+  }
+
+  async function handleRefreshProgram(url: string) {
+    try {
+      const result = await refreshProgram(url);
+
+      const updatedProgram = result.program;
+
+      setPrograms((prev) =>
+        prev.map((p) => (p.id === updatedProgram.id ? updatedProgram : p))
+      );
+
+      setSelectedProgram(updatedProgram);
+
+      toast.success('Program refreshed', {
+        description: `${result.programTitle} • Added ${result.addedEpisodes} new episodes`,
+      });
+    } catch (err) {
+      console.error(err);
+
+      toast.error('Refresh failed', {
+        description: 'Unable to refresh program.',
+      });
     }
   }
 
@@ -396,13 +422,13 @@ export default function App() {
 
       setCloudBackup(creds);
 
-      alert(
-        `Cloud backup created!\n\nBackup ID:\n${result.backupId}\n\nPasskey:\n${result.passkey}\n\nSave these somewhere safe.`
-      );
+      toast.success('Cloud backup created', {
+        description: 'Save your Backup ID and Passkey somewhere safe.',
+      });
     } catch (err) {
       console.error(err);
 
-      alert('Failed to create cloud backup.');
+      toast.error('Backup creation failed');
     } finally {
       setBackupLoading(false);
     }
@@ -410,7 +436,7 @@ export default function App() {
 
   async function handleUpdateCloudBackup() {
     if (!cloudBackup) {
-      alert('No cloud backup exists yet.');
+      toast.warning('No cloud backup found');
       return;
     }
 
@@ -430,11 +456,11 @@ export default function App() {
 
       setCloudBackup(updated);
 
-      alert('Cloud backup updated successfully.');
+      toast.success('Cloud backup updated');
     } catch (err) {
       console.error(err);
 
-      alert('Failed to update cloud backup.');
+      toast.error('Cloud backup update failed');
     } finally {
       setBackupLoading(false);
     }
@@ -442,7 +468,7 @@ export default function App() {
 
   async function handleRestoreCloudBackup() {
     if (!cloudBackup) {
-      alert('No saved cloud backup credentials found.');
+      toast.warning('No saved backup credentials found');
       return;
     }
 
@@ -478,11 +504,11 @@ export default function App() {
 
       setPrefs(payload.prefs ?? {});
 
-      alert('Cloud backup restored successfully.');
+      toast.success('Cloud backup restored');
     } catch (err) {
       console.error(err);
 
-      alert('Failed to restore cloud backup.');
+      toast.error('Cloud backup restore failed');
     } finally {
       setBackupLoading(false);
     }
@@ -523,11 +549,11 @@ export default function App() {
 
       setPrefs(payload.prefs ?? {});
 
-      alert('Cloud backup restored successfully.');
+      toast.success('Connected to cloud backup');
     } catch (err) {
       console.error(err);
 
-      alert('Failed to restore cloud backup.');
+      toast.error('Failed to connect backup');
     } finally {
       setBackupLoading(false);
     }
@@ -575,6 +601,8 @@ export default function App() {
     // clear localStorage for relevant keys
     localStorage.removeItem('programs');
     localStorage.removeItem('userState');
+
+    toast.success('All tracker data deleted');
   }
 
   function deleteAllTags() {
@@ -589,6 +617,8 @@ export default function App() {
         tags: [],
       }))
     );
+
+    toast.success('All tags deleted');
   }
 
   const [pinnedOnly, setPinnedOnly] = useState(false);
@@ -832,6 +862,7 @@ export default function App() {
               setCreateOpen(true);
             }}
             onDelete={deleteProgram}
+            onRefresh={handleRefreshProgram}
           />
 
           <StatsModal
@@ -886,6 +917,8 @@ export default function App() {
           />
         </div>
       </div>
+
+      <Toaster richColors position="bottom-right" closeButton />
     </div>
   );
 }

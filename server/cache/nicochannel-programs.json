@@ -10,7 +10,9 @@
     "program": {
       "title": "櫻井陽菜のひなぷちーの",
       "description": "ここは、声優・櫻井陽菜がオープンする不思議な喫茶店。美味しい珈琲と素敵なトークであなたを癒やします。オススメですか？もちろん当店名物「ひなぷちーの」です。",
-      "hosts": ["櫻井陽菜"],
+      "hosts": [
+        "櫻井陽菜"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/904/thumbnail_image_path?time=1756815054"
@@ -546,7 +548,9 @@
     "program": {
       "title": "瀬古梨愛のリアクションは大きめで！",
       "description": "瀬古梨愛のニコニコチャンネルプラスです！",
-      "hosts": ["瀬古梨愛"],
+      "hosts": [
+        "瀬古梨愛"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/945/thumbnail_image_path?time=1760499117"
@@ -1017,7 +1021,9 @@
     "program": {
       "title": "青山なぎさの勝手にIMO協会",
       "description": "大のさつまいも好き声優である「青山なぎさ」が「さつまいも大使」を目指して、毎回さつまいもに因んだ様々な企画を行ったり、視聴者とのコミュニケーションを図ったりと、自身の持つ魅力を存分にお伝えします！",
-      "hosts": ["青山なぎさ"],
+      "hosts": [
+        "青山なぎさ"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/25/thumbnail_image_path?time=1705815439"
@@ -2744,7 +2750,9 @@
     "program": {
       "title": "伊達さゆりのあと8cmは伸ばせます！",
       "description": "この番組では、まだまだ伸びしろのある伊達さゆりが、身長を8cm伸ばすべく、\n色んな初めてのことに挑戦したり、多彩なゲストと交流したり…と、\n番組を通じて伊達さゆりの成長する姿をお届けしていきます！",
-      "hosts": ["伊達さゆり"],
+      "hosts": [
+        "伊達さゆり"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/38/thumbnail_image_path?time=1672555140"
@@ -3732,7 +3740,9 @@
     "program": {
       "title": "絵森彩のエモリアルCafe",
       "description": "声優絵森彩がお送りする番組『絵森彩のエモリアルCafe』",
-      "hosts": ["絵森彩"],
+      "hosts": [
+        "絵森彩"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/218/thumbnail_image_path?time=1667310401"
@@ -5053,7 +5063,9 @@
     "program": {
       "title": "野中ここなのREC中！",
       "description": "声優・野中ここながバズる映像を作るため色んな企画に挑戦するトークバラエティ番組!!\n野中ここな本人が制作する動画にもご注目ください！",
-      "hosts": ["野中ここな"],
+      "hosts": [
+        "野中ここな"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/313/thumbnail_image_path?time=1686055755"
@@ -5759,7 +5771,9 @@
     "program": {
       "title": "月音こなのまだ本気出してないだけだから！",
       "description": "声優・月音こなの本気を見せるためスタッフが用意した色々な企画に挑戦していくトークバラエティ番組。お便りの紹介やミニゲームなど視聴者の方と一緒に楽しみながらチャレンジしていきます！",
-      "hosts": ["月音こな"],
+      "hosts": [
+        "月音こな"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/637/thumbnail_image_path?time=1760065317"
@@ -6330,7 +6344,9 @@
     "program": {
       "title": "豊田萌絵 もえのひ",
       "description": "この番組は声優・豊田萌絵さんが\nひたすら好きなことを話したり、\n時にゲストさんと語り合ったり、\n豊田萌絵が好きなことを話す番組。\nそんなもえ記念日「もえのひ」を月に１回お届けしていきます。\n\n毎月１回の生配信に加え\n後述の太客もえちゃんずコース会員のみが視聴できるアフタートークもあります！",
-      "hosts": ["豊田萌絵"],
+      "hosts": [
+        "豊田萌絵"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/854/thumbnail_image_path?time=1768406914"
@@ -6821,7 +6837,9 @@
     "program": {
       "title": "三宅美羽先生はたぬきでした。",
       "description": "声優・三宅美羽のニコニコチャンネルプラスです！\n\n彼女には、ひとつだけ秘密がありました。\nそれは――本当は、たぬきだったこと。\n\n三宅美羽が綴る、ちょっとふしぎな創作の記録。\n『三宅美羽先生はたぬきでした。』",
-      "hosts": ["三宅美羽"],
+      "hosts": [
+        "三宅美羽"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/839/thumbnail_image_path?time=1750406594"
@@ -7495,7 +7513,9 @@
     "program": {
       "title": "湊みやのみなとタワーへようこそ！",
       "description": "声優・湊みやが日本某所にそびえ立つ「湊タワー」のオーナーとなり、様々なフロアをお客さんに紹介・案内する番組。フロアは全部で37万1038階まである。各フロアには、飲食店・カラオケ店・演劇ホールなど様々な施設が入っており、毎回違った設定でお届けします。",
-      "hosts": ["湊みや"],
+      "hosts": [
+        "湊みや"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/699/thumbnail_image_path?time=1747902111"
@@ -7899,7 +7919,9 @@
     "program": {
       "title": "立石凛をモニタ凛グ",
       "description": "「BanG Dream!（バンドリ！）」から生まれたバンド「MyGO!!!!!」にて、\n千早愛音役として活躍する、若手声優、立石凛のニコニコチャンネルプラスです！\n\n立石凛（りんちゃろ）を、みんなで「モニタ凛グ」して、\n彼女の普段を観察する配信番組をお送りしております！",
-      "hosts": ["立石凛"],
+      "hosts": [
+        "立石凛"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/654/thumbnail_image_path?time=1727779195"
@@ -8635,7 +8657,9 @@
     "program": {
       "title": "佐々木李子のガチャリコ",
       "description": "ここは、歌手・声優・舞台女優として活動している佐々木李子が切り盛りするガチャの店。\n何がある？何が出てくる？何が見たい？\n放送するまで何が起こるかわからない“超・視聴者参加型番組”\n今回の放送は“当たり”か“否”か...\nみんな、ガチャリコにチャンネルをまわせ！",
-      "hosts": ["佐々木李子"],
+      "hosts": [
+        "佐々木李子"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/727/thumbnail_image_path?time=1743053793"
@@ -9174,7 +9198,9 @@
     "program": {
       "title": "ラブライブ！サンシャイン!! Aqours浦の星女学院RADIO!!!",
       "description": "『ラブライブ！サンシャイン!!』の魅力や最新情報を、より広くの人に知ってもらうために、\nAqoursメンバーが全力で頑張るスクールアイドルwebラジオです！！",
-      "hosts": ["ラブライブ！サンシャイン!!"],
+      "hosts": [
+        "ラブライブ！サンシャイン!!"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/962/thumbnail_image_path?time=1761725615"
@@ -10619,11 +10645,59 @@
           "mediaType": "movie",
           "views": 27
         }
+      },
+      {
+        "id": "nicochannel:sm22KsstC6GMRAdf45GSK4Ec",
+        "title": "【2026年5月27日配信分】浦ラジハーフタイム",
+        "publishedAt": "2026-05-27T03:00:00+09:00",
+        "publishedAtUnix": 1779818400,
+        "thumbnail": "https://cdn.nicochannel.jp/public_html/contents/video_pages/89034/thumbnail_path?time=1779759030",
+        "durationSeconds": 712,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 264
+        }
+      },
+      {
+        "id": "nicochannel:smgFAVnnB5R5aRvpbgy6R7ep",
+        "title": "【第389回】ラブライブ！サンシャイン!! Aqours浦の星女学院RADIO!!!【2024年3月13日配信分】",
+        "publishedAt": "2026-05-30T03:00:00+09:00",
+        "publishedAtUnix": 1780077600,
+        "thumbnail": "https://cdn.nicochannel.jp/public_html/contents/video_pages/89314/thumbnail_path?time=1780013631",
+        "durationSeconds": 1737,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 40
+        }
+      },
+      {
+        "id": "nicochannel:smKsrBs7XFv5p9WRhs6qjqji",
+        "title": "【第388回】ラブライブ！サンシャイン!! Aqours浦の星女学院RADIO!!!【2024年3月6日配信分】",
+        "publishedAt": "2026-05-30T03:00:00+09:00",
+        "publishedAtUnix": 1780077600,
+        "thumbnail": "https://cdn.nicochannel.jp/public_html/contents/video_pages/89315/thumbnail_path?time=1780013679",
+        "durationSeconds": 1805,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 28
+        }
+      },
+      {
+        "id": "nicochannel:sm8NM4NCsaY4qVqoADJxqBgi",
+        "title": "【第490回/2026年6月3日配信分】ラブライブ！サンシャイン!! Aqours浦の星女学院RADIO!!!",
+        "publishedAt": "2026-06-03T03:00:00+09:00",
+        "publishedAtUnix": 1780423200,
+        "thumbnail": "https://cdn.nicochannel.jp/public_html/contents/video_pages/89856/thumbnail_path?time=1780447661",
+        "durationSeconds": 1995,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 149
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-05-26T21:24:38.621Z",
-      "episodeCount": 120
+      "cachedAt": "2026-06-04T02:48:02.869Z",
+      "episodeCount": 124
     },
     "raw": {
       "site": {
@@ -10858,7 +10932,9 @@
     "program": {
       "title": "梅澤めぐのめぐりあいプラス",
       "description": "声優 梅澤めぐが様々な事に“めぐりあい“ながら出会いと成長をお届けするバラエティトーク番組です。",
-      "hosts": ["梅澤めぐ"],
+      "hosts": [
+        "梅澤めぐ"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/1042/thumbnail_image_path?time=1773122768"
@@ -11118,7 +11194,9 @@
     "program": {
       "title": "ペイトン尚未の「クリエイト倶楽部」",
       "description": "ペイトン尚未の初冠番組\nその名もペイトン尚未の「クリエイト俱楽部」\nここではイラストや音楽が好きなペイトン尚未が様々なクリエイトを通して視聴者と\n一緒に番組を「クリエイト」していきます！\nお楽しみに～♪",
-      "hosts": ["ペイトン尚未"],
+      "hosts": [
+        "ペイトン尚未"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/26/thumbnail_image_path?time=1770988964"
@@ -11870,7 +11948,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-05-26T21:25:34.690Z",
+      "cachedAt": "2026-06-04T02:48:16.566Z",
       "episodeCount": 62
     },
     "raw": {
@@ -12127,7 +12205,9 @@
     "program": {
       "title": "長月あおい様のお世話係に転生したので、生涯をかけて尽くします！",
       "description": "長月あおいが公爵令嬢として暮らしている異世界。\nそんな世界に転生してしまった皆さんが、あおいお嬢様に仕える身として、身の回りのお世話・特に「食」に関することを教えたり教わったりしながら交流を深めていく、献上型番組です。",
-      "hosts": ["長月あおい"],
+      "hosts": [
+        "長月あおい"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/763/thumbnail_image_path?time=1744729090"
@@ -12507,7 +12587,9 @@
     "program": {
       "title": "菅叶和のカンがえるな、カンじろ！～Don't Think. Feel～",
       "description": "声優・菅叶和がやりたいことにガンガン挑戦していくトークバラエティ番組。お便りの紹介からミニゲーム、カラオケやお絵描きなどジャンルを問わずに挑戦していきます！",
-      "hosts": ["菅叶和"],
+      "hosts": [
+        "菅叶和"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/324/thumbnail_image_path?time=1689246157"

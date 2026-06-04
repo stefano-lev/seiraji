@@ -1,6 +1,6 @@
 const API_BASE = import.meta.env.VITE_API_BASE ?? 'http://localhost:3001/api';
 
-import type { ProgramPreview } from '@/types/media';
+import type { Program, ProgramPreview } from '@/types/media';
 
 export async function getLibrary() {
   const res = await fetch(`${API_BASE}/library/all`);
@@ -124,4 +124,39 @@ export async function previewProgram(
   }
 
   return res.json();
+}
+
+export type RefreshResponse = {
+  success: boolean;
+
+  programPlatform: string;
+  programSlug: string;
+  programTitle: string;
+
+  addedEpisodes: number;
+  totalEpisodes: number;
+
+  program: Program;
+};
+
+export async function refreshProgram(url: string) {
+  const res = await fetch(`${API_BASE}/refresh`, {
+    method: 'POST',
+
+    headers: {
+      'Content-Type': 'application/json',
+    },
+
+    body: JSON.stringify({
+      url,
+    }),
+  });
+
+  if (!res.ok) {
+    const error = await res.text();
+
+    throw new Error(`Refresh failed (${res.status}): ${error}`);
+  }
+
+  return res.json() as Promise<RefreshResponse>;
 }

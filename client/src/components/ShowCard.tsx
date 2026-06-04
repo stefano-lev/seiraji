@@ -191,11 +191,13 @@ export const ShowCard = React.memo(function ShowCard({
             <Input
               type="number"
               value={lastEp}
+              min={0}
+              max={totalEpisodes}
               onClick={(e) => e.stopPropagation()}
               onChange={(e) =>
                 onUpdateEpisode(program.id, clamp(Number(e.target.value)))
               }
-              className="w-16 sm:w-16 text-center"
+              className="w-16 text-center px-0"
             />
 
             <Button

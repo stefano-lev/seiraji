@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import { motion } from 'framer-motion';
 import { Button } from '../ui/button';
 import { Badge } from '../ui/badge';
@@ -20,6 +22,8 @@ type ProgramModalProps = {
   onEdit: (program: Program) => void;
   onDelete: (programId: string) => void;
 
+  onRefresh: (url: string) => Promise<void>;
+
   tagDraft: string;
   setTagDraft: (v: string) => void;
 
@@ -34,10 +38,12 @@ export function ProgramModal({
   updateProgramState,
   onEdit,
   onDelete,
+  onRefresh,
   tagDraft,
   setTagDraft,
   prefs,
 }: ProgramModalProps) {
+  const [refreshing, setRefreshing] = useState(false);
   if (!open || !program) return null;
 
   const programData = program;
@@ -184,6 +190,24 @@ export function ProgramModal({
                       }}
                     >
                       Delete
+                    </Button>
+                  )}
+
+                  {programData.source === 'imported' && (
+                    <Button
+                      variant="secondary"
+                      disabled={refreshing}
+                      onClick={async () => {
+                        try {
+                          setRefreshing(true);
+
+                          await onRefresh(programData.url);
+                        } finally {
+                          setRefreshing(false);
+                        }
+                      }}
+                    >
+                      {refreshing ? 'Refreshing...' : 'Refresh'}
                     </Button>
                   )}
 

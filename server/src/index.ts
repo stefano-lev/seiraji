@@ -8,6 +8,7 @@ import libraryRoutes from './routes/library';
 import backupRoutes from './routes/backup';
 import importRoutes from './routes/import';
 import importPreviewRoutes from './routes/importPreview';
+import refreshRoutes from './routes/refresh';
 import { isAdmin } from './middleware/admin';
 
 const app = express();
@@ -33,6 +34,14 @@ const backupLimiter = rateLimit({
   skip: (req) => isAdmin(req),
 });
 
+const refreshLimiter = rateLimit({
+  windowMs: 60 * 60 * 1000,
+
+  max: 20,
+
+  skip: (req) => isAdmin(req),
+});
+
 app.use('/api', apiLimiter);
 
 app.use(
@@ -52,6 +61,9 @@ app.use('/api/import/preview', importPreviewRoutes);
 
 app.use('/api/import', importLimiter);
 app.use('/api/import', importRoutes);
+
+app.use('/api/refresh', refreshLimiter);
+app.use('/api/refresh', refreshRoutes);
 
 const PORT = process.env.PORT || 3001;
 
