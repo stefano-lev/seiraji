@@ -16,7 +16,7 @@ import {
   getQloverSlug,
   getOpenrecSlug,
   getNicochannelSlug,
-  getNHKSlug,
+  getNHKSeriesId,
 } from '../utils/platformKeys';
 
 export async function refreshProgram(url: string) {
@@ -71,9 +71,9 @@ export async function refreshProgram(url: string) {
   }
 
   if (hostname.includes('nhk.jp')) {
-    const slug = getNHKSlug(url);
+    const seriesId = getNHKSeriesId(url);
 
-    return refreshCachedProgram('nhk-programs.json', slug, () =>
+    return refreshCachedProgram('nhk-programs.json', seriesId, () =>
       scrapeNHK(url)
     );
   }
