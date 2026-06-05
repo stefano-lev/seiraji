@@ -190,9 +190,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "10/20"
         }
@@ -264,9 +262,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "1/12"
         }
@@ -290,9 +286,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "2/9"
         }
@@ -340,9 +334,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "4/6"
         }
@@ -397,7 +389,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-04T02:20:07.884Z",
+      "cachedAt": "2026-06-05T02:38:03.386Z",
       "episodeCount": 31
     }
   },
@@ -1108,9 +1100,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "8/27"
         }
@@ -1122,9 +1112,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "9/10"
         }
@@ -1268,9 +1256,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "2/25"
         }
@@ -1294,9 +1280,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "3/25"
         }
@@ -1336,11 +1320,35 @@
         "platformMetadata": {
           "displayDate": "5/6"
         }
+      },
+      {
+        "id": "nako-5/20-第76回",
+        "title": "第76回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "5/20"
+        }
+      },
+      {
+        "id": "nako-6/3-第77回",
+        "title": "第77回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "6/3"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-05-17T20:44:05.798Z",
-      "episodeCount": 76
+      "cachedAt": "2026-06-05T02:38:06.680Z",
+      "episodeCount": 78
     }
   },
   "nagisa-sa": {
@@ -1402,17 +1410,27 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "5/13"
+        }
+      },
+      {
+        "id": "nagisa-sa-5/27-Op.5",
+        "title": "Op.5",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "5/27"
         }
       }
     ],
     "meta": {
-      "cachedAt": "2026-05-20T02:44:08.499Z",
-      "episodeCount": 4
+      "cachedAt": "2026-06-05T02:38:08.786Z",
+      "episodeCount": 5
     }
   },
   "aoi": {
@@ -1546,9 +1564,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "11/3"
         }
@@ -1560,9 +1576,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "11/17"
         }
@@ -1586,9 +1600,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "12/15"
         }
@@ -1696,9 +1708,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "4/20"
         }
@@ -1710,9 +1720,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "5/4"
         }
@@ -1728,11 +1736,23 @@
         "platformMetadata": {
           "displayDate": "5/18"
         }
+      },
+      {
+        "id": "aoi-6/1-第25回",
+        "title": "第25回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "6/1"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-05-20T02:47:42.361Z",
-      "episodeCount": 24
+      "cachedAt": "2026-06-05T02:38:11.216Z",
+      "episodeCount": 25
     }
   },
   "ktk": {
@@ -1770,9 +1790,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "4/15"
         }
@@ -1868,9 +1886,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "8/5"
         }
@@ -1882,9 +1898,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "8/19"
         }
@@ -1944,9 +1958,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "10/28"
         }
@@ -1982,9 +1994,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "12/9"
         }
@@ -2092,9 +2102,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "4/14"
         }
@@ -2122,11 +2130,23 @@
         "platformMetadata": {
           "displayDate": "5/12"
         }
+      },
+      {
+        "id": "ktk-5/26-第31回",
+        "title": "第31回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "5/26"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-05-20T02:47:49.085Z",
-      "episodeCount": 30
+      "cachedAt": "2026-06-05T02:38:13.292Z",
+      "episodeCount": 31
     }
   },
   "mma": {
@@ -2140,11 +2160,7 @@
       "title": "もえ・つむぎ・きゅーとあぐれっしょんっ！あやねもいるよ♪",
       "description": "「キュートアグレッション」\n可愛いものを見た時に湧き上がる心理現象のこと。\n聴いたみなさんが思わずツッコんだり、イタズラしたくなったりするように、\n新人声優の3人が明るく楽しく頑張るラジオです。",
       "thumbnail": "https://d3bzklg4lms4gh.cloudfront.net/program_info/twitter_share_image/default/production/1c/a1/4fd69c9d38eaad0d1ababd858f967452a844/image?v=1779674888",
-      "hosts": [
-        "佳原萌枝",
-        "七瀬つむぎ",
-        "松田彩音"
-      ],
+      "hosts": ["佳原萌枝", "七瀬つむぎ", "松田彩音"],
       "categories": null,
       "schedule": ""
     },
@@ -2336,9 +2352,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "12/22"
         }
@@ -2350,9 +2364,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "1/6"
         }
@@ -2424,9 +2436,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "2/16"
         }
@@ -2438,9 +2448,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "2/23"
         }
@@ -2627,7 +2635,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-04T02:48:31.696Z",
+      "cachedAt": "2026-06-05T02:38:16.226Z",
       "episodeCount": 39
     }
   },
@@ -2642,11 +2650,7 @@
       "title": "カンナヒカル（仮）",
       "description": "このラジオは…\nほぼ初対面の中村カンナさんと飯田ヒカルさんが\nこれから少しずつ何かにあっていく番組です。\nタイトル含めて、どう変わっていくかお楽しみ下さい。\n現在のところこの2人の共通キーワードは『食』です。\n※「カンナヒカル」というタイトルもまだ仮です。",
       "thumbnail": "https://d3bzklg4lms4gh.cloudfront.net/program_info/twitter_share_image/default/production/d8/8c/26cb6792330a1de0cf480b001c84dc12dd0d/image?v=1779780294",
-      "hosts": [
-        "中村カンナ",
-        "飯田ヒカル",
-        "花岩香奈"
-      ],
+      "hosts": ["中村カンナ", "飯田ヒカル", "花岩香奈"],
       "categories": null,
       "schedule": "隔週火曜日配信"
     },
@@ -2718,9 +2722,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "5/12"
         }
@@ -2739,7 +2741,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-02T20:32:47.233Z",
+      "cachedAt": "2026-06-05T02:38:20.017Z",
       "episodeCount": 7
     }
   },
@@ -3279,9 +3281,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "8/14"
         }
@@ -3317,9 +3317,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "9/25"
         }
@@ -3818,7 +3816,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-04T02:21:38.872Z",
+      "cachedAt": "2026-06-05T02:38:23.278Z",
       "episodeCount": 87
     }
   },
@@ -3833,9 +3831,7 @@
       "title": "楠木ともりのこと。",
       "description": "話したいこと、好きなこと、気になること、\nみんなとやりたいこと、楽しいこと、\nいろんな「楠木ともりのこと。」をお届けしていきます。\n少しの時間、楠木ともりさんと過ごしてみませんか？",
       "thumbnail": "https://d3bzklg4lms4gh.cloudfront.net/program_info/twitter_share_image/default/production/26/0b/49ed9bdc3a7e65091939ab54eb6483e676ce/image?v=1779936629",
-      "hosts": [
-        "楠木ともり"
-      ],
+      "hosts": ["楠木ともり"],
       "categories": null,
       "schedule": "隔週木曜日配信"
     },
@@ -3883,9 +3879,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "3/7"
         }
@@ -3969,9 +3963,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "6/13"
         }
@@ -4127,9 +4119,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "12/12"
         }
@@ -4153,9 +4143,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "1/9"
         }
@@ -4191,9 +4179,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "2/20"
         }
@@ -4325,9 +4311,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "7/24"
         }
@@ -4399,9 +4383,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "10/16"
         }
@@ -4449,9 +4431,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "12/11"
         }
@@ -4530,7 +4510,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-03T20:08:14.889Z",
+      "cachedAt": "2026-06-05T02:38:27.053Z",
       "episodeCount": 56
     }
   },
@@ -4545,9 +4525,7 @@
       "title": "希水しお、ととのいました！",
       "description": "声優・希水しおさんのソロラジオ！\nこの番組は、音泉イチのとっちらかりラジオです。\nさうなーの皆さんにとって「聴くサウナ」のように「ととのえる」番組となるよう、トークの熱波を送り続けています！！魔〇光〇砲 ！！！",
       "thumbnail": "https://d3bzklg4lms4gh.cloudfront.net/program_info/twitter_share_image/default/production/d9/ac/6ed0291f0588b4da5a13c0a367bc7f0d92c3/image?v=1779353848",
-      "hosts": [
-        "希水しお"
-      ],
+      "hosts": ["希水しお"],
       "categories": null,
       "schedule": "隔週木曜配信"
     },
@@ -4715,9 +4693,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "11/21"
         }
@@ -4813,9 +4789,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "3/13"
         }
@@ -4827,9 +4801,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "3/27"
         }
@@ -4925,9 +4897,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "7/17"
         }
@@ -4987,9 +4957,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "9/25"
         }
@@ -5013,9 +4981,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "10/23"
         }
@@ -5063,9 +5029,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "12/18"
         }
@@ -5089,9 +5053,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "1/15"
         }
@@ -5115,9 +5077,7 @@
         "publishedAtUnix": null,
         "thumbnail": null,
         "durationSeconds": null,
-        "tags": [
-          "GUEST"
-        ],
+        "tags": ["GUEST"],
         "platformMetadata": {
           "displayDate": "2/12"
         }
@@ -5205,11 +5165,23 @@
         "platformMetadata": {
           "displayDate": "5/21"
         }
+      },
+      {
+        "id": "neppasio-6/4-第53回",
+        "title": "第53回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "6/4"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-03T21:26:46.112Z",
-      "episodeCount": 53
+      "cachedAt": "2026-06-05T02:38:29.124Z",
+      "episodeCount": 54
     }
   }
 }

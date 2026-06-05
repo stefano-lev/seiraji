@@ -6,6 +6,7 @@ import { scrapeQlover } from '../services/scrapeQlover';
 import { scrapeYoutubePlaylist } from '../services/scrapeYoutubePlaylist';
 import { scrapeNicochannel } from '../services/scrapeNicochannel';
 import { scrapeOpenrec } from '../services/scrapeOpenrec';
+import { scrapeNHK } from '../services/scrapeNHK';
 
 function detectSource(url: string) {
   if (url.includes('youtube.com')) return 'youtube';
@@ -14,6 +15,7 @@ function detectSource(url: string) {
   if (url.includes('audee')) return 'audee';
   if (url.includes('nicochannel')) return 'nicochannel';
   if (url.includes('openrec')) return 'openrec';
+  if (url.includes('nhk')) return 'nhk';
 
   return 'unknown';
 }
@@ -56,6 +58,10 @@ async function main() {
 
         case 'openrec':
           await scrapeOpenrec(url);
+          break;
+
+        case 'nhk':
+          await scrapeNHK(url);
           break;
 
         default:

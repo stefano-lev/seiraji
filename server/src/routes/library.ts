@@ -1,5 +1,5 @@
 import express from 'express';
-import { requireAdmin } from '../middleware/admin';
+import { requireAdmin } from '../middleware/requireAdmin';
 
 import { readCache, deleteCacheEntry } from '../utils/cache';
 
@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.get('/all', async (_, res) => {
   try {
-    const [audee, youtube, onsen, qlover, nicochannel, openrec] =
+    const [audee, youtube, onsen, qlover, nicochannel, openrec, nhk] =
       await Promise.all([
         readCache('audee-programs.json'),
 
@@ -20,6 +20,8 @@ router.get('/all', async (_, res) => {
         readCache('nicochannel-programs.json'),
 
         readCache('openrec-programs.json'),
+
+        readCache('nhk-programs.json'),
       ]);
 
     const merged = [
@@ -29,6 +31,7 @@ router.get('/all', async (_, res) => {
       ...Object.values(qlover),
       ...Object.values(nicochannel),
       ...Object.values(openrec),
+      ...Object.values(nhk),
     ];
 
     res.json(merged);
@@ -53,6 +56,7 @@ router.delete('/:platform/:id', requireAdmin, async (req, res) => {
       qlover: 'qlover-programs.json',
       nicochannel: 'nicochannel-programs.json',
       openrec: 'openrec-programs.json',
+      nhk: 'nhk-programs.json',
     };
 
     const filename = cacheMap[platform];

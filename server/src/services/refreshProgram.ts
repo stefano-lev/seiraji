@@ -8,6 +8,7 @@ import { scrapeYoutubePlaylist } from './scrapeYoutubePlaylist';
 import { scrapeQlover } from './scrapeQlover';
 import { scrapeOpenrec } from './scrapeOpenrec';
 import { scrapeNicochannel } from './scrapeNicochannel';
+import { scrapeNHK } from './scrapeNHK';
 import {
   getAudeeSlug,
   getOnsenSlug,
@@ -15,6 +16,7 @@ import {
   getQloverSlug,
   getOpenrecSlug,
   getNicochannelSlug,
+  getNHKSlug,
 } from '../utils/platformKeys';
 
 export async function refreshProgram(url: string) {
@@ -65,6 +67,14 @@ export async function refreshProgram(url: string) {
 
     return refreshCachedProgram('nicochannel-programs.json', slug, () =>
       scrapeNicochannel(url)
+    );
+  }
+
+  if (hostname.includes('nhk.jp')) {
+    const slug = getNHKSlug(url);
+
+    return refreshCachedProgram('nhk-programs.json', slug, () =>
+      scrapeNHK(url)
     );
   }
 

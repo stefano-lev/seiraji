@@ -7,6 +7,7 @@ export const SUPPORTED_PLATFORMS = [
   'qlover',
   'openrec',
   'nicochannel',
+  'nhk',
 ] as const;
 
 export const PLATFORM_LABELS = {
@@ -16,6 +17,7 @@ export const PLATFORM_LABELS = {
   qlover: 'QloveR',
   openrec: 'OPENREC',
   nicochannel: 'NicoChannel',
+  nhk: 'NHK',
 } as const;
 
 export type SupportedPlatform =
@@ -24,7 +26,8 @@ export type SupportedPlatform =
   | 'youtube'
   | 'qlover'
   | 'openrec'
-  | 'nicochannel';
+  | 'nicochannel'
+  | 'nhk';
 
 export function detectPlatform(url: string): SupportedPlatform | null {
   try {
@@ -52,6 +55,10 @@ export function detectPlatform(url: string): SupportedPlatform | null {
 
     if (hostname.includes('nicochannel.jp')) {
       return 'nicochannel';
+    }
+
+    if (hostname.includes('nhk.jp')) {
+      return 'nhk';
     }
 
     return null;

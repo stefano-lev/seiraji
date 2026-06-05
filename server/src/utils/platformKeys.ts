@@ -57,3 +57,13 @@ export function getNicochannelSlug(url: string): string {
 
   return slug;
 }
+
+export function getNHKSeriesId(url: string): string {
+  const match = url.match(/\/rs\/([^/]+)\/?/);
+
+  if (!match) {
+    throw new Error('Invalid NHK URL');
+  }
+
+  return match[1];
+}

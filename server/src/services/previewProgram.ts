@@ -4,6 +4,7 @@ import { scrapeYoutubePlaylist } from './scrapeYoutubePlaylist';
 import { scrapeQlover } from './scrapeQlover';
 import { scrapeOpenrec } from './scrapeOpenrec';
 import { scrapeNicochannel } from './scrapeNicochannel';
+import { scrapeNHK } from './scrapeNHK';
 
 import type { ProgramPreview } from '../types/media.ts';
 
@@ -30,6 +31,8 @@ export async function previewProgram(
     data = await scrapeOpenrec(url);
   } else if (hostname.includes('nicochannel.jp')) {
     data = await scrapeNicochannel(url);
+  } else if (hostname.includes('nhk.jp')) {
+    data = await scrapeNHK(url);
   } else {
     throw new Error('Unsupported platform');
   }

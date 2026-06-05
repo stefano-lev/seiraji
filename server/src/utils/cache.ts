@@ -38,7 +38,7 @@ export async function deleteCacheEntry(filename: string, programId: string) {
 }
 
 export async function getAllCaches() {
-  const [audee, youtube, onsen, qlover, nicochannel, openrec] =
+  const [audee, youtube, onsen, qlover, nicochannel, openrec, nhk] =
     await Promise.all([
       readCache('audee-programs.json'),
       readCache('youtube-playlists.json'),
@@ -46,6 +46,7 @@ export async function getAllCaches() {
       readCache('qlover-programs.json'),
       readCache('nicochannel-programs.json'),
       readCache('openrec-programs.json'),
+      readCache('nhk-programs.json'),
     ]);
 
   return {
@@ -55,5 +56,6 @@ export async function getAllCaches() {
     qlover,
     nicochannel,
     openrec,
+    nhk,
   };
 }

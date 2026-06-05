@@ -448,7 +448,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-01T22:00:41.874Z",
+      "cachedAt": "2026-06-05T02:40:05.333Z",
       "episodeCount": 27
     },
     "raw": {
@@ -1099,7 +1099,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-01T22:00:48.986Z",
+      "cachedAt": "2026-06-05T02:40:06.316Z",
       "episodeCount": 1
     },
     "raw": {
@@ -1237,7 +1237,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-01T22:16:41.516Z",
+      "cachedAt": "2026-06-05T02:40:07.609Z",
       "episodeCount": 2
     },
     "raw": {
@@ -6876,7 +6876,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-01T22:34:18.702Z",
+      "cachedAt": "2026-06-05T02:40:16.052Z",
       "episodeCount": 345
     },
     "raw": {
@@ -16160,11 +16160,43 @@
           "publicType": "member",
           "game": "雑談"
         }
+      },
+      {
+        "id": "openrec:ykz0p397y8w",
+        "title": "相羽あいなのアイバダービー#236",
+        "description": "★番組後半はチャンネルサブスク会員限定配信となります。チャンネルサブスクについては下記リンクから！\nどのサブスクプランでも、番組後半と過去のアーカイブが視聴できます！\nhttps://www.openrec.tv/subscription/user/aiba_derby\n\n▼番組限定コミュニティ（Discord）の参加方法はこちら！\nhttps://openrecnext.amebaownd.com/posts/11101764",
+        "publishedAt": "2026-06-03T20:03:54+09:00",
+        "publishedAtUnix": 1780484634,
+        "thumbnail": "https://image-handler.openrec.tv/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMyOTg1L25fMzI5ODQyN18yMDI2MDUzMTE4MzMyMS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJwbmcifQ==",
+        "durationSeconds": 8135,
+        "tags": ["声優"],
+        "platformMetadata": {
+          "views": 743,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "雑談"
+        }
+      },
+      {
+        "id": "openrec:ovrdve2m6rj",
+        "title": "あいなの厩舎#236",
+        "description": "▼番組限定コミュニティ（Discord）の参加方法はこちら！\n\nhttps://openrecnext.amebaownd.com/posts/11101764\n　\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n",
+        "publishedAt": "2026-06-03T22:20:46+09:00",
+        "publishedAtUnix": 1780492846,
+        "thumbnail": "https://image-handler.openrec.tv/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMyOTg1L25fMzI5ODQyOF8yMDI2MDUzMTE4MzM0NS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJqcGcifQ==",
+        "durationSeconds": 719,
+        "tags": ["声優"],
+        "platformMetadata": {
+          "views": 219,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "雑談"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-01T22:34:36.938Z",
-      "episodeCount": 476
+      "cachedAt": "2026-06-05T02:40:24.772Z",
+      "episodeCount": 478
     },
     "raw": {
       "site": {
@@ -21001,7 +21033,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-01T22:34:56.779Z",
+      "cachedAt": "2026-06-05T02:40:30.160Z",
       "episodeCount": 192
     },
     "raw": {
@@ -23323,7 +23355,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-01T22:35:31.451Z",
+      "cachedAt": "2026-06-05T02:40:32.624Z",
       "episodeCount": 109
     },
     "raw": {
@@ -25653,7 +25685,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-01T22:35:49.755Z",
+      "cachedAt": "2026-06-05T02:40:35.671Z",
       "episodeCount": 96
     },
     "raw": {
@@ -27799,7 +27831,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-01T22:35:56.557Z",
+      "cachedAt": "2026-06-05T02:40:36.724Z",
       "episodeCount": 78
     },
     "raw": {
@@ -28924,7 +28956,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-01T22:36:05.379Z",
+      "cachedAt": "2026-06-05T02:40:38.594Z",
       "episodeCount": 64
     },
     "raw": {
@@ -29510,7 +29542,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-01T22:36:39.217Z",
+      "cachedAt": "2026-06-05T02:40:40.155Z",
       "episodeCount": 14
     },
     "raw": {
@@ -30480,7 +30512,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-01T22:37:31.019Z",
+      "cachedAt": "2026-06-05T02:40:42.017Z",
       "episodeCount": 54
     },
     "raw": {
@@ -30974,7 +31006,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-01T22:37:36.034Z",
+      "cachedAt": "2026-06-05T02:40:43.802Z",
       "episodeCount": 22
     },
     "raw": {

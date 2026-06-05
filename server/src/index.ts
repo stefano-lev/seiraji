@@ -9,7 +9,8 @@ import backupRoutes from './routes/backup';
 import importRoutes from './routes/import';
 import importPreviewRoutes from './routes/importPreview';
 import refreshRoutes from './routes/refresh';
-import { isAdmin } from './middleware/admin';
+import adminRoutes from './routes/admin';
+import { isAdmin } from './middleware/requireAdmin';
 
 const app = express();
 
@@ -64,6 +65,8 @@ app.use('/api/import', importRoutes);
 
 app.use('/api/refresh', refreshLimiter);
 app.use('/api/refresh', refreshRoutes);
+
+app.use('/api/admin', adminRoutes);
 
 const PORT = process.env.PORT || 3001;
 
