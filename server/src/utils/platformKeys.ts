@@ -67,3 +67,25 @@ export function getNHKSeriesId(url: string): string {
 
   return match[1];
 }
+
+export function getTokyoFMSlug(url: string): string {
+  const parts = new URL(url).pathname.split('/').filter(Boolean);
+
+  const slug = parts[1];
+
+  if (!slug) {
+    throw new Error('Invalid TokyoFM podcast URL');
+  }
+
+  return slug;
+}
+
+export function getANNSlug(url: string): string {
+  const slug = new URL(url).pathname.split('/').filter(Boolean)[0];
+
+  if (!slug) {
+    throw new Error('Invalid ANN Podcast URL');
+  }
+
+  return slug;
+}

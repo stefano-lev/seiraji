@@ -38,16 +38,27 @@ export async function deleteCacheEntry(filename: string, programId: string) {
 }
 
 export async function getAllCaches() {
-  const [audee, youtube, onsen, qlover, nicochannel, openrec, nhk] =
-    await Promise.all([
-      readCache('audee-programs.json'),
-      readCache('youtube-playlists.json'),
-      readCache('onsen-programs.json'),
-      readCache('qlover-programs.json'),
-      readCache('nicochannel-programs.json'),
-      readCache('openrec-programs.json'),
-      readCache('nhk-programs.json'),
-    ]);
+  const [
+    audee,
+    youtube,
+    onsen,
+    qlover,
+    nicochannel,
+    openrec,
+    nhk,
+    tfm,
+    allnightnippon,
+  ] = await Promise.all([
+    readCache('audee-programs.json'),
+    readCache('youtube-playlists.json'),
+    readCache('onsen-programs.json'),
+    readCache('qlover-programs.json'),
+    readCache('nicochannel-programs.json'),
+    readCache('openrec-programs.json'),
+    readCache('nhk-programs.json'),
+    readCache('tfm-programs.json'),
+    readCache('allnightnippon-programs.json'),
+  ]);
 
   return {
     audee,
@@ -57,5 +68,7 @@ export async function getAllCaches() {
     nicochannel,
     openrec,
     nhk,
+    tfm,
+    allnightnippon,
   };
 }

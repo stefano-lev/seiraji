@@ -442,7 +442,7 @@ export function CreateProgramModal({
                 )}
               </div>
 
-              <div className="flex flex-wrap gap-1 justify-center">
+              <div className="flex flex-wrap gap-2 justify-center">
                 {SUPPORTED_PLATFORMS.map((platform) => (
                   <Badge
                     key={platform}

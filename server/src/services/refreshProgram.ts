@@ -9,6 +9,8 @@ import { scrapeQlover } from './scrapeQlover';
 import { scrapeOpenrec } from './scrapeOpenrec';
 import { scrapeNicochannel } from './scrapeNicochannel';
 import { scrapeNHK } from './scrapeNHK';
+import { scrapeTokyoFM } from './scrapeTokyoFM';
+import { scrapeANN } from './scrapeANN';
 import {
   getAudeeSlug,
   getOnsenSlug,
@@ -17,6 +19,8 @@ import {
   getOpenrecSlug,
   getNicochannelSlug,
   getNHKSeriesId,
+  getTokyoFMSlug,
+  getANNSlug,
 } from '../utils/platformKeys';
 
 export async function refreshProgram(url: string) {
@@ -75,6 +79,22 @@ export async function refreshProgram(url: string) {
 
     return refreshCachedProgram('nhk-programs.json', seriesId, () =>
       scrapeNHK(url)
+    );
+  }
+
+  if (hostname.includes('tfm.jp')) {
+    const slug = getTokyoFMSlug(url);
+
+    return refreshCachedProgram('tfm-programs.json', slug, () =>
+      scrapeTokyoFM(url)
+    );
+  }
+
+  if (hostname.includes('podcast.1242.com')) {
+    const slug = getANNSlug(url);
+
+    return refreshCachedProgram('allnightnippon-programs.json', slug, () =>
+      scrapeANN(url)
     );
   }
 

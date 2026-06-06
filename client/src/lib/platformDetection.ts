@@ -1,5 +1,3 @@
-// client/src/lib/platformDetection.ts
-
 export const SUPPORTED_PLATFORMS = [
   'audee',
   'onsen',
@@ -8,6 +6,8 @@ export const SUPPORTED_PLATFORMS = [
   'openrec',
   'nicochannel',
   'nhk',
+  'tfm',
+  'allnightnippon',
 ] as const;
 
 export const PLATFORM_LABELS = {
@@ -18,6 +18,8 @@ export const PLATFORM_LABELS = {
   openrec: 'OPENREC',
   nicochannel: 'NicoChannel',
   nhk: 'NHK',
+  tfm: 'TokyoFM',
+  allnightnippon: 'AllNightNippon',
 } as const;
 
 export type SupportedPlatform =
@@ -27,7 +29,9 @@ export type SupportedPlatform =
   | 'qlover'
   | 'openrec'
   | 'nicochannel'
-  | 'nhk';
+  | 'nhk'
+  | 'tfm'
+  | 'allnightnippon';
 
 export function detectPlatform(url: string): SupportedPlatform | null {
   try {
@@ -59,6 +63,14 @@ export function detectPlatform(url: string): SupportedPlatform | null {
 
     if (hostname.includes('nhk.jp')) {
       return 'nhk';
+    }
+
+    if (hostname.includes('tfm.jp')) {
+      return 'tfm';
+    }
+
+    if (hostname.includes('podcast.1242.com')) {
+      return 'allnightnippon';
     }
 
     return null;

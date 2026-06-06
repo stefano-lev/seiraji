@@ -15,7 +15,11 @@ import {
   getOpenrecSlug,
   getNicochannelSlug,
   getNHKSeriesId,
+  getTokyoFMSlug,
+  getANNSlug,
 } from '../utils/platformKeys';
+import { scrapeTokyoFM } from './scrapeTokyoFM';
+import { scrapeANN } from './scrapeANN';
 
 export async function importProgram(url: string, hostOverride?: string) {
   const hostname = new URL(url).hostname;
@@ -107,6 +111,32 @@ export async function importProgram(url: string, hostOverride?: string) {
       'nhk-programs.json',
       seriesId,
       () => scrapeNHK(url),
+      hostOverride
+    );
+  }
+
+  if (hostname.includes('www.tfm.co.jp')) {
+    const slug = getTokyoFMSlug(url);
+
+    await ensureNotCached('tfm-programs.json', slug);
+
+    return getCachedOrImport(
+      'tfm-programs.json',
+      slug,
+      () => scrapeTokyoFM(url),
+      hostOverride
+    );
+  }
+
+  if (hostname.includes('podcast.1242.com')) {
+    const slug = getANNSlug(url);
+
+    await ensureNotCached('allnightnippon-programs.json', slug);
+
+    return getCachedOrImport(
+      'allnightnippon-programs.json',
+      slug,
+      () => scrapeANN(url),
       hostOverride
     );
   }

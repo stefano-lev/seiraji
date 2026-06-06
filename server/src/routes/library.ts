@@ -7,22 +7,35 @@ const router = express.Router();
 
 router.get('/all', async (_, res) => {
   try {
-    const [audee, youtube, onsen, qlover, nicochannel, openrec, nhk] =
-      await Promise.all([
-        readCache('audee-programs.json'),
+    const [
+      audee,
+      youtube,
+      onsen,
+      qlover,
+      nicochannel,
+      openrec,
+      nhk,
+      tfm,
+      allnightnippon,
+    ] = await Promise.all([
+      readCache('audee-programs.json'),
 
-        readCache('youtube-playlists.json'),
+      readCache('youtube-playlists.json'),
 
-        readCache('onsen-programs.json'),
+      readCache('onsen-programs.json'),
 
-        readCache('qlover-programs.json'),
+      readCache('qlover-programs.json'),
 
-        readCache('nicochannel-programs.json'),
+      readCache('nicochannel-programs.json'),
 
-        readCache('openrec-programs.json'),
+      readCache('openrec-programs.json'),
 
-        readCache('nhk-programs.json'),
-      ]);
+      readCache('nhk-programs.json'),
+
+      readCache('tfm-programs.json'),
+
+      readCache('allnightnippon-programs.json'),
+    ]);
 
     const merged = [
       ...Object.values(audee),
@@ -32,6 +45,8 @@ router.get('/all', async (_, res) => {
       ...Object.values(nicochannel),
       ...Object.values(openrec),
       ...Object.values(nhk),
+      ...Object.values(tfm),
+      ...Object.values(allnightnippon),
     ];
 
     res.json(merged);
@@ -57,6 +72,8 @@ router.delete('/:platform/:id', requireAdmin, async (req, res) => {
       nicochannel: 'nicochannel-programs.json',
       openrec: 'openrec-programs.json',
       nhk: 'nhk-programs.json',
+      tfm: 'tfm-programs.json',
+      allnightnippon: 'allnightnippon-programs.json',
     };
 
     const filename = cacheMap[platform];

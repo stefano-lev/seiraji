@@ -12,6 +12,8 @@ export async function refreshLibrary() {
     ...Object.values(caches.nicochannel),
     ...Object.values(caches.openrec),
     ...Object.values(caches.nhk),
+    ...Object.values(caches.tfm),
+    ...Object.values(caches.allnightnippon),
   ];
 
   let refreshedPrograms = 0;

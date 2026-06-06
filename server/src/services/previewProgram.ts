@@ -5,6 +5,8 @@ import { scrapeQlover } from './scrapeQlover';
 import { scrapeOpenrec } from './scrapeOpenrec';
 import { scrapeNicochannel } from './scrapeNicochannel';
 import { scrapeNHK } from './scrapeNHK';
+import { scrapeTokyoFM } from './scrapeTokyoFM';
+import { scrapeANN } from './scrapeANN';
 
 import type { ProgramPreview } from '../types/media.ts';
 
@@ -33,6 +35,10 @@ export async function previewProgram(
     data = await scrapeNicochannel(url);
   } else if (hostname.includes('nhk.jp')) {
     data = await scrapeNHK(url);
+  } else if (hostname.includes('tfm.jp')) {
+    data = await scrapeTokyoFM(url);
+  } else if (hostname.includes('podcast.1242.com')) {
+    data = await scrapeANN(url);
   } else {
     throw new Error('Unsupported platform');
   }

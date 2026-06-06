@@ -4,7 +4,7 @@ SeiRaji is a full-stack web app for tracking Japanese seiyuu programs and radio 
 
 The project started as a personal tool for keeping up with weekly radio programs, but gradually turned into a larger portfolio project focused on state management, responsive UI design, metadata aggregation, and persistent client-side data handling.
 
-Unlike traditional media trackers, SeiRaji is built around Japanese online entertainment platforms like Onsen, AuDee, QloveR, NHK Radio, NicoChannel, Openrec, YouTube playlists, and even supports manually added programs.
+Unlike traditional media trackers, SeiRaji is built around Japanese online entertainment platforms like AuDee, Onsen, TokyoFM, NicoChannel, Openrec,YouTube, and even supports manually added programs.
 
 ![SeiRaji Landing Page](./screenshots/seiraji-header.png)
 
@@ -41,6 +41,18 @@ Live Demo: https://seiraji.stef-lev.xyz/
 - Filtering and sorting options
 - Compact card layouts and optional metadata visibility
 - Episode list customization options
+
+### Currently Supported Platforms
+
+- AuDee
+- QloveR
+- TokyoFM
+- Onsen.ag
+- AllNightNippon
+- NHK Radio
+- YouTube Playlists
+- NicoChannel
+- Openrec
 
 ## Tech Stack
 
@@ -113,7 +125,6 @@ The project also gave me experience working with:
 - Better mobile support
 - Optional user accounts/authentication
 - Improved backup management
-- Native mobile client exploration
 - Multi-language support
 
 ## License
