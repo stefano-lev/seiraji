@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { toast } from 'sonner';
 
 import { motion } from 'framer-motion';
 
@@ -162,28 +163,32 @@ export function CreateProgramModal({
   }
 
   async function handleImport() {
-    if (!importUrl.trim()) {
-      alert('Please enter a URL');
-      return;
-    }
+    const toastId = toast.loading('Importing Program', {
+      description: 'Connecting...',
+    });
 
     try {
       setImporting(true);
-
       const program = await importProgram(
         importUrl.trim(),
         hostOverride.trim() || undefined
       );
 
-      onSubmit(program);
+      toast.success('Program Imported', {
+        id: toastId,
+        description: program.program.title,
+      });
 
+      onSubmit(program);
       onClose();
     } catch (err) {
+      setImporting(false);
       console.error(err);
 
-      alert('Failed to import program');
-    } finally {
-      setImporting(false);
+      toast.error('Import Failed', {
+        id: toastId,
+        description: 'Unable to import program',
+      });
     }
   }
 

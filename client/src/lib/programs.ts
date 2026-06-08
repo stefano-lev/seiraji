@@ -77,13 +77,10 @@ export function mergePrograms(
   libraryPrograms: Program[],
   localPrograms: Program[]
 ): Program[] {
-  const manualPrograms = localPrograms.filter((p) => p.source === 'manual');
-
-  const importedPrograms = libraryPrograms.filter(
-    (p) => p.source === 'imported'
-  );
-
-  return [...manualPrograms, ...importedPrograms];
+  return [
+    ...localPrograms.filter((p) => p.source === 'manual'),
+    ...libraryPrograms.filter((p) => p.source === 'imported'),
+  ];
 }
 
 export function updateProgramInLibrary(

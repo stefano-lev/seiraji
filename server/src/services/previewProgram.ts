@@ -35,7 +35,7 @@ export async function previewProgram(
     data = await scrapeNicochannel(url);
   } else if (hostname.includes('nhk.jp')) {
     data = await scrapeNHK(url);
-  } else if (hostname.includes('tfm.jp')) {
+  } else if (hostname.includes('tfm.co.jp')) {
     data = await scrapeTokyoFM(url);
   } else if (hostname.includes('podcast.1242.com')) {
     data = await scrapeANN(url);

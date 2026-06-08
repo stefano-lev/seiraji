@@ -82,7 +82,7 @@ export async function refreshProgram(url: string) {
     );
   }
 
-  if (hostname.includes('tfm.jp')) {
+  if (hostname.includes('tfm.co.jp')) {
     const slug = getTokyoFMSlug(url);
 
     return refreshCachedProgram('tfm-programs.json', slug, () =>

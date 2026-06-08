@@ -65,7 +65,7 @@ export function detectPlatform(url: string): SupportedPlatform | null {
       return 'nhk';
     }
 
-    if (hostname.includes('tfm.jp')) {
+    if (hostname.includes('tfm.co.jp')) {
       return 'tfm';
     }
 

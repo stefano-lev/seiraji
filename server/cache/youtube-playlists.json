@@ -8,7 +8,9 @@
     "program": {
       "title": "期間限定！はすのそラジオ～映画に行こう！Bloom Garden Party～",
       "description": "",
-      "hosts": ["蓮ノ空女学院スクールアイドルクラブ公式チャンネル"],
+      "hosts": [
+        "蓮ノ空女学院スクールアイドルクラブ公式チャンネル"
+      ],
       "thumbnail": "https://i.ytimg.com/vi/CLQlAZ99rfc/maxresdefault.jpg"
     },
     "episodes": [
@@ -472,7 +474,9 @@
     "program": {
       "title": "ラブライブ！スーパースター!! Liella!ラジオ Love Live! Superstar!! Liella! Radio",
       "description": "",
-      "hosts": ["ラブライブ！スーパースター!!"],
+      "hosts": [
+        "ラブライブ！スーパースター!!"
+      ],
       "thumbnail": "https://i.ytimg.com/vi/IZW-VZEiKR4/maxresdefault.jpg"
     },
     "episodes": [
@@ -14563,7 +14567,9 @@
     "program": {
       "title": "いきづらい部！知らんらんらじお！",
       "description": "いきづらい部！キャストによる、イキヅライブ！のことや、キャストのことを知っていただくためのラジオ番組。\n始まったばかりのイキヅライブ！は、決まっていないことだらけ！\nそんなイキヅライブ！のこのラジオ番組も、まっさらからスタートします！\n\n【番組名】いきづらい部！知らんらんらじお！\n【配信】隔週水曜 21:30頃～ イキヅライブ！公式YouTubeチャンネルにてプレミア公開\n【出演】いきづらい部！キャストから、回替わりでお当番を担当します。",
-      "hosts": ["イキヅライブ! LOVELIVE! BLUEBIRD公式チャンネル"],
+      "hosts": [
+        "イキヅライブ! LOVELIVE! BLUEBIRD公式チャンネル"
+      ],
       "thumbnail": "https://i.ytimg.com/vi/kYM7wjmqA6M/maxresdefault.jpg"
     },
     "episodes": [
@@ -15829,7 +15835,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-05T02:38:00.012Z",
+      "cachedAt": "2026-06-08T20:40:21.100Z",
       "episodeCount": 20
     }
   }

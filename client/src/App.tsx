@@ -5,7 +5,7 @@ import { Toaster, toast } from 'sonner';
 import { useEffect, useState, useRef, useMemo } from 'react';
 import { Button } from './components/ui/button';
 
-import { defaultPrograms, demoTags } from '@/data/demoPrograms';
+import { demoTags } from '@/data/demoPrograms';
 
 import type { Program } from './types/media';
 import type { UserProgramState } from './types/user';
@@ -49,53 +49,13 @@ import { CreateProgramModal } from './components/modals/CreateProgramModal';
 
 type SortMode = 'title' | 'host' | 'platform';
 
-// type EditableFieldProps = {
-//   label: string;
-//   value: React.ReactNode;
-//   isEditing: boolean;
-//   renderInput: () => React.ReactNode;
-// };
-
-// function EditableField({
-//   label,
-//   value,
-//   isEditing,
-//   renderInput,
-// }: EditableFieldProps) {
-//   return (
-//     <div className="mb-3">
-//       <label className="text-sm mb-1 block">{label}</label>
-//       {isEditing ? (
-//         renderInput()
-//       ) : (
-//         <div className="text-sm text-muted-foreground">{value}</div>
-//       )}
-//     </div>
-//   );
-// }
-
 export default function App() {
   const [dark] = useState(true);
   const [sortMode, setSortMode] = useState<SortMode>('title');
   const [selectedProgram, setSelectedProgram] = useState<Program | null>(null);
   const [editDraft, setEditDraft] = useState<Program | null>(null);
 
-  // const isEditing = editDraft !== null;
-
-  // const programData = editDraft ?? selectedProgram;
-
-  const [programs, setPrograms] = useState<Program[]>(() => {
-    const stored = localStorage.getItem('programs');
-    const parsed: Program[] = stored ? JSON.parse(stored) : defaultPrograms;
-
-    return parsed.map((s) => ({
-      ...s,
-      // episodeDurationMinutes: s.episodeDurationMinutes ?? 30,
-      // manualTotalEpisodes: s.manualTotalEpisodes ?? null,
-      // isHiatus: s.isHiatus ?? false,
-      // isEnded: s.isEnded ?? false,
-    }));
-  });
+  const [programs, setPrograms] = useState<Program[]>([]);
 
   useEffect(() => {
     async function load() {
@@ -104,7 +64,12 @@ export default function App() {
 
         const data = await getLibrary();
 
-        setPrograms((prev) => mergePrograms(data, prev));
+        const manualPrograms: Program[] = JSON.parse(
+          localStorage.getItem('manualPrograms') ?? '[]'
+        );
+
+        setPrograms(mergePrograms(data, manualPrograms));
+
         setLibraryLoaded(true);
       } catch (err) {
         console.error('Failed to load library', err);
@@ -116,12 +81,17 @@ export default function App() {
     load();
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem('programs', JSON.stringify(programs));
-  }, [programs]);
-
   const [libraryLoading, setLibraryLoading] = useState(true);
   const [libraryLoaded, setLibraryLoaded] = useState(false);
+
+  useEffect(() => {
+    if (!libraryLoaded) return;
+
+    localStorage.setItem(
+      'manualPrograms',
+      JSON.stringify(programs.filter((p) => p.source === 'manual'))
+    );
+  }, [programs, libraryLoaded]);
 
   const [programOnboarding, setProgramOnboarding] = useState(() => {
     const mode = localStorage.getItem('seiraji:mode');
@@ -190,7 +160,7 @@ export default function App() {
   );
 
   function startFresh() {
-    setPrograms(programs);
+    setPrograms(programs.filter((p) => p.source !== 'manual'));
     setUserState([]);
     setActivity([]);
 
@@ -237,7 +207,64 @@ export default function App() {
     }
   }
 
+  function createProgressToast(title: string) {
+    const toastId = toast.loading(title, {
+      description: 'Connecting...',
+    });
+
+    const timers = [
+      setTimeout(() => {
+        toast.loading(title, {
+          id: toastId,
+          description: 'Downloading metadata...',
+        });
+      }, 3000),
+
+      setTimeout(() => {
+        toast.loading(title, {
+          id: toastId,
+          description: 'Processing episodes...',
+        });
+      }, 8000),
+
+      setTimeout(() => {
+        toast.loading(title, {
+          id: toastId,
+          description: 'Updating library...',
+        });
+      }, 15000),
+    ];
+
+    return {
+      toastId,
+
+      cleanup() {
+        timers.forEach(clearTimeout);
+      },
+
+      success(message: string) {
+        this.cleanup();
+
+        toast.success(title, {
+          id: toastId,
+          description: message,
+        });
+      },
+
+      error(message: string) {
+        this.cleanup();
+
+        toast.error(title, {
+          id: toastId,
+          description: message,
+        });
+      },
+    };
+  }
+
   async function handleRefreshProgram(url: string) {
+    const progress = createProgressToast('Refreshing Program');
+
     try {
       const result = await refreshProgram(url);
 
@@ -249,15 +276,13 @@ export default function App() {
 
       setSelectedProgram(updatedProgram);
 
-      toast.success('Program refreshed', {
-        description: `${result.programTitle} • Added ${result.addedEpisodes} new episodes`,
-      });
+      progress.success(
+        `${result.programTitle} • Added ${result.addedEpisodes} new episodes`
+      );
     } catch (err) {
       console.error(err);
 
-      toast.error('Refresh failed', {
-        description: 'Unable to refresh program.',
-      });
+      progress.error('Unable to refresh program');
     }
   }
 
@@ -310,7 +335,7 @@ export default function App() {
         status,
         lastListenedEpisode: progress,
 
-        isPinned: randomChance(0.2),
+        isPinned: randomChance(0.05),
 
         tags: pickRandomTags(),
       };
