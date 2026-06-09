@@ -47,12 +47,18 @@ function SelectTrigger({
   );
 }
 
-function SelectValue({ placeholder }: { placeholder?: string }) {
+function SelectValue({
+  placeholder,
+  children,
+}: {
+  placeholder?: string;
+  children?: React.ReactNode;
+}) {
   const { value } = React.useContext(SelectContext);
 
   return (
     <span className="px-3 text-sm text-foreground capitalize">
-      {value || placeholder}
+      {children ?? value ?? placeholder}
     </span>
   );
 }

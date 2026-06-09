@@ -99,6 +99,8 @@ The project also gave me experience working with:
 
 ![Import URL Modal](./screenshots/import-url.png)
 
+![Import Metadata Preview](./screenshots/import-preview.png)
+
 ### Manual Program Creation
 
 ![Create Program Modal](./screenshots/create-program-modal.png)
@@ -107,13 +109,9 @@ The project also gave me experience working with:
 
 ![Stats Modal](./screenshots/stats-modal.png)
 
-### Preferences & Customization
+### Cloud Backup & Restore / Preferences & Customization
 
 ![Preferences Modal](./screenshots/pref-modal.png)
-
-### Cloud Backup & Restore
-
-![Cloud Backup](./screenshots/cloud-backup-modal.png)
 
 ### Listening History
 

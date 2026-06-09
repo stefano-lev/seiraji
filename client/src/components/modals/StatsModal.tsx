@@ -50,7 +50,7 @@ export function StatsModal({
           </div>
 
           <div className="flex justify-between">
-            <span className="text-muted-foreground">Approx time listened</span>
+            <span className="text-muted-foreground">Time listened</span>
             <span className="font-medium">
               {Math.round(stats.totalListenedDuration / 3600)} hrs
             </span>

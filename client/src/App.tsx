@@ -24,8 +24,6 @@ import {
   saveCloudBackupCredentials,
 } from '@/lib/storage';
 
-//import { processImageFile } from '@/lib/image';
-
 import {
   getLibrary,
   createBackup,
@@ -34,7 +32,7 @@ import {
   refreshProgram,
 } from './lib/api';
 
-import { calculateStats } from '@/lib/stats';
+import { calculateProgramRuntime, calculateStats } from '@/lib/stats';
 
 import { mergePrograms } from '@/lib/programs';
 
@@ -47,13 +45,21 @@ import { ProgramModal } from './components/modals/ProgramModal';
 import { PreferencesModal } from './components/modals/PreferencesModal';
 import { CreateProgramModal } from './components/modals/CreateProgramModal';
 
-type SortMode = 'title' | 'host' | 'platform';
+type SortMode =
+  | 'title'
+  | 'host'
+  | 'platform'
+  | 'episodeCount'
+  | 'recentlyUpdated'
+  | 'runtime'
+  | 'progress';
 
 export default function App() {
   const [dark] = useState(true);
   const [sortMode, setSortMode] = useState<SortMode>('title');
   const [selectedProgram, setSelectedProgram] = useState<Program | null>(null);
   const [editDraft, setEditDraft] = useState<Program | null>(null);
+  const [platformFilter, setPlatformFilter] = useState<string[]>([]);
 
   const [programs, setPrograms] = useState<Program[]>([]);
 
@@ -651,6 +657,10 @@ export default function App() {
   const visiblePrograms = useMemo(() => {
     return [...programs]
       .filter((program) => {
+        if (platformFilter.length > 0) {
+          if (!platformFilter.includes(program.platform)) return false;
+        }
+
         const query = searchQuery.toLowerCase();
 
         const hosts = Array.isArray(program.program.hosts)
@@ -702,6 +712,34 @@ export default function App() {
           }
         }
 
+        if (sortMode === 'episodeCount') {
+          return (b.episodes?.length ?? 0) - (a.episodes?.length ?? 0);
+        }
+
+        if (sortMode === 'recentlyUpdated') {
+          return (
+            new Date(b.meta.cachedAt).getTime() -
+            new Date(a.meta.cachedAt).getTime()
+          );
+        }
+
+        if (sortMode === 'runtime') {
+          return calculateProgramRuntime(b) - calculateProgramRuntime(a);
+        }
+
+        if (sortMode === 'progress') {
+          const aState = userState.find((s) => s.programId === a.id);
+          const bState = userState.find((s) => s.programId === b.id);
+
+          const aTotal = Math.max(a.episodes?.length ?? 0, 1);
+          const bTotal = Math.max(b.episodes?.length ?? 0, 1);
+
+          const aProgress = (aState?.lastListenedEpisode ?? 0) / aTotal;
+          const bProgress = (bState?.lastListenedEpisode ?? 0) / bTotal;
+
+          return bProgress - aProgress;
+        }
+
         if (sortMode === 'title') {
           return a.program.title.localeCompare(b.program.title, 'ja');
         }
@@ -721,13 +759,16 @@ export default function App() {
       });
   }, [
     programs,
-    userState,
-    sortMode,
+    platformFilter,
     searchQuery,
+    userState,
+    prefs.hideDroppedPrograms,
+    prefs.hideCompletedPrograms,
+    prefs.disablePinToTop,
     statusFilter,
     tagFilter,
     pinnedOnly,
-    prefs,
+    sortMode,
   ]);
 
   const searchRef = useRef<HTMLInputElement | null>(null);
@@ -768,10 +809,16 @@ export default function App() {
     };
   }, [programs, userState]);
 
+  const platforms = useMemo(() => {
+    return Array.from(new Set(programs.map((p) => p.platform))).sort((a, b) =>
+      a.localeCompare(b)
+    );
+  }, [programs]);
+
   return (
     <div className={dark ? 'dark' : ''}>
       <div className="app-bg min-h-screen bg-background text-foreground">
-        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 pb-16">
+        <div className="mx-auto w-full max-w-[1920px] px-4 sm:px-6 lg:px-8 pb-16">
           <TopNav
             onOpenStats={() => setStatsOpen(true)}
             onOpenHistory={() => setHistoryOpen(true)}
@@ -847,6 +894,9 @@ export default function App() {
             tags={tags}
             visibleCount={visiblePrograms.length}
             totalCount={programs.length}
+            platforms={platforms}
+            platformFilter={platformFilter}
+            onPlatformFilterChange={setPlatformFilter}
           />
 
           {/* Show cards */}

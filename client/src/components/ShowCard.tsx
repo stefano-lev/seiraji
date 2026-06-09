@@ -33,7 +33,6 @@ export const ShowCard = React.memo(function ShowCard({
   onUpdate,
   onUpdateEpisode,
   onOpen,
-  onEdit,
   onTogglePinned,
   prefs,
 }: Props) {
@@ -84,66 +83,85 @@ export const ShowCard = React.memo(function ShowCard({
     ${prefs.compactCards ? 'p-2' : ''}
   `}
     >
-      {!prefs.disablePinToTop && state.isPinned && (
-        <div className="absolute top-1 left-1 text-yellow-500 text-xl">★</div>
-      )}
-
       {!prefs.disablePinToTop && (
         <button
           onClick={(e) => {
             e.stopPropagation();
             onTogglePinned(program.id);
           }}
-          className="
-            absolute top-1 left-1
-            text-yellow-500 text-xl
-            opacity-0 group-hover:opacity-100
-            transition-opacity
-          "
+          className={`
+      absolute top-2 left-2 z-10
+      text-yellow-500 text-lg
+      transition-opacity
+      ${state.isPinned ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}
+    `}
+          title={state.isPinned ? 'Unpin program' : 'Pin program'}
         >
           {state.isPinned ? '★' : '☆'}
         </button>
       )}
 
-      <CardHeader className="pb-3 flex-shrink-0">
+      <CardHeader
+        className={
+          prefs.compactCards
+            ? 'p-3 pb-2 flex-shrink-0'
+            : 'p-4 pb-3 flex-shrink-0'
+        }
+      >
         <div className={prefs.compactCards ? 'flex gap-2' : 'flex gap-4'}>
-          <img
-            src={thumbnail}
+          <div
             className={`
-              rounded-xl object-cover bg-muted shrink-0
+              relative shrink-0 overflow-hidden rounded-xl bg-muted
               ${prefs.compactCards ? 'h-12 w-[72px]' : 'h-16 w-24'}
             `}
-          />
-
-          <div className="min-w-0 flex-1 flex flex-col gap-1">
-            <div className="flex items-start justify-between gap-2">
-              <div className="min-h-[4.5rem] flex flex-col justify-start">
-                <h3 className="font-semibold text-base leading-tight line-clamp-2">
-                  {program.program.title}
-                </h3>
-
-                <p className="text-sm text-muted-foreground line-clamp-1 mt-1 min-h-[1.25rem]">
-                  {hostsText}
-                </p>
-              </div>
-            </div>
+          >
+            <img src={thumbnail} className="h-full w-full object-cover" />
 
             {!prefs.hideTagsOnCard && (
-              <div className="flex gap-1 mt-2 overflow-hidden">
-                <Badge variant="secondary">{program.platform}</Badge>
+              <Badge
+                variant="secondary"
+                className="
+                  absolute bottom-1 left-1
+                  max-w-[calc(100%-0.5rem)]
+                  truncate
+                  px-1.5 py-0
+                  text-[10px]
+                  leading-4
+                  shadow
+                "
+              >
+                {program.platform}
+              </Badge>
+            )}
+          </div>
 
-                {program.program.categories?.[0] && (
-                  <Badge variant="outline">
-                    {program.program.categories[0]}
-                  </Badge>
-                )}
+          <div className="min-w-0 flex-1">
+            <h3 className="font-semibold text-base leading-tight line-clamp-2">
+              {program.program.title}
+            </h3>
+
+            <p className="mt-1 min-h-[1.25rem] text-sm text-muted-foreground line-clamp-1">
+              {hostsText}
+            </p>
+
+            {!prefs.hideTagsOnCard && program.program.categories?.[0] && (
+              <div className="mt-2 flex min-h-[1.25rem] gap-1 overflow-hidden">
+                <Badge variant="outline" className="truncate">
+                  {program.program.categories[0]}
+                </Badge>
               </div>
             )}
           </div>
         </div>
       </CardHeader>
 
-      <CardContent className="flex flex-col flex-1 h-full">
+      <CardContent
+        className={
+          prefs.compactCards
+            ? 'p-3 pt-0 flex flex-col flex-1 h-full'
+            : 'p-4 pt-0 flex flex-col flex-1 h-full'
+        }
+      >
         <div className="flex flex-col flex-1 justify-between gap-3">
           {prefs.showLastEpisodeOnCard && latestEpisode && (
             <div className="text-xs border-l pl-2 text-muted-foreground">
@@ -177,7 +195,7 @@ export const ShowCard = React.memo(function ShowCard({
             </div>
           )}
 
-          <div className="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+          <div className="flex items-center gap-2">
             <Button
               size="sm"
               onClick={(e) => {

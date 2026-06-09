@@ -37,7 +37,7 @@ export function ProgramGrid({
         ${
           prefs.compactCards
             ? 'grid-cols-[repeat(auto-fill,minmax(240px,1fr))]'
-            : 'grid-cols-2 sm:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4'
+            : 'grid-cols-[repeat(auto-fill,minmax(300px,1fr))]'
         }
       `}
     >
