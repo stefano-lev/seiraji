@@ -10,7 +10,9 @@
       "title": "江﨑文武のBorderless Music Dig!",
       "description": "音楽家・江﨑文武とともに、「“新しい”音楽は、常にジャンルの狭間で生まれている！」というコンセプトでお送りする《江﨑文武のBorderless Music Dig!》最新ヒットチューンからHIPHOP、ロック、ジャズ、クラシックまで…様々なジャンルの音楽を、ボーダレスにDigっていく、深掘りしていく、あたらしい音楽番組です。",
       "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/R7V6MMNYMK/R7V6MMNYMK-eyecatch_198ee8e60252d1ba5189bb6705ba0aae.png",
-      "hosts": ["江﨑 文武"],
+      "hosts": [
+        "江﨑 文武"
+      ],
       "schedule": null,
       "categories": null
     },
@@ -629,7 +631,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-05T14:59:30.064Z",
+      "cachedAt": "2026-06-10T17:08:00.629Z",
       "episodeCount": 34
     }
   },
@@ -644,7 +646,10 @@
       "title": "東京03の好きにさせるかッ!",
       "description": "「この上司、ホントいい加減だな！」「結婚して10年経つのに、なんでわかんないのかな！」今、日本で一番面白いコントトリオ「東京03」が、働く大人の「イライラ」や「あるある」を、俳優や芸人、声優をゲストに迎えたラジオコントとスタジオトークで痛快に笑い飛ばす大人向けのお笑いラジオ番組です！「そんなことあるある！」「そんな人いるいる！」と、働く大人たちの共感必至、爆笑必至、ストレス解消必至、の50分をお届けします！！",
       "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_016f83454660901d1cdd2a040c72bd24.jpg",
-      "hosts": ["東京03", "戸松 遥"],
+      "hosts": [
+        "東京03",
+        "戸松 遥"
+      ],
       "schedule": null,
       "categories": null
     },
@@ -1539,12 +1544,16 @@
         "publishedAtUnix": 1778151900,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/N71MK34ZG9/",
           "radioEpisodeId": "N71MK34ZG9",
           "radioSeriesId": "Y5MG659NGN",
-          "guests": ["影山優佳"],
+          "guests": [
+            "影山優佳"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -1557,12 +1566,16 @@
         "publishedAtUnix": 1778756700,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/77YWGW25XP/",
           "radioEpisodeId": "77YWGW25XP",
           "radioSeriesId": "Y5MG659NGN",
-          "guests": ["ダウ９００００"],
+          "guests": [
+            "ダウ９００００"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -1575,12 +1588,16 @@
         "publishedAtUnix": 1779361500,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/9QMV3JX32P/",
           "radioEpisodeId": "9QMV3JX32P",
           "radioSeriesId": "Y5MG659NGN",
-          "guests": ["鈴代紗弓"],
+          "guests": [
+            "鈴代紗弓"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -1593,12 +1610,18 @@
         "publishedAtUnix": 1779966300,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/NWQ96RLKKK/",
           "radioEpisodeId": "NWQ96RLKKK",
           "radioSeriesId": "Y5MG659NGN",
-          "guests": ["上田誠", "諏訪雅", "永野宗典"],
+          "guests": [
+            "上田誠",
+            "諏訪雅",
+            "永野宗典"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -1611,12 +1634,16 @@
         "publishedAtUnix": 1780571100,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/2WM5VWRRKJ/",
           "radioEpisodeId": "2WM5VWRRKJ",
           "radioSeriesId": "Y5MG659NGN",
-          "guests": ["アンガールズ"],
+          "guests": [
+            "アンガールズ"
+          ],
           "expires": "2026-06-11T20:55:00+09:00",
           "audioStatus": "ready"
         }
@@ -1629,12 +1656,16 @@
         "publishedAtUnix": 1780574700,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/X594WMP8XN/",
           "radioEpisodeId": "X594WMP8XN",
           "radioSeriesId": "Y5MG659NGN",
-          "guests": ["アンガールズ"],
+          "guests": [
+            "アンガールズ"
+          ],
           "expires": "2026-06-11T21:55:00+09:00",
           "audioStatus": "ready"
         }
@@ -1647,19 +1678,23 @@
         "publishedAtUnix": 1781175900,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/JWQ7Z1P4J3/",
           "radioEpisodeId": "JWQ7Z1P4J3",
           "radioSeriesId": "Y5MG659NGN",
-          "guests": ["かかずゆみ"],
+          "guests": [
+            "かかずゆみ"
+          ],
           "expires": "2026-06-18T20:55:00+09:00",
           "audioStatus": "notyet"
         }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-05T14:59:52.189Z",
+      "cachedAt": "2026-06-10T17:08:03.757Z",
       "episodeCount": 56
     }
   },
@@ -1674,7 +1709,11 @@
       "title": "あさこ・佳代子の大人なラジオ女子会",
       "description": "プライベートでも仲の良い“いとうあさこ”と“大久保佳代子”。この2人がメインパーソナリティーをつとめ、シラフとは思えない女子会のノリで、好き勝手にしゃべりまくる、新しいラジオトークバラエティー！この番組を聴いて、一日の仕事の疲れやストレスを吹っ飛ばし、スッキリしちゃってください！！",
       "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_39005c37f8c9351b5d77f11e423fc8b7.png",
-      "hosts": ["大久保 佳代子", "いとう あさこ", "茅野 愛衣"],
+      "hosts": [
+        "大久保 佳代子",
+        "いとう あさこ",
+        "茅野 愛衣"
+      ],
       "schedule": null,
       "categories": null
     },
@@ -2353,12 +2392,16 @@
         "publishedAtUnix": 1778155500,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/38X4PNX47R/",
           "radioEpisodeId": "38X4PNX47R",
           "radioSeriesId": "X4WNNM96KL",
-          "guests": ["土屋守"],
+          "guests": [
+            "土屋守"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -2371,12 +2414,17 @@
         "publishedAtUnix": 1778760300,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/QJR71V7424/",
           "radioEpisodeId": "QJR71V7424",
           "radioSeriesId": "X4WNNM96KL",
-          "guests": ["ベルサイユ", "大納言光子"],
+          "guests": [
+            "ベルサイユ",
+            "大納言光子"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -2389,12 +2437,16 @@
         "publishedAtUnix": 1779365100,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/7W9J44YM2W/",
           "radioEpisodeId": "7W9J44YM2W",
           "radioSeriesId": "X4WNNM96KL",
-          "guests": ["児嶋一哉"],
+          "guests": [
+            "児嶋一哉"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -2407,12 +2459,16 @@
         "publishedAtUnix": 1779969900,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/QN95R71X9Z/",
           "radioEpisodeId": "QN95R71X9Z",
           "radioSeriesId": "X4WNNM96KL",
-          "guests": ["飯間浩明"],
+          "guests": [
+            "飯間浩明"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -2425,19 +2481,23 @@
         "publishedAtUnix": 1781179500,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/Y6G1NGKVWK/",
           "radioEpisodeId": "Y6G1NGKVWK",
           "radioSeriesId": "X4WNNM96KL",
-          "guests": ["いとうまい子"],
+          "guests": [
+            "いとうまい子"
+          ],
           "expires": "2026-06-18T21:55:00+09:00",
           "audioStatus": "notyet"
         }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-08T19:19:39.751Z",
+      "cachedAt": "2026-06-10T17:08:06.279Z",
       "episodeCount": 42
     }
   },
@@ -2452,7 +2512,10 @@
       "title": "アニソン・アカデミー",
       "description": "世代を超えて楽しめる音楽コンテンツ・アニソン（アニメソング）。リクエストを中心に創成期から現代まで幅広い楽曲を取り上げるNHK-FM初のアニソンレギュラー番組！アニソンが土曜の午後を明るく、そして元気にします。",
       "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Q3PKWJX562/Q3PKWJX562-eyecatch_9c121cbd018be8b53d528236f008ebb6.png",
-      "hosts": ["中川 翔子", "あべ あきら"],
+      "hosts": [
+        "中川 翔子",
+        "あべ あきら"
+      ],
       "schedule": null,
       "categories": null
     },
@@ -7343,12 +7406,16 @@
         "publishedAtUnix": 1778302803,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Q3PKWJX562/Q3PKWJX562-eyecatch_582887b8a9760840828129666351f77b.png",
         "durationSeconds": 7200,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/anison-ac/rs/Q3PKWJX562/episode/re/N1JMV78Q33/",
           "radioEpisodeId": "N1JMV78Q33",
           "radioSeriesId": "Q3PKWJX562",
-          "guests": ["神前暁"],
+          "guests": [
+            "神前暁"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -7361,19 +7428,23 @@
         "publishedAtUnix": 1780722003,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Q3PKWJX562/Q3PKWJX562-eyecatch_582887b8a9760840828129666351f77b.png",
         "durationSeconds": 7200,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/anison-ac/rs/Q3PKWJX562/episode/re/VJJPKM8P51/",
           "radioEpisodeId": "VJJPKM8P51",
           "radioSeriesId": "Q3PKWJX562",
-          "guests": ["藤津亮太"],
+          "guests": [
+            "藤津亮太"
+          ],
           "expires": "2026-06-13T16:00:03+09:00",
           "audioStatus": "notyet"
         }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-05T15:00:15.528Z",
+      "cachedAt": "2026-06-10T17:08:17.132Z",
       "episodeCount": 273
     }
   },
@@ -7388,7 +7459,11 @@
       "title": "山下健二郎のトーク・ライク・フィッシング",
       "description": "今こそ釣りの素晴らしさを語ろう！釣りを愛してやまない猛者たち、三代目 J SOUL BROTHERS・山下健二郎が釣り好きのゲストと釣りへの熱い情熱を語りまくる！釣りの楽しさ、面白さをラジオで伝えることは出来るのか！？",
       "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/V8JW19JK29/V8JW19JK29-eyecatch_5d31bf6c5751c4185a0df933c5e966c2.jpg",
-      "hosts": ["山下 健二郎", "林家 たい平", "瀬戸 光"],
+      "hosts": [
+        "山下 健二郎",
+        "林家 たい平",
+        "瀬戸 光"
+      ],
       "schedule": null,
       "categories": null
     },
@@ -8400,11 +8475,29 @@
           "expires": "2026-06-13T22:55:00+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "91NL7PL4YZ",
+        "title": "〜釣りのラジオ〜 落語家・林家たい平が登場!後編",
+        "description": "～釣りのラジオ～　落語家・林家たい平が登場！後編　山下健二郎，林家たい平，【アナウンサー】瀬戸光",
+        "publishedAt": "2026-06-13T22:05:00+09:00",
+        "publishedAtUnix": 1781355900,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/V8JW19JK29/V8JW19JK29-eyecatch_98c8d0476cbb2f6faa38b9d35bed9924.jpg",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/rs/V8JW19JK29/episode/re/91NL7PL4YZ/",
+          "radioEpisodeId": "91NL7PL4YZ",
+          "radioSeriesId": "V8JW19JK29",
+          "guests": [],
+          "expires": "2026-06-20T22:55:00+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-05T15:07:04.568Z",
-      "episodeCount": 56
+      "cachedAt": "2026-06-10T17:08:20.695Z",
+      "episodeCount": 57
     }
   }
 }

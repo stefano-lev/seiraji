@@ -10,7 +10,9 @@
     "program": {
       "title": "大西亜玖璃のPONPONPON!!",
       "description": "声優・アーティストとして活躍する大西亜玖璃がパーソナリティを務めるラジオプログラム。\n活動内容の話はもちろん、本人の素顔や新たな一面を深掘りしていくトークをお届けします。\nまた、ラジオに加え、QloveRでは映像付き生放送も実施！\nあぐ\"ぽん\"でお腹\"ぽんぽん\"になる番組をお届けしていきます！！\n\n■放送日時\n文化放送（FM91.6／AM1134）\n毎月第1火曜日 深夜3時00分～3時30分放送\n※『QloveR SP』内にて",
-      "hosts": ["大西亜玖璃"],
+      "hosts": [
+        "大西亜玖璃"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/956/thumbnail_image_path?time=1761891641"
@@ -198,7 +200,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-05T02:38:32.086Z",
+      "cachedAt": "2026-06-10T17:05:44.357Z",
       "episodeCount": 15
     },
     "raw": {
@@ -451,7 +453,9 @@
     "program": {
       "title": "遠藤璃菜のちょっと寄り道してく？",
       "description": "可愛くて元気で、でもちょっと気分屋な遠藤璃菜さんの魅力を\n少しずつ知って頂くソロラジオ番組です。\n好きな食べ物はあん肝だったり、あいさつはしっかりしていたり、\n高いところは苦手だったり。\n一緒にちょっと寄り道して...少しずつ仲良くなってくれませんか？\n\n■放送日時\n　・QloveR：毎週土曜日22:00更新",
-      "hosts": ["遠藤璃菜"],
+      "hosts": [
+        "遠藤璃菜"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/874/thumbnail_image_path?time=1774341242"
@@ -1008,11 +1012,35 @@
           "mediaType": "movie",
           "views": 203
         }
+      },
+      {
+        "id": "qlover:sm5yxVXBp2233mSn6W9rvtSu",
+        "title": "#45 (2026年6月6日更新)　「告知＆お試しコーナー」",
+        "publishedAt": "2026-06-06T13:00:00+09:00",
+        "publishedAtUnix": 1780718400,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/90227/thumbnail_path?time=1780736950",
+        "durationSeconds": 840,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 188
+        }
+      },
+      {
+        "id": "qlover:smk4igG5BsWGfWdggEKbpV55",
+        "title": "#44 (2026年5月30日更新)　「クイズがしたい！(歴史)」",
+        "publishedAt": "2026-06-06T13:00:00+09:00",
+        "publishedAtUnix": 1780718400,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/90228/thumbnail_path?time=1780737582",
+        "durationSeconds": 945,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 30
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-05T02:38:35.771Z",
-      "episodeCount": 46
+      "cachedAt": "2026-06-10T17:05:48.207Z",
+      "episodeCount": 48
     },
     "raw": {
       "site": {
@@ -1281,7 +1309,9 @@
     "program": {
       "title": "伊達さゆりの 伊達にラジオやってません！！！",
       "description": "声優・伊達さゆりのひとりしゃべりのラジオ番組。\nいつか「伊達にラジオやってません！」と胸を張って言えるように、リスナーさんの力を借りつつたくさんの笑顔をお届けしていきます！\n\n■放送日時\nQloveR 伊達ラジチャンネル 毎週水曜日21:30配信\n文化放送（FM91.6／AM1134）、ラジオ大阪（FM91.9／AM1314） 毎週水曜日27:30〜28:00",
-      "hosts": ["伊達さゆり"],
+      "hosts": [
+        "伊達さゆり"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/751/thumbnail_image_path?time=1775015477"
@@ -3926,11 +3956,23 @@
           "mediaType": "movie",
           "views": 363
         }
+      },
+      {
+        "id": "qlover:smKK63wmNQqstM5LJx9Xa8iW",
+        "title": "#220「かたつむりを頭で飼います🐌❤️」伊達さゆりの 伊達にラジオやってません！！！(2026年6月10日放送分）",
+        "publishedAt": "2026-06-10T12:30:00+09:00",
+        "publishedAtUnix": 1781062200,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/90559/thumbnail_path?time=1781063993",
+        "durationSeconds": 1740,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 293
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-05T02:38:46.605Z",
-      "episodeCount": 220
+      "cachedAt": "2026-06-10T17:05:59.388Z",
+      "episodeCount": 221
     },
     "raw": {
       "site": {
@@ -4148,7 +4190,9 @@
     "program": {
       "title": "鈴原希実の明日はなんしちょっと？",
       "description": "声優・鈴原希実によるソロラジオ番組。\n明日はなんしちょっと？（明日はなにしてるの？）といった気軽な会話をしながら前向きに明日を迎えられるような番組をお送りします。\n\n■放送日時\n  QloveR のんしちょっとチャンネル 毎週金曜日19:00配信\n  文化放送（FM91.6／AM1134） 、ラジオ大阪（FM91.9／AM1314）毎月第4火曜日27:00〜27:30（※QloveR SP内）",
-      "hosts": ["鈴原希実"],
+      "hosts": [
+        "鈴原希実"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/744/thumbnail_image_path?time=1774848607"
@@ -5965,11 +6009,23 @@
           "mediaType": "movie",
           "views": 549
         }
+      },
+      {
+        "id": "qlover:sm82vRJoC9bnuXmF8LjmEeM9",
+        "title": "鈴原希実の明日はなんしちょっと？ #152(2026年6月5日配信)",
+        "publishedAt": "2026-06-05T10:00:00+09:00",
+        "publishedAtUnix": 1780621200,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/90025/thumbnail_path?time=1780556269",
+        "durationSeconds": 1740,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 513
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-05T02:38:58.185Z",
-      "episodeCount": 151
+      "cachedAt": "2026-06-10T17:06:11.669Z",
+      "episodeCount": 152
     },
     "raw": {
       "site": {
@@ -6187,7 +6243,9 @@
     "program": {
       "title": "三宅美羽のみみぺこ",
       "description": "声優・三宅美羽の初ひとりしゃべりラジオ。\nリスナーの皆さんに「お\"耳\"いっぱい」になってもらう番組です。\nラジオの感想は　#みみぺこ　でポストしてくださいね！\n番組へのメールはmmpc@joqr.netまで！\n\n■配信日時：毎週月曜日25:30",
-      "hosts": ["三宅美羽"],
+      "hosts": [
+        "三宅美羽"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/818/thumbnail_image_path?time=1771323234"
@@ -6831,7 +6889,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-05T02:39:02.166Z",
+      "cachedAt": "2026-06-10T17:06:16.088Z",
       "episodeCount": 53
     },
     "raw": {
@@ -7084,7 +7142,9 @@
     "program": {
       "title": "指出毬亜のさしでがましいようですが",
       "description": "この番組は、「私に天使が舞い降りた!」「恋する小惑星」「ラブライブ！虹ヶ咲学園スクールアイドル同好会」などに出演する声優・指出毬亜さんが、\n引っ込み思案、若干の人見知りでも１人で頑張ってお話していく番組です！\n\n■放送日時\n  QloveR「超!A&G+ チャンネル」毎週火曜日21:30〜22:00 \n  文化放送（FM91.6／AM1134） 毎週火曜日28:00〜28:30",
-      "hosts": ["指出毬亜"],
+      "hosts": [
+        "指出毬亜"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/735/thumbnail_image_path?time=1742907729"
@@ -8880,7 +8940,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-05T02:39:07.890Z",
+      "cachedAt": "2026-06-10T17:06:22.396Z",
       "episodeCount": 149
     },
     "raw": {
@@ -9133,7 +9193,9 @@
     "program": {
       "title": "すみぺのすきま 〜知らないんですか？上坂さん！〜",
       "description": "声優・上坂すみれが仕事にかこつけてマニアックな情報を「すきま」にインプット！\nゲストの“得意な界隈”をすみぺにオススメするトーク番組。\n多趣味なすみぺが激ハマりする新たな界隈が現れるかも！？\n\n放送日時\n文化放送（FM91.6／AM1134） 毎週火曜日26:00〜26:30",
-      "hosts": ["上坂すみれ"],
+      "hosts": [
+        "上坂すみれ"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/1097/thumbnail_image_path?time=1774265312"
@@ -9270,11 +9332,23 @@
           "mediaType": "audio",
           "views": null
         }
+      },
+      {
+        "id": "qlover:smTcLtuGVMLpvHjEk7cmCCbQ",
+        "title": "#11 2026年6月9日OA回アーカイブ",
+        "publishedAt": "2026-06-09T17:30:00+09:00",
+        "publishedAtUnix": 1780993800,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/90427/thumbnail_path?time=1780972363",
+        "durationSeconds": 1570,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 44
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-05T02:39:09.036Z",
-      "episodeCount": 11
+      "cachedAt": "2026-06-10T17:06:23.599Z",
+      "episodeCount": 12
     }
   },
   "naoliving": {
@@ -9288,7 +9362,9 @@
     "program": {
       "title": "東山奈央のラジオ＠リビング",
       "description": "この番組は、東山奈央さんが、週の始まり月曜日にリスナーのあなたと日々の出来事をまったりおしゃべりをしていくリビング型プログラムです！\n\n■放送日時：\n  QloveR「超!A&G+ チャンネル」毎週月曜日22:00〜22:30\n  文化放送（FM91.6／AM1134） 毎週月曜日27:30〜28:00",
-      "hosts": ["東山奈央"],
+      "hosts": [
+        "東山奈央"
+      ],
       "category": "声優",
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/740/thumbnail_image_path?time=1747650070"
@@ -10073,11 +10149,35 @@
           "mediaType": "movie",
           "views": 316
         }
+      },
+      {
+        "id": "qlover:smGu2epPpKHey65qPBknQqi7",
+        "title": "『東山奈央のラジオ＠リビング』第453回（2026年6月1日放送）",
+        "publishedAt": "2026-06-10T09:00:00+09:00",
+        "publishedAtUnix": 1781049600,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/89707/thumbnail_path?time=1780380064",
+        "durationSeconds": 1741,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 20
+        }
+      },
+      {
+        "id": "qlover:smTJPPKaqFRJjTsNypckFHps",
+        "title": "『東山奈央のラジオ＠リビング』第454回（2026年6月8日放送）",
+        "publishedAt": "2026-06-10T09:00:00+09:00",
+        "publishedAtUnix": 1781049600,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/90465/thumbnail_path?time=1780990175",
+        "durationSeconds": 1741,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 140
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-05T02:39:14.087Z",
-      "episodeCount": 65
+      "cachedAt": "2026-06-10T17:06:28.941Z",
+      "episodeCount": 67
     }
   }
 }

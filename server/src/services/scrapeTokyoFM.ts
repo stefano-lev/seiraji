@@ -31,7 +31,8 @@ export async function scrapeTokyoFM(url: string) {
   const slug = getTokyoFMSlug(url);
 
   const episodes = normalizeEpisodes(
-    Array.isArray(channel.item) ? channel.item : [channel.item]
+    Array.isArray(channel.item) ? channel.item : [channel.item],
+    slug
   ).reverse();
 
   return {
@@ -72,31 +73,99 @@ export async function scrapeTokyoFM(url: string) {
   };
 }
 
-function normalizeEpisodes(items: any[]) {
-  return items.map((item) => ({
-    id: item.guid,
+function normalizeEpisodes(items: any[], slug: string) {
+  return items.map((item) => {
+    const guid = getRssText(item.guid);
+    const link = getRssText(item.link);
+    const title = getRssText(item.title) ?? 'Untitled Episode';
+    const description = getRssText(item.description);
+    const pubDate = getRssText(item.pubDate);
+    const audioUrl = item.enclosure?.['@_url'] ?? null;
 
-    title: item.title,
+    const stableEpisodeCode =
+      guid ?? audioUrl ?? link ?? `${title}:${pubDate ?? 'unknown-date'}`;
 
-    description: item.description ?? null,
+    return {
+      id: `tokyofm:${slug}:${stableEpisodeCode}`,
 
-    publishedAt: item.pubDate ?? null,
+      title,
 
-    publishedAtUnix: item.pubDate
-      ? Math.floor(new Date(item.pubDate).getTime() / 1000)
-      : null,
+      description,
 
-    thumbnail: item['itunes:image']?.['@_href'] ?? null,
+      publishedAt: pubDate,
 
-    durationSeconds: Number(item['itunes:duration']) || null,
+      publishedAtUnix: pubDate
+        ? Math.floor(new Date(pubDate).getTime() / 1000)
+        : null,
 
-    tags: [],
+      thumbnail: item['itunes:image']?.['@_href'] ?? null,
 
-    platformMetadata: {
-      link: item.link,
-      audioUrl: item.enclosure?.['@_url'],
-    },
-  }));
+      durationSeconds: parseRssDuration(item['itunes:duration']),
+
+      tags: [],
+
+      platformMetadata: {
+        guid,
+        link,
+        audioUrl,
+      },
+    };
+  });
+}
+
+function getRssText(value: unknown): string | null {
+  if (typeof value === 'string') {
+    return value.trim() || null;
+  }
+
+  if (typeof value === 'number') {
+    return String(value);
+  }
+
+  if (
+    value &&
+    typeof value === 'object' &&
+    '#text' in value &&
+    typeof (value as any)['#text'] === 'string'
+  ) {
+    return (value as any)['#text'].trim() || null;
+  }
+
+  return null;
+}
+
+function parseRssDuration(value: unknown): number | null {
+  if (typeof value === 'number') {
+    return Number.isFinite(value) ? value : null;
+  }
+
+  if (typeof value !== 'string') {
+    return null;
+  }
+
+  const raw = value.trim();
+
+  if (/^\d+$/.test(raw)) {
+    return Number(raw);
+  }
+
+  const parts = raw.split(':').map(Number);
+
+  if (parts.some((part) => !Number.isFinite(part))) {
+    return null;
+  }
+
+  if (parts.length === 3) {
+    const [hours, minutes, seconds] = parts;
+    return hours * 3600 + minutes * 60 + seconds;
+  }
+
+  if (parts.length === 2) {
+    const [minutes, seconds] = parts;
+    return minutes * 60 + seconds;
+  }
+
+  return null;
 }
 
 function getRssUrl(html: string): string {

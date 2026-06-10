@@ -59,7 +59,16 @@ export function CreateProgramModal({
   const [previewLoading, setPreviewLoading] = useState(false);
 
   useEffect(() => {
-    if (!editingProgram) return;
+    if (!open) return;
+
+    if (!editingProgram) {
+      resetForm();
+      return;
+    }
+
+    resetForm();
+
+    setTab('manual');
 
     setTitle(editingProgram.program.title);
 
@@ -88,11 +97,24 @@ export function CreateProgramModal({
 
   const detectedPlatform = detectPlatform(importUrl);
 
-  const normalizedImportUrl = importUrl.trim().replace(/\/$/, '');
+  function normalizeUrl(value?: string | null) {
+    return value?.trim().replace(/\/$/, '') ?? '';
+  }
 
-  const duplicateProgram = programs.find(
-    (program) => program.url?.trim().replace(/\/$/, '') === normalizedImportUrl
-  );
+  const normalizedImportUrl = normalizeUrl(importUrl);
+
+  const duplicateProgram =
+    normalizedImportUrl.length > 0
+      ? programs.find((program) => {
+          if (program.source !== 'imported') return false;
+
+          const normalizedProgramUrl = normalizeUrl(program.url);
+
+          if (!normalizedProgramUrl) return false;
+
+          return normalizedProgramUrl === normalizedImportUrl;
+        })
+      : null;
 
   const hasHosts =
     (preview?.hosts?.length ?? 0) > 0 || hostOverride.trim().length > 0;
@@ -159,7 +181,7 @@ export function CreateProgramModal({
 
     onSubmit(finalProgram);
 
-    onClose();
+    handleClose();
   }
 
   async function handleImport() {
@@ -169,6 +191,7 @@ export function CreateProgramModal({
 
     try {
       setImporting(true);
+
       const program = await importProgram(
         importUrl.trim(),
         hostOverride.trim() || undefined
@@ -180,15 +203,17 @@ export function CreateProgramModal({
       });
 
       onSubmit(program);
-      onClose();
+
+      handleClose();
     } catch (err) {
-      setImporting(false);
       console.error(err);
 
       toast.error('Import Failed', {
         id: toastId,
         description: 'Unable to import program',
       });
+    } finally {
+      setImporting(false);
     }
   }
 
@@ -223,12 +248,37 @@ export function CreateProgramModal({
     }
   }
 
+  function resetForm() {
+    setTitle('');
+    setHosts('');
+    setPlatform('');
+    setSchedule('');
+    setEpisodeCount(12);
+    setDescription('');
+    setURL('');
+    setThumbnail('');
+
+    setTab('import');
+
+    setImportUrl('');
+    setHostOverride('');
+    setImporting(false);
+
+    setPreview(null);
+    setPreviewLoading(false);
+  }
+
+  function handleClose() {
+    resetForm();
+    onClose();
+  }
+
   return (
     <motion.div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      onClick={onClose}
+      onClick={handleClose}
     >
       <motion.div
         className="w-full max-w-xl max-h-[85vh] rounded-3xl border border-border/60 bg-background p-4 shadow-2xl flex flex-col"
@@ -439,7 +489,7 @@ export function CreateProgramModal({
                   placeholder="ex. https://audee.jp/program/show/12345"
                 />
 
-                {duplicateProgram && (
+                {normalizedImportUrl && duplicateProgram && (
                   <p className="mt-2 text-sm text-red-500">
                     "{duplicateProgram.program.title}" already exists in your
                     library.
@@ -487,7 +537,7 @@ export function CreateProgramModal({
             </Button>
           )}
 
-          <Button variant="secondary" onClick={onClose}>
+          <Button variant="secondary" onClick={handleClose}>
             Cancel
           </Button>
 
