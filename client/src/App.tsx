@@ -2,7 +2,7 @@ import type React from 'react';
 import { motion } from 'framer-motion';
 import { Toaster, toast } from 'sonner';
 
-import { useEffect, useState, useRef, useMemo } from 'react';
+import { useEffect, useState, useRef, useMemo, useCallback } from 'react';
 import { Button } from './components/ui/button';
 
 import { demoTags } from '@/data/demoPrograms';
@@ -61,34 +61,77 @@ export default function App() {
   const [editDraft, setEditDraft] = useState<Program | null>(null);
   const [platformFilter, setPlatformFilter] = useState<string[]>([]);
 
-  const [programs, setPrograms] = useState<Program[]>([]);
-
-  useEffect(() => {
-    async function load() {
-      try {
-        setLibraryLoading(true);
-
-        const data = await getLibrary();
-
-        const manualPrograms: Program[] = JSON.parse(
-          localStorage.getItem('manualPrograms') ?? '[]'
-        );
-
-        setPrograms(mergePrograms(data, manualPrograms));
-
-        setLibraryLoaded(true);
-      } catch (err) {
-        console.error('Failed to load library', err);
-      } finally {
-        setLibraryLoading(false);
-      }
-    }
-
-    load();
-  }, []);
-
   const [libraryLoading, setLibraryLoading] = useState(true);
   const [libraryLoaded, setLibraryLoaded] = useState(false);
+  const [librarySlow, setLibrarySlow] = useState(false);
+  const [libraryError, setLibraryError] = useState<string | null>(null);
+
+  const [programs, setPrograms] = useState<Program[]>([]);
+
+  const loadLibrary = useCallback(async () => {
+    let slowTimer: number | undefined;
+    let toastId: string | number | undefined;
+
+    try {
+      setLibraryLoading(true);
+      setLibraryError(null);
+      setLibrarySlow(false);
+
+      slowTimer = window.setTimeout(() => {
+        setLibrarySlow(true);
+
+        toastId = toast.loading('Waking up library server', {
+          description:
+            'The backend may be starting up. First load can take a little longer.',
+        });
+      }, 30000);
+
+      const data = await getLibrary();
+
+      const manualPrograms: Program[] = JSON.parse(
+        localStorage.getItem('manualPrograms') ?? '[]'
+      );
+
+      setPrograms(mergePrograms(data, manualPrograms));
+      setLibraryLoaded(true);
+
+      if (toastId) {
+        toast.success('Library loaded', {
+          id: toastId,
+          description: `${data.length} imported programs synced.`,
+        });
+      }
+    } catch (err) {
+      console.error('Failed to load library', err);
+
+      setLibraryLoaded(false);
+      setLibraryError(
+        'Unable to load the program library. The backend may still be starting up. Please try again in ~30 seconds.'
+      );
+
+      if (toastId) {
+        toast.error('Library failed to load', {
+          id: toastId,
+          description: 'Please try again in a moment.',
+        });
+      } else {
+        toast.error('Library failed to load', {
+          description: 'Please try again in a moment.',
+        });
+      }
+    } finally {
+      if (slowTimer) {
+        window.clearTimeout(slowTimer);
+      }
+
+      setLibraryLoading(false);
+      setLibrarySlow(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    loadLibrary();
+  }, [loadLibrary]);
 
   useEffect(() => {
     if (!libraryLoaded) return;
@@ -815,6 +858,53 @@ export default function App() {
     );
   }, [programs]);
 
+  function LibraryLoadingState({ slow }: { slow: boolean }) {
+    return (
+      <div className="mt-6 rounded-3xl border border-border/60 bg-background/95 p-8 shadow-sm">
+        <div className="flex flex-col items-center justify-center text-center">
+          <div className="mb-4 h-10 w-10 animate-spin rounded-full border-2 border-muted border-t-primary" />
+
+          <h2 className="text-lg font-semibold">Loading program library</h2>
+
+          <p className="mt-2 max-w-md text-sm text-muted-foreground">
+            {slow
+              ? 'The backend server may be waking up. This can take a little longer on the first visit.'
+              : 'Fetching the latest program data...'}
+          </p>
+        </div>
+
+        <div className="mt-8 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-5">
+          {Array.from({ length: 8 }).map((_, index) => (
+            <div
+              key={index}
+              className="h-52 animate-pulse rounded-xl border border-border/60 bg-muted/30"
+            />
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  function LibraryErrorState({
+    message,
+    onRetry,
+  }: {
+    message: string;
+    onRetry: () => void;
+  }) {
+    return (
+      <div className="mt-6 rounded-3xl border border-destructive/30 bg-destructive/5 p-8 text-center shadow-sm">
+        <h2 className="text-lg font-semibold">Library failed to load</h2>
+
+        <p className="mt-2 text-sm text-muted-foreground">{message}</p>
+
+        <Button className="mt-5" onClick={onRetry}>
+          Try again
+        </Button>
+      </div>
+    );
+  }
+
   return (
     <div className={dark ? 'dark' : ''}>
       <div className="app-bg min-h-screen bg-background text-foreground">
@@ -852,14 +942,6 @@ export default function App() {
                 </p>
 
                 <div className="flex gap-3 justify-end">
-                  {/* <Button
-                    variant="secondary"
-                    onClick={startFresh}
-                    disabled={libraryLoading}
-                  >
-                    {libraryLoading ? 'Loading Library...' : 'Start Fresh'}
-                  </Button> */}
-
                   <Button onClick={loadDemo} disabled={libraryLoading}>
                     {libraryLoading ? 'Loading Library...' : 'Load Demo'}
                   </Button>
@@ -869,59 +951,67 @@ export default function App() {
           )}
 
           {/* Controls */}
-          <ProgramFilters
-            searchRef={searchRef}
-            searchQuery={searchQuery}
-            onSearchQueryChange={setSearchQuery}
-            isDemo={isDemo}
-            onEndDemo={() => {
-              const ok = window.confirm(
-                'End the Demo and start fresh?\n(This cannot be undone!)'
-              );
+          {libraryLoaded && !libraryError && (
+            <ProgramFilters
+              searchRef={searchRef}
+              searchQuery={searchQuery}
+              onSearchQueryChange={setSearchQuery}
+              isDemo={isDemo}
+              onEndDemo={() => {
+                const ok = window.confirm(
+                  'End the Demo and start fresh?\n(This cannot be undone!)'
+                );
 
-              if (!ok) return;
+                if (!ok) return;
 
-              startFresh();
-            }}
-            pinnedOnly={pinnedOnly}
-            onTogglePinned={() => setPinnedOnly(!pinnedOnly)}
-            statusFilter={statusFilter}
-            onStatusFilterChange={setStatusFilter}
-            tagFilter={tagFilter}
-            onTagFilterChange={setTagFilter}
-            sortMode={sortMode}
-            onSortModeChange={setSortMode}
-            tags={tags}
-            visibleCount={visiblePrograms.length}
-            totalCount={programs.length}
-            platforms={platforms}
-            platformFilter={platformFilter}
-            onPlatformFilterChange={setPlatformFilter}
-          />
+                startFresh();
+              }}
+              pinnedOnly={pinnedOnly}
+              onTogglePinned={() => setPinnedOnly(!pinnedOnly)}
+              statusFilter={statusFilter}
+              onStatusFilterChange={setStatusFilter}
+              tagFilter={tagFilter}
+              onTagFilterChange={setTagFilter}
+              sortMode={sortMode}
+              onSortModeChange={setSortMode}
+              tags={tags}
+              visibleCount={visiblePrograms.length}
+              totalCount={programs.length}
+              platforms={platforms}
+              platformFilter={platformFilter}
+              onPlatformFilterChange={setPlatformFilter}
+            />
+          )}
 
-          {/* Show cards */}
-          <ProgramGrid
-            programs={visiblePrograms}
-            userState={userState}
-            onUpdate={updateProgramState}
-            onUpdateEpisode={updateEpisode}
-            onOpen={(program) => {
-              setEditDraft(null);
-              setSelectedProgram(program);
+          {/* Library content */}
+          {libraryLoading && !libraryLoaded ? (
+            <LibraryLoadingState slow={librarySlow} />
+          ) : libraryError ? (
+            <LibraryErrorState message={libraryError} onRetry={loadLibrary} />
+          ) : (
+            <ProgramGrid
+              programs={visiblePrograms}
+              userState={userState}
+              onUpdate={updateProgramState}
+              onUpdateEpisode={updateEpisode}
+              onOpen={(program) => {
+                setEditDraft(null);
+                setSelectedProgram(program);
 
-              const currentTags = getProgramState(program.id).tags ?? [];
-              setTagDraft(currentTags.join(', '));
-            }}
-            onEdit={(program) => {
-              setEditDraft(program);
-              setSelectedProgram(program);
+                const currentTags = getProgramState(program.id).tags ?? [];
+                setTagDraft(currentTags.join(', '));
+              }}
+              onEdit={(program) => {
+                setEditDraft(program);
+                setSelectedProgram(program);
 
-              const currentTags = getProgramState(program.id).tags ?? [];
-              setTagDraft(currentTags.join(', '));
-            }}
-            onTogglePinned={togglePinned}
-            prefs={prefs}
-          />
+                const currentTags = getProgramState(program.id).tags ?? [];
+                setTagDraft(currentTags.join(', '));
+              }}
+              onTogglePinned={togglePinned}
+              prefs={prefs}
+            />
+          )}
 
           <ProgramModal
             open={!!selectedProgram}
