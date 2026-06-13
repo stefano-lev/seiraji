@@ -1,7 +1,3 @@
-import { fetchYoutubeVideoDetails } from './fetchYoutubeVideoDetails';
-
-import { parseYoutubeDuration } from '../utils/parseYoutubeDuration';
-
 import { normalizeEpisodes } from '../utils/normalizeEpisodes';
 
 const API_KEY = process.env.YOUTUBE_API_KEY;
@@ -132,4 +128,46 @@ export async function scrapeYoutubePlaylist(url: string) {
       episodeCount: episodes.length,
     },
   };
+}
+
+export function parseYoutubeDuration(iso: string) {
+  const matches = iso.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/);
+
+  if (!matches) {
+    return 0;
+  }
+
+  const hours = parseInt(matches[1] || '0');
+
+  const minutes = parseInt(matches[2] || '0');
+
+  const seconds = parseInt(matches[3] || '0');
+
+  return hours * 3600 + minutes * 60 + seconds;
+}
+
+async function fetchYoutubeVideoDetails(videoIds: string[]) {
+  const batches: string[][] = [];
+
+  for (let i = 0; i < videoIds.length; i += 50) {
+    batches.push(videoIds.slice(i, i + 50));
+  }
+
+  const results: any[] = [];
+
+  for (const batch of batches) {
+    const ids = batch.join(',');
+
+    console.log(`Fetching video details batch (${batch.length} videos)`);
+
+    const res = await fetch(
+      `https://www.googleapis.com/youtube/v3/videos?part=contentDetails,snippet&id=${ids}&key=${API_KEY}`
+    );
+
+    const json = await res.json();
+
+    results.push(...(json.items ?? []));
+  }
+
+  return results;
 }

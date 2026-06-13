@@ -17,13 +17,3 @@ export function extractHostNames(
 
   return [...new Set(hosts)];
 }
-
-export function extractOpenrecHostName(channelName: string): string[] {
-  const match = channelName.match(/^(.+?)(の|と|が|ちゃんの|さんの)/);
-
-  if (!match) {
-    return [];
-  }
-
-  return [match[1].trim()];
-}

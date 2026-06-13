@@ -1,8 +1,4 @@
-import { fetchOpenrecEpisodes } from './openrecEpisodes';
-
 import { normalizeEpisodes } from '../utils/normalizeEpisodes';
-
-import { extractOpenrecHostName } from '../utils/extractHostNames';
 
 export async function scrapeOpenrec(url: string) {
   const slug = new URL(url).pathname.split('/').filter(Boolean)[1];
@@ -88,4 +84,48 @@ export async function scrapeOpenrec(url: string) {
     //   site,
     // },
   };
+}
+
+async function fetchOpenrecEpisodes(channelId: string) {
+  const episodes: any[] = [];
+
+  let page = 1;
+
+  while (true) {
+    const url =
+      `https://public.openrec.tv/external/api/v5/search-movies` +
+      `?channel_ids=${channelId}` +
+      `&include_live=true` +
+      `&include_upload=true` +
+      `&onair_status=2` +
+      `&include_deleted=true` +
+      `&sort=published_at` +
+      `&page=${page}`;
+
+    const res = await fetch(url);
+
+    const json = await res.json();
+
+    if (!Array.isArray(json) || json.length === 0) {
+      break;
+    }
+
+    episodes.push(...json);
+
+    page++;
+  }
+
+  const filteredEpisodes = episodes.filter((ep) => (ep.play_time ?? 0) >= 600);
+
+  return filteredEpisodes;
+}
+
+function extractOpenrecHostName(channelName: string): string[] {
+  const match = channelName.match(/^(.+?)(の|と|が|ちゃんの|さんの)/);
+
+  if (!match) {
+    return [];
+  }
+
+  return [match[1].trim()];
 }

@@ -1,8 +1,4 @@
-import { getFanclubIdFromUrl } from './qloverResolver';
-
-import { fetchQloverEpisodes } from './qloverEpisodes';
-
-import { normalizeAudeeDate } from '../utils/date';
+import { normalizeDate } from '../utils/normalizeDate';
 
 import { normalizeEpisodes } from '../utils/normalizeEpisodes';
 
@@ -64,7 +60,7 @@ export async function scrapeQlover(url: string) {
 
     episodes: normalizeEpisodes(
       filteredEpisodes.map((ep) => {
-        const normalizedDate = normalizeAudeeDate(ep.display_date);
+        const normalizedDate = normalizeDate(ep.display_date);
 
         return {
           id: `qlover:${ep.content_code}`,
@@ -98,4 +94,76 @@ export async function scrapeQlover(url: string) {
     //   site: baseJson,
     // },
   };
+}
+
+async function fetchQloverEpisodes(fanclubId: number) {
+  const episodes: any[] = [];
+  let page = 1;
+
+  while (true) {
+    const url = `https://api.qlover.jp/fc/v2/fanclub_sites/${fanclubId}/video_pages?sort=-display_date&vod_type=0&per_page=12&page=${page}`;
+
+    console.log('FETCHING:', url);
+
+    const res = await fetch(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+
+        Accept: 'application/json, text/plain, */*',
+
+        Origin: 'https://qlover.jp/',
+
+        Referer: 'https://qlover.jp/',
+
+        fc_site_id: String(fanclubId),
+
+        fc_use_device: 'null',
+      },
+    });
+
+    console.log('STATUS:', res.status);
+
+    const json = await res.json();
+
+    const list = json?.data?.video_pages?.list ?? [];
+
+    if (list.length === 0) {
+      break;
+    }
+
+    episodes.push(...list);
+
+    page++;
+  }
+
+  return episodes;
+}
+
+let channelCache: Record<string, number> | null = null;
+
+function normalizeUrl(url: string) {
+  const u = new URL(url);
+  const firstSegment = u.pathname.split('/').filter(Boolean)[0];
+  return `${u.origin}/${firstSegment}`;
+}
+
+export async function getFanclubIdFromUrl(url: string): Promise<number | null> {
+  if (!channelCache) {
+    const res = await fetch(
+      'https://api.qlover.jp/fc/content_providers/channels'
+    );
+
+    const json = await res.json();
+
+    channelCache = {};
+
+    for (const c of json.data.content_providers) {
+      const domain = c.domain.replace(/\/$/, '');
+      channelCache[domain] = c.fanclub_site.id;
+    }
+  }
+
+  const key = normalizeUrl(url);
+
+  return channelCache[key] ?? null;
 }

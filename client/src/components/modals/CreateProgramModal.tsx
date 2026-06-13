@@ -44,6 +44,7 @@ export function CreateProgramModal({
   const [platform, setPlatform] = useState('');
   const [schedule, setSchedule] = useState('');
   const [episodeCount, setEpisodeCount] = useState(12);
+  const [episodeDurationMinutes, setEpisodeDurationMinutes] = useState(30);
   const [description, setDescription] = useState('');
   const [url, setURL] = useState('');
   const [thumbnail, setThumbnail] = useState('');
@@ -87,6 +88,12 @@ export function CreateProgramModal({
     setSchedule(editingProgram.program.schedule ?? '');
 
     setEpisodeCount(editingProgram.episodes.length);
+
+    const firstDurationSeconds =
+      editingProgram.episodes.find((ep) => ep.durationSeconds)
+        ?.durationSeconds ?? 30 * 60;
+
+    setEpisodeDurationMinutes(Math.round(firstDurationSeconds / 60));
 
     setDescription(editingProgram.program.description ?? '');
 
@@ -137,6 +144,11 @@ export function CreateProgramModal({
       return;
     }
 
+    const episodeDurationSeconds = Math.max(
+      60,
+      Math.floor(episodeDurationMinutes * 60)
+    );
+
     const parsedHosts = hosts
       .split(',')
       .map((h) => h.trim())
@@ -152,6 +164,8 @@ export function CreateProgramModal({
       platform: platform.trim(),
 
       episodeCount,
+
+      episodeDuration: episodeDurationSeconds,
 
       description: description.trim() || undefined,
 
@@ -170,7 +184,7 @@ export function CreateProgramModal({
 
           platformId: editingProgram.platformId,
 
-          episodes: editingProgram.episodes,
+          episodes: baseProgram.episodes,
 
           meta: {
             ...baseProgram.meta,
@@ -254,6 +268,7 @@ export function CreateProgramModal({
     setPlatform('');
     setSchedule('');
     setEpisodeCount(12);
+    setEpisodeDurationMinutes(30);
     setDescription('');
     setURL('');
     setThumbnail('');
@@ -361,8 +376,25 @@ export function CreateProgramModal({
                 <Input
                   type="number"
                   min={1}
+                  max={2000}
                   value={episodeCount}
                   onChange={(e) => setEpisodeCount(Number(e.target.value))}
+                />
+              </div>
+
+              <div>
+                <label className="text-sm font-medium mb-2 block">
+                  Average Episode Duration (minutes)
+                </label>
+
+                <Input
+                  type="number"
+                  min={1}
+                  max={240}
+                  value={episodeDurationMinutes}
+                  onChange={(e) =>
+                    setEpisodeDurationMinutes(Number(e.target.value))
+                  }
                 />
               </div>
 

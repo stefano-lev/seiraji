@@ -8,6 +8,7 @@ export type CreateManualProgramInput = {
   platform: string;
 
   episodeCount: number;
+  episodeDuration: number;
 
   description?: string;
   url?: string;
@@ -22,6 +23,8 @@ export function createManualProgram(input: CreateManualProgramInput): Program {
 
       title: `Episode ${i + 1}`,
 
+      durationSeconds: input.episodeDuration,
+
       description: null,
 
       publishedAt: null,
@@ -29,8 +32,6 @@ export function createManualProgram(input: CreateManualProgramInput): Program {
       publishedAtUnix: null,
 
       thumbnail: input.thumbnail ?? null,
-
-      durationSeconds: null,
 
       tags: [],
     })
