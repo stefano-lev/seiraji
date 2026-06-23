@@ -10,7 +10,9 @@
       "title": "江﨑文武のBorderless Music Dig!",
       "description": "音楽家・江﨑文武とともに、「“新しい”音楽は、常にジャンルの狭間で生まれている！」というコンセプトでお送りする《江﨑文武のBorderless Music Dig!》最新ヒットチューンからHIPHOP、ロック、ジャズ、クラシックまで…様々なジャンルの音楽を、ボーダレスにDigっていく、深掘りしていく、あたらしい音楽番組です。",
       "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/R7V6MMNYMK/R7V6MMNYMK-eyecatch_198ee8e60252d1ba5189bb6705ba0aae.png",
-      "hosts": ["江﨑 文武"],
+      "hosts": [
+        "江﨑 文武"
+      ],
       "schedule": null,
       "categories": null
     },
@@ -626,11 +628,29 @@
           "expires": null,
           "audioStatus": null
         }
+      },
+      {
+        "id": "PV8XZJ9XQ8",
+        "title": "Borderless Artist〜吉村弘 Part2",
+        "description": "皆さんにぜひ知ってほしいアーティストを江﨑文武が独自の視点で探っていく「Ｂｏｒｄｅｒｌｅｓｓ　Ａｒｔｉｓｔ」。今回は２週にわたって日本の環境音楽の先駆者・作曲家でアーティストの吉村弘を取り上げ、その音楽と思想をひもとくパート２。旋律やリズムを主張するのではなく、空間や日常の音と静かに響き合うことで成立している吉村弘の音楽は、音と音楽の境界をゆるやかにほどいていくのか。",
+        "publishedAt": "2026-06-21T22:40:00+09:00",
+        "publishedAtUnix": 1782049200,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/R7V6MMNYMK/R7V6MMNYMK-eyecatch_4f51da7040237504bffa530de35774d1.png",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/rs/R7V6MMNYMK/episode/re/PV8XZJ9XQ8/",
+          "radioEpisodeId": "PV8XZJ9XQ8",
+          "radioSeriesId": "R7V6MMNYMK",
+          "guests": [],
+          "expires": "2026-06-28T23:30:00+09:00",
+          "audioStatus": "ready"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-10T17:08:00.629Z",
-      "episodeCount": 34
+      "cachedAt": "2026-06-23T16:27:58.182Z",
+      "episodeCount": 35
     }
   },
   "Y5MG659NGN": {
@@ -644,7 +664,10 @@
       "title": "東京03の好きにさせるかッ!",
       "description": "「この上司、ホントいい加減だな！」「結婚して10年経つのに、なんでわかんないのかな！」今、日本で一番面白いコントトリオ「東京03」が、働く大人の「イライラ」や「あるある」を、俳優や芸人、声優をゲストに迎えたラジオコントとスタジオトークで痛快に笑い飛ばす大人向けのお笑いラジオ番組です！「そんなことあるある！」「そんな人いるいる！」と、働く大人たちの共感必至、爆笑必至、ストレス解消必至、の50分をお届けします！！",
       "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_016f83454660901d1cdd2a040c72bd24.jpg",
-      "hosts": ["東京03", "戸松 遥"],
+      "hosts": [
+        "東京03",
+        "戸松 遥"
+      ],
       "schedule": null,
       "categories": null
     },
@@ -1539,12 +1562,16 @@
         "publishedAtUnix": 1778151900,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/N71MK34ZG9/",
           "radioEpisodeId": "N71MK34ZG9",
           "radioSeriesId": "Y5MG659NGN",
-          "guests": ["影山優佳"],
+          "guests": [
+            "影山優佳"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -1557,12 +1584,16 @@
         "publishedAtUnix": 1778756700,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/77YWGW25XP/",
           "radioEpisodeId": "77YWGW25XP",
           "radioSeriesId": "Y5MG659NGN",
-          "guests": ["ダウ９００００"],
+          "guests": [
+            "ダウ９００００"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -1575,12 +1606,16 @@
         "publishedAtUnix": 1779361500,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/9QMV3JX32P/",
           "radioEpisodeId": "9QMV3JX32P",
           "radioSeriesId": "Y5MG659NGN",
-          "guests": ["鈴代紗弓"],
+          "guests": [
+            "鈴代紗弓"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -1593,12 +1628,18 @@
         "publishedAtUnix": 1779966300,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/NWQ96RLKKK/",
           "radioEpisodeId": "NWQ96RLKKK",
           "radioSeriesId": "Y5MG659NGN",
-          "guests": ["上田誠", "諏訪雅", "永野宗典"],
+          "guests": [
+            "上田誠",
+            "諏訪雅",
+            "永野宗典"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -1611,12 +1652,16 @@
         "publishedAtUnix": 1780571100,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/2WM5VWRRKJ/",
           "radioEpisodeId": "2WM5VWRRKJ",
           "radioSeriesId": "Y5MG659NGN",
-          "guests": ["アンガールズ"],
+          "guests": [
+            "アンガールズ"
+          ],
           "expires": "2026-06-11T20:55:00+09:00",
           "audioStatus": "ready"
         }
@@ -1629,12 +1674,16 @@
         "publishedAtUnix": 1780574700,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/X594WMP8XN/",
           "radioEpisodeId": "X594WMP8XN",
           "radioSeriesId": "Y5MG659NGN",
-          "guests": ["アンガールズ"],
+          "guests": [
+            "アンガールズ"
+          ],
           "expires": "2026-06-11T21:55:00+09:00",
           "audioStatus": "ready"
         }
@@ -1647,20 +1696,68 @@
         "publishedAtUnix": 1781175900,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/JWQ7Z1P4J3/",
           "radioEpisodeId": "JWQ7Z1P4J3",
           "radioSeriesId": "Y5MG659NGN",
-          "guests": ["かかずゆみ"],
+          "guests": [
+            "かかずゆみ"
+          ],
           "expires": "2026-06-18T20:55:00+09:00",
+          "audioStatus": "notyet"
+        }
+      },
+      {
+        "id": "G92WY2X5PJ",
+        "title": "ゲスト:ネコニスズ(6月18日放送分)",
+        "description": "今回のゲストは、お笑い芸人ネコニスズの舘野忠臣とヤマゲン。東京０３とコント「託児所」で共演する。今回のコントはネコニスズがこのために書き上げた新作台本。２人が演じるのは、託児所に子どもを預けにきた親と０歳の子どもの役。コントの後は２人が持ち込んだトークテーマはそっちのけで、ネコニスズのこれまでや舘野がどんな経緯で赤ちゃんをするようになったのかなどを東京０３が聞いていく。ナレーションは声優の戸松遥。＜コント＞「託児所」　作：ネコニスズ",
+        "publishedAt": "2026-06-18T20:05:00+09:00",
+        "publishedAtUnix": 1781780700,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/G92WY2X5PJ/",
+          "radioEpisodeId": "G92WY2X5PJ",
+          "radioSeriesId": "Y5MG659NGN",
+          "guests": [
+            "ネコニスズ"
+          ],
+          "expires": "2026-06-25T20:55:00+09:00",
+          "audioStatus": "ready"
+        }
+      },
+      {
+        "id": "GNP5LRQL43",
+        "title": "ゲスト:井上喜久子(6月25日放送分)",
+        "description": "今回のゲストは声優の井上喜久子。東京０３とコント「永遠の１７歳」で共演する。井上が演じるのは、突然１７歳キャラで振る舞い出した女性社員の役。コントの後は「１７歳について話しましょう！」をテーマに、声優界では「１７歳教」の教祖的な存在としても知られる井上と「１７歳」についてさまざまトークを展開する他、そもそも井上が声優を目指したきっかけなどについても東京０３が深掘りする。ナレーションは声優の戸松遥。\n＜コント＞「永遠の１７歳」　作：岩崎う大",
+        "publishedAt": "2026-06-25T20:05:00+09:00",
+        "publishedAtUnix": 1782385500,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/GNP5LRQL43/",
+          "radioEpisodeId": "GNP5LRQL43",
+          "radioSeriesId": "Y5MG659NGN",
+          "guests": [
+            "井上喜久子"
+          ],
+          "expires": "2026-07-02T20:55:00+09:00",
           "audioStatus": "notyet"
         }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-10T17:08:03.757Z",
-      "episodeCount": 56
+      "cachedAt": "2026-06-23T16:28:02.189Z",
+      "episodeCount": 58
     }
   },
   "X4WNNM96KL": {
@@ -1674,7 +1771,11 @@
       "title": "あさこ・佳代子の大人なラジオ女子会",
       "description": "プライベートでも仲の良い“いとうあさこ”と“大久保佳代子”。この2人がメインパーソナリティーをつとめ、シラフとは思えない女子会のノリで、好き勝手にしゃべりまくる、新しいラジオトークバラエティー！この番組を聴いて、一日の仕事の疲れやストレスを吹っ飛ばし、スッキリしちゃってください！！",
       "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_39005c37f8c9351b5d77f11e423fc8b7.png",
-      "hosts": ["大久保 佳代子", "いとう あさこ", "茅野 愛衣"],
+      "hosts": [
+        "大久保 佳代子",
+        "いとう あさこ",
+        "茅野 愛衣"
+      ],
       "schedule": null,
       "categories": null
     },
@@ -2353,12 +2454,16 @@
         "publishedAtUnix": 1778155500,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/38X4PNX47R/",
           "radioEpisodeId": "38X4PNX47R",
           "radioSeriesId": "X4WNNM96KL",
-          "guests": ["土屋守"],
+          "guests": [
+            "土屋守"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -2371,12 +2476,17 @@
         "publishedAtUnix": 1778760300,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/QJR71V7424/",
           "radioEpisodeId": "QJR71V7424",
           "radioSeriesId": "X4WNNM96KL",
-          "guests": ["ベルサイユ", "大納言光子"],
+          "guests": [
+            "ベルサイユ",
+            "大納言光子"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -2389,12 +2499,16 @@
         "publishedAtUnix": 1779365100,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/7W9J44YM2W/",
           "radioEpisodeId": "7W9J44YM2W",
           "radioSeriesId": "X4WNNM96KL",
-          "guests": ["児嶋一哉"],
+          "guests": [
+            "児嶋一哉"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -2407,12 +2521,16 @@
         "publishedAtUnix": 1779969900,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/QN95R71X9Z/",
           "radioEpisodeId": "QN95R71X9Z",
           "radioSeriesId": "X4WNNM96KL",
-          "guests": ["飯間浩明"],
+          "guests": [
+            "飯間浩明"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -2425,20 +2543,68 @@
         "publishedAtUnix": 1781179500,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
         "durationSeconds": 3000,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/Y6G1NGKVWK/",
           "radioEpisodeId": "Y6G1NGKVWK",
           "radioSeriesId": "X4WNNM96KL",
-          "guests": ["いとうまい子"],
+          "guests": [
+            "いとうまい子"
+          ],
           "expires": "2026-06-18T21:55:00+09:00",
+          "audioStatus": "notyet"
+        }
+      },
+      {
+        "id": "D1L7MG1WZ4",
+        "title": "ゲスト:モグライダー(6月18日放送分)",
+        "description": "プライベートでも仲が良いいとうあさこと大久保佳代子がゲストと一緒に女子会のノリで好き勝手にしゃべりまくるラジオバラエティー。ゲストはお笑い芸人のモグライダー。",
+        "publishedAt": "2026-06-18T21:05:00+09:00",
+        "publishedAtUnix": 1781784300,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/D1L7MG1WZ4/",
+          "radioEpisodeId": "D1L7MG1WZ4",
+          "radioSeriesId": "X4WNNM96KL",
+          "guests": [
+            "モグライダー"
+          ],
+          "expires": "2026-06-25T21:55:00+09:00",
+          "audioStatus": "ready"
+        }
+      },
+      {
+        "id": "NGK36VR83W",
+        "title": "ゲスト:福留光帆(6月25日放送分)",
+        "description": "プライベートでも仲が良い、いとうあさこと大久保佳代子が、ゲストと一緒に女子会のノリで好き勝手にしゃべりまくるラジオバラエティー。ゲストはタレントの福留光帆。",
+        "publishedAt": "2026-06-25T21:05:00+09:00",
+        "publishedAtUnix": 1782389100,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/NGK36VR83W/",
+          "radioEpisodeId": "NGK36VR83W",
+          "radioSeriesId": "X4WNNM96KL",
+          "guests": [
+            "福留光帆"
+          ],
+          "expires": "2026-07-02T21:55:00+09:00",
           "audioStatus": "notyet"
         }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-10T17:08:06.279Z",
-      "episodeCount": 42
+      "cachedAt": "2026-06-23T16:28:05.639Z",
+      "episodeCount": 44
     }
   },
   "Q3PKWJX562": {
@@ -2452,7 +2618,10 @@
       "title": "アニソン・アカデミー",
       "description": "世代を超えて楽しめる音楽コンテンツ・アニソン（アニメソング）。リクエストを中心に創成期から現代まで幅広い楽曲を取り上げるNHK-FM初のアニソンレギュラー番組！アニソンが土曜の午後を明るく、そして元気にします。",
       "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Q3PKWJX562/Q3PKWJX562-eyecatch_9c121cbd018be8b53d528236f008ebb6.png",
-      "hosts": ["中川 翔子", "あべ あきら"],
+      "hosts": [
+        "中川 翔子",
+        "あべ あきら"
+      ],
       "schedule": null,
       "categories": null
     },
@@ -7343,12 +7512,16 @@
         "publishedAtUnix": 1778302803,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Q3PKWJX562/Q3PKWJX562-eyecatch_582887b8a9760840828129666351f77b.png",
         "durationSeconds": 7200,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/anison-ac/rs/Q3PKWJX562/episode/re/N1JMV78Q33/",
           "radioEpisodeId": "N1JMV78Q33",
           "radioSeriesId": "Q3PKWJX562",
-          "guests": ["神前暁"],
+          "guests": [
+            "神前暁"
+          ],
           "expires": null,
           "audioStatus": null
         }
@@ -7361,20 +7534,42 @@
         "publishedAtUnix": 1780722003,
         "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Q3PKWJX562/Q3PKWJX562-eyecatch_582887b8a9760840828129666351f77b.png",
         "durationSeconds": 7200,
-        "tags": ["GUEST"],
+        "tags": [
+          "GUEST"
+        ],
         "platformMetadata": {
           "canonical": "https://www.nhk.jp/p/anison-ac/rs/Q3PKWJX562/episode/re/VJJPKM8P51/",
           "radioEpisodeId": "VJJPKM8P51",
           "radioSeriesId": "Q3PKWJX562",
-          "guests": ["藤津亮太"],
+          "guests": [
+            "藤津亮太"
+          ],
           "expires": "2026-06-13T16:00:03+09:00",
           "audioStatus": "notyet"
+        }
+      },
+      {
+        "id": "RPW7Z3X2QN",
+        "title": "ゲスト:鈴木結女／90年代 エンディングテーマ大賞 投票結果発表！",
+        "description": "ついに発表！「９０年代　エンディングテーマ大賞」リスナー投票で１位に輝くのはどのエンディング曲？▽大野雄二さんリクエスト▽ＤＪ：中川翔子・あべあきら",
+        "publishedAt": "2026-06-20T14:00:03+09:00",
+        "publishedAtUnix": 1781931603,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Q3PKWJX562/Q3PKWJX562-eyecatch_582887b8a9760840828129666351f77b.png",
+        "durationSeconds": 7200,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/anison-ac/rs/Q3PKWJX562/episode/re/RPW7Z3X2QN/",
+          "radioEpisodeId": "RPW7Z3X2QN",
+          "radioSeriesId": "Q3PKWJX562",
+          "guests": [],
+          "expires": "2026-06-27T16:00:03+09:00",
+          "audioStatus": "ready"
         }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-10T17:08:17.132Z",
-      "episodeCount": 273
+      "cachedAt": "2026-06-23T16:28:16.560Z",
+      "episodeCount": 274
     }
   },
   "V8JW19JK29": {
@@ -7388,7 +7583,11 @@
       "title": "山下健二郎のトーク・ライク・フィッシング",
       "description": "今こそ釣りの素晴らしさを語ろう！釣りを愛してやまない猛者たち、三代目 J SOUL BROTHERS・山下健二郎が釣り好きのゲストと釣りへの熱い情熱を語りまくる！釣りの楽しさ、面白さをラジオで伝えることは出来るのか！？",
       "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/V8JW19JK29/V8JW19JK29-eyecatch_5d31bf6c5751c4185a0df933c5e966c2.jpg",
-      "hosts": ["山下 健二郎", "林家 たい平", "瀬戸 光"],
+      "hosts": [
+        "山下 健二郎",
+        "林家 たい平",
+        "瀬戸 光"
+      ],
       "schedule": null,
       "categories": null
     },
@@ -8418,11 +8617,29 @@
           "expires": "2026-06-20T22:55:00+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "4GLV2754ZM",
+        "title": "〜釣りのラジオ〜 釣竿メーカー・開発者が登場!",
+        "description": "▽釣り好き大集合！今こそ釣りの素晴らしさを語ろう！三代目ＪＳＢ・山下健二郎が釣り好きゲストと釣りトーク全開！▽釣竿メーカーの開発者が登場！▽釣竿がいかに大切か、なぜ何本も必要なのか、山下が力説！▽材料、製法、開発の過程に迫る。▽仕上げは職人の手仕事！▽進行は瀬戸光アナウンサー。▽らじるらじる、ｒａｄｉｋｏ、聴き逃しで配信。▽メッセージ、釣り自慢、失敗談を大募集！Ｘは　＃トークライクフィッシング",
+        "publishedAt": "2026-06-20T22:05:00+09:00",
+        "publishedAtUnix": 1781960700,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/V8JW19JK29/V8JW19JK29-eyecatch_98c8d0476cbb2f6faa38b9d35bed9924.jpg",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/rs/V8JW19JK29/episode/re/4GLV2754ZM/",
+          "radioEpisodeId": "4GLV2754ZM",
+          "radioSeriesId": "V8JW19JK29",
+          "guests": [],
+          "expires": "2026-06-27T22:55:00+09:00",
+          "audioStatus": "ready"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-10T17:08:20.695Z",
-      "episodeCount": 57
+      "cachedAt": "2026-06-23T16:28:19.528Z",
+      "episodeCount": 58
     }
   }
 }

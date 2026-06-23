@@ -10,7 +10,9 @@
       "title": "ラブライブ！シリーズ オフィシャルカードゲーム presents AiScReamのとろけるタイム♡♡♡",
       "description": "ルビィちゃん、歩夢ちゃん、四季ちゃんの３人によって、ラブライブ！シリーズの垣根を越えて結成された期間限定のスペシャルユニット、AiScReamのポッドキャスト番組♡♡♡\nＭＣを担当するのはAqours 黒澤ルビィ役・降幡 愛、虹ヶ咲学園スクールアイドル同好会 上原歩夢役・大西亜玖璃、Liella! 若菜四季役・大熊和奏！\n毎月2回金曜日22:00頃配信！\n沢山のメール、お待ちしています！！\nasr@1242.com",
       "thumbnail": "https://www.omnycontent.com/d/programs/67122501-9b17-4d77-84bd-a93d00dc791e/47891e36-ed27-416f-b246-b2c60013b8dc/image.jpg?t=1775892491&size=Large",
-      "hosts": ["AiScReam"],
+      "hosts": [
+        "AiScReam"
+      ],
       "schedule": null,
       "categories": []
     },
@@ -434,11 +436,26 @@
           "episodeLink": "https://omny.fm/shows/asr/27-aiscream",
           "omnyClipId": "d08e169d-c3c8-45d8-851e-b44b00440957"
         }
+      },
+      {
+        "id": "e9838749-5656-4e1f-b8a3-b4650089bd56",
+        "title": "#28　AiScReamのとろけるタイム♡♡♡",
+        "description": "今回のメールテーマは…「食のこだわり」\n\n✉️asr@allnightnippon.com\n#AiScReamのとろけるタイム♡♡♡\n  \n こちらは随時募集中！！\n1️⃣コーナー『ラッキィラブカ』\n2️⃣『ちょちょちょんグー』\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-06-12T13:00:00.000Z",
+        "publishedAtUnix": 1781269200,
+        "thumbnail": "https://www.omnycontent.com/d/programs/67122501-9b17-4d77-84bd-a93d00dc791e/47891e36-ed27-416f-b246-b2c60013b8dc/image.jpg?t=1775892491&size=Large",
+        "durationSeconds": 2138,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/47891e36-ed27-416f-b246-b2c60013b8dc/e9838749-5656-4e1f-b8a3-b4650089bd56/audio.mp3?utm_source=Podcast&in_playlist=f75c482f-1885-4dfc-959a-b2c60013bf04",
+          "episodeLink": "https://omny.fm/shows/asr/28-aiscream",
+          "omnyClipId": "e9838749-5656-4e1f-b8a3-b4650089bd56"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-10T17:08:26.195Z",
-      "episodeCount": 28
+      "cachedAt": "2026-06-23T16:27:56.437Z",
+      "episodeCount": 29
     }
   },
   "tokist": {
@@ -452,7 +469,9 @@
       "title": "超ときめき♡STYLE",
       "description": "超ときめき♡宣伝部のメンバーがパーソナリティを務め、\nラジオならではのリラックスした雰囲気でトークする番組\n『超ときめき♡STYLE』( 地上波で放送中 ) を編集したポッドキャスト番組です。\n\n毎週月曜日 19 時頃配信",
       "thumbnail": "https://www.omnycontent.com/d/playlist/67122501-9b17-4d77-84bd-a93d00dc791e/c1300728-5ceb-438a-89a2-b368002d6ab0/340d3cbd-89f3-4b71-93b9-b368002d6e81/image.jpg?t=1779000176&size=Large",
-      "hosts": ["超ときめき♡宣伝部"],
+      "hosts": [
+        "超ときめき♡宣伝部"
+      ],
       "schedule": null,
       "categories": []
     },
@@ -981,11 +1000,41 @@
           "episodeLink": "https://omny.fm/shows/style/2026-6-7-style",
           "omnyClipId": "ca8419e8-472a-4aad-958b-b4630034ef6f"
         }
+      },
+      {
+        "id": "378f20fa-57aa-4175-8360-b46a003256bb",
+        "title": "2026年6月14日(日)超ときめき♡STYLE",
+        "description": "毎週日曜日 深夜24:30から放送！\n 「ときめく恋と青春」をテーマに世界中のみんなにときめきを宣伝（お届け）している、5人組アイドルユニット「超ときめき♡宣伝部」がMCを担当！\n 今回は菅田愛貴💛 吉川ひより💚 が登場🎙️\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-06-15T10:00:00.000Z",
+        "publishedAtUnix": 1781517600,
+        "thumbnail": "https://www.omnycontent.com/d/playlist/67122501-9b17-4d77-84bd-a93d00dc791e/c1300728-5ceb-438a-89a2-b368002d6ab0/340d3cbd-89f3-4b71-93b9-b368002d6e81/image.jpg?t=1779000176&size=Large",
+        "durationSeconds": 984,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/c1300728-5ceb-438a-89a2-b368002d6ab0/378f20fa-57aa-4175-8360-b46a003256bb/audio.mp3?utm_source=Podcast&in_playlist=340d3cbd-89f3-4b71-93b9-b368002d6e81",
+          "episodeLink": "https://omny.fm/shows/style/2026-6-14-style",
+          "omnyClipId": "378f20fa-57aa-4175-8360-b46a003256bb"
+        }
+      },
+      {
+        "id": "53f9138b-f988-402e-95a6-b4710037d847",
+        "title": "2026年6月21日(日)超ときめき♡STYLE",
+        "description": "毎週日曜日 深夜24:30から放送！\n 「ときめく恋と青春」をテーマに世界中のみんなにときめきを宣伝（お届け）している、5人組アイドルユニット「超ときめき♡宣伝部」がMCを担当！\n 今回は菅田愛貴💛 吉川ひより💚が登場🎙️\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-06-22T10:00:00.000Z",
+        "publishedAtUnix": 1782122400,
+        "thumbnail": "https://www.omnycontent.com/d/playlist/67122501-9b17-4d77-84bd-a93d00dc791e/c1300728-5ceb-438a-89a2-b368002d6ab0/340d3cbd-89f3-4b71-93b9-b368002d6e81/image.jpg?t=1779000176&size=Large",
+        "durationSeconds": 912,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/c1300728-5ceb-438a-89a2-b368002d6ab0/53f9138b-f988-402e-95a6-b4710037d847/audio.mp3?utm_source=Podcast&in_playlist=340d3cbd-89f3-4b71-93b9-b368002d6e81",
+          "episodeLink": "https://omny.fm/shows/style/2026-6-21-style",
+          "omnyClipId": "53f9138b-f988-402e-95a6-b4710037d847"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-10T17:08:27.843Z",
-      "episodeCount": 35
+      "cachedAt": "2026-06-23T16:27:57.940Z",
+      "episodeCount": 37
     }
   },
   "aec": {
@@ -999,7 +1048,9 @@
       "title": "Anime English Club with Sally Amaki",
       "description": "アメリカ出身で英語ネイティブスピーカーの声優・アイドルの天城サリーが、アニメの名セリフを英語ではどう言うのか、文化の差で日本語と英語でどんな違いがあるのかなどを、声優の視点も加えて語る、全編英語の語学番組です！毎週火曜日12時ごろ更新！「ビデオポッドキャスト」として映像付きでも公開しています！\n\n\"Anime English Club with Sally Amaki\" - An all-English language learning show hosted by Sally Amaki—a voice actress, idol, and native English speaker born and raised in the US!\n\nEach week, Sally breaks down iconic anime lines in English, digs into the cultural gaps between Japanese and English expressions, and shares her unique perspective as a working voice actress.\n\nNew episodes drop every Tuesday around 12:00 PM (JST)! Also available as a video podcast with full visuals!\n\n\n取り上げてほしいアニメ作品や英語に関する質問など、メールお待ちしています！ \nPlease let us hear from you!   E-mail: aec@1242.com\n番組X (X.com）   @aec1242\n番組ハッシュタグ(official hashtag)  #SallyAEC",
       "thumbnail": "https://www.omnycontent.com/d/programs/67122501-9b17-4d77-84bd-a93d00dc791e/0c076d49-9b05-4dde-b679-b2c70030b77d/image.jpg?t=1746670129&size=Large",
-      "hosts": ["天城サリー"],
+      "hosts": [
+        "天城サリー"
+      ],
       "schedule": null,
       "categories": []
     },
@@ -1873,11 +1924,41 @@
           "episodeLink": "https://omny.fm/shows/aec/ep57-death-note",
           "omnyClipId": "ba8f9d88-16b3-437d-9c06-b46300223ab9"
         }
+      },
+      {
+        "id": "42cbdc76-05bd-4b7f-9d64-b46b004d82fc",
+        "title": "Ep58:デスノート / DEATH NOTE「顔を出してしまったことも、FBI12人を犠牲にしてしまったことも負けです。しかし、最後は勝ちます。私も命をかけた勝負は初めてです。ここに集まった命懸けの人間で、見せてやりましょうよ。正義は必ず勝つということを。」",
+        "description": "「デスノート」！\n 今回は\n  \n 顔を出してしまったことも、FBI12人を犠牲にしてしまったことも負けです。\n しかし、最後は勝ちます。私も命をかけた勝負は初めてです。\n ここに集まった命懸けの人間で、見せてやりましょうよ。正義は必ず勝つということを。\n （L）\n  \n The fact that I’ve shown my face and that I’ve sacrificed twelve FBI agents are both losses.\n But I will win in the end. This is the first time I’ve laid my life on the line.\n Let’s show Kira that we’re willing to risk our lives. Because justice will definitely prevail.\n  \n ▶▶▶英語学習のために、「ポッドキャスト」として、耳で音声だけを何回もリピートして聴くことをおススメしています！お好みの再生速度に合わせてみてくださいね！\n  \n 【ポッドキャスト配信先】\n ・ニッポン放送PODCAST STATION　https://podcast.1242.com/aec/\n ・radikoポッドキャスト　https://bit.ly/43xtlI7\n ・Amazon Music Podcast\n      https://music.amazon.co.jp/podcasts/4...\n ・Apple Podcast  (文字起こしあり）\n     https://podcasts.apple.com/jp/podcast...\n ・Spotify Podcast　(文字起こしあり）\n 　 https://open.spotify.com/show/3cc98Fc...\n ・YouTube ポッドキャスト　https://bit.ly/3EMGdSl\n  \n ▶▶▶YouTubeでは、英語と日本語の字幕をONにして、動画でもご覧いただけます！\n    / @anime-english-club \n  \n 【メール大募集中！！】\n 番組で取り上げてほしいアニメ作品やセリフ、英語に関する質問や番組の感想をお待ちしています！さらに、恋愛相談も大募集中！\n メールは日本語でも英語でも大丈夫です！\n メールアドレス：aec@1242.com\n  \n 【番組SNS】\n X:  https://x.com/aec1242\n ハッシュタグ：#SallyAEC\n  \n 【CREDIT】\n パーソナリティ：#天城サリー / #sallyamaki\n 製作著作：#ニッポン放送 / Nippon Broadcasting System\n  \n 00:00 - オープニング\n 01:14 - 顔の左半分でしか話していない！？\n 02:49 - 『デスノート』作品紹介\n 04:08 - 【今日のフレーズ】\n 04:49 - シーン解説：Lが素顔を晒す\n 07:27 - 英語解説① sacrifice：犠牲にする・損失\n 08:47 - 単語解説② lay 〜 on the line：〜を賭ける\n 10:00 - 単語解説③ willing to：〜する意思がある\n 10:58 - 単語解説④ prevail：勝つ・優勢になる\n 12:15 - 単語解説⑤ definitely：間違いなく・必ず\n 13:21 - 【発音のコーナー】※一緒に言ってね！\n 14:27 - 発音解説① sacrifice\n 16:53 - 発音解説② prevail\n 18:23 - 発音解説③ definitely\n 19:07 - 【今回の解説】デスノートのルールで学ぶ契約英語 Part2\n 19:55 - 表現① 「not specified」別途指定されない場合\n 20:54 - 表現② 「simply」単に・ただ〜するだけ\n 22:10 - 表現③ 「should be written」\"書かれるべきである\"という義務のニュアンス\n 23:32 - 今回のまとめと次回予告\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-06-16T07:20:00.000Z",
+        "publishedAtUnix": 1781594400,
+        "thumbnail": "https://www.omnycontent.com/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/0c076d49-9b05-4dde-b679-b2c70030b77d/42cbdc76-05bd-4b7f-9d64-b46b004d82fc/image.jpg?t=1781592631&size=Large",
+        "durationSeconds": 1520,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/0c076d49-9b05-4dde-b679-b2c70030b77d/42cbdc76-05bd-4b7f-9d64-b46b004d82fc/audio.mp3?utm_source=Podcast&in_playlist=838e9b34-89be-442e-94f1-b2c70030bc67",
+          "episodeLink": "https://omny.fm/shows/aec/ep58-death-note-fbi12",
+          "omnyClipId": "42cbdc76-05bd-4b7f-9d64-b46b004d82fc"
+        }
+      },
+      {
+        "id": "d9045c88-04a6-44f2-8db0-b47100156e75",
+        "title": "Ep59:デスノート / DEATH NOTE「月くんはキラじゃない。いや、月くんがキラでは困ります。月くんは、私の初めての友達ですから。」",
+        "description": "「デスノート」！ \n今回は \n 月くんはキラじゃない。いや、月くんがキラでは困ります。\n月くんは、私の初めての友達ですから。\n（L）\n You’re not Kira.\nIn fact, it would be a problem if you were Kira, because you are… my very first friend.\n ▶▶▶英語学習のために、「ポッドキャスト」として、耳で音声だけを何回もリピートして聴くことをおススメしています！お好みの再生速度に合わせてみてくださいね！\n 【ポッドキャスト配信先】\n・ニッポン放送PODCAST STATION　https://podcast.1242.com/aec/\n・radikoポッドキャスト　https://bit.ly/43xtlI7\n・Amazon Music Podcast\n     https://music.amazon.co.jp/podcasts/4...\n・Apple Podcast  (文字起こしあり）\n    https://podcasts.apple.com/jp/podcast...\n・Spotify Podcast　(文字起こしあり）\n　 https://open.spotify.com/show/3cc98Fc...\n・YouTube ポッドキャスト　https://bit.ly/3EMGdSl\n ▶▶▶YouTubeでは、英語と日本語の字幕をONにして、動画でもご覧いただけます！\n   / @anime-english-club  \n 【メール大募集中！！】\n番組で取り上げてほしいアニメ作品やセリフ、英語に関する質問や番組の感想をお待ちしています！さらに、恋愛相談も大募集中！\nメールは日本語でも英語でも大丈夫です！\nメールアドレス：aec@1242.com\n 【番組SNS】\nX:  https://x.com/aec1242\nハッシュタグ：#SallyAEC \n 【CREDIT】\nパーソナリティ：#天城サリー / #sallyamaki \n製作著作：#ニッポン放送 / Nippon Broadcasting System\n 00:00 - オープニング\n01:17 - AECでリアルな英語を学ぼう！\n03:12 - 『デスノート』作品紹介\n04:13 - 【今日のフレーズ】\n04:39 - シーン解説：Lの告白\n06:57 - 英語解説① in fact：実は・むしろ\n08:01 - 英語解説② would be：もし〜だったら\n09:01 - 英語解説③ my very first：初めての強調表現\n10:43 - 【発音のコーナー】※一緒に言ってね！\n11:22 - 発音解説① it would be\n12:58 - 発音解説② very\n15:33 - 『デスノート』感想\n15:43 - もしもデスノートを見つけたら\n17:47 - 夜神月はなぜモテるの？\n19:11 - デスノートで一番共感するキャラは誰？\n19:55 - ボーナスフレーズ「happy-go-lucky」\n20:05 - この世にデスノートがあったら\n21:35 - サリーの予想\n22:19 - 今回のまとめと次回予告\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-06-23T03:00:00.000Z",
+        "publishedAtUnix": 1782183600,
+        "thumbnail": "https://www.omnycontent.com/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/0c076d49-9b05-4dde-b679-b2c70030b77d/d9045c88-04a6-44f2-8db0-b47100156e75/image.jpg?t=1782093929&size=Large",
+        "durationSeconds": 1471,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/0c076d49-9b05-4dde-b679-b2c70030b77d/d9045c88-04a6-44f2-8db0-b47100156e75/audio.mp3?utm_source=Podcast&in_playlist=838e9b34-89be-442e-94f1-b2c70030bc67",
+          "episodeLink": "https://omny.fm/shows/aec/ep59-death-note",
+          "omnyClipId": "d9045c88-04a6-44f2-8db0-b47100156e75"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-10T17:08:28.697Z",
-      "episodeCount": 58
+      "cachedAt": "2026-06-23T16:27:58.951Z",
+      "episodeCount": 60
     }
   },
   "sango": {
@@ -1891,7 +1972,9 @@
       "title": "周央サンゴのオールナイトニッポンA(オルタナティブ)",
       "description": "人気Vtuberの周央サンゴがオールナイトニッポンA(オルタナティブ)を担当！\n\n毎週火曜20時ごろ配信中！",
       "thumbnail": "https://www.omnycontent.com/d/programs/67122501-9b17-4d77-84bd-a93d00dc791e/3551f0c9-79eb-4ca9-9e0e-b38700916820/image.jpg?t=1761900572&size=Large",
-      "hosts": ["周央サンゴ"],
+      "hosts": [
+        "周央サンゴ"
+      ],
       "schedule": null,
       "categories": []
     },
@@ -2360,11 +2443,41 @@
           "episodeLink": "https://omny.fm/shows/sango/e31",
           "omnyClipId": "500fef59-8a46-418e-9a66-b464003f3f50"
         }
+      },
+      {
+        "id": "14d20110-8a1f-49b9-ac14-b46a00c18e2e",
+        "title": "#32  七の段スタジオ",
+        "description": "アプリ「オールナイトニッポンJAM」にて生配信でお送りしていた番組『周央サンゴのオールナイトニッポンオルタナティブonANNJAM』がラジコ、ニッポン放送のポッドキャスト・ステーション、ユーチューブポッドキャストで聞けるようにリニューアルしました！\n 「さんぱに☆銃士」映像化待ってます(^^)\n 番組公式SNS▽\nhttps://x.com/sango_anna_jam?s=21&t=PSMpJqCuJ_XZX9lw3SAe2Q\nXでの感想は、#周央サンゴANNA をつけて投稿してください！\n 番組メールアドレス▽\nsango@allnightnippon.com\n 【募集中のコーナーメール】\n 『世紀の雑談』\nいくら話し合ったところで、何も世界は変わらない！結論も出ない！誰も救われない！\n渾っっっ身の雑談･どーでもいい話をお届けしていくのが、この『世紀の雑談』！\n募集するテーマは｢天ぷらで何かしらの団体戦のチームを組むなら、先鋒・次鋒・中堅・副将・大将は？」！\n ※件名の所に｢雑談｣と書いてお送りください。\n 『アンチ』\nアナタが、日頃、ムカついてる！大キライな！\n…でも、決して、言葉は通じないであろう｢アレ｣に向けて、｢おい！〇〇‼｣の書き出しと共に、一言言ってやりたい、文句や苦情をお待ちしてます！\n｢おい！納豆‼｣でもいいし、｢おい！コタツ‼｣でもいいし、｢おい！スマホいじりながら階段上ってたら、何か、思ってたのと、段差の感覚が違って、つまづいちゃう現象！」…などなど、言葉が通じなければ何でもOKです！\n※件名の所に｢アンチ｣と書いてお送りください。\n 『気ぃ使われてんな…』\nアナタが日々の生活や今までの人生の中で人に「気を使われてるな…」「気を使わせちゃってるな…」と気付いて、いたたまれなくなった出来事をメールでお待ちしてます…\n※件名の所に｢使われてる｣と書いてお送りください。\n 『門外漢の時間』\nアナタが様々なスポーツを見ていて疑問に思ったことを素直にそのままメールで送って来て下さい！\n例）｢何でサッカーは、キーパー以外手を使っちゃいけないのか？使えばいいぢゃん！｣\n｢陸上のハードルって、倒してもいいなら、そもそも置かなきゃいいぢゃん‼｣\n｢…ってゆーか、みんな一生懸命やってるんだから、順位を付ける必要ってある？｣\nスポーツに疎い！スポーツにさほど関心がないアナタからのスポーツに関する、素朴すぎる疑問･質問をお待ちしてます！\n※メールは件名に｢門外漢｣と書いて送ってください！\n\n｢ぼろぼろチャレンジャー！1年間、これが出来たら1億円」！\nアナタは、来年のお正月に、ある条件をクリアすると、１億円のお年玉をもらえることになってます！その条件とは、｢今年１年間、毎日、１億円をもらうにふさわしい、イヤなこと･厄介なこと･メンドくさいことを続ける！｣あるいは｢１年間、決めた約束を守る！｣こと！\nアナタにとって、１億円もらうにふさわしいと思える、自分が、体力的･精神的に極限まで追い込まれる、ギリギリの過酷な条件を送ってください！\n※メールは件名に｢1億円｣と書いて送ってください！\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-06-16T10:50:00.000Z",
+        "publishedAtUnix": 1781607000,
+        "thumbnail": "https://www.omnycontent.com/d/programs/67122501-9b17-4d77-84bd-a93d00dc791e/3551f0c9-79eb-4ca9-9e0e-b38700916820/image.jpg?t=1761900572&size=Large",
+        "durationSeconds": 4703,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/3551f0c9-79eb-4ca9-9e0e-b38700916820/14d20110-8a1f-49b9-ac14-b46a00c18e2e/audio.mp3?utm_source=Podcast&in_playlist=9a5aface-1f55-4d5c-a36c-b38700916bb4",
+          "episodeLink": "https://omny.fm/shows/sango/32",
+          "omnyClipId": "14d20110-8a1f-49b9-ac14-b46a00c18e2e"
+        }
+      },
+      {
+        "id": "d3b856b1-6f86-46f3-bb6f-b47200689b00",
+        "title": "#33  天麩羅高校　囲碁部",
+        "description": "アプリ「オールナイトニッポンJAM」にて生配信でお送りしていた番組『周央サンゴのオールナイトニッポンオルタナティブonANNJAM』がラジコ、ニッポン放送のポッドキャスト・ステーション、ユーチューブポッドキャストで聞けるようにリニューアルしました！\n ふきのとうの天ぷら、小さいときよくおばあちゃんに作ってもらってたなって思いました。\n 番組公式SNS▽\nhttps://x.com/sango_anna_jam?s=21&t=PSMpJqCuJ_XZX9lw3SAe2Q\nXでの感想は、#周央サンゴANNA をつけて投稿してください！\n 番組メールアドレス▽\nsango@allnightnippon.com\n 【募集中のコーナーメール】\n 『世紀の雑談』\nいくら話し合ったところで、何も世界は変わらない！結論も出ない！誰も救われない！\n渾っっっ身の雑談･どーでもいい話をお届けしていくのが、この『世紀の雑談』！\n募集するテーマは｢もし、自分のお葬式にスポンサーを5社つけられるなら、どの企業や団体についてもらいたい⁉」！\n ※件名の所に｢雑談｣と書いてお送りください。\n 『アンチ』\nアナタが、日頃、ムカついてる！大キライな！\n…でも、決して、言葉は通じないであろう｢アレ｣に向けて、｢おい！〇〇‼｣の書き出しと共に、一言言ってやりたい、文句や苦情をお待ちしてます！\n｢おい！納豆‼｣でもいいし、｢おい！コタツ‼｣でもいいし、｢おい！スマホいじりながら階段上ってたら、何か、思ってたのと、段差の感覚が違って、つまづいちゃう現象！」…などなど、言葉が通じなければ何でもOKです！\n※件名の所に｢アンチ｣と書いてお送りください。\n 『気ぃ使われてんな…』\nアナタが日々の生活や今までの人生の中で人に「気を使われてるな…」「気を使わせちゃってるな…」と気付いて、いたたまれなくなった出来事をメールでお待ちしてます…\n※件名の所に｢使われてる｣と書いてお送りください。\n 『門外漢の時間』\nアナタが様々なスポーツを見ていて疑問に思ったことを素直にそのままメールで送って来て下さい！\n例）｢何でサッカーは、キーパー以外手を使っちゃいけないのか？使えばいいぢゃん！｣\n｢陸上のハードルって、倒してもいいなら、そもそも置かなきゃいいぢゃん‼｣\n｢…ってゆーか、みんな一生懸命やってるんだから、順位を付ける必要ってある？｣\nスポーツに疎い！スポーツにさほど関心がないアナタからのスポーツに関する、素朴すぎる疑問･質問をお待ちしてます！\n※メールは件名に｢門外漢｣と書いて送ってください！\n ｢ぼろぼろチャレンジャー！1年間、これが出来たら1億円」！\nアナタは、来年のお正月に、ある条件をクリアすると、１億円のお年玉をもらえることになってます！その条件とは、｢今年１年間、毎日、１億円をもらうにふさわしい、イヤなこと･厄介なこと･メンドくさいことを続ける！｣あるいは｢１年間、決めた約束を守る！｣こと！\nアナタにとって、１億円もらうにふさわしいと思える、自分が、体力的･精神的に極限まで追い込まれる、ギリギリの過酷な条件を送ってください！\n※メールは件名に｢1億円｣と書いて送ってください！\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-06-23T10:50:00.000Z",
+        "publishedAtUnix": 1782211800,
+        "thumbnail": "https://www.omnycontent.com/d/programs/67122501-9b17-4d77-84bd-a93d00dc791e/3551f0c9-79eb-4ca9-9e0e-b38700916820/image.jpg?t=1761900572&size=Large",
+        "durationSeconds": 4957,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/3551f0c9-79eb-4ca9-9e0e-b38700916820/d3b856b1-6f86-46f3-bb6f-b47200689b00/audio.mp3?utm_source=Podcast&in_playlist=9a5aface-1f55-4d5c-a36c-b38700916bb4",
+          "episodeLink": "https://omny.fm/shows/sango/33",
+          "omnyClipId": "d3b856b1-6f86-46f3-bb6f-b47200689b00"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-10T17:08:29.419Z",
-      "episodeCount": 31
+      "cachedAt": "2026-06-23T16:27:59.396Z",
+      "episodeCount": 33
     }
   },
   "tamaki": {
@@ -2378,7 +2491,9 @@
       "title": "犬山たまきのオールナイトニッポンA(オルタナティブ)",
       "description": "人気Vtuberの犬山たまきが担当するオールナイトニッポンA(オルタナティブ)！\n\n毎週水曜20時ごろ配信。",
       "thumbnail": "https://www.omnycontent.com/d/programs/67122501-9b17-4d77-84bd-a93d00dc791e/3ffdb8bf-9e13-4716-9a0f-b387008e9d82/image.jpg?t=1761899963&size=Large",
-      "hosts": ["犬山たまき"],
+      "hosts": [
+        "犬山たまき"
+      ],
       "schedule": null,
       "categories": []
     },
@@ -2862,11 +2977,26 @@
           "episodeLink": "https://omny.fm/shows/tamaki/3d96d761-4a5c-4c01-b46a-b4650071a774",
           "omnyClipId": "3d96d761-4a5c-4c01-b46a-b4650071a774"
         }
+      },
+      {
+        "id": "7451506e-4c48-4c6a-9a87-b46c00673d65",
+        "title": "【気の使い方】二軒目に変なことが起こる",
+        "description": "過去に行って教科書に載っている歴史的な瞬間に立ち会ってみたいですね。\n今生きてる時代もいずれ教科書には載るかもしれませんけど。\n\nXでの感想は、#犬山たまきANNA をつけて投稿してください！\nhttps://x.com/tamaki_anna_jam\n番組メールアドレス▽\ntamaki@allnightnippon.com\n\n【募集中のメッセージテーマ】\n 「いつも迷うこと選手権」\n「この季節、外出するときに上着を持っていくか、いかないか、物凄く迷う」「家族旅行に行くときは、観光地に行くか、温泉を目指すかで毎回もめる」などなど、教えてください。\n 「懐かしいなあ選手権」\n「ドリームキャストで『シーマン』をやりこんだ」「子供のころ、いつもファービー人形を抱いていた」「Jリーグチップスに入っているカードをいっぱい集めていた」などなど、簡単なエピソードを添えて送ってください。\n  \n 【募集中のコーナーメール】\n 『内田VTuber化計画』\n内田アナがVTuberとして活躍するなら、どんなデザイン、どんなキャラクターがいいのか？の案をください！一緒に固めて行きましょう！\nデザインが「ナマケモノ」に決まりましたので、次回募集するテーマは「ナマケモノVtuberにやらせたいこと」です。\nお待ちしております！\n 『犬山たまきです！』\n犬山さんの自己紹介の頭に、全然関係ない自己紹介をくっつけていましたが、コーナーに昇格！\n犬山さんに言わせたいまったく関係のない自己紹介を送ってきてください！\n 『令和の略し王・内田！』\n曲名、グループ名、動物や魚の名前、ゲームやアニメのタイトル、駅名など長い名前を送ってきてください！即興で内田さんが略します！\n※公式の略称があるものはそれも一緒にお送りください！\n 『犬山・内田 妄想首脳会談』\n皆さんから、ネット検索やチャットGPTでは解決できない世の中の様々な問題を送ってもらって、犬山さんと内田さんで首脳会議を行い、結着をつけようというコーナー。\n二人に会議して欲しい内容をお送りください！\n 『ノンデリ研究所』\n「これってノンデリですか？」そんなメールを送ってもらって、「ノンデリかノンデリではないか？」「ノンデリの中でもどんなジャンルのノンデリか？」犬山さんに分析してもらおう…というコーナー。\nノンデリかなと迷ったら番組までお寄せください\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-06-17T10:50:00.000Z",
+        "publishedAtUnix": 1781693400,
+        "thumbnail": "https://www.omnycontent.com/d/programs/67122501-9b17-4d77-84bd-a93d00dc791e/3ffdb8bf-9e13-4716-9a0f-b387008e9d82/image.jpg?t=1761899963&size=Large",
+        "durationSeconds": 2316,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/3ffdb8bf-9e13-4716-9a0f-b387008e9d82/7451506e-4c48-4c6a-9a87-b46c00673d65/audio.mp3?utm_source=Podcast&in_playlist=6bffe7f7-f754-4eae-8315-b387008ea13f",
+          "episodeLink": "https://omny.fm/shows/tamaki/7451506e-4c48-4c6a-9a87-b46c00673d65",
+          "omnyClipId": "7451506e-4c48-4c6a-9a87-b46c00673d65"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-10T17:08:29.932Z",
-      "episodeCount": 32
+      "cachedAt": "2026-06-23T16:28:00.028Z",
+      "episodeCount": 33
     }
   },
   "shijimi": {
@@ -2880,7 +3010,10 @@
       "title": "青山吉能と前田佳織里 金曜日のしじみ",
       "description": "青山吉能と前田佳織里、人気声優2人がニッポン放送でお送りするポッドキャスト番組！\n\n1週間の仕事が終わる金曜日の夜。羽目を外して飲み歩きたいけど、一緒に飲んでくれる相手がいない・・・。\n\nそんな「家飲み」「ひとり飲み」のお相手を、パーソナリティの2人がつとめます。\n\n飲みすぎ二日酔いに効果があるしじみドリンクのごとく、あなたの宵酔いライフの強い味方！\n\n毎週金曜日21時ごろ最新回を配信！\n\nメールアドレス：shijimi@allnightnippon.com\n\nTwitterアカウント：@shijimi_1242",
       "thumbnail": "https://www.omnycontent.com/d/programs/67122501-9b17-4d77-84bd-a93d00dc791e/7f8d46b5-b149-4e79-8729-ace900a8f989/image.jpg?t=1738231040&size=Large",
-      "hosts": ["青山吉能", "前田佳織里"],
+      "hosts": [
+        "青山吉能",
+        "前田佳織里"
+      ],
       "schedule": null,
       "categories": []
     },
@@ -7009,11 +7142,41 @@
           "episodeLink": "https://omny.fm/shows/shijimi/ep272",
           "omnyClipId": "ae8e98dc-6664-4033-bd1d-b45f00650ffa"
         }
+      },
+      {
+        "id": "068078c1-97f2-406c-8880-b466005594bc",
+        "title": "ep273. 今週はBAR SHIZIMI！今更お互いをフォロー！？",
+        "description": "今夜は3軒目に移りBAR SHIZIMI\n メニューはコチラ\n ・これ飲んで、これ食べて！\n ・チャットYPP\n ・狂犬ラップ\n  \n 前りん流血事件！？\n ある食べ物を食べると・・・日本酒がレモンサワーに！？\n 気分は夏フェス？\n  \n お楽しみに\n  \n radikoでは過去回も含めた全エピソードをお聴きいただけます！\nradikoアプリを是非ダウンロードして過去回もお楽しみください！\n https://radiko.jp/podcast/channels/e4b7dbdd-7da9-4bf5-9efa-88a2fea73e3c?share=1\n 2026年6月12日(金)配信\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-06-12T11:30:00.000Z",
+        "publishedAtUnix": 1781263800,
+        "thumbnail": "https://www.omnycontent.com/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/7f8d46b5-b149-4e79-8729-ace900a8f989/068078c1-97f2-406c-8880-b466005594bc/image.jpg?t=1781249669&size=Large",
+        "durationSeconds": 1869,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/7f8d46b5-b149-4e79-8729-ace900a8f989/068078c1-97f2-406c-8880-b466005594bc/audio.mp3?utm_source=Podcast&in_playlist=46778ff4-e3b0-4792-bb78-acec004205c8",
+          "episodeLink": "https://omny.fm/shows/shijimi/ep273",
+          "omnyClipId": "068078c1-97f2-406c-8880-b466005594bc"
+        }
+      },
+      {
+        "id": "d5931216-0f02-488c-aba2-b46c01785de4",
+        "title": "ep274. 今週は超小料理屋 紫路味！日常のスキマにしじみ！",
+        "description": "4軒目は超小料理屋 紫路味\n メニューは至ってシンプル\n ・ふつおた紹介\n カッコいい先輩でいるために！\n 無事に退院して元気です！\n 無事に子供産まれて元気です！\n  \n 今夜も2人があなたのメッセージに寄り添います。\n お楽しみに\n  \n radikoでは過去回も含めた全エピソードをお聴きいただけます！\nradikoアプリを是非ダウンロードして過去回もお楽しみください！\n https://radiko.jp/podcast/channels/e4b7dbdd-7da9-4bf5-9efa-88a2fea73e3c?share=1\n 2026年6月19日(金)配信\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-06-19T11:30:00.000Z",
+        "publishedAtUnix": 1781868600,
+        "thumbnail": "https://www.omnycontent.com/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/7f8d46b5-b149-4e79-8729-ace900a8f989/d5931216-0f02-488c-aba2-b46c01785de4/image.jpg?t=1781772347&size=Large",
+        "durationSeconds": 931,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/7f8d46b5-b149-4e79-8729-ace900a8f989/d5931216-0f02-488c-aba2-b46c01785de4/audio.mp3?utm_source=Podcast&in_playlist=46778ff4-e3b0-4792-bb78-acec004205c8",
+          "episodeLink": "https://omny.fm/shows/shijimi/ep274",
+          "omnyClipId": "d5931216-0f02-488c-aba2-b46c01785de4"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-10T17:08:30.726Z",
-      "episodeCount": 275
+      "cachedAt": "2026-06-23T16:28:00.817Z",
+      "episodeCount": 277
     }
   },
   "maidoari": {
@@ -7027,7 +7190,9 @@
       "title": "新内眞衣のまいどあり",
       "description": "「新内眞衣のまいどあり」毎週火曜日17時ごろ配信！",
       "thumbnail": "https://www.omnycontent.com/d/programs/67122501-9b17-4d77-84bd-a93d00dc791e/62a1df99-e36b-4cfa-bdc8-b1c2009fd1d1/image.jpg?t=1738231047&size=Large",
-      "hosts": ["新内眞衣"],
+      "hosts": [
+        "新内眞衣"
+      ],
       "schedule": null,
       "categories": []
     },
@@ -8501,11 +8666,41 @@
           "episodeLink": "https://omny.fm/shows/maidoari/097",
           "omnyClipId": "20e4348d-b956-45e6-a2fe-b4630032dde7"
         }
+      },
+      {
+        "id": "23ff32dd-e288-4360-b4dd-b46b003a70c3",
+        "title": "#98 「ターンテーブルは一回忘れてください」",
+        "description": "【※保存推奨】\n今回は家電芸人・かじがや卓哉さんがゲストで登場。\nお得な情報が盛りだくさんなのでメモのご準備を！\n新内さんが大きな決断をしました！？\n 番組公式SNS：https://x.com/maidoari1242\n ハッシュタグ：#新内眞衣のまいどあり\n メールアドレス：mai@1242.com\n 〜メール募集中〜\n「新内シュレッダー」\nあなたの失敗談や後悔、恥ずかしかったエピソードを送ってください！\n良いことも悪いことも何一つ覚えてない新内さんが、あなたの黒歴史を完全消去してくれます。\n 「ツメうち」\nプランナーとしていくつもの成功実績を持つ新内さんに「背中を押してほしい」と思うことを募集します。だいぶ強く押す（蹴る）こともあります。\nお悩みの詳細はなるべく細かく記載してください。（「ここから先は読まないでください」などももちろんありです。）\n電話OKな方はお電話番号も忘れずに！\n 「後輩力かるた」\n乃木坂46時代は最年長ということもあってどこ行っても姉さんだったことで、\n新内さんが自分に足りないと痛感したのが…後輩力！！\n明日からすぐに実践出来るような、あらゆるシチュエーションで使える｢後輩力強めワード｣を募集します！\n（例）\n「こ」・・・コメいいすか？\n先輩に気を遣わせず、かつ2杯目もいきやすいです。\nシチュエーションは焼肉だとベストです。\n 「お寿司で4万」\n友人に高級寿司を奢った新内さん。\nとてもいい時間になったから後悔はないけど寝る前に思い出す4万・・・。\nそんなムズっとした買い物体験をエピソードを添えて教えてください！\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-06-16T07:40:00.000Z",
+        "publishedAtUnix": 1781595600,
+        "thumbnail": "https://www.omnycontent.com/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/62a1df99-e36b-4cfa-bdc8-b1c2009fd1d1/23ff32dd-e288-4360-b4dd-b46b003a70c3/image.jpg?t=1781599831&size=Large",
+        "durationSeconds": 2927,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/62a1df99-e36b-4cfa-bdc8-b1c2009fd1d1/23ff32dd-e288-4360-b4dd-b46b003a70c3/audio.mp3?utm_source=Podcast&in_playlist=e505a96a-fa16-484c-ac26-b1c200a0fb79",
+          "episodeLink": "https://omny.fm/shows/maidoari/098",
+          "omnyClipId": "23ff32dd-e288-4360-b4dd-b46b003a70c3"
+        }
+      },
+      {
+        "id": "5ccd9553-5ed8-4caf-9b7b-b471008b35ae",
+        "title": "#99 めっちゃ下手ですね",
+        "description": "【※今回も保存推奨】\n前回に引き続き、ゲストは家電芸人・かじがや卓哉さん。\nかじがやさんが急遽始めたクイズ大会に新内さんがガチで回答！\nなぜガチかというと...！？\n 番組公式SNS：https://x.com/maidoari1242\n ハッシュタグ：#新内眞衣のまいどあり\n メールアドレス：mai@1242.com\n 〜メール募集中〜\n「新内シュレッダー」\nあなたの失敗談や後悔、恥ずかしかったエピソードを送ってください！\n良いことも悪いことも何一つ覚えてない新内さんが、あなたの黒歴史を完全消去してくれます。\n 「ツメうち」\nプランナーとしていくつもの成功実績を持つ新内さんに「背中を押してほしい」と思うことを募集します。だいぶ強く押す（蹴る）こともあります。\nお悩みの詳細はなるべく細かく記載してください。（「ここから先は読まないでください」などももちろんありです。）\n電話OKな方はお電話番号も忘れずに！\n 「後輩力かるた」\n乃木坂46時代は最年長ということもあってどこ行っても姉さんだったことで、\n新内さんが自分に足りないと痛感したのが…後輩力！！\n明日からすぐに実践出来るような、あらゆるシチュエーションで使える｢後輩力強めワード｣を募集します！\n（例）\n「こ」・・・コメいいすか？\n先輩に気を遣わせず、かつ2杯目もいきやすいです。\nシチュエーションは焼肉だとベストです。\n 「お寿司で4万」\n友人に高級寿司を奢った新内さん。\nとてもいい時間になったから後悔はないけど寝る前に思い出す4万・・・。\nそんなムズっとした買い物体験をエピソードを添えて教えてください！\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-06-23T07:40:00.000Z",
+        "publishedAtUnix": 1782200400,
+        "thumbnail": "https://www.omnycontent.com/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/62a1df99-e36b-4cfa-bdc8-b1c2009fd1d1/5ccd9553-5ed8-4caf-9b7b-b471008b35ae/image.jpg?t=1782119422&size=Large",
+        "durationSeconds": 2535,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/62a1df99-e36b-4cfa-bdc8-b1c2009fd1d1/5ccd9553-5ed8-4caf-9b7b-b471008b35ae/audio.mp3?utm_source=Podcast&in_playlist=e505a96a-fa16-484c-ac26-b1c200a0fb79",
+          "episodeLink": "https://omny.fm/shows/maidoari/099",
+          "omnyClipId": "5ccd9553-5ed8-4caf-9b7b-b471008b35ae"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-10T17:08:31.251Z",
-      "episodeCount": 98
+      "cachedAt": "2026-06-23T16:28:01.653Z",
+      "episodeCount": 100
     }
   }
 }
