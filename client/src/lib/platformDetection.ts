@@ -9,6 +9,7 @@ export const SUPPORTED_PLATFORMS = [
   'tfm',
   'allnightnippon',
   'koelink',
+  'applepodcasts',
 ] as const;
 
 export const PLATFORM_LABELS = {
@@ -22,6 +23,7 @@ export const PLATFORM_LABELS = {
   tfm: 'TokyoFM',
   allnightnippon: 'AllNightNippon',
   koelink: 'KoeLink',
+  applepodcasts: 'Apple Podcasts',
 } as const;
 
 export type SupportedPlatform =
@@ -34,7 +36,8 @@ export type SupportedPlatform =
   | 'nhk'
   | 'tfm'
   | 'allnightnippon'
-  | 'koelink';
+  | 'koelink'
+  | 'applepodcasts';
 
 export function detectPlatform(url: string): SupportedPlatform | null {
   try {
@@ -78,6 +81,10 @@ export function detectPlatform(url: string): SupportedPlatform | null {
 
     if (hostname.includes('koelink.co.jp')) {
       return 'koelink';
+    }
+
+    if (hostname.includes('podcasts.apple.com')) {
+      return 'applepodcasts';
     }
 
     return null;

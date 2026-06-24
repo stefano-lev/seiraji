@@ -7,6 +7,10 @@ import { scrapeQlover } from './scrapeQlover';
 import { scrapeOpenrec } from './scrapeOpenrec';
 import { scrapeNicochannel } from './scrapeNicochannel';
 import { scrapeNHK } from './scrapeNHK';
+import { scrapeTokyoFM } from './scrapeTokyoFM';
+import { scrapeANN } from './scrapeANN';
+import { scrapeKoelink } from './scrapeKoelink';
+import { scrapeApplePodcast } from './scrapeApplePodcast';
 import {
   getAudeeSlug,
   getOnsenSlug,
@@ -18,10 +22,8 @@ import {
   getTokyoFMSlug,
   getANNSlug,
   getKoelinkSlug,
+  getApplePodcastId,
 } from '../utils/platformKeys';
-import { scrapeTokyoFM } from './scrapeTokyoFM';
-import { scrapeANN } from './scrapeANN';
-import { scrapeKoelink } from './scrapeKoelink';
 
 export async function importProgram(url: string, hostOverride?: string) {
   const hostname = new URL(url).hostname;
@@ -152,6 +154,19 @@ export async function importProgram(url: string, hostOverride?: string) {
       'koelink-programs.json',
       slug,
       () => scrapeKoelink(url),
+      hostOverride
+    );
+  }
+
+  if (hostname.includes('podcasts.apple.com')) {
+    const applePodcastId = getApplePodcastId(url);
+
+    await ensureNotCached('applepodcasts-programs.json', applePodcastId);
+
+    return getCachedOrImport(
+      'applepodcasts-programs.json',
+      applePodcastId,
+      () => scrapeApplePodcast(url),
       hostOverride
     );
   }

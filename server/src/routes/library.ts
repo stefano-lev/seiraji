@@ -18,6 +18,7 @@ router.get('/all', async (_, res) => {
       tfm,
       allnightnippon,
       koelink,
+      applepodcasts,
     ] = await Promise.all([
       readCache('audee-programs.json'),
 
@@ -38,6 +39,8 @@ router.get('/all', async (_, res) => {
       readCache('allnightnippon-programs.json'),
 
       readCache('koelink-programs.json'),
+
+      readCache('applepodcasts-programs.json'),
     ]);
 
     const merged = [
@@ -51,6 +54,7 @@ router.get('/all', async (_, res) => {
       ...Object.values(tfm),
       ...Object.values(allnightnippon),
       ...Object.values(koelink),
+      ...Object.values(applepodcasts),
     ];
 
     res.json(merged);
@@ -79,6 +83,7 @@ router.delete('/:platform/:id', requireAdmin, async (req, res) => {
       tfm: 'tfm-programs.json',
       allnightnippon: 'allnightnippon-programs.json',
       koelink: 'koelink-programs.json',
+      applepodcasts: 'applepodcasts-programs.json',
     };
 
     const filename = cacheMap[platform];

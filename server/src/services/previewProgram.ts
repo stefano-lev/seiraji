@@ -8,6 +8,7 @@ import { scrapeNHK } from './scrapeNHK';
 import { scrapeTokyoFM } from './scrapeTokyoFM';
 import { scrapeANN } from './scrapeANN';
 import { scrapeKoelink } from './scrapeKoelink';
+import { scrapeApplePodcast } from './scrapeApplePodcast';
 
 import type { ProgramPreview } from '../types/media.ts';
 
@@ -42,6 +43,8 @@ export async function previewProgram(
     data = await scrapeANN(url);
   } else if (hostname.includes('koelink.co.jp')) {
     data = await scrapeKoelink(url);
+  } else if (hostname.includes('podcasts.apple.com')) {
+    data = await scrapeApplePodcast(url);
   } else {
     throw new Error('Unsupported platform');
   }

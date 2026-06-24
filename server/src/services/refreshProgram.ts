@@ -12,6 +12,7 @@ import { scrapeNHK } from './scrapeNHK';
 import { scrapeTokyoFM } from './scrapeTokyoFM';
 import { scrapeANN } from './scrapeANN';
 import { scrapeKoelink } from './scrapeKoelink';
+import { scrapeApplePodcast } from './scrapeApplePodcast';
 import {
   getAudeeSlug,
   getOnsenSlug,
@@ -23,6 +24,7 @@ import {
   getTokyoFMSlug,
   getANNSlug,
   getKoelinkSlug,
+  getApplePodcastId,
 } from '../utils/platformKeys';
 
 export async function refreshProgram(url: string) {
@@ -105,6 +107,16 @@ export async function refreshProgram(url: string) {
 
     return refreshCachedProgram('koelink-programs.json', slug, () =>
       scrapeKoelink(url)
+    );
+  }
+
+  if (hostname.includes('podcasts.apple.com')) {
+    const applePodcastId = getApplePodcastId(url);
+
+    return refreshCachedProgram(
+      'applepodcasts-programs.json',
+      applePodcastId,
+      () => scrapeApplePodcast(url)
     );
   }
 

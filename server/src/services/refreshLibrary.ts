@@ -78,6 +78,10 @@ export async function refreshLibrary() {
       platform: 'koelink',
       programs: Object.values(caches.koelink),
     },
+    {
+      platform: 'applepodcasts',
+      programs: Object.values(caches.applepodcasts),
+    },
   ];
 
   const activeGroups = platformGroups.filter(

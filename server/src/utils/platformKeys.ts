@@ -104,3 +104,15 @@ export function getKoelinkSlug(url: string): string {
 
   return slug;
 }
+
+export function getApplePodcastId(url: string): string {
+  const parsed = new URL(url);
+
+  const match = parsed.pathname.match(/\/id(\d+)/);
+
+  if (!match) {
+    throw new Error('Invalid Apple Podcasts URL');
+  }
+
+  return match[1];
+}
