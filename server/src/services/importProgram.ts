@@ -17,9 +17,11 @@ import {
   getNHKSeriesId,
   getTokyoFMSlug,
   getANNSlug,
+  getKoelinkSlug,
 } from '../utils/platformKeys';
 import { scrapeTokyoFM } from './scrapeTokyoFM';
 import { scrapeANN } from './scrapeANN';
+import { scrapeKoelink } from './scrapeKoelink';
 
 export async function importProgram(url: string, hostOverride?: string) {
   const hostname = new URL(url).hostname;
@@ -137,6 +139,19 @@ export async function importProgram(url: string, hostOverride?: string) {
       'allnightnippon-programs.json',
       slug,
       () => scrapeANN(url),
+      hostOverride
+    );
+  }
+
+  if (hostname.includes('koelink.co.jp')) {
+    const slug = getKoelinkSlug(url);
+
+    await ensureNotCached('koelink-programs.json', slug);
+
+    return getCachedOrImport(
+      'koelink-programs.json',
+      slug,
+      () => scrapeKoelink(url),
       hostOverride
     );
   }

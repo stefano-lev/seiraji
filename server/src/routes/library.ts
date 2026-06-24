@@ -17,6 +17,7 @@ router.get('/all', async (_, res) => {
       nhk,
       tfm,
       allnightnippon,
+      koelink,
     ] = await Promise.all([
       readCache('audee-programs.json'),
 
@@ -35,6 +36,8 @@ router.get('/all', async (_, res) => {
       readCache('tfm-programs.json'),
 
       readCache('allnightnippon-programs.json'),
+
+      readCache('koelink-programs.json'),
     ]);
 
     const merged = [
@@ -47,6 +50,7 @@ router.get('/all', async (_, res) => {
       ...Object.values(nhk),
       ...Object.values(tfm),
       ...Object.values(allnightnippon),
+      ...Object.values(koelink),
     ];
 
     res.json(merged);
@@ -74,6 +78,7 @@ router.delete('/:platform/:id', requireAdmin, async (req, res) => {
       nhk: 'nhk-programs.json',
       tfm: 'tfm-programs.json',
       allnightnippon: 'allnightnippon-programs.json',
+      koelink: 'koelink-programs.json',
     };
 
     const filename = cacheMap[platform];

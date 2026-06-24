@@ -1,0 +1,345 @@
+{
+  "unite_caravan": {
+    "id": "koelink:unite_caravan",
+    "source": "imported",
+    "platform": "koelink",
+    "platformId": "unite_caravan",
+    "slug": "unite_caravan",
+    "url": "https://koelink.co.jp/koelink/programs/unite_caravan",
+    "program": {
+      "title": "根本優奈のゆないとキャラバン",
+      "description": "声優・根本優奈が率いるキャラバンが気ままに寄り道をしながら、リスナーの声を拾い集めて進んでいくラジオ番組です。\n隔週木曜日更新です！\n番組ページ：https://koelink.co.jp/koelink/programs/unite_caravan\n番組SNS：https://x.com/unite_caravan",
+      "thumbnail": "https://koelink.co.jp/img/unite_caravan_imgL.cfc1d2b5.webp",
+      "hosts": [
+        "根本優奈"
+      ],
+      "schedule": null,
+      "categories": []
+    },
+    "episodes": [
+      {
+        "id": "koelink:unite_caravan:unite_caravan/ep1-a",
+        "title": "第1回 前半",
+        "description": "声優・根本優奈が率いるキャラバンが気ままに寄り道をしながら、リスナーの声を拾い集めて進んでいくラジオ番組です。\n隔週木曜日更新です！\n番組ページ：https://koelink.co.jp/koelink/programs/unite_caravan\n番組SNS：https://x.com/unite_caravan",
+        "publishedAt": "Thu, 02 Apr 2026 10:00:00 GMT",
+        "publishedAtUnix": 1775124000,
+        "thumbnail": "https://koelink.co.jp/img/unite_caravan_imgL.cfc1d2b5.webp",
+        "durationSeconds": 1732,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "unite_caravan/ep1-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/unite_caravan/ep1-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "28782491",
+          "rawDuration": "1732"
+        }
+      },
+      {
+        "id": "koelink:unite_caravan:unite_caravan/ep2-a",
+        "title": "第2回 前半",
+        "description": "声優・根本優奈が率いるキャラバンが気ままに寄り道をしながら、リスナーの声を拾い集めて進んでいくラジオ番組です。\n隔週木曜日更新です！\n番組ページ：https://koelink.co.jp/koelink/programs/unite_caravan\n番組SNS：https://x.com/unite_caravan",
+        "publishedAt": "Thu, 16 Apr 2026 10:00:00 GMT",
+        "publishedAtUnix": 1776333600,
+        "thumbnail": "https://koelink.co.jp/img/unite_caravan_imgL.cfc1d2b5.webp",
+        "durationSeconds": 1517,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "unite_caravan/ep2-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/unite_caravan/ep2-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "25024905",
+          "rawDuration": "1517"
+        }
+      },
+      {
+        "id": "koelink:unite_caravan:unite_caravan/ep3-a",
+        "title": "第3回 前半",
+        "description": "声優・根本優奈が率いるキャラバンが気ままに寄り道をしながら、リスナーの声を拾い集めて進んでいくラジオ番組です。\n隔週木曜日更新です！\n番組ページ：https://koelink.co.jp/koelink/programs/unite_caravan\n番組SNS：https://x.com/unite_caravan",
+        "publishedAt": "Thu, 30 Apr 2026 10:00:00 GMT",
+        "publishedAtUnix": 1777543200,
+        "thumbnail": "https://koelink.co.jp/img/unite_caravan_imgL.cfc1d2b5.webp",
+        "durationSeconds": 1686,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "unite_caravan/ep3-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/unite_caravan/ep3-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "28066797",
+          "rawDuration": "1686"
+        }
+      },
+      {
+        "id": "koelink:unite_caravan:unite_caravan/ep4-a",
+        "title": "第4回 前半",
+        "description": "声優・根本優奈が率いるキャラバンが気ままに寄り道をしながら、リスナーの声を拾い集めて進んでいくラジオ番組です。\n隔週木曜日更新です！\n番組ページ：https://koelink.co.jp/koelink/programs/unite_caravan\n番組SNS：https://x.com/unite_caravan",
+        "publishedAt": "Thu, 14 May 2026 10:00:00 GMT",
+        "publishedAtUnix": 1778752800,
+        "thumbnail": "https://koelink.co.jp/img/unite_caravan_imgL.cfc1d2b5.webp",
+        "durationSeconds": 1123,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "unite_caravan/ep4-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/unite_caravan/ep4-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "18656855",
+          "rawDuration": "1123"
+        }
+      },
+      {
+        "id": "koelink:unite_caravan:unite_caravan/ep5-a",
+        "title": "第5回 前半",
+        "description": "声優・根本優奈が率いるキャラバンが気ままに寄り道をしながら、リスナーの声を拾い集めて進んでいくラジオ番組です。\n隔週木曜日更新です！\n番組ページ：https://koelink.co.jp/koelink/programs/unite_caravan\n番組SNS：https://x.com/unite_caravan",
+        "publishedAt": "Thu, 28 May 2026 10:00:00 GMT",
+        "publishedAtUnix": 1779962400,
+        "thumbnail": "https://koelink.co.jp/img/unite_caravan_imgL.cfc1d2b5.webp",
+        "durationSeconds": 1507,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "unite_caravan/ep5-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/unite_caravan/ep5-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "0",
+          "rawDuration": "1507"
+        }
+      }
+    ],
+    "meta": {
+      "cachedAt": "2026-06-24T19:59:53.704Z",
+      "episodeCount": 5
+    }
+  },
+  "kagamiyokagami": {
+    "id": "koelink:kagamiyokagami",
+    "source": "imported",
+    "platform": "koelink",
+    "platformId": "kagamiyokagami",
+    "slug": "kagamiyokagami",
+    "url": "https://koelink.co.jp/koelink/programs/kagamiyokagami",
+    "program": {
+      "title": "各務華梨のかがみよかがみ魔法をかけて",
+      "description": "声優・各務華梨が、魔法のようなひとときをお届けするラジオ番組。\n“あなたを映すかがみ”として寄り添います。\n隔週月曜日更新です！\n番組ページ：https://koelink.co.jp/koelink/programs/kagamiyokagami\n番組SNS：https://x.com/kagami_radio",
+      "thumbnail": "https://koelink.co.jp/img/kagamiyokagami_imgL.43e82ee1.webp",
+      "hosts": [
+        "各務華梨"
+      ],
+      "schedule": null,
+      "categories": []
+    },
+    "episodes": [
+      {
+        "id": "koelink:kagamiyokagami:kagamiyokagami/ep1-a",
+        "title": "第1回 前半",
+        "description": "声優・各務華梨が、魔法のようなひとときをお届けするラジオ番組。\n“あなたを映すかがみ”として寄り添います。\n隔週月曜日更新です！\n番組ページ：https://koelink.co.jp/koelink/programs/kagamiyokagami\n番組SNS：https://x.com/kagami_radio",
+        "publishedAt": "Mon, 06 Apr 2026 10:00:00 GMT",
+        "publishedAtUnix": 1775469600,
+        "thumbnail": "https://koelink.co.jp/img/kagamiyokagami_imgL.43e82ee1.webp",
+        "durationSeconds": 2177,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "kagamiyokagami/ep1-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/kagamiyokagami/ep1-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "36099637",
+          "rawDuration": "2177"
+        }
+      },
+      {
+        "id": "koelink:kagamiyokagami:kagamiyokagami/ep2-a",
+        "title": "第2回 前半",
+        "description": "声優・各務華梨が、魔法のようなひとときをお届けするラジオ番組。\n“あなたを映すかがみ”として寄り添います。\n隔週月曜日更新です！\n番組ページ：https://koelink.co.jp/koelink/programs/kagamiyokagami\n番組SNS：https://x.com/kagami_radio",
+        "publishedAt": "Mon, 20 Apr 2026 10:00:00 GMT",
+        "publishedAtUnix": 1776679200,
+        "thumbnail": "https://koelink.co.jp/img/kagamiyokagami_imgL.43e82ee1.webp",
+        "durationSeconds": 1979,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "kagamiyokagami/ep2-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/kagamiyokagami/ep2-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "32714460",
+          "rawDuration": "1979"
+        }
+      },
+      {
+        "id": "koelink:kagamiyokagami:kagamiyokagami/ep3-a",
+        "title": "第3回 前半",
+        "description": "声優・各務華梨が、魔法のようなひとときをお届けするラジオ番組。\n“あなたを映すかがみ”として寄り添います。\n隔週月曜日更新です！\n番組ページ：https://koelink.co.jp/koelink/programs/kagamiyokagami\n番組SNS：https://x.com/kagami_radio",
+        "publishedAt": "Mon, 04 May 2026 10:00:00 GMT",
+        "publishedAtUnix": 1777888800,
+        "thumbnail": "https://koelink.co.jp/img/kagamiyokagami_imgL.43e82ee1.webp",
+        "durationSeconds": 1753,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "kagamiyokagami/ep3-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/kagamiyokagami/ep3-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "28962914",
+          "rawDuration": "1753"
+        }
+      },
+      {
+        "id": "koelink:kagamiyokagami:kagamiyokagami/ep4-a",
+        "title": "第4回 前半",
+        "description": "声優・各務華梨が、魔法のようなひとときをお届けするラジオ番組。\n“あなたを映すかがみ”として寄り添います。\n隔週月曜日更新です！\n番組ページ：https://koelink.co.jp/koelink/programs/kagamiyokagami\n番組SNS：https://x.com/kagami_radio",
+        "publishedAt": "Mon, 18 May 2026 10:00:00 GMT",
+        "publishedAtUnix": 1779098400,
+        "thumbnail": "https://koelink.co.jp/img/kagamiyokagami_imgL.43e82ee1.webp",
+        "durationSeconds": 1645,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "kagamiyokagami/ep4-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/kagamiyokagami/ep4-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "0",
+          "rawDuration": "1645"
+        }
+      },
+      {
+        "id": "koelink:kagamiyokagami:kagamiyokagami/ep5-a",
+        "title": "第5回 前半",
+        "description": "声優・各務華梨が、魔法のようなひとときをお届けするラジオ番組。\n“あなたを映すかがみ”として寄り添います。\n隔週月曜日更新です！\n番組ページ：https://koelink.co.jp/koelink/programs/kagamiyokagami\n番組SNS：https://x.com/kagami_radio",
+        "publishedAt": "Mon, 01 Jun 2026 10:00:00 GMT",
+        "publishedAtUnix": 1780308000,
+        "thumbnail": "https://koelink.co.jp/img/kagamiyokagami_imgL.43e82ee1.webp",
+        "durationSeconds": 1541,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "kagamiyokagami/ep5-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/kagamiyokagami/ep5-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "0",
+          "rawDuration": "1541"
+        }
+      },
+      {
+        "id": "koelink:kagamiyokagami:kagamiyokagami/ep6-a",
+        "title": "第6回 前半",
+        "description": "声優・各務華梨が、魔法のようなひとときをお届けするラジオ番組。\n“あなたを映すかがみ”として寄り添います。\n隔週月曜日更新です！\n番組ページ：https://koelink.co.jp/koelink/programs/kagamiyokagami\n番組SNS：https://x.com/kagami_radio",
+        "publishedAt": "Mon, 15 Jun 2026 10:00:00 GMT",
+        "publishedAtUnix": 1781517600,
+        "thumbnail": "https://koelink.co.jp/img/kagamiyokagami_imgL.43e82ee1.webp",
+        "durationSeconds": 1139,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "kagamiyokagami/ep6-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/kagamiyokagami/ep6-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "0",
+          "rawDuration": "1139"
+        }
+      }
+    ],
+    "meta": {
+      "cachedAt": "2026-06-24T19:54:24.101Z",
+      "episodeCount": 6
+    }
+  },
+  "hibi_ohanashi_biyori": {
+    "id": "koelink:hibi_ohanashi_biyori",
+    "source": "imported",
+    "platform": "koelink",
+    "platformId": "hibi_ohanashi_biyori",
+    "slug": "hibi_ohanashi_biyori",
+    "url": "https://koelink.co.jp/koelink/programs/hibi_ohanashi_biyori",
+    "program": {
+      "title": "日比優理香と真名瀬日和のひびおはなしびより",
+      "description": "声優・日比優理香と真名瀬日和が、リスナーの皆さんからのお便りをきっかけに広がる“おはなし”をお届けします。\nなんでもない日々でも、二人そろえばお話日和！\n番組ページ：https://koelink.co.jp/koelink/programs/hibi_ohanashi_biyori\n番組SNS：https://x.com/hibi_biyori",
+      "thumbnail": "https://koelink.co.jp/img/hibi_ohanashi_biyori_imgL.ca96604c.webp",
+      "hosts": [
+        "日比優理香",
+        "真名瀬日和"
+      ],
+      "schedule": null,
+      "categories": []
+    },
+    "episodes": [
+      {
+        "id": "koelink:hibi_ohanashi_biyori:hibi_ohanashi_biyori/ep1-a",
+        "title": "第1回 前半",
+        "description": "声優・日比優理香と真名瀬日和が、リスナーの皆さんからのお便りをきっかけに広がる“おはなし”をお届けします。\nなんでもない日々でも、二人そろえばお話日和！\n番組ページ：https://koelink.co.jp/koelink/programs/hibi_ohanashi_biyori\n番組SNS：https://x.com/hibi_biyori",
+        "publishedAt": "Wed, 06 May 2026 10:00:00 GMT",
+        "publishedAtUnix": 1778061600,
+        "thumbnail": "https://koelink.co.jp/img/hibi_ohanashi_biyori_imgL.ca96604c.webp",
+        "durationSeconds": 1842,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "hibi_ohanashi_biyori/ep1-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/hibi_ohanashi_biyori/ep1-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "30436907",
+          "rawDuration": "1842"
+        }
+      },
+      {
+        "id": "koelink:hibi_ohanashi_biyori:hibi_ohanashi_biyori/ep2-a",
+        "title": "第2回 前半",
+        "description": "声優・日比優理香と真名瀬日和が、リスナーの皆さんからのお便りをきっかけに広がる“おはなし”をお届けします。\nなんでもない日々でも、二人そろえばお話日和！\n番組ページ：https://koelink.co.jp/koelink/programs/hibi_ohanashi_biyori\n番組SNS：https://x.com/hibi_biyori",
+        "publishedAt": "Wed, 20 May 2026 10:00:00 GMT",
+        "publishedAtUnix": 1779271200,
+        "thumbnail": "https://koelink.co.jp/img/hibi_ohanashi_biyori_imgL.ca96604c.webp",
+        "durationSeconds": 1402,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "hibi_ohanashi_biyori/ep2-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/hibi_ohanashi_biyori/ep2-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "0",
+          "rawDuration": "1402"
+        }
+      },
+      {
+        "id": "koelink:hibi_ohanashi_biyori:hibi_ohanashi_biyori/ep3-a",
+        "title": "第3回 前半",
+        "description": "声優・日比優理香と真名瀬日和が、リスナーの皆さんからのお便りをきっかけに広がる“おはなし”をお届けします。\nなんでもない日々でも、二人そろえばお話日和！\n番組ページ：https://koelink.co.jp/koelink/programs/hibi_ohanashi_biyori\n番組SNS：https://x.com/hibi_biyori",
+        "publishedAt": "Wed, 03 Jun 2026 10:00:00 GMT",
+        "publishedAtUnix": 1780480800,
+        "thumbnail": "https://koelink.co.jp/img/hibi_ohanashi_biyori_imgL.ca96604c.webp",
+        "durationSeconds": 1480,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "hibi_ohanashi_biyori/ep3-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/hibi_ohanashi_biyori/ep3-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "0",
+          "rawDuration": "1480"
+        }
+      },
+      {
+        "id": "koelink:hibi_ohanashi_biyori:hibi_ohanashi_biyori/ep4-a",
+        "title": "第4回 前半",
+        "description": "声優・日比優理香と真名瀬日和が、リスナーの皆さんからのお便りをきっかけに広がる“おはなし”をお届けします。\nなんでもない日々でも、二人そろえばお話日和！\n番組ページ：https://koelink.co.jp/koelink/programs/hibi_ohanashi_biyori\n番組SNS：https://x.com/hibi_biyori",
+        "publishedAt": "Wed, 17 Jun 2026 10:00:00 GMT",
+        "publishedAtUnix": 1781690400,
+        "thumbnail": "https://koelink.co.jp/img/hibi_ohanashi_biyori_imgL.ca96604c.webp",
+        "durationSeconds": 1685,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "hibi_ohanashi_biyori/ep4-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/hibi_ohanashi_biyori/ep4-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "0",
+          "rawDuration": "1685"
+        }
+      }
+    ],
+    "meta": {
+      "cachedAt": "2026-06-24T19:54:52.052Z",
+      "episodeCount": 4
+    }
+  }
+}

@@ -89,3 +89,18 @@ export function getANNSlug(url: string): string {
 
   return slug;
 }
+
+export function getKoelinkSlug(url: string): string {
+  const parts = new URL(url).pathname.split('/').filter(Boolean);
+
+  const programsIndex = parts.indexOf('programs');
+
+  const slug =
+    programsIndex >= 0 ? parts[programsIndex + 1] : parts[parts.length - 1];
+
+  if (!slug) {
+    throw new Error('Invalid Koelink program URL');
+  }
+
+  return slug;
+}

@@ -74,6 +74,10 @@ export async function refreshLibrary() {
       platform: 'allnightnippon',
       programs: Object.values(caches.allnightnippon),
     },
+    {
+      platform: 'koelink',
+      programs: Object.values(caches.koelink),
+    },
   ];
 
   const activeGroups = platformGroups.filter(

@@ -8,6 +8,7 @@ export const SUPPORTED_PLATFORMS = [
   'nhk',
   'tfm',
   'allnightnippon',
+  'koelink',
 ] as const;
 
 export const PLATFORM_LABELS = {
@@ -20,6 +21,7 @@ export const PLATFORM_LABELS = {
   nhk: 'NHK',
   tfm: 'TokyoFM',
   allnightnippon: 'AllNightNippon',
+  koelink: 'KoeLink',
 } as const;
 
 export type SupportedPlatform =
@@ -31,7 +33,8 @@ export type SupportedPlatform =
   | 'nicochannel'
   | 'nhk'
   | 'tfm'
-  | 'allnightnippon';
+  | 'allnightnippon'
+  | 'koelink';
 
 export function detectPlatform(url: string): SupportedPlatform | null {
   try {
@@ -71,6 +74,10 @@ export function detectPlatform(url: string): SupportedPlatform | null {
 
     if (hostname.includes('podcast.1242.com')) {
       return 'allnightnippon';
+    }
+
+    if (hostname.includes('koelink.co.jp')) {
+      return 'koelink';
     }
 
     return null;

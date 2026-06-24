@@ -7,6 +7,7 @@ import { scrapeNicochannel } from './scrapeNicochannel';
 import { scrapeNHK } from './scrapeNHK';
 import { scrapeTokyoFM } from './scrapeTokyoFM';
 import { scrapeANN } from './scrapeANN';
+import { scrapeKoelink } from './scrapeKoelink';
 
 import type { ProgramPreview } from '../types/media.ts';
 
@@ -39,6 +40,8 @@ export async function previewProgram(
     data = await scrapeTokyoFM(url);
   } else if (hostname.includes('podcast.1242.com')) {
     data = await scrapeANN(url);
+  } else if (hostname.includes('koelink.co.jp')) {
+    data = await scrapeKoelink(url);
   } else {
     throw new Error('Unsupported platform');
   }
@@ -51,14 +54,26 @@ export async function previewProgram(
     thumbnail: data.program.thumbnail,
 
     hosts: hostOverride
-      ? hostOverride
-          .split(',')
-          .map((host: string) => host.trim())
-          .filter(Boolean)
-      : (data.program.hosts ?? []),
+      ? normalizePreviewHosts(hostOverride)
+      : normalizePreviewHosts(data.program.hosts),
 
     platform: data.platform,
 
     episodeCount: data.episodes.length,
   };
+
+  function normalizePreviewHosts(value: string[] | string | null | undefined) {
+    if (Array.isArray(value)) {
+      return value.map((host) => host.trim()).filter(Boolean);
+    }
+
+    if (typeof value === 'string') {
+      return value
+        .split(',')
+        .map((host) => host.trim())
+        .filter(Boolean);
+    }
+
+    return [];
+  }
 }

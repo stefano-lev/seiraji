@@ -48,6 +48,7 @@ export async function getAllCaches() {
     nhk,
     tfm,
     allnightnippon,
+    koelink,
   ] = await Promise.all([
     readCache('audee-programs.json'),
     readCache('youtube-playlists.json'),
@@ -58,6 +59,7 @@ export async function getAllCaches() {
     readCache('nhk-programs.json'),
     readCache('tfm-programs.json'),
     readCache('allnightnippon-programs.json'),
+    readCache('koelink-programs.json'),
   ]);
 
   return {
@@ -70,5 +72,6 @@ export async function getAllCaches() {
     nhk,
     tfm,
     allnightnippon,
+    koelink,
   };
 }
