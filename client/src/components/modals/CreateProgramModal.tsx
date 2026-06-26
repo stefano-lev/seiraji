@@ -293,13 +293,16 @@ export function CreateProgramModal({
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.12 }}
       onClick={handleClose}
     >
       <motion.div
         className="w-full max-w-xl max-h-[85vh] rounded-3xl border border-border/60 bg-background p-4 shadow-2xl flex flex-col"
-        initial={{ scale: 0.96, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.15 }}
+        initial={{ opacity: 0, scale: 0.98, y: 8 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        exit={{ opacity: 0, scale: 0.98, y: 8 }}
+        transition={{ duration: 0.16, ease: [0.16, 1, 0.3, 1] }}
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex gap-2 mt-4">

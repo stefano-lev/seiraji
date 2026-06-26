@@ -44,15 +44,17 @@ Live Demo: https://seiraji.stef-lev.xyz/
 
 ### Currently Supported Platforms
 
+- YouTube Playlists
+- Apple Podcasts
 - AuDee
 - QloveR
 - TokyoFM
 - Onsen.ag
 - AllNightNippon
 - NHK Radio
-- YouTube Playlists
 - NicoChannel
 - Openrec
+- Koelink
 
 ## Tech Stack
 

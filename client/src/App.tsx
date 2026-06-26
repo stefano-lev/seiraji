@@ -816,6 +816,25 @@ export default function App() {
 
   const searchRef = useRef<HTMLInputElement | null>(null);
 
+  function resetLibraryView() {
+    setSelectedProgram(null);
+    setEditDraft(null);
+
+    setSearchQuery('');
+    setStatusFilter('all');
+    setTagFilter('all');
+    setPlatformFilter([]);
+    setPinnedOnly(false);
+    setSortMode('title');
+
+    searchRef.current?.blur();
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
+
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {
       // Ctrl+F focuses search
@@ -914,10 +933,7 @@ export default function App() {
             onOpenHistory={() => setHistoryOpen(true)}
             onOpenPrefs={() => setPrefsOpen(true)}
             onOpenCreateProgram={() => setCreateOpen(true)}
-            onResetSelection={() => {
-              setSelectedProgram(null);
-              setEditDraft(null);
-            }}
+            onResetSelection={resetLibraryView}
           />
 
           {programOnboarding && (
@@ -1034,6 +1050,8 @@ export default function App() {
             open={statsOpen}
             onClose={() => setStatsOpen(false)}
             stats={stats}
+            programs={programs}
+            activity={activity}
             onDeleteAllTags={deleteAllTags}
             onDeleteAllData={deleteAllData}
           />

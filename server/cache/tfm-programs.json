@@ -3829,7 +3829,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:27:55.949Z",
+      "cachedAt": "2026-06-26T18:29:23.526Z",
       "episodeCount": 254
     }
   },
@@ -4618,7 +4618,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:27:56.593Z",
+      "cachedAt": "2026-06-26T18:29:25.228Z",
       "episodeCount": 51
     }
   },
@@ -7444,11 +7444,26 @@
           "link": null,
           "audioUrl": "https://traffic.megaphone.fm/TFM3299570358.mp3"
         }
+      },
+      {
+        "id": "tokyofm:gyan:42973fe4-6abd-11f1-8efb-33218d2a954b",
+        "title": "Everybodyが白岳しろにクリティカルヒット！",
+        "description": "白岳しろ 坂ノ上茜のぎゃんっ！ラジオ\" Vol.247\n\n坂ノ上茜がお迎えするのはお笑いコンビEverybodyの\n\nタクトOK!!さん(熊本出身)&かわなみchoy?さん\n\n番組では メッセージ＆「酒飲みあるあるネタ」を募集中！\n\nメッセージフォームに住所・氏名・電話番号を書いて応募してください。\n\n毎月抽選で10名様に「白岳しろ」が当たるチャンスも。\n\n（プレゼント当選者は２０歳以上の方に限らせていただきます）",
+        "publishedAt": "Thu, 25 Jun 2026 12:30:00 -0000",
+        "publishedAtUnix": 1782390600,
+        "thumbnail": "https://megaphone.imgix.net/podcasts/42973fe4-6abd-11f1-8efb-33218d2a954b/image/400c2d36fe44b56e1d6082e45b9e5f15.jpeg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+        "durationSeconds": 1414,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "42973fe4-6abd-11f1-8efb-33218d2a954b",
+          "link": null,
+          "audioUrl": "https://traffic.megaphone.fm/TFM5268296968.mp3"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:27:57.155Z",
-      "episodeCount": 187
+      "cachedAt": "2026-06-26T18:29:25.684Z",
+      "episodeCount": 188
     }
   },
   "machico": {
@@ -10261,7 +10276,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:27:57.840Z",
+      "cachedAt": "2026-06-26T18:29:26.260Z",
       "episodeCount": 186
     }
   },
@@ -11437,11 +11452,26 @@
           "link": null,
           "audioUrl": "https://traffic.megaphone.fm/TFM2312532717.mp3"
         }
+      },
+      {
+        "id": "tokyofm:nogizakasoudan:c1553226-7091-11f1-b971-cf06aec5e222",
+        "title": "#274 シンデレラでドレスを着て馬車を押す役",
+        "description": "TOKYO FM Podcastsでは地上波の番組終了後、\n\n21時にディレクターズカットver.をアップしています！！！\n\n（※BGM、SE、曲は入っておりません。\n\n田村さん、一ノ瀬さんのお声をご堪能下さい。\n\n公開期間は1年間です。）\n\n\n\n本編に入りきらなかったパートも\n\nディレクターズカット版としてお聞きいただけます！\n\n\n\n\n\n田村さん曰くホタルは卑怯!?\n\n\n\nTOKYO FM ポッドキャスト限定のアフタートークもあります！\n\n公開収録で演劇で主演を務めると相談してくれた方からその後のご報告が！\n\n田村さんがやったことのある舞台の役は……\n\n\n\n【今週のトピックス】\n\n・#わたあめびよりやめないで\n\n・海派？森派？\n\n・水が苦手な一ノ瀬さんと天才の田村さん\n\n・ほっこりストーリー\n\n・幼稚園の思い出\n\n・はやり言葉を作りたい！\n\n・ベルキングにツボる一ノ瀬さん\n\n\n\nメッセージを送ってくれた方の中から\n\n毎週2名様に番組缶バッチをプレゼント！\n\n番組へのメッセージはこちらから！\n\n⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠【乃木談メッセージフォーム】",
+        "publishedAt": "Fri, 26 Jun 2026 12:00:00 -0000",
+        "publishedAtUnix": 1782475200,
+        "thumbnail": "https://megaphone.imgix.net/podcasts/c1553226-7091-11f1-b971-cf06aec5e222/image/bd01a91ff51712ce91a49ebd20bc7783.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+        "durationSeconds": 2181,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "c1553226-7091-11f1-b971-cf06aec5e222",
+          "link": null,
+          "audioUrl": "https://traffic.megaphone.fm/TFM3511105441.mp3"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:27:58.554Z",
-      "episodeCount": 77
+      "cachedAt": "2026-06-26T18:29:26.969Z",
+      "episodeCount": 78
     }
   }
 }

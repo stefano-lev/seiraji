@@ -409,7 +409,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:27:57.027Z",
+      "cachedAt": "2026-06-26T18:29:24.710Z",
       "episodeCount": 32
     }
   },
@@ -1387,7 +1387,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:27:59.798Z",
+      "cachedAt": "2026-06-26T18:29:26.883Z",
       "episodeCount": 79
     }
   },
@@ -1480,11 +1480,23 @@
         "platformMetadata": {
           "displayDate": "6/10"
         }
+      },
+      {
+        "id": "nagisa-sa-6/24-Op.7",
+        "title": "Op.7",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "6/24"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:01.525Z",
-      "episodeCount": 6
+      "cachedAt": "2026-06-26T18:29:29.448Z",
+      "episodeCount": 7
     }
   },
   "aoi": {
@@ -1827,7 +1839,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:03.723Z",
+      "cachedAt": "2026-06-26T18:29:31.748Z",
       "episodeCount": 26
     }
   },
@@ -2259,7 +2271,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:08.527Z",
+      "cachedAt": "2026-06-26T18:29:34.451Z",
       "episodeCount": 33
     }
   },
@@ -2821,7 +2833,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:10.849Z",
+      "cachedAt": "2026-06-26T18:29:36.388Z",
       "episodeCount": 44
     }
   },
@@ -2957,7 +2969,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:13.471Z",
+      "cachedAt": "2026-06-26T18:29:38.764Z",
       "episodeCount": 9
     }
   },
@@ -4060,7 +4072,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:16.198Z",
+      "cachedAt": "2026-06-26T18:29:41.249Z",
       "episodeCount": 89
     }
   },
@@ -4781,11 +4793,25 @@
         "platformMetadata": {
           "displayDate": "6/11"
         }
+      },
+      {
+        "id": "tomorinokoto-6/25-第58回",
+        "title": "第58回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "displayDate": "6/25"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:20.032Z",
-      "episodeCount": 57
+      "cachedAt": "2026-06-26T18:29:43.793Z",
+      "episodeCount": 58
     }
   },
   "neppasio": {
@@ -5486,7 +5512,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:22.224Z",
+      "cachedAt": "2026-06-26T18:29:46.521Z",
       "episodeCount": 55
     }
   },
@@ -6280,7 +6306,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:25.867Z",
+      "cachedAt": "2026-06-26T18:29:49.246Z",
       "episodeCount": 64
     }
   }

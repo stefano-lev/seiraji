@@ -14,14 +14,7 @@
         "かくてる"
       ],
       "schedule": null,
-      "categories": [
-        "applepodcasts",
-        "Comedy",
-        "Podcasts",
-        "Arts",
-        "Performing Arts",
-        "Comedy"
-      ]
+      "categories": []
     },
     "episodes": [
       {
@@ -386,7 +379,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-24T23:12:21.475Z",
+      "cachedAt": "2026-06-26T18:29:23.172Z",
       "episodeCount": 15
     }
   },
@@ -4172,7 +4165,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-24T23:25:57.829Z",
+      "cachedAt": "2026-06-26T18:29:23.925Z",
       "episodeCount": 171
     }
   },
@@ -4636,7 +4629,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-24T23:20:55.691Z",
+      "cachedAt": "2026-06-26T18:29:24.262Z",
       "episodeCount": 20
     }
   }

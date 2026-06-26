@@ -649,7 +649,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:27:58.182Z",
+      "cachedAt": "2026-06-26T18:29:25.498Z",
       "episodeCount": 35
     }
   },
@@ -1753,11 +1753,33 @@
           "expires": "2026-07-02T20:55:00+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "W6RLJZVGJ9",
+        "title": "ゲスト:サンシャイン池崎(7月2日放送分)",
+        "description": "今回のゲストはお笑い芸人のサンシャイン池崎。東京０３とコント「後輩オンリー」で共演する。池崎が演じるのは、やたら大声で元気のいい、飯塚や角田の後輩の若手社員の役。コントの後は、池崎がバイク川崎バイクと組んで開催している単独公演の話や池崎がそもそもどういう経緯で芸人になり今の芸風にたどりついたかの話、さらに池崎が持ち込んだテーマ「初チューの話」についてトークを展開する。ナレーションは声優の戸松遥。\n＜コント＞「後輩オンリー」　作：岩崎う大",
+        "publishedAt": "2026-07-02T20:05:00+09:00",
+        "publishedAtUnix": 1782990300,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/W6RLJZVGJ9/",
+          "radioEpisodeId": "W6RLJZVGJ9",
+          "radioSeriesId": "Y5MG659NGN",
+          "guests": [
+            "サンシャイン池崎"
+          ],
+          "expires": "2026-07-09T20:55:00+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:02.189Z",
-      "episodeCount": 58
+      "cachedAt": "2026-06-26T18:29:29.459Z",
+      "episodeCount": 59
     }
   },
   "X4WNNM96KL": {
@@ -2600,11 +2622,33 @@
           "expires": "2026-07-02T21:55:00+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "Y5V7YRQV76",
+        "title": "ゲスト:高橋万太郎(7月2日放送分)",
+        "description": "プライベートでも仲が良い、いとうあさこと大久保佳代子が、ゲストと一緒に女子会のノリでしゃべりまくるラジオバラエティー。ゲストは醤油のスペシャリスト高橋万太郎。",
+        "publishedAt": "2026-07-02T21:05:00+09:00",
+        "publishedAtUnix": 1782993900,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/Y5V7YRQV76/",
+          "radioEpisodeId": "Y5V7YRQV76",
+          "radioSeriesId": "X4WNNM96KL",
+          "guests": [
+            "高橋万太郎"
+          ],
+          "expires": "2026-07-09T21:55:00+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:05.639Z",
-      "episodeCount": 44
+      "cachedAt": "2026-06-26T18:29:33.021Z",
+      "episodeCount": 45
     }
   },
   "Q3PKWJX562": {
@@ -7568,7 +7612,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:16.560Z",
+      "cachedAt": "2026-06-26T18:29:44.521Z",
       "episodeCount": 274
     }
   },
@@ -8638,7 +8682,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:19.528Z",
+      "cachedAt": "2026-06-26T18:29:48.272Z",
       "episodeCount": 58
     }
   }

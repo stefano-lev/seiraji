@@ -540,7 +540,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:27:59.141Z",
+      "cachedAt": "2026-06-26T18:29:25.373Z",
       "episodeCount": 29
     },
     "raw": {
@@ -1227,7 +1227,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:00.346Z",
+      "cachedAt": "2026-06-26T18:29:26.270Z",
       "episodeCount": 3
     },
     "raw": {
@@ -1372,7 +1372,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:00.868Z",
+      "cachedAt": "2026-06-26T18:29:27.179Z",
       "episodeCount": 2
     },
     "raw": {
@@ -7747,7 +7747,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:07.941Z",
+      "cachedAt": "2026-06-26T18:29:33.946Z",
       "episodeCount": 348
     },
     "raw": {
@@ -18073,11 +18073,47 @@
           "publicType": "member",
           "game": "逆転裁判123 成歩堂セレクション"
         }
+      },
+      {
+        "id": "openrec:o7z4y5vm5zl",
+        "title": "相羽あいなのアイバダービー#239",
+        "description": "©CAPCOM\n\n★番組後半はチャンネルサブスク会員限定配信となります。チャンネルサブスクについては下記リンクから！\nどのサブスクプランでも、番組後半と過去のアーカイブが視聴できます！\nhttps://www.openrec.tv/subscription/user/aiba_derby\n\n▼番組限定コミュニティ（Discord）の参加方法はこちら！\nhttps://openrecnext.amebaownd.com/posts/11101764",
+        "publishedAt": "2026-06-24T20:00:22+09:00",
+        "publishedAtUnix": 1782298822,
+        "thumbnail": "https://image-handler.openrec.tv/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDEyL25fMzMwMTE1MF8yMDI2MDYyMjIyMTcyMy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJwbmcifQ==",
+        "durationSeconds": 10699,
+        "tags": [
+          "声優"
+        ],
+        "platformMetadata": {
+          "views": 418,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "逆転裁判123 成歩堂セレクション"
+        }
+      },
+      {
+        "id": "openrec:ovrdvekxlrj",
+        "title": "あいなの厩舎#239",
+        "description": "▼番組限定コミュニティ（Discord）の参加方法はこちら！\n\nhttps://openrecnext.amebaownd.com/posts/11101764\n　\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n",
+        "publishedAt": "2026-06-24T22:59:45+09:00",
+        "publishedAtUnix": 1782309585,
+        "thumbnail": "https://image-handler.openrec.tv/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDEyL25fMzMwMTE1Ml8yMDI2MDYyMjIyMTc1MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJqcGcifQ==",
+        "durationSeconds": 621,
+        "tags": [
+          "声優"
+        ],
+        "platformMetadata": {
+          "views": 124,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "雑談"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:16.442Z",
-      "episodeCount": 482
+      "cachedAt": "2026-06-26T18:29:42.752Z",
+      "episodeCount": 484
     },
     "raw": {
       "site": {
@@ -23300,7 +23336,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:20.817Z",
+      "cachedAt": "2026-06-26T18:29:48.669Z",
       "episodeCount": 192
     },
     "raw": {
@@ -25750,7 +25786,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:25.117Z",
+      "cachedAt": "2026-06-26T18:29:50.279Z",
       "episodeCount": 109
     },
     "raw": {
@@ -28274,7 +28310,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:27.782Z",
+      "cachedAt": "2026-06-26T18:29:51.519Z",
       "episodeCount": 96
     },
     "raw": {
@@ -30518,7 +30554,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:30.008Z",
+      "cachedAt": "2026-06-26T18:29:52.660Z",
       "episodeCount": 84
     },
     "raw": {
@@ -31768,11 +31804,27 @@
           "publicType": "member",
           "game": "雑談"
         }
+      },
+      {
+        "id": "openrec:pnzgvd2jvzy",
+        "title": "『内田彩のポンポンといっしょ！』　第31回",
+        "description": "内田彩がパンダのポンポンといっしょにお届けする新番組「内田彩のポンポンといっしょ！」\n「with me」をテーマに内田さんと視聴者のみんなと一緒になって遊んだりゲームしたりする番組です！\n\n▼▼チャンネル会員登録はこちら▼▼\nhttps://www.openrec.tv/subscription/user/uchimizu\n\n▼▼限定コミュニティ（Discord）の参加方法はこちら▼▼\nhttps://openrecnext.amebaownd.com/posts/11101764",
+        "publishedAt": "2026-06-25T19:56:35+09:00",
+        "publishedAtUnix": 1782384995,
+        "thumbnail": "https://image-handler.openrec.tv/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMyOTg3L25fMzI5ODY4OV8yMDI2MDYwMjE2MDU0MS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJwbmcifQ==",
+        "durationSeconds": 4056,
+        "tags": [],
+        "platformMetadata": {
+          "views": 206,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "雑談"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:31.505Z",
-      "episodeCount": 65
+      "cachedAt": "2026-06-26T18:29:54.136Z",
+      "episodeCount": 66
     },
     "raw": {
       "site": {
@@ -32405,7 +32457,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:32.928Z",
+      "cachedAt": "2026-06-26T18:29:54.727Z",
       "episodeCount": 15
     },
     "raw": {
@@ -33485,7 +33537,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:34.772Z",
+      "cachedAt": "2026-06-26T18:29:56.079Z",
       "episodeCount": 54
     },
     "raw": {
@@ -34025,7 +34077,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:35.714Z",
+      "cachedAt": "2026-06-26T18:29:58.466Z",
       "episodeCount": 22
     },
     "raw": {
@@ -35339,7 +35391,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-23T16:28:36.913Z",
+      "cachedAt": "2026-06-26T18:30:00.120Z",
       "episodeCount": 65
     }
   }
