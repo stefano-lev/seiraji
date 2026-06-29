@@ -1,0 +1,45 @@
+{
+  "OBC:20260630030000": {
+    "id": "radiko-radio:OBC:20260630030000",
+    "source": "imported",
+    "platform": "radiko-radio",
+    "platformId": "OBC:20260630030000",
+    "slug": "OBC-20260630030000",
+    "url": "https://radiko.jp/#!/ts/OBC/20260630030000",
+    "program": {
+      "title": "早見沙織のふり～すたいる♪",
+      "description": null,
+      "thumbnail": "https://program-static.cf.radiko.jp/4662b810-94b9-4e15-a303-61dbdcfe260e.jpeg",
+      "hosts": [
+        "早見沙織"
+      ],
+      "schedule": "03:00 - 03:30",
+      "categories": []
+    },
+    "episodes": [
+      {
+        "id": "radiko-radio:OBC:20260630030000",
+        "title": "早見沙織のふり～すたいる♪",
+        "description": null,
+        "publishedAt": "2026-06-30T03:00:00+09:00",
+        "publishedAtUnix": 1782756000,
+        "thumbnail": "https://program-static.cf.radiko.jp/4662b810-94b9-4e15-a303-61dbdcfe260e.jpeg",
+        "durationSeconds": 1800,
+        "tags": [
+          "OBC"
+        ],
+        "platformMetadata": {
+          "stationId": "OBC",
+          "ft": "20260630030000",
+          "to": "20260630033000",
+          "externalUrl": null,
+          "radikoUrl": "https://radiko.jp/#!/ts/OBC/20260630030000"
+        }
+      }
+    ],
+    "meta": {
+      "cachedAt": "2026-06-29T19:15:10.243Z",
+      "episodeCount": 1
+    }
+  }
+}

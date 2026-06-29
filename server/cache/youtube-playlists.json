@@ -605,7 +605,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:22.909Z",
+      "cachedAt": "2026-06-29T19:59:42.241Z",
       "episodeCount": 13
     }
   },
@@ -14878,11 +14878,24 @@
           "ブルーアーカイブ",
           "ブルアカ"
         ]
+      },
+      {
+        "id": "youtube:drHvKr4-sQQ",
+        "title": "Private video",
+        "description": "",
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "duration": {
+          "raw": null,
+          "seconds": null
+        },
+        "tags": []
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:25.804Z",
-      "episodeCount": 288
+      "cachedAt": "2026-06-29T19:59:45.093Z",
+      "episodeCount": 289
     }
   },
   "PL-3jtV2TsyS2gtdveKjU8t3Isyp4aZMqT": {
@@ -16225,7 +16238,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:26.224Z",
+      "cachedAt": "2026-06-29T19:59:45.439Z",
       "episodeCount": 21
     }
   },
@@ -17357,7 +17370,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:26.947Z",
+      "cachedAt": "2026-06-29T19:59:46.031Z",
       "episodeCount": 23
     }
   },
@@ -28743,7 +28756,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:30.087Z",
+      "cachedAt": "2026-06-29T19:59:48.779Z",
       "episodeCount": 249
     }
   },

@@ -1,7 +1,8 @@
+import type { Program, Episode } from '../types/media';
 import { XMLParser } from 'fast-xml-parser';
 import { getTokyoFMSlug } from '../utils/platformKeys';
 
-export async function scrapeTokyoFM(url: string) {
+export async function scrapeTokyoFM(url: string): Promise<Program> {
   const response = await fetch(url);
 
   if (!response.ok) {

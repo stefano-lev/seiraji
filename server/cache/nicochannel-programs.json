@@ -13,7 +13,9 @@
       "hosts": [
         "櫻井陽菜"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/904/thumbnail_image_path?time=1756815054"
     },
@@ -380,7 +382,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:24.768Z",
+      "cachedAt": "2026-06-29T19:59:43.793Z",
       "episodeCount": 30
     },
     "raw": {
@@ -575,7 +577,9 @@
       "hosts": [
         "瀬古梨愛"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/945/thumbnail_image_path?time=1760499117"
     },
@@ -894,7 +898,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:26.203Z",
+      "cachedAt": "2026-06-29T19:59:45.140Z",
       "episodeCount": 26
     },
     "raw": {
@@ -1108,7 +1112,9 @@
       "hosts": [
         "青山なぎさ"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/25/thumbnail_image_path?time=1705815439"
     },
@@ -2612,11 +2618,23 @@
           "mediaType": "movie",
           "views": 1300
         }
+      },
+      {
+        "id": "nicochannel:sm8qdU2nJXce2dARkNaQt8ad",
+        "title": "【会員限定】バズる！IMOダンス Short動画撮影！",
+        "publishedAt": "2026-06-29T09:00:00+09:00",
+        "publishedAtUnix": 1782691200,
+        "thumbnail": "https://cdn.nicochannel.jp/public_html/contents/video_pages/94128/thumbnail_path?time=1782716807",
+        "durationSeconds": 371,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 71
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:32.469Z",
-      "episodeCount": 125
+      "cachedAt": "2026-06-29T19:59:50.817Z",
+      "episodeCount": 126
     },
     "raw": {
       "site": {
@@ -2837,7 +2855,9 @@
       "hosts": [
         "伊達さゆり"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/38/thumbnail_image_path?time=1672555140"
     },
@@ -3612,7 +3632,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:37.541Z",
+      "cachedAt": "2026-06-29T19:59:55.472Z",
       "episodeCount": 64
     },
     "raw": {
@@ -3851,7 +3871,9 @@
       "hosts": [
         "絵森彩"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/218/thumbnail_image_path?time=1667310401"
     },
@@ -4962,7 +4984,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:41.251Z",
+      "cachedAt": "2026-06-29T19:59:59.167Z",
       "episodeCount": 92
     },
     "raw": {
@@ -5210,7 +5232,9 @@
       "hosts": [
         "野中ここな"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/313/thumbnail_image_path?time=1686055755"
     },
@@ -5673,7 +5697,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:44.501Z",
+      "cachedAt": "2026-06-29T20:00:03.293Z",
       "episodeCount": 38
     },
     "raw": {
@@ -5930,7 +5954,9 @@
       "hosts": [
         "月音こな"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/637/thumbnail_image_path?time=1760065317"
     },
@@ -6249,7 +6275,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:47.229Z",
+      "cachedAt": "2026-06-29T20:00:05.350Z",
       "episodeCount": 26
     },
     "raw": {
@@ -6515,7 +6541,9 @@
       "hosts": [
         "豊田萌絵"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/854/thumbnail_image_path?time=1768406914"
     },
@@ -6810,7 +6838,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:48.302Z",
+      "cachedAt": "2026-06-29T20:00:06.468Z",
       "episodeCount": 24
     },
     "raw": {
@@ -7032,7 +7060,9 @@
       "hosts": [
         "三宅美羽"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/839/thumbnail_image_path?time=1750406594"
     },
@@ -7471,7 +7501,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:50.203Z",
+      "cachedAt": "2026-06-29T20:00:08.562Z",
       "episodeCount": 36
     },
     "raw": {
@@ -7744,7 +7774,9 @@
       "hosts": [
         "湊みや"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/699/thumbnail_image_path?time=1747902111"
     },
@@ -7967,7 +7999,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:52.235Z",
+      "cachedAt": "2026-06-29T20:00:10.059Z",
       "episodeCount": 18
     },
     "raw": {
@@ -8162,7 +8194,9 @@
       "hosts": [
         "立石凛"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/654/thumbnail_image_path?time=1727779195"
     },
@@ -8685,7 +8719,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:54.202Z",
+      "cachedAt": "2026-06-29T20:00:11.951Z",
       "episodeCount": 43
     },
     "raw": {
@@ -8924,7 +8958,9 @@
       "hosts": [
         "佐々木李子"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/727/thumbnail_image_path?time=1743053793"
     },
@@ -9243,7 +9279,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:55.531Z",
+      "cachedAt": "2026-06-29T20:00:13.310Z",
       "episodeCount": 26
     },
     "raw": {
@@ -9465,7 +9501,9 @@
       "hosts": [
         "ラブライブ！サンシャイン!!"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/962/thumbnail_image_path?time=1761725615"
     },
@@ -11065,11 +11103,35 @@
           "mediaType": "movie",
           "views": 218
         }
+      },
+      {
+        "id": "nicochannel:sm42JAVQSHVru7mhB2cyeVtu",
+        "title": "【第381回】ラブライブ！サンシャイン!! Aqours浦の星女学院RADIO!!!【2024年1月17日配信分】",
+        "publishedAt": "2026-06-27T03:00:00+09:00",
+        "publishedAtUnix": 1782496800,
+        "thumbnail": "https://cdn.nicochannel.jp/public_html/contents/video_pages/92922/thumbnail_path?time=1782433485",
+        "durationSeconds": 1990,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 25
+        }
+      },
+      {
+        "id": "nicochannel:sm4ZBEyik34MR5LCXM9yt3m3",
+        "title": "【第380回】ラブライブ！サンシャイン!! Aqours浦の星女学院RADIO!!!【2024年1月10日配信分】",
+        "publishedAt": "2026-06-27T03:00:00+09:00",
+        "publishedAtUnix": 1782496800,
+        "thumbnail": "https://cdn.nicochannel.jp/public_html/contents/video_pages/92923/thumbnail_path?time=1782434013",
+        "durationSeconds": 1837,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 25
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:01.421Z",
-      "episodeCount": 133
+      "cachedAt": "2026-06-29T20:00:18.797Z",
+      "episodeCount": 135
     },
     "raw": {
       "site": {
@@ -11307,7 +11369,9 @@
       "hosts": [
         "梅澤めぐ"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/1042/thumbnail_image_path?time=1773122768"
     },
@@ -11398,7 +11462,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:02.113Z",
+      "cachedAt": "2026-06-29T20:00:19.406Z",
       "episodeCount": 7
     },
     "raw": {
@@ -11593,7 +11657,9 @@
       "hosts": [
         "ペイトン尚未"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/26/thumbnail_image_path?time=1770988964"
     },
@@ -12356,7 +12422,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:08.905Z",
+      "cachedAt": "2026-06-29T20:00:25.184Z",
       "episodeCount": 63
     },
     "raw": {
@@ -12616,7 +12682,9 @@
       "hosts": [
         "長月あおい"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/763/thumbnail_image_path?time=1744729090"
     },
@@ -12815,7 +12883,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:10.379Z",
+      "cachedAt": "2026-06-29T20:00:26.547Z",
       "episodeCount": 16
     },
     "raw": {
@@ -13010,7 +13078,9 @@
       "hosts": [
         "菅叶和"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.nicochannel.jp/public_html/site_design/fanclub_sites/324/thumbnail_image_path?time=1689246157"
     },
@@ -13449,7 +13519,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:13.275Z",
+      "cachedAt": "2026-06-29T20:00:29.694Z",
       "episodeCount": 36
     },
     "raw": {

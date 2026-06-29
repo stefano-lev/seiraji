@@ -1,3 +1,4 @@
+import type { Program, Episode } from '../types/media';
 import { normalizeEpisodes } from '../utils/normalizeEpisodes';
 
 const API_KEY = process.env.YOUTUBE_API_KEY;
@@ -8,7 +9,7 @@ function extractPlaylistId(url: string) {
   return u.searchParams.get('list');
 }
 
-export async function scrapeYoutubePlaylist(url: string) {
+export async function scrapeYoutubePlaylist(url: string): Promise<Program> {
   const playlistId = extractPlaylistId(url);
 
   if (!playlistId) {

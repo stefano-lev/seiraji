@@ -9,6 +9,8 @@ export interface Program {
 
   url: string;
 
+  episodesUrl?: string;
+
   source: 'imported' | 'manual';
 
   program: {
@@ -26,6 +28,8 @@ export interface Program {
     schedule?: string | null;
 
     categories?: string[];
+
+    twitter?: string | null;
   };
 
   episodes: Episode[];
@@ -54,14 +58,19 @@ export interface Episode {
 
   tags?: string[];
 
-  platformMetadata?: Record<string, never>;
+  platformMetadata?: Record<string, unknown>;
 }
 
 export type ProgramPreview = {
   title: string;
+
+  description: string | null;
+
+  thumbnail: string | null;
+
   hosts: string[];
-  description?: string;
-  thumbnail?: string;
+
   platform: string;
-  episodeCount?: number;
+
+  episodeCount: number;
 };

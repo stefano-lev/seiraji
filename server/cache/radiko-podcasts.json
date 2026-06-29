@@ -1,0 +1,306 @@
+{
+  "95636560-dbfa-41fc-9f82-c65ace0ab45b": {
+    "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b",
+    "source": "imported",
+    "platform": "radiko-podcast",
+    "platformId": "95636560-dbfa-41fc-9f82-c65ace0ab45b",
+    "slug": "95636560-dbfa-41fc-9f82-c65ace0ab45b",
+    "url": "https://radiko.jp/podcast/channels/95636560-dbfa-41fc-9f82-c65ace0ab45b",
+    "program": {
+      "title": "ともぽんのおなかぽんぽん",
+      "description": "まだまだ夜は始まったばかり、、、土曜日の夜は夜更かししちゃお！\nたのちぃたんなひと時でお腹も心もぽんぽんになって、「明日からもまた頑張ろう！」と思ってもらえるような番組です。",
+      "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+      "hosts": [
+        "OBSラジオ"
+      ],
+      "schedule": null,
+      "categories": []
+    },
+    "episodes": [
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:c4dfa521-8553-4c3e-9c52-018c446cf94d",
+        "title": "#84 １月フォト報告♡",
+        "description": "マルチタレント幸巴の冠ラジオ番組！！\n\n今回は『スマホの中身はなんじゃろなあ？』のコーナーをお届け！\nテーマは「 １月フォト報告 」！\n\nともぽんが２０２６年に入ってから撮影した直近の写真を大公開！\n公式インスタにて掲載予定です！お楽しみに～～！\n\n番組へのメッセージは公式Instagramのダイレクトメッセージから♪\nラジオネームとともに送ってください！",
+        "publishedAt": "2026-02-16T09:00:00.000Z",
+        "publishedAtUnix": 1771232400,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 443,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "c4dfa521-8553-4c3e-9c52-018c446cf94d",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/c4dfa521-8553-4c3e-9c52-018c446cf94d?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:7d73c4da-0caa-45d2-a31c-374621da2ec3",
+        "title": "#85 ニャンニャンウィークをご紹介！",
+        "description": "マルチタレント幸巴の冠ラジオ番組！！\n\n今回は、2月19日から大分市希望が丘「かぎのしっぽ」で開催された『ニャンニャンウィーク』を紹介！\nネコまみれになれるネコ好きにはたまらないイベントとなっております！\n美味しい情報もあるので、ぜひお聴きください♪\n\n番組へのメッセージは公式インスタグラムのダイレクトメッセージから！\nラジオネームとともに送ってください！",
+        "publishedAt": "2026-02-20T09:00:00.000Z",
+        "publishedAtUnix": 1771578000,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 585,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "7d73c4da-0caa-45d2-a31c-374621da2ec3",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/7d73c4da-0caa-45d2-a31c-374621da2ec3?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:40326e1e-6615-4a20-b81c-a60718830cc0",
+        "title": "#86 離乳食のアレコレや夜泣きのアレコレ！",
+        "description": "マルチタレント幸巴の冠ラジオ番組♪\n\n今回は「ともぽん、おかあたんになりました！」のコーナー！\n離乳食の工夫や夜泣き対策など、ともぽん的育児ライフハックをたくさん紹介しています！\nリスナーの皆さんの育児ライフハックも教えてください！！\n\n番組へのメッセージは公式インスタグラムのダイレクトメッセージから！\nラジオネームとともに送ってください！",
+        "publishedAt": "2026-03-02T09:00:00.000Z",
+        "publishedAtUnix": 1772442000,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 473,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "40326e1e-6615-4a20-b81c-a60718830cc0",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/40326e1e-6615-4a20-b81c-a60718830cc0?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:1b93a9fe-e27a-4879-9886-d93caf2775cb",
+        "title": "#87 声優になっちゃったってよ！！",
+        "description": "マルチタレント幸巴の冠ラジオ番組☆\n\n87回である今回は、声優になっちゃったってよ！！のコーナーをお届け！\nまん福隊からのリクエストも募集中♪\nともぽんにこんなアニメキャラクターを演じてほしい！というのがあれば\nぜひ送ってくださいね～！！\n\nメッセージは番組公式Instagramのダイレクトメッセージから！",
+        "publishedAt": "2026-03-09T09:00:00.000Z",
+        "publishedAtUnix": 1773046800,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 438,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "1b93a9fe-e27a-4879-9886-d93caf2775cb",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/1b93a9fe-e27a-4879-9886-d93caf2775cb?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:56216f89-60d9-4d24-ad4e-ec78c467bc7c",
+        "title": "#88 コープおおいたのおいちぃたんな情報をお届け！",
+        "description": "マルチタレント幸巴の冠ラジオ番組☆\n\n88回目である今回は、コープおおいたで期間限定に発売をされる\nスペシャルなセットについての話題をお届け！！\n\n番組へのメッセージはInstagramのダイレクトメッセージから！",
+        "publishedAt": "2026-03-16T09:00:00.000Z",
+        "publishedAtUnix": 1773651600,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 587,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "56216f89-60d9-4d24-ad4e-ec78c467bc7c",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/56216f89-60d9-4d24-ad4e-ec78c467bc7c?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:5a4fec2c-ab2e-4cb8-8473-325d7b7248b8",
+        "title": "#89 ともぽんオススメ！卒入学式のお祝いランキング！",
+        "description": "マルチタレント幸巴の冠ラジオ番組☆\n\n今回は「ともぽん厳選！卒入学式のおすすめプレゼントランキング！」\nを発表しています！\n人事異動で離れる方に挙げるプレゼントを困っている・・・\n卒業する先輩に何を渡そう・・・などなど！\nプレゼントに悩んでいる方には必見の内容です♪\nともぽんがガチで考えたので、だいぶリアルです。\n\n番組へのメッセージはInstagramのダイレクトメッセージから！\nラジオネームとともに送ってください！",
+        "publishedAt": "2026-03-23T09:00:00.000Z",
+        "publishedAtUnix": 1774256400,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 555,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "5a4fec2c-ab2e-4cb8-8473-325d7b7248b8",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/5a4fec2c-ab2e-4cb8-8473-325d7b7248b8?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:d0c62e56-1e0a-4069-90c7-eea62c673714",
+        "title": "#90 スマホの中身はなんじゃろなぁ？～2月フォト報告～",
+        "description": "マルチタレント幸巴の冠ラジオ番組☆\n\n90回目である今回は、ともぽんが2月に撮った写真の中で\nおすすめを紹介します！\n撮った写真は公式Instagramに投稿しているので、ぜひご確認ください！\n\n番組へのメッセージは公式Instagramのダイレクトメッセージから！\nラジオネームとともに教えてください！",
+        "publishedAt": "2026-03-30T09:00:00.000Z",
+        "publishedAtUnix": 1774861200,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 375,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "d0c62e56-1e0a-4069-90c7-eea62c673714",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/d0c62e56-1e0a-4069-90c7-eea62c673714?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:4735010a-8078-413a-bde9-1e9bc9bc57f9",
+        "title": "#91 おかあたんになりました！",
+        "description": "マルチタレント幸巴の冠ラジオ番組☆\n\n「おかあたんになりました！」のコーナーでは\nあと２か月ほどで１歳になるこみつおへの誕生日演出のお話などなど\n子育てエピソードがたくさん登場します！\n\nこのコーナーでは、先輩ママさんや、ママさんになる予定のママ仲間の皆さんからのメッセージをお待ちしています！\nお悩み・相談ごと・オススメしたいマタニティグッズのお話など、なんでもかまいません！\n色んなお話を一緒に共有しましょう！たくさんのメッセージお待ちしています！",
+        "publishedAt": "2026-04-06T09:00:00.000Z",
+        "publishedAtUnix": 1775466000,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 592,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "4735010a-8078-413a-bde9-1e9bc9bc57f9",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/4735010a-8078-413a-bde9-1e9bc9bc57f9?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:ccae9c5b-cca2-4e1d-8cad-fe3450aa25d9",
+        "title": "#92 Song Of ともぽん！",
+        "description": "マルチタレント幸巴の冠ラジオ番組☆\n\n９２回の今回は、最新曲から名曲まで、色んな楽曲を紹介するコーナーをお届け！\n曲中心のコーナーですが、著作権の関係で曲をのせることができません。\nご了承ください。\n\n番組へのメッセージは公式Instagramのダイレクトメッセージから！！",
+        "publishedAt": "2026-04-13T09:00:00.000Z",
+        "publishedAtUnix": 1776070800,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 386,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "ccae9c5b-cca2-4e1d-8cad-fe3450aa25d9",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/ccae9c5b-cca2-4e1d-8cad-fe3450aa25d9?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:b2f7e502-e450-404f-868a-cff00c6c2c59",
+        "title": "#93 ともぽん声優になっちゃったってよ！",
+        "description": "「ともぽん声優になっちゃったてよ！」のコーナー！夢だった声優の仕事が叶うともぽん。。。\n日々修行じゃ～！ということで、今回もまん福隊のみなさんから寄せられていたリクエストに答えつつ、\nさまざまなキャラクターに変身していくコーナー。\n\nまん福隊の皆さんからのリクエストも募集中です！たくさんのリクエストお待ちしております♪",
+        "publishedAt": "2026-04-20T09:00:00.000Z",
+        "publishedAtUnix": 1776675600,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 462,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "b2f7e502-e450-404f-868a-cff00c6c2c59",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/b2f7e502-e450-404f-868a-cff00c6c2c59?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:1aea8ec3-2e70-4be4-b31d-3cc329c84f03",
+        "title": "#94 トリビアクイズに挑戦！【100回記念に向けた特別なお知らせも！】",
+        "description": "ともぽんのおなかぽんぽんからSPなお知らせです！\n5月30日の放送をもって、ありがたいことに、100回を迎えます！！\nそこで、まん福隊のみなさんから100個の質問を募集したいと思います！\n\n5月30日の100回記念放送までに100個集めたいです！\n１００個集められなくても、みなさんのメッセージは５月３０日の放送で紹介いたします！\n\nなんの質問でもかまいません！気になることをどしどし送ってもらえたら嬉しいです♪\n質問・メッセージは公式インスタグラムのダイレクトメッセージから！\nラジオネームとともに送ってくださいね～！",
+        "publishedAt": "2026-04-27T09:00:00.000Z",
+        "publishedAtUnix": 1777280400,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 606,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "1aea8ec3-2e70-4be4-b31d-3cc329c84f03",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/1aea8ec3-2e70-4be4-b31d-3cc329c84f03?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:ee061dec-722d-452b-9869-e785863a88b4",
+        "title": "#95 GWに家族で楽しめるオススメスポット5選を発表！",
+        "description": "マルチタレント幸巴のラジオ番組！\n\nともぽん的！「GWに家族で楽しめるオススメスポット5選」を発表しました！\nこれが配信されるころには、GWが終わってますが、、、\nまた連休があったときは、実際に行ってみるのはいかがでしょうか？\n\n現在、ともぽんのおなかぽんぽんでは、まん福隊のみなさんから、5月30日の100回記念放送までに100個の質問を募集しています！\nなんの質問でもかまいません！気になることをどしどし送ってもらえたら嬉しいです♪\n質問・メッセージは公式インスタグラムのダイレクトメッセージから！\nラジオネームとともに送ってくださいね～！引き続き、たくさんのメッセージお待ちしています！",
+        "publishedAt": "2026-05-04T09:00:00.000Z",
+        "publishedAtUnix": 1777885200,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 422,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "ee061dec-722d-452b-9869-e785863a88b4",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/ee061dec-722d-452b-9869-e785863a88b4?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:9d56fee2-3db2-4ffd-97ad-c420fa04807c",
+        "title": "#96 2026年 春のフォト報告",
+        "description": "マルチタレント幸巴の冠ラジオ番組！！\n\n第96回は「スマホの中身はなんじゃろな？ ～春のフォト報告～」をお届け！\nともぽんのスマホの中身をのぞき聴き？できちゃいます！\nOA後に紹介をした写真を掲載します！\nみなさんお楽しみに～\n\n現在、ともぽんのおなかぽんぽんでは、まん福隊のみなさんから、5月30日の100回記念放送までに100個の質問を募集しています！\nなんの質問でもかまいません！気になることをどしどし送ってもらえたら嬉しいです♪\n質問・メッセージは公式インスタグラムのダイレクトメッセージから！\nラジオネームとともに送ってくださいね～！引き続き、たくさんのメッセージお待ちしています！",
+        "publishedAt": "2026-05-11T09:00:00.000Z",
+        "publishedAtUnix": 1778490000,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 495,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "9d56fee2-3db2-4ffd-97ad-c420fa04807c",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/9d56fee2-3db2-4ffd-97ad-c420fa04807c?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:fd282faf-d3e5-4e8f-bfec-0cf3369208fd",
+        "title": "#97 おかあたんになり、はや1年！",
+        "description": "マルチタレント幸巴の冠ラジオ番組♪\n\n第97回である今回は、母親になり1年がたつともぽんの現在の心境に迫るコーナー\n「 ともぽん、おかあたんになりました！ 」をお届け！\n\n★このコーナーでは、先輩ママさんや、ママさんになる予定のママ仲間の皆さんからのメッセージをお待ちしています！お悩み・相談ごと・オススメしたいマタニティグッズのお話など、なんでもかまいません！\n色んなお話を一緒に共有しましょう！たくさんのメッセージお待ちしています！",
+        "publishedAt": "2026-05-18T09:00:00.000Z",
+        "publishedAtUnix": 1779094800,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 551,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "fd282faf-d3e5-4e8f-bfec-0cf3369208fd",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/fd282faf-d3e5-4e8f-bfec-0cf3369208fd?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:e1b4fbfc-0073-4b6a-b495-1cee3f2b90de",
+        "title": "#98 ともぽん声優になっちゃったてよ！",
+        "description": "マルチタレント幸巴の冠ラジオ番組♪\n\n第98回は　「ともぽん声優になっちゃったてよ！」\n夢だった声優の仕事が叶ったともぽん。。。\n日々修行じゃ～！ということで、今回もまん福隊のみなさんから寄せられていたリクエストに答えつつ、\nさまざまなキャラクターに変身していくコーナー！\nまん福隊の皆さんからのリクエストも募集中です！たくさんのリクエストお待ちしております♪",
+        "publishedAt": "2026-05-25T09:00:00.000Z",
+        "publishedAtUnix": 1779699600,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 559,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "e1b4fbfc-0073-4b6a-b495-1cee3f2b90de",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/e1b4fbfc-0073-4b6a-b495-1cee3f2b90de?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:c9d17b56-ae7c-41be-98d9-f99160efee1b",
+        "title": "#99 「イマドキ高校生の最新！将来の夢調査」を紹介",
+        "description": "マルチタレント幸巴の冠ラジオ番組♪\n\n第99回である今回は、「ともぽんニュース」のコーナー！\nさまざまな種類のニュースを紹介しつつ、ともぽんのパーソナリティ力を磨きあげよう！！というコーナーです！\n今回のテーマは　「イマドキ高校生の最新！将来の夢調査　」を紹介します！",
+        "publishedAt": "2026-06-01T09:00:00.000Z",
+        "publishedAtUnix": 1780304400,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 579,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "c9d17b56-ae7c-41be-98d9-f99160efee1b",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/c9d17b56-ae7c-41be-98d9-f99160efee1b?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:b29fd1cc-0be1-4248-882c-d4ba294a0966",
+        "title": "#100回記念 「100個の質問に答えたろう～前編～」",
+        "description": "マルチタレント幸巴の冠ラジオ番組♪\n\nついに100回を迎えました！\n以前から募集をしていた100個の質問が集まったので\nどんどん答えていきます！\n\n番組へのメッセージは公式Instagramのダイレクトメッセージから！",
+        "publishedAt": "2026-06-08T09:00:00.000Z",
+        "publishedAtUnix": 1780909200,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 627,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "b29fd1cc-0be1-4248-882c-d4ba294a0966",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/b29fd1cc-0be1-4248-882c-d4ba294a0966?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:3563cb63-d5d3-4185-a0ec-c3044111f8b6",
+        "title": "#101 100の質問答えたろう！～続編～",
+        "description": "マルチタレント幸巴の冠ラジオ番組☆\n\n先週行った100の質問に答えるコーナーの続編！\nなかなかすべての質問を答え終えないのですが\n今回も本気で答えております！\n果たして、すべて答え終えているのか？！？！\n\nこうご期待！！！\n\n番組へのメッセージは公式Instagramのダイレクトメッセージから！",
+        "publishedAt": "2026-06-15T09:00:00.000Z",
+        "publishedAtUnix": 1781514000,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 598,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "3563cb63-d5d3-4185-a0ec-c3044111f8b6",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/3563cb63-d5d3-4185-a0ec-c3044111f8b6?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:072dec4c-acd9-4674-8f7b-47f179fe223f",
+        "title": "#102 100の質問答えたろう！～ファイナル～",
+        "description": "マルチタレント幸巴の冠ラジオ番組☆\n\n今回は、頂いた145個の質問全てにこたえきっております！\nみなさんお楽しみに～！\n\n番組へのメッセージは公式Instagramのダイレクトメッセージから！\nラジオネームをお忘れなく～！",
+        "publishedAt": "2026-06-22T09:00:00.000Z",
+        "publishedAtUnix": 1782118800,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 538,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "072dec4c-acd9-4674-8f7b-47f179fe223f",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/072dec4c-acd9-4674-8f7b-47f179fe223f?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:cdb49020-2ab7-404d-9d3a-b2f0243705a1",
+        "title": "#103 雨の日にオススメ！おうち時間の過ごし方５選★",
+        "description": "マルチタレント幸巴の冠ラジオ番組♪\n\n今回は「ともぽんの気になる木」\nテーマは〈 雨の日にオススメ！おうち時間の過ごし方５選★ 〉\nを紹介しております！\n\n番組へのメッセージは公式Instagramのダイレクトメッセージから！\nラジオネームとともに送ってくださいね～！",
+        "publishedAt": "2026-06-29T09:00:00.000Z",
+        "publishedAtUnix": 1782723600,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 619,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "cdb49020-2ab7-404d-9d3a-b2f0243705a1",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/cdb49020-2ab7-404d-9d3a-b2f0243705a1?play=auto"
+        }
+      }
+    ],
+    "meta": {
+      "cachedAt": "2026-06-29T19:59:42.819Z",
+      "episodeCount": 20
+    }
+  }
+}

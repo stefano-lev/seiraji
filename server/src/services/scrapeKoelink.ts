@@ -119,7 +119,7 @@ function normalizeKoelinkEpisodes(
 
         durationSeconds,
 
-        tags: normalizeCategories(item.category),
+        tags: normalizeCategories(item.categories),
 
         platformMetadata: {
           guid,

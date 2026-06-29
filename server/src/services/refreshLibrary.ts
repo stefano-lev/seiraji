@@ -82,6 +82,10 @@ export async function refreshLibrary() {
       platform: 'applepodcasts',
       programs: Object.values(caches.applepodcasts),
     },
+    {
+      platform: 'radiko-podcast',
+      programs: Object.values(caches.radikopodcasts),
+    },
   ];
 
   const activeGroups = platformGroups.filter(

@@ -13,7 +13,9 @@
       "hosts": [
         "大西亜玖璃"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/956/thumbnail_image_path?time=1761891641"
     },
@@ -212,7 +214,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:24.381Z",
+      "cachedAt": "2026-06-29T19:59:43.826Z",
       "episodeCount": 16
     },
     "raw": {
@@ -468,7 +470,9 @@
       "hosts": [
         "遠藤璃菜"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/874/thumbnail_image_path?time=1774341242"
     },
@@ -1084,11 +1088,35 @@
           "mediaType": "movie",
           "views": 192
         }
+      },
+      {
+        "id": "qlover:smUYNcBDDBwM8bxUby4g9L7u",
+        "title": "#47 (2026年6月20日更新)　「最高のダブルを考えよう！」",
+        "publishedAt": "2026-06-27T13:00:00+09:00",
+        "publishedAtUnix": 1782532800,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/91571/thumbnail_path?time=1781946789",
+        "durationSeconds": 769,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 29
+        }
+      },
+      {
+        "id": "qlover:smTygJ87jcaSBjZFQgAUKcWW",
+        "title": "#48 (2026年6月27日更新)　「璃菜マインドにおまかせ！」",
+        "publishedAt": "2026-06-27T13:00:00+09:00",
+        "publishedAtUnix": 1782532800,
+        "thumbnail": "https://cdn.qlover.jp/public_html/contents/video_pages/93540/thumbnail_path?time=1782548877",
+        "durationSeconds": 680,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 156
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:28.489Z",
-      "episodeCount": 51
+      "cachedAt": "2026-06-29T19:59:48.112Z",
+      "episodeCount": 53
     },
     "raw": {
       "site": {
@@ -1360,7 +1388,9 @@
       "hosts": [
         "伊達さゆり"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/751/thumbnail_image_path?time=1775015477"
     },
@@ -4043,7 +4073,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:39.678Z",
+      "cachedAt": "2026-06-29T19:59:59.251Z",
       "episodeCount": 223
     },
     "raw": {
@@ -4265,7 +4295,9 @@
       "hosts": [
         "鈴原希実"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/744/thumbnail_image_path?time=1774848607"
     },
@@ -6132,7 +6164,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:52.776Z",
+      "cachedAt": "2026-06-29T20:00:11.758Z",
       "episodeCount": 155
     },
     "raw": {
@@ -6354,7 +6386,9 @@
       "hosts": [
         "三宅美羽"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/818/thumbnail_image_path?time=1771323234"
     },
@@ -7057,7 +7091,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:57.006Z",
+      "cachedAt": "2026-06-29T20:00:15.852Z",
       "episodeCount": 58
     },
     "raw": {
@@ -7313,7 +7347,9 @@
       "hosts": [
         "指出毬亜"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/735/thumbnail_image_path?time=1742907729"
     },
@@ -9108,7 +9144,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:03.040Z",
+      "cachedAt": "2026-06-29T20:00:21.581Z",
       "episodeCount": 149
     },
     "raw": {
@@ -9364,7 +9400,9 @@
       "hosts": [
         "上坂すみれ"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/1097/thumbnail_image_path?time=1774265312"
     },
@@ -9539,7 +9577,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:05.152Z",
+      "cachedAt": "2026-06-29T20:00:23.010Z",
       "episodeCount": 14
     }
   },
@@ -9557,7 +9595,9 @@
       "hosts": [
         "東山奈央"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/740/thumbnail_image_path?time=1747650070"
     },
@@ -10416,7 +10456,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:11.275Z",
+      "cachedAt": "2026-06-29T20:00:28.125Z",
       "episodeCount": 71
     }
   },
@@ -10434,7 +10474,9 @@
       "hosts": [
         "春咲暖"
       ],
-      "category": "声優",
+      "categories": [
+        "声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/819/thumbnail_image_path?time=1778078720"
     },
@@ -11761,7 +11803,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:15.811Z",
+      "cachedAt": "2026-06-29T20:00:32.918Z",
       "episodeCount": 110
     }
   },
@@ -11779,7 +11821,9 @@
       "hosts": [
         "虹のコンキスタドール"
       ],
-      "category": "アイドル",
+      "categories": [
+        "アイドル"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.qlover.jp/public_html/site_design/fanclub_sites/1075/thumbnail_image_path?time=1773902730"
     },
@@ -11942,7 +11986,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:16.857Z",
+      "cachedAt": "2026-06-29T20:00:33.919Z",
       "episodeCount": 13
     }
   }

@@ -116,3 +116,48 @@ export function getApplePodcastId(url: string): string {
 
   return match[1];
 }
+
+export function isRadikoPodcastUrl(url: string) {
+  const parsed = new URL(url);
+
+  return (
+    parsed.hostname.includes('radiko.jp') &&
+    parsed.pathname.startsWith('/podcast/channels/')
+  );
+}
+
+export function isRadikoTimeshiftUrl(url: string) {
+  const parsed = new URL(url);
+
+  return (
+    parsed.hostname.includes('radiko.jp') && parsed.hash.startsWith('#!/ts/')
+  );
+}
+
+export function getRadikoPodcastChannelId(url: string): string {
+  const parsed = new URL(url);
+
+  const match = parsed.pathname.match(/\/podcast\/channels\/([a-f0-9-]+)/i);
+
+  if (!match) {
+    throw new Error('Invalid radiko podcast channel URL');
+  }
+
+  return match[1];
+}
+
+export function getRadikoTimeshiftKey(url: string) {
+  const parsed = new URL(url);
+
+  const match = parsed.hash.match(/^#!\/ts\/([^/]+)\/(\d{14})/);
+
+  if (!match) {
+    throw new Error('Invalid radiko time-free URL');
+  }
+
+  return {
+    stationId: match[1],
+    ft: match[2],
+    date: match[2].slice(0, 8),
+  };
+}

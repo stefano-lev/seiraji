@@ -1,6 +1,7 @@
+import type { Program, Episode } from '../types/media';
 import { normalizeEpisodes } from '../utils/normalizeEpisodes';
 
-export async function scrapeOpenrec(url: string) {
+export async function scrapeOpenrec(url: string): Promise<Program> {
   const slug = new URL(url).pathname.split('/').filter(Boolean)[1];
 
   const [baseRes, episodes] = await Promise.all([

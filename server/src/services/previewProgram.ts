@@ -9,45 +9,21 @@ import { scrapeTokyoFM } from './scrapeTokyoFM';
 import { scrapeANN } from './scrapeANN';
 import { scrapeKoelink } from './scrapeKoelink';
 import { scrapeApplePodcast } from './scrapeApplePodcast';
+import { scrapeRadikoPodcast } from './scrapeRadikoPodcast';
+import { scrapeRadikoTimeshift } from './scrapeRadikoTimeshift';
 
-import type { ProgramPreview } from '../types/media.ts';
+import type { Program, ProgramPreview } from '../types/media.ts';
+
+import {
+  isRadikoPodcastUrl,
+  isRadikoTimeshiftUrl,
+} from '../utils/platformKeys';
 
 export async function previewProgram(
   url: string,
   hostOverride?: string
 ): Promise<ProgramPreview> {
-  const hostname = new URL(url).hostname;
-
-  let data;
-
-  if (hostname.includes('audee-membership.jp')) {
-    data = await scrapeAudee(url);
-  } else if (hostname.includes('onsen.ag')) {
-    data = await scrapeOnsen(url);
-  } else if (
-    hostname.includes('youtube.com') ||
-    hostname.includes('youtu.be')
-  ) {
-    data = await scrapeYoutubePlaylist(url);
-  } else if (hostname.includes('qlover.jp')) {
-    data = await scrapeQlover(url);
-  } else if (hostname.includes('openrec.tv')) {
-    data = await scrapeOpenrec(url);
-  } else if (hostname.includes('nicochannel.jp')) {
-    data = await scrapeNicochannel(url);
-  } else if (hostname.includes('nhk.jp')) {
-    data = await scrapeNHK(url);
-  } else if (hostname.includes('tfm.co.jp')) {
-    data = await scrapeTokyoFM(url);
-  } else if (hostname.includes('podcast.1242.com')) {
-    data = await scrapeANN(url);
-  } else if (hostname.includes('koelink.co.jp')) {
-    data = await scrapeKoelink(url);
-  } else if (hostname.includes('podcasts.apple.com')) {
-    data = await scrapeApplePodcast(url);
-  } else {
-    throw new Error('Unsupported platform');
-  }
+  const data = await scrapeProgramForPreview(url);
 
   return {
     title: data.program.title,
@@ -64,19 +40,81 @@ export async function previewProgram(
 
     episodeCount: data.episodes.length,
   };
+}
 
-  function normalizePreviewHosts(value: string[] | string | null | undefined) {
-    if (Array.isArray(value)) {
-      return value.map((host) => host.trim()).filter(Boolean);
-    }
+async function scrapeProgramForPreview(url: string): Promise<Program> {
+  const hostname = new URL(url).hostname;
 
-    if (typeof value === 'string') {
-      return value
-        .split(',')
-        .map((host) => host.trim())
-        .filter(Boolean);
-    }
-
-    return [];
+  if (hostname.includes('audee-membership.jp')) {
+    return scrapeAudee(url);
   }
+
+  if (hostname.includes('onsen.ag')) {
+    return scrapeOnsen(url);
+  }
+
+  if (hostname.includes('youtube.com') || hostname.includes('youtu.be')) {
+    return scrapeYoutubePlaylist(url);
+  }
+
+  if (hostname.includes('qlover.jp')) {
+    return scrapeQlover(url);
+  }
+
+  if (hostname.includes('openrec.tv')) {
+    return scrapeOpenrec(url);
+  }
+
+  if (hostname.includes('nicochannel.jp')) {
+    return scrapeNicochannel(url);
+  }
+
+  if (hostname.includes('nhk.jp')) {
+    return scrapeNHK(url);
+  }
+
+  if (hostname.includes('tfm.co.jp')) {
+    return scrapeTokyoFM(url);
+  }
+
+  if (hostname.includes('podcast.1242.com')) {
+    return scrapeANN(url);
+  }
+
+  if (hostname.includes('koelink.co.jp')) {
+    return scrapeKoelink(url);
+  }
+
+  if (hostname.includes('podcasts.apple.com')) {
+    return scrapeApplePodcast(url);
+  }
+
+  if (hostname.includes('radiko.jp')) {
+    if (isRadikoPodcastUrl(url)) {
+      return scrapeRadikoPodcast(url);
+    }
+
+    if (isRadikoTimeshiftUrl(url)) {
+      return scrapeRadikoTimeshift(url);
+    }
+
+    throw new Error('Unsupported radiko URL pattern');
+  }
+
+  throw new Error('Unsupported platform');
+}
+
+function normalizePreviewHosts(value: string[] | string | null | undefined) {
+  if (Array.isArray(value)) {
+    return value.map((host) => host.trim()).filter(Boolean);
+  }
+
+  if (typeof value === 'string') {
+    return value
+      .split(',')
+      .map((host) => host.trim())
+      .filter(Boolean);
+  }
+
+  return [];
 }

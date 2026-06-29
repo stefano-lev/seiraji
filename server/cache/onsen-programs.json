@@ -11,7 +11,7 @@
       "description": "声優・月音こなさんのソロラジオ！\n「きつねびより」晴れてたら急に雨が降るような気まぐれな天気。\n月音こなが、その日のテンションに合わせて、気まぐれにお届けします♪\n",
       "thumbnail": "https://d3bzklg4lms4gh.cloudfront.net/program_info/twitter_share_image/default/production/dc/b3/e3ddb6576591dc89fcf6a8d4656fa16ee711/image?v=1777879870",
       "hosts": "月音こな",
-      "categories": null,
+      "categories": [],
       "schedule": "隔週月曜日配信"
     },
     "episodes": [
@@ -406,11 +406,23 @@
         "platformMetadata": {
           "displayDate": "6/15"
         }
+      },
+      {
+        "id": "kona-6/29-第33回",
+        "title": "第33回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "6/29"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:24.710Z",
-      "episodeCount": 32
+      "cachedAt": "2026-06-29T19:59:43.425Z",
+      "episodeCount": 33
     }
   },
   "nako": {
@@ -425,7 +437,7 @@
       "description": "声優・岬なこさんのソロラジオ！\nこの番組は、声優として、アーティストとして、そして一人の人間として、成長していく岬なこさんをみんなで見守っていくラジオです！",
       "thumbnail": "https://d3bzklg4lms4gh.cloudfront.net/program_info/twitter_share_image/default/production/77/2a/b0b6afd94d7a1c4fcd4adb57dc0f4053a22b/image?v=1778032848",
       "hosts": "岬なこ",
-      "categories": null,
+      "categories": [],
       "schedule": "隔週水曜日配信"
     },
     "episodes": [
@@ -1387,7 +1399,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:26.883Z",
+      "cachedAt": "2026-06-29T19:59:47.827Z",
       "episodeCount": 79
     }
   },
@@ -1403,7 +1415,7 @@
       "description": "「青山なぎさ」とは？\n声優・アーティスト。そして趣味：ミュージカル鑑賞・小鳥と戯れること、\n特技：クラシックバレエ。\nそれはまだ「あおやまなぎさ」1文字目「あ」の話。\nこの番組はリスナーと青山なぎさの新しい一面を見つけていくことで\n本人でさえまだ知らない７文字目の「さ」までたどり着くための番組。",
       "thumbnail": "https://d3bzklg4lms4gh.cloudfront.net/program_info/twitter_share_image/default/production/cf/2f/1ce26855ee74a26eb10202597e8fdc7dbfeb/image?v=1778641357",
       "hosts": "青山なぎさ",
-      "categories": null,
+      "categories": [],
       "schedule": "隔週水曜配信"
     },
     "episodes": [
@@ -1495,7 +1507,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:29.448Z",
+      "cachedAt": "2026-06-29T19:59:49.722Z",
       "episodeCount": 7
     }
   },
@@ -1511,7 +1523,7 @@
       "description": "声優・長月あおいさんのソロラジオ！\nかわいいといえば！長月！長月といえば！あおい！と言われるように\nさまざまな企画にチャレンジしていきます！\nリスナーの皆さんにとって「唯一無二」の存在になれるよう頑張ります！\n初回配信は6月30日（月）20：00から\n【SNSタグ　＃あおわん】で楽しみましょう！",
       "thumbnail": "https://d3bzklg4lms4gh.cloudfront.net/program_info/twitter_share_image/default/production/53/35/22fdef4d0dd5559a12a956f23c8ea4f28c17/image?v=1779096479",
       "hosts": "長月あおい",
-      "categories": null,
+      "categories": [],
       "schedule": "隔週月曜日20時配信"
     },
     "episodes": [
@@ -1839,7 +1851,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:31.748Z",
+      "cachedAt": "2026-06-29T19:59:52.180Z",
       "episodeCount": 26
     }
   },
@@ -1855,7 +1867,7 @@
       "description": "佐々木琴子さんのソロラジオ番組が4月1日より配信開始！\nいつも応援してくれているファンの方も、\nはじめての方もこれからよろしくお願いします！",
       "thumbnail": "https://d3bzklg4lms4gh.cloudfront.net/program_info/twitter_share_image/default/production/2f/fb/d4d687124a5a6e9949b760e92abec8eb3f51/image?v=1778554947",
       "hosts": "佐々木琴子",
-      "categories": null,
+      "categories": [],
       "schedule": "隔週火曜配信"
     },
     "episodes": [
@@ -2271,7 +2283,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:34.451Z",
+      "cachedAt": "2026-06-29T19:59:54.421Z",
       "episodeCount": 33
     }
   },
@@ -2291,7 +2303,7 @@
         "七瀬つむぎ",
         "松田彩音"
       ],
-      "categories": null,
+      "categories": [],
       "schedule": ""
     },
     "episodes": [
@@ -2833,7 +2845,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:36.388Z",
+      "cachedAt": "2026-06-29T19:59:57.217Z",
       "episodeCount": 44
     }
   },
@@ -2853,7 +2865,7 @@
         "飯田ヒカル",
         "花岩香奈"
       ],
-      "categories": null,
+      "categories": [],
       "schedule": "隔週火曜日配信"
     },
     "episodes": [
@@ -2969,7 +2981,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:38.764Z",
+      "cachedAt": "2026-06-29T19:59:59.629Z",
       "episodeCount": 9
     }
   },
@@ -2994,7 +3006,7 @@
         "飯塚麻結",
         "村上まなつ"
       ],
-      "categories": null,
+      "categories": [],
       "schedule": "毎月第1、3水曜配信"
     },
     "episodes": [
@@ -4072,7 +4084,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:41.249Z",
+      "cachedAt": "2026-06-29T20:00:02.200Z",
       "episodeCount": 89
     }
   },
@@ -4090,7 +4102,7 @@
       "hosts": [
         "楠木ともり"
       ],
-      "categories": null,
+      "categories": [],
       "schedule": "隔週木曜日配信"
     },
     "episodes": [
@@ -4810,7 +4822,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:43.793Z",
+      "cachedAt": "2026-06-29T20:00:06.200Z",
       "episodeCount": 58
     }
   },
@@ -4828,7 +4840,7 @@
       "hosts": [
         "希水しお"
       ],
-      "categories": null,
+      "categories": [],
       "schedule": "隔週木曜配信"
     },
     "episodes": [
@@ -5512,7 +5524,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:46.521Z",
+      "cachedAt": "2026-06-29T20:00:08.347Z",
       "episodeCount": 55
     }
   },
@@ -5530,7 +5542,7 @@
       "hosts": [
         "内田真礼"
       ],
-      "categories": null,
+      "categories": [],
       "schedule": "毎週月曜13時配信"
     },
     "episodes": [
@@ -6303,11 +6315,23 @@
         "platformMetadata": {
           "displayDate": "6/22"
         }
+      },
+      {
+        "id": "maaya-6/29-第65回",
+        "title": "第65回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "6/29"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:49.246Z",
-      "episodeCount": 64
+      "cachedAt": "2026-06-29T20:00:10.943Z",
+      "episodeCount": 65
     }
   }
 }

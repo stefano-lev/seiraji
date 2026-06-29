@@ -1,9 +1,9 @@
 import * as cheerio from 'cheerio';
-
+import type { Program, Episode } from '../types/media';
 import { normalizeHosts } from '../utils/normalizeHosts';
 import { getNHKSeriesId } from '../utils/platformKeys';
 
-export async function scrapeNHK(url: string) {
+export async function scrapeNHK(url: string): Promise<Program> {
   const response = await fetch(url);
 
   if (!response.ok) {
@@ -62,7 +62,7 @@ export async function scrapeNHK(url: string) {
 
       schedule: liveperiod,
 
-      categories: null,
+      categories: [],
     },
 
     episodes,

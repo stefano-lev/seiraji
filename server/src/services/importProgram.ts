@@ -11,6 +11,8 @@ import { scrapeTokyoFM } from './scrapeTokyoFM';
 import { scrapeANN } from './scrapeANN';
 import { scrapeKoelink } from './scrapeKoelink';
 import { scrapeApplePodcast } from './scrapeApplePodcast';
+import { scrapeRadikoPodcast } from './scrapeRadikoPodcast';
+import { scrapeRadikoTimeshift } from './scrapeRadikoTimeshift';
 import {
   getAudeeSlug,
   getOnsenSlug,
@@ -23,6 +25,10 @@ import {
   getANNSlug,
   getKoelinkSlug,
   getApplePodcastId,
+  getRadikoPodcastChannelId,
+  getRadikoTimeshiftKey,
+  isRadikoPodcastUrl,
+  isRadikoTimeshiftUrl,
 } from '../utils/platformKeys';
 
 export async function importProgram(url: string, hostOverride?: string) {
@@ -169,6 +175,36 @@ export async function importProgram(url: string, hostOverride?: string) {
       () => scrapeApplePodcast(url),
       hostOverride
     );
+  }
+
+  if (hostname.includes('radiko.jp')) {
+    if (isRadikoPodcastUrl(url)) {
+      const channelId = getRadikoPodcastChannelId(url);
+
+      await ensureNotCached('radiko-podcasts.json', channelId);
+
+      return getCachedOrImport(
+        'radiko-podcasts.json',
+        channelId,
+        () => scrapeRadikoPodcast(url),
+        hostOverride
+      );
+    }
+
+    if (isRadikoTimeshiftUrl(url)) {
+      const { stationId, ft } = getRadikoTimeshiftKey(url);
+
+      const cacheKey = `${stationId}:${ft}`;
+
+      await ensureNotCached('radiko-radio.json', cacheKey);
+
+      return getCachedOrImport(
+        'radiko-radio.json',
+        cacheKey,
+        () => scrapeRadikoTimeshift(url),
+        hostOverride
+      );
+    }
   }
 
   throw new Error('Unsupported platform');

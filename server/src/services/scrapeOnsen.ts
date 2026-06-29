@@ -1,4 +1,5 @@
 import * as cheerio from 'cheerio';
+import type { Program, Episode } from '../types/media';
 import { normalizeHosts } from '../utils/normalizeHosts';
 
 function getOnsenRows($: cheerio.CheerioAPI) {
@@ -10,7 +11,7 @@ function getOnsenRows($: cheerio.CheerioAPI) {
   });
 }
 
-export async function scrapeOnsen(url: string) {
+export async function scrapeOnsen(url: string): Promise<Program> {
   const response = await fetch(url);
 
   const html = await response.text();
@@ -94,7 +95,7 @@ export async function scrapeOnsen(url: string) {
 
       hosts,
 
-      categories: null,
+      categories: [],
 
       schedule: liveperiod,
     },

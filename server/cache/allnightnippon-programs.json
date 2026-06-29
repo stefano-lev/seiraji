@@ -469,7 +469,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:23.231Z",
+      "cachedAt": "2026-06-29T19:59:43.218Z",
       "episodeCount": 30
     }
   },
@@ -1045,11 +1045,26 @@
           "episodeLink": "https://omny.fm/shows/style/2026-6-21-style",
           "omnyClipId": "53f9138b-f988-402e-95a6-b4710037d847"
         }
+      },
+      {
+        "id": "44f5719c-57d5-4b4b-9b95-b47800401f89",
+        "title": "2026年6月28日(日)超ときめき♡STYLE",
+        "description": "毎週日曜日 深夜24:30から放送！\n 「ときめく恋と青春」をテーマに世界中のみんなにときめきを宣伝（お届け）している、5人組アイドルユニット「超ときめき♡宣伝部」がMCを担当！\n 今回は超とき宣 メンバーから、坂井仁香❤️ 吉川ひより💚 が登場🎙️\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-06-29T10:00:00.000Z",
+        "publishedAtUnix": 1782727200,
+        "thumbnail": "https://www.omnycontent.com/d/playlist/67122501-9b17-4d77-84bd-a93d00dc791e/c1300728-5ceb-438a-89a2-b368002d6ab0/340d3cbd-89f3-4b71-93b9-b368002d6e81/image.jpg?t=1779000176&size=Large",
+        "durationSeconds": 912,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/c1300728-5ceb-438a-89a2-b368002d6ab0/44f5719c-57d5-4b4b-9b95-b47800401f89/audio.mp3?utm_source=Podcast&in_playlist=340d3cbd-89f3-4b71-93b9-b368002d6e81",
+          "episodeLink": "https://omny.fm/shows/style/2026-6-28-style",
+          "omnyClipId": "44f5719c-57d5-4b4b-9b95-b47800401f89"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:24.939Z",
-      "episodeCount": 37
+      "cachedAt": "2026-06-29T19:59:44.677Z",
+      "episodeCount": 38
     }
   },
   "aec": {
@@ -1972,7 +1987,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:25.932Z",
+      "cachedAt": "2026-06-29T19:59:45.838Z",
       "episodeCount": 60
     }
   },
@@ -2491,7 +2506,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:26.594Z",
+      "cachedAt": "2026-06-29T19:59:46.577Z",
       "episodeCount": 33
     }
   },
@@ -3025,7 +3040,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:27.089Z",
+      "cachedAt": "2026-06-29T19:59:47.036Z",
       "episodeCount": 34
     }
   },
@@ -7220,7 +7235,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:27.737Z",
+      "cachedAt": "2026-06-29T19:59:47.953Z",
       "episodeCount": 278
     }
   },
@@ -8744,7 +8759,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:28.329Z",
+      "cachedAt": "2026-06-29T19:59:48.504Z",
       "episodeCount": 100
     }
   }

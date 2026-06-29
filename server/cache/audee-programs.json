@@ -13,7 +13,9 @@
       "hosts": [
         "大熊和奏"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/354/thumbnail_image_path?time=1764121555"
     },
@@ -1760,7 +1762,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:29.450Z",
+      "cachedAt": "2026-06-29T19:59:48.455Z",
       "episodeCount": 145
     },
     "raw": {
@@ -2006,7 +2008,9 @@
       "hosts": [
         "林鼓子"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/994/thumbnail_image_path?time=1772197894"
     },
@@ -2325,7 +2329,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:30.883Z",
+      "cachedAt": "2026-06-29T19:59:50.017Z",
       "episodeCount": 26
     },
     "raw": {
@@ -2577,7 +2581,9 @@
       "hosts": [
         "小林愛香"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/955/thumbnail_image_path?time=1763704108"
     },
@@ -3049,11 +3055,35 @@
           "mediaType": "audio",
           "views": 178
         }
+      },
+      {
+        "id": "audee:smgpo6ETCadNGjExJTmC7m9v",
+        "title": "【#35】CANDY QUESTおつかれさまスペシャル！",
+        "publishedAt": "2026-06-27T13:00:00+09:00",
+        "publishedAtUnix": 1782532800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/93042/thumbnail_path?time=1782453148",
+        "durationSeconds": 2060,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 215
+        }
+      },
+      {
+        "id": "audee:smgTNnyAe6aw6aujsGGGEc3f",
+        "title": "Can you sing along? ~ありがとうver.~",
+        "publishedAt": "2026-06-27T13:40:00+09:00",
+        "publishedAtUnix": 1782535200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/93057/thumbnail_path?time=1782456707",
+        "durationSeconds": 227,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 216
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:32.825Z",
-      "episodeCount": 39
+      "cachedAt": "2026-06-29T19:59:52.180Z",
+      "episodeCount": 41
     },
     "raw": {
       "site": {
@@ -3300,7 +3330,9 @@
       "hosts": [
         "田中ちえ美"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/366/thumbnail_image_path?time=1764120113"
     },
@@ -4183,7 +4215,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:36.649Z",
+      "cachedAt": "2026-06-29T19:59:55.270Z",
       "episodeCount": 73
     },
     "raw": {
@@ -4448,7 +4480,9 @@
       "hosts": [
         "絵森彩"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/462/thumbnail_image_path?time=1771827406"
     },
@@ -5727,7 +5761,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:40.882Z",
+      "cachedAt": "2026-06-29T19:59:59.224Z",
       "episodeCount": 106
     },
     "raw": {
@@ -5972,7 +6006,9 @@
       "hosts": [
         "花宮初奈"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/357/thumbnail_image_path?time=1764121529"
     },
@@ -7407,7 +7443,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:45.474Z",
+      "cachedAt": "2026-06-29T20:00:04.318Z",
       "episodeCount": 119
     },
     "raw": {
@@ -7646,7 +7682,9 @@
       "hosts": [
         "石飛恵里花"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/1167/thumbnail_image_path?time=1778223708"
     },
@@ -7749,7 +7787,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:46.112Z",
+      "cachedAt": "2026-06-29T20:00:04.925Z",
       "episodeCount": 8
     },
     "raw": {
@@ -7997,7 +8035,9 @@
       "hosts": [
         "逢田梨香子"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/762/thumbnail_image_path?time=1764123063"
     },
@@ -8913,11 +8953,23 @@
           "mediaType": "audio",
           "views": 358
         }
+      },
+      {
+        "id": "audee:smUaFBMLVQno9KkLjHmXyniU",
+        "title": "【第61回】ソロアーティストデビュー7周年！コレまでを振り返って… #梨香子の日常",
+        "publishedAt": "2026-06-28T13:00:00+09:00",
+        "publishedAtUnix": 1782619200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/91561/thumbnail_path?time=1782631134",
+        "durationSeconds": 2041,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 353
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:49.496Z",
-      "episodeCount": 76
+      "cachedAt": "2026-06-29T20:00:08.348Z",
+      "episodeCount": 77
     },
     "raw": {
       "site": {
@@ -9198,7 +9250,9 @@
       "hosts": [
         "相坂優歌"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/360/thumbnail_image_path?time=1764119789"
     },
@@ -12745,7 +12799,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:01.258Z",
+      "cachedAt": "2026-06-29T20:00:20.448Z",
       "episodeCount": 295
     },
     "raw": {
@@ -13021,7 +13075,9 @@
       "hosts": [
         "小泉萌香"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/881/thumbnail_image_path?time=1764123279"
     },
@@ -16688,7 +16744,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:13.232Z",
+      "cachedAt": "2026-06-29T20:00:32.098Z",
       "episodeCount": 305
     },
     "raw": {
@@ -16921,7 +16977,9 @@
         "愛美",
         "千春"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/813/thumbnail_image_path?time=1764123143"
     },
@@ -17636,7 +17694,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:15.729Z",
+      "cachedAt": "2026-06-29T20:00:35.174Z",
       "episodeCount": 59
     },
     "raw": {
@@ -17884,7 +17942,9 @@
       "hosts": [
         "野中ここな"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/928/thumbnail_image_path?time=1764123585"
     },
@@ -18863,7 +18923,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:19.267Z",
+      "cachedAt": "2026-06-29T20:00:38.423Z",
       "episodeCount": 81
     },
     "raw": {
@@ -19136,7 +19196,9 @@
       "hosts": [
         "涼本あきほ"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/1026/thumbnail_image_path?time=1772190628"
     },
@@ -19443,7 +19505,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:20.566Z",
+      "cachedAt": "2026-06-29T20:00:40.128Z",
       "episodeCount": 25
     },
     "raw": {
@@ -19682,7 +19744,9 @@
       "hosts": [
         "Liyuu"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/883/thumbnail_image_path?time=1764123304"
     },
@@ -24741,7 +24805,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:36.459Z",
+      "cachedAt": "2026-06-29T20:00:55.716Z",
       "episodeCount": 421
     },
     "raw": {
@@ -24973,7 +25037,9 @@
       "hosts": [
         "伊藤麻希"
       ],
-      "category": "エンタメ",
+      "categories": [
+        "エンタメ"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/1123/thumbnail_image_path?time=1778666488"
     },
@@ -25256,7 +25322,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:37.578Z",
+      "cachedAt": "2026-06-29T20:00:56.757Z",
       "episodeCount": 23
     },
     "raw": {
@@ -25536,7 +25602,9 @@
       "hosts": [
         "長谷川育美"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/506/thumbnail_image_path?time=1764120585"
     },
@@ -26779,7 +26847,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:41.925Z",
+      "cachedAt": "2026-06-29T20:01:01.103Z",
       "episodeCount": 103
     }
   },
@@ -26797,7 +26865,9 @@
       "hosts": [
         "花岩香奈"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/703/thumbnail_image_path?time=1764121203"
     },
@@ -27881,11 +27951,23 @@
           "mediaType": "movie",
           "views": 1321
         }
+      },
+      {
+        "id": "audee:smRB3z9dwroei8M2UxtgWGXM",
+        "title": "#７２(26 6/29 18:00配信）　声優・花岩香奈がお届け！今回は2回目の番組イベントの続報あります！",
+        "publishedAt": "2026-06-29T09:00:00+09:00",
+        "publishedAtUnix": 1782691200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/93953/thumbnail_path?time=1782694748",
+        "durationSeconds": 2111,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 464
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:45.617Z",
-      "episodeCount": 90
+      "cachedAt": "2026-06-29T20:01:04.718Z",
+      "episodeCount": 91
     }
   },
   "utaprifm": {
@@ -27902,7 +27984,9 @@
       "hosts": [
         "うたの☆プリンスさまっ♪"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/455/thumbnail_image_path?time=1764120252"
     },
@@ -30657,7 +30741,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:53.848Z",
+      "cachedAt": "2026-06-29T20:01:12.913Z",
       "episodeCount": 229
     }
   },
@@ -30675,7 +30759,9 @@
       "hosts": [
         "あんさんぶるスターズ！！"
       ],
-      "category": "エンタメ",
+      "categories": [
+        "エンタメ"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/1043/thumbnail_image_path?time=1771601955"
     },
@@ -30991,11 +31077,35 @@
           "mediaType": "audio",
           "views": 666
         }
+      },
+      {
+        "id": "audee:smJHcas5PHiaFUistHREtiKJ",
+        "title": "◇#13◇　お二人が使いたい忍術は？〔期間限定無料公開〕",
+        "publishedAt": "2026-06-27T10:50:00+09:00",
+        "publishedAtUnix": 1782525000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/93537/thumbnail_path?time=1782547964",
+        "durationSeconds": 1510,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 673
+        }
+      },
+      {
+        "id": "audee:smVGJ6WfZ3BWsCmReM5ptRzw",
+        "title": "❖限定パート #13❖　お二人の意外な共通点が続々と！？",
+        "publishedAt": "2026-06-27T11:00:00+09:00",
+        "publishedAtUnix": 1782525600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/93539/thumbnail_path?time=1782547446",
+        "durationSeconds": 906,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 265
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:30:55.189Z",
-      "episodeCount": 26
+      "cachedAt": "2026-06-29T20:01:14.851Z",
+      "episodeCount": 28
     }
   },
   "tsuda-speaking": {
@@ -31012,7 +31122,9 @@
       "hosts": [
         "津田健次郎"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/453/thumbnail_image_path?time=1773551884"
     },
@@ -33848,11 +33960,35 @@
           "mediaType": "audio",
           "views": 283
         }
+      },
+      {
+        "id": "audee:sm7aK9yDtk5Xqq335Gap39fQ",
+        "title": "【Archive_No.117】2026年6月28日OA",
+        "publishedAt": "2026-06-28T03:30:00+09:00",
+        "publishedAtUnix": 1782585000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/93594/thumbnail_path?time=1782614974",
+        "durationSeconds": 1190,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 120
+        }
+      },
+      {
+        "id": "audee:smFoqHJGaMgoLkay6XVhm6of",
+        "title": "【裏スピNo.117】「ツダケン なんでもBEST３」Part.4！",
+        "publishedAt": "2026-06-28T03:30:00+09:00",
+        "publishedAtUnix": 1782585000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/93598/thumbnail_path?time=1782615934",
+        "durationSeconds": 961,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 289
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:31:04.566Z",
-      "episodeCount": 236
+      "cachedAt": "2026-06-29T20:01:24.073Z",
+      "episodeCount": 238
     }
   },
   "yuuki-kuwahara": {
@@ -33869,7 +34005,9 @@
       "hosts": [
         "桑原由気"
       ],
-      "category": "アニメ・声優",
+      "categories": [
+        "アニメ・声優"
+      ],
       "twitter": null,
       "thumbnail": "https://cdn.audee-membership.jp/public_html/site_design/fanclub_sites/958/thumbnail_image_path?time=1764123687"
     },
@@ -34308,7 +34446,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:31:06.213Z",
+      "cachedAt": "2026-06-29T20:01:25.622Z",
       "episodeCount": 36
     }
   }

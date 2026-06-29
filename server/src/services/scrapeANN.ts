@@ -1,8 +1,9 @@
 import * as cheerio from 'cheerio';
+import type { Program, Episode } from '../types/media';
 import { XMLParser } from 'fast-xml-parser';
 import { getANNSlug } from '../utils/platformKeys';
 
-export async function scrapeANN(url: string) {
+export async function scrapeANN(url: string): Promise<Program> {
   const slug = getANNSlug(url);
 
   const html = await fetchHtml(url);

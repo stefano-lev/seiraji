@@ -9,6 +9,7 @@ import type { Program } from '@/types/media';
 import type { UserProgramState } from '@/types/user';
 import { Preferences } from '@/lib/storage';
 import { calculateProgramRuntime } from '@/lib/stats';
+import { isRadikoBroadcastSnapshot } from '@/lib/platformDetection';
 
 type ProgramModalProps = {
   open: boolean;
@@ -49,6 +50,13 @@ export function ProgramModal({
   const programData = program;
   const currentState = getProgramState(programData.id);
   const listenedCount = currentState.lastListenedEpisode ?? 0;
+
+  const isBroadcastSnapshot = isRadikoBroadcastSnapshot(programData);
+
+  const externalUrl = getMetadataString(
+    programData.episodes[0]?.platformMetadata,
+    'externalUrl'
+  );
 
   const displayedEpisodes = prefs.reverseEpisodeOrder
     ? [...programData.episodes].reverse()
@@ -152,16 +160,6 @@ export function ProgramModal({
                   </h2>
 
                   <p className="text-muted-foreground mt-2">{hostsText}</p>
-
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    <Badge>{programData.platform}</Badge>
-
-                    {programData.program.categories?.map((c) => (
-                      <Badge key={c} variant="secondary">
-                        {c}
-                      </Badge>
-                    ))}
-                  </div>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 w-full sm:w-auto">
@@ -195,23 +193,24 @@ export function ProgramModal({
                     </Button>
                   )}
 
-                  {programData.source === 'imported' && (
-                    <Button
-                      variant="secondary"
-                      disabled={refreshing}
-                      onClick={async () => {
-                        try {
-                          setRefreshing(true);
+                  {programData.source === 'imported' &&
+                    !isBroadcastSnapshot && (
+                      <Button
+                        variant="secondary"
+                        disabled={refreshing}
+                        onClick={async () => {
+                          try {
+                            setRefreshing(true);
 
-                          await onRefresh(programData.url);
-                        } finally {
-                          setRefreshing(false);
-                        }
-                      }}
-                    >
-                      {refreshing ? 'Refreshing...' : 'Refresh'}
-                    </Button>
-                  )}
+                            await onRefresh(programData.url);
+                          } finally {
+                            setRefreshing(false);
+                          }
+                        }}
+                      >
+                        {refreshing ? 'Refreshing...' : 'Refresh'}
+                      </Button>
+                    )}
 
                   <Button
                     className="w-full sm:w-auto"
@@ -240,6 +239,18 @@ export function ProgramModal({
               "
             >
               <div className="space-y-6">
+                {isBroadcastSnapshot && (
+                  <div className="rounded-2xl border border-blue-500/30 bg-blue-500/5 p-4 text-sm">
+                    <div className="font-semibold text-blue-400">
+                      Broadcast snapshot
+                    </div>
+                    <p className="mt-2 text-muted-foreground leading-relaxed">
+                      This entry was imported from a radiko time-free link. It
+                      represents a single broadcast airing, not a full program
+                      archive.
+                    </p>
+                  </div>
+                )}
                 {/* DESCRIPTION */}
                 <div>
                   <h3 className="font-semibold mb-2">Description</h3>
@@ -256,10 +267,17 @@ export function ProgramModal({
 
                   <div className="rounded-2xl border border-border/60 p-4 space-y-3 text-sm">
                     <div className="flex justify-between gap-3">
-                      <span className="text-muted-foreground">Episodes</span>
+                      <span className="text-muted-foreground">
+                        {isBroadcastSnapshot ? 'Broadcasts' : 'Episodes'}
+                      </span>
                       <span>{programData.meta.episodeCount}</span>
                     </div>
-
+                    {isBroadcastSnapshot && (
+                      <div className="flex justify-between gap-3">
+                        <span className="text-muted-foreground">Type</span>
+                        <span>Snapshot</span>
+                      </div>
+                    )}
                     <div className="flex justify-between gap-3">
                       <span className="text-muted-foreground">Source</span>
                       <span>{programData.source}</span>
@@ -348,6 +366,15 @@ export function ProgramModal({
                       Open Source Page
                     </Button>
                   )}
+                  {externalUrl && (
+                    <Button
+                      className="w-full mt-2"
+                      variant="outline"
+                      onClick={() => window.open(externalUrl, '_blank')}
+                    >
+                      Open Related Program Page
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>
@@ -356,10 +383,14 @@ export function ProgramModal({
             <div className="overflow-y-auto p-6">
               <div className="flex items-center justify-between mb-5">
                 <div>
-                  <h3 className="text-xl font-semibold">Episodes</h3>
+                  <h3 className="text-xl font-semibold">
+                    {isBroadcastSnapshot ? 'Broadcast' : 'Episodes'}
+                  </h3>
 
                   <p className="text-sm text-muted-foreground">
-                    {programData.episodes.length} episodes available
+                    {isBroadcastSnapshot
+                      ? 'Single radiko time-free airing'
+                      : `${programData.episodes.length} episodes available`}
                   </p>
                 </div>
               </div>
@@ -444,8 +475,10 @@ export function ProgramModal({
                                 </p>
                               ) : (
                                 <p className="text-xs text-muted-foreground mt-1">
-                                  {ep.platformMetadata?.displayDate ??
-                                    'Unknown date'}
+                                  {getMetadataString(
+                                    ep.platformMetadata,
+                                    'displayDate'
+                                  ) ?? 'Unknown date'}
                                 </p>
                               )}
                             </div>
@@ -494,4 +527,21 @@ export function ProgramModal({
       </motion.div>
     </motion.div>
   );
+}
+
+function getMetadataString(
+  metadata: Record<string, unknown> | undefined,
+  key: string
+): string | null {
+  const value = metadata?.[key];
+
+  if (typeof value === 'string') {
+    return value;
+  }
+
+  if (typeof value === 'number') {
+    return String(value);
+  }
+
+  return null;
 }

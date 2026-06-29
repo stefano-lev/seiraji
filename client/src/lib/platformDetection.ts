@@ -1,3 +1,5 @@
+import { Program } from '@/types/media';
+
 export const SUPPORTED_PLATFORMS = [
   'audee',
   'onsen',
@@ -10,6 +12,7 @@ export const SUPPORTED_PLATFORMS = [
   'allnightnippon',
   'koelink',
   'applepodcasts',
+  'radiko',
 ] as const;
 
 export const PLATFORM_LABELS = {
@@ -24,6 +27,7 @@ export const PLATFORM_LABELS = {
   allnightnippon: 'AllNightNippon',
   koelink: 'KoeLink',
   applepodcasts: 'Apple Podcasts',
+  radiko: 'Radiko',
 } as const;
 
 export type SupportedPlatform =
@@ -37,7 +41,8 @@ export type SupportedPlatform =
   | 'tfm'
   | 'allnightnippon'
   | 'koelink'
-  | 'applepodcasts';
+  | 'applepodcasts'
+  | 'radiko';
 
 export function detectPlatform(url: string): SupportedPlatform | null {
   try {
@@ -87,8 +92,16 @@ export function detectPlatform(url: string): SupportedPlatform | null {
       return 'applepodcasts';
     }
 
+    if (hostname.includes('radiko.jp')) {
+      return 'radiko';
+    }
+
     return null;
   } catch {
     return null;
   }
+}
+
+export function isRadikoBroadcastSnapshot(program: Program) {
+  return program.platform === 'radiko-radio';
 }

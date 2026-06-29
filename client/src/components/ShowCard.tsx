@@ -13,6 +13,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import { isRadikoBroadcastSnapshot } from '@/lib/platformDetection';
 import React from 'react';
 
 type Props = {
@@ -48,10 +49,19 @@ export const ShowCard = React.memo(function ShowCard({
     program.program.thumbnail ?? '/placeholders/show-placeholder.png';
 
   const totalEpisodes = program.episodes.length;
+
   const lastEp = state.lastListenedEpisode ?? 0;
 
-  const progressPct =
-    totalEpisodes > 0 ? Math.min(100, (lastEp / totalEpisodes) * 100) : 0;
+  const isBroadcastSnapshot = isRadikoBroadcastSnapshot(program);
+  const isBroadcastLogged = lastEp > 0;
+
+  const progressPct = isBroadcastSnapshot
+    ? isBroadcastLogged
+      ? 100
+      : 0
+    : totalEpisodes > 0
+      ? Math.min(100, (lastEp / totalEpisodes) * 100)
+      : 0;
 
   const latestEpisode = program.episodes[program.episodes.length - 1];
 
@@ -130,7 +140,7 @@ export const ShowCard = React.memo(function ShowCard({
                   shadow
                 "
               >
-                {program.platform}
+                {isBroadcastSnapshot ? 'radiko-radio' : program.platform}
               </Badge>
             )}
           </div>
@@ -144,13 +154,13 @@ export const ShowCard = React.memo(function ShowCard({
               {hostsText}
             </p>
 
-            {!prefs.hideTagsOnCard && program.program.categories?.[0] && (
+            {/* {!prefs.hideTagsOnCard && program.program.categories?.[0] && (
               <div className="mt-2 flex min-h-[1.25rem] gap-1 overflow-hidden">
                 <Badge variant="outline" className="truncate">
                   {program.program.categories[0]}
                 </Badge>
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </CardHeader>
@@ -180,10 +190,19 @@ export const ShowCard = React.memo(function ShowCard({
           {!prefs.hideProgressBar && (
             <div>
               <div className="flex justify-between text-xs text-muted-foreground">
-                <span>
-                  Episode {lastEp} / {totalEpisodes || '?'}
-                </span>
-                <span>{Math.round(progressPct)}%</span>
+                {isBroadcastSnapshot ? (
+                  <>
+                    <span>{isBroadcastLogged ? 'Logged' : 'Not logged'}</span>
+                    <span></span>
+                  </>
+                ) : (
+                  <>
+                    <span>
+                      Episode {lastEp} / {totalEpisodes || '?'}
+                    </span>
+                    <span>{Math.round(progressPct)}%</span>
+                  </>
+                )}
               </div>
 
               <div className="h-2 bg-muted rounded-full overflow-hidden mt-1">
@@ -196,37 +215,61 @@ export const ShowCard = React.memo(function ShowCard({
           )}
 
           <div className="flex items-center gap-2">
-            <Button
-              size="sm"
-              onClick={(e) => {
-                e.stopPropagation();
-                onUpdateEpisode(program.id, clamp(lastEp - 1));
-              }}
-            >
-              −
-            </Button>
+            {isBroadcastSnapshot ? (
+              <Button
+                size="sm"
+                variant={isBroadcastLogged ? 'secondary' : 'default'}
+                onClick={(e) => {
+                  e.stopPropagation();
 
-            <Input
-              type="number"
-              value={lastEp}
-              min={0}
-              max={totalEpisodes}
-              onClick={(e) => e.stopPropagation()}
-              onChange={(e) =>
-                onUpdateEpisode(program.id, clamp(Number(e.target.value)))
-              }
-              className="w-16 text-center px-0"
-            />
+                  const nextEpisode = isBroadcastLogged ? 0 : 1;
 
-            <Button
-              size="sm"
-              onClick={(e) => {
-                e.stopPropagation();
-                onUpdateEpisode(program.id, clamp(lastEp + 1));
-              }}
-            >
-              +
-            </Button>
+                  onUpdateEpisode(program.id, nextEpisode);
+
+                  onUpdate({
+                    ...state,
+                    lastListenedEpisode: nextEpisode,
+                    status: nextEpisode === 1 ? 'listening' : 'backlog',
+                  });
+                }}
+              >
+                {isBroadcastLogged ? 'Mark backlog' : 'Mark listening'}
+              </Button>
+            ) : (
+              <div className="flex items-center gap-2">
+                <Button
+                  size="sm"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onUpdateEpisode(program.id, clamp(lastEp - 1));
+                  }}
+                >
+                  −
+                </Button>
+
+                <Input
+                  type="number"
+                  value={lastEp}
+                  min={0}
+                  max={totalEpisodes}
+                  onClick={(e) => e.stopPropagation()}
+                  onChange={(e) =>
+                    onUpdateEpisode(program.id, clamp(Number(e.target.value)))
+                  }
+                  className="w-16 text-center px-0"
+                />
+
+                <Button
+                  size="sm"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onUpdateEpisode(program.id, clamp(lastEp + 1));
+                  }}
+                >
+                  +
+                </Button>
+              </div>
+            )}
           </div>
 
           {!prefs.hideStatusOnCard && (

@@ -196,7 +196,7 @@ function normalizeApplePodcastEpisodes(
 
         durationSeconds,
 
-        tags: normalizeCategories(item.category),
+        tags: normalizeCategories(item.categories),
 
         platformMetadata: {
           guid,

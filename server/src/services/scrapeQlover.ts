@@ -1,10 +1,9 @@
+import type { Program, Episode } from '../types/media';
 import { normalizeDate } from '../utils/normalizeDate';
-
 import { normalizeEpisodes } from '../utils/normalizeEpisodes';
-
 import { extractHostNames } from '../utils/extractHostNames';
 
-export async function scrapeQlover(url: string) {
+export async function scrapeQlover(url: string): Promise<Program> {
   const fanclubId = await getFanclubIdFromUrl(url);
 
   if (!fanclubId) {
@@ -51,7 +50,7 @@ export async function scrapeQlover(url: string) {
 
       hosts,
 
-      category: site.site_hashtags?.[0]?.hashtag_name ?? '',
+      categories: site.site_hashtags?.[0]?.hashtag_name ?? '',
 
       twitter: site.fanclub_footer_snses?.[0]?.sns_page_url ?? null,
 

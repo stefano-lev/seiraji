@@ -14,7 +14,7 @@
         "江﨑 文武"
       ],
       "schedule": null,
-      "categories": null
+      "categories": []
     },
     "episodes": [
       {
@@ -646,11 +646,29 @@
           "expires": "2026-06-28T23:30:00+09:00",
           "audioStatus": "ready"
         }
+      },
+      {
+        "id": "GJ1RQNXR72",
+        "title": "2026年7月5日",
+        "description": "『2026年7月5日』の番組エピソードです",
+        "publishedAt": "2026-07-05T22:40:00+09:00",
+        "publishedAtUnix": 1783258800,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/R7V6MMNYMK/R7V6MMNYMK-eyecatch_4f51da7040237504bffa530de35774d1.png",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/rs/R7V6MMNYMK/episode/re/GJ1RQNXR72/",
+          "radioEpisodeId": "GJ1RQNXR72",
+          "radioSeriesId": "R7V6MMNYMK",
+          "guests": [],
+          "expires": "2026-07-12T23:30:00+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:25.498Z",
-      "episodeCount": 35
+      "cachedAt": "2026-06-29T19:59:46.561Z",
+      "episodeCount": 36
     }
   },
   "Y5MG659NGN": {
@@ -669,7 +687,7 @@
         "戸松 遥"
       ],
       "schedule": null,
-      "categories": null
+      "categories": []
     },
     "episodes": [
       {
@@ -1778,7 +1796,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:29.459Z",
+      "cachedAt": "2026-06-29T19:59:52.279Z",
       "episodeCount": 59
     }
   },
@@ -1799,7 +1817,7 @@
         "茅野 愛衣"
       ],
       "schedule": null,
-      "categories": null
+      "categories": []
     },
     "episodes": [
       {
@@ -2647,7 +2665,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:33.021Z",
+      "cachedAt": "2026-06-29T19:59:55.593Z",
       "episodeCount": 45
     }
   },
@@ -2667,7 +2685,7 @@
         "あべ あきら"
       ],
       "schedule": null,
-      "categories": null
+      "categories": []
     },
     "episodes": [
       {
@@ -7609,11 +7627,29 @@
           "expires": "2026-06-27T16:00:03+09:00",
           "audioStatus": "ready"
         }
+      },
+      {
+        "id": "Y86MR7XM4V",
+        "title": "2026年7月4日",
+        "description": "『2026年7月4日』の番組エピソードです",
+        "publishedAt": "2026-07-04T14:00:03+09:00",
+        "publishedAtUnix": 1783141203,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Q3PKWJX562/Q3PKWJX562-eyecatch_582887b8a9760840828129666351f77b.png",
+        "durationSeconds": 7200,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/anison-ac/rs/Q3PKWJX562/episode/re/Y86MR7XM4V/",
+          "radioEpisodeId": "Y86MR7XM4V",
+          "radioSeriesId": "Q3PKWJX562",
+          "guests": [],
+          "expires": "2026-07-11T16:00:03+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:44.521Z",
-      "episodeCount": 274
+      "cachedAt": "2026-06-29T20:00:07.195Z",
+      "episodeCount": 275
     }
   },
   "V8JW19JK29": {
@@ -7633,7 +7669,7 @@
         "瀬戸 光"
       ],
       "schedule": null,
-      "categories": null
+      "categories": []
     },
     "episodes": [
       {
@@ -8679,11 +8715,29 @@
           "expires": "2026-06-27T22:55:00+09:00",
           "audioStatus": "ready"
         }
+      },
+      {
+        "id": "JP65YYQVP6",
+        "title": "〜釣りのラジオ〜 近藤真彦が登場!前編",
+        "description": "『〜釣りのラジオ〜 近藤真彦が登場!前編』の番組エピソードです",
+        "publishedAt": "2026-07-04T22:05:00+09:00",
+        "publishedAtUnix": 1783170300,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/V8JW19JK29/V8JW19JK29-eyecatch_98c8d0476cbb2f6faa38b9d35bed9924.jpg",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/rs/V8JW19JK29/episode/re/JP65YYQVP6/",
+          "radioEpisodeId": "JP65YYQVP6",
+          "radioSeriesId": "V8JW19JK29",
+          "guests": [],
+          "expires": "2026-07-11T22:55:00+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:48.272Z",
-      "episodeCount": 58
+      "cachedAt": "2026-06-29T20:00:10.416Z",
+      "episodeCount": 59
     }
   }
 }

@@ -379,7 +379,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:23.172Z",
+      "cachedAt": "2026-06-29T19:59:42.642Z",
       "episodeCount": 15
     }
   },
@@ -4165,7 +4165,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:23.925Z",
+      "cachedAt": "2026-06-29T19:59:43.450Z",
       "episodeCount": 171
     }
   },
@@ -4626,11 +4626,33 @@
           "itunesEpisodeType": "full",
           "itunesExplicit": null
         }
+      },
+      {
+        "id": "applepodcasts:1863614215:e28b6897-cc70-4097-94f2-5b15b2b225e0",
+        "title": "#17_譜久村聖_後編",
+        "description": "松岡さんも共感！？\n譜久村聖の大好きなマニアックなアレとは一体何！！",
+        "publishedAt": "Fri, 26 Jun 2026 09:00:00 GMT",
+        "publishedAtUnix": 1782464400,
+        "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45021539/45021539-1780647473263-68ba480891ce5.jpg",
+        "durationSeconds": 1079,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "e28b6897-cc70-4097-94f2-5b15b2b225e0",
+          "link": "https://podcasters.spotify.com/pod/show/57e7cb5o87/episodes/17__-e3la1er",
+          "audioUrl": "https://anchor.fm/s/10cf2012c/podcast/play/122012571/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-5-26%2F426857272-44100-2-56e932750f57d.m4a",
+          "enclosureType": "audio/x-m4a",
+          "enclosureLength": "17451779",
+          "rawDuration": "00:17:59",
+          "itunesEpisode": "4",
+          "itunesSeason": "2",
+          "itunesEpisodeType": "full",
+          "itunesExplicit": null
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-26T18:29:24.262Z",
-      "episodeCount": 20
+      "cachedAt": "2026-06-29T19:59:43.823Z",
+      "episodeCount": 21
     }
   }
 }
