@@ -10,11 +10,11 @@ import { demoTags } from '@/data/demoPrograms';
 import type { Program } from './types/media';
 import type { UserProgramState } from './types/user';
 
-import type {} from '@/lib/storage';
+import type { ActivityEvent } from '@/lib/storage';
+
 import {
   loadActivity,
   saveActivity,
-  ActivityEvent,
   appendActivityEvent,
   loadPrefs,
   savePrefs,
@@ -238,7 +238,10 @@ export default function App() {
         setLibraryLoaded(true);
       }
 
-      setUserState(generateDemoState(libraryPrograms));
+      const demoProfile = generateDemoProfile(libraryPrograms);
+
+      setUserState(demoProfile.userState);
+      setActivity(demoProfile.activity);
 
       localStorage.setItem('seiraji:mode', 'demo');
       localStorage.setItem('seiraji:onboarded', 'true');
@@ -335,7 +338,16 @@ export default function App() {
     }
   }
 
-  function generateDemoState(programs: Program[]): UserProgramState[] {
+  function generateDemoProfile(programs: Program[]): {
+    userState: UserProgramState[];
+    activity: ActivityEvent[];
+  } {
+    const MAX_ACTIVITY_EVENTS = 160;
+    const DAILY_EPISODE_LIMIT = 8;
+
+    const dailyEpisodeCounts = new Map<string, number>();
+    const activity: ActivityEvent[] = [];
+
     function randomInt(min: number, max: number) {
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }
@@ -346,14 +358,74 @@ export default function App() {
 
     function pickRandomTags(): string[] {
       const shuffled = [...demoTags].sort(() => Math.random() - 0.5);
-
       const count = randomInt(1, 3);
 
       return shuffled.slice(0, count);
     }
 
-    return programs.map((p) => {
-      const episodeCount = Math.max(p.episodes?.length ?? 0, 1);
+    function dateKey(date: Date) {
+      return date.toISOString().slice(0, 10);
+    }
+
+    function randomListeningDate(maxDaysAgo: number): Date | null {
+      for (let attempt = 0; attempt < 30; attempt++) {
+        const daysAgo = randomInt(0, maxDaysAgo);
+
+        const date = new Date();
+        date.setDate(date.getDate() - daysAgo);
+
+        const hour = randomChance(0.75) ? randomInt(18, 23) : randomInt(9, 17);
+        const minute = randomInt(0, 59);
+
+        date.setHours(hour, minute, randomInt(0, 59), 0);
+
+        const key = dateKey(date);
+        const currentCount = dailyEpisodeCounts.get(key) ?? 0;
+
+        if (currentCount < DAILY_EPISODE_LIMIT) {
+          return date;
+        }
+      }
+
+      return null;
+    }
+
+    function reserveEpisodesForDate(date: Date, delta: number) {
+      const key = dateKey(date);
+      dailyEpisodeCounts.set(key, (dailyEpisodeCounts.get(key) ?? 0) + delta);
+    }
+
+    function splitIntoSessionDeltas(totalDelta: number): number[] {
+      const deltas: number[] = [];
+      let remaining = totalDelta;
+
+      while (remaining > 0) {
+        const delta = Math.min(remaining, randomInt(1, 3));
+        deltas.push(delta);
+        remaining -= delta;
+      }
+
+      return deltas;
+    }
+
+    function shouldCreateRecentActivity(status: UserProgramState['status']) {
+      if (status === 'listening') return randomChance(0.7);
+      if (status === 'completed') return randomChance(0.45);
+      if (status === 'dropped') return randomChance(0.25);
+
+      return false;
+    }
+
+    function recentActivityWindow(status: UserProgramState['status']) {
+      if (status === 'listening') return 21;
+      if (status === 'completed') return 60;
+      if (status === 'dropped') return 90;
+
+      return 30;
+    }
+
+    const userState = programs.map((program) => {
+      const episodeCount = Math.max(program.episodes?.length ?? 0, 1);
 
       let progress = 0;
       let status: UserProgramState['status'] = 'backlog';
@@ -379,16 +451,84 @@ export default function App() {
         progress = randomInt(1, Math.max(1, Math.floor(episodeCount * 0.4)));
       }
 
-      return {
-        programId: p.id,
+      const state: UserProgramState = {
+        programId: program.id,
         status,
         lastListenedEpisode: progress,
-
         isPinned: randomChance(0.05),
-
         tags: pickRandomTags(),
       };
+
+      if (
+        progress <= 0 ||
+        activity.length >= MAX_ACTIVITY_EVENTS ||
+        !shouldCreateRecentActivity(status)
+      ) {
+        return state;
+      }
+
+      const maxRecentDelta = Math.min(
+        progress,
+        status === 'listening' ? randomInt(2, 9) : randomInt(1, 5)
+      );
+
+      const deltas = splitIntoSessionDeltas(maxRecentDelta);
+
+      let episodeCursor = Math.max(0, progress - maxRecentDelta);
+
+      const generatedEvents: ActivityEvent[] = [];
+
+      for (const delta of deltas) {
+        if (activity.length + generatedEvents.length >= MAX_ACTIVITY_EVENTS) {
+          break;
+        }
+
+        const date = randomListeningDate(recentActivityWindow(status));
+
+        if (!date) continue;
+
+        episodeCursor += delta;
+        reserveEpisodesForDate(date, delta);
+
+        generatedEvents.push({
+          id: crypto.randomUUID(),
+          ts: date.toISOString(),
+          type: 'episode_progress',
+          programId: program.id,
+          episode: episodeCursor,
+          delta,
+        });
+      }
+
+      generatedEvents.sort(
+        (a, b) => new Date(a.ts).getTime() - new Date(b.ts).getTime()
+      );
+
+      activity.push(...generatedEvents);
+
+      if (generatedEvents.length > 0) {
+        const firstEvent = generatedEvents[0];
+        const lastEvent = generatedEvents[generatedEvents.length - 1];
+
+        state.startedAt = firstEvent.ts;
+        state.updatedAt = lastEvent.ts;
+
+        if (status === 'completed') {
+          state.completedAt = lastEvent.ts;
+        }
+      }
+
+      return state;
     });
+
+    activity.sort(
+      (a, b) => new Date(b.ts).getTime() - new Date(a.ts).getTime()
+    );
+
+    return {
+      userState,
+      activity: activity.slice(0, MAX_ACTIVITY_EVENTS),
+    };
   }
 
   function timeAgo(iso: string, nowMs: number) {

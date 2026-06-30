@@ -58,21 +58,33 @@ export function StatsModal({
       onClick={onClose}
     >
       <motion.div
-        className="w-full max-w-4xl max-h-[85vh] overflow-hidden rounded-3xl border border-border/60 bg-background shadow-2xl transform-gpu"
-        initial={{ opacity: 0, scale: 0.98, y: 8 }}
+        className="
+          w-full
+          max-w-4xl
+          max-h-[92dvh]
+          sm:max-h-[85dvh]
+          overflow-hidden
+          rounded-2xl
+          sm:rounded-3xl
+          border border-border/60
+          bg-background
+          shadow-2xl
+          transform-gpu
+          flex flex-col
+        "
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.98, y: 8 }}
         transition={{ duration: 0.16, ease: [0.16, 1, 0.3, 1] }}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="border-b border-border/60 px-6 py-5">
+        <div className="shrink-0 border-b border-border/60 px-4 py-4 sm:px-6 sm:py-5">
           <h2 className="text-xl font-semibold">Stats</h2>
           <p className="mt-1 text-sm text-muted-foreground">
             Your listening progress, library size, and recent activity.
           </p>
         </div>
 
-        <div className="max-h-[calc(85vh-140px)] overflow-y-auto p-6">
+        <div className="flex-1 min-h-0 overflow-y-auto p-4 sm:p-6">
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             <StatCard
               label="Programs"
@@ -241,8 +253,10 @@ export function StatsModal({
           </details>
         </div>
 
-        <div className="flex justify-end border-t border-border/60 px-6 py-4">
-          <Button onClick={onClose}>Close</Button>
+        <div className="shrink-0 flex justify-end border-t border-border/60 px-4 py-3 sm:px-6 sm:py-4">
+          <Button className="w-full sm:w-auto" onClick={onClose}>
+            Close
+          </Button>
         </div>
       </motion.div>
     </motion.div>

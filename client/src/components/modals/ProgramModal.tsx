@@ -62,7 +62,7 @@ export function ProgramModal({
     ? [...programData.episodes].reverse()
     : programData.episodes;
 
-  const rawHosts = program.program.hosts;
+  const rawHosts = programData.program.hosts;
 
   const hostsArray = Array.isArray(rawHosts)
     ? rawHosts
@@ -108,8 +108,8 @@ export function ProgramModal({
         onClick={(e) => e.stopPropagation()}
       >
         {/* HERO HEADER */}
-        <div className="relative">
-          <div className="h-32 sm:h-52 w-full bg-muted overflow-hidden">
+        <div className="relative shrink-0">
+          <div className="h-28 sm:h-52 w-full bg-muted overflow-hidden">
             <img
               src={
                 programData.program.thumbnail ??
@@ -123,7 +123,11 @@ export function ProgramModal({
 
           <div
             className="
-              absolute bottom-0 left-0 right-0
+              relative
+              sm:absolute
+              sm:bottom-0 sm:left-0 sm:right-0
+              -mt-14
+              sm:mt-0
               p-4 sm:p-6
               flex flex-col sm:flex-row
               gap-4 sm:gap-6
@@ -155,11 +159,13 @@ export function ProgramModal({
                 "
               >
                 <div>
-                  <h2 className="text-2xl sm:text-3xl font-bold leading-tight">
+                  <h2 className="text-xl sm:text-3xl font-bold leading-tight line-clamp-3 sm:line-clamp-2">
                     {programData.program.title}
                   </h2>
 
-                  <p className="text-muted-foreground mt-2">{hostsText}</p>
+                  <p className="text-sm sm:text-base text-muted-foreground mt-2 line-clamp-2">
+                    {hostsText}
+                  </p>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 w-full sm:w-auto">
@@ -226,16 +232,17 @@ export function ProgramModal({
         </div>
 
         {/* CONTENT */}
-        <div className="flex-1 overflow-hidden">
-          <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] h-full">
+        <div className="flex-1 min-h-0 overflow-y-auto lg:overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] lg:h-full">
             {/* SIDEBAR */}
             <div
               className="
-                border-b xl:border-b-0
-                xl:border-r
+                border-b lg:border-b-0
+                lg:border-r
                 border-border/60
                 p-4 sm:p-6
-                overflow-y-auto
+                overflow-visible
+                lg:overflow-y-auto
               "
             >
               <div className="space-y-6">
@@ -380,7 +387,7 @@ export function ProgramModal({
             </div>
 
             {/* EPISODES */}
-            <div className="overflow-y-auto p-6">
+            <div className="overflow-visible lg:overflow-y-auto p-4 sm:p-6">
               <div className="flex items-center justify-between mb-5">
                 <div>
                   <h3 className="text-xl font-semibold">
@@ -432,7 +439,7 @@ export function ProgramModal({
                             className="
                               w-full
                               sm:w-36
-                              h-40
+                              h-32
                               sm:h-20
                               rounded-xl
                               object-cover
@@ -443,7 +450,7 @@ export function ProgramModal({
                         )}
 
                         <div className="min-w-0 flex-1">
-                          <div className="flex items-start justify-between gap-4">
+                          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-4">
                             <div>
                               <div className="flex items-center gap-2">
                                 <h4 className="font-medium leading-snug">
