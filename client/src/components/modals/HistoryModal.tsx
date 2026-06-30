@@ -35,7 +35,7 @@ export function HistoryModal({
 
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-2 sm:p-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -44,9 +44,12 @@ export function HistoryModal({
     >
       <motion.div
         className="
-          w-full max-w-5xl
-          h-[85vh]
-          rounded-3xl
+          w-full
+          max-w-5xl
+          max-h-[92dvh]
+          sm:h-[85dvh]
+          rounded-2xl
+          sm:rounded-3xl
           border border-border/60
           bg-background
           shadow-2xl
@@ -60,8 +63,8 @@ export function HistoryModal({
         onClick={(e) => e.stopPropagation()}
       >
         {/* HEADER */}
-        <div className="border-b border-border/60 p-6">
-          <div className="flex items-center justify-between gap-4">
+        <div className="shrink-0 border-b border-border/60 p-4 sm:p-6">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div>
               <h2 className="text-2xl font-bold">History</h2>
 
@@ -70,8 +73,9 @@ export function HistoryModal({
               </p>
             </div>
 
-            <div className="flex gap-2">
+            <div className="flex gap-2 w-full sm:w-auto">
               <Button
+                className="flex-1 sm:flex-none"
                 variant="secondary"
                 onClick={() => {
                   const ok = window.confirm(
@@ -86,13 +90,15 @@ export function HistoryModal({
                 Clear
               </Button>
 
-              <Button onClick={onClose}>Close</Button>
+              <Button className="flex-1 sm:flex-none" onClick={onClose}>
+                Close
+              </Button>
             </div>
           </div>
         </div>
 
         {/* CONTENT */}
-        <div className="flex-1 overflow-y-auto p-6">
+        <div className="flex-1 min-h-0 overflow-y-auto p-3 sm:p-6">
           {sortedHistory.length === 0 ? (
             <div className="text-sm text-muted-foreground">No activity yet</div>
           ) : (
@@ -110,18 +116,25 @@ export function HistoryModal({
 
                 const isCompleted = ev.episode >= program.episodes.length;
 
+                const episodeTitle = episode?.title ?? `Episode ${ev.episode}`;
+
+                const episodeDescription = episode?.description
+                  ? compactText(episode.description, 140)
+                  : null;
+
                 return (
                   <div
                     key={ev.id}
                     className="
                       rounded-2xl
                       border border-border/60
-                      p-4
+                      p-3
+                      sm:p-4
                       hover:bg-muted/30
                       transition-colors
                     "
                   >
-                    <div className="flex gap-4">
+                    <div className="flex gap-3 sm:gap-4">
                       <img
                         src={
                           episode?.thumbnail ??
@@ -129,6 +142,8 @@ export function HistoryModal({
                           '/placeholders/show-placeholder.png'
                         }
                         className="
+                          hidden
+                          sm:block
                           w-32 h-20
                           rounded-xl
                           object-cover
@@ -138,62 +153,71 @@ export function HistoryModal({
                       />
 
                       <div className="min-w-0 flex-1">
-                        <div className="flex items-start justify-between gap-4">
-                          <div className="min-w-0">
-                            <div className="flex items-center gap-2 flex-wrap">
-                              <h3 className="font-medium leading-snug">
-                                {episode?.title ?? `Episode ${ev.episode}`}
-                              </h3>
+                        <div className="min-w-0">
+                          <h3
+                            className="truncate text-sm sm:text-base font-medium leading-snug"
+                            title={episodeTitle}
+                          >
+                            {episodeTitle}
+                          </h3>
 
-                              <Badge variant="secondary">
-                                {program.platform}
-                              </Badge>
+                          <p
+                            className="mt-1 truncate text-xs sm:text-sm text-muted-foreground"
+                            title={program.program.title}
+                          >
+                            {program.program.title}
+                          </p>
 
-                              <Badge
-                                variant="outline"
-                                className={
-                                  deltaPositive
-                                    ? 'text-green-400 border-green-500/30'
-                                    : 'text-red-400 border-red-500/30'
-                                }
-                              >
-                                {deltaPositive ? `+${ev.delta}` : ev.delta}
-                              </Badge>
+                          <p className="mt-1 text-xs text-muted-foreground underline">
+                            {timeAgo(ev.ts, now)}
+                          </p>
 
-                              {isCompleted && (
-                                <Badge className="bg-green-500/15 text-green-400 border border-green-500/30">
-                                  Completed
-                                </Badge>
-                              )}
-                            </div>
-
-                            <p className="text-sm text-muted-foreground mt-1">
-                              {program.program.title}
-                            </p>
-
-                            <p className="text-xs text-muted-foreground mt-1">
-                              {timeAgo(ev.ts, now)}
-                            </p>
-                          </div>
-
-                          {episode?.durationSeconds && (
-                            <Badge variant="outline">
-                              {Math.floor(episode.durationSeconds / 60)}m
+                          <div className="mt-2 flex flex-wrap items-center gap-1.5 sm:gap-2">
+                            <Badge variant="secondary" className="text-xs">
+                              {program.platform}
                             </Badge>
-                          )}
+
+                            <Badge
+                              variant="outline"
+                              className={
+                                deltaPositive
+                                  ? 'text-xs text-green-400 border-green-500/30'
+                                  : 'text-xs text-red-400 border-red-500/30'
+                              }
+                            >
+                              {deltaPositive ? `+${ev.delta}` : ev.delta}
+                            </Badge>
+
+                            {episode?.durationSeconds && (
+                              <Badge variant="outline" className="text-xs">
+                                {Math.floor(episode.durationSeconds / 60)}m
+                              </Badge>
+                            )}
+
+                            {isCompleted && (
+                              <Badge className="bg-green-500/15 text-green-400 border border-green-500/30 text-xs">
+                                Completed
+                              </Badge>
+                            )}
+                          </div>
                         </div>
 
-                        {episode?.description && (
-                          <p className="text-sm text-muted-foreground mt-3 line-clamp-2">
-                            {episode.description}
+                        {episodeDescription && (
+                          <p
+                            className="mt-3 truncate text-xs sm:text-sm text-muted-foreground"
+                            title={episodeDescription}
+                          >
+                            {episodeDescription}
                           </p>
                         )}
 
-                        <div className="flex items-center gap-2 mt-3 flex-wrap">
-                          <Badge variant="outline">Episode {ev.episode}</Badge>
+                        <div className="flex items-center gap-1.5 sm:gap-2 mt-3 flex-wrap">
+                          <Badge variant="outline" className="text-xs">
+                            Episode {ev.episode}
+                          </Badge>
 
                           {episode?.publishedAt && (
-                            <Badge variant="outline">
+                            <Badge variant="outline" className="text-xs">
                               {new Date(
                                 episode.publishedAt
                               ).toLocaleDateString()}
@@ -221,4 +245,14 @@ export function HistoryModal({
       </motion.div>
     </motion.div>
   );
+}
+
+function compactText(value: string, maxLength = 160) {
+  const cleaned = value.replace(/\s+/g, ' ').trim();
+
+  if (cleaned.length <= maxLength) {
+    return cleaned;
+  }
+
+  return `${cleaned.slice(0, maxLength).trim()}...`;
 }
