@@ -667,7 +667,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-29T19:59:46.561Z",
+      "cachedAt": "2026-07-07T19:32:53.391Z",
       "episodeCount": 36
     }
   },
@@ -1793,11 +1793,33 @@
           "expires": "2026-07-09T20:55:00+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "8VGX778V4X",
+        "title": "ゲスト:五関晃一(7月9日放送分)",
+        "description": "今回のゲストは人気男性グループＡ．Ｂ．Ｃ－Ｚのメンバーで、歌手でタレントの五関晃一。東京０３とコント「ヨガ教室」で共演する。五関が演じるのは、角田や豊本が生徒で飯塚が体験にきたヨガ教室のインストラクターの役。コントの後は五関が持ち込んだ「クリエイティブ」をテーマに東京０３のコントについて五関がさまざま聞いていくほか、五関が担当する振り付けについても東京０３が深掘りする。ナレーションは声優の戸松遥。\n＜コント＞「ヨガ教室」　作：ラバーガール",
+        "publishedAt": "2026-07-09T20:05:00+09:00",
+        "publishedAtUnix": 1783595100,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/8VGX778V4X/",
+          "radioEpisodeId": "8VGX778V4X",
+          "radioSeriesId": "Y5MG659NGN",
+          "guests": [
+            "五関晃一"
+          ],
+          "expires": "2026-07-16T20:55:00+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-29T19:59:52.279Z",
-      "episodeCount": 59
+      "cachedAt": "2026-07-07T19:32:56.726Z",
+      "episodeCount": 60
     }
   },
   "X4WNNM96KL": {
@@ -2662,11 +2684,33 @@
           "expires": "2026-07-09T21:55:00+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "Y5K842VGL2",
+        "title": "ゲスト:柳原哲也(7月9日放送分)",
+        "description": "プライベートでも仲が良いいとうあさこと大久保佳代子がゲストと一緒に女子会のノリで好き勝手にしゃべりまくるラジオバラエティー。ゲストはアメリカザリガニの柳原哲也。",
+        "publishedAt": "2026-07-09T21:05:00+09:00",
+        "publishedAtUnix": 1783598700,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/Y5K842VGL2/",
+          "radioEpisodeId": "Y5K842VGL2",
+          "radioSeriesId": "X4WNNM96KL",
+          "guests": [
+            "柳原哲也"
+          ],
+          "expires": "2026-07-16T21:55:00+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-29T19:59:55.593Z",
-      "episodeCount": 45
+      "cachedAt": "2026-07-07T19:32:59.594Z",
+      "episodeCount": 46
     }
   },
   "Q3PKWJX562": {
@@ -7645,11 +7689,29 @@
           "expires": "2026-07-11T16:00:03+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "L264VR4VL8",
+        "title": "2026年7月11日",
+        "description": "『2026年7月11日』の番組エピソードです",
+        "publishedAt": "2026-07-11T14:00:03+09:00",
+        "publishedAtUnix": 1783746003,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Q3PKWJX562/Q3PKWJX562-eyecatch_582887b8a9760840828129666351f77b.png",
+        "durationSeconds": 7200,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/anison-ac/rs/Q3PKWJX562/episode/re/L264VR4VL8/",
+          "radioEpisodeId": "L264VR4VL8",
+          "radioSeriesId": "Q3PKWJX562",
+          "guests": [],
+          "expires": "2026-07-18T16:00:03+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-29T20:00:07.195Z",
-      "episodeCount": 275
+      "cachedAt": "2026-07-07T19:33:10.388Z",
+      "episodeCount": 276
     }
   },
   "V8JW19JK29": {
@@ -8733,11 +8795,29 @@
           "expires": "2026-07-11T22:55:00+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "1KNPK86W3Y",
+        "title": "〜釣りのラジオ〜 近藤真彦が登場!後編",
+        "description": "『〜釣りのラジオ〜 近藤真彦が登場!後編』の番組エピソードです",
+        "publishedAt": "2026-07-11T22:05:00+09:00",
+        "publishedAtUnix": 1783775100,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/V8JW19JK29/V8JW19JK29-eyecatch_98c8d0476cbb2f6faa38b9d35bed9924.jpg",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/rs/V8JW19JK29/episode/re/1KNPK86W3Y/",
+          "radioEpisodeId": "1KNPK86W3Y",
+          "radioSeriesId": "V8JW19JK29",
+          "guests": [],
+          "expires": "2026-07-18T22:55:00+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-29T20:00:10.416Z",
-      "episodeCount": 59
+      "cachedAt": "2026-07-07T19:33:14.017Z",
+      "episodeCount": 60
     }
   }
 }

@@ -58,6 +58,7 @@ export function StatsModal({
       onClick={onClose}
     >
       <motion.div
+        data-tour="stats-modal-shell"
         className="
           w-full
           max-w-4xl
@@ -77,7 +78,10 @@ export function StatsModal({
         transition={{ duration: 0.16, ease: [0.16, 1, 0.3, 1] }}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="shrink-0 border-b border-border/60 px-4 py-4 sm:px-6 sm:py-5">
+        <div
+          data-tour="stats-modal"
+          className="shrink-0 border-b border-border/60 px-4 py-4 sm:px-6 sm:py-5"
+        >
           <h2 className="text-xl font-semibold">Stats</h2>
           <p className="mt-1 text-sm text-muted-foreground">
             Your listening progress, library size, and recent activity.

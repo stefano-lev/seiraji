@@ -296,11 +296,25 @@
           "episodeId": "cdb49020-2ab7-404d-9d3a-b2f0243705a1",
           "episodeUrl": "https://radiko.jp/podcast/episodes/cdb49020-2ab7-404d-9d3a-b2f0243705a1?play=auto"
         }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:9d5cb225-62db-4e97-a69f-5dcebda0c7c3",
+        "title": "#104 声優になっちゃったてよ！",
+        "description": "マルチタレント幸巴の冠ラジオ番組☆\n\n104回目である今回は、「声優になっちゃったってよ！」のコーナー！\nともぽんが様々なアニメやキャラクターになりきるコーナー！\nリスナーからのリクエストも募集中！\n公式Instagramのダイレクトメッセージから送ってください！",
+        "publishedAt": "2026-07-06T09:00:00.000Z",
+        "publishedAtUnix": 1783328400,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 471,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "9d5cb225-62db-4e97-a69f-5dcebda0c7c3",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/9d5cb225-62db-4e97-a69f-5dcebda0c7c3?play=auto"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-29T19:59:42.819Z",
-      "episodeCount": 20
+      "cachedAt": "2026-07-07T19:32:51.804Z",
+      "episodeCount": 21
     }
   }
 }

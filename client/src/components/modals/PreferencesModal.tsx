@@ -97,6 +97,7 @@ export function PreferencesModal({
       onClick={onClose}
     >
       <motion.div
+        data-tour="preferences-modal-shell"
         className="w-full max-w-2xl max-h-[85vh] rounded-2xl border border-border/60 bg-background shadow-2xl flex flex-col"
         initial={{ opacity: 0, scale: 0.98, y: 8 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -104,7 +105,10 @@ export function PreferencesModal({
         transition={{ duration: 0.16, ease: [0.16, 1, 0.3, 1] }}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="border-b border-border/60 px-6 py-4">
+        <div
+          data-tour="preferences-modal"
+          className="border-b border-border/60 px-6 py-4"
+        >
           <h2 className="text-xl font-semibold">Preferences</h2>
 
           <p className="text-sm text-muted-foreground mt-1">

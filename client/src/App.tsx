@@ -4,6 +4,10 @@ import { Toaster, toast } from 'sonner';
 
 import { useEffect, useState, useRef, useMemo, useCallback } from 'react';
 import { Button } from './components/ui/button';
+import {
+  GuidedTourOverlay,
+  type TourStep,
+} from './components/tour/GuidedTourOverlay';
 
 import { demoTags } from '@/data/demoPrograms';
 
@@ -44,6 +48,7 @@ import { HistoryModal } from './components/modals/HistoryModal';
 import { ProgramModal } from './components/modals/ProgramModal';
 import { PreferencesModal } from './components/modals/PreferencesModal';
 import { CreateProgramModal } from './components/modals/CreateProgramModal';
+import { InfoModal } from './components/modals/InfoModal';
 
 type SortMode =
   | 'title'
@@ -184,6 +189,9 @@ export default function App() {
   const [historyOpen, setHistoryOpen] = useState(false);
   const [prefsOpen, setPrefsOpen] = useState(false);
   const [createOpen, setCreateOpen] = useState(false);
+  const [infoOpen, setInfoOpen] = useState(false);
+  const [tourOpen, setTourOpen] = useState(false);
+  const [tourStepIndex, setTourStepIndex] = useState(0);
 
   const [activity, setActivity] = useState<ActivityEvent[]>(() =>
     loadActivity()
@@ -224,13 +232,12 @@ export default function App() {
 
   const [backupLoading, setBackupLoading] = useState(false);
 
-  async function loadDemo() {
+  async function loadDemo(options?: { startTour?: boolean }) {
     try {
       setLibraryLoading(true);
 
       let libraryPrograms = programs;
 
-      // if programs haven't loaded yet, fetch them now
       if (!libraryLoaded || programs.length === 0) {
         libraryPrograms = await getLibrary();
 
@@ -248,6 +255,12 @@ export default function App() {
 
       setIsDemo(true);
       setProgramOnboarding(false);
+
+      if (options?.startTour) {
+        window.setTimeout(() => {
+          startGuidedTour();
+        }, 250);
+      }
     } catch (err) {
       console.error('Failed to load demo', err);
 
@@ -1064,6 +1077,112 @@ export default function App() {
     );
   }
 
+  function closeAllModals() {
+    setStatsOpen(false);
+    setHistoryOpen(false);
+    setPrefsOpen(false);
+    setCreateOpen(false);
+    setInfoOpen(false);
+    setSelectedProgram(null);
+    setEditDraft(null);
+  }
+
+  function startGuidedTour() {
+    closeAllModals();
+    setTourStepIndex(0);
+    setTourOpen(true);
+  }
+
+  function endGuidedTour() {
+    closeAllModals();
+    setTourOpen(false);
+    setTourStepIndex(0);
+  }
+
+  const tourSteps: TourStep[] = [
+    {
+      id: 'welcome',
+      title: 'Welcome to SeiRaji',
+      body: 'SeiRaji is a media tracker for Japanese radio, podcast, and streaming programs. This demo profile includes seeded programs, progress, tags, and activity so you can explore the app immediately.',
+      placement: 'center',
+      onEnter: () => {
+        closeAllModals();
+      },
+    },
+    {
+      id: 'search',
+      title: 'Search and filter your library',
+      body: 'Use the search bar and filters to narrow the library by title, host, platform, status, tags, pinned programs, or progress.',
+      target: 'search-input',
+      onEnter: () => {
+        closeAllModals();
+      },
+    },
+    {
+      id: 'program-card',
+      title: 'Track each program from its card',
+      body: 'Each program card shows the title, host, source platform, progress, status, and quick controls for updating your listening progress.',
+      target: 'program-card',
+      onEnter: () => {
+        closeAllModals();
+      },
+    },
+    {
+      id: 'progress',
+      title: 'Update listening progress',
+      body: 'The progress controls let you increment or adjust the latest episode you listened to. These updates also feed the activity history and stats views.',
+      target: 'progress-controls',
+      onEnter: () => {
+        closeAllModals();
+      },
+    },
+    {
+      id: 'stats',
+      title: 'View listening stats',
+      body: 'The Stats view summarizes total programs, listened episodes, estimated listening time, recent activity, status breakdowns, and platform mix.',
+      target: 'stats-modal',
+      spotlightTarget: 'stats-modal-shell',
+      onEnter: () => {
+        closeAllModals();
+        setStatsOpen(true);
+      },
+    },
+    {
+      id: 'history',
+      title: 'Review recent activity',
+      body: 'The History view shows recent progress changes, including when episodes were logged and which programs were updated.',
+      target: 'history-modal',
+      spotlightTarget: 'history-modal-shell',
+      onEnter: () => {
+        closeAllModals();
+        setHistoryOpen(true);
+      },
+    },
+    {
+      id: 'import',
+      title: 'Import or add programs',
+      body: 'Use the add/import flow to bring in supported program URLs or create manual entries for platforms that are not supported yet.',
+      target: 'import-modal',
+      spotlightTarget: 'import-modal-shell',
+      onEnter: () => {
+        closeAllModals();
+        setCreateOpen(true);
+      },
+    },
+    {
+      id: 'preferences',
+      title: 'Customize and back up your library',
+      body: 'Preferences let you adjust display behavior and manage cloud backup settings for your personal library state.',
+      target: 'preferences-modal',
+      spotlightTarget: 'preferences-modal-shell',
+
+      onEnter: () => {
+        closeAllModals();
+        setPrefsOpen(true);
+      },
+    },
+  ];
+
   return (
     <div className={dark ? 'dark' : ''}>
       <div className="app-bg min-h-screen bg-background text-foreground">
@@ -1073,6 +1192,8 @@ export default function App() {
             onOpenHistory={() => setHistoryOpen(true)}
             onOpenPrefs={() => setPrefsOpen(true)}
             onOpenCreateProgram={() => setCreateOpen(true)}
+            onOpenInfo={() => setInfoOpen(true)}
+            onStartTour={startGuidedTour}
             onResetSelection={resetLibraryView}
           />
 
@@ -1094,12 +1215,28 @@ export default function App() {
                 </h2>
 
                 <p className="text-sm text-muted-foreground mb-4">
-                  Load a demo profile to explore how the app works!
+                  SeiRaji helps track listening progress, backlog status, and
+                  metadata for Japanese radio and podcast programs. Load a demo
+                  profile to explore the app with sample progress and activity
+                  history.
                 </p>
 
-                <div className="flex gap-3 justify-end">
-                  <Button onClick={loadDemo} disabled={libraryLoading}>
-                    {libraryLoading ? 'Loading Library...' : 'Load Demo'}
+                <div className="flex flex-col gap-3 sm:flex-row sm:justify-end">
+                  <Button
+                    variant="secondary"
+                    onClick={() => loadDemo()}
+                    disabled={libraryLoading}
+                  >
+                    {libraryLoading ? 'Loading Library...' : 'Load Demo Only'}
+                  </Button>
+
+                  <Button
+                    onClick={() => loadDemo({ startTour: true })}
+                    disabled={libraryLoading}
+                  >
+                    {libraryLoading
+                      ? 'Loading Library...'
+                      : 'Start Guided Demo'}
                   </Button>
                 </div>
               </motion.div>
@@ -1238,8 +1375,36 @@ export default function App() {
               setEditDraft(null);
             }}
           />
+
+          <InfoModal
+            open={infoOpen}
+            onClose={() => setInfoOpen(false)}
+            onStartTour={startGuidedTour}
+          />
         </div>
+
+        <footer className="mt-10 pb-8 text-center text-xs text-muted-foreground">
+          <div className="flex flex-wrap justify-center gap-3">
+            <a href="https://stef-lev.xyz/" className="hover:text-foreground">
+              Portfolio
+            </a>
+            <a
+              href="https://github.com/stefano-lev/seiraji"
+              className="hover:text-foreground"
+            >
+              GitHub
+            </a>
+          </div>
+        </footer>
       </div>
+
+      <GuidedTourOverlay
+        open={tourOpen}
+        steps={tourSteps}
+        stepIndex={tourStepIndex}
+        onStepIndexChange={setTourStepIndex}
+        onClose={endGuidedTour}
+      />
 
       <Toaster richColors position="bottom-right" closeButton />
     </div>

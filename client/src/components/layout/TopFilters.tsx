@@ -127,6 +127,7 @@ export function ProgramFilters({
         <div className="p-4 flex flex-col gap-3">
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
             <Input
+              data-tour="search-input"
               ref={searchRef}
               placeholder="Search programs or hosts..."
               value={searchQuery}

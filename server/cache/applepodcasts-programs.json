@@ -379,7 +379,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-29T19:59:42.642Z",
+      "cachedAt": "2026-07-07T19:32:51.811Z",
       "episodeCount": 15
     }
   },
@@ -4165,7 +4165,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-29T19:59:43.450Z",
+      "cachedAt": "2026-07-07T19:32:52.432Z",
       "episodeCount": 171
     }
   },
@@ -4648,11 +4648,33 @@
           "itunesEpisodeType": "full",
           "itunesExplicit": null
         }
+      },
+      {
+        "id": "applepodcasts:1863614215:c250d226-ae0d-4458-901e-3ebf26bbb049",
+        "title": "#18_竹内朱莉_前編",
+        "description": "竹内朱莉が今のアンジュルムを愛たっぷりにトーク！\n関係者席のあれやこれやも聞けちゃいます!",
+        "publishedAt": "Fri, 03 Jul 2026 09:00:01 GMT",
+        "publishedAtUnix": 1783069201,
+        "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45021539/45021539-1780647473263-68ba480891ce5.jpg",
+        "durationSeconds": 1109,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "c250d226-ae0d-4458-901e-3ebf26bbb049",
+          "link": "https://podcasters.spotify.com/pod/show/57e7cb5o87/episodes/18__-e3ljlfj",
+          "audioUrl": "https://anchor.fm/s/10cf2012c/podcast/play/122327987/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-6-3%2F427278357-44100-2-3e6d345e8ccc5.m4a",
+          "enclosureType": "audio/x-m4a",
+          "enclosureLength": "17936902",
+          "rawDuration": "00:18:29",
+          "itunesEpisode": null,
+          "itunesSeason": null,
+          "itunesEpisodeType": "full",
+          "itunesExplicit": null
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-06-29T19:59:43.823Z",
-      "episodeCount": 21
+      "cachedAt": "2026-07-07T19:32:52.687Z",
+      "episodeCount": 22
     }
   }
 }

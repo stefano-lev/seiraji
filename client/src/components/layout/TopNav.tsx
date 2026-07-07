@@ -5,6 +5,8 @@ type Props = {
   onOpenHistory: () => void;
   onOpenPrefs: () => void;
   onOpenCreateProgram: () => void;
+  onOpenInfo: () => void;
+  onStartTour: () => void;
   onResetSelection: () => void;
 };
 
@@ -13,6 +15,7 @@ export function TopNav({
   onOpenHistory,
   onOpenPrefs,
   onOpenCreateProgram,
+  onOpenInfo,
   onResetSelection,
 }: Props) {
   return (
@@ -84,6 +87,15 @@ export function TopNav({
                 onClick={onOpenPrefs}
               >
                 Preferences
+              </Button>
+
+              <Button
+                data-tour="info-button"
+                variant="secondary"
+                className="shrink-0"
+                onClick={onOpenInfo}
+              >
+                Info
               </Button>
             </div>
             <div className="w-full sm:w-auto h-px sm:h-auto bg-border/60 mx-0 sm:mx-1" />

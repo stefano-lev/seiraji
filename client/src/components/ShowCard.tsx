@@ -86,6 +86,7 @@ export const ShowCard = React.memo(function ShowCard({
 
   return (
     <Card
+      data-tour="program-card"
       onClick={() => onOpen?.(program)}
       className={`
     relative group overflow-hidden transition-shadow hover:shadow-xl
@@ -172,7 +173,10 @@ export const ShowCard = React.memo(function ShowCard({
             : 'p-4 pt-0 flex flex-col flex-1 h-full'
         }
       >
-        <div className="flex flex-col flex-1 justify-between gap-3">
+        <div
+          data-tour="progress-controls"
+          className="flex flex-col flex-1 justify-between gap-3"
+        >
           {prefs.showLastEpisodeOnCard && latestEpisode && (
             <div className="text-xs border-l pl-2 text-muted-foreground">
               <div className="font-medium text-foreground">

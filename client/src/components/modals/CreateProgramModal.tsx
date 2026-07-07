@@ -298,6 +298,7 @@ export function CreateProgramModal({
       onClick={handleClose}
     >
       <motion.div
+        data-tour="import-modal-shell"
         className="w-full max-w-xl max-h-[85vh] rounded-3xl border border-border/60 bg-background p-4 shadow-2xl flex flex-col"
         initial={{ opacity: 0, scale: 0.98, y: 8 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -320,7 +321,10 @@ export function CreateProgramModal({
           </Button>
         </div>
 
-        <div className="border-b border-border/60 px-6 py-4">
+        <div
+          data-tour="import-modal"
+          className="border-b border-border/60 px-6 py-4"
+        >
           <h2 className="text-xl font-semibold">
             {tab === 'manual'
               ? editingProgram

@@ -43,6 +43,7 @@ export function HistoryModal({
       onClick={onClose}
     >
       <motion.div
+        data-tour="history-modal-shell"
         className="
           w-full
           max-w-5xl
@@ -63,7 +64,10 @@ export function HistoryModal({
         onClick={(e) => e.stopPropagation()}
       >
         {/* HEADER */}
-        <div className="shrink-0 border-b border-border/60 p-4 sm:p-6">
+        <div
+          data-tour="history-modal"
+          className="shrink-0 border-b border-border/60 p-4 sm:p-6"
+        >
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div>
               <h2 className="text-2xl font-bold">History</h2>
