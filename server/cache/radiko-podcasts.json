@@ -310,11 +310,39 @@
           "episodeId": "9d5cb225-62db-4e97-a69f-5dcebda0c7c3",
           "episodeUrl": "https://radiko.jp/podcast/episodes/9d5cb225-62db-4e97-a69f-5dcebda0c7c3?play=auto"
         }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:ee4ed99e-1bc5-4f1a-a5bf-f6834b0bdac2",
+        "title": "#105 おかぁたんになりました！",
+        "description": "マルチタレント幸巴の冠ラジオ番組！\n\n第105回となる今回は、「おかぁたんになりました！」のコーナー。\nこみつおも爆誕から1歳1カ月ほど経ち・・・日々育児に奮闘中！！！\nそんなともぽんの日常をゆる～くお話しています♪",
+        "publishedAt": "2026-07-13T09:00:00.000Z",
+        "publishedAtUnix": 1783933200,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 528,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "ee4ed99e-1bc5-4f1a-a5bf-f6834b0bdac2",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/ee4ed99e-1bc5-4f1a-a5bf-f6834b0bdac2?play=auto"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:8ce3bc09-5efe-472c-8a89-38d689c79591",
+        "title": "#106 スマホの中身はなんじゃろなぁ？",
+        "description": "マルチタレント幸巴の冠ラジオ番組☆\n\n106回は、「 スマホの中身はなんじゃろなぁ？～6月報告会～ 」\nともぽんが6月に撮影をした写真はどういったものになっているのか・・・\n癒し系から謎系まで色んな写真を楽しめますよ～！\n既にインスタグラムにも掲載してますので、みながらお楽しみください！",
+        "publishedAt": "2026-07-20T09:00:00.000Z",
+        "publishedAtUnix": 1784538000,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/large_thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 523,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "8ce3bc09-5efe-472c-8a89-38d689c79591",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/8ce3bc09-5efe-472c-8a89-38d689c79591?play=auto"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:32:51.804Z",
-      "episodeCount": 21
+      "cachedAt": "2026-07-21T20:46:58.699Z",
+      "episodeCount": 23
     }
   }
 }

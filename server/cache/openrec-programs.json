@@ -558,7 +558,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:32:55.127Z",
+      "cachedAt": "2026-07-21T20:47:01.187Z",
       "episodeCount": 30
     },
     "raw": {
@@ -1261,7 +1261,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:32:56.648Z",
+      "cachedAt": "2026-07-21T20:47:02.390Z",
       "episodeCount": 4
     },
     "raw": {
@@ -1424,7 +1424,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:32:58.150Z",
+      "cachedAt": "2026-07-21T20:47:03.237Z",
       "episodeCount": 3
     },
     "raw": {
@@ -7850,11 +7850,47 @@
           "publicType": "member",
           "game": "その他（Others）"
         }
+      },
+      {
+        "id": "openrec:em8xv1wy9r2",
+        "title": "【サブスク向け雑談配信】相良茉優のFUN!FAN!FACTORY#272",
+        "description": "相良茉優のサブスク番組！\n今回は工場長のご自宅配信！\n20:00-お楽しみに−！",
+        "publishedAt": "2026-07-14T19:59:13+09:00",
+        "publishedAtUnix": 1784026753,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDI4L25fMzMwMjc2MV8yMDI2MDcwNjIxNDIyMC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJwbmcifQ==",
+        "durationSeconds": 2829,
+        "tags": [
+          "声優"
+        ],
+        "platformMetadata": {
+          "views": 434,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "雑談"
+        }
+      },
+      {
+        "id": "openrec:ykz0p33k08w",
+        "title": "【クレープ焼くよ】相良茉優のFUN!FAN!FACTORY#273【まゆ6月だよもやるよ】",
+        "description": "相良茉優のサブスク番組！\n今回はクレープ焼いて食べながら\n「まゆ6月だよ」を見ていきます\n\nお楽しみに！",
+        "publishedAt": "2026-07-20T19:59:22+09:00",
+        "publishedAtUnix": 1784545162,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDMyL25fMzMwMzEwM18yMDI2MDcxOTE4Mzk0OS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Imluc2lkZSIsIndpZHRoIjoiMTkyMCJ9fSwib3V0cHV0Rm9ybWF0IjoianBnIn0=",
+        "durationSeconds": 6524,
+        "tags": [
+          "声優"
+        ],
+        "platformMetadata": {
+          "views": 619,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "雑談"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:33:09.449Z",
-      "episodeCount": 351
+      "cachedAt": "2026-07-21T20:47:13.659Z",
+      "episodeCount": 353
     },
     "raw": {
       "site": {
@@ -18215,11 +18251,101 @@
           "publicType": "member",
           "game": "雑談"
         }
+      },
+      {
+        "id": "openrec:em8xv16pjr2",
+        "title": "相羽あいなのアイバダービー#240",
+        "description": "©CAPCOM\n\n★番組後半はチャンネルサブスク会員限定配信となります。チャンネルサブスクについては下記リンクから！\nどのサブスクプランでも、番組後半と過去のアーカイブが視聴できます！\nhttps://www.openrec.tv/subscription/user/aiba_derby\n\n▼番組限定コミュニティ（Discord）の参加方法はこちら！\nhttps://openrecnext.amebaownd.com/posts/11101764",
+        "publishedAt": "2026-07-08T19:58:16+09:00",
+        "publishedAtUnix": 1783508296,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDIwL25fMzMwMTk2MV8yMDI2MDYyODE4MjYwNy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJwbmcifQ==",
+        "durationSeconds": 10335,
+        "tags": [
+          "声優"
+        ],
+        "platformMetadata": {
+          "views": 486,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "逆転裁判123 成歩堂セレクション"
+        }
+      },
+      {
+        "id": "openrec:n9ze644o184",
+        "title": "相羽あいなのアイバダービー#241",
+        "description": "★番組後半はチャンネルサブスク会員限定配信となります。チャンネルサブスクについては下記リンクから！\nどのサブスクプランでも、番組後半と過去のアーカイブが視聴できます！\nhttps://www.openrec.tv/subscription/user/aiba_derby\n\n▼番組限定コミュニティ（Discord）の参加方法はこちら！\nhttps://openrecnext.amebaownd.com/posts/11101764",
+        "publishedAt": "2026-07-15T19:59:36+09:00",
+        "publishedAtUnix": 1784113176,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDI5L25fMzMwMjgyNV8yMDI2MDcwODIxMDgyNS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJwbmcifQ==",
+        "durationSeconds": 6787,
+        "tags": [
+          "声優"
+        ],
+        "platformMetadata": {
+          "views": 601,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "その他（Others）"
+        }
+      },
+      {
+        "id": "openrec:o7z4y556qzl",
+        "title": "あいなの厩舎#241",
+        "description": "▼番組限定コミュニティ（Discord）の参加方法はこちら！\n\nhttps://openrecnext.amebaownd.com/posts/11101764\n　\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n",
+        "publishedAt": "2026-07-15T21:54:18+09:00",
+        "publishedAtUnix": 1784120058,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDI5L25fMzMwMjgyNl8yMDI2MDcwODIxMTEwMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJqcGcifQ==",
+        "durationSeconds": 1245,
+        "tags": [
+          "声優"
+        ],
+        "platformMetadata": {
+          "views": 213,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "雑談"
+        }
+      },
+      {
+        "id": "openrec:o7z4y55e5zl",
+        "title": "相羽あいなのアイバダービー#242",
+        "description": "★番組後半はチャンネルサブスク会員限定配信となります。チャンネルサブスクについては下記リンクから！\nどのサブスクプランでも、番組後半と過去のアーカイブが視聴できます！\nhttps://www.openrec.tv/subscription/user/aiba_derby\n\n▼番組限定コミュニティ（Discord）の参加方法はこちら！\nhttps://openrecnext.amebaownd.com/posts/11101764",
+        "publishedAt": "2026-07-19T19:57:10+09:00",
+        "publishedAtUnix": 1784458630,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDMwL25fMzMwMjk5OF8yMDI2MDcxNTIyMDIwNy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJwbmcifQ==",
+        "durationSeconds": 7250,
+        "tags": [
+          "声優"
+        ],
+        "platformMetadata": {
+          "views": 462,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "その他（Others）"
+        }
+      },
+      {
+        "id": "openrec:ykz0p33ld8w",
+        "title": "あいなの厩舎#242",
+        "description": "▼番組限定コミュニティ（Discord）の参加方法はこちら！\n\nhttps://openrecnext.amebaownd.com/posts/11101764\n　\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n",
+        "publishedAt": "2026-07-19T22:00:22+09:00",
+        "publishedAtUnix": 1784466022,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDMwL25fMzMwMjk5OV8yMDI2MDcxNTIyMDMwNy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJqcGcifQ==",
+        "durationSeconds": 1177,
+        "tags": [
+          "声優"
+        ],
+        "platformMetadata": {
+          "views": 138,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "雑談"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:33:24.111Z",
-      "episodeCount": 484
+      "cachedAt": "2026-07-21T20:47:28.289Z",
+      "episodeCount": 489
     },
     "raw": {
       "site": {
@@ -23478,7 +23604,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:33:29.936Z",
+      "cachedAt": "2026-07-21T20:47:37.044Z",
       "episodeCount": 194
     },
     "raw": {
@@ -25944,7 +26070,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:33:33.590Z",
+      "cachedAt": "2026-07-21T20:47:39.686Z",
       "episodeCount": 110
     },
     "raw": {
@@ -28468,7 +28594,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:33:37.577Z",
+      "cachedAt": "2026-07-21T20:47:41.841Z",
       "episodeCount": 96
     },
     "raw": {
@@ -30773,11 +30899,75 @@
           "publicType": "member",
           "game": "ラジオ"
         }
+      },
+      {
+        "id": "openrec:ov82ygg57zw",
+        "title": "#45 2026年7月11日スペシャルプラン",
+        "description": "『河瀬詩の泡沫らじおｰUTAKATA RADIO-』は、デジタル声優アイドルグループ「22/7」の河瀬詩が儚い泡のような深夜のひとときに、そっとあなたへ寄り添うトーク番組です。\n肩肘張らずにリラックスしながら聴いてください。\n泡沫(うたかた)のようなひとときを、一緒に楽しんでいただけたら嬉しいです。\n\nメール:uta@jocr.jp\nhttps://reg34.smp.ne.jp/regist/is?SMPFORM=lhqj-melcka-429d46fac17aa6d3046e4c215f854a84\n番組X：https://x.com/utakata_radio\n#泡沫らじお",
+        "publishedAt": "2026-07-12T01:15:01+09:00",
+        "publishedAtUnix": 1783786501,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDI5L25fMzMwMjg2OF8yMDI2MDcxMDEzNDExOC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJqcGcifQ==",
+        "durationSeconds": 1927,
+        "tags": [],
+        "platformMetadata": {
+          "views": 0,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "ラジオ"
+        }
+      },
+      {
+        "id": "openrec:nqz5g22mdrv",
+        "title": "#45 2026年7月11日ノーマルプラン",
+        "description": "『河瀬詩の泡沫らじおｰUTAKATA RADIO-』は、デジタル声優アイドルグループ「22/7」の河瀬詩が儚い泡のような深夜のひとときに、そっとあなたへ寄り添うトーク番組です。\n肩肘張らずにリラックスしながら聴いてください。\n泡沫(うたかた)のようなひとときを、一緒に楽しんでいただけたら嬉しいです。\n\nメール:uta@jocr.jp\nhttps://reg34.smp.ne.jp/regist/is?SMPFORM=lhqj-melcka-429d46fac17aa6d3046e4c215f854a84\n番組X：https://x.com/utakata_radio\n#泡沫らじお",
+        "publishedAt": "2026-07-12T01:15:01+09:00",
+        "publishedAtUnix": 1783786501,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDI5L25fMzMwMjg2N18yMDI2MDcxMDEzMzkxMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJqcGcifQ==",
+        "durationSeconds": 1926,
+        "tags": [],
+        "platformMetadata": {
+          "views": 0,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "ラジオ"
+        }
+      },
+      {
+        "id": "openrec:olryv99wwr2",
+        "title": "#46 2026年7月18日スペシャルプラン",
+        "description": "『河瀬詩の泡沫らじおｰUTAKATA RADIO-』は、デジタル声優アイドルグループ「22/7」の河瀬詩が儚い泡のような深夜のひとときに、そっとあなたへ寄り添うトーク番組です。\n肩肘張らずにリラックスしながら聴いてください。\n泡沫(うたかた)のようなひとときを、一緒に楽しんでいただけたら嬉しいです。\n\nメール:uta@jocr.jp\nhttps://reg34.smp.ne.jp/regist/is?SMPFORM=lhqj-melcka-429d46fac17aa6d3046e4c215f854a84\n番組X：https://x.com/utakata_radio\n#泡沫らじお",
+        "publishedAt": "2026-07-19T01:15:01+09:00",
+        "publishedAtUnix": 1784391301,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDMxL25fMzMwMzAzNF8yMDI2MDcxNzAxMzMwNi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJqcGcifQ==",
+        "durationSeconds": 2047,
+        "tags": [],
+        "platformMetadata": {
+          "views": 0,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "ラジオ"
+        }
+      },
+      {
+        "id": "openrec:e5rk9qqj9zv",
+        "title": "#46 2026年7月18日ノーマルプラン",
+        "description": "『河瀬詩の泡沫らじおｰUTAKATA RADIO-』は、デジタル声優アイドルグループ「22/7」の河瀬詩が儚い泡のような深夜のひとときに、そっとあなたへ寄り添うトーク番組です。\n肩肘張らずにリラックスしながら聴いてください。\n泡沫(うたかた)のようなひとときを、一緒に楽しんでいただけたら嬉しいです。\n\nメール:uta@jocr.jp\nhttps://reg34.smp.ne.jp/regist/is?SMPFORM=lhqj-melcka-429d46fac17aa6d3046e4c215f854a84\n番組X：https://x.com/utakata_radio\n#泡沫らじお",
+        "publishedAt": "2026-07-19T01:15:01+09:00",
+        "publishedAtUnix": 1784391301,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDMxL25fMzMwMzAzM18yMDI2MDcxNzAxMzEwNi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJqcGcifQ==",
+        "durationSeconds": 2045,
+        "tags": [],
+        "platformMetadata": {
+          "views": 0,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "ラジオ"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:33:39.830Z",
-      "episodeCount": 88
+      "cachedAt": "2026-07-21T20:47:44.488Z",
+      "episodeCount": 92
     },
     "raw": {
       "site": {
@@ -32045,7 +32235,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:33:42.614Z",
+      "cachedAt": "2026-07-21T20:47:46.415Z",
       "episodeCount": 66
     },
     "raw": {
@@ -32697,7 +32887,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:33:44.046Z",
+      "cachedAt": "2026-07-21T20:47:47.560Z",
       "episodeCount": 16
     },
     "raw": {
@@ -33777,7 +33967,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:33:44.615Z",
+      "cachedAt": "2026-07-21T20:47:48.107Z",
       "episodeCount": 54
     },
     "raw": {
@@ -34317,7 +34507,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:33:45.256Z",
+      "cachedAt": "2026-07-21T20:47:48.392Z",
       "episodeCount": 22
     },
     "raw": {
@@ -35628,11 +35818,27 @@
           "publicType": "member",
           "game": "雑談"
         }
+      },
+      {
+        "id": "openrec:nqr6n11lp86",
+        "title": "おつきみアフタートーク！#34",
+        "description": "『星谷美緒のおつきみ！』は、声優の星谷美緒がルームウェア姿で近況を語ったり、お便りを読んだり、癖の強いオタクトークをしたりするおしゃべりバラエティ番組です！\n\n\n◎出演◎\n\n星谷美緒　　https://x.com/mio_hoshitani\n\n\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n▼▼チャンネル会員登録はこちら▼▼\n\nhttps://www.openrec.tv/subscription/user/hoshitanimio_otsukimi\n\n\n▼▼限定コミュニティ（Discord）の参加方法はこちら▼▼\n\nhttps://openrecnext.amebaownd.com/posts/11101764",
+        "publishedAt": "2026-07-18T19:00:01+09:00",
+        "publishedAtUnix": 1784368801,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDMxL25fMzMwMzA3MV8yMDI2MDcxNzE4MTQzNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJqcGcifQ==",
+        "durationSeconds": 605,
+        "tags": [],
+        "platformMetadata": {
+          "views": 65,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "雑談"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:33:46.934Z",
-      "episodeCount": 65
+      "cachedAt": "2026-07-21T20:47:50.932Z",
+      "episodeCount": 66
     }
   }
 }

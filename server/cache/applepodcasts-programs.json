@@ -379,7 +379,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:32:51.811Z",
+      "cachedAt": "2026-07-21T20:46:58.705Z",
       "episodeCount": 15
     }
   },
@@ -4165,7 +4165,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:32:52.432Z",
+      "cachedAt": "2026-07-21T20:46:59.815Z",
       "episodeCount": 171
     }
   },
@@ -4670,11 +4670,55 @@
           "itunesEpisodeType": "full",
           "itunesExplicit": null
         }
+      },
+      {
+        "id": "applepodcasts:1863614215:541393eb-ef92-4c0e-bfe0-cdc05a2ae263",
+        "title": "#19_竹内朱莉_後編",
+        "description": "竹内朱莉が松岡さんと\nアンジュルム時代の数々の「伝説の事件簿」を振り返る！\nそしてあの人に会いに行った話も…！！",
+        "publishedAt": "Fri, 10 Jul 2026 09:00:00 GMT",
+        "publishedAtUnix": 1783674000,
+        "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45021539/45021539-1780647473263-68ba480891ce5.jpg",
+        "durationSeconds": 1174,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "541393eb-ef92-4c0e-bfe0-cdc05a2ae263",
+          "link": "https://podcasters.spotify.com/pod/show/57e7cb5o87/episodes/19__-e3lt4ri",
+          "audioUrl": "https://anchor.fm/s/10cf2012c/podcast/play/122638642/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-6-10%2F427695798-44100-2-ed96326707b3c.m4a",
+          "enclosureType": "audio/x-m4a",
+          "enclosureLength": "18988000",
+          "rawDuration": "00:19:34",
+          "itunesEpisode": "6",
+          "itunesSeason": "2",
+          "itunesEpisodeType": "full",
+          "itunesExplicit": null
+        }
+      },
+      {
+        "id": "applepodcasts:1863614215:3923f823-c876-4c82-8e0f-839c577175e3",
+        "title": "#20_山崎あおい_前編",
+        "description": "「こんなに聞かれることない！」というほど山崎あおいさんを質問攻め！！\nハロプスでしか聞けない貴重なトークをぜひお楽しみください！",
+        "publishedAt": "Fri, 17 Jul 2026 09:00:01 GMT",
+        "publishedAtUnix": 1784278801,
+        "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45021539/45021539-1780647473263-68ba480891ce5.jpg",
+        "durationSeconds": 1018,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "3923f823-c876-4c82-8e0f-839c577175e3",
+          "link": "https://podcasters.spotify.com/pod/show/57e7cb5o87/episodes/20__-e3m6lhu",
+          "audioUrl": "https://anchor.fm/s/10cf2012c/podcast/play/122950654/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-6-17%2F428115657-44100-2-8aa6236db8b68.m4a",
+          "enclosureType": "audio/x-m4a",
+          "enclosureLength": "16465226",
+          "rawDuration": "00:16:58",
+          "itunesEpisode": "7",
+          "itunesSeason": "2",
+          "itunesEpisodeType": "full",
+          "itunesExplicit": null
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-07T19:32:52.687Z",
-      "episodeCount": 22
+      "cachedAt": "2026-07-21T20:47:00.084Z",
+      "episodeCount": 24
     }
   }
 }
