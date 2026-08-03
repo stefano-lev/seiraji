@@ -558,7 +558,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:01.187Z",
+      "cachedAt": "2026-08-03T21:20:11.493Z",
       "episodeCount": 30
     },
     "raw": {
@@ -1258,11 +1258,27 @@
           "publicType": "member",
           "game": "その他（Others）"
         }
+      },
+      {
+        "id": "openrec:p2zjvww7nzw",
+        "title": "🎮すわわげーみんぐ#3🎮「8番出口」「めっちゃカメレオン」に挑戦！",
+        "description": "諏訪ななかのゲーム番組『すわわげーみんぐ』🎮✨\n\n今回は「８番出口」と「めっちゃカメレオン」に挑戦！\nぜひお楽しみに👀\n\n配信の前半は無料お試し配信！どなたでもご視聴いただけます！\n後半はサブスク会員様限定の配信になります。\n\n▼サブスク会員登録、サブスクの特典についてはこちら！\nhttps://www.mellow-fan.com/subscription/user/suwawagaming\n\n▼今回のゲームはこちら！\n８番出口\nhttps://store.steampowered.com/app/2653790/8/?l=ja\nめっちゃカメレオン\nhttps://store.steampowered.com/app/4704690/_/?l=ja",
+        "publishedAt": "2026-07-22T19:57:33+09:00",
+        "publishedAtUnix": 1784717853,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDMwL25fMzMwMjk4M18yMDI2MDcxNTE3MDc0Ni5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJwbmcifQ==",
+        "durationSeconds": 6264,
+        "tags": [],
+        "platformMetadata": {
+          "views": 957,
+          "movieType": "1",
+          "publicType": "member_trial",
+          "game": "8番出口"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:02.390Z",
-      "episodeCount": 4
+      "cachedAt": "2026-08-03T21:20:12.536Z",
+      "episodeCount": 5
     },
     "raw": {
       "site": {
@@ -1421,11 +1437,29 @@
           "publicType": "member",
           "game": "雑談"
         }
+      },
+      {
+        "id": "openrec:p2zjvwwnnzw",
+        "title": "#4 ふたりの初ロケ見守り隊🍒",
+        "description": "第四回配信は初ロケの様子をみんなで一緒にウォッチパーティ！\nペットカフェ🐈とBBQ🍖で楽しむ様子を2人と一緒に見守りましょう🌟\n\n『春茶と月音こなのふたりのあいだくらい。』とは、\n春茶さんと月音こなさんが“二人のちょうど良い温度感”で作り出すのほほんとした番組をお届けします。\n\n\n▼春茶\nhttps://x.com/HARUTYA1226\n\n▼月音こな\nhttps://x.com/KonaTsukine\n\n▼撮影協力\nアニミルお台場店\n東京都港区台場1-6-1 デックス東京ビーチ シーサイドモール5F\nTEL：03-6457-1215\n営業時間：12:00～19:00（土日祝 11:00～19:00）\n最終受付：18:15\n定休日：木曜日\n\n@animeal_odaiba\nhttps://www.instagram.com/animeal_odaiba?igsh=MWRva2dkcDQwbnptdA==\n\n",
+        "publishedAt": "2026-07-24T18:57:50+09:00",
+        "publishedAtUnix": 1784887070,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDMwL25fMzMwMjk1OV8yMDI2MDcxNDE3NTczMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJqcGcifQ==",
+        "durationSeconds": 4630,
+        "tags": [
+          "雑談"
+        ],
+        "platformMetadata": {
+          "views": 1060,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "雑談"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:03.237Z",
-      "episodeCount": 3
+      "cachedAt": "2026-08-03T21:20:13.851Z",
+      "episodeCount": 4
     },
     "raw": {
       "site": {
@@ -7886,11 +7920,29 @@
           "publicType": "member",
           "game": "雑談"
         }
+      },
+      {
+        "id": "openrec:1o8qmoov1zk",
+        "title": "【まゆとドライブ】相良茉優のFUN!FAN!FACTORY#273【みんなで東京観光】",
+        "description": "相良茉優のサブスク番組！\n今回はハンコン使って東京をドライブして\n遊びます\n\nお楽しみに！",
+        "publishedAt": "2026-07-27T19:57:33+09:00",
+        "publishedAtUnix": 1785149853,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDMyL25fMzMwMzEzMl8yMDI2MDcyMDIzMDE1OC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Imluc2lkZSIsIndpZHRoIjoiMTkyMCJ9fSwib3V0cHV0Rm9ybWF0IjoianBnIn0=",
+        "durationSeconds": 6936,
+        "tags": [
+          "声優"
+        ],
+        "platformMetadata": {
+          "views": 657,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "Forza Horizon 6"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:13.659Z",
-      "episodeCount": 353
+      "cachedAt": "2026-08-03T21:20:18.641Z",
+      "episodeCount": 354
     },
     "raw": {
       "site": {
@@ -18341,11 +18393,47 @@
           "publicType": "member",
           "game": "雑談"
         }
+      },
+      {
+        "id": "openrec:mlrle66oe8g",
+        "title": "相羽あいなのアイバダービー#243【めっちゃカメレオン】",
+        "description": "めっちゃカメレオン！はこちらから！\nhttps://store.steampowered.com/app/4704690/_/?l=japanese\n\n★番組後半はチャンネルサブスク会員限定配信となります。チャンネルサブスクについては下記リンクから！\nどのサブスクプランでも、番組後半と過去のアーカイブが視聴できます！\nhttps://www.openrec.tv/subscription/user/aiba_derby\n\n▼番組限定コミュニティ（Discord）の参加方法はこちら！\nhttps://openrecnext.amebaownd.com/posts/11101764",
+        "publishedAt": "2026-07-29T20:03:56+09:00",
+        "publishedAtUnix": 1785323036,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDMyL25fMzMwMzEwNV8yMDI2MDcxOTIxMTIwNC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJwbmcifQ==",
+        "durationSeconds": 8075,
+        "tags": [
+          "声優"
+        ],
+        "platformMetadata": {
+          "views": 674,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "その他（Others）"
+        }
+      },
+      {
+        "id": "openrec:2k8m4yyo286",
+        "title": "あいなの厩舎#243",
+        "description": "▼番組限定コミュニティ（Discord）の参加方法はこちら！\n\nhttps://openrecnext.amebaownd.com/posts/11101764\n　\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n",
+        "publishedAt": "2026-07-29T22:20:47+09:00",
+        "publishedAtUnix": 1785331247,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDMyL25fMzMwMzEwNl8yMDI2MDcxOTIxMTQ0Ny5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJqcGcifQ==",
+        "durationSeconds": 1014,
+        "tags": [
+          "声優"
+        ],
+        "platformMetadata": {
+          "views": 169,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "雑談"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:28.289Z",
-      "episodeCount": 489
+      "cachedAt": "2026-08-03T21:20:25.758Z",
+      "episodeCount": 491
     },
     "raw": {
       "site": {
@@ -23604,7 +23692,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:37.044Z",
+      "cachedAt": "2026-08-03T21:20:30.241Z",
       "episodeCount": 194
     },
     "raw": {
@@ -26067,11 +26155,27 @@
           "publicType": "member",
           "game": "その他（Others）"
         }
+      },
+      {
+        "id": "openrec:wez9n44wmrl",
+        "title": "きどまだSeason3 #25 リズム天国？なゲーム",
+        "description": "Season3　第２５回目の配信です！\nリズム天国っぽいゲームをやります！！\n\n\n▽番組概要\n声優・木戸衣吹が、素敵な大人になるために、視聴者の協力を得ながら勉強して成長するチャンネル。生放送やアップロード動画が配信されます。\n\nお便りはコチラにお願いします。\nkidomada.fresh@gmail.com\n\n▽過去のコーナー紹介\n（Season1）\n■Wikipedia自己紹介\nWikipediaを参考にしながら自己紹介をする企画。\n■未成年格言\n大人とは何かを考えるために、有名な人の格言を使って格言を考える企画。\n■オトナ勉強会\nあるお題で視聴者から募集したお便りを読みながらトークします。\n■読書感想文\nマネージャーさんの「年内に50冊本を読みなさい」という発言から生まれた企画。視聴者の皆さんで、課題図書をちゃんと読んでいるのか監視します。\n\n（Season2）\n■きどまだ絵日記\n木戸衣吹の日常を絵日記にしてお届けします。\n■きどまだお便り\nふつおたや季節毎のテーマのお便りを皆さまから募集して番組内で紹介します。\n■ゲストを迎えての企画\n同期・後輩声優とわちゃわちゃ過ごします。\n女性３人でのBLトークなど過激な内容になることもあります。\n■ゲーム配信\n逆転裁判、リトルナイトメア、囚われのパルマなどのテレビゲームの他、アナログゲーム、視聴者参加型の企画も！？\n",
+        "publishedAt": "2026-07-31T19:55:56+09:00",
+        "publishedAtUnix": 1785495356,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDMzL25fMzMwMzI5Nl8yMDI2MDcyNzEyMjE1OC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Imluc2lkZSIsIndpZHRoIjoiMTkyMCJ9fSwib3V0cHV0Rm9ybWF0IjoianBnIn0=",
+        "durationSeconds": 3934,
+        "tags": [],
+        "platformMetadata": {
+          "views": 136,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "その他（Others）"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:39.686Z",
-      "episodeCount": 110
+      "cachedAt": "2026-08-03T21:20:32.578Z",
+      "episodeCount": 111
     },
     "raw": {
       "site": {
@@ -28594,7 +28698,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:41.841Z",
+      "cachedAt": "2026-08-03T21:20:33.794Z",
       "episodeCount": 96
     },
     "raw": {
@@ -30963,11 +31067,75 @@
           "publicType": "member",
           "game": "ラジオ"
         }
+      },
+      {
+        "id": "openrec:lv81xppl7z9",
+        "title": "#47 2026年7月25日ノーマルプラン",
+        "description": "『河瀬詩の泡沫らじおｰUTAKATA RADIO-』は、デジタル声優アイドルグループ「22/7」の河瀬詩が儚い泡のような深夜のひとときに、そっとあなたへ寄り添うトーク番組です。\n肩肘張らずにリラックスしながら聴いてください。\n泡沫(うたかた)のようなひとときを、一緒に楽しんでいただけたら嬉しいです。\n\nメール:uta@jocr.jp\nhttps://reg34.smp.ne.jp/regist/is?SMPFORM=lhqj-melcka-429d46fac17aa6d3046e4c215f854a84\n番組X：https://x.com/utakata_radio\n#泡沫らじお",
+        "publishedAt": "2026-07-26T01:15:01+09:00",
+        "publishedAtUnix": 1784996101,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDMzL25fMzMwMzIyMV8yMDI2MDcyMzE3NDQwNy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJqcGcifQ==",
+        "durationSeconds": 2405,
+        "tags": [],
+        "platformMetadata": {
+          "views": 0,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "ラジオ"
+        }
+      },
+      {
+        "id": "openrec:kdr7n99jgzj",
+        "title": "#47 2026年7月25日スペシャルプラン",
+        "description": "『河瀬詩の泡沫らじおｰUTAKATA RADIO-』は、デジタル声優アイドルグループ「22/7」の河瀬詩が儚い泡のような深夜のひとときに、そっとあなたへ寄り添うトーク番組です。\n肩肘張らずにリラックスしながら聴いてください。\n泡沫(うたかた)のようなひとときを、一緒に楽しんでいただけたら嬉しいです。\n\nメール:uta@jocr.jp\nhttps://reg34.smp.ne.jp/regist/is?SMPFORM=lhqj-melcka-429d46fac17aa6d3046e4c215f854a84\n番組X：https://x.com/utakata_radio\n#泡沫らじお",
+        "publishedAt": "2026-07-26T01:15:01+09:00",
+        "publishedAtUnix": 1784996101,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDMzL25fMzMwMzIyMl8yMDI2MDcyMzE3NDYwNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJqcGcifQ==",
+        "durationSeconds": 2407,
+        "tags": [],
+        "platformMetadata": {
+          "views": 0,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "ラジオ"
+        }
+      },
+      {
+        "id": "openrec:n9ze64vl184",
+        "title": "#48 2026年8月1日スペシャルプラン",
+        "description": "『河瀬詩の泡沫らじおｰUTAKATA RADIO-』は、デジタル声優アイドルグループ「22/7」の河瀬詩が儚い泡のような深夜のひとときに、そっとあなたへ寄り添うトーク番組です。\n肩肘張らずにリラックスしながら聴いてください。\n泡沫(うたかた)のようなひとときを、一緒に楽しんでいただけたら嬉しいです。\n\nメール:uta@jocr.jp\nhttps://reg34.smp.ne.jp/regist/is?SMPFORM=lhqj-melcka-429d46fac17aa6d3046e4c215f854a84\n番組X：https://x.com/utakata_radio\n#泡沫らじお",
+        "publishedAt": "2026-08-02T01:15:01+09:00",
+        "publishedAtUnix": 1785600901,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDM1L25fMzMwMzQyNV8yMDI2MDczMTAwMTI0Ni5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJqcGcifQ==",
+        "durationSeconds": 2167,
+        "tags": [],
+        "platformMetadata": {
+          "views": 0,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "ラジオ"
+        }
+      },
+      {
+        "id": "openrec:wez9n4795rl",
+        "title": "#48 2026年8月1日ノーマルプラン",
+        "description": "『河瀬詩の泡沫らじおｰUTAKATA RADIO-』は、デジタル声優アイドルグループ「22/7」の河瀬詩が儚い泡のような深夜のひとときに、そっとあなたへ寄り添うトーク番組です。\n肩肘張らずにリラックスしながら聴いてください。\n泡沫(うたかた)のようなひとときを、一緒に楽しんでいただけたら嬉しいです。\n\nメール:uta@jocr.jp\nhttps://reg34.smp.ne.jp/regist/is?SMPFORM=lhqj-melcka-429d46fac17aa6d3046e4c215f854a84\n番組X：https://x.com/utakata_radio\n#泡沫らじお",
+        "publishedAt": "2026-08-02T01:15:01+09:00",
+        "publishedAtUnix": 1785600901,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDM1L25fMzMwMzQyNF8yMDI2MDczMTAwMDkxMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJqcGcifQ==",
+        "durationSeconds": 2165,
+        "tags": [],
+        "platformMetadata": {
+          "views": 0,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "ラジオ"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:44.488Z",
-      "episodeCount": 92
+      "cachedAt": "2026-08-03T21:20:35.581Z",
+      "episodeCount": 96
     },
     "raw": {
       "site": {
@@ -32232,11 +32400,43 @@
           "publicType": "member",
           "game": "雑談"
         }
+      },
+      {
+        "id": "openrec:n9ze6440684",
+        "title": "『内田彩のポンポンといっしょ！』　第31回おまけ動画",
+        "description": "内田彩がパンダのポンポンといっしょにお届けする新番組「内田彩のポンポンといっしょ！」\n「with me」をテーマに内田さんと視聴者のみんなと一緒になって遊んだりゲームしたりする番組です！\n\n▼▼チャンネル会員登録はこちら▼▼\nhttps://www.openrec.tv/subscription/user/uchimizu\n\n▼▼限定コミュニティ（Discord）の参加方法はこちら▼▼\nhttps://openrecnext.amebaownd.com/posts/11101764",
+        "publishedAt": "2026-07-26T21:00:01+09:00",
+        "publishedAtUnix": 1785067201,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDMzL25fMzMwMzIyNV8yMDI2MDcyMzE4MTQxNC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJwbmcifQ==",
+        "durationSeconds": 785,
+        "tags": [],
+        "platformMetadata": {
+          "views": 94,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "雑談"
+        }
+      },
+      {
+        "id": "openrec:nqz5g22d9rv",
+        "title": "『内田彩のポンポンといっしょ！』　第32回",
+        "description": "内田彩がパンダのポンポンといっしょにお届けする新番組「内田彩のポンポンといっしょ！」\n「with me」をテーマに内田さんと視聴者のみんなと一緒になって遊んだりゲームしたりする番組です！\n\n▼▼チャンネル会員登録はこちら▼▼\nhttps://www.openrec.tv/subscription/user/uchimizu\n\n▼▼限定コミュニティ（Discord）の参加方法はこちら▼▼\nhttps://openrecnext.amebaownd.com/posts/11101764",
+        "publishedAt": "2026-07-30T19:58:51+09:00",
+        "publishedAtUnix": 1785409131,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDMxL25fMzMwMzA2N18yMDI2MDcxNzE2MDYwMC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJwbmcifQ==",
+        "durationSeconds": 4671,
+        "tags": [],
+        "platformMetadata": {
+          "views": 382,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "雑談"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:46.415Z",
-      "episodeCount": 66
+      "cachedAt": "2026-08-03T21:20:37.358Z",
+      "episodeCount": 68
     },
     "raw": {
       "site": {
@@ -32887,7 +33087,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:47.560Z",
+      "cachedAt": "2026-08-03T21:20:38.854Z",
       "episodeCount": 16
     },
     "raw": {
@@ -33967,7 +34167,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:48.107Z",
+      "cachedAt": "2026-08-03T21:20:39.393Z",
       "episodeCount": 54
     },
     "raw": {
@@ -34507,7 +34707,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:48.392Z",
+      "cachedAt": "2026-08-03T21:20:39.654Z",
       "episodeCount": 22
     },
     "raw": {
@@ -35834,11 +36034,29 @@
           "publicType": "member",
           "game": "雑談"
         }
+      },
+      {
+        "id": "openrec:ovrdvee7lrj",
+        "title": "星谷美緒のおつきみ！＃35",
+        "description": "■番組概要\n\n『星谷美緒のおつきみ！』は、大天才！星谷美緒がリスナーと一緒に新しい扉を開き「好き」を\n増やしていく番組です！今夜も終わるまで終わりません♡\n\n\nOPENRECチャンネルの会員登録をすると全編ご視聴いただけます！\n\n\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n◎出演◎\n\n星谷美緒　　https://x.com/mio_hoshitani\n\n\n\n▼▼チャンネル会員登録はこちら▼▼\n\nhttps://www.openrec.tv/subscription/user/hoshitanimio_otsukimi\n\n\n▼▼限定コミュニティ（Discord）の参加方法はこちら▼▼\n\nhttps://openrecnext.amebaownd.com/posts/11101764\n\n\n\n",
+        "publishedAt": "2026-07-28T19:59:35+09:00",
+        "publishedAtUnix": 1785236375,
+        "thumbnail": "https://image-handler.mellow-fan.com/eyJidWNrZXQiOiJvcGVucmVjLWFwcGRhdGEiLCJrZXkiOiJ0aHVtYm5haWxzLzMzMDMwL25fMzMwMjk3Nl8yMDI2MDcxNTE0MjE0MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiaW5zaWRlIiwid2lkdGgiOiIxOTIwIn19LCJvdXRwdXRGb3JtYXQiOiJqcGcifQ==",
+        "durationSeconds": 7251,
+        "tags": [
+          "声優"
+        ],
+        "platformMetadata": {
+          "views": 338,
+          "movieType": "1",
+          "publicType": "member",
+          "game": "雑談"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:50.932Z",
-      "episodeCount": 66
+      "cachedAt": "2026-08-03T21:20:41.639Z",
+      "episodeCount": 67
     }
   }
 }

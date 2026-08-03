@@ -84,3 +84,46 @@ export function calculateProgramRuntime(program: Program) {
 
   return programRuntime;
 }
+
+export function getLatestEpisodeTimestamp(program: Program): number {
+  let latest = 0;
+
+  for (const episode of program.episodes ?? []) {
+    const ts = getEpisodeTimestamp(episode);
+
+    if (ts > latest) {
+      latest = ts;
+    }
+  }
+
+  return latest;
+}
+
+export function getEpisodeTimestamp(episode: Episode): number {
+  if (typeof episode.publishedAtUnix === 'number') {
+    // Support both seconds and milliseconds
+    return episode.publishedAtUnix > 1_000_000_000_000
+      ? episode.publishedAtUnix
+      : episode.publishedAtUnix * 1000;
+  }
+
+  if (episode.publishedAt) {
+    const parsed = new Date(episode.publishedAt).getTime();
+
+    if (!Number.isNaN(parsed)) {
+      return parsed;
+    }
+  }
+
+  return 0;
+}
+
+export function formatEpisodeDate(timestamp: number): string {
+  if (!timestamp) return 'Unknown';
+
+  return new Date(timestamp).toLocaleDateString(undefined, {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+  });
+}

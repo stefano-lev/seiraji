@@ -3,10 +3,13 @@ import { Preferences } from '@/lib/storage';
 
 import type { Program } from '@/types/media';
 import type { UserProgramState } from '@/types/user';
+import type { SortMode } from '@/types/sort';
 
 type Props = {
   programs: Program[];
   userState: UserProgramState[];
+
+  sortMode: SortMode;
 
   onUpdate: (state: UserProgramState) => void;
   onUpdateEpisode: (programId: string, nextEpisode: number) => void;
@@ -22,6 +25,7 @@ type Props = {
 export function ProgramGrid({
   programs,
   userState,
+  sortMode,
   onUpdate,
   onUpdateEpisode,
   onOpen,
@@ -46,6 +50,7 @@ export function ProgramGrid({
           key={program.id}
           program={program}
           userState={userState.find((s) => s.programId === program.id)}
+          sortMode={sortMode}
           onUpdate={onUpdate}
           onUpdateEpisode={onUpdateEpisode}
           onOpen={onOpen}

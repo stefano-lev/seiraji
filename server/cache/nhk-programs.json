@@ -682,11 +682,33 @@
           "expires": "2026-07-26T23:30:00+09:00",
           "audioStatus": "ready"
         }
+      },
+      {
+        "id": "X56L5R985K",
+        "title": "Borderless Talk! 〜石田多朗 PART1",
+        "description": "異なるジャンルのクリエイターを招いて、創作と音楽について語り合う「Ｂｏｒｄｅｒｌｅｓｓ　Ｔａｌｋ！」。ゲストはハリウッドドラマ『ＳＨＯＧＵＮ』の総合アレンジャーとして世界的な注目を集める作曲家・石田多朗。幼少期はサンフランシスコの寺院で過ごし、家ではビートルズが流れ、お寺では声明が響く環境で育ち、音楽家になることなど想像もしなかった少年時代から、ジャンルを超えた創作へとつながる原風景をひもとく。",
+        "publishedAt": "2026-08-02T22:40:00+09:00",
+        "publishedAtUnix": 1785678000,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/R7V6MMNYMK/R7V6MMNYMK-eyecatch_4f51da7040237504bffa530de35774d1.png",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/rs/R7V6MMNYMK/episode/re/X56L5R985K/",
+          "radioEpisodeId": "X56L5R985K",
+          "radioSeriesId": "R7V6MMNYMK",
+          "guests": [
+            "石田多朗"
+          ],
+          "expires": "2026-08-09T23:30:00+09:00",
+          "audioStatus": "ready"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:46:59.793Z",
-      "episodeCount": 37
+      "cachedAt": "2026-08-03T21:20:11.495Z",
+      "episodeCount": 38
     }
   },
   "Y5MG659NGN": {
@@ -1877,11 +1899,29 @@
           "expires": "2026-07-30T20:55:00+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "Q3J315LQK3",
+        "title": "「1クールリクエスト」(22)(8月6日放送分)",
+        "description": "今回は「１クールリクエスト」の結果を発表する。「１クールリクエスト」とは、１クールつまり３か月間に放送された中から「またもう一度聞きたい」回に一言添えて、番組のホームページにリクエストしてもらったもの。今回は、４月２日から６月２５日までに放送された全１０回の中から、一番リクエストの多かった回を、皆さんから寄せられた「ここが面白かった」というご意見とともにお送りする。ナレーションは声優の戸松遥。",
+        "publishedAt": "2026-08-06T20:05:00+09:00",
+        "publishedAtUnix": 1786014300,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/Q3J315LQK3/",
+          "radioEpisodeId": "Q3J315LQK3",
+          "radioSeriesId": "Y5MG659NGN",
+          "guests": [],
+          "expires": "2026-08-13T20:55:00+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:03.710Z",
-      "episodeCount": 62
+      "cachedAt": "2026-08-03T21:20:15.317Z",
+      "episodeCount": 63
     }
   },
   "X4WNNM96KL": {
@@ -2816,7 +2856,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:07.147Z",
+      "cachedAt": "2026-08-03T21:20:18.384Z",
       "episodeCount": 48
     }
   },
@@ -7814,11 +7854,51 @@
           "expires": "2026-07-18T16:00:03+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "6QP86RMR8N",
+        "title": "講師:ヒャダイン/名曲発掘!ワンフレーズ萌えアニソン大賞",
+        "description": "音楽クリエイター・ヒャダインが徹底解説！個性豊かな珠玉の作品たち「名曲発掘！ワンフレーズ萌えアニソン大賞」▽ＤＪ：中川翔子・あべあきら",
+        "publishedAt": "2026-08-01T14:00:03+09:00",
+        "publishedAtUnix": 1785560403,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Q3PKWJX562/Q3PKWJX562-eyecatch_582887b8a9760840828129666351f77b.png",
+        "durationSeconds": 7200,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/anison-ac/rs/Q3PKWJX562/episode/re/6QP86RMR8N/",
+          "radioEpisodeId": "6QP86RMR8N",
+          "radioSeriesId": "Q3PKWJX562",
+          "guests": [
+            "ヒャダイン"
+          ],
+          "expires": "2026-08-08T16:00:03+09:00",
+          "audioStatus": "ready"
+        }
+      },
+      {
+        "id": "P3QN8K82R4",
+        "title": "2026年8月8日",
+        "description": "『2026年8月8日』の番組エピソードです",
+        "publishedAt": "2026-08-08T14:00:03+09:00",
+        "publishedAtUnix": 1786165203,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Q3PKWJX562/Q3PKWJX562-eyecatch_582887b8a9760840828129666351f77b.png",
+        "durationSeconds": 7200,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/anison-ac/rs/Q3PKWJX562/episode/re/P3QN8K82R4/",
+          "radioEpisodeId": "P3QN8K82R4",
+          "radioSeriesId": "Q3PKWJX562",
+          "guests": [],
+          "expires": "2026-08-15T16:00:03+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:18.456Z",
-      "episodeCount": 276
+      "cachedAt": "2026-08-03T21:20:30.028Z",
+      "episodeCount": 278
     }
   },
   "V8JW19JK29": {
@@ -8938,11 +9018,47 @@
           "expires": "2026-07-25T22:55:00+09:00",
           "audioStatus": "ready"
         }
+      },
+      {
+        "id": "NRMWGQMG3X",
+        "title": "〜釣りのラジオ〜 ナダルが登場!前編",
+        "description": "▽釣り好き大集合！今こそ釣りの素晴らしさを語ろう！三代目ＪＳＢ・山下健二郎が釣り好きゲストと釣りトーク全開！▽山下イチバンの釣り仲間・ナダルが登場！▽釣り帰りでスタジオへ！今朝の釣果は！？釣りスタイルをチェック。▽実は水族館勤務を夢見て水産学科出身！？▽進行は瀬戸光アナウンサー。▽らじるらじる、ｒａｄｉｋｏ、聴き逃しで配信。▽メッセージ、釣り自慢、失敗談を大募集！Ｘは　＃トークライクフィッシング",
+        "publishedAt": "2026-08-01T22:05:00+09:00",
+        "publishedAtUnix": 1785589500,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/V8JW19JK29/V8JW19JK29-eyecatch_98c8d0476cbb2f6faa38b9d35bed9924.jpg",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/rs/V8JW19JK29/episode/re/NRMWGQMG3X/",
+          "radioEpisodeId": "NRMWGQMG3X",
+          "radioSeriesId": "V8JW19JK29",
+          "guests": [],
+          "expires": "2026-08-08T22:55:00+09:00",
+          "audioStatus": "ready"
+        }
+      },
+      {
+        "id": "Y3YXNQZXJQ",
+        "title": "〜釣りのラジオ〜 ナダルが登場!後編",
+        "description": "『〜釣りのラジオ〜 ナダルが登場!後編』の番組エピソードです",
+        "publishedAt": "2026-08-08T22:05:00+09:00",
+        "publishedAtUnix": 1786194300,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/V8JW19JK29/V8JW19JK29-eyecatch_98c8d0476cbb2f6faa38b9d35bed9924.jpg",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/rs/V8JW19JK29/episode/re/Y3YXNQZXJQ/",
+          "radioEpisodeId": "Y3YXNQZXJQ",
+          "radioSeriesId": "V8JW19JK29",
+          "guests": [],
+          "expires": "2026-08-15T22:55:00+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:21.616Z",
-      "episodeCount": 61
+      "cachedAt": "2026-08-03T21:20:33.780Z",
+      "episodeCount": 63
     }
   }
 }

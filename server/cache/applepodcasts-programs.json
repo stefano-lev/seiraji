@@ -379,7 +379,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:46:58.705Z",
+      "cachedAt": "2026-08-03T21:20:08.083Z",
       "episodeCount": 15
     }
   },
@@ -4165,7 +4165,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:46:59.815Z",
+      "cachedAt": "2026-08-03T21:20:08.979Z",
       "episodeCount": 171
     }
   },
@@ -4714,11 +4714,55 @@
           "itunesEpisodeType": "full",
           "itunesExplicit": null
         }
+      },
+      {
+        "id": "applepodcasts:1863614215:074cadf5-dfca-46c2-9a40-7214c2242595",
+        "title": "#21_山崎あおい_中編",
+        "description": "引き続き松岡茉優が山崎あおいを質問責め！！\nハロプロ楽曲制作に込められた想いと裏側に迫ります！",
+        "publishedAt": "Fri, 24 Jul 2026 09:00:00 GMT",
+        "publishedAtUnix": 1784883600,
+        "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45021539/45021539-1780647473263-68ba480891ce5.jpg",
+        "durationSeconds": 563,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "074cadf5-dfca-46c2-9a40-7214c2242595",
+          "link": "https://podcasters.spotify.com/pod/show/57e7cb5o87/episodes/21__-e3mfu0t",
+          "audioUrl": "https://anchor.fm/s/10cf2012c/podcast/play/123254237/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-6-24%2F428527243-44100-2-b9829a598857f.m4a",
+          "enclosureType": "audio/x-m4a",
+          "enclosureLength": "9106849",
+          "rawDuration": "00:09:23",
+          "itunesEpisode": "8",
+          "itunesSeason": "2",
+          "itunesEpisodeType": "full",
+          "itunesExplicit": null
+        }
+      },
+      {
+        "id": "applepodcasts:1863614215:6a62b275-55e1-4a9c-b410-3ef539677909",
+        "title": "#22_山崎あおい_後編",
+        "description": "山崎あおいさんのある一言に松岡茉優が大絶叫～！！！\nラストまでお聞き逃しのないようにお楽しみください！",
+        "publishedAt": "Fri, 31 Jul 2026 09:00:01 GMT",
+        "publishedAtUnix": 1785488401,
+        "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45021539/45021539-1780647473263-68ba480891ce5.jpg",
+        "durationSeconds": 893,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "6a62b275-55e1-4a9c-b410-3ef539677909",
+          "link": "https://podcasters.spotify.com/pod/show/57e7cb5o87/episodes/22__-e3mpdv0",
+          "audioUrl": "https://anchor.fm/s/10cf2012c/podcast/play/123565472/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-6-31%2F428948320-44100-2-67dd510764c79.m4a",
+          "enclosureType": "audio/x-m4a",
+          "enclosureLength": "14443785",
+          "rawDuration": "00:14:53",
+          "itunesEpisode": "9",
+          "itunesSeason": "2",
+          "itunesEpisodeType": "full",
+          "itunesExplicit": null
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-07-21T20:47:00.084Z",
-      "episodeCount": 24
+      "cachedAt": "2026-08-03T21:20:09.436Z",
+      "episodeCount": 26
     }
   }
 }

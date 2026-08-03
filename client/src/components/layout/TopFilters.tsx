@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import type React from 'react';
 
 import type { UserProgramState } from '@/types/user';
+import type { SortMode } from '@/types/sort';
 
 import {
   Select,
@@ -14,15 +15,6 @@ import {
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '../ui/button';
-
-type SortMode =
-  | 'title'
-  | 'host'
-  | 'platform'
-  | 'episodeCount'
-  | 'recentlyUpdated'
-  | 'runtime'
-  | 'progress';
 
 const SORT_LABELS: Record<SortMode, string> = {
   title: 'Title',
@@ -188,9 +180,7 @@ export function ProgramFilters({
                 <SelectItem value="host">Host</SelectItem>
                 <SelectItem value="platform">Platform</SelectItem>
                 <SelectItem value="episodeCount">Episode Count</SelectItem>
-                <SelectItem value="recentlyUpdated">
-                  Recently Updated
-                </SelectItem>
+                <SelectItem value="recentlyUpdated">Latest Episode</SelectItem>
                 <SelectItem value="runtime">Runtime</SelectItem>
                 <SelectItem value="progress">Progress</SelectItem>
               </SelectContent>

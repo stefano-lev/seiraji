@@ -1,6 +1,7 @@
 import type { Program } from '@/types/media';
 import type { Preferences } from '@/lib/storage';
 import type { UserProgramState } from '@/types/user';
+import type { SortMode } from '@/types/sort';
 
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
@@ -14,11 +15,18 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { isRadikoBroadcastSnapshot } from '@/lib/platformDetection';
+import {
+  calculateProgramRuntime,
+  getLatestEpisodeTimestamp,
+  formatEpisodeDate,
+} from '@/lib/stats';
 import React from 'react';
 
 type Props = {
   program: Program;
   userState?: UserProgramState;
+  sortMode: SortMode;
+
   onUpdate: (state: UserProgramState) => void;
   onUpdateEpisode: (programId: string, nextEpisode: number) => void;
   onOpen?: (program: Program) => void;
@@ -31,6 +39,7 @@ type Props = {
 export const ShowCard = React.memo(function ShowCard({
   program,
   userState,
+  sortMode,
   onUpdate,
   onUpdateEpisode,
   onOpen,
@@ -78,6 +87,16 @@ export const ShowCard = React.memo(function ShowCard({
       .map((h: string) => h.trim())
       .filter(Boolean)
       .join(', ') || 'Unknown host';
+
+  const sortBadge = getSortContextBadge({
+    sortMode,
+    program,
+    lastEp,
+    totalEpisodes,
+    progressPct,
+    isBroadcastSnapshot,
+    isBroadcastLogged,
+  });
 
   function clamp(n: number) {
     if (!Number.isFinite(n)) return 0;
@@ -154,6 +173,29 @@ export const ShowCard = React.memo(function ShowCard({
             <p className="mt-1 min-h-[1.25rem] text-sm text-muted-foreground line-clamp-1">
               {hostsText}
             </p>
+
+            {sortBadge && (
+              <div className="mt-2 flex min-h-[1.25rem] overflow-hidden">
+                <Badge
+                  variant="outline"
+                  className="
+                    max-w-full
+                    truncate
+                    px-2
+                    py-0
+                    text-[11px]
+                    font-normal
+                    leading-5
+                    text-muted-foreground
+                  "
+                  title={sortBadge.title}
+                >
+                  <span className="text-foreground/80">{sortBadge.label}</span>
+                  <span className="mx-1 text-muted-foreground">·</span>
+                  <span>{sortBadge.value}</span>
+                </Badge>
+              </div>
+            )}
 
             {/* {!prefs.hideTagsOnCard && program.program.categories?.[0] && (
               <div className="mt-2 flex min-h-[1.25rem] gap-1 overflow-hidden">
@@ -304,3 +346,107 @@ export const ShowCard = React.memo(function ShowCard({
     </Card>
   );
 });
+
+type SortContextBadge = {
+  label: string;
+  value: string;
+  title: string;
+};
+
+function getSortContextBadge({
+  sortMode,
+  program,
+  lastEp,
+  totalEpisodes,
+  progressPct,
+  isBroadcastSnapshot,
+  isBroadcastLogged,
+}: {
+  sortMode: SortMode;
+  program: Program;
+  lastEp: number;
+  totalEpisodes: number;
+  progressPct: number;
+  isBroadcastSnapshot: boolean;
+  isBroadcastLogged: boolean;
+}): SortContextBadge | null {
+  if (sortMode === 'episodeCount') {
+    const count = totalEpisodes;
+
+    return {
+      label: isBroadcastSnapshot ? 'Broadcasts' : 'Episodes',
+      value: count.toLocaleString(),
+      title: `${count.toLocaleString()} ${
+        isBroadcastSnapshot ? 'broadcast snapshot' : 'episodes'
+      }`,
+    };
+  }
+
+  if (sortMode === 'recentlyUpdated') {
+    const latestEpisodeTime = getLatestEpisodeTimestamp(program);
+
+    return {
+      label: 'Latest episode',
+      value: formatEpisodeDate(latestEpisodeTime),
+      title: latestEpisodeTime
+        ? `Newest known episode aired ${new Date(latestEpisodeTime).toLocaleString()}`
+        : 'No known episode publish date',
+    };
+  }
+
+  if (sortMode === 'runtime') {
+    const runtime = calculateProgramRuntime(program);
+
+    return {
+      label: 'Runtime',
+      value: formatRuntime(runtime),
+      title:
+        runtime > 0
+          ? `Estimated total runtime: ${formatRuntime(runtime)}`
+          : 'Runtime unavailable',
+    };
+  }
+
+  if (sortMode === 'progress') {
+    if (isBroadcastSnapshot) {
+      return {
+        label: 'Progress',
+        value: isBroadcastLogged ? 'Logged' : 'Not logged',
+        title: isBroadcastLogged
+          ? 'This broadcast snapshot has been logged'
+          : 'This broadcast snapshot has not been logged',
+      };
+    }
+
+    return {
+      label: 'Progress',
+      value: `${Math.round(progressPct)}%`,
+      title: `${lastEp.toLocaleString()} of ${Math.max(
+        totalEpisodes,
+        1
+      ).toLocaleString()} episodes listened`,
+    };
+  }
+
+  return null;
+}
+
+function formatRuntime(seconds: number) {
+  if (!Number.isFinite(seconds) || seconds <= 0) {
+    return 'Unknown';
+  }
+
+  const totalMinutes = Math.round(seconds / 60);
+  const hours = Math.floor(totalMinutes / 60);
+  const minutes = totalMinutes % 60;
+
+  if (hours > 0 && minutes > 0) {
+    return `${hours}h ${minutes}m`;
+  }
+
+  if (hours > 0) {
+    return `${hours}h`;
+  }
+
+  return `${minutes}m`;
+}

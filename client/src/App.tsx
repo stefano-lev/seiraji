@@ -13,6 +13,7 @@ import { demoTags } from '@/data/demoPrograms';
 
 import type { Program } from './types/media';
 import type { UserProgramState } from './types/user';
+import type { SortMode } from '@/types/sort';
 
 import type { ActivityEvent } from '@/lib/storage';
 
@@ -36,7 +37,11 @@ import {
   refreshProgram,
 } from './lib/api';
 
-import { calculateProgramRuntime, calculateStats } from '@/lib/stats';
+import {
+  calculateProgramRuntime,
+  calculateStats,
+  getLatestEpisodeTimestamp,
+} from '@/lib/stats';
 
 import { mergePrograms } from '@/lib/programs';
 
@@ -49,15 +54,6 @@ import { ProgramModal } from './components/modals/ProgramModal';
 import { PreferencesModal } from './components/modals/PreferencesModal';
 import { CreateProgramModal } from './components/modals/CreateProgramModal';
 import { InfoModal } from './components/modals/InfoModal';
-
-type SortMode =
-  | 'title'
-  | 'host'
-  | 'platform'
-  | 'episodeCount'
-  | 'recentlyUpdated'
-  | 'runtime'
-  | 'progress';
 
 export default function App() {
   const [dark] = useState(true);
@@ -851,6 +847,13 @@ export default function App() {
   const [pinnedOnly, setPinnedOnly] = useState(false);
 
   const visiblePrograms = useMemo(() => {
+    const latestEpisodeTimeById = new Map(
+      programs.map((program) => [
+        program.id,
+        getLatestEpisodeTimestamp(program),
+      ])
+    );
+
     return [...programs]
       .filter((program) => {
         if (platformFilter.length > 0) {
@@ -913,10 +916,14 @@ export default function App() {
         }
 
         if (sortMode === 'recentlyUpdated') {
-          return (
-            new Date(b.meta.cachedAt).getTime() -
-            new Date(a.meta.cachedAt).getTime()
-          );
+          const bLatest = latestEpisodeTimeById.get(b.id) ?? 0;
+          const aLatest = latestEpisodeTimeById.get(a.id) ?? 0;
+
+          if (bLatest !== aLatest) {
+            return bLatest - aLatest;
+          }
+
+          return a.program.title.localeCompare(b.program.title, 'ja');
         }
 
         if (sortMode === 'runtime') {
@@ -1285,6 +1292,7 @@ export default function App() {
             <ProgramGrid
               programs={visiblePrograms}
               userState={userState}
+              sortMode={sortMode}
               onUpdate={updateProgramState}
               onUpdateEpisode={updateEpisode}
               onOpen={(program) => {
