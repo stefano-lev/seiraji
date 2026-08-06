@@ -4,6 +4,7 @@ node_modules/
 # Build output
 dist/
 out/
+logs/
 
 # Radio show icons/banners
 client/public/banners

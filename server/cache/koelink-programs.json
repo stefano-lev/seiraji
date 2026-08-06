@@ -178,11 +178,29 @@
           "enclosureLength": "0",
           "rawDuration": "761"
         }
+      },
+      {
+        "id": "koelink:unite_caravan:unite_caravan/ep10-a",
+        "title": "第10回 前半",
+        "description": "声優・根本優奈が率いるキャラバンが気ままに寄り道をしながら、リスナーの声を拾い集めて進んでいくラジオ番組です。\n隔週木曜日更新です！\n番組ページ：https://koelink.co.jp/koelink/programs/unite_caravan\n番組SNS：https://x.com/unite_caravan",
+        "publishedAt": "Thu, 06 Aug 2026 10:00:00 GMT",
+        "publishedAtUnix": 1786010400,
+        "thumbnail": "https://koelink.co.jp/img/unite_caravan_imgL.cfc1d2b5.webp",
+        "durationSeconds": 1808,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "unite_caravan/ep10-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/unite_caravan/ep10-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "0",
+          "rawDuration": "1808"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-03T21:20:06.702Z",
-      "episodeCount": 9
+      "cachedAt": "2026-08-06T16:46:19.291Z",
+      "episodeCount": 10
     }
   },
   "kagamiyokagami": {
@@ -367,7 +385,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-03T21:20:07.254Z",
+      "cachedAt": "2026-08-06T16:46:19.871Z",
       "episodeCount": 9
     }
   },
@@ -518,7 +536,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-03T21:20:07.783Z",
+      "cachedAt": "2026-08-06T16:46:20.327Z",
       "episodeCount": 7
     }
   }

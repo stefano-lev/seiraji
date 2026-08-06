@@ -707,7 +707,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-03T21:20:11.495Z",
+      "cachedAt": "2026-08-06T16:46:22.598Z",
       "episodeCount": 38
     }
   },
@@ -1917,11 +1917,55 @@
           "expires": "2026-08-13T20:55:00+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "B31YVKP8GR",
+        "title": "ゲスト:ライス(8月13日20時台放送分)",
+        "description": "８時台は今回のゲストお笑い芸人ライスとのコントとトークをお届けする。ライスの田所仁と関町知弘が２人で登場するのは今回で３回目。東京０３とコント「怖い話大会」で共演する。このコントは田所による新作台本。２人が演じるのは順番に怖い話を披露していく友達の役。コントの後は田所持ち込みの「１０年後のコントってどうなってると思いますか？」についてライスと東京０３でトークを展開する。ナレーションは声優の戸松遥。\n＜コント＞「怖い話大会」　作：田所仁",
+        "publishedAt": "2026-08-13T20:05:00+09:00",
+        "publishedAtUnix": 1786619100,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/B31YVKP8GR/",
+          "radioEpisodeId": "B31YVKP8GR",
+          "radioSeriesId": "Y5MG659NGN",
+          "guests": [
+            "ライス"
+          ],
+          "expires": "2026-08-20T20:55:00+09:00",
+          "audioStatus": "notyet"
+        }
+      },
+      {
+        "id": "11KVM1KW91",
+        "title": "ゲスト:ライス(8月13日21時台放送分)",
+        "description": "９時台は今回のゲストお笑い芸人ライスとのトークの延長戦として、関町が持ち込んだテーマ「親御さんとは仲はいいですか？」について５人でいろいろ話し合う。また時間が長くなった「働く大人アカデミー」では「現在のイラン情勢とアメリカとイランの覚書調印」について立教大学名誉教授で経済学者の山口義行が解説する。さらに２月に放送したゲストウエストランドのコント「転売対策」もお送りする。ナレーションは声優の戸松遥。＜働く大人アカデミー＞「現在のイラン情勢とアメリカとイランの覚書調印」　講師：山口義行（立教大学名誉教授：経済学者）＜コント＞「転売対策」　ゲスト：ウエストランド　作：ラバーガール",
+        "publishedAt": "2026-08-13T21:05:00+09:00",
+        "publishedAtUnix": 1786622700,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/11KVM1KW91/",
+          "radioEpisodeId": "11KVM1KW91",
+          "radioSeriesId": "Y5MG659NGN",
+          "guests": [
+            "ライス"
+          ],
+          "expires": "2026-08-20T21:55:00+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-03T21:20:15.317Z",
-      "episodeCount": 63
+      "cachedAt": "2026-08-06T16:46:25.980Z",
+      "episodeCount": 65
     }
   },
   "X4WNNM96KL": {
@@ -2856,7 +2900,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-03T21:20:18.384Z",
+      "cachedAt": "2026-08-06T16:46:28.110Z",
       "episodeCount": 48
     }
   },
@@ -7897,7 +7941,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-03T21:20:30.028Z",
+      "cachedAt": "2026-08-06T16:46:38.759Z",
       "episodeCount": 278
     }
   },
@@ -9057,7 +9101,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-03T21:20:33.780Z",
+      "cachedAt": "2026-08-06T16:46:42.914Z",
       "episodeCount": 63
     }
   }

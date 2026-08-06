@@ -3,45 +3,74 @@ import * as cheerio from 'cheerio';
 import type { Program, Episode } from '../types/media';
 
 import { getRadikoPodcastChannelId } from '../utils/platformKeys';
+import { type AppLogger } from '../utils/logger';
 
-export async function scrapeRadikoPodcast(url: string): Promise<Program> {
+export async function scrapeRadikoPodcast(
+  url: string,
+  logger?: AppLogger
+): Promise<Program> {
   const channelId = getRadikoPodcastChannelId(url);
 
   const html = await fetchHtml(url);
-  const nextData = extractNextData(html);
 
-  const channel = nextData?.props?.pageProps?.podcastChannel;
+  logger?.debug('Fetched Radiko podcast HTML: %d characters', html.length);
 
-  if (!channel) {
-    throw new Error('Radiko podcast channel data not found');
+  return scrapeRadikoPodcastFromHtml(url, channelId, html, logger);
+}
+
+async function fetchHtml(url: string): Promise<string> {
+  const res = await fetch(url, {
+    headers: {
+      accept: 'text/html,application/xhtml+xml',
+      'user-agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36',
+    },
+  });
+
+  if (!res.ok) {
+    throw new Error(`Failed to fetch radiko podcast page: ${url}`);
   }
 
-  const title = cleanText(channel.title) || `radiko podcast ${channelId}`;
+  return res.text();
+}
 
-  const description = stripHtml(channel.description);
+function scrapeRadikoPodcastFromHtml(
+  url: string,
+  channelId: string,
+  html: string,
+  logger?: AppLogger
+): Program {
+  const $ = cheerio.load(html);
+
+  const title =
+    cleanText($('h1').first().text()) ||
+    cleanText($('meta[property="og:title"]').attr('content')) ||
+    cleanText($('title').text()) ||
+    `radiko podcast ${channelId}`;
+
+  const description =
+    stripHtml($('meta[name="description"]').attr('content')) ??
+    stripHtml($('meta[property="og:description"]').attr('content')) ??
+    null;
 
   const thumbnail =
-    normalizeImageUrl(channel.largeThumbnailImageUrl) ??
-    normalizeImageUrl(channel.imageUrl) ??
-    normalizeImageUrl(channel.thumbnailImageUrl);
+    normalizeImageUrl($('meta[property="og:image"]').attr('content')) ??
+    normalizeImageUrl($('meta[name="twitter:image"]').attr('content'));
 
-  const host =
-    cleanText(channel.author) || cleanText(channel.stationName) || null;
+  const station = findLikelyStationName($, title);
 
-  const rawEpisodes = findEmbeddedEpisodes(nextData, channelId);
+  const episodes = findRenderedEpisodes($, channelId, thumbnail);
 
-  const episodes = rawEpisodes
-    .map((rawEpisode) =>
-      normalizeRadikoPodcastEpisode(rawEpisode, channelId, thumbnail)
-    )
-    .sort((a, b) => (a.publishedAtUnix ?? 0) - (b.publishedAtUnix ?? 0));
+  logger?.info(
+    'Parsed Radiko podcast from rendered HTML: "%s" with %d visible episodes',
+    title,
+    episodes.length
+  );
 
-  const expectedEpisodeCount =
-    typeof channel.episodeCount === 'number' ? channel.episodeCount : null;
-
-  if (expectedEpisodeCount && episodes.length < expectedEpisodeCount) {
-    console.warn(
-      `[RADIKO PODCAST] Imported ${episodes.length}/${expectedEpisodeCount} visible episodes for ${title}.`
+  if (episodes.length === 0) {
+    logger?.warn(
+      'Rendered HTML parse found no episode links for Radiko channel %s',
+      channelId
     );
   }
 
@@ -65,7 +94,7 @@ export async function scrapeRadikoPodcast(url: string): Promise<Program> {
 
       thumbnail,
 
-      hosts: host ? [host] : [],
+      hosts: station ? [station] : [],
 
       schedule: null,
 
@@ -82,140 +111,139 @@ export async function scrapeRadikoPodcast(url: string): Promise<Program> {
   };
 }
 
-function normalizeRadikoPodcastEpisode(
-  rawEpisode: any,
+function findRenderedEpisodes(
+  $: cheerio.CheerioAPI,
   channelId: string,
   fallbackThumbnail: string | null
-): Episode {
-  const episodeId = cleanText(rawEpisode?.id);
+): Episode[] {
+  const episodes = new Map<string, Episode>();
 
-  if (!episodeId) {
-    throw new Error('Radiko podcast episode is missing an ID');
-  }
+  $('a[href*="/podcast/episodes/"]').each((_, element) => {
+    const link = $(element);
+    const href = link.attr('href');
 
-  const title = cleanText(rawEpisode?.title) || 'Untitled Episode';
+    if (!href) return;
 
-  const description = stripHtml(rawEpisode?.description);
+    const episodeId = extractRadikoEpisodeId(href);
 
-  const publishedAtUnix =
-    typeof rawEpisode?.startAt?.seconds === 'number'
-      ? rawEpisode.startAt.seconds
-      : null;
+    if (!episodeId || episodes.has(episodeId)) return;
 
-  const publishedAt = publishedAtUnix
-    ? new Date(publishedAtUnix * 1000).toISOString()
-    : null;
+    const card = findEpisodeContainer($, link);
+    const cardText = cleanText(card.text());
+    const linkText = cleanText(link.text());
 
-  const thumbnail =
-    normalizeImageUrl(rawEpisode?.imageUrl) ??
-    normalizeImageUrl(rawEpisode?.thumbnailImageUrl) ??
-    fallbackThumbnail;
+    const title =
+      linkText ||
+      cleanText(card.find('h2,h3,h4').first().text()) ||
+      `Radiko episode ${episodeId}`;
 
-  return {
-    id: `radiko-podcast:${channelId}:${episodeId}`,
+    const description = compactEpisodeDescription(cardText, title);
 
-    title,
+    episodes.set(episodeId, {
+      id: `radiko-podcast:${channelId}:${episodeId}`,
 
-    description,
+      title,
 
-    publishedAt,
+      description,
 
-    publishedAtUnix,
+      publishedAt: null,
 
-    thumbnail,
+      publishedAtUnix: null,
 
-    durationSeconds:
-      typeof rawEpisode?.audio?.durationSec === 'number'
-        ? rawEpisode.audio.durationSec
-        : null,
+      thumbnail:
+        normalizeImageUrl(card.find('img').first().attr('src')) ??
+        fallbackThumbnail,
 
-    tags: [],
+      durationSeconds: parseJapaneseDuration(cardText),
 
-    platformMetadata: {
-      episodeId,
+      tags: [],
 
-      episodeUrl: `https://radiko.jp/podcast/episodes/${episodeId}?play=auto`,
-    },
-  };
-}
-
-async function fetchHtml(url: string): Promise<string> {
-  const res = await fetch(url, {
-    headers: {
-      accept: 'text/html,application/xhtml+xml',
-    },
+      platformMetadata: {
+        episodeId,
+        episodeUrl: `https://radiko.jp/podcast/episodes/${episodeId}?play=auto`,
+        source: 'html',
+      },
+    });
   });
 
-  if (!res.ok) {
-    throw new Error(`Failed to fetch radiko podcast page: ${url}`);
-  }
-
-  return res.text();
+  return [...episodes.values()];
 }
 
-function extractNextData(html: string): any | null {
-  const $ = cheerio.load(html);
+function extractRadikoEpisodeId(href: string): string | null {
+  const match = href.match(/\/podcast\/episodes\/([^/?#]+)/);
 
-  const raw = $('#__NEXT_DATA__').text();
-
-  if (!raw) return null;
-
-  try {
-    return JSON.parse(raw);
-  } catch {
-    return null;
-  }
+  return match?.[1] ?? null;
 }
 
-function findEmbeddedEpisodes(value: unknown, channelId: string): any[] {
-  const episodes: any[] = [];
-  const seen = new Set<string>();
+function findEpisodeContainer(
+  $: cheerio.CheerioAPI,
+  link: cheerio.Cheerio<any>
+) {
+  const candidates = link.parents().toArray();
 
-  walkJson(value, (obj) => {
-    if (!isEmbeddedEpisode(obj, channelId)) return;
+  for (const candidate of candidates) {
+    const node = $(candidate);
+    const text = cleanText(node.text());
 
-    const id = cleanText(obj.id);
-
-    if (!id || seen.has(id)) return;
-
-    seen.add(id);
-    episodes.push(obj);
-  });
-
-  return episodes;
-}
-
-function isEmbeddedEpisode(obj: Record<string, any>, channelId: string) {
-  return (
-    typeof obj.id === 'string' &&
-    obj.channelId === channelId &&
-    typeof obj.title === 'string' &&
-    (typeof obj.description === 'string' ||
-      typeof obj.audio?.durationSec === 'number')
-  );
-}
-
-function walkJson(
-  value: unknown,
-  visit: (obj: Record<string, any>) => void
-): void {
-  if (!value || typeof value !== 'object') return;
-
-  if (Array.isArray(value)) {
-    for (const item of value) {
-      walkJson(item, visit);
+    if (text.length > 40 && text.length < 5000) {
+      return node;
     }
-
-    return;
   }
 
-  const obj = value as Record<string, any>;
+  return link.parent();
+}
 
-  visit(obj);
+function compactEpisodeDescription(text: string, title: string): string | null {
+  const cleaned = text.replace(title, '').replace(/\s+/g, ' ').trim();
 
-  for (const child of Object.values(obj)) {
-    walkJson(child, visit);
+  if (!cleaned) return null;
+
+  return cleaned.length > 800 ? `${cleaned.slice(0, 800).trim()}...` : cleaned;
+}
+
+function parseJapaneseDuration(text: string): number | null {
+  const hourMinuteMatch = text.match(/(\d+)\s*時間\s*(\d+)\s*分/);
+
+  if (hourMinuteMatch) {
+    return Number(hourMinuteMatch[1]) * 3600 + Number(hourMinuteMatch[2]) * 60;
   }
+
+  const minuteMatch = text.match(/(\d+)\s*分/);
+
+  if (minuteMatch) {
+    return Number(minuteMatch[1]) * 60;
+  }
+
+  return null;
+}
+
+function findLikelyStationName(
+  $: cheerio.CheerioAPI,
+  programTitle: string
+): string | null {
+  const bodyText = cleanText($('body').text());
+
+  if (!bodyText) return null;
+
+  const titleIndex = bodyText.indexOf(programTitle);
+
+  if (titleIndex < 0) return null;
+
+  const afterTitle = bodyText
+    .slice(titleIndex + programTitle.length)
+    .split(/\s+/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+
+  const ignored = new Set([
+    '詳細情報を見る',
+    'シェア',
+    'エピソード',
+    'ホーム',
+    'プラン変更',
+  ]);
+
+  return afterTitle.find((part) => !ignored.has(part)) ?? null;
 }
 
 function normalizeImageUrl(value: unknown): string | null {
