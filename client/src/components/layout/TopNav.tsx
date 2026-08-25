@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 type Props = {
   onOpenStats: () => void;
   onOpenHistory: () => void;
+  onOpenFavoriteFeed: () => void;
   onOpenPrefs: () => void;
   onOpenCreateProgram: () => void;
   onOpenInfo: () => void;
@@ -13,6 +14,7 @@ type Props = {
 export function TopNav({
   onOpenStats,
   onOpenHistory,
+  onOpenFavoriteFeed,
   onOpenPrefs,
   onOpenCreateProgram,
   onOpenInfo,
@@ -79,6 +81,15 @@ export function TopNav({
                   onClick={onOpenHistory}
                 >
                   History
+                </Button>
+
+                <Button
+                  variant="secondary"
+                  className="shrink-0"
+                  onClick={onOpenFavoriteFeed}
+                  title="Recent episodes from your favorite programs"
+                >
+                  Updates
                 </Button>
               </div>
               <Button

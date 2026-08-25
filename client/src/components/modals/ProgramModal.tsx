@@ -220,6 +220,19 @@ export function ProgramModal({
 
                   <Button
                     className="w-full sm:w-auto"
+                    variant={currentState.isPinned ? 'default' : 'secondary'}
+                    onClick={() =>
+                      updateProgramState({
+                        ...currentState,
+                        isPinned: !currentState.isPinned,
+                      })
+                    }
+                  >
+                    {currentState.isPinned ? '★ Favorite' : '☆ Favorite'}
+                  </Button>
+
+                  <Button
+                    className="w-full sm:w-auto"
                     variant="default"
                     onClick={() => onClose()}
                   >

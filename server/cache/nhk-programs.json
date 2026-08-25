@@ -704,11 +704,47 @@
           "expires": "2026-08-09T23:30:00+09:00",
           "audioStatus": "ready"
         }
+      },
+      {
+        "id": "LPJ85G1MMK",
+        "title": "2026年8月16日",
+        "description": "『2026年8月16日』の番組エピソードです",
+        "publishedAt": "2026-08-16T22:40:00+09:00",
+        "publishedAtUnix": 1786887600,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/R7V6MMNYMK/R7V6MMNYMK-eyecatch_4f51da7040237504bffa530de35774d1.png",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/rs/R7V6MMNYMK/episode/re/LPJ85G1MMK/",
+          "radioEpisodeId": "LPJ85G1MMK",
+          "radioSeriesId": "R7V6MMNYMK",
+          "guests": [],
+          "expires": "2026-08-23T23:30:00+09:00",
+          "audioStatus": "notyet"
+        }
+      },
+      {
+        "id": "MYVNJX86GN",
+        "title": "2026年8月30日",
+        "description": "『2026年8月30日』の番組エピソードです",
+        "publishedAt": "2026-08-30T22:40:00+09:00",
+        "publishedAtUnix": 1788097200,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/R7V6MMNYMK/R7V6MMNYMK-eyecatch_4f51da7040237504bffa530de35774d1.png",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/rs/R7V6MMNYMK/episode/re/MYVNJX86GN/",
+          "radioEpisodeId": "MYVNJX86GN",
+          "radioSeriesId": "R7V6MMNYMK",
+          "guests": [],
+          "expires": "2026-09-06T23:30:00+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:22.598Z",
-      "episodeCount": 38
+      "cachedAt": "2026-08-25T18:02:02.685Z",
+      "episodeCount": 40
     }
   },
   "Y5MG659NGN": {
@@ -1961,11 +1997,55 @@
           "expires": "2026-08-20T21:55:00+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "VRLRW3J45N",
+        "title": "2026夏のスペシャル ゲスト:スフィア(20時台放送分)",
+        "description": "8時台のゲストは声優ユニットのスフィア。この番組のナレーターも務める戸松遥と、寿美菜子と高垣彩陽と豊崎愛生の4人。4人はコント「パラレルワールドはある?」で東京03と共演する。4人が演じるのは4人組の配信者の役。コントの後は「スフィアは4人そろうとどんな感じ?」と題して、この番組では初めて4人そろうスフィアにメンバーの関係性をいろいろ聞いていくが、戸松が普段とは違う顔を見せていたことが暴かれる。\n<コント>「パラレルワールドはある?」 作:岩崎う大",
+        "publishedAt": "2026-08-27T20:05:00+09:00",
+        "publishedAtUnix": 1787828700,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/VRLRW3J45N/",
+          "radioEpisodeId": "VRLRW3J45N",
+          "radioSeriesId": "Y5MG659NGN",
+          "guests": [
+            "スフィア"
+          ],
+          "expires": "2026-09-03T20:55:00+09:00",
+          "audioStatus": "notyet"
+        }
+      },
+      {
+        "id": "WP4LP3JGV1",
+        "title": "2026夏のスペシャル ゲスト:サンドウィッチマン(21時台放送分)",
+        "description": "9時台のゲストは、お笑い芸人サンドウィッチマンの伊達みきおと富澤たけし。2人そろっての登場は3年ぶり3回目。コント「俺たちの居場所」で東京03と共演する。2人が演じるのは夜のオフィスで残業している飯塚の元に現れる先輩社員の役。コントの後は「10年後は何してたい?」をテーマにトークを始めるが、サンドウィッチマンが東京03に「ぜひ海外公演をしてほしい」という話で盛り上がる。ナレーションは声優の戸松遥。\n<コント>「俺たちの居場所」 作:上田航平",
+        "publishedAt": "2026-08-27T21:05:00+09:00",
+        "publishedAtUnix": 1787832300,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/WP4LP3JGV1/",
+          "radioEpisodeId": "WP4LP3JGV1",
+          "radioSeriesId": "Y5MG659NGN",
+          "guests": [
+            "サンドウィッチマン"
+          ],
+          "expires": "2026-09-03T21:55:00+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:25.980Z",
-      "episodeCount": 65
+      "cachedAt": "2026-08-25T18:02:05.440Z",
+      "episodeCount": 67
     }
   },
   "X4WNNM96KL": {
@@ -2897,11 +2977,56 @@
           "expires": "2026-07-30T21:55:00+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "LN5MVN6Y9J",
+        "title": "真夏のスペシャル2026 ゲスト:近藤千尋&太田博久(20時台放送分)",
+        "description": "いとうあさこと大久保佳代子がゲストとしゃべりまくる「あさこ・佳代子の大人なラジオ女子会」。真夏のスペシャルゲストは近藤千尋&太田博久の夫婦とお笑いトリオ森三中。",
+        "publishedAt": "2026-08-20T20:05:00+09:00",
+        "publishedAtUnix": 1787223900,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/LN5MVN6Y9J/",
+          "radioEpisodeId": "LN5MVN6Y9J",
+          "radioSeriesId": "X4WNNM96KL",
+          "guests": [
+            "近藤千尋",
+            "ジャングルポケット"
+          ],
+          "expires": "2026-08-27T20:55:00+09:00",
+          "audioStatus": "ready"
+        }
+      },
+      {
+        "id": "BNV1QZ59Z2",
+        "title": "真夏のスペシャル2026 ゲスト:森三中(21時台放送分)",
+        "description": "いとうあさこと大久保佳代子がゲストとしゃべりまくる「あさこ・佳代子の大人なラジオ女子会」。真夏のスペシャルゲストは近藤千尋&太田博久の夫婦とお笑いトリオ森三中。",
+        "publishedAt": "2026-08-20T21:05:00+09:00",
+        "publishedAtUnix": 1787227500,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/BNV1QZ59Z2/",
+          "radioEpisodeId": "BNV1QZ59Z2",
+          "radioSeriesId": "X4WNNM96KL",
+          "guests": [
+            "森三中"
+          ],
+          "expires": "2026-08-27T21:55:00+09:00",
+          "audioStatus": "ready"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:28.110Z",
-      "episodeCount": 48
+      "cachedAt": "2026-08-25T18:02:07.863Z",
+      "episodeCount": 50
     }
   },
   "Q3PKWJX562": {
@@ -7941,7 +8066,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:38.759Z",
+      "cachedAt": "2026-08-25T18:02:17.079Z",
       "episodeCount": 278
     }
   },
@@ -9098,11 +9223,29 @@
           "expires": "2026-08-15T22:55:00+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "NYLRZQYMK7",
+        "title": "〜釣りのラジオ〜 フィールドテスター・小野信昭が登場!",
+        "description": "釣り好き大集合!今こそ釣りの素晴らしさを語ろう!釣りを愛してやまない三代目JSB・山下健二郎が釣り好きゲストと釣りトーク全開!釣り好きでない方もぜひ!",
+        "publishedAt": "2026-08-15T22:05:00+09:00",
+        "publishedAtUnix": 1786799100,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/V8JW19JK29/V8JW19JK29-eyecatch_98c8d0476cbb2f6faa38b9d35bed9924.jpg",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/rs/V8JW19JK29/episode/re/NYLRZQYMK7/",
+          "radioEpisodeId": "NYLRZQYMK7",
+          "radioSeriesId": "V8JW19JK29",
+          "guests": [],
+          "expires": "2026-08-22T22:55:00+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:42.914Z",
-      "episodeCount": 63
+      "cachedAt": "2026-08-25T18:02:21.552Z",
+      "episodeCount": 64
     }
   }
 }

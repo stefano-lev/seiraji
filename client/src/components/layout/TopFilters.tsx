@@ -63,6 +63,8 @@ type ProgramFiltersProps = {
   platforms: string[];
   platformFilter: string[];
   onPlatformFilterChange: (value: string[]) => void;
+
+  onClearFilters: () => void;
 };
 
 export function ProgramFilters({
@@ -85,9 +87,17 @@ export function ProgramFilters({
   platforms,
   platformFilter,
   onPlatformFilterChange,
+  onClearFilters,
 }: ProgramFiltersProps) {
   const [platformMenuOpen, setPlatformMenuOpen] = useState(false);
   const platformMenuRef = useRef<HTMLDivElement | null>(null);
+
+  const hasActiveFilters =
+    searchQuery.trim().length > 0 ||
+    pinnedOnly ||
+    statusFilter !== 'all' ||
+    tagFilter !== 'all' ||
+    platformFilter.length > 0;
 
   useEffect(() => {
     function onPointerDown(e: PointerEvent) {
@@ -121,28 +131,47 @@ export function ProgramFilters({
             <Input
               data-tour="search-input"
               ref={searchRef}
-              placeholder="Search programs or hosts..."
+              placeholder="Search your library..."
               value={searchQuery}
               onChange={(e) => onSearchQueryChange(e.target.value)}
               className="w-full sm:max-w-sm"
             />
 
-            <div className="flex h-9 items-center text-xs text-muted-foreground justify-center w-full sm:w-[180px]">
-              Showing{' '}
-              <span className="mx-1 font-medium text-foreground">
-                {visibleCount}
-              </span>{' '}
-              / {totalCount}
+            <div className="flex h-9 items-center gap-3 text-xs text-muted-foreground">
+              <span>
+                Showing{' '}
+                <span className="font-medium text-foreground">
+                  {visibleCount}
+                </span>{' '}
+                / {totalCount}
+              </span>
+
+              {hasActiveFilters && (
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  className="h-7 px-2 text-xs"
+                  onClick={onClearFilters}
+                >
+                  Clear filters
+                </Button>
+              )}
             </div>
 
             <div className="sm:ml-auto flex justify-end">
               <Button
-                className="h-9"
+                className="h-9 gap-1.5"
                 variant={pinnedOnly ? 'default' : 'secondary'}
-                onClick={() => onTogglePinned()}
-                title={pinnedOnly ? 'Showing pinned only' : 'Show pinned only'}
+                onClick={onTogglePinned}
+                title={
+                  pinnedOnly
+                    ? 'Showing favorite programs only'
+                    : 'Show favorite programs only'
+                }
               >
-                ★
+                <span>★</span>
+                <span>Favorites</span>
               </Button>
             </div>
           </div>

@@ -442,11 +442,37 @@
         "platformMetadata": {
           "displayDate": "7/27"
         }
+      },
+      {
+        "id": "kona-8/10-第36回",
+        "title": "第36回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "8/10"
+        }
+      },
+      {
+        "id": "kona-8/24-第37回",
+        "title": "第37回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "displayDate": "8/24"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:21.138Z",
-      "episodeCount": 35
+      "cachedAt": "2026-08-25T18:02:01.893Z",
+      "episodeCount": 37
     }
   },
   "nako": {
@@ -1456,11 +1482,23 @@
         "platformMetadata": {
           "displayDate": "7/29"
         }
+      },
+      {
+        "id": "nako-8/12-第82回",
+        "title": "第82回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "8/12"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:24.586Z",
-      "episodeCount": 82
+      "cachedAt": "2026-08-25T18:02:04.805Z",
+      "episodeCount": 83
     }
   },
   "nagisa-sa": {
@@ -1600,11 +1638,23 @@
         "platformMetadata": {
           "displayDate": "8/5"
         }
+      },
+      {
+        "id": "nagisa-sa-8/19-Op.11",
+        "title": "Op.11",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "8/19"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:26.310Z",
-      "episodeCount": 10
+      "cachedAt": "2026-08-25T18:02:06.886Z",
+      "episodeCount": 11
     }
   },
   "aoi": {
@@ -1980,11 +2030,35 @@
         "platformMetadata": {
           "displayDate": "7/27"
         }
+      },
+      {
+        "id": "aoi-8/10-第30回",
+        "title": "第30回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "8/10"
+        }
+      },
+      {
+        "id": "aoi-8/24-第31回",
+        "title": "第31回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "8/24"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:28.107Z",
-      "episodeCount": 29
+      "cachedAt": "2026-08-25T18:02:09.273Z",
+      "episodeCount": 31
     }
   },
   "ktk": {
@@ -2450,11 +2524,25 @@
         "platformMetadata": {
           "displayDate": "8/4"
         }
+      },
+      {
+        "id": "ktk-8/18-第37回",
+        "title": "第37回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "displayDate": "8/18"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:30.658Z",
-      "episodeCount": 36
+      "cachedAt": "2026-08-25T18:02:11.855Z",
+      "episodeCount": 37
     }
   },
   "mma": {
@@ -3096,11 +3184,35 @@
         "platformMetadata": {
           "displayDate": "8/3"
         }
+      },
+      {
+        "id": "mma-8/17-第22回 わくわくランチタイム",
+        "title": "第22回 わくわくランチタイム",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "8/17"
+        }
+      },
+      {
+        "id": "mma-8/17-第22回",
+        "title": "第22回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "8/17"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:33.509Z",
-      "episodeCount": 51
+      "cachedAt": "2026-08-25T18:02:15.009Z",
+      "episodeCount": 53
     }
   },
   "umauma": {
@@ -3268,11 +3380,23 @@
         "platformMetadata": {
           "displayDate": "8/4"
         }
+      },
+      {
+        "id": "umauma-8/18-第13回",
+        "title": "第13回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "8/18"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:35.907Z",
-      "episodeCount": 12
+      "cachedAt": "2026-08-25T18:02:17.529Z",
+      "episodeCount": 13
     }
   },
   "radilogue": {
@@ -4407,11 +4531,23 @@
         "platformMetadata": {
           "displayDate": "8/5"
         }
+      },
+      {
+        "id": "radilogue-8/19-第92回",
+        "title": "第92回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "8/19"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:38.072Z",
-      "episodeCount": 92
+      "cachedAt": "2026-08-25T18:02:20.824Z",
+      "episodeCount": 93
     }
   },
   "tomorinokoto": {
@@ -5181,11 +5317,25 @@
         "platformMetadata": {
           "displayDate": "8/6"
         }
+      },
+      {
+        "id": "tomorinokoto-8/20-第62回",
+        "title": "第62回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "displayDate": "8/20"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:40.997Z",
-      "episodeCount": 61
+      "cachedAt": "2026-08-25T18:02:23.677Z",
+      "episodeCount": 62
     }
   },
   "neppasio": {
@@ -5919,11 +6069,23 @@
         "platformMetadata": {
           "displayDate": "7/30"
         }
+      },
+      {
+        "id": "neppasio-8/13-第58回",
+        "title": "第58回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "8/13"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:42.912Z",
-      "episodeCount": 58
+      "cachedAt": "2026-08-25T18:02:25.884Z",
+      "episodeCount": 59
     }
   },
   "maaya": {
@@ -6785,11 +6947,47 @@
         "platformMetadata": {
           "displayDate": "8/3"
         }
+      },
+      {
+        "id": "maaya-8/10-第71回",
+        "title": "第71回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "8/10"
+        }
+      },
+      {
+        "id": "maaya-8/17-第72回",
+        "title": "第72回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "8/17"
+        }
+      },
+      {
+        "id": "maaya-8/24-第73回",
+        "title": "第73回",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": null,
+        "durationSeconds": null,
+        "tags": [],
+        "platformMetadata": {
+          "displayDate": "8/24"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:44.864Z",
-      "episodeCount": 70
+      "cachedAt": "2026-08-25T18:02:28.603Z",
+      "episodeCount": 73
     }
   }
 }

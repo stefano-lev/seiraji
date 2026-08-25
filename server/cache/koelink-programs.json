@@ -199,7 +199,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:19.291Z",
+      "cachedAt": "2026-08-25T18:02:00.338Z",
       "episodeCount": 10
     }
   },
@@ -382,11 +382,29 @@
           "enclosureLength": "0",
           "rawDuration": "1858"
         }
+      },
+      {
+        "id": "koelink:kagamiyokagami:kagamiyokagami/ep10-a",
+        "title": "第10回 前半",
+        "description": "声優・各務華梨が、魔法のようなひとときをお届けするラジオ番組。\n“あなたを映すかがみ”として寄り添います。\n隔週月曜日更新です！\n番組ページ：https://koelink.co.jp/koelink/programs/kagamiyokagami\n番組SNS：https://x.com/kagami_radio",
+        "publishedAt": "Mon, 10 Aug 2026 10:00:00 GMT",
+        "publishedAtUnix": 1786356000,
+        "thumbnail": "https://koelink.co.jp/img/kagamiyokagami_imgL.43e82ee1.webp",
+        "durationSeconds": 1592,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "kagamiyokagami/ep10-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/kagamiyokagami/ep10-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "0",
+          "rawDuration": "1592"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:19.871Z",
-      "episodeCount": 9
+      "cachedAt": "2026-08-25T18:02:01.205Z",
+      "episodeCount": 10
     }
   },
   "hibi_ohanashi_biyori": {
@@ -533,11 +551,29 @@
           "enclosureLength": "0",
           "rawDuration": "1385"
         }
+      },
+      {
+        "id": "koelink:hibi_ohanashi_biyori:hibi_ohanashi_biyori/ep8-a",
+        "title": "第8回 前半",
+        "description": "声優・日比優理香と真名瀬日和が、リスナーの皆さんからのお便りをきっかけに広がる“おはなし”をお届けします。\nなんでもない日々でも、二人そろえばお話日和！\n番組ページ：https://koelink.co.jp/koelink/programs/hibi_ohanashi_biyori\n番組SNS：https://x.com/hibi_biyori",
+        "publishedAt": "Wed, 12 Aug 2026 10:00:00 GMT",
+        "publishedAtUnix": 1786528800,
+        "thumbnail": "https://koelink.co.jp/img/hibi_ohanashi_biyori_imgL.ca96604c.webp",
+        "durationSeconds": 1191,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "hibi_ohanashi_biyori/ep8-a",
+          "link": null,
+          "audioUrl": "https://audio.koelink.co.jp/hibi_ohanashi_biyori/ep8-a.m4a",
+          "enclosureType": "audio/mp4",
+          "enclosureLength": "0",
+          "rawDuration": "1191"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:20.327Z",
-      "episodeCount": 7
+      "cachedAt": "2026-08-25T18:02:02.128Z",
+      "episodeCount": 8
     }
   }
 }

@@ -54,6 +54,7 @@ import { ProgramModal } from './components/modals/ProgramModal';
 import { PreferencesModal } from './components/modals/PreferencesModal';
 import { CreateProgramModal } from './components/modals/CreateProgramModal';
 import { InfoModal } from './components/modals/InfoModal';
+import { FavoriteFeedModal } from './components/modals/FavoriteFeedModal';
 
 export default function App() {
   const [dark] = useState(true);
@@ -183,6 +184,7 @@ export default function App() {
 
   const [statsOpen, setStatsOpen] = useState(false);
   const [historyOpen, setHistoryOpen] = useState(false);
+  const [favoriteFeedOpen, setFavoriteFeedOpen] = useState(false);
   const [prefsOpen, setPrefsOpen] = useState(false);
   const [createOpen, setCreateOpen] = useState(false);
   const [infoOpen, setInfoOpen] = useState(false);
@@ -856,23 +858,18 @@ export default function App() {
 
     return [...programs]
       .filter((program) => {
-        if (platformFilter.length > 0) {
-          if (!platformFilter.includes(program.platform)) return false;
+        if (
+          platformFilter.length > 0 &&
+          !platformFilter.includes(program.platform)
+        ) {
+          return false;
         }
 
-        const query = searchQuery.toLowerCase();
-
-        const hosts = Array.isArray(program.program.hosts)
-          ? program.program.hosts
-          : [];
-
-        const matchesSearch =
-          program.program.title.toLowerCase().includes(query) ||
-          hosts.some((h) => h.toLowerCase().includes(query));
-
-        if (!matchesSearch) return false;
-
         const state = userState.find((s) => s.programId === program.id);
+
+        if (!matchesProgramSearch(program, state, searchQuery)) {
+          return false;
+        }
 
         if (prefs.hideDroppedPrograms && state?.status === 'dropped') {
           return false;
@@ -882,17 +879,20 @@ export default function App() {
           return false;
         }
 
-        if (statusFilter !== 'all') {
-          if (state?.status !== statusFilter) return false;
+        if (statusFilter !== 'all' && state?.status !== statusFilter) {
+          return false;
         }
 
         if (tagFilter !== 'all') {
           const programTags = state?.tags ?? [];
-          if (!programTags.includes(tagFilter)) return false;
+
+          if (!programTags.includes(tagFilter)) {
+            return false;
+          }
         }
 
-        if (pinnedOnly) {
-          if (!state?.isPinned) return false;
+        if (pinnedOnly && !state?.isPinned) {
+          return false;
         }
 
         return true;
@@ -980,11 +980,7 @@ export default function App() {
     setSelectedProgram(null);
     setEditDraft(null);
 
-    setSearchQuery('');
-    setStatusFilter('all');
-    setTagFilter('all');
-    setPlatformFilter([]);
-    setPinnedOnly(false);
+    clearFilters();
     setSortMode('title');
 
     searchRef.current?.blur();
@@ -994,6 +990,21 @@ export default function App() {
       behavior: 'smooth',
     });
   }
+
+  function clearFilters() {
+    setSearchQuery('');
+    setStatusFilter('all');
+    setTagFilter('all');
+    setPlatformFilter([]);
+    setPinnedOnly(false);
+  }
+
+  const hasActiveFilters =
+    searchQuery.trim().length > 0 ||
+    statusFilter !== 'all' ||
+    tagFilter !== 'all' ||
+    platformFilter.length > 0 ||
+    pinnedOnly;
 
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {
@@ -1064,6 +1075,52 @@ export default function App() {
     );
   }
 
+  function LibraryEmptyState() {
+    return (
+      <div className="mt-6 rounded-2xl border border-border/60 bg-background/95 p-8 text-center shadow-sm">
+        <h2 className="text-lg font-semibold">Your library is empty</h2>
+
+        <p className="mt-2 text-sm text-muted-foreground">
+          Import or create a program to get started.
+        </p>
+      </div>
+    );
+  }
+
+  function NoMatchingProgramsState({
+    hasActiveFilters,
+    onClearFilters,
+    onOpenPreferences,
+  }: {
+    hasActiveFilters: boolean;
+    onClearFilters: () => void;
+    onOpenPreferences: () => void;
+  }) {
+    return (
+      <div className="mt-6 rounded-2xl border border-border/60 bg-background/95 p-8 text-center shadow-sm">
+        <h2 className="text-lg font-semibold">No programs found</h2>
+
+        <p className="mt-2 text-sm text-muted-foreground">
+          {hasActiveFilters
+            ? 'No programs match your current search or filters.'
+            : 'No programs are visible with your current display preferences.'}
+        </p>
+
+        <div className="mt-4 flex justify-center gap-2">
+          {hasActiveFilters ? (
+            <Button variant="secondary" onClick={onClearFilters}>
+              Clear filters
+            </Button>
+          ) : (
+            <Button variant="secondary" onClick={onOpenPreferences}>
+              Open Preferences
+            </Button>
+          )}
+        </div>
+      </div>
+    );
+  }
+
   function LibraryErrorState({
     message,
     onRetry,
@@ -1084,9 +1141,19 @@ export default function App() {
     );
   }
 
+  function openProgram(program: Program) {
+    setEditDraft(null);
+    setSelectedProgram(program);
+
+    const currentTags = getProgramState(program.id).tags ?? [];
+
+    setTagDraft(currentTags.join(', '));
+  }
+
   function closeAllModals() {
     setStatsOpen(false);
     setHistoryOpen(false);
+    setFavoriteFeedOpen(false);
     setPrefsOpen(false);
     setCreateOpen(false);
     setInfoOpen(false);
@@ -1119,7 +1186,7 @@ export default function App() {
     {
       id: 'search',
       title: 'Search and filter your library',
-      body: 'Use the search bar and filters to narrow the library by title, host, platform, status, tags, pinned programs, or progress.',
+      body: 'Use the search bar and filters to narrow the library by title, host, platform, status, tags, favorite programs, or progress.',
       target: 'search-input',
       onEnter: () => {
         closeAllModals();
@@ -1197,6 +1264,7 @@ export default function App() {
           <TopNav
             onOpenStats={() => setStatsOpen(true)}
             onOpenHistory={() => setHistoryOpen(true)}
+            onOpenFavoriteFeed={() => setFavoriteFeedOpen(true)}
             onOpenPrefs={() => setPrefsOpen(true)}
             onOpenCreateProgram={() => setCreateOpen(true)}
             onOpenInfo={() => setInfoOpen(true)}
@@ -1280,6 +1348,7 @@ export default function App() {
               platforms={platforms}
               platformFilter={platformFilter}
               onPlatformFilterChange={setPlatformFilter}
+              onClearFilters={clearFilters}
             />
           )}
 
@@ -1288,20 +1357,23 @@ export default function App() {
             <LibraryLoadingState slow={librarySlow} />
           ) : libraryError ? (
             <LibraryErrorState message={libraryError} onRetry={loadLibrary} />
+          ) : programs.length === 0 ? (
+            <LibraryEmptyState />
+          ) : visiblePrograms.length === 0 ? (
+            <NoMatchingProgramsState
+              hasActiveFilters={hasActiveFilters}
+              onClearFilters={clearFilters}
+              onOpenPreferences={() => setPrefsOpen(true)}
+            />
           ) : (
             <ProgramGrid
               programs={visiblePrograms}
               userState={userState}
               sortMode={sortMode}
+              now={now}
               onUpdate={updateProgramState}
               onUpdateEpisode={updateEpisode}
-              onOpen={(program) => {
-                setEditDraft(null);
-                setSelectedProgram(program);
-
-                const currentTags = getProgramState(program.id).tags ?? [];
-                setTagDraft(currentTags.join(', '));
-              }}
+              onOpen={openProgram}
               onEdit={(program) => {
                 setEditDraft(program);
                 setSelectedProgram(program);
@@ -1349,6 +1421,18 @@ export default function App() {
             now={now}
             timeAgo={timeAgo}
             onClearHistory={() => setActivity([])}
+          />
+
+          <FavoriteFeedModal
+            open={favoriteFeedOpen}
+            onClose={() => setFavoriteFeedOpen(false)}
+            programs={programs}
+            userState={userState}
+            now={now}
+            onOpenProgram={(program) => {
+              setFavoriteFeedOpen(false);
+              openProgram(program);
+            }}
           />
 
           <PreferencesModal
@@ -1417,4 +1501,36 @@ export default function App() {
       <Toaster richColors position="bottom-right" closeButton />
     </div>
   );
+}
+
+function matchesProgramSearch(
+  program: Program,
+  state: UserProgramState | undefined,
+  rawQuery: string
+) {
+  const tokens = rawQuery
+    .trim()
+    .toLocaleLowerCase()
+    .split(/\s+/)
+    .filter(Boolean);
+
+  if (tokens.length === 0) return true;
+
+  const hosts = Array.isArray(program.program.hosts)
+    ? program.program.hosts
+    : [];
+
+  const searchableText = [
+    program.program.title,
+    ...hosts,
+    program.platform,
+    ...(program.program.categories ?? []),
+    ...(state?.tags ?? []),
+    ...program.episodes.map((episode) => episode.title),
+  ]
+    .filter(Boolean)
+    .join(' ')
+    .toLocaleLowerCase();
+
+  return tokens.every((token) => searchableText.includes(token));
 }

@@ -26,6 +26,7 @@ type Props = {
   program: Program;
   userState?: UserProgramState;
   sortMode: SortMode;
+  now: number;
 
   onUpdate: (state: UserProgramState) => void;
   onUpdateEpisode: (programId: string, nextEpisode: number) => void;
@@ -40,6 +41,7 @@ export const ShowCard = React.memo(function ShowCard({
   program,
   userState,
   sortMode,
+  now,
   onUpdate,
   onUpdateEpisode,
   onOpen,
@@ -73,6 +75,13 @@ export const ShowCard = React.memo(function ShowCard({
       : 0;
 
   const latestEpisode = program.episodes[program.episodes.length - 1];
+
+  const latestEpisodeTime = getLatestEpisodeTimestamp(program);
+
+  const hasRecentEpisode =
+    latestEpisodeTime > 0 &&
+    latestEpisodeTime <= now &&
+    now - latestEpisodeTime <= NEW_EPISODE_WINDOW_MS;
 
   const rawHosts = program.program.hosts;
 
@@ -120,12 +129,17 @@ export const ShowCard = React.memo(function ShowCard({
             onTogglePinned(program.id);
           }}
           className={`
-      absolute top-2 left-2 z-10
-      text-yellow-500 text-lg
-      transition-opacity
-      ${state.isPinned ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}
-    `}
-          title={state.isPinned ? 'Unpin program' : 'Pin program'}
+          absolute top-2 left-2 z-10
+          text-yellow-500 text-lg
+          transition-opacity
+    ${state.isPinned ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}
+  `}
+          title={state.isPinned ? 'Remove from favorites' : 'Add to favorites'}
+          aria-label={
+            state.isPinned
+              ? `Remove ${program.program.title} from favorites`
+              : `Add ${program.program.title} to favorites`
+          }
         >
           {state.isPinned ? '★' : '☆'}
         </button>
@@ -165,7 +179,7 @@ export const ShowCard = React.memo(function ShowCard({
             )}
           </div>
 
-          <div className="min-w-0 flex-1">
+          <div className="min-w-0 flex-1 mr-6">
             <h3 className="font-semibold text-base leading-tight line-clamp-2">
               {program.program.title}
             </h3>
@@ -343,6 +357,20 @@ export const ShowCard = React.memo(function ShowCard({
           )}
         </div>
       </CardContent>
+
+      {hasRecentEpisode && (
+        <Badge
+          className="
+            absolute top-2 right-2 z-10
+            px-2 py-0.5
+            text-[8px] font-semibold tracking-wide
+            shadow-sm
+          "
+          title="A new episode aired within the last 7 days"
+        >
+          NEW
+        </Badge>
+      )}
     </Card>
   );
 });
@@ -430,6 +458,8 @@ function getSortContextBadge({
 
   return null;
 }
+
+const NEW_EPISODE_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
 
 function formatRuntime(seconds: number) {
   if (!Number.isFinite(seconds) || seconds <= 0) {

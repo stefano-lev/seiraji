@@ -496,11 +496,26 @@
           "episodeLink": "https://omny.fm/shows/asr/31-aiscream",
           "omnyClipId": "423c6e17-1bba-4479-b417-b49000529301"
         }
+      },
+      {
+        "id": "0d63c207-ae1e-4e45-884e-b4a500f718ee",
+        "title": "#32　AiScReamのとろけるタイム♡♡♡",
+        "description": "今回のメールテーマは…「サプライズの思い出」\n\n✉️asr@allnightnippon.com\n#AiScReamのとろけるタイム♡♡♡\n  \n こちらは随時募集中！！\n1️⃣コーナー『ラッキィラブカ』\n 2️⃣『ちょちょちょんグー』\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-14T13:00:00.000Z",
+        "publishedAtUnix": 1786712400,
+        "thumbnail": "https://www.omnycontent.com/d/programs/67122501-9b17-4d77-84bd-a93d00dc791e/47891e36-ed27-416f-b246-b2c60013b8dc/image.jpg?t=1775892491&size=Large",
+        "durationSeconds": 2203,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/47891e36-ed27-416f-b246-b2c60013b8dc/0d63c207-ae1e-4e45-884e-b4a500f718ee/audio.mp3?utm_source=Podcast&in_playlist=f75c482f-1885-4dfc-959a-b2c60013bf04",
+          "episodeLink": "https://omny.fm/shows/asr/32-aiscream",
+          "omnyClipId": "0d63c207-ae1e-4e45-884e-b4a500f718ee"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:22.181Z",
-      "episodeCount": 32
+      "cachedAt": "2026-08-25T18:02:01.914Z",
+      "episodeCount": 33
     }
   },
   "tokist": {
@@ -1165,11 +1180,56 @@
           "episodeLink": "https://omny.fm/shows/style/2026-8-2-style",
           "omnyClipId": "e6fddc35-5792-4963-9006-b49b005d530c"
         }
+      },
+      {
+        "id": "96a8a3f3-86c8-462c-addd-b4a200714436",
+        "title": "2026年8月9日(日)超ときめき♡STYLE",
+        "description": "毎週日曜日 深夜24:30から放送！\n 「ときめく恋と青春」をテーマに世界中のみんなにときめきを宣伝（お届け）している、5人組アイドルユニット「超ときめき♡宣伝部」がMCを担当！\n 今回は坂井仁香❤️小泉遥香🩷 が登場🎙️\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-10T10:00:00.000Z",
+        "publishedAtUnix": 1786356000,
+        "thumbnail": "https://www.omnycontent.com/d/playlist/67122501-9b17-4d77-84bd-a93d00dc791e/c1300728-5ceb-438a-89a2-b368002d6ab0/340d3cbd-89f3-4b71-93b9-b368002d6e81/image.jpg?t=1783317083&size=Large",
+        "durationSeconds": 909,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/c1300728-5ceb-438a-89a2-b368002d6ab0/96a8a3f3-86c8-462c-addd-b4a200714436/audio.mp3?utm_source=Podcast&in_playlist=340d3cbd-89f3-4b71-93b9-b368002d6e81",
+          "episodeLink": "https://omny.fm/shows/style/2026-8-9-style",
+          "omnyClipId": "96a8a3f3-86c8-462c-addd-b4a200714436"
+        }
+      },
+      {
+        "id": "e35d87fa-dc4d-43b6-8a49-b4a90069d37b",
+        "title": "2026年8月16日(日)超ときめき♡STYLE",
+        "description": "毎週日曜日 深夜24:30から放送！\n 「ときめく恋と青春」をテーマに世界中のみんなにときめきを宣伝（お届け）している、5人組アイドルユニット「超ときめき♡宣伝部」がMCを担当！\n 今回も超とき宣 メンバーから、坂井仁香❤️&小泉遥香🩷 が登場！\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-17T10:00:00.000Z",
+        "publishedAtUnix": 1786960800,
+        "thumbnail": "https://www.omnycontent.com/d/playlist/67122501-9b17-4d77-84bd-a93d00dc791e/c1300728-5ceb-438a-89a2-b368002d6ab0/340d3cbd-89f3-4b71-93b9-b368002d6e81/image.jpg?t=1783317083&size=Large",
+        "durationSeconds": 902,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/c1300728-5ceb-438a-89a2-b368002d6ab0/e35d87fa-dc4d-43b6-8a49-b4a90069d37b/audio.mp3?utm_source=Podcast&in_playlist=340d3cbd-89f3-4b71-93b9-b368002d6e81",
+          "episodeLink": "https://omny.fm/shows/style/2026-8-16-style",
+          "omnyClipId": "e35d87fa-dc4d-43b6-8a49-b4a90069d37b"
+        }
+      },
+      {
+        "id": "f48b4afc-6dfb-4251-8d24-b4b00040630c",
+        "title": "2026年8月23日(日)超ときめき♡STYLE",
+        "description": "毎週日曜日 深夜24:30から放送！\n 「ときめく恋と青春」をテーマに世界中のみんなにときめきを宣伝（お届け）している、5人組アイドルユニット「超ときめき♡宣伝部」がMCを担当！\n 今回は辻野かなみ🩵吉川ひより💚 が登場🎙️\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-24T10:00:00.000Z",
+        "publishedAtUnix": 1787565600,
+        "thumbnail": "https://www.omnycontent.com/d/playlist/67122501-9b17-4d77-84bd-a93d00dc791e/c1300728-5ceb-438a-89a2-b368002d6ab0/340d3cbd-89f3-4b71-93b9-b368002d6e81/image.jpg?t=1783317083&size=Large",
+        "durationSeconds": 893,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/c1300728-5ceb-438a-89a2-b368002d6ab0/f48b4afc-6dfb-4251-8d24-b4b00040630c/audio.mp3?utm_source=Podcast&in_playlist=340d3cbd-89f3-4b71-93b9-b368002d6e81",
+          "episodeLink": "https://omny.fm/shows/style/2026-8-23-style",
+          "omnyClipId": "f48b4afc-6dfb-4251-8d24-b4b00040630c"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:23.652Z",
-      "episodeCount": 43
+      "cachedAt": "2026-08-25T18:02:05.040Z",
+      "episodeCount": 46
     }
   },
   "aec": {
@@ -2179,11 +2239,56 @@
           "episodeLink": "https://omny.fm/shows/aec/ep65-the-girl-who-leapt-through-time",
           "omnyClipId": "89c526f8-d30e-4753-b459-b49b00318cde"
         }
+      },
+      {
+        "id": "0b17544d-fc11-430f-9ce3-b4a20042fbe5",
+        "title": "Ep66:時をかける少女 / The Girl Who Leapt Through Time「千昭の時代にも残ってるように…なんとかしてみる。」",
+        "description": "「時をかける少女」！ \n今回は \n 真琴：あの絵、未来へ帰って見てね。もうなくなったり、燃えたりしない。\n千昭の時代にも残ってるように…なんとかしてみる。\n千昭：ああ…よろしく頼むよ。\n帰らなきゃいけなかったのに、いつの間にか夏になった。\nおまえらといるのがあんまり楽しくてさ。\n （真琴・千昭）\n Makoto：That painting. Go back to the future and enjoy it. \nIt's not going to get lost or burned anymore. \nI'll do my best to make sure it's there for you in your era.\nChiaki：Sure, I'd appreciate that. I was supposed to go back, \nbut before I knew it, it was summer. \nI was just having too much fun with you guys.\n ▶▶▶英語学習のために、「ポッドキャスト」として、耳で音声だけを何回もリピートして聴くことをおススメしています！お好みの再生速度に合わせてみてくださいね！\n 【ポッドキャスト配信先】\n・ニッポン放送PODCAST STATION　https://podcast.1242.com/aec/\n・radikoポッドキャスト　https://bit.ly/43xtlI7\n・Amazon Music Podcast\n     https://music.amazon.co.jp/podcasts/4...\n・Apple Podcast  (文字起こしあり）\n    https://podcasts.apple.com/jp/podcast...\n・Spotify Podcast　(文字起こしあり）\n　 https://open.spotify.com/show/3cc98Fc...\n・YouTube ポッドキャスト　https://bit.ly/3EMGdSl\n ▶▶▶YouTubeでは、英語と日本語の字幕をONにして、動画でもご覧いただけます！\n   / @anime-english-club  \n 【メール大募集中！！】\n番組で取り上げてほしいアニメ作品やセリフ、英語に関する質問や番組の感想をお待ちしています！さらに、恋愛相談も大募集中！\nメールは日本語でも英語でも大丈夫です！\nメールアドレス：aec@1242.com\n 【番組SNS】\nX:  https://x.com/aec1242\nハッシュタグ：#SallyAEC \n 00:00 - オープニング\n01:19 - リスナーメール：コメディ映画版AECはどうですか？\n07:47 - 『時をかける少女』作品紹介\n　08:44 - サリーの疑問：なぜ日本のアニメには高校生が多いのか\n11:45 - 【今日のフレーズ】\n　12:28 - シーン解説：真琴と千昭 川辺のラストシーン\n　15:51 - ボーナスフレーズ「can't keep my mouth shut」\n　16:05 - 英語解説① make sure 〜：確実に〜する・必ず〜するようにする\n　17:40 - 英語解説② I'd appreciate that：それはありがたい・よろしく頼むよ\n　19:58 - ボーナスフレーズ「I'm counting on you」\n　20:23 - 英語解説③ BE動詞 + supposed to 〜：〜するはずだった（のに）\n　22:24 - 英語解説④ before I knew it：いつの間にか・あっという間に\n23:14 - 【発音のコーナー】※一緒に言ってね！\n　24:16 - 発音解説① In your era\n　25:00 - 発音解説② appreciate\n26:03 - 天城サリーが考えるタイムリープの使い方\n34:19 - 今回のまとめと次回予告\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-11T03:00:00.000Z",
+        "publishedAtUnix": 1786417200,
+        "thumbnail": "https://www.omnycontent.com/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/0c076d49-9b05-4dde-b679-b2c70030b77d/0b17544d-fc11-430f-9ce3-b4a20042fbe5/image.jpg?t=1786337732&size=Large",
+        "durationSeconds": 2168,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/0c076d49-9b05-4dde-b679-b2c70030b77d/0b17544d-fc11-430f-9ce3-b4a20042fbe5/audio.mp3?utm_source=Podcast&in_playlist=838e9b34-89be-442e-94f1-b2c70030bc67",
+          "episodeLink": "https://omny.fm/shows/aec/ep66-the-girl-who-leapt-through-time",
+          "omnyClipId": "0b17544d-fc11-430f-9ce3-b4a20042fbe5"
+        }
+      },
+      {
+        "id": "527d0279-70e0-4225-ad0a-b4a900348750",
+        "title": "Ep67:サマーウォーズ / SUMMER WARS「いちばんいけないのは、お腹がすいていることと、1人でいることだから…」",
+        "description": "「サマーウォーズ」！ \n今回は \n 家族同士、手を離さぬように。人生に負けないように。\nもし、辛い時や苦しい時があっても、いつもと変わらず家族みんなそろって、ご飯を食べること。\nいちばんいけないのは、お腹がすいていることと、1人でいることだから…。\n （栄）\n Remember, never let go of fellow family members... \nNever let life get the best of you... \nAnd you always eat together as a family, even during difficult times... \nBecause being hungry and being all alone are the worst things that can happen to anyone...\n (Sakae)\n ▶▶▶英語学習のために、「ポッドキャスト」として、耳で音声だけを何回もリピートして聴くことをおススメしています！お好みの再生速度に合わせてみてくださいね！\n 【ポッドキャスト配信先】\n・ニッポン放送PODCAST STATION　https://podcast.1242.com/aec/\n・radikoポッドキャスト　https://bit.ly/43xtlI7\n・Amazon Music Podcast\n     https://music.amazon.co.jp/podcasts/4...\n・Apple Podcast  (文字起こしあり）\n    https://podcasts.apple.com/jp/podcast...\n・Spotify Podcast　(文字起こしあり）\n　 https://open.spotify.com/show/3cc98Fc...\n・YouTube ポッドキャスト　https://bit.ly/3EMGdSl\n ▶▶▶YouTubeでは、英語と日本語の字幕をONにして、動画でもご覧いただけます！\n   / @anime-english-club  \n 【メール大募集中！！】\n番組で取り上げてほしいアニメ作品やセリフ、英語に関する質問や番組の感想をお待ちしています！さらに、恋愛相談も大募集中！\nメールは日本語でも英語でも大丈夫です！\nメールアドレス：aec@1242.com\n 【番組SNS】\nX:  https://x.com/aec1242\nハッシュタグ：#SallyAEC \n 【CREDIT】\nパーソナリティ：#天城サリー / #sallyamaki \n製作著作：#ニッポン放送 / Nippon Broadcasting System\n 00:00 - オープニング\n01:32 - リスナーメール：『サイコパス』どうですか？\n02:31 - ドミネーターに幾ら使った！？\n03:59 - 『サマーウォーズ』作品紹介\n　04:59 - 『サマーウォーズ』実は初見！\n06:20 - 【今日のフレーズ】\n　06:58 - シーン解説：家族を繋ぐ栄おばあちゃんの名言\n　08:49 - 英語解説① let go of 〜：〜から手を離す・〜を手放す\n　10:52 - 英語解説② get the best of 〜：（感情や困難が）〜を打ち負かす・〜に勝つ\n　12:28 - 英語解説③ all alone：たった一人で・孤独で\n14:18 - 【発音のコーナー】※一緒に言ってね！\n　15:19 - 発音解説① let go of\n　16:39 - 発音解説② get the best of you\n　17:11 - 発音解説③  worst things\n18:23 - 【今回の解説①】海外の夢小説（ファン・フィクション）事情\n21:24 - 【今回の解説②】『サマーウォーズ』の感想\n24:56 - 今回のまとめと次回予告\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-18T03:00:00.000Z",
+        "publishedAtUnix": 1787022000,
+        "thumbnail": "https://www.omnycontent.com/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/0c076d49-9b05-4dde-b679-b2c70030b77d/527d0279-70e0-4225-ad0a-b4a900348750/image.jpg?t=1786939126&size=Large",
+        "durationSeconds": 1648,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/0c076d49-9b05-4dde-b679-b2c70030b77d/527d0279-70e0-4225-ad0a-b4a900348750/audio.mp3?utm_source=Podcast&in_playlist=838e9b34-89be-442e-94f1-b2c70030bc67",
+          "episodeLink": "https://omny.fm/shows/aec/ep67-summer-wars-1",
+          "omnyClipId": "527d0279-70e0-4225-ad0a-b4a900348750"
+        }
+      },
+      {
+        "id": "ecd2b1bd-4feb-4f82-a575-b4b0002b0f09",
+        "title": "Ep68:ひぐらしのなく頃に / Higurashi When They Cry「だからいつ転んでもいいように、思いっきり今を楽しむのが正解だと思うな。」",
+        "description": "「ひぐらしのなく頃に」！ \n今回は \n 転ぶときはどんなに注意してても転ぶよ。\nだからいつ転んでもいいように、思いっきり今を楽しむのが正解だと思うな。\n（レナ）\n Well, things fall apart sometimes no matter \nhow hard you try to keep them together.\nThat's why you have to live everyday to the fullest, so you never feel like you didn't make the most of it when it is gone.\n（Rena）\n ▶▶▶英語学習のために、「ポッドキャスト」として、耳で音声だけを何回もリピートして聴くことをおススメしています！お好みの再生速度に合わせてみてくださいね！\n 【ポッドキャスト配信先】\n・ニッポン放送PODCAST STATION　https://podcast.1242.com/aec/\n・radikoポッドキャスト　https://bit.ly/43xtlI7\n・Amazon Music Podcast\n     https://music.amazon.co.jp/podcasts/4...\n・Apple Podcast  (文字起こしあり）\n    https://podcasts.apple.com/jp/podcast...\n・Spotify Podcast　(文字起こしあり）\n　 https://open.spotify.com/show/3cc98Fc...\n・YouTube ポッドキャスト　https://bit.ly/3EMGdSl\n ▶▶▶YouTubeでは、英語と日本語の字幕をONにして、動画でもご覧いただけます！\n   / @anime-english-club  \n 【メール大募集中！！】\n番組で取り上げてほしいアニメ作品やセリフ、英語に関する質問や番組の感想をお待ちしています！さらに、恋愛相談も大募集中！\nメールは日本語でも英語でも大丈夫です！\nメールアドレス：aec@1242.com\n 【番組SNS】\nX:  https://x.com/aec1242\nハッシュタグ：#SallyAEC \n 【CREDIT】\nパーソナリティ：#天城サリー / #sallyamaki \n製作著作：#ニッポン放送 / Nippon Broadcasting System\n 00:00 - オープニング\n01:16 - TIF2026で声が…\n02:01 - ボーナスフレーズ「scorching hot」\n03:18 - ボーナスフレーズ「game changer」\n05:11 - 『ひぐらしのなく頃に』作品紹介\n06:44 - トラウマ再び\n07:33 - 【今日のフレーズ】\n　07:59 - シーン解説：毎日が楽しいとレナに伝える圭一\n　08:27 - ボーナスフレーズ「newsflash」\n　08:51 - 英語解説① keep them together：繋ぎ止める\n　10:02 - 英語解説② live every day to the fullest：毎日を精一杯（思いっきり）生きる\n　11:47 - 英語解説③ make the most of it：〜を最大限に活用する、思い切り楽しむ\n12:46 - 【発音のコーナー】※一緒に言ってね！\n　13:52 - 発音解説① fullest\n　14:38 - 発音解説② most of it\n16:36 - 【今回の解説】今どきワード「FOMO」「JOMO」\n20:57 - 今回のまとめと次回予告\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-25T03:00:00.000Z",
+        "publishedAtUnix": 1787626800,
+        "thumbnail": "https://www.omnycontent.com/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/0c076d49-9b05-4dde-b679-b2c70030b77d/ecd2b1bd-4feb-4f82-a575-b4b0002b0f09/image.jpg?t=1787545360&size=Large",
+        "durationSeconds": 1455,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/0c076d49-9b05-4dde-b679-b2c70030b77d/ecd2b1bd-4feb-4f82-a575-b4b0002b0f09/audio.mp3?utm_source=Podcast&in_playlist=838e9b34-89be-442e-94f1-b2c70030bc67",
+          "episodeLink": "https://omny.fm/shows/aec/ep68-higurashi-when-they-cry",
+          "omnyClipId": "ecd2b1bd-4feb-4f82-a575-b4b0002b0f09"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:24.845Z",
-      "episodeCount": 66
+      "cachedAt": "2026-08-25T18:02:05.827Z",
+      "episodeCount": 69
     }
   },
   "sango": {
@@ -2788,11 +2893,56 @@
           "episodeLink": "https://omny.fm/shows/sango/39",
           "omnyClipId": "ef548426-16e4-4ff7-8802-b49c007bbfba"
         }
+      },
+      {
+        "id": "086c1273-1265-4cf4-91f7-b4a3004e6acd",
+        "title": "#40 うちの会社はお歳暮あげてんの？てか、私あげようよ。",
+        "description": "アプリ「オールナイトニッポンJAM」にて生配信でお送りしていた番組『周央サンゴのオールナイトニッポンオルタナティブonANNJAM』がラジコ、ニッポン放送のポッドキャスト・ステーション、ユーチューブポッドキャストで聞けるようにリニューアルしました！\n お歳暮とかお中元って難しいですよね…！\n 番組公式SNS▽\nhttps://x.com/sango_anna_jam?s=21&t=PSMpJqCuJ_XZX9lw3SAe2Q\nXでの感想は、#周央サンゴANNA をつけて投稿してください！\n 番組メールアドレス▽\nsango@allnightnippon.com\n 【募集中のコーナーメール】\n 『世紀の雑談』\nいくら話し合ったところで、何も世界は変わらない！結論も出ない！誰も救われない！\n渾っっっ身の雑談･どーでもいい話をお届けしていくのが、この『世紀の雑談』！\n募集するテーマは｢散々美味しい物を食べまくってた旅の終わりにふと立ち寄ったSAであったら嬉しい旅のシメにピッタリなメニューNo.1を決めよう」！\n ※件名の所に｢雑談｣と書いてお送りください。\n 『アンチ』\nアナタが、日頃、ムカついてる！大キライな！\n…でも、決して、言葉は通じないであろう｢アレ｣に向けて、｢おい！〇〇‼｣の書き出しと共に、一言言ってやりたい、文句や苦情をお待ちしてます！\n｢おい！納豆‼｣でもいいし、｢おい！コタツ‼｣でもいいし、｢おい！スマホいじりながら階段上ってたら、何か、思ってたのと、段差の感覚が違って、つまづいちゃう現象！」…などなど、言葉が通じなければ何でもOKです！\n※件名の所に｢アンチ｣と書いてお送りください。\n 『気ぃ使われてんな…』\nアナタが日々の生活や今までの人生の中で人に「気を使われてるな…」「気を使わせちゃってるな…」と気付いて、いたたまれなくなった出来事をメールでお待ちしてます…\n※件名の所に｢使われてる｣と書いてお送りください。\n 『門外漢の時間』\nアナタが様々なスポーツを見ていて疑問に思ったことを素直にそのままメールで送って来て下さい！\n例）｢何でサッカーは、キーパー以外手を使っちゃいけないのか？使えばいいぢゃん！｣\n｢陸上のハードルって、倒してもいいなら、そもそも置かなきゃいいぢゃん‼｣\n｢…ってゆーか、みんな一生懸命やってるんだから、順位を付ける必要ってある？｣\nスポーツに疎い！スポーツにさほど関心がないアナタからのスポーツに関する、素朴すぎる疑問･質問をお待ちしてます！\n※メールは件名に｢門外漢｣と書いて送ってください！\n ｢ぼろぼろチャレンジャー！1年間、これが出来たら1億円」！\nアナタは、来年のお正月に、ある条件をクリアすると、１億円のお年玉をもらえることになってます！その条件とは、｢今年１年間、毎日、１億円をもらうにふさわしい、イヤなこと･厄介なこと･メンドくさいことを続ける！｣あるいは｢１年間、決めた約束を守る！｣こと！\nアナタにとって、１億円もらうにふさわしいと思える、自分が、体力的･精神的に極限まで追い込まれる、ギリギリの過酷な条件を送ってください！\n※メールは件名に｢1億円｣と書いて送ってください！\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-11T10:50:00.000Z",
+        "publishedAtUnix": 1786445400,
+        "thumbnail": "https://www.omnycontent.com/d/programs/67122501-9b17-4d77-84bd-a93d00dc791e/3551f0c9-79eb-4ca9-9e0e-b38700916820/image.jpg?t=1761900572&size=Large",
+        "durationSeconds": 4422,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/3551f0c9-79eb-4ca9-9e0e-b38700916820/086c1273-1265-4cf4-91f7-b4a3004e6acd/audio.mp3?utm_source=Podcast&in_playlist=9a5aface-1f55-4d5c-a36c-b38700916bb4",
+          "episodeLink": "https://omny.fm/shows/sango/e40",
+          "omnyClipId": "086c1273-1265-4cf4-91f7-b4a3004e6acd"
+        }
+      },
+      {
+        "id": "e2f294cd-9722-4ce6-a41d-b4aa009c9f77",
+        "title": "#41 ぐるぐるフランク",
+        "description": "アプリ「オールナイトニッポンJAM」にて生配信でお送りしていた番組『周央サンゴのオールナイトニッポンオルタナティブonANNJAM』がラジコ、ニッポン放送のポッドキャスト・ステーション、ユーチューブポッドキャストで聞けるようにリニューアルしました！\n 新3Dお披露目天才だった（泣）\nそして天才的可愛さのMVはこちら\nhttps://youtu.be/SJkYZCRn5TY?si=RWmpiIlyZVuYfgUR\n 番組公式SNS▽\nhttps://x.com/sango_anna_jam?s=21&t=PSMpJqCuJ_XZX9lw3SAe2Q\nXでの感想は、#周央サンゴANNA をつけて投稿してください！\n 番組メールアドレス▽\nsango@allnightnippon.com\n 【募集中のコーナーメール】\n 『世紀の雑談』\nいくら話し合ったところで、何も世界は変わらない！結論も出ない！誰も救われない！\n渾っっっ身の雑談･どーでもいい話をお届けしていくのが、この『世紀の雑談』！\n募集するテーマは｢全国47都道府県で5人組バンドを組むならどの県にどのパートを担当させる⁉」！\n ※件名の所に｢雑談｣と書いてお送りください。\n 『アンチ』\nアナタが、日頃、ムカついてる！大キライな！\n…でも、決して、言葉は通じないであろう｢アレ｣に向けて、｢おい！〇〇‼｣の書き出しと共に、一言言ってやりたい、文句や苦情をお待ちしてます！\n｢おい！納豆‼｣でもいいし、｢おい！コタツ‼｣でもいいし、｢おい！スマホいじりながら階段上ってたら、何か、思ってたのと、段差の感覚が違って、つまづいちゃう現象！」…などなど、言葉が通じなければ何でもOKです！\n※件名の所に｢アンチ｣と書いてお送りください。\n 『気ぃ使われてんな…』\nアナタが日々の生活や今までの人生の中で人に「気を使われてるな…」「気を使わせちゃってるな…」と気付いて、いたたまれなくなった出来事をメールでお待ちしてます…\n※件名の所に｢使われてる｣と書いてお送りください。\n 『門外漢の時間』\nアナタが様々なスポーツを見ていて疑問に思ったことを素直にそのままメールで送って来て下さい！\n例）｢何でサッカーは、キーパー以外手を使っちゃいけないのか？使えばいいぢゃん！｣\n｢陸上のハードルって、倒してもいいなら、そもそも置かなきゃいいぢゃん‼｣\n｢…ってゆーか、みんな一生懸命やってるんだから、順位を付ける必要ってある？｣\nスポーツに疎い！スポーツにさほど関心がないアナタからのスポーツに関する、素朴すぎる疑問･質問をお待ちしてます！\n※メールは件名に｢門外漢｣と書いて送ってください！\n ｢ぼろぼろチャレンジャー！1年間、これが出来たら1億円」！\nアナタは、来年のお正月に、ある条件をクリアすると、１億円のお年玉をもらえることになってます！その条件とは、｢今年１年間、毎日、１億円をもらうにふさわしい、イヤなこと･厄介なこと･メンドくさいことを続ける！｣あるいは｢１年間、決めた約束を守る！｣こと！\nアナタにとって、１億円もらうにふさわしいと思える、自分が、体力的･精神的に極限まで追い込まれる、ギリギリの過酷な条件を送ってください！\n※メールは件名に｢1億円｣と書いて送ってください！\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-18T10:50:00.000Z",
+        "publishedAtUnix": 1787050200,
+        "thumbnail": "https://www.omnycontent.com/d/programs/67122501-9b17-4d77-84bd-a93d00dc791e/3551f0c9-79eb-4ca9-9e0e-b38700916820/image.jpg?t=1761900572&size=Large",
+        "durationSeconds": 4684,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/3551f0c9-79eb-4ca9-9e0e-b38700916820/e2f294cd-9722-4ce6-a41d-b4aa009c9f77/audio.mp3?utm_source=Podcast&in_playlist=9a5aface-1f55-4d5c-a36c-b38700916bb4",
+          "episodeLink": "https://omny.fm/shows/sango/41-1",
+          "omnyClipId": "e2f294cd-9722-4ce6-a41d-b4aa009c9f77"
+        }
+      },
+      {
+        "id": "12deb7dc-783b-4b10-87e1-b4b000eab8d3",
+        "title": "#42 偏見にまみれたラジオ",
+        "description": "アプリ「オールナイトニッポンJAM」にて生配信でお送りしていた番組『周央サンゴのオールナイトニッポンオルタナティブonANNJAM』がラジコ、ニッポン放送のポッドキャスト・ステーション、ユーチューブポッドキャストで聞けるようにリニューアルしました！\n 五大都市バンドは喧嘩ばかりだと思いますよ…\n 番組公式SNS▽\nhttps://x.com/sango_anna_jam?s=21&t=PSMpJqCuJ_XZX9lw3SAe2Q\nXでの感想は、#周央サンゴANNA をつけて投稿してください！\n 番組メールアドレス▽\nsango@allnightnippon.com\n 【募集中のコーナーメール】\n 『世紀の雑談』\nいくら話し合ったところで、何も世界は変わらない！結論も出ない！誰も救われない！\n渾っっっ身の雑談･どーでもいい話をお届けしていくのが、この『世紀の雑談』！\n募集するテーマは｢コレをレンタル出来たら嬉しい新しいレンタルビジネスの可能性を考えてみよう」！\n ※件名の所に｢雑談｣と書いてお送りください。\n 『アンチ』\nアナタが、日頃、ムカついてる！大キライな！\n…でも、決して、言葉は通じないであろう｢アレ｣に向けて、｢おい！〇〇‼｣の書き出しと共に、一言言ってやりたい、文句や苦情をお待ちしてます！\n｢おい！納豆‼｣でもいいし、｢おい！コタツ‼｣でもいいし、｢おい！スマホいじりながら階段上ってたら、何か、思ってたのと、段差の感覚が違って、つまづいちゃう現象！」…などなど、言葉が通じなければ何でもOKです！\n※件名の所に｢アンチ｣と書いてお送りください。\n 『気ぃ使われてんな…』\nアナタが日々の生活や今までの人生の中で人に「気を使われてるな…」「気を使わせちゃってるな…」と気付いて、いたたまれなくなった出来事をメールでお待ちしてます…\n※件名の所に｢使われてる｣と書いてお送りください。\n 『門外漢の時間』\nアナタが様々なスポーツを見ていて疑問に思ったことを素直にそのままメールで送って来て下さい！\n例）｢何でサッカーは、キーパー以外手を使っちゃいけないのか？使えばいいぢゃん！｣\n｢陸上のハードルって、倒してもいいなら、そもそも置かなきゃいいぢゃん‼｣\n｢…ってゆーか、みんな一生懸命やってるんだから、順位を付ける必要ってある？｣\nスポーツに疎い！スポーツにさほど関心がないアナタからのスポーツに関する、素朴すぎる疑問･質問をお待ちしてます！\n※メールは件名に｢門外漢｣と書いて送ってください！\n ｢1年間、これが出来たら1億円」！\nアナタは、来年のお正月に、ある条件をクリアすると、１億円のお年玉をもらえることになってます！その条件とは、｢今年１年間、毎日、１億円をもらうにふさわしい、イヤなこと･厄介なこと･メンドくさいことを続ける！｣あるいは｢１年間、決めた約束を守る！｣こと！\nアナタにとって、１億円もらうにふさわしいと思える、自分が、体力的･精神的に極限まで追い込まれる、ギリギリの過酷な条件を送ってください！\n※メールは件名に｢1億円｣と書いて送ってください！\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-25T10:50:00.000Z",
+        "publishedAtUnix": 1787655000,
+        "thumbnail": "https://www.omnycontent.com/d/programs/67122501-9b17-4d77-84bd-a93d00dc791e/3551f0c9-79eb-4ca9-9e0e-b38700916820/image.jpg?t=1761900572&size=Large",
+        "durationSeconds": 4751,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/3551f0c9-79eb-4ca9-9e0e-b38700916820/12deb7dc-783b-4b10-87e1-b4b000eab8d3/audio.mp3?utm_source=Podcast&in_playlist=9a5aface-1f55-4d5c-a36c-b38700916bb4",
+          "episodeLink": "https://omny.fm/shows/sango/42",
+          "omnyClipId": "12deb7dc-783b-4b10-87e1-b4b000eab8d3"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:25.405Z",
-      "episodeCount": 39
+      "cachedAt": "2026-08-25T18:02:06.350Z",
+      "episodeCount": 42
     }
   },
   "tamaki": {
@@ -3412,11 +3562,41 @@
           "episodeLink": "https://omny.fm/shows/tamaki/005fa18c-ba1e-46be-a180-b49d00968877",
           "omnyClipId": "005fa18c-ba1e-46be-a180-b49d00968877"
         }
+      },
+      {
+        "id": "c3d4f7c9-ea6e-4e80-9d68-b4a400676a1d",
+        "title": "【5000円サラダ】　犬山VS内田ダイエットバトル！",
+        "description": "内田さん！無事、第一子産まれたとのことで！おめでとうございます！\n Xでの感想は、#犬山たまきANNA をつけて投稿してください！\nhttps://x.com/tamaki_anna_jam\n番組メールアドレス▽\ntamaki@allnightnippon.com\n\n【募集中のメッセージテーマ】\n 「やりたくないけど、してること選手権」\n「家族旅行で苦手な飛行機に乗っている」「高校の部活全員で、ハーフマラソンに出場する」「会社の付き合いでゴルフをしている」…などなど、「やりたくないけど、してること」を教えてください。\n 「ラッキー・アンラッキー選手権」\nあなたの幸運に恵まれたエピソード、アンラッキーだったエピソードを教えてください。\n 【募集中のコーナーメール】\n 『内田VTuber化計画』\n内田アナがVTuberとして活躍するなら、どんなデザイン、どんなキャラクターがいいのか？の案をください！一緒に固めて行きましょう！\nデザインが「ナマケモノ」に決まりましたので、次回募集するテーマは「ナマケモノVtuberにやらせたいこと」です。\nお待ちしております！\n 『犬山たまきです！』\n犬山さんの自己紹介の頭に、全然関係ない自己紹介をくっつけていましたが、コーナーに昇格！\n犬山さんに言わせたいまったく関係のない自己紹介を送ってきてください！\n 『令和の略し王・内田！』\n曲名、グループ名、動物や魚の名前、ゲームやアニメのタイトル、駅名など長い名前を送ってきてください！即興で内田さんが略します！\n※公式の略称があるものはそれも一緒にお送りください！\n 『犬山・内田 妄想首脳会談』\n皆さんから、ネット検索やチャットGPTでは解決できない世の中の様々な問題を送ってもらって、犬山さんと内田さんで首脳会議を行い、結着をつけようというコーナー。\n二人に会議して欲しい内容をお送りください！\n 『ノンデリ研究所』\n「これってノンデリですか？」そんなメールを送ってもらって、「ノンデリかノンデリではないか？」「ノンデリの中でもどんなジャンルのノンデリか？」犬山さんに分析してもらおう…というコーナー。\nノンデリかなと迷ったら番組までお送りください。\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-12T10:50:00.000Z",
+        "publishedAtUnix": 1786531800,
+        "thumbnail": "https://www.omnycontent.com/d/programs/67122501-9b17-4d77-84bd-a93d00dc791e/3ffdb8bf-9e13-4716-9a0f-b387008e9d82/image.jpg?t=1761899963&size=Large",
+        "durationSeconds": 2836,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/3ffdb8bf-9e13-4716-9a0f-b387008e9d82/c3d4f7c9-ea6e-4e80-9d68-b4a400676a1d/audio.mp3?utm_source=Podcast&in_playlist=6bffe7f7-f754-4eae-8315-b387008ea13f",
+          "episodeLink": "https://omny.fm/shows/tamaki/5000-vs",
+          "omnyClipId": "c3d4f7c9-ea6e-4e80-9d68-b4a400676a1d"
+        }
+      },
+      {
+        "id": "c18c94f6-6032-4b8b-803d-b4ab004b212b",
+        "title": "【前島アナ襲来】人間関係って難しい",
+        "description": "人間ってそこまで考えてないので大丈夫だと思いますよと考えすぎちゃう人にはお伝えしたいです。\n Xでの感想は、#犬山たまきANNA をつけて投稿してください！\nhttps://x.com/tamaki_anna_jam\n番組メールアドレス▽\ntamaki@allnightnippon.com\n\n【募集中のメッセージテーマ】\n 「ラッキー、アンラッキー選手権」\nあなたの幸運に恵まれたエピソード、アンラッキーだったエピソードを教えてください。\n 「戻ってきてほしい選手権」\n元カレ、元カノはもちろん、こんな商品に復活してほしい、長く付き合っているパートナーに「こんなところを元に戻してほしい」などなど教えてください。\n 【募集中のコーナーメール】\n 『内田VTuber化計画』\n内田アナがVTuberとして活躍するなら、どんなデザイン、どんなキャラクターがいいのか？の案をください！一緒に固めて行きましょう！\nデザインが「ナマケモノ」に決まりましたので、次回募集するテーマは「配信内容」です。\nお待ちしております！\n 『犬山たまきです！』\n犬山さんの自己紹介の頭に、全然関係ない自己紹介をくっつけていましたが、コーナーに昇格！\n犬山さんに言わせたいまったく関係のない自己紹介を送ってきてください！\n 『令和の略し王・内田！』\n曲名、グループ名、動物や魚の名前、ゲームやアニメのタイトル、駅名など長い名前を送ってきてください！即興で内田さんが略します！\n※公式の略称があるものはそれも一緒にお送りください！\n 『犬山・内田 妄想首脳会談』\n皆さんから、ネット検索やチャットGPTでは解決できない世の中の様々な問題を送ってもらって、犬山さんと内田さんで首脳会議を行い、結着をつけようというコーナー。\n二人に会議して欲しい内容をお送りください！\n 『ノンデリ研究所』\n「これってノンデリですか？」そんなメールを送ってもらって、「ノンデリかノンデリではないか？」「ノンデリの中でもどんなジャンルのノンデリか？」犬山さんに分析してもらおう…というコーナー。\nノンデリかなと迷ったら番組までお送りください。\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-19T10:50:00.000Z",
+        "publishedAtUnix": 1787136600,
+        "thumbnail": "https://www.omnycontent.com/d/programs/67122501-9b17-4d77-84bd-a93d00dc791e/3ffdb8bf-9e13-4716-9a0f-b387008e9d82/image.jpg?t=1761899963&size=Large",
+        "durationSeconds": 2269,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/3ffdb8bf-9e13-4716-9a0f-b387008e9d82/c18c94f6-6032-4b8b-803d-b4ab004b212b/audio.mp3?utm_source=Podcast&in_playlist=6bffe7f7-f754-4eae-8315-b387008ea13f",
+          "episodeLink": "https://omny.fm/shows/tamaki/c18c94f6-6032-4b8b-803d-b4ab004b212b",
+          "omnyClipId": "c18c94f6-6032-4b8b-803d-b4ab004b212b"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:26.115Z",
-      "episodeCount": 40
+      "cachedAt": "2026-08-25T18:02:07.123Z",
+      "episodeCount": 42
     }
   },
   "shijimi": {
@@ -7682,11 +7862,56 @@
           "episodeLink": "https://omny.fm/shows/shijimi/ep280",
           "omnyClipId": "84f7a7fb-1893-4dd7-9d98-b497007d4171"
         }
+      },
+      {
+        "id": "037de845-6da4-4735-b14a-b49e0083b822",
+        "title": "ep281. 夏の風物詩、夏祭りを感じながらお届け！",
+        "description": "しじみ神社では夏祭りが開催中！\n 今夜のメニューは\n ・これ飲んで、これ食べて\n ・ふつおた\n ・チャットYPP\n  \n よぴさんがかぶりつくほど好きな屋台メニュー\n 本能の赴くままお酒を飲む前りん\n  \n お楽しみに\n radikoでは過去回も含めた全エピソードをお聴きいただけます！\nradikoアプリを是非ダウンロードして過去回もお楽しみください！\n https://radiko.jp/podcast/channels/e4b7dbdd-7da9-4bf5-9efa-88a2fea73e3c?share=1\n 2026年8月7日(金)配信\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-07T11:30:00.000Z",
+        "publishedAtUnix": 1786102200,
+        "thumbnail": "https://www.omnycontent.com/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/7f8d46b5-b149-4e79-8729-ace900a8f989/037de845-6da4-4735-b14a-b49e0083b822/image.jpg?t=1786088216&size=Large",
+        "durationSeconds": 1637,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/7f8d46b5-b149-4e79-8729-ace900a8f989/037de845-6da4-4735-b14a-b49e0083b822/audio.mp3?utm_source=Podcast&in_playlist=46778ff4-e3b0-4792-bb78-acec004205c8",
+          "episodeLink": "https://omny.fm/shows/shijimi/ep281",
+          "omnyClipId": "037de845-6da4-4735-b14a-b49e0083b822"
+        }
+      },
+      {
+        "id": "a48390b8-b4d9-489e-999e-b4a500598750",
+        "title": "ep282. 今週はCLUB SZMで盛り上げ！ポンッ！チーン！トクトクトク！",
+        "description": "今夜のメニューは\n ・ふつおた\n ・狂犬ラップ\n  \n 最近飲んで良かったお酒\n ２人は晴れ女？雨女？\n  \n お楽しみに\n radikoでは過去回も含めた全エピソードをお聴きいただけます！\nradikoアプリを是非ダウンロードして過去回もお楽しみください！\n https://radiko.jp/podcast/channels/e4b7dbdd-7da9-4bf5-9efa-88a2fea73e3c?share=1\n 2026年8月14日(金)配信\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-14T11:30:00.000Z",
+        "publishedAtUnix": 1786707000,
+        "thumbnail": "https://www.omnycontent.com/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/7f8d46b5-b149-4e79-8729-ace900a8f989/a48390b8-b4d9-489e-999e-b4a500598750/image.jpg?t=1786696467&size=Large",
+        "durationSeconds": 1461,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/7f8d46b5-b149-4e79-8729-ace900a8f989/a48390b8-b4d9-489e-999e-b4a500598750/audio.mp3?utm_source=Podcast&in_playlist=46778ff4-e3b0-4792-bb78-acec004205c8",
+          "episodeLink": "https://omny.fm/shows/shijimi/ep282",
+          "omnyClipId": "a48390b8-b4d9-489e-999e-b4a500598750"
+        }
+      },
+      {
+        "id": "0cabdd1c-783b-4a7f-99f0-b4ac00510abc",
+        "title": "ep283. 居酒屋しじみでよぴさんの急な告白！？",
+        "description": "今夜のメニューは\n ・これ飲んで、これ食べて\n ・ふつおた\n ・チャットYPP\n  \n 前りんが住みたい家？\n よぴさんに何が！？\n みんなで宇宙猫になろう！\n  \n お楽しみに\n radikoでは過去回も含めた全エピソードをお聴きいただけます！\nradikoアプリを是非ダウンロードして過去回もお楽しみください！\n https://radiko.jp/podcast/channels/e4b7dbdd-7da9-4bf5-9efa-88a2fea73e3c?share=1\n 2026年8月21日(金)配信\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-21T11:30:00.000Z",
+        "publishedAtUnix": 1787311800,
+        "thumbnail": "https://www.omnycontent.com/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/7f8d46b5-b149-4e79-8729-ace900a8f989/0cabdd1c-783b-4a7f-99f0-b4ac00510abc/image.jpg?t=1787301761&size=Large",
+        "durationSeconds": 1567,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/7f8d46b5-b149-4e79-8729-ace900a8f989/0cabdd1c-783b-4a7f-99f0-b4ac00510abc/audio.mp3?utm_source=Podcast&in_playlist=46778ff4-e3b0-4792-bb78-acec004205c8",
+          "episodeLink": "https://omny.fm/shows/shijimi/ep283",
+          "omnyClipId": "0cabdd1c-783b-4a7f-99f0-b4ac00510abc"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:26.680Z",
-      "episodeCount": 283
+      "cachedAt": "2026-08-25T18:02:07.764Z",
+      "episodeCount": 286
     }
   },
   "maidoari": {
@@ -9296,11 +9521,56 @@
           "episodeLink": "https://omny.fm/shows/maidoari/105",
           "omnyClipId": "f38a7e4a-80bd-4df1-b783-b49c0036628c"
         }
+      },
+      {
+        "id": "ea7a736b-f332-47b7-b280-b4a3006142d6",
+        "title": "#106 東京タワーを見下ろした",
+        "description": "加藤千恵さん、小池水音さん、高瀬隼子さんら文豪たちと定例のパフェ会に参加した新内さん。\n初めての麻布台ヒルズでブルジョアの洗礼を浴びたようです...\n\n番組公式SNS：https://x.com/maidoari1242\n ハッシュタグ：#新内眞衣のまいどあり\n メールアドレス：mai@1242.com\n 〜メール募集中〜\n「新内シュレッダー」\nあなたの失敗談や後悔、恥ずかしかったエピソードを送ってください！\n良いことも悪いことも何一つ覚えてない新内さんが、あなたの黒歴史を完全消去してくれます。\n 「ツメうち」\nプランナーとしていくつもの成功実績を持つ新内さんに「背中を押してほしい」と思うことを募集します。だいぶ強く押す（蹴る）こともあります。\nお悩みの詳細はなるべく細かく記載してください。（「ここから先は読まないでください」などももちろんありです。）\n電話OKな方はお電話番号も忘れずに！\n 「後輩力かるた」\n乃木坂46時代は最年長ということもあってどこ行っても姉さんだったことで、\n新内さんが自分に足りないと痛感したのが…後輩力！！\n明日からすぐに実践出来るような、あらゆるシチュエーションで使える｢後輩力強めワード｣を募集します！\n（例）\n「こ」・・・コメいいすか？\n先輩に気を遣わせず、かつ2杯目もいきやすいです。\nシチュエーションは焼肉だとベストです。\n 「お寿司で4万」\n友人に高級寿司を奢った新内さん。\nとてもいい時間になったから後悔はないけど寝る前に思い出す4万・・・。\nそんなムズっとした買い物体験をエピソードを添えて教えてください！\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-11T07:40:00.000Z",
+        "publishedAtUnix": 1786434000,
+        "thumbnail": "https://www.omnycontent.com/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/62a1df99-e36b-4cfa-bdc8-b1c2009fd1d1/ea7a736b-f332-47b7-b280-b4a3006142d6/image.jpg?t=1786428337&size=Large",
+        "durationSeconds": 2230,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/62a1df99-e36b-4cfa-bdc8-b1c2009fd1d1/ea7a736b-f332-47b7-b280-b4a3006142d6/audio.mp3?utm_source=Podcast&in_playlist=e505a96a-fa16-484c-ac26-b1c200a0fb79",
+          "episodeLink": "https://omny.fm/shows/maidoari/106",
+          "omnyClipId": "ea7a736b-f332-47b7-b280-b4a3006142d6"
+        }
+      },
+      {
+        "id": "8c0580a6-a3b8-44b6-860e-b4aa004e1b06",
+        "title": "#107 たかい買い物は日割り計算",
+        "description": "身内御用達のインフルエンサー新内さんが、10年愛用するこだわりの寝具をおすすめします！\n\n番組公式SNS：https://x.com/maidoari1242\n ハッシュタグ：#新内眞衣のまいどあり\n メールアドレス：mai@1242.com\n 〜メール募集中〜\n「新内シュレッダー」\nあなたの失敗談や後悔、恥ずかしかったエピソードを送ってください！\n良いことも悪いことも何一つ覚えてない新内さんが、あなたの黒歴史を完全消去してくれます。\n 「ツメうち」\nプランナーとしていくつもの成功実績を持つ新内さんに「背中を押してほしい」と思うことを募集します。だいぶ強く押す（蹴る）こともあります。\nお悩みの詳細はなるべく細かく記載してください。（「ここから先は読まないでください」などももちろんありです。）\n電話OKな方はお電話番号も忘れずに！\n 「後輩力かるた」\n乃木坂46時代は最年長ということもあってどこ行っても姉さんだったことで、\n新内さんが自分に足りないと痛感したのが…後輩力！！\n明日からすぐに実践出来るような、あらゆるシチュエーションで使える｢後輩力強めワード｣を募集します！\n（例）\n「こ」・・・コメいいすか？\n先輩に気を遣わせず、かつ2杯目もいきやすいです。\nシチュエーションは焼肉だとベストです。\n 「お寿司で4万」\n友人に高級寿司を奢った新内さん。\nとてもいい時間になったから後悔はないけど寝る前に思い出す4万・・・。\nそんなムズっとした買い物体験をエピソードを添えて教えてください！\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-18T07:40:00.000Z",
+        "publishedAtUnix": 1787038800,
+        "thumbnail": "https://www.omnycontent.com/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/62a1df99-e36b-4cfa-bdc8-b1c2009fd1d1/8c0580a6-a3b8-44b6-860e-b4aa004e1b06/image.jpg?t=1787029040&size=Large",
+        "durationSeconds": 2170,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/62a1df99-e36b-4cfa-bdc8-b1c2009fd1d1/8c0580a6-a3b8-44b6-860e-b4aa004e1b06/audio.mp3?utm_source=Podcast&in_playlist=e505a96a-fa16-484c-ac26-b1c200a0fb79",
+          "episodeLink": "https://omny.fm/shows/maidoari/107",
+          "omnyClipId": "8c0580a6-a3b8-44b6-860e-b4aa004e1b06"
+        }
+      },
+      {
+        "id": "e7cb9b3b-dd66-4746-aa13-b4b100274f3e",
+        "title": "#108 推しってどこから？",
+        "description": "いつも答えのないことを考えすぎちゃう新内さんが今回悩むのは、\n\"「ファン」「推し」とは何か\"\n言われてみれば明確な定義はないけど…！みなさんの意見も聞かせてください。\n（Xではメールアドレスも）\n\n番組公式SNS：https://x.com/maidoari1242\n ハッシュタグ：#新内眞衣のまいどあり\n メールアドレス：mai@1242.com\n 〜メール募集中〜\n「新内シュレッダー」\nあなたの失敗談や後悔、恥ずかしかったエピソードを送ってください！\n良いことも悪いことも何一つ覚えてない新内さんが、あなたの黒歴史を完全消去してくれます。\n 「ツメうち」\nプランナーとしていくつもの成功実績を持つ新内さんに「背中を押してほしい」と思うことを募集します。だいぶ強く押す（蹴る）こともあります。\nお悩みの詳細はなるべく細かく記載してください。（「ここから先は読まないでください」などももちろんありです。）\n電話OKな方はお電話番号も忘れずに！\n 「後輩力かるた」\n乃木坂46時代は最年長ということもあってどこ行っても姉さんだったことで、\n新内さんが自分に足りないと痛感したのが…後輩力！！\n明日からすぐに実践出来るような、あらゆるシチュエーションで使える｢後輩力強めワード｣を募集します！\n（例）\n「こ」・・・コメいいすか？\n先輩に気を遣わせず、かつ2杯目もいきやすいです。\nシチュエーションは焼肉だとベストです。\n 「お寿司で4万」\n友人に高級寿司を奢った新内さん。\nとてもいい時間になったから後悔はないけど寝る前に思い出す4万・・・。\nそんなムズっとした買い物体験をエピソードを添えて教えてください！\nSee omnystudio.com/listener for privacy information.",
+        "publishedAt": "2026-08-25T07:40:00.000Z",
+        "publishedAtUnix": 1787643600,
+        "thumbnail": "https://www.omnycontent.com/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/62a1df99-e36b-4cfa-bdc8-b1c2009fd1d1/e7cb9b3b-dd66-4746-aa13-b4b100274f3e/image.jpg?t=1787625487&size=Large",
+        "durationSeconds": 2197,
+        "tags": [],
+        "platformMetadata": {
+          "audioUrl": "https://traffic.omny.fm/d/clips/67122501-9b17-4d77-84bd-a93d00dc791e/62a1df99-e36b-4cfa-bdc8-b1c2009fd1d1/e7cb9b3b-dd66-4746-aa13-b4b100274f3e/audio.mp3?utm_source=Podcast&in_playlist=e505a96a-fa16-484c-ac26-b1c200a0fb79",
+          "episodeLink": "https://omny.fm/shows/maidoari/108",
+          "omnyClipId": "e7cb9b3b-dd66-4746-aa13-b4b100274f3e"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:27.440Z",
-      "episodeCount": 106
+      "cachedAt": "2026-08-25T18:02:08.510Z",
+      "episodeCount": 109
     }
   }
 }

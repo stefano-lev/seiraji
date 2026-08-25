@@ -10,6 +10,7 @@ type Props = {
   userState: UserProgramState[];
 
   sortMode: SortMode;
+  now: number;
 
   onUpdate: (state: UserProgramState) => void;
   onUpdateEpisode: (programId: string, nextEpisode: number) => void;
@@ -26,6 +27,7 @@ export function ProgramGrid({
   programs,
   userState,
   sortMode,
+  now,
   onUpdate,
   onUpdateEpisode,
   onOpen,
@@ -51,6 +53,7 @@ export function ProgramGrid({
           program={program}
           userState={userState.find((s) => s.programId === program.id)}
           sortMode={sortMode}
+          now={now}
           onUpdate={onUpdate}
           onUpdateEpisode={onUpdateEpisode}
           onOpen={onOpen}

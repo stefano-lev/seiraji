@@ -368,11 +368,56 @@
           "episodeUrl": "https://radiko.jp/podcast/episodes/0d382bf2-a301-4e19-91d7-bbb99657ad9a?play=auto",
           "source": "html-fallback"
         }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:9669f8a9-3186-4c2b-a06b-ba14d2c86d0c",
+        "title": "#109 新コーナー「なんでもチャレンジャー？！ともぽんの TEN」",
+        "description": "#109 新コーナー「なんでもチャレンジャー？！ともぽんの TEN」マルチタレント幸巴の冠ラジオ番組☆第109回である今回は新コーナー！「なんでもチャレンジャー？！ともぽんの TEN」目の前にあるボックスの中には、スタッフから「モノマネ」「早口言葉」「胸キュンセリフ」「最新トレンド解説」など、バラエティ豊かなお題が書かれたカードが入っているので、それを引きます。制限時間 10 秒で、とにかく全力でやり切ってもらうドタバタゲームコーナーとなっています。むちゃブリ企画にもしっかり答えました！！！ 8分シェア 8分",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 480,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "9669f8a9-3186-4c2b-a06b-ba14d2c86d0c",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/9669f8a9-3186-4c2b-a06b-ba14d2c86d0c?play=auto",
+          "source": "html"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:2c10a101-07d0-413b-8992-6efb8112b496",
+        "title": "#111 公開収録 Part.1 @城島高原パーク",
+        "description": "#111 公開収録 Part.1 @城島高原パークマルチタレント幸巴の冠ラジオ番組☆111回目の今回は、8月1日に大分県にある城島高原パークで行われた公開収録の模様をお届けします♪Part.1である今回は、城島高原パークのおじゅんさんが登場！！！城島高原パークの「夏」についてたっぷりお話を聞いています！！ 9分シェア 9分",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 540,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "2c10a101-07d0-413b-8992-6efb8112b496",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/2c10a101-07d0-413b-8992-6efb8112b496?play=auto",
+          "source": "html"
+        }
+      },
+      {
+        "id": "radiko-podcast:95636560-dbfa-41fc-9f82-c65ace0ab45b:9f110da2-6d91-463e-8741-b8335e21360a",
+        "title": "#110 ともぽんおかあたんになりました！！！",
+        "description": "#110 ともぽんおかあたんになりました！！！マルチタレント幸巴の冠ラジオ番組☆第110回の今回は、「ともぽんおかあたんになりました」！！！ともぽんとこみつおの奮闘記をお送りいたします！こちらのコーナーへのメッセージも募集中♪番組公式Instagramのダイレクトメッセージから送ってください！ 8分シェア 8分",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/thumbnail_95636560-dbfa-41fc-9f82-c65ace0ab45b-20240620130916.jpg",
+        "durationSeconds": 480,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "9f110da2-6d91-463e-8741-b8335e21360a",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/9f110da2-6d91-463e-8741-b8335e21360a?play=auto",
+          "source": "html"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T17:19:54.513Z",
-      "episodeCount": 25
+      "cachedAt": "2026-08-25T18:02:00.940Z",
+      "episodeCount": 28
     }
   },
   "24c21ebf-0591-4fa9-858c-674a09dd8031": {
@@ -695,7 +740,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T17:20:03.260Z",
+      "cachedAt": "2026-08-25T18:02:01.944Z",
       "episodeCount": 20
     }
   },
@@ -1019,7 +1064,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T17:24:34.592Z",
+      "cachedAt": "2026-08-25T18:02:02.727Z",
       "episodeCount": 20
     }
   },
@@ -1343,7 +1388,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T17:25:08.869Z",
+      "cachedAt": "2026-08-25T18:02:03.322Z",
       "episodeCount": 20
     }
   },
@@ -1664,11 +1709,116 @@
           "episodeUrl": "https://radiko.jp/podcast/episodes/0160a829-e859-4f22-91c2-2e428ee6a5cd?play=auto",
           "source": "html"
         }
+      },
+      {
+        "id": "radiko-podcast:eef49d79-74f9-4fc5-97c5-f1b8fd79110c:b556c2a9-4c72-4de5-8ac7-97108902f71b",
+        "title": "2026/08/07（#97） 雫のギリギリ食レポ 解答編！",
+        "description": "2026/08/07（#97） 雫のギリギリ食レポ 解答編！#97ポルカドットスティングレイ 雫による自己肯定感 超爆上げプログラム雫のギリギリ食レポ 解答編！ / ホカ美さん/ 超爆上げ変換 26分シェア 26分",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/thumbnail_eef49d79-74f9-4fc5-97c5-f1b8fd79110c-20240928193444.jpg",
+        "durationSeconds": 1560,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "b556c2a9-4c72-4de5-8ac7-97108902f71b",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/b556c2a9-4c72-4de5-8ac7-97108902f71b?play=auto",
+          "source": "html"
+        }
+      },
+      {
+        "id": "radiko-podcast:eef49d79-74f9-4fc5-97c5-f1b8fd79110c:a61610ac-beec-435a-9994-462032227f36",
+        "title": "2026/07/31（#96） もしもリスナーがオリジナルゲームを考えるとしたら！？",
+        "description": "2026/07/31（#96） もしもリスナーがオリジナルゲームを考えるとしたら！？#96ポルカドットスティングレイ 雫による自己肯定感 超爆上げプログラムもしもリスナーがオリジナルゲームを考えるとしたら！？ / ホカ美さん/ 超爆上げ変換 27分シェア 27分",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/thumbnail_eef49d79-74f9-4fc5-97c5-f1b8fd79110c-20240928193444.jpg",
+        "durationSeconds": 1620,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "a61610ac-beec-435a-9994-462032227f36",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/a61610ac-beec-435a-9994-462032227f36?play=auto",
+          "source": "html"
+        }
+      },
+      {
+        "id": "radiko-podcast:eef49d79-74f9-4fc5-97c5-f1b8fd79110c:81cd6444-950a-430d-99e6-5a1e1d4d651b",
+        "title": "2026/07/24（#95） 雫のオススメゲーム 3選！",
+        "description": "2026/07/24（#95） 雫のオススメゲーム 3選！#95ポルカドットスティングレイ 雫による自己肯定感 超爆上げプログラム雫のオススメゲーム 3選！ / ホカ美さん/ 超爆上げ変換 25分シェア 25分",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/thumbnail_eef49d79-74f9-4fc5-97c5-f1b8fd79110c-20240928193444.jpg",
+        "durationSeconds": 1500,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "81cd6444-950a-430d-99e6-5a1e1d4d651b",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/81cd6444-950a-430d-99e6-5a1e1d4d651b?play=auto",
+          "source": "html"
+        }
+      },
+      {
+        "id": "radiko-podcast:eef49d79-74f9-4fc5-97c5-f1b8fd79110c:12e1f898-9505-4265-80a5-2b649aecd5d4",
+        "title": "2026/07/17（#94） 雫のギリギリ食レポ！出題編",
+        "description": "2026/07/17（#94） 雫のギリギリ食レポ！出題編#94ポルカドットスティングレイ 雫による自己肯定感 超爆上げプログラム雫のギリギリ食レポ！出題編 / ホカ美さん/ 超爆上げ変換 26分シェア 26分",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/thumbnail_eef49d79-74f9-4fc5-97c5-f1b8fd79110c-20240928193444.jpg",
+        "durationSeconds": 1560,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "12e1f898-9505-4265-80a5-2b649aecd5d4",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/12e1f898-9505-4265-80a5-2b649aecd5d4?play=auto",
+          "source": "html"
+        }
+      },
+      {
+        "id": "radiko-podcast:eef49d79-74f9-4fc5-97c5-f1b8fd79110c:4bf21655-9944-484e-ac23-b0b8c04b6066",
+        "title": "2026/07/10（#93） 楽曲「逆様」語り上げラボ！",
+        "description": "2026/07/10（#93） 楽曲「逆様」語り上げラボ！#93ポルカドットスティングレイ 雫による自己肯定感 超爆上げプログラム楽曲「逆様」語り上げラボ！/ ホカ美さん/ 超爆上げ変換 24分シェア 24分",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/thumbnail_eef49d79-74f9-4fc5-97c5-f1b8fd79110c-20240928193444.jpg",
+        "durationSeconds": 1440,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "4bf21655-9944-484e-ac23-b0b8c04b6066",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/4bf21655-9944-484e-ac23-b0b8c04b6066?play=auto",
+          "source": "html"
+        }
+      },
+      {
+        "id": "radiko-podcast:eef49d79-74f9-4fc5-97c5-f1b8fd79110c:19607800-1cf0-4ad4-a247-7dd8574a437b",
+        "title": "2026/07/03（#92） 前週面白かったので、今週もミツヤスカズマ参戦！",
+        "description": "2026/07/03（#92） 前週面白かったので、今週もミツヤスカズマ参戦！#92ポルカドットスティングレイ 雫による自己肯定感 超爆上げプログラム前週面白かったので、今週もミツヤスカズマ参戦！ / ホカ美さん/ 超爆上げ変換 27分シェア 27分",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/thumbnail_eef49d79-74f9-4fc5-97c5-f1b8fd79110c-20240928193444.jpg",
+        "durationSeconds": 1620,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "19607800-1cf0-4ad4-a247-7dd8574a437b",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/19607800-1cf0-4ad4-a247-7dd8574a437b?play=auto",
+          "source": "html"
+        }
+      },
+      {
+        "id": "radiko-podcast:eef49d79-74f9-4fc5-97c5-f1b8fd79110c:94b2920e-c4c5-429d-a7b7-dbeed2ba3c62",
+        "title": "2026/06/24（#91） ミツヤスカズマ「僕の方が辛いです」",
+        "description": "2026/06/24（#91） ミツヤスカズマ「僕の方が辛いです」#91ポルカドットスティングレイ 雫による自己肯定感 超爆上げプログラムミツヤスカズマ「僕の方が辛いです」！ / ホカ美さん/ 超爆上げ変換 27分シェア 27分",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/thumbnail_eef49d79-74f9-4fc5-97c5-f1b8fd79110c-20240928193444.jpg",
+        "durationSeconds": 1620,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "94b2920e-c4c5-429d-a7b7-dbeed2ba3c62",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/94b2920e-c4c5-429d-a7b7-dbeed2ba3c62?play=auto",
+          "source": "html"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T17:26:55.164Z",
-      "episodeCount": 20
+      "cachedAt": "2026-08-25T18:02:03.887Z",
+      "episodeCount": 27
     }
   },
   "e88c7bfd-690b-412c-8988-a018434add6b": {
@@ -1989,11 +2139,41 @@
           "episodeUrl": "https://radiko.jp/podcast/episodes/49e33021-00de-4789-aa66-4bd959b086fa?play=auto",
           "source": "html"
         }
+      },
+      {
+        "id": "radiko-podcast:e88c7bfd-690b-412c-8988-a018434add6b:c4e354d3-c1be-43cd-8d8b-837c8f07885f",
+        "title": "サブカルラジヲ 第73回（2026年8月20日放送）",
+        "description": "サブカルラジヲ 第73回（2026年8月20日放送）メッセージ紹介&漫画「おかえり水平線／渡部大羊」の話Xのハッシュタグは、「#サブカルラジヲ」でぜひポストしてください！番組へのメッセージは、NBCラジオのWEBサイトやNBCアプリからどうぞ！ 20分シェア 20分",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/thumbnail_c4e354d3-c1be-43cd-8d8b-837c8f07885f-20260820221503.jpg",
+        "durationSeconds": 1200,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "c4e354d3-c1be-43cd-8d8b-837c8f07885f",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/c4e354d3-c1be-43cd-8d8b-837c8f07885f?play=auto",
+          "source": "html"
+        }
+      },
+      {
+        "id": "radiko-podcast:e88c7bfd-690b-412c-8988-a018434add6b:8bfcd28e-6498-477f-8af7-4e1123c36ffe",
+        "title": "サブカルラジヲ 第72回（2026年8月13日放送）",
+        "description": "サブカルラジヲ 第72回（2026年8月13日放送）メッセージ紹介の巻！Xのハッシュタグは、「#サブカルラジヲ」でぜひポストしてください！番組へのメッセージは、NBCラジオのWEBサイトやNBCアプリからどうぞ！ 19分シェア 19分",
+        "publishedAt": null,
+        "publishedAtUnix": null,
+        "thumbnail": "https://podcast-static.cf.radiko.jp/thumbnail_8bfcd28e-6498-477f-8af7-4e1123c36ffe-20260813221503.jpg",
+        "durationSeconds": 1140,
+        "tags": [],
+        "platformMetadata": {
+          "episodeId": "8bfcd28e-6498-477f-8af7-4e1123c36ffe",
+          "episodeUrl": "https://radiko.jp/podcast/episodes/8bfcd28e-6498-477f-8af7-4e1123c36ffe?play=auto",
+          "source": "html"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T17:28:50.453Z",
-      "episodeCount": 20
+      "cachedAt": "2026-08-25T18:02:04.885Z",
+      "episodeCount": 22
     }
   }
 }

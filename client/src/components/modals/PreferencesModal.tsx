@@ -308,13 +308,13 @@ export function PreferencesModal({
             </div>
 
             <PreferenceRow
-              title="Disable pin behavior"
-              description="Disable the default 'Pin to Top' behavior in the library view"
-              checked={prefs.disablePinToTop}
+              title="Keep favorites at top"
+              description="Prioritize favorite programs above other programs in the library"
+              checked={!prefs.disablePinToTop}
               onCheckedChange={(checked) =>
                 setPrefs((p) => ({
                   ...p,
-                  disablePinToTop: checked,
+                  disablePinToTop: !checked,
                 }))
               }
             />

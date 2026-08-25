@@ -379,7 +379,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:20.425Z",
+      "cachedAt": "2026-08-25T18:02:01.102Z",
       "episodeCount": 15
     }
   },
@@ -4162,11 +4162,33 @@
           "itunesEpisodeType": null,
           "itunesExplicit": "no"
         }
+      },
+      {
+        "id": "applepodcasts:1701934290:https://stand.fm/episodes/6a8516ac306a6cd578be514e",
+        "title": "スクイーズオタクによるスクイーズ話/オススメ３つ紹介",
+        "description": "投稿日:2026年8月19日\n\nオススメスクイーズ↓\nリンクはTikTokの商品ページに飛びます。\n\n1位🥇\nバニラアイススクイーズ\nhttps://vt.tiktok.com/ZS9kV23mgqoHh-BNa7m/\n\n2位🥈\n揚げミルクプリン\nhttps://vt.tiktok.com/ZS9kV29j91uWQ-kGBUb/\n\n3位🥉\nメロントースト\nhttps://vt.tiktok.com/ZS9kV2VTNJUaJ-wiXPs/\n\n#スクイーズ\n#メロジョイ\n#ハハジン\n#ググスタジオ\n#ヨヨスクイーシー\n---\nstand.fmでは、この放送にいいね・コメント・レター送信ができます。\nhttps://stand.fm/channels/5f4fa8926a9e5b17f76e28d6",
+        "publishedAt": "Wed, 19 Aug 2026 03:08:26 GMT",
+        "publishedAtUnix": 1787108906,
+        "thumbnail": "https://cdncf.stand.fm/cdn-cgi/image/fit=cover,width=1400,height=1400/coverImages/01M0BZHA4NY2DDK4AVDZZWQYBB.jpg",
+        "durationSeconds": 982,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "https://stand.fm/episodes/6a8516ac306a6cd578be514e",
+          "link": "https://stand.fm/episodes/6a8516ac306a6cd578be514e",
+          "audioUrl": "https://cdncf.stand.fm/audios/01M0BZVKDBQV2XM2SV2GW2YYKS.m4a",
+          "enclosureType": "audio/x-m4a",
+          "enclosureLength": "0",
+          "rawDuration": "00:16:22",
+          "itunesEpisode": null,
+          "itunesSeason": null,
+          "itunesEpisodeType": null,
+          "itunesExplicit": "no"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:21.218Z",
-      "episodeCount": 171
+      "cachedAt": "2026-08-25T18:02:01.969Z",
+      "episodeCount": 172
     }
   },
   "1863614215": {
@@ -4758,11 +4780,77 @@
           "itunesEpisodeType": "full",
           "itunesExplicit": null
         }
+      },
+      {
+        "id": "applepodcasts:1863614215:b3c5b588-f486-430e-af67-190d6e55ed23",
+        "title": "#23_山岸理子＆浅倉樹々_前編",
+        "description": "MC松岡さん不在のピンチに番組初の２人ゲスト山岸理子さん＆浅倉樹々さんが登場！\nつばきファクトリー初期メンバーならではの視点で過去から現在までトーク！\n松岡さんからメッセージもありますよ！",
+        "publishedAt": "Fri, 07 Aug 2026 09:00:00 GMT",
+        "publishedAtUnix": 1786093200,
+        "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45021539/45021539-1780647473263-68ba480891ce5.jpg",
+        "durationSeconds": 1216,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "b3c5b588-f486-430e-af67-190d6e55ed23",
+          "link": "https://podcasters.spotify.com/pod/show/57e7cb5o87/episodes/23__-e3n3ete",
+          "audioUrl": "https://anchor.fm/s/10cf2012c/podcast/play/123894126/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-7%2F429390993-44100-2-8e4748b64dd08.m4a",
+          "enclosureType": "audio/x-m4a",
+          "enclosureLength": "19667290",
+          "rawDuration": "00:20:16",
+          "itunesEpisode": "10",
+          "itunesSeason": "2",
+          "itunesEpisodeType": "full",
+          "itunesExplicit": null
+        }
+      },
+      {
+        "id": "applepodcasts:1863614215:6401582b-0c4f-4ae5-b563-92aebf850571",
+        "title": "#24_山岸理子＆浅倉樹々_後編",
+        "description": "今週のMCも仲良しコンビの山岸理子さん＆浅倉樹々さん！\nつばきファクトリー愛たっぷりでお届けします！\n卒業した今だからこそ思うメンバーの魅力とは！？",
+        "publishedAt": "Fri, 14 Aug 2026 09:00:00 GMT",
+        "publishedAtUnix": 1786698000,
+        "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45021539/45021539-1780647473263-68ba480891ce5.jpg",
+        "durationSeconds": 959,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "6401582b-0c4f-4ae5-b563-92aebf850571",
+          "link": "https://podcasters.spotify.com/pod/show/57e7cb5o87/episodes/24__-e3nd2mu",
+          "audioUrl": "https://anchor.fm/s/10cf2012c/podcast/play/124209310/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-14%2F429824681-44100-2-3f4e9cf048c3f.m4a",
+          "enclosureType": "audio/x-m4a",
+          "enclosureLength": "15511039",
+          "rawDuration": "00:15:59",
+          "itunesEpisode": "11",
+          "itunesSeason": "2",
+          "itunesEpisodeType": "full",
+          "itunesExplicit": null
+        }
+      },
+      {
+        "id": "applepodcasts:1863614215:dc55a39c-0442-41e7-b9bd-bf6202d3918f",
+        "title": "#25_森戸知沙希＆小関舞_前編",
+        "description": "おぜちぃコンビが語る「ももち先輩」こと嗣永桃子さんとの思い出話から\nカントリー・ガールズ時代の衝撃的なルールまで盛りだくさん！\n松岡さんからのメッセージも必聴です！！",
+        "publishedAt": "Fri, 21 Aug 2026 09:00:00 GMT",
+        "publishedAtUnix": 1787302800,
+        "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45021539/45021539-1780647473263-68ba480891ce5.jpg",
+        "durationSeconds": 1078,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "dc55a39c-0442-41e7-b9bd-bf6202d3918f",
+          "link": "https://podcasters.spotify.com/pod/show/57e7cb5o87/episodes/25__-e3nl2sa",
+          "audioUrl": "https://anchor.fm/s/10cf2012c/podcast/play/124471626/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-20%2F430181842-44100-2-a8e200dbcc7ae.m4a",
+          "enclosureType": "audio/x-m4a",
+          "enclosureLength": "17435631",
+          "rawDuration": "00:17:58",
+          "itunesEpisode": "12",
+          "itunesSeason": "2",
+          "itunesEpisodeType": "full",
+          "itunesExplicit": null
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-06T16:46:21.521Z",
-      "episodeCount": 26
+      "cachedAt": "2026-08-25T18:02:02.334Z",
+      "episodeCount": 29
     }
   }
 }
