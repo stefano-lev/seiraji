@@ -1879,11 +1879,71 @@
           "mediaType": "audio",
           "views": 426
         }
+      },
+      {
+        "id": "audee:sm863fHVi6uReks5jkYWKwv4",
+        "title": "【#147】「夏にやり残したことは？＆ 和奏は”きのこの山”派」",
+        "publishedAt": "2026-08-26T23:00:00+09:00",
+        "publishedAtUnix": 1787752800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100076/thumbnail_path?time=1788384818",
+        "durationSeconds": 1566,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 495
+        }
+      },
+      {
+        "id": "audee:smWquZWb2oqvbUbJHNtkEhrd",
+        "title": "【#148】「クイズ・ワカオネア予選会」",
+        "publishedAt": "2026-09-02T23:00:00+09:00",
+        "publishedAtUnix": 1788357600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101163/thumbnail_path?time=1788988938",
+        "durationSeconds": 1910,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 535
+        }
+      },
+      {
+        "id": "audee:smdakKyMkjzHBDhjkGFv3Sn2",
+        "title": "【#149】「アゲ〜な重大発表！！」",
+        "publishedAt": "2026-09-09T23:00:00+09:00",
+        "publishedAtUnix": 1788962400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101899/thumbnail_path?time=1789596248",
+        "durationSeconds": 1298,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 492
+        }
+      },
+      {
+        "id": "audee:sm3bTyYPSdAo3SjHmpfet5vQ",
+        "title": "【#150】「150回記念SP！あなたにとってブルーハワイとは？」＜2026年9/25まで一部無料＞",
+        "publishedAt": "2026-09-16T23:00:00+09:00",
+        "publishedAtUnix": 1789567200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102704/thumbnail_path?time=1789599403",
+        "durationSeconds": 1385,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 369
+        }
+      },
+      {
+        "id": "audee:smVUWkD8wdcVPd8HscHy6Vbw",
+        "title": "【#151】「朝のお菓子論争！」＜2026年9/30まで一部無料＞",
+        "publishedAt": "2026-09-23T23:00:00+09:00",
+        "publishedAtUnix": 1790172000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/103363/thumbnail_path?time=1790204170",
+        "durationSeconds": 2639,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 323
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:07.102Z",
-      "episodeCount": 155
+      "cachedAt": "2026-09-25T01:57:18.133Z",
+      "episodeCount": 160
     },
     "raw": {
       "site": {
@@ -2542,11 +2602,59 @@
           "mediaType": "audio",
           "views": 185
         }
+      },
+      {
+        "id": "audee:smnyJz62Eno2JUAzELoDbXC6",
+        "title": "【#34】派手好きな私♪",
+        "publishedAt": "2026-08-28T13:00:00+09:00",
+        "publishedAtUnix": 1787889600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100269/thumbnail_path?time=1789032250",
+        "durationSeconds": 1380,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 220
+        }
+      },
+      {
+        "id": "audee:sm2H43PTTDddjWPJYZCpz72z",
+        "title": "【#35】K-POPを目指そう！",
+        "publishedAt": "2026-09-04T13:00:00+09:00",
+        "publishedAtUnix": 1788494400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101360/thumbnail_path?time=1789621966",
+        "durationSeconds": 1342,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 248
+        }
+      },
+      {
+        "id": "audee:smPGaKuFQteWvvorexrzS6MG",
+        "title": "【#36】流行りに乗っていますか？",
+        "publishedAt": "2026-09-11T13:00:00+09:00",
+        "publishedAtUnix": 1789099200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101992/thumbnail_path?time=1789032719",
+        "durationSeconds": 1508,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 253
+        }
+      },
+      {
+        "id": "audee:smdgdoKZa2nY6RCoYvyMtJdL",
+        "title": "【#37】大人気！あの映画は見ました？",
+        "publishedAt": "2026-09-18T13:00:00+09:00",
+        "publishedAtUnix": 1789704000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102800/thumbnail_path?time=1789622361",
+        "durationSeconds": 1377,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 124
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:08.871Z",
-      "episodeCount": 34
+      "cachedAt": "2026-09-25T01:57:20.264Z",
+      "episodeCount": 38
     },
     "raw": {
       "site": {
@@ -3415,11 +3523,71 @@
           "mediaType": "audio",
           "views": 201
         }
+      },
+      {
+        "id": "audee:smCX7vEr8mruADwGVTzLaNNM",
+        "title": "【#44】きゃんきゅん団からのお便りできゅんと！",
+        "publishedAt": "2026-08-29T13:00:00+09:00",
+        "publishedAtUnix": 1787976000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100249/thumbnail_path?time=1788613445",
+        "durationSeconds": 1494,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 217
+        }
+      },
+      {
+        "id": "audee:smGXrvZxv4tQUKjH3rmxgpdq",
+        "title": "【#45】イベント企画会議！",
+        "publishedAt": "2026-09-05T13:00:00+09:00",
+        "publishedAtUnix": 1788580800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101252/thumbnail_path?time=1789220324",
+        "durationSeconds": 2076,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 254
+        }
+      },
+      {
+        "id": "audee:smJVs9rahvQbMzrgKLL5NCCJ",
+        "title": "【#46】春日さくらさん＆百瀬帆南さん＆三波春香さんときゅんと！",
+        "publishedAt": "2026-09-12T13:00:00+09:00",
+        "publishedAtUnix": 1789185600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101948/thumbnail_path?time=1789824551",
+        "durationSeconds": 1868,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 380
+        }
+      },
+      {
+        "id": "audee:smEBqGVhjGtqahu7c7piy3H7",
+        "title": "プロかわいいへの道~STEP7~",
+        "publishedAt": "2026-09-12T14:00:00+09:00",
+        "publishedAtUnix": 1789189200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101950/thumbnail_path?time=1789009855",
+        "durationSeconds": 23,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 131
+        }
+      },
+      {
+        "id": "audee:sm85aNKrzamn4g5M5yqBMZbZ",
+        "title": "【#47】BLUE MAGICリリース記念大特集！",
+        "publishedAt": "2026-09-19T13:00:00+09:00",
+        "publishedAtUnix": 1789790400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102883/thumbnail_path?time=1789698254",
+        "durationSeconds": 1702,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 74
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:11.196Z",
-      "episodeCount": 51
+      "cachedAt": "2026-09-25T01:57:22.729Z",
+      "episodeCount": 56
     },
     "raw": {
       "site": {
@@ -4608,11 +4776,59 @@
           "mediaType": "movie",
           "views": 94
         }
+      },
+      {
+        "id": "audee:sm3dWKHu9FV9sGbqWCHDttFj",
+        "title": "【#68（無料パート）】ラジオコンテンツは56回目「缶バッチお絵描き＆メッセージ紹介」",
+        "publishedAt": "2026-08-28T11:00:00+09:00",
+        "publishedAtUnix": 1787882400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100097/thumbnail_path?time=1787751440",
+        "durationSeconds": 1081,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 107
+        }
+      },
+      {
+        "id": "audee:smPh6DSDcVy5MpELbMYyRjDW",
+        "title": "メンバーシップスペシャルプラン限定コンテンツ『妄想旅番組 「たなかとニッポン」』",
+        "publishedAt": "2026-08-28T11:00:00+09:00",
+        "publishedAtUnix": 1787882400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100099/thumbnail_path?time=1787755308",
+        "durationSeconds": 530,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 75
+        }
+      },
+      {
+        "id": "audee:smkYGzCiURmiXWifvi78chco",
+        "title": "【#69（無料パート）】ラジオコンテンツは57回目「新コーナー 『たなかフォト』スタート！！！」",
+        "publishedAt": "2026-09-11T11:00:00+09:00",
+        "publishedAtUnix": 1789092000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101957/thumbnail_path?time=1789018289",
+        "durationSeconds": 1710,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 68
+        }
+      },
+      {
+        "id": "audee:sm6FFu3bJJETbR5Kg4vpspU3",
+        "title": "メンバーシップスペシャルプラン限定コンテンツ『妄想旅番組 「たなかとニッポン」#2』",
+        "publishedAt": "2026-09-11T11:00:00+09:00",
+        "publishedAtUnix": 1789092000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101960/thumbnail_path?time=1789018477",
+        "durationSeconds": 471,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 31
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:14.535Z",
-      "episodeCount": 78
+      "cachedAt": "2026-09-25T01:57:26.351Z",
+      "episodeCount": 82
     },
     "raw": {
       "site": {
@@ -6250,11 +6466,71 @@
           "mediaType": "audio",
           "views": 361
         }
+      },
+      {
+        "id": "audee:smQ4WELh9zPTuvnZEsZgKEwi",
+        "title": "#113 Aya Emori「SUMMER JUMP」リリースしました！",
+        "publishedAt": "2026-08-27T09:00:00+09:00",
+        "publishedAtUnix": 1787788800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/99919/thumbnail_path?time=1787631621",
+        "durationSeconds": 1719,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 318
+        }
+      },
+      {
+        "id": "audee:smPWSnA4VNV2Rpv2nm4Remtu",
+        "title": "#114 絵森彩「徳を積みます！」",
+        "publishedAt": "2026-09-03T09:00:00+09:00",
+        "publishedAtUnix": 1788393600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100735/thumbnail_path?time=1788219330",
+        "durationSeconds": 1806,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 274
+        }
+      },
+      {
+        "id": "audee:smG3pJK6K5vbsz5HmDBpRm96",
+        "title": "#115 ミニスカも良いに決まってる！",
+        "publishedAt": "2026-09-10T09:00:00+09:00",
+        "publishedAtUnix": 1788998400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101635/thumbnail_path?time=1788772242",
+        "durationSeconds": 1658,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 249
+        }
+      },
+      {
+        "id": "audee:sm83zYu5KycyrFTYNuRNpF3L",
+        "title": "#116 ちいかわちいかわちいかわ",
+        "publishedAt": "2026-09-17T09:00:00+09:00",
+        "publishedAtUnix": 1789603200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101847/thumbnail_path?time=1788932615",
+        "durationSeconds": 1920,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 221
+        }
+      },
+      {
+        "id": "audee:smETFrFvMyNvy2ZWYQPR3oTk",
+        "title": "#117「関ヶ原の戦い＝1600年」",
+        "publishedAt": "2026-09-24T09:00:00+09:00",
+        "publishedAtUnix": 1790208000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/103344/thumbnail_path?time=1790141922",
+        "durationSeconds": 1780,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 124
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:19.449Z",
-      "episodeCount": 114
+      "cachedAt": "2026-09-25T01:57:31.487Z",
+      "episodeCount": 119
     },
     "raw": {
       "site": {
@@ -8028,11 +8304,71 @@
           "mediaType": "audio",
           "views": 1380
         }
+      },
+      {
+        "id": "audee:smTK6ohyZYVkv8uWnYRP5pzC",
+        "title": "【#126】今年のバースデーイベント、一味違います！",
+        "publishedAt": "2026-08-27T22:00:00+09:00",
+        "publishedAtUnix": 1787835600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100217/thumbnail_path?time=1789027108",
+        "durationSeconds": 1420,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1862
+        }
+      },
+      {
+        "id": "audee:smQ4n76Vp9DrQQfSCiqMz4L6",
+        "title": "【#127】朝の狭間が好きでした♪",
+        "publishedAt": "2026-09-03T22:00:00+09:00",
+        "publishedAtUnix": 1788440400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101158/thumbnail_path?time=1789566169",
+        "durationSeconds": 1452,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1681
+        }
+      },
+      {
+        "id": "audee:smVwBswRrfQV3fTjJRvcYsmP",
+        "title": "【#128】うさぎが使われている“ことわざ”🐰",
+        "publishedAt": "2026-09-10T22:00:00+09:00",
+        "publishedAtUnix": 1789045200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101977/thumbnail_path?time=1789027353",
+        "durationSeconds": 1347,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1443
+        }
+      },
+      {
+        "id": "audee:smTtw7bR5UoXkvQyp7siC7Ec",
+        "title": "【#129】分かりやすいT-シャツを作ろう！",
+        "publishedAt": "2026-09-17T22:00:00+09:00",
+        "publishedAtUnix": 1789650000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102761/thumbnail_path?time=1789566416",
+        "durationSeconds": 1476,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 894
+        }
+      },
+      {
+        "id": "audee:smMonPrSnFVdCuADgT5A3WYZ",
+        "title": "【#130】これを選ぶしかない！",
+        "publishedAt": "2026-09-24T22:00:00+09:00",
+        "publishedAtUnix": 1790254800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/103486/thumbnail_path?time=1790252749",
+        "durationSeconds": 1476,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 487
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:24.652Z",
-      "episodeCount": 127
+      "cachedAt": "2026-09-25T01:57:36.450Z",
+      "episodeCount": 132
     },
     "raw": {
       "site": {
@@ -8468,11 +8804,59 @@
           "mediaType": "audio",
           "views": 64
         }
+      },
+      {
+        "id": "audee:smZRWLTwoEqeNT942pwujefs",
+        "title": "【#16】質問・相談を石飛さん目線でぶった斬る！？今月のかるたの頭文字決めちゃいます！",
+        "publishedAt": "2026-08-28T11:00:00+09:00",
+        "publishedAtUnix": 1787882400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100298/thumbnail_path?time=1788519726",
+        "durationSeconds": 1588,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 103
+        }
+      },
+      {
+        "id": "audee:smCsG6KjJTsEx223nj42S4pX",
+        "title": "【#17】舞台仲間とのその後！人見知りは治ったのか...？えりかるたの頭文字を追加します！",
+        "publishedAt": "2026-09-04T11:00:00+09:00",
+        "publishedAtUnix": 1788487200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101378/thumbnail_path?time=1789124444",
+        "durationSeconds": 1464,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 89
+        }
+      },
+      {
+        "id": "audee:smTamMCLfwwUft9KkCLZYNEm",
+        "title": "【#18】おいせさんのスプレー必要なんじゃない？例の企画について初出し情報🚌！？えりかるたはアラカルトで紹介！",
+        "publishedAt": "2026-09-11T11:00:00+09:00",
+        "publishedAtUnix": 1789092000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102039/thumbnail_path?time=1789729273",
+        "durationSeconds": 1319,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 88
+        }
+      },
+      {
+        "id": "audee:smkr4bmayzrSzwVTRBt5fRhC",
+        "title": "【#19】ラジオスタッフが一人しかいない！？お芋ほりバスツアー情報も！えりかるたは「わ」をピックアップ！",
+        "publishedAt": "2026-09-18T11:00:00+09:00",
+        "publishedAtUnix": 1789696800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102886/thumbnail_path?time=1789724104",
+        "durationSeconds": 1472,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 70
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:25.887Z",
-      "episodeCount": 16
+      "cachedAt": "2026-09-25T01:57:37.568Z",
+      "episodeCount": 20
     },
     "raw": {
       "site": {
@@ -9757,11 +10141,59 @@
           "mediaType": "audio",
           "views": 443
         }
+      },
+      {
+        "id": "audee:smBxRkpvvVQtkDLoPZ9DDDcj",
+        "title": "【第70回】ロサンゼルスではビニールプールにりんごを浮かべて口で取る？#梨香子の日常",
+        "publishedAt": "2026-08-30T13:00:00+09:00",
+        "publishedAtUnix": 1788062400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100402/thumbnail_path?time=1788092029",
+        "durationSeconds": 1842,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 591
+        }
+      },
+      {
+        "id": "audee:smWfC9f3k3WFrHMPNAcfz5pv",
+        "title": "【第71回】#あいださんぽ の投稿をたくさんご紹介！朗読劇の衣装気づいた方いますか…？ #梨香子の日常",
+        "publishedAt": "2026-09-06T13:00:00+09:00",
+        "publishedAtUnix": 1788667200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101454/thumbnail_path?time=1788682743",
+        "durationSeconds": 2405,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 567
+        }
+      },
+      {
+        "id": "audee:smXJ5FvNbJZU7X4PBAjSvZ5d",
+        "title": "【第72回】免許はどうなった…！？ マクドナルドの「月見バーガー」を食べ比べ！ #梨香子の日常",
+        "publishedAt": "2026-09-13T13:00:00+09:00",
+        "publishedAtUnix": 1789272000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101512/thumbnail_path?time=1789283461",
+        "durationSeconds": 2067,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 582
+        }
+      },
+      {
+        "id": "audee:smZmVkapsMzn87xwR3sfsG49",
+        "title": "【第73回】岩立沙穂さんとシール交換！なぜだか怪しい雰囲気に…笑！？ #梨香子の日常",
+        "publishedAt": "2026-09-20T13:00:00+09:00",
+        "publishedAtUnix": 1789876800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/103009/thumbnail_path?time=1789909111",
+        "durationSeconds": 2125,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 491
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:29.907Z",
-      "episodeCount": 86
+      "cachedAt": "2026-09-25T01:57:41.593Z",
+      "episodeCount": 90
     },
     "raw": {
       "site": {
@@ -13756,11 +14188,107 @@
           "mediaType": "audio",
           "views": 96
         }
+      },
+      {
+        "id": "audee:sm9vqtGg3WazUEfTj4VmLicW",
+        "title": "第137回 ステッカー全プレ🎁〆切迫る / メッセージご紹介📨 / 恋の報告に全力エール♡ #相坂湯",
+        "publishedAt": "2026-08-26T12:00:00+09:00",
+        "publishedAtUnix": 1787713200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/99655/thumbnail_path?time=1787357437",
+        "durationSeconds": 1698,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 179
+        }
+      },
+      {
+        "id": "audee:smkuRjYQtDSGKJqdGaWZgtcy",
+        "title": "裏側も全公開！今月のボイスどうする？ 水風呂＋露天風呂プラン🫧限定 2026年8月公開 / #相坂湯",
+        "publishedAt": "2026-08-28T12:00:00+09:00",
+        "publishedAtUnix": 1787886000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/99656/thumbnail_path?time=1787357608",
+        "durationSeconds": 347,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 77
+        }
+      },
+      {
+        "id": "audee:smZSsSJkApbGq7fv3FBQbERT",
+        "title": "誕生日直前🎉 #相坂湯 第29回生配信9月2日（水💧）夜8時～",
+        "publishedAt": "2026-09-02T11:48:46+09:00",
+        "publishedAtUnix": 1788317326,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/99299/thumbnail_path?time=1787047473",
+        "durationSeconds": 3488,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 370
+        }
+      },
+      {
+        "id": "audee:sm3XW4ETEtFoVB6vcP6VdtKp",
+        "title": "アフタートークはココだけの話🤫 #相坂湯 第29回生配信9月2日“水”曜日",
+        "publishedAt": "2026-09-02T12:18:25+09:00",
+        "publishedAtUnix": 1788319105,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/99300/thumbnail_path?time=1787047516",
+        "durationSeconds": 1404,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 299
+        }
+      },
+      {
+        "id": "audee:smCBaZT2rqVdif3KgyEEVShb",
+        "title": "第138回 誕生日記念ロケ📷まるでジャングル？ アニタッチ東京ドームシティへ / #相坂湯",
+        "publishedAt": "2026-09-09T12:00:00+09:00",
+        "publishedAtUnix": 1788922800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101563/thumbnail_path?time=1788745888",
+        "durationSeconds": 2113,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 118
+        }
+      },
+      {
+        "id": "audee:sm3n4XmarDUirX5VvmYmnu3h",
+        "title": "アニタッチで触って触られて✨ / 露天風呂🫧プラン限定動画 2026年9月公開 #相坂湯",
+        "publishedAt": "2026-09-09T12:30:00+09:00",
+        "publishedAtUnix": 1788924600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101565/thumbnail_path?time=1788746383",
+        "durationSeconds": 1563,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 95
+        }
+      },
+      {
+        "id": "audee:sm5paSU2TZG83TigEPySRUuT",
+        "title": "第139回 アニタッチロケの裏話 / 夏のお祭りの男子の味 / #グラブル タル子マン #相坂湯",
+        "publishedAt": "2026-09-16T12:00:00+09:00",
+        "publishedAtUnix": 1789527600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102528/thumbnail_path?time=1789440336",
+        "durationSeconds": 1881,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 129
+        }
+      },
+      {
+        "id": "audee:smCEtcSLgGCz53jggZTHpUBW",
+        "title": "第140回 バスツアー感想🚌 / 水着にお部屋訪問に👙 / ローソントラベルさんありがとう♡ #相坂湯",
+        "publishedAt": "2026-09-23T12:00:00+09:00",
+        "publishedAtUnix": 1790132400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/103237/thumbnail_path?time=1790037651",
+        "durationSeconds": 1731,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 108
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:41.374Z",
-      "episodeCount": 309
+      "cachedAt": "2026-09-25T01:57:53.946Z",
+      "episodeCount": 317
     },
     "raw": {
       "site": {
@@ -17809,11 +18337,83 @@
           "mediaType": "audio",
           "views": 231
         }
+      },
+      {
+        "id": "audee:smm4UVtMuSNx3bTgemfuYRDp",
+        "title": "【#56】明後日は北九州～！朗読劇「雨に唄えば」の感想たっぷり！今日もリスナーさんの勘違いを紹介！",
+        "publishedAt": "2026-08-27T11:00:00+09:00",
+        "publishedAtUnix": 1787796000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100140/thumbnail_path?time=1787828342",
+        "durationSeconds": 2308,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 320
+        }
+      },
+      {
+        "id": "audee:smmsfMe2dvjTcbZ7oTY2mm2Z",
+        "title": "【#57】幸せメールで幸せな気分になりました！リスナーさんの相談を解決していきます！",
+        "publishedAt": "2026-09-03T11:00:00+09:00",
+        "publishedAtUnix": 1788400800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101212/thumbnail_path?time=1788975563",
+        "durationSeconds": 2518,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 242
+        }
+      },
+      {
+        "id": "audee:smFKVCULArjXhWLErEAfHGsG",
+        "title": "【#58】北九州サイコーの時間でした！番組イベントの追加情報も！？リスナーさんの幸せの素を紹介！",
+        "publishedAt": "2026-09-10T11:00:00+09:00",
+        "publishedAtUnix": 1789005600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101926/thumbnail_path?time=1788976147",
+        "durationSeconds": 2389,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 260
+        }
+      },
+      {
+        "id": "audee:smGgLwiAqEsSqNPQmc7Kvbzq",
+        "title": "【#59】ミュージカル信長〜朧炎ノ刻が始まりました！北九州のお土産がスゴイ！大喜利コーナーもご紹介！",
+        "publishedAt": "2026-09-17T11:00:00+09:00",
+        "publishedAtUnix": 1789610400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102764/thumbnail_path?time=1789569472",
+        "durationSeconds": 2805,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 166
+        }
+      },
+      {
+        "id": "audee:smY5jGkfQiSMJF9U6aH5UK42",
+        "title": "〈メンバーシップ限定動画〉【#56】ア・勘違い・アワー",
+        "publishedAt": "2026-09-18T02:03:09+09:00",
+        "publishedAtUnix": 1789664589,
+        "thumbnail": null,
+        "durationSeconds": 437,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 28
+        }
+      },
+      {
+        "id": "audee:sm4iXM4NPYKfkEWP3XTECvwx",
+        "title": "【#60】朧ミュありがとうございました！イベントに向けて募集メールの追加情報！幸せの館、今日は私優しいかも？",
+        "publishedAt": "2026-09-24T11:00:00+09:00",
+        "publishedAtUnix": 1790215200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/103447/thumbnail_path?time=1790242907",
+        "durationSeconds": 2731,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 108
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:53.401Z",
-      "episodeCount": 314
+      "cachedAt": "2026-09-25T01:58:06.207Z",
+      "episodeCount": 320
     },
     "raw": {
       "site": {
@@ -18855,11 +19455,59 @@
           "mediaType": "audio",
           "views": 142
         }
+      },
+      {
+        "id": "audee:smgJwZc7PS9yqp8VDJ4QzuGq",
+        "title": "【#65】愛美と千春の夜行性自論  ～今夜は愛美が一人でお届け～",
+        "publishedAt": "2026-08-28T14:00:00+09:00",
+        "publishedAtUnix": 1787893200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100286/thumbnail_path?time=1789094163",
+        "durationSeconds": 2090,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 349
+        }
+      },
+      {
+        "id": "audee:smUH5bqAwUdFN44AKuyFUDKn",
+        "title": "【#66】愛美と千春の夜行性自論 『自分に向けられた陰口に気づいたら反論するか…』",
+        "publishedAt": "2026-09-04T14:00:00+09:00",
+        "publishedAtUnix": 1788498000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101371/thumbnail_path?time=1789693954",
+        "durationSeconds": 1766,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 308
+        }
+      },
+      {
+        "id": "audee:smfRjLdWafvPnFG2wDtB37PL",
+        "title": "【#67】愛美と千春の夜行性自論 『素直なのは良いことなのか…』",
+        "publishedAt": "2026-09-11T14:00:00+09:00",
+        "publishedAtUnix": 1789102800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102085/thumbnail_path?time=1789106756",
+        "durationSeconds": 1730,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 281
+        }
+      },
+      {
+        "id": "audee:smnrHvXfB5tWAx6Z7PaNLhZL",
+        "title": "【#68】愛美と千春の夜行性自論 『お金が手に入った後に本当にしたいことが分かる…』",
+        "publishedAt": "2026-09-18T14:00:00+09:00",
+        "publishedAtUnix": 1789707600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102877/thumbnail_path?time=1789736682",
+        "durationSeconds": 1965,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 134
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:56.376Z",
-      "episodeCount": 67
+      "cachedAt": "2026-09-25T01:58:09.308Z",
+      "episodeCount": 71
     },
     "raw": {
       "site": {
@@ -20276,11 +20924,107 @@
           "mediaType": "movie",
           "views": 47
         }
+      },
+      {
+        "id": "audee:smXW4ZMCYkFtVgtB3oVPCG2A",
+        "title": "【野中ここなのノナカの野望】#47 (2026年8月24日放送)",
+        "publishedAt": "2026-08-28T11:30:00+09:00",
+        "publishedAtUnix": 1787884200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100226/thumbnail_path?time=1789038691",
+        "durationSeconds": 1713,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 453
+        }
+      },
+      {
+        "id": "audee:smPwjMdUqez2gmVENTriM2FU",
+        "title": "【野中ここなのノナカの野望】#47 スペシャルプラン限定パート",
+        "publishedAt": "2026-08-28T11:30:00+09:00",
+        "publishedAtUnix": 1787884200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100227/thumbnail_path?time=1787844466",
+        "durationSeconds": 324,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 102
+        }
+      },
+      {
+        "id": "audee:smBYwJEySEupTd8HvVMDc8F6",
+        "title": "【野中ここなのノナカの野望】#48 (2026年8月31日放送)",
+        "publishedAt": "2026-09-04T11:30:00+09:00",
+        "publishedAtUnix": 1788489000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101333/thumbnail_path?time=1789716667",
+        "durationSeconds": 2103,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 257
+        }
+      },
+      {
+        "id": "audee:smbcLr96hqiaBQSCWgxW2JD6",
+        "title": "【野中ここなのノナカの野望】#48 スペシャルプラン限定パート",
+        "publishedAt": "2026-09-04T11:30:00+09:00",
+        "publishedAtUnix": 1788489000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101334/thumbnail_path?time=1788455692",
+        "durationSeconds": 263,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 88
+        }
+      },
+      {
+        "id": "audee:smNrEqxTvYZsmTtUQfciFfT8",
+        "title": "【野中ここなのノナカの野望】#49 (2026年9月7日放送)",
+        "publishedAt": "2026-09-11T11:30:00+09:00",
+        "publishedAtUnix": 1789093800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102015/thumbnail_path?time=1789039196",
+        "durationSeconds": 1686,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 249
+        }
+      },
+      {
+        "id": "audee:sm5qgoh4t4QcDH7XxpDJivmc",
+        "title": "【野中ここなのノナカの野望】#49 スペシャルプラン限定パート",
+        "publishedAt": "2026-09-11T11:30:00+09:00",
+        "publishedAtUnix": 1789093800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102018/thumbnail_path?time=1789039069",
+        "durationSeconds": 277,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 50
+        }
+      },
+      {
+        "id": "audee:smJqL8KzoDgdjzbG7aYAAvEe",
+        "title": "【野中ここなのノナカの野望】#50 (2026年9月14日放送)",
+        "publishedAt": "2026-09-18T11:30:00+09:00",
+        "publishedAtUnix": 1789698600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102918/thumbnail_path?time=1789716805",
+        "durationSeconds": 1880,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 54
+        }
+      },
+      {
+        "id": "audee:smBcJaSbGTL9oA3oD4b29gn5",
+        "title": "【野中ここなのノナカの野望】#50 スペシャルプラン限定パート",
+        "publishedAt": "2026-09-18T11:30:00+09:00",
+        "publishedAtUnix": 1789698600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102919/thumbnail_path?time=1789716866",
+        "durationSeconds": 300,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 19
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:03:00.915Z",
-      "episodeCount": 97
+      "cachedAt": "2026-09-25T01:58:13.629Z",
+      "episodeCount": 105
     },
     "raw": {
       "site": {
@@ -20978,11 +21722,71 @@
           "mediaType": "audio",
           "views": 326
         }
+      },
+      {
+        "id": "audee:smN7ssjQUJjZCSB5QdsT7Adz",
+        "title": "【SP動画】#5「雷で一向に集中できないあきほ」",
+        "publishedAt": "2026-08-28T10:00:00+09:00",
+        "publishedAtUnix": 1787878800,
+        "thumbnail": null,
+        "durationSeconds": 344,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 118
+        }
+      },
+      {
+        "id": "audee:smYdxvsGpK3X7UGnv7PZ2BwL",
+        "title": "#30「貴方のサキュバスはどこから？」",
+        "publishedAt": "2026-08-28T10:00:00+09:00",
+        "publishedAtUnix": 1787878800,
+        "thumbnail": null,
+        "durationSeconds": 2126,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 374
+        }
+      },
+      {
+        "id": "audee:smPaJeG5EHdifgQYynjLPoFz",
+        "title": "#31「エ゛ッッッ！？」",
+        "publishedAt": "2026-09-04T09:00:00+09:00",
+        "publishedAtUnix": 1788480000,
+        "thumbnail": null,
+        "durationSeconds": 2194,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 418
+        }
+      },
+      {
+        "id": "audee:smbEKGVg5iVwXvqKiQmbrRNd",
+        "title": "#32「あーあ、ここでの生活も楽しかったのに...」",
+        "publishedAt": "2026-09-11T09:00:00+09:00",
+        "publishedAtUnix": 1789084800,
+        "thumbnail": null,
+        "durationSeconds": 2311,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 304
+        }
+      },
+      {
+        "id": "audee:sm9CiJQXjZbjSLk5BC7K3Aqf",
+        "title": "#33「お金を払わせてください」",
+        "publishedAt": "2026-09-18T09:00:00+09:00",
+        "publishedAtUnix": 1789689600,
+        "thumbnail": null,
+        "durationSeconds": 2339,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 191
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:03:02.264Z",
-      "episodeCount": 35
+      "cachedAt": "2026-09-25T01:58:15.448Z",
+      "episodeCount": 40
     },
     "raw": {
       "site": {
@@ -26374,11 +27178,59 @@
           "mediaType": "audio",
           "views": 243
         }
+      },
+      {
+        "id": "audee:smRTZnuEwL48Qh8oQLvKsLCq",
+        "title": "【第57回】特別企画！イベント直前アンケート🪩",
+        "publishedAt": "2026-08-28T10:00:00+09:00",
+        "publishedAtUnix": 1787878800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100251/thumbnail_path?time=1789093916",
+        "durationSeconds": 1463,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 328
+        }
+      },
+      {
+        "id": "audee:smKVPBKgc339SHPzMxk7z8BB",
+        "title": "【第58回】Liyuuちゃんが大絶賛！食べてみたいものとは？💭",
+        "publishedAt": "2026-09-04T10:00:00+09:00",
+        "publishedAtUnix": 1788483600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101367/thumbnail_path?time=1789699580",
+        "durationSeconds": 1652,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 276
+        }
+      },
+      {
+        "id": "audee:smHCnNYKcataEQssAhf5nUmh",
+        "title": "【第59回】イベントの振り返り🌟",
+        "publishedAt": "2026-09-11T10:00:00+09:00",
+        "publishedAtUnix": 1789088400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102056/thumbnail_path?time=1789098972",
+        "durationSeconds": 1499,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 260
+        }
+      },
+      {
+        "id": "audee:smhUHFikpK7PX8PKGeueW3sK",
+        "title": "【第60回】にゅ！ジングルが決定？✨",
+        "publishedAt": "2026-09-18T10:00:00+09:00",
+        "publishedAtUnix": 1789693200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102887/thumbnail_path?time=1789700188",
+        "durationSeconds": 1859,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 137
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:03:17.626Z",
-      "episodeCount": 429
+      "cachedAt": "2026-09-25T01:58:32.567Z",
+      "episodeCount": 433
     },
     "raw": {
       "site": {
@@ -27083,11 +27935,131 @@
           "mediaType": "movie",
           "views": 288
         }
+      },
+      {
+        "id": "audee:smHxL7if5XGXWpFqhKcbg8c8",
+        "title": "【#カワミテ】#20 IRGリスペクトトーク！！【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-08-26T11:00:00+09:00",
+        "publishedAtUnix": 1787709600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100008/thumbnail_path?time=1787725017",
+        "durationSeconds": 1586,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1854
+        }
+      },
+      {
+        "id": "audee:smMEnFKqLgKWHZTVXYHCZpMJ",
+        "title": "【#カワミテ】動画版 #20 プロフィール帳 〜梨杏選手編 〜【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-08-26T11:00:00+09:00",
+        "publishedAtUnix": 1787709600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100040/thumbnail_path?time=1787725377",
+        "durationSeconds": 729,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 1152
+        }
+      },
+      {
+        "id": "audee:smWB9W9AL73KSr3kYsfEcbNw",
+        "title": "【#カワミテ】#21 クイズ！正解は伊藤麻希！【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-09-02T11:00:00+09:00",
+        "publishedAtUnix": 1788314400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101031/thumbnail_path?time=1788335691",
+        "durationSeconds": 1699,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1467
+        }
+      },
+      {
+        "id": "audee:smgTA6HK9cka8Jf42uuvAasM",
+        "title": "【#カワミテ】動画版 #21 ずっ友ギャル短歌【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-09-02T11:00:00+09:00",
+        "publishedAtUnix": 1788314400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101034/thumbnail_path?time=1788335708",
+        "durationSeconds": 657,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 594
+        }
+      },
+      {
+        "id": "audee:smFRNwfYFLmcXR99uKTUPCTx",
+        "title": "【#カワミテ】#22 可愛さワールドワイド！【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-09-09T11:00:00+09:00",
+        "publishedAtUnix": 1788919200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101809/thumbnail_path?time=1788936743",
+        "durationSeconds": 1464,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 712
+        }
+      },
+      {
+        "id": "audee:smMVsAEJPKM9dvquuigViCJ5",
+        "title": "【#カワミテ】動画版 #22 9月IRTC作り！【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-09-09T11:00:00+09:00",
+        "publishedAtUnix": 1788919200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101810/thumbnail_path?time=1788936774",
+        "durationSeconds": 1238,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 410
+        }
+      },
+      {
+        "id": "audee:smnGWGta9xDTuAvf6d4zoc6c",
+        "title": "【#カワミテ】#23 さっそく御札の効果が！？【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-09-16T11:00:00+09:00",
+        "publishedAtUnix": 1789524000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102618/thumbnail_path?time=1789537225",
+        "durationSeconds": 1509,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 527
+        }
+      },
+      {
+        "id": "audee:smR8DW3Hb6sGsL7Kja8c3BDD",
+        "title": "【#カワミテ】動画版 #23 当て読み漢字クイズ！【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-09-16T11:00:00+09:00",
+        "publishedAtUnix": 1789524000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102670/thumbnail_path?time=1789537401",
+        "durationSeconds": 600,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 225
+        }
+      },
+      {
+        "id": "audee:sm4sMkpgxPMGKAnB8mAir29w",
+        "title": "【#カワミテ】#24 ユニットリーダー対談！【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-09-23T11:00:00+09:00",
+        "publishedAtUnix": 1790128800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/103307/thumbnail_path?time=1790145016",
+        "durationSeconds": 2003,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 971
+        }
+      },
+      {
+        "id": "audee:smFLQs9mzfAAhTYvnFojyC8t",
+        "title": "【#カワミテ】動画版 #24 プロフィール帳 〜朱里選手編 〜【世界一可愛い伊藤麻希が仲間にしたそうにこちらを見ている】",
+        "publishedAt": "2026-09-23T11:00:00+09:00",
+        "publishedAtUnix": 1790128800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/103349/thumbnail_path?time=1790145197",
+        "durationSeconds": 946,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 440
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:03:20.660Z",
-      "episodeCount": 39
+      "cachedAt": "2026-09-25T01:58:34.738Z",
+      "episodeCount": 49
     },
     "raw": {
       "site": {
@@ -28716,11 +29688,59 @@
           "mediaType": "audio",
           "views": 272
         }
+      },
+      {
+        "id": "audee:smUgAcsvd2MRNdpL8zh8cRDC",
+        "title": "第108回「危ない！マジ終わりかけた！」",
+        "publishedAt": "2026-09-01T10:00:00+09:00",
+        "publishedAtUnix": 1788224400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100755/thumbnail_path?time=1788237859",
+        "durationSeconds": 2070,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1217
+        }
+      },
+      {
+        "id": "audee:smkgYziK2SKSBDvss23FYYUR",
+        "title": "第109回「人間に会うぞ！もうすぐ！」",
+        "publishedAt": "2026-09-08T10:00:00+09:00",
+        "publishedAtUnix": 1788829200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101610/thumbnail_path?time=1788852259",
+        "durationSeconds": 2031,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1111
+        }
+      },
+      {
+        "id": "audee:smjFEaSDjjJMLHV8F6zBHVXx",
+        "title": "第110回「落ち着け！不審者になってはいけない！」",
+        "publishedAt": "2026-09-15T10:00:00+09:00",
+        "publishedAtUnix": 1789434000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102527/thumbnail_path?time=1789457727",
+        "durationSeconds": 2093,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1260
+        }
+      },
+      {
+        "id": "audee:smLvSUUoXiqmzFWZQrjKcKDc",
+        "title": "第111回「いっぱいお金もらってほしい！」",
+        "publishedAt": "2026-09-22T10:00:00+09:00",
+        "publishedAtUnix": 1790038800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/103241/thumbnail_path?time=1790053834",
+        "durationSeconds": 2253,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 865
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:03:25.073Z",
-      "episodeCount": 112
+      "cachedAt": "2026-09-25T01:58:39.154Z",
+      "episodeCount": 116
     }
   },
   "hanaiwa-kana": {
@@ -29967,11 +30987,83 @@
           "mediaType": "audio",
           "views": 1135
         }
+      },
+      {
+        "id": "audee:smKGcaFkbbBim9EuUpezhSV9",
+        "title": "#８1(26 8/31 18:00配信）　声優・花岩香奈がお届け！今回はバースデーイベントで送ってほしいお便りの内容も発表！そのほかにも今回のホントの「アイスの話」！",
+        "publishedAt": "2026-08-31T09:00:00+09:00",
+        "publishedAtUnix": 1788134400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100552/thumbnail_path?time=1788746212",
+        "durationSeconds": 1952,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1598
+        }
+      },
+      {
+        "id": "audee:smdcd5Zu7vDtxRCVFizVLtYw",
+        "title": "#８2(26 9/7 18:00配信）　声優・花岩香奈がお届け！今回は９月１３日開催のバースデーイベントで販売するグッズの実物レビューもあり！",
+        "publishedAt": "2026-09-07T09:00:00+09:00",
+        "publishedAtUnix": 1788739200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101562/thumbnail_path?time=1789365599",
+        "durationSeconds": 1950,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1408
+        }
+      },
+      {
+        "id": "audee:smGR2vzqQ4XNTSSWoT8JWZhF",
+        "title": "【PPV生配信&アーカイブ配信！】9/13（日）開催イベント「花岩香奈のはないわーるど！ 2日遅れのバースデーイベント！〈第１部〉」",
+        "publishedAt": "2026-09-13T05:52:21+09:00",
+        "publishedAtUnix": 1789246341,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102034/thumbnail_path?time=1789691882",
+        "durationSeconds": 5523,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 2054
+        }
+      },
+      {
+        "id": "audee:smCCocKfha5pzMDwgMLDWJBf",
+        "title": "【PPV生配信&アーカイブ配信！】9/13（日）開催イベント「花岩香奈のはないわーるど！ 2日遅れのバースデーイベント！〈第2部〉」",
+        "publishedAt": "2026-09-13T10:28:22+09:00",
+        "publishedAtUnix": 1789262902,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102035/thumbnail_path?time=1789195324",
+        "durationSeconds": 5900,
+        "platformMetadata": {
+          "mediaType": "movie",
+          "views": 1372
+        }
+      },
+      {
+        "id": "audee:sm8njbnF5WsQuNXsrdpajijU",
+        "title": "#８３(26 9/14 18:00配信）　声優・花岩香奈がお届け！今回は９月１３日開催バースデーイベントの感想を多めにご紹介！",
+        "publishedAt": "2026-09-14T09:00:00+09:00",
+        "publishedAtUnix": 1789344000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102326/thumbnail_path?time=1789367535",
+        "durationSeconds": 1980,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1084
+        }
+      },
+      {
+        "id": "audee:smiYtGe9mwjxz8bnWB2qqGxw",
+        "title": "#８４(26 9/21 18:00配信）　声優・花岩香奈がお届け！今回はいわちゃんの最新情報や、後半のアイス話で独特すぎる得点の決め方を披露します？",
+        "publishedAt": "2026-09-21T09:00:00+09:00",
+        "publishedAtUnix": 1789948800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/103153/thumbnail_path?time=1789963749",
+        "durationSeconds": 2055,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 639
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:03:29.088Z",
-      "episodeCount": 102
+      "cachedAt": "2026-09-25T01:58:43.485Z",
+      "episodeCount": 108
     }
   },
   "utaprifm": {
@@ -32994,11 +34086,119 @@
           "mediaType": "audio",
           "views": 463
         }
+      },
+      {
+        "id": "audee:smKAtrxuvpnxWHmNqmxRuRXz",
+        "title": "【#122 アーカイブ】シャニライ情報も盛りだくさん！！",
+        "publishedAt": "2026-08-28T12:50:00+09:00",
+        "publishedAtUnix": 1787889000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100311/thumbnail_path?time=1787906217",
+        "durationSeconds": 1660,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 959
+        }
+      },
+      {
+        "id": "audee:smESSTBcCxEWEXHyDZoLeseR",
+        "title": "【限定パート #122】マンスリーテーマ「季節通りの怖い話」リアルに叫び声を上げた話から夏ならではの怖い話まで……",
+        "publishedAt": "2026-08-28T12:50:00+09:00",
+        "publishedAtUnix": 1787889000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100312/thumbnail_path?time=1787906281",
+        "durationSeconds": 1033,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 855
+        }
+      },
+      {
+        "id": "audee:smBGJ3HMyMg6hBZFdDqECNV3",
+        "title": "【#123 アーカイブ】今回は最後にスペシャルなお知らせも！！！",
+        "publishedAt": "2026-09-04T12:50:00+09:00",
+        "publishedAtUnix": 1788493800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101404/thumbnail_path?time=1788522447",
+        "durationSeconds": 1729,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1003
+        }
+      },
+      {
+        "id": "audee:smEDLiZCiDuRixADxNygTLdb",
+        "title": "【限定パート #123】アイドルたちが大声大会に出るとしたら…？",
+        "publishedAt": "2026-09-04T12:50:00+09:00",
+        "publishedAtUnix": 1788493800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101405/thumbnail_path?time=1788522500",
+        "durationSeconds": 955,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 913
+        }
+      },
+      {
+        "id": "audee:sm2Ztu7ZtmctnEBqScvgjNHr",
+        "title": "【#124 アーカイブ】\"好き\"に理由なんてない！",
+        "publishedAt": "2026-09-11T12:50:00+09:00",
+        "publishedAtUnix": 1789098600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102112/thumbnail_path?time=1789118526",
+        "durationSeconds": 1666,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 738
+        }
+      },
+      {
+        "id": "audee:smi2UJEeyr4cuRmZBgVaBsZz",
+        "title": "【限定パート #124】うた☆プリと結婚式の共演！？",
+        "publishedAt": "2026-09-11T12:50:00+09:00",
+        "publishedAtUnix": 1789098600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102113/thumbnail_path?time=1789118588",
+        "durationSeconds": 944,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 743
+        }
+      },
+      {
+        "id": "audee:smJcNuBVtX3g7Pmp7xZ3rSVy",
+        "title": "【#125】9/27の生配信で初出し情報も！！【期間限定無料公開】",
+        "publishedAt": "2026-09-18T12:50:00+09:00",
+        "publishedAtUnix": 1789703400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102930/thumbnail_path?time=1789723342",
+        "durationSeconds": 1516,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 492
+        }
+      },
+      {
+        "id": "audee:sm6xSXiAhh7fZxiu37h75P4x",
+        "title": "【#125 アーカイブ】9/27の生配信で初出し情報も！！",
+        "publishedAt": "2026-09-18T12:50:00+09:00",
+        "publishedAtUnix": 1789703400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102932/thumbnail_path?time=1789722794",
+        "durationSeconds": 1835,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 304
+        }
+      },
+      {
+        "id": "audee:smZqG4svm7fh5kozcexN28oA",
+        "title": "【限定パート #125】寺島さんが朝起きる時のアラームは？",
+        "publishedAt": "2026-09-18T12:50:00+09:00",
+        "publishedAtUnix": 1789703400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102933/thumbnail_path?time=1789723152",
+        "durationSeconds": 937,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 255
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:03:39.941Z",
-      "episodeCount": 250
+      "cachedAt": "2026-09-25T01:58:52.917Z",
+      "episodeCount": 259
     }
   },
   "ensemble-stars-across-the-stage": {
@@ -33573,11 +34773,107 @@
           "mediaType": "audio",
           "views": 741
         }
+      },
+      {
+        "id": "audee:smL9RYuhqN8Gp8qxaN4tkBRD",
+        "title": "◇#22◇　嵐を演じる上でゲームと舞台の演じ方の違いとは？",
+        "publishedAt": "2026-08-29T10:50:00+09:00",
+        "publishedAtUnix": 1787968200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100416/thumbnail_path?time=1788605557",
+        "durationSeconds": 1510,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 2155
+        }
+      },
+      {
+        "id": "audee:smY2hbJPHxYNokaQiPZk8JWa",
+        "title": "❖限定パート #22❖　こちらでも世の中の曖昧なものをジャッジしていただきます！",
+        "publishedAt": "2026-08-29T11:00:00+09:00",
+        "publishedAtUnix": 1787968800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100417/thumbnail_path?time=1788000174",
+        "durationSeconds": 973,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 675
+        }
+      },
+      {
+        "id": "audee:sm2XxAaxxASdn9C5bBrW24vG",
+        "title": "◇#23◇　普段から仲良し！お二人で行ったアフタヌーンティーの裏話も！",
+        "publishedAt": "2026-09-05T10:50:00+09:00",
+        "publishedAtUnix": 1788573000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101408/thumbnail_path?time=1789210044",
+        "durationSeconds": 1510,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1627
+        }
+      },
+      {
+        "id": "audee:sm5U9aiCYDb4yAUi4xSzysPy",
+        "title": "❖限定パート #23❖　盛り上がりすぎてトークが止まらない！？",
+        "publishedAt": "2026-09-05T11:00:00+09:00",
+        "publishedAtUnix": 1788573600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101409/thumbnail_path?time=1788524456",
+        "durationSeconds": 1047,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 460
+        }
+      },
+      {
+        "id": "audee:sm38xWhfo63pkkPVQz4xs65E",
+        "title": "◇#24◇　3人の演技力が試される！？",
+        "publishedAt": "2026-09-12T10:50:00+09:00",
+        "publishedAtUnix": 1789177800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102141/thumbnail_path?time=1789814134",
+        "durationSeconds": 1510,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 993
+        }
+      },
+      {
+        "id": "audee:smK6i5dhmkgUGkiQBmpSH6F8",
+        "title": "❖限定パート #24❖　紅茶人狼では、今時言わないセリフも飛び出す！？",
+        "publishedAt": "2026-09-12T11:00:00+09:00",
+        "publishedAtUnix": 1789178400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102142/thumbnail_path?time=1789134390",
+        "durationSeconds": 1014,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 341
+        }
+      },
+      {
+        "id": "audee:smKHRW6dP9dbHPih4dKyLs5X",
+        "title": "◇#25◇　英智は「塩梅」が重要！？〔期間限定無料公開〕",
+        "publishedAt": "2026-09-19T10:50:00+09:00",
+        "publishedAtUnix": 1789782600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102974/thumbnail_path?time=1789776324",
+        "durationSeconds": 1510,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 1322
+        }
+      },
+      {
+        "id": "audee:smmkHkL9Ym5h2h93PewVmRJR",
+        "title": "❖限定パート #25❖　富園さんの気になる学生時代の部活動が…",
+        "publishedAt": "2026-09-19T11:00:00+09:00",
+        "publishedAtUnix": 1789783200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102975/thumbnail_path?time=1789776584",
+        "durationSeconds": 901,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 330
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:03:42.281Z",
-      "episodeCount": 46
+      "cachedAt": "2026-09-25T01:58:55.427Z",
+      "episodeCount": 54
     }
   },
   "tsuda-speaking": {
@@ -36648,11 +37944,107 @@
           "mediaType": "audio",
           "views": 230
         }
+      },
+      {
+        "id": "audee:smNGM65jXMPRZxDb3v354wrf",
+        "title": "【Archive_No.126】2026年8月30日OA",
+        "publishedAt": "2026-08-30T03:30:00+09:00",
+        "publishedAtUnix": 1788028200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100462/thumbnail_path?time=1788049201",
+        "durationSeconds": 1235,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 302
+        }
+      },
+      {
+        "id": "audee:smetqmbsnUg9mtEdhChDUzcp",
+        "title": "【裏スピNo.126】地球儀への憧れ",
+        "publishedAt": "2026-08-30T03:30:00+09:00",
+        "publishedAtUnix": 1788028200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100463/thumbnail_path?time=1788049275",
+        "durationSeconds": 638,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 567
+        }
+      },
+      {
+        "id": "audee:sm6jF5r45rZkdmSNV2K3NVJ7",
+        "title": "【Archive_No.127】2026年9月6日OA",
+        "publishedAt": "2026-09-06T03:30:00+09:00",
+        "publishedAtUnix": 1788633000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101490/thumbnail_path?time=1788660810",
+        "durationSeconds": 1195,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 242
+        }
+      },
+      {
+        "id": "audee:smM7Vayh7sdsevYUitAHodzR",
+        "title": "【裏スピNo.127】究極の選択！「俺はなにかの罰をうけているのか・・」",
+        "publishedAt": "2026-09-06T03:30:00+09:00",
+        "publishedAtUnix": 1788633000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101491/thumbnail_path?time=1788663720",
+        "durationSeconds": 819,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 474
+        }
+      },
+      {
+        "id": "audee:sma6oUvHbnUcrgrhz9CCCnRf",
+        "title": "【Archive_No.128】2026年9月13日OA",
+        "publishedAt": "2026-09-13T03:30:00+09:00",
+        "publishedAtUnix": 1789237800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102237/thumbnail_path?time=1789268816",
+        "durationSeconds": 930,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 202
+        }
+      },
+      {
+        "id": "audee:smJFLk38JAPG4FLho7qiNQJn",
+        "title": "【裏スピNo.128】リスナーに聞きたいことBEST３！👂",
+        "publishedAt": "2026-09-13T03:30:00+09:00",
+        "publishedAtUnix": 1789237800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102238/thumbnail_path?time=1789268911",
+        "durationSeconds": 696,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 360
+        }
+      },
+      {
+        "id": "audee:smfjDoVXAo2y55BpokWt2kx9",
+        "title": "【Archive_No.129】2026年9月20日OA",
+        "publishedAt": "2026-09-20T03:30:00+09:00",
+        "publishedAtUnix": 1789842600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/103064/thumbnail_path?time=1789872026",
+        "durationSeconds": 1130,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 142
+        }
+      },
+      {
+        "id": "audee:sm6KiTraKNHQHzp2aLxtAm5r",
+        "title": "【裏スピNo.129】究極の選択！「この力、手に入れたい！」",
+        "publishedAt": "2026-09-20T03:30:00+09:00",
+        "publishedAtUnix": 1789842600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/103065/thumbnail_path?time=1789872171",
+        "durationSeconds": 552,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 295
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:03:51.837Z",
-      "episodeCount": 254
+      "cachedAt": "2026-09-25T01:59:05.633Z",
+      "episodeCount": 262
     }
   },
   "yuuki-kuwahara": {
@@ -37203,11 +38595,59 @@
           "mediaType": "audio",
           "views": 182
         }
+      },
+      {
+        "id": "audee:smWpNxSAvjZqssxjpXrx6Jbw",
+        "title": "【#４３】アンダーグラウンド＃2  お待ちしております!!!!!!!!!",
+        "publishedAt": "2026-08-28T13:00:00+09:00",
+        "publishedAtUnix": 1787889600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100302/thumbnail_path?time=1787902801",
+        "durationSeconds": 2046,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 223
+        }
+      },
+      {
+        "id": "audee:sm3gTjk5axdacf8EyF7wcniG",
+        "title": "【#４４】9月になりましたね〜🎑",
+        "publishedAt": "2026-09-04T13:00:00+09:00",
+        "publishedAtUnix": 1788494400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101396/thumbnail_path?time=1788514581",
+        "durationSeconds": 2060,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 231
+        }
+      },
+      {
+        "id": "audee:smhnyt7DG7U8vCPu34ouHQVM",
+        "title": "【#４５】時空間の歪みを感じるな🤔",
+        "publishedAt": "2026-09-11T13:00:00+09:00",
+        "publishedAtUnix": 1789099200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102082/thumbnail_path?time=1789106752",
+        "durationSeconds": 2048,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 215
+        }
+      },
+      {
+        "id": "audee:smYcgp35fNV7UWw37FxxwzVm",
+        "title": "【#４６】入れ替わりトーク?!!!!!",
+        "publishedAt": "2026-09-18T13:00:00+09:00",
+        "publishedAtUnix": 1789704000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102915/thumbnail_path?time=1789715539",
+        "durationSeconds": 2013,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 99
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:03:54.803Z",
-      "episodeCount": 44
+      "cachedAt": "2026-09-25T01:59:07.911Z",
+      "episodeCount": 48
     }
   },
   "rin-kurusu": {
@@ -37408,11 +38848,131 @@
           "mediaType": "audio",
           "views": 532
         }
+      },
+      {
+        "id": "audee:smdqZZowZwycZU3zzYHhbpz3",
+        "title": "【番組アーカイブ】26年8月25日 来栖りんの異議あり！#8",
+        "publishedAt": "2026-08-25T19:00:00+09:00",
+        "publishedAtUnix": 1787652000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/99903/thumbnail_path?time=1788858250",
+        "durationSeconds": 1398,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 818
+        }
+      },
+      {
+        "id": "audee:smDA2YtqVMc9GDf8RYjrvSsz",
+        "title": "【メンバーシップ限定トーク】来栖りんの異議あり #8",
+        "publishedAt": "2026-08-25T19:00:00+09:00",
+        "publishedAtUnix": 1787652000,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/99904/thumbnail_path?time=1787620972",
+        "durationSeconds": 340,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 445
+        }
+      },
+      {
+        "id": "audee:smnzHzbr6gwbDstd9xVTXk5x",
+        "title": "【番組アーカイブ】26年9月1日 来栖りんの異議あり！#9",
+        "publishedAt": "2026-09-01T19:00:00+09:00",
+        "publishedAtUnix": 1788256800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100736/thumbnail_path?time=1788902615",
+        "durationSeconds": 1481,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 735
+        }
+      },
+      {
+        "id": "audee:sm3v4Vkt9NbdL2k2WggeKqkX",
+        "title": "【メンバーシップ限定トーク】来栖りんの異議あり #9",
+        "publishedAt": "2026-09-01T19:00:00+09:00",
+        "publishedAtUnix": 1788256800,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/100743/thumbnail_path?time=1788223510",
+        "durationSeconds": 671,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 444
+        }
+      },
+      {
+        "id": "audee:smdYsycTVzYJQ64fXWDzpZyD",
+        "title": "【番組アーカイブ】26年9月8日 来栖りんの異議あり！#10",
+        "publishedAt": "2026-09-08T19:00:00+09:00",
+        "publishedAtUnix": 1788861600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101685/thumbnail_path?time=1789514845",
+        "durationSeconds": 1396,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 578
+        }
+      },
+      {
+        "id": "audee:sm4uJM7JV27yAa2dDz36AkA5",
+        "title": "【メンバーシップ限定トーク】来栖りんの異議あり #10",
+        "publishedAt": "2026-09-08T19:00:00+09:00",
+        "publishedAtUnix": 1788861600,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/101686/thumbnail_path?time=1788834288",
+        "durationSeconds": 516,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 351
+        }
+      },
+      {
+        "id": "audee:smJizC8t58FWvXBM2GfkSzf2",
+        "title": "【期間限定公開 番組アーカイブ】26年9月15日 来栖りんの異議あり！#11",
+        "publishedAt": "2026-09-15T19:00:00+09:00",
+        "publishedAtUnix": 1789466400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102494/thumbnail_path?time=1789396429",
+        "durationSeconds": 1328,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 446
+        }
+      },
+      {
+        "id": "audee:sm93SnNcEq6NNCLmWwUVXimJ",
+        "title": "【メンバーシップ限定トーク】来栖りんの異議あり #11",
+        "publishedAt": "2026-09-15T19:00:00+09:00",
+        "publishedAtUnix": 1789466400,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/102495/thumbnail_path?time=1789396486",
+        "durationSeconds": 698,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 284
+        }
+      },
+      {
+        "id": "audee:sm3dLUf9vcJboWPBFKX4njgm",
+        "title": "【期間限定公開 番組アーカイブ】26年9月22日 来栖りんの異議あり！#12",
+        "publishedAt": "2026-09-22T19:00:00+09:00",
+        "publishedAtUnix": 1790071200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/103246/thumbnail_path?time=1790044756",
+        "durationSeconds": 1458,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 236
+        }
+      },
+      {
+        "id": "audee:smSfmx9PntpfEgfnmyU98nts",
+        "title": "【メンバーシップ限定トーク】来栖りんの異議あり #12",
+        "publishedAt": "2026-09-22T19:00:00+09:00",
+        "publishedAtUnix": 1790071200,
+        "thumbnail": "https://cdn.audee-membership.jp/public_html/contents/video_pages/103247/thumbnail_path?time=1790044850",
+        "durationSeconds": 508,
+        "platformMetadata": {
+          "mediaType": "audio",
+          "views": 179
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:05:30.247Z",
-      "episodeCount": 15
+      "cachedAt": "2026-09-25T01:59:09.310Z",
+      "episodeCount": 25
     }
   }
 }

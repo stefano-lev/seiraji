@@ -379,7 +379,7 @@
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:01.102Z",
+      "cachedAt": "2026-09-25T01:57:11.350Z",
       "episodeCount": 15
     }
   },
@@ -4184,11 +4184,33 @@
           "itunesEpisodeType": null,
           "itunesExplicit": "no"
         }
+      },
+      {
+        "id": "applepodcasts:1701934290:https://stand.fm/episodes/6aa3ae7c1cb7281d663e3a43",
+        "title": "メロジョイのポップアップショップに行ってきました！",
+        "description": "#メロジョイ\n#スクイーズ\n\n投稿日:2026年9月11日(金)\n---\nstand.fmでは、この放送にいいね・コメント・レター送信ができます。\nhttps://stand.fm/channels/5f4fa8926a9e5b17f76e28d6",
+        "publishedAt": "Fri, 11 Sep 2026 07:45:03 GMT",
+        "publishedAtUnix": 1789112703,
+        "thumbnail": "https://cdncf.stand.fm/cdn-cgi/image/fit=cover,width=1400,height=1400/coverImages/01M27PSWVCBCTHYX6924VSVF3B.jpg",
+        "durationSeconds": 766,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "https://stand.fm/episodes/6aa3ae7c1cb7281d663e3a43",
+          "link": "https://stand.fm/episodes/6aa3ae7c1cb7281d663e3a43",
+          "audioUrl": "https://cdncf.stand.fm/audios/01M27PTJCAN8XHHKX19Y6AFQRA.m4a",
+          "enclosureType": "audio/x-m4a",
+          "enclosureLength": "0",
+          "rawDuration": "00:12:46",
+          "itunesEpisode": null,
+          "itunesSeason": null,
+          "itunesEpisodeType": null,
+          "itunesExplicit": "no"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:01.969Z",
-      "episodeCount": 172
+      "cachedAt": "2026-09-25T01:57:11.957Z",
+      "episodeCount": 173
     }
   },
   "1863614215": {
@@ -4846,11 +4868,99 @@
           "itunesEpisodeType": "full",
           "itunesExplicit": null
         }
+      },
+      {
+        "id": "applepodcasts:1863614215:ed9cd69a-2c19-40e0-bac7-2674160fd505",
+        "title": "#26_森戸知沙希＆小関舞_後編",
+        "description": "今週も小関舞さん＆森戸知沙希さんがカントリー・ガールズを語るレア回です！\nカントリー・ガールズの楽曲を初期・中期・後期に分けて振り返りトーク！\nさらに「もし1日だけ当時に戻れるなら？」をテーマに、思い出や当時のエピソードまで語ってくれました！",
+        "publishedAt": "Fri, 28 Aug 2026 09:00:00 GMT",
+        "publishedAtUnix": 1787907600,
+        "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45021539/45021539-1780647473263-68ba480891ce5.jpg",
+        "durationSeconds": 1254,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "ed9cd69a-2c19-40e0-bac7-2674160fd505",
+          "link": "https://podcasters.spotify.com/pod/show/57e7cb5o87/episodes/26__-e3ns6e8",
+          "audioUrl": "https://anchor.fm/s/10cf2012c/podcast/play/124704648/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-25%2F430498083-44100-2-b693b0adcc61.m4a",
+          "enclosureType": "audio/x-m4a",
+          "enclosureLength": "20282043",
+          "rawDuration": "00:20:54",
+          "itunesEpisode": "13",
+          "itunesSeason": "2",
+          "itunesEpisodeType": "full",
+          "itunesExplicit": null
+        }
+      },
+      {
+        "id": "applepodcasts:1863614215:bc807505-d602-4388-8e97-e024a78a0960",
+        "title": "#27_伊勢鈴蘭＆為永幸音_前編",
+        "description": "伊勢鈴蘭にとって「為永幸音は後輩だけど〇〇！！」\nリーダー・サブリーダーになった今、\n改めてアンジュルムについて2人っきりで振り返ってもらいました！",
+        "publishedAt": "Fri, 04 Sep 2026 09:00:01 GMT",
+        "publishedAtUnix": 1788512401,
+        "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45021539/45021539-1780647473263-68ba480891ce5.jpg",
+        "durationSeconds": 1000,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "bc807505-d602-4388-8e97-e024a78a0960",
+          "link": "https://podcasters.spotify.com/pod/show/57e7cb5o87/episodes/27__-e3oas3b",
+          "audioUrl": "https://anchor.fm/s/10cf2012c/podcast/play/125185579/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-8-4%2F431158925-44100-2-f8204ffc8a091.m4a",
+          "enclosureType": "audio/x-m4a",
+          "enclosureLength": "16174198",
+          "rawDuration": "00:16:40",
+          "itunesEpisode": "14",
+          "itunesSeason": "2",
+          "itunesEpisodeType": "full",
+          "itunesExplicit": null
+        }
+      },
+      {
+        "id": "applepodcasts:1863614215:a47ed207-0dca-419e-b8ef-1aaa7b9e19f0",
+        "title": "#28_伊勢鈴蘭＆為永幸音_後編",
+        "description": "伊勢鈴蘭と為永幸音が「今だからこそ言えるお互いへの感謝の気持ち」を\n照れながらもじっくりおはなししてくれました！愛溢れる二人の想いは必聴です！",
+        "publishedAt": "Fri, 11 Sep 2026 09:00:00 GMT",
+        "publishedAtUnix": 1789117200,
+        "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45021539/45021539-1780647473263-68ba480891ce5.jpg",
+        "durationSeconds": 1228,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "a47ed207-0dca-419e-b8ef-1aaa7b9e19f0",
+          "link": "https://podcasters.spotify.com/pod/show/57e7cb5o87/episodes/28__-e3okm4j",
+          "audioUrl": "https://anchor.fm/s/10cf2012c/podcast/play/125507155/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-8-10%2F431584189-44100-2-6817fae4b2a2d.m4a",
+          "enclosureType": "audio/x-m4a",
+          "enclosureLength": "19861422",
+          "rawDuration": "00:20:28",
+          "itunesEpisode": "15",
+          "itunesSeason": "2",
+          "itunesEpisodeType": "full",
+          "itunesExplicit": null
+        }
+      },
+      {
+        "id": "applepodcasts:1863614215:955e6178-d4c1-4942-8920-38a1847284bd",
+        "title": "#29_井上春華＆弓桁朱琴_前編",
+        "description": "モーニング娘。17期コンビの井上春華＆弓桁朱琴が登場！\n懐かしのオーディションから現在までをふたりでじっくり振り返ってくれました！",
+        "publishedAt": "Fri, 18 Sep 2026 09:00:00 GMT",
+        "publishedAtUnix": 1789722000,
+        "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/45021539/45021539-1780647473263-68ba480891ce5.jpg",
+        "durationSeconds": 1309,
+        "tags": [],
+        "platformMetadata": {
+          "guid": "955e6178-d4c1-4942-8920-38a1847284bd",
+          "link": "https://podcasters.spotify.com/pod/show/57e7cb5o87/episodes/29__-e3p155e",
+          "audioUrl": "https://anchor.fm/s/10cf2012c/podcast/play/125915758/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-8-18%2F432139517-44100-2-eca1b30199446.m4a",
+          "enclosureType": "audio/x-m4a",
+          "enclosureLength": "21171300",
+          "rawDuration": "00:21:49",
+          "itunesEpisode": "16",
+          "itunesSeason": "2",
+          "itunesEpisodeType": "full",
+          "itunesExplicit": null
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:02.334Z",
-      "episodeCount": 29
+      "cachedAt": "2026-09-25T01:57:12.464Z",
+      "episodeCount": 33
     }
   }
 }

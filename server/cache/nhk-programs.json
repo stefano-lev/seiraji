@@ -740,11 +740,47 @@
           "expires": "2026-09-06T23:30:00+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "GVW8P6K3PX",
+        "title": "ボーダレス・アーティスト マイケル・ジャクソン後編",
+        "description": "皆さんにぜひ知ってほしいアーティストを江﨑文武なりに探っていく”Borderless Artist”。今回は伝記映画の公開で再び注目を集めている「マイケル・ジャクソン」をとりあげる。番組ではマイケルの音楽そのものに注目し、実際の楽曲を聴きながら、どのように音楽を作り、そのサウンドを変化させていったのかを探っていく。後編は『BAD』以降、変化したことと変えなかったこと、マイケルが求めた音楽観に迫る。",
+        "publishedAt": "2026-09-13T22:40:00+09:00",
+        "publishedAtUnix": 1789306800,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/R7V6MMNYMK/R7V6MMNYMK-eyecatch_4f51da7040237504bffa530de35774d1.png",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/rs/R7V6MMNYMK/episode/re/GVW8P6K3PX/",
+          "radioEpisodeId": "GVW8P6K3PX",
+          "radioSeriesId": "R7V6MMNYMK",
+          "guests": [],
+          "expires": "2026-09-20T23:30:00+09:00",
+          "audioStatus": "ready"
+        }
+      },
+      {
+        "id": "N86L2QXJLZ",
+        "title": "2026年9月27日",
+        "description": "『2026年9月27日』の番組エピソードです",
+        "publishedAt": "2026-09-27T22:40:00+09:00",
+        "publishedAtUnix": 1790516400,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/R7V6MMNYMK/R7V6MMNYMK-eyecatch_4f51da7040237504bffa530de35774d1.png",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/rs/R7V6MMNYMK/episode/re/N86L2QXJLZ/",
+          "radioEpisodeId": "N86L2QXJLZ",
+          "radioSeriesId": "R7V6MMNYMK",
+          "guests": [],
+          "expires": null,
+          "audioStatus": null
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:02.685Z",
-      "episodeCount": 40
+      "cachedAt": "2026-09-25T01:57:13.595Z",
+      "episodeCount": 42
     }
   },
   "Y5MG659NGN": {
@@ -2041,11 +2077,117 @@
           "expires": "2026-09-03T21:55:00+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "R1W1PGPY21",
+        "title": "ゲスト:リニア(9月3日放送分)",
+        "description": "今回のゲストは、お笑い芸人リニアのしょうへいと酒井啓太。東京03とコント「過去が追って来た」で共演する。二人が演じるのは、「アニキ肌」のキャラで会社で機嫌良く仕事をしていた社員とその社員と中学・高校・大学時代を一緒に過ごしていた新入社員の役。コントの後は、5月に行われた「ザ・セカンド」でベスト4進出を果たし活躍したリニアにその時の裏話などを東京03がさまざま聞いていく。ナレーションは声優の戸松遥。\n<コント>「過去が追って来た」 作:岩崎う大",
+        "publishedAt": "2026-09-03T20:05:00+09:00",
+        "publishedAtUnix": 1788433500,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/R1W1PGPY21/",
+          "radioEpisodeId": "R1W1PGPY21",
+          "radioSeriesId": "Y5MG659NGN",
+          "guests": [
+            "リニア"
+          ],
+          "expires": null,
+          "audioStatus": null
+        }
+      },
+      {
+        "id": "JYP3RWM692",
+        "title": "ゲスト:バイク川崎バイク(9月10日放送分)",
+        "description": "今回のゲストはお笑い芸人のバイク川崎バイク。東京03とコント「俺が奴らを引きつける間に」で共演する。今回のコントはピン芸人のバイク川崎バイクがこのために書き上げた新作台本。バイク川崎バイクが演じるのはゾンビばかりの世界で彼女と親友と警官と一緒に逃げのびようとする男の役。コントの後はバイク川崎バイクが今の芸風にたどり着いた経緯や活動が幅広いことなどを東京03が聞いていく。ナレーションは声優の戸松遥。\n<コント>「俺が奴らを引きつける間に」 作:バイク川崎バイク",
+        "publishedAt": "2026-09-10T20:05:00+09:00",
+        "publishedAtUnix": 1789038300,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/JYP3RWM692/",
+          "radioEpisodeId": "JYP3RWM692",
+          "radioSeriesId": "Y5MG659NGN",
+          "guests": [
+            "バイク川崎バイク"
+          ],
+          "expires": null,
+          "audioStatus": null
+        }
+      },
+      {
+        "id": "K2NXL8MZ12",
+        "title": "ゲスト:入野自由(9月17日放送分)",
+        "description": "今回のゲストは声優で俳優でアーティストの入野自由。東京03とコント「いじられキャラ」で共演する。入野が演じるのは、社会人バスケサークル内ではいじられキャラで後輩ポジションの男の役。コントの後は、そもそも入野がこの世界に入ったきっかけの話から、舞台で学んだこと「身振り手振りは自分が安心する材料じゃない」が東京03に強く刺さり舞台での演技についてのトークで大いに盛り上がる。ナレーションは声優の戸松遥。\n<コント>「いじられキャラ」 作:星野光樹",
+        "publishedAt": "2026-09-17T20:05:00+09:00",
+        "publishedAtUnix": 1789643100,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/K2NXL8MZ12/",
+          "radioEpisodeId": "K2NXL8MZ12",
+          "radioSeriesId": "Y5MG659NGN",
+          "guests": [
+            "入野自由"
+          ],
+          "expires": "2026-09-24T20:55:00+09:00",
+          "audioStatus": "ready"
+        }
+      },
+      {
+        "id": "RQNPLLR8GY",
+        "title": "ゲスト:Gパンパンダ(9月24日放送分)",
+        "description": "今回のゲストはお笑い芸人Gパンパンダの星野光樹と一平。東京03とコント「バンジージャンプ」で共演する。今回のコントはこの番組のコント作家でもある星野がこのために書き上げた新作台本。2人が演じるのは、バンジージャンプを飛びに来た人とバンジージャンプの施設の人の役。コントの後は2人が持ち込んだトークテーマについて、Gパンパンダの2人と東京03の3人でいろいろ話し合っていく。ナレーションは声優の戸松遥。\n<コント>「バンジージャンプ」 作:星野光樹",
+        "publishedAt": "2026-09-24T20:05:00+09:00",
+        "publishedAtUnix": 1790247900,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/RQNPLLR8GY/",
+          "radioEpisodeId": "RQNPLLR8GY",
+          "radioSeriesId": "Y5MG659NGN",
+          "guests": [
+            "Ｇパンパンダ"
+          ],
+          "expires": "2026-10-01T20:55:00+09:00",
+          "audioStatus": "notyet"
+        }
+      },
+      {
+        "id": "AVJABEIAHG",
+        "title": "「コントコレクション2026秋」(10月1日放送分)",
+        "description": "今回は「コントコレクション2026秋」と題し、2026年上半期に放送した中から人気の高かったコントをまとめてお送りする。お届けするのは、ニッチェがゲストの「PR大作戦!」(作:塚本直毅)とネコニスズがゲストの「託児所」(作:ネコニスズ)とアンガールズがゲストの「小さな幸せ」(作:上田航平)とヨーロッパ企画がゲストの「朝礼」(作:上田誠)と井上喜久子がゲストの「永遠の17歳」(作:岩崎う大)の5本。",
+        "publishedAt": "2026-10-01T20:05:00+09:00",
+        "publishedAtUnix": 1790852700,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Y5MG659NGN/Y5MG659NGN-eyecatch_02cb2897402769c6a2587222c31cb78a.jpg",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/tokyo03-sukisase/rs/Y5MG659NGN/episode/re/AVJABEIAHG/",
+          "radioEpisodeId": "AVJABEIAHG",
+          "radioSeriesId": "Y5MG659NGN",
+          "guests": [],
+          "expires": "2026-10-08T20:55:00+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:05.440Z",
-      "episodeCount": 67
+      "cachedAt": "2026-09-25T01:57:16.695Z",
+      "episodeCount": 72
     }
   },
   "X4WNNM96KL": {
@@ -3022,11 +3164,121 @@
           "expires": "2026-08-27T21:55:00+09:00",
           "audioStatus": "ready"
         }
+      },
+      {
+        "id": "LPLP4N3XM7",
+        "title": "「アーカイブコレクション」(13)(9月3日放送分)",
+        "description": "今回は「アーカイブコレクション」と題して、2024年5月9日に放送した回をもう一度お届けする。ゲストはモデルでタレントの近藤千尋。夫であるジャングルポケット太田博久との間に最近3人目の子どもができたという近藤に、司会2人が「決めつけプロフィール」で実像に迫る。近藤が若い頃ダメな男に引っかかった話やジャンポケ太田とのなれそめ、家ではどんな夫婦なのかという話で盛り上がる。ナレーションは声優の茅野愛衣。",
+        "publishedAt": "2026-09-03T21:05:00+09:00",
+        "publishedAtUnix": 1788437100,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/LPLP4N3XM7/",
+          "radioEpisodeId": "LPLP4N3XM7",
+          "radioSeriesId": "X4WNNM96KL",
+          "guests": [
+            "近藤千尋"
+          ],
+          "expires": null,
+          "audioStatus": null
+        }
+      },
+      {
+        "id": "CNFLYRZDUW",
+        "title": "ゲスト:日髙のり子(9月10日放送分)",
+        "description": "今回のゲストは声優の日髙のり子。日本を代表する声優の一人である日髙と、日髙が声を担当したETC車載器の音声ガイドの話や日髙が出演したアニメ「タッチ」の裏話などで大いに盛り上がる。また、番組ホームページで募集したリスナーからのエピソード「私なりの、小さな一歩」を二人が共感を交えて紹介する。今回の「私の取扱説明書」は「お」から始まる自分の取扱説明書を大久保が発表する。ナレーションは声優の茅野愛衣。",
+        "publishedAt": "2026-09-10T21:05:00+09:00",
+        "publishedAtUnix": 1789041900,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/CNFLYRZDUW/",
+          "radioEpisodeId": "CNFLYRZDUW",
+          "radioSeriesId": "X4WNNM96KL",
+          "guests": [
+            "日髙のり子"
+          ],
+          "expires": null,
+          "audioStatus": null
+        }
+      },
+      {
+        "id": "ZN3NJP6N5G",
+        "title": "ゲスト:小松貴(9月17日放送分)",
+        "description": "今回のゲストは昆虫学者の小松貴。並外れた昆虫愛とユニークなフィールドワークのスタイルを持つ小松に、「アリヅカコオロギ」や「フサヒゲサシガメ」の珍しい生態について詳しく教えてもらう。また番組ホームページで募集したエピソード「おじいちゃん・おばあちゃんとの思い出」を二人が共感を交えて紹介する。今回の「私の取扱説明書」は「か」から始まる自分の取扱説明書を、いとうが発表する。ナレーションは声優の茅野愛衣。",
+        "publishedAt": "2026-09-17T21:05:00+09:00",
+        "publishedAtUnix": 1789646700,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/ZN3NJP6N5G/",
+          "radioEpisodeId": "ZN3NJP6N5G",
+          "radioSeriesId": "X4WNNM96KL",
+          "guests": [
+            "小松貴"
+          ],
+          "expires": "2026-09-24T21:55:00+09:00",
+          "audioStatus": "ready"
+        }
+      },
+      {
+        "id": "XXMLJ2QY94",
+        "title": "ゲスト:野々村友紀子(9月24日放送分)",
+        "description": "今回のゲストは放送作家の野々村友紀子。元々お笑い芸人だった野々村に、芸人養成所の講師の話を聞くほか、野々村が好きなブタキムチの話からなぜか肉の解凍の話になり盛り上がる。また、番組ホームページで募集したリスナーからのエピソード「『ちょっと待って!』となった瞬間」を二人が共感を交えて紹介する。今回の「私の取扱説明書」は「き」から始まる自分の取扱説明書を大久保が発表する。ナレーションは声優の茅野愛衣。",
+        "publishedAt": "2026-09-24T21:05:00+09:00",
+        "publishedAtUnix": 1790251500,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/XXMLJ2QY94/",
+          "radioEpisodeId": "XXMLJ2QY94",
+          "radioSeriesId": "X4WNNM96KL",
+          "guests": [
+            "野々村友紀子"
+          ],
+          "expires": "2026-10-01T21:55:00+09:00",
+          "audioStatus": "notyet"
+        }
+      },
+      {
+        "id": "VV65Z5N9QG",
+        "title": "ゲスト:長濱ねる(10月1日放送分)",
+        "description": "今回のゲストは俳優の長濱ねる。長濱がふるさと五島列島に帰ると魚釣りなどをして過ごす話や大好きな一人旅でアイスランドに行った時にレンタカーで300キロ運転した話などで大いに盛り上がる。また、番組ホームページで募集したリスナーからのエピソード「私なりの、小さな一歩」を二人が共感を交えて紹介する。今回の「私の取扱説明書」は「く」から始まる自分の取扱説明書をいとうが発表する。ナレーションは声優の茅野愛衣。",
+        "publishedAt": "2026-10-01T21:05:00+09:00",
+        "publishedAtUnix": 1790856300,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/X4WNNM96KL/X4WNNM96KL-eyecatch_efa2635e49435bbcbc78b87f004c2030.png",
+        "durationSeconds": 3000,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/asakokayoko/rs/X4WNNM96KL/episode/re/VV65Z5N9QG/",
+          "radioEpisodeId": "VV65Z5N9QG",
+          "radioSeriesId": "X4WNNM96KL",
+          "guests": [
+            "長濱ねる"
+          ],
+          "expires": "2026-10-08T21:55:00+09:00",
+          "audioStatus": "notyet"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:07.863Z",
-      "episodeCount": 50
+      "cachedAt": "2026-09-25T01:57:19.105Z",
+      "episodeCount": 55
     }
   },
   "Q3PKWJX562": {
@@ -8063,11 +8315,51 @@
           "expires": "2026-08-15T16:00:03+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "46Z6W2KKX7",
+        "title": "講師:永井真理子/夏の終わりに聴きたいセンチメンタルアニソン",
+        "description": "夏の終わりに聴きたいセンチメンタルアニソン特集▽ゲスト:永井真理子「YAWARA!」名曲秘話▽DJ:中川翔子・あべあきら",
+        "publishedAt": "2026-09-05T14:00:03+09:00",
+        "publishedAtUnix": 1788584403,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Q3PKWJX562/Q3PKWJX562-eyecatch_582887b8a9760840828129666351f77b.png",
+        "durationSeconds": 7200,
+        "tags": [
+          "GUEST"
+        ],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/anison-ac/rs/Q3PKWJX562/episode/re/46Z6W2KKX7/",
+          "radioEpisodeId": "46Z6W2KKX7",
+          "radioSeriesId": "Q3PKWJX562",
+          "guests": [
+            "永井真理子"
+          ],
+          "expires": null,
+          "audioStatus": null
+        }
+      },
+      {
+        "id": "56N3RK7R5W",
+        "title": "藤子・F・不二雄さんアニソン",
+        "description": "今年で没後30年。藤子・F・不二雄さんの世界を音楽で振り返る!DJ:中川翔子・あべあきら",
+        "publishedAt": "2026-09-12T14:00:03+09:00",
+        "publishedAtUnix": 1789189203,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/Q3PKWJX562/Q3PKWJX562-eyecatch_582887b8a9760840828129666351f77b.png",
+        "durationSeconds": 7200,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/anison-ac/rs/Q3PKWJX562/episode/re/56N3RK7R5W/",
+          "radioEpisodeId": "56N3RK7R5W",
+          "radioSeriesId": "Q3PKWJX562",
+          "guests": [],
+          "expires": null,
+          "audioStatus": null
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:17.079Z",
-      "episodeCount": 278
+      "cachedAt": "2026-09-25T01:57:30.268Z",
+      "episodeCount": 280
     }
   },
   "V8JW19JK29": {
@@ -9241,11 +9533,65 @@
           "expires": "2026-08-22T22:55:00+09:00",
           "audioStatus": "notyet"
         }
+      },
+      {
+        "id": "PM9P67Z5PK",
+        "title": "〜釣りのラジオ〜 野々村真が登場!前編",
+        "description": "▽釣り好き大集合!今こそ釣りの素晴らしさを語ろう!三代目JSB・山下健二郎が釣り好きゲストと釣りトーク全開!▽野々村真が登場!▽釣り仲間は元プロ野球選手・佐々木主浩!クイズ番組で落ち込む毎日、大魔神から釣りの誘いが!▽永遠の初心者。大魔神を超えたい!▽進行は藤原陸遊アナウンサー。▽らじるらじる、radiko、聴き逃しで配信。▽メッセージ、釣り自慢、失敗談を大募集!Xは #トークライクフィッシング",
+        "publishedAt": "2026-09-05T22:05:00+09:00",
+        "publishedAtUnix": 1788613500,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/V8JW19JK29/V8JW19JK29-eyecatch_98c8d0476cbb2f6faa38b9d35bed9924.jpg",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/rs/V8JW19JK29/episode/re/PM9P67Z5PK/",
+          "radioEpisodeId": "PM9P67Z5PK",
+          "radioSeriesId": "V8JW19JK29",
+          "guests": [],
+          "expires": null,
+          "audioStatus": null
+        }
+      },
+      {
+        "id": "L2Q226PZWM",
+        "title": "〜釣りのラジオ〜 野々村真が登場!後編",
+        "description": "▽釣り好き大集合!今こそ釣りの素晴らしさを語ろう!三代目JSB・山下健二郎が釣り好きゲストと釣りトーク全開!▽野々村真が登場の後編。▽釣り自慢は鹿島沖での化け物ヒラメ!90センチ!?大魔神・佐々木主浩に勝利!▽お宝は職人手作りの釣り竿。自家栽培の竹製!▽進行は藤原陸遊アナウンサー。▽らじるらじる、radiko、聴き逃しで配信。▽メッセージ、釣り自慢、失敗談を大募集!Xは #トークライクフィッシング",
+        "publishedAt": "2026-09-12T22:05:00+09:00",
+        "publishedAtUnix": 1789218300,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/V8JW19JK29/V8JW19JK29-eyecatch_98c8d0476cbb2f6faa38b9d35bed9924.jpg",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/rs/V8JW19JK29/episode/re/L2Q226PZWM/",
+          "radioEpisodeId": "L2Q226PZWM",
+          "radioSeriesId": "V8JW19JK29",
+          "guests": [],
+          "expires": null,
+          "audioStatus": null
+        }
+      },
+      {
+        "id": "MP37353LY2",
+        "title": "〜釣りのラジオ〜 魚群探知機開発者・津島和亮が登場!",
+        "description": "▽釣り好き大集合!今こそ釣りの素晴らしさを語ろう!三代目JSB・山下健二郎が釣り好きゲストと釣りトーク全開!▽魚群探知機の開発者・津島和亮さんが登場!▽今や欠かせない魚探の歴史。その仕組みと最新機能に驚愕!▽カジキ釣りへの情熱が高じて魚探開発者に!?▽進行は藤原陸遊アナウンサー。▽らじるらじる、radiko、聴き逃しで配信。▽メッセージ、釣り自慢、失敗談を大募集!Xは #トークライクフィッシング",
+        "publishedAt": "2026-09-19T22:05:00+09:00",
+        "publishedAtUnix": 1789823100,
+        "thumbnail": "https://img.nhk.jp/static/assets/images/radioseries/rs/V8JW19JK29/V8JW19JK29-eyecatch_98c8d0476cbb2f6faa38b9d35bed9924.jpg",
+        "durationSeconds": 3000,
+        "tags": [],
+        "platformMetadata": {
+          "canonical": "https://www.nhk.jp/p/rs/V8JW19JK29/episode/re/MP37353LY2/",
+          "radioEpisodeId": "MP37353LY2",
+          "radioSeriesId": "V8JW19JK29",
+          "guests": [],
+          "expires": "2026-09-26T22:55:00+09:00",
+          "audioStatus": "ready"
+        }
       }
     ],
     "meta": {
-      "cachedAt": "2026-08-25T18:02:21.552Z",
-      "episodeCount": 64
+      "cachedAt": "2026-09-25T01:57:34.073Z",
+      "episodeCount": 67
     }
   }
 }
